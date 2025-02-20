@@ -1,6 +1,6 @@
-# Welcome to My GitHub Pages Website
+# Career Overview and Portfolio
 
-This is the homepage of my GitHub Pages site, built to showcase my projects, ideas, and anything else I find interesting.
+I've been in the DevOps, Infrastructure, SRE, and Platform Engineering space for over a decade. Here's a small overview of my career thus far. 
 
 ## About This Site
 This website is hosted using [GitHub Pages](https://pages.github.com/) and is designed to be a simple and effective way to share content with the world.
