@@ -43,6 +43,5 @@ Led the evaluation of diverse open-source and licensed solutions in collaboratio
 ---
 ## **Contact**  
 For inquiries, please visit my [Contact Form](https://diomedesauraa.github.io/portfolio/contact).  
----
 
 Thanks for visiting!
