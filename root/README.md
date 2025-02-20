@@ -1,4 +1,4 @@
-# diomedes.github.io
+# diomedes.github.io (from root)
 Github Pages
 # Welcome to My GitHub Pages Website
 
