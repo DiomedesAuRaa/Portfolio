@@ -44,6 +44,10 @@ For more details, visit the [AWS Terraform Stack repository](https://github.com/
 ### **Kubernetes Platform Deployment and Delivery**  
 Led the evaluation of diverse open-source and licensed solutions in collaboration with stakeholders and leadership. Used gained insights to drive the development of a Kubernetes-based Platform as a Service (PaaS) solution. Built and deployed the platform with Infrastructure as Code (IaC) principles using Terraform, ensuring it met the unique requirements of developers for both testing and production environments.  
 
+### **Azure Infrastructure as Code with Terraform**  
+Designed and deployed Azure infrastructure using Terraform, automating the provisioning of Azure Virtual Machines, AKS clusters, and supporting services. Implemented best practices for security, scalability, and cost optimization in cloud deployments. 
+For more details, visit the [Azure Terraform Stack repository](https://github.com/DiomedesAuRaa/azure-terraform-stack).  
+
 ---
 ## **Contact**  
 For inquiries, please visit my [Contact Form](https://diomedesauraa.github.io/portfolio/contact).  
