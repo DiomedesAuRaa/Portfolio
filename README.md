@@ -1,5 +1,3 @@
-# diomedes.github.io (from home page)
-Github Pages
 # Welcome to My GitHub Pages Website
 
 This is the homepage of my GitHub Pages site, built to showcase my projects, ideas, and anything else I find interesting.
