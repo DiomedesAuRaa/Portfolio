@@ -34,23 +34,24 @@ Successfully orchestrated the seamless migration of over 1,500 Linux VMs running
 ### **Kubernetes Version Upgrades**  
 Led the upgrade of production Kubernetes clusters across RKE, EKS, GKE, AKS, and K3s. Managed complex upgrade processes, ensuring seamless transitions while maintaining high availability and reliability. Implemented automated upgrade strategies and rigorous testing protocols to minimize risks and ensure uninterrupted services.  
 
-### **GCP Infrastructure as Code with Terraform**  
-Developed Terraform-based automation for provisioning and managing GCP services, including Google Kubernetes Engine (GKE), Google Compute Engine (VM), Google Cloud Run, Google App Engine, Google Cloud SQL, and Google Pub/Sub. Ensured scalable, secure, and cost-efficient cloud operations with infrastructure as code best practices. 
-For more details, visit the [GCP Terraform Stack repository](https://github.com/DiomedesAuRaa/gcp-terraform-stack).  
-
 ### **Custom Monitoring and Alerting**  
 Designed and implemented a comprehensive monitoring and alerting system leveraging Grafana, Prometheus, and Alert Manager. Deployed these tools across both on-premises and cloud environments to effectively visualize critical production data. Established proactive alerting mechanisms to enable swift response and mitigate potential issues before they could impact business operations.  
 
 ### **AWS Infrastructure as Code with Terraform**  
-Developed and managed AWS infrastructure using Terraform, provisioning scalable EC2 instances and EKS clusters for high-availability applications. Implemented automated deployments and infrastructure security best practices to ensure robust cloud operations. 
+Developed and managed AWS infrastructure using Terraform, provisioning scalable EC2 instances for compute workloads and EKS clusters for containerized applications, ensuring high availability and fault tolerance. Automated deployments of RDS databases for managed SQL solutions and S3 buckets for secure and scalable object storage. Implemented infrastructure security best practices, including IAM roles, VPC configurations, and encryption, to ensure robust and secure cloud operations.
 For more details, visit the [AWS Terraform Stack repository](https://github.com/DiomedesAuRaa/aws-terraform-stack/tree/main).  
+
+### **Azure Infrastructure as Code with Terraform**  
+Designed and deployed Azure infrastructure using Terraform, automating the provisioning of Azure Virtual Machines for compute needs and AKS clusters for container orchestration. Integrated Azure Blob Storage for scalable object storage and Azure Functions for serverless computing. Implemented Azure SQL for managed databases and CosmosDB for globally distributed NoSQL solutions. Applied best practices for security, scalability, and cost optimization, including role-based access control (RBAC) and network security groups (NSGs).
+For more details, visit the [Azure Terraform Stack repository](https://github.com/DiomedesAuRaa/azure-terraform-stack).
 
 ### **Kubernetes Platform Deployment and Delivery**  
 Led the evaluation of diverse open-source and licensed solutions in collaboration with stakeholders and leadership. Used gained insights to drive the development of a Kubernetes-based Platform as a Service (PaaS) solution. Built and deployed the platform with Infrastructure as Code (IaC) principles using Terraform, ensuring it met the unique requirements of developers for both testing and production environments.  
 
-### **Azure Infrastructure as Code with Terraform**  
-Designed and deployed Azure infrastructure using Terraform, automating the provisioning of Azure Virtual Machines, AKS clusters, and supporting services. Implemented best practices for security, scalability, and cost optimization in cloud deployments. 
-For more details, visit the [Azure Terraform Stack repository](https://github.com/DiomedesAuRaa/azure-terraform-stack).  
+### **GCP Infrastructure as Code with Terraform**  
+Developed Terraform-based automation for provisioning and managing GCP services, including Google Kubernetes Engine (GKE) for container orchestration, Google Compute Engine (GCE) for virtual machines, and Cloud Run for serverless container deployments. Implemented Cloud SQL for managed relational databases and BigQuery for scalable data analytics. Integrated Cloud CDN for content delivery and Cloud Armor for DDoS protection and web application security. Ensured scalable, secure, and cost-efficient cloud operations with infrastructure as code best practices. 
+For more details, visit the [GCP Terraform Stack repository](https://github.com/DiomedesAuRaa/gcp-terraform-stack).  
+
 
 ---
 ## **Contact**  
