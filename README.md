@@ -41,10 +41,8 @@ Designed and implemented a comprehensive monitoring and alerting system leveragi
 Led the evaluation of diverse open-source and licensed solutions in collaboration with stakeholders and leadership. Used gained insights to drive the development of a Kubernetes-based Platform as a Service (PaaS) solution. Built and deployed the platform with Infrastructure as Code (IaC) principles using Terraform, ensuring it met the unique requirements of developers for both testing and production environments.  
 
 ---
-
-## Contact
-If you have any questions or suggestions, feel free to reach out via GitHub Issues or connect with me on social media.
-
+## **Contact**  
+For inquiries, please visit my [Contact Form](https://diomedesauraa.github.io/portfolio/contact).  
 ---
 
-Thanks for visiting my site! Stay tuned for updates. 🚀
+Thanks for visiting!
