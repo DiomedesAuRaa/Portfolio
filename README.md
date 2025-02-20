@@ -34,6 +34,10 @@ Successfully orchestrated the seamless migration of over 1,500 Linux VMs running
 ### **Kubernetes Version Upgrades**  
 Led the upgrade of production Kubernetes clusters across RKE, EKS, GKE, AKS, and K3s. Managed complex upgrade processes, ensuring seamless transitions while maintaining high availability and reliability. Implemented automated upgrade strategies and rigorous testing protocols to minimize risks and ensure uninterrupted services.  
 
+### **GCP Infrastructure as Code with Terraform**  
+Developed Terraform-based automation for provisioning and managing GCP services, including Google Kubernetes Engine (GKE), Google Compute Engine (VM), Google Cloud Run, Google App Engine, Google Cloud SQL, and Google Pub/Sub. Ensured scalable, secure, and cost-efficient cloud operations with infrastructure as code best practices. 
+For more details, visit the [GCP Terraform Stack repository](https://github.com/DiomedesAuRaa/gcp-terraform-stack).  
+
 ### **Custom Monitoring and Alerting**  
 Designed and implemented a comprehensive monitoring and alerting system leveraging Grafana, Prometheus, and Alert Manager. Deployed these tools across both on-premises and cloud environments to effectively visualize critical production data. Established proactive alerting mechanisms to enable swift response and mitigate potential issues before they could impact business operations.  
 
