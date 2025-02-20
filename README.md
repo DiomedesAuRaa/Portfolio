@@ -37,6 +37,10 @@ Led the upgrade of production Kubernetes clusters across RKE, EKS, GKE, AKS, and
 ### **Custom Monitoring and Alerting**  
 Designed and implemented a comprehensive monitoring and alerting system leveraging Grafana, Prometheus, and Alert Manager. Deployed these tools across both on-premises and cloud environments to effectively visualize critical production data. Established proactive alerting mechanisms to enable swift response and mitigate potential issues before they could impact business operations.  
 
+### **AWS Infrastructure as Code with Terraform**  
+Developed and managed AWS infrastructure using Terraform, provisioning scalable EC2 instances and EKS clusters for high-availability applications. Implemented automated deployments and infrastructure security best practices to ensure robust cloud operations. 
+For more details, visit the [AWS Terraform Stack repository](https://github.com/DiomedesAuRaa/aws-terraform-stack/tree/main).  
+
 ### **Kubernetes Platform Deployment and Delivery**  
 Led the evaluation of diverse open-source and licensed solutions in collaboration with stakeholders and leadership. Used gained insights to drive the development of a Kubernetes-based Platform as a Service (PaaS) solution. Built and deployed the platform with Infrastructure as Code (IaC) principles using Terraform, ensuring it met the unique requirements of developers for both testing and production environments.  
 
