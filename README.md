@@ -26,6 +26,22 @@ I've been in the DevOps, Infrastructure, SRE, and Platform Engineering space for
 
 ---
 
+## **Projects**  
+
+### **Production PaaS Host Migration**  
+Successfully orchestrated the seamless migration of over 1,500 Linux VMs running a Platform as a Service (PaaS) across multiple vSphere instances. Carefully planned and executed the migration strategy, achieving zero production downtime and ensuring uninterrupted developer workflows.  
+
+### **Kubernetes Version Upgrades**  
+Led the upgrade of production Kubernetes clusters across RKE, EKS, GKE, AKS, and K3s. Managed complex upgrade processes, ensuring seamless transitions while maintaining high availability and reliability. Implemented automated upgrade strategies and rigorous testing protocols to minimize risks and ensure uninterrupted services.  
+
+### **Custom Monitoring and Alerting**  
+Designed and implemented a comprehensive monitoring and alerting system leveraging Grafana, Prometheus, and Alert Manager. Deployed these tools across both on-premises and cloud environments to effectively visualize critical production data. Established proactive alerting mechanisms to enable swift response and mitigate potential issues before they could impact business operations.  
+
+### **Kubernetes Platform Deployment and Delivery**  
+Led the evaluation of diverse open-source and licensed solutions in collaboration with stakeholders and leadership. Used gained insights to drive the development of a Kubernetes-based Platform as a Service (PaaS) solution. Built and deployed the platform with Infrastructure as Code (IaC) principles using Terraform, ensuring it met the unique requirements of developers for both testing and production environments.  
+
+---
+
 ## Contact
 If you have any questions or suggestions, feel free to reach out via GitHub Issues or connect with me on social media.
 
