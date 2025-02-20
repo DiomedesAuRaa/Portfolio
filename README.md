@@ -1,4 +1,4 @@
-# Career Overview and Portfolio
+# Career Overview
 
 I've been in the DevOps, Infrastructure, SRE, and Platform Engineering space for over a decade. Here's a small overview of my career thus far. 
 
