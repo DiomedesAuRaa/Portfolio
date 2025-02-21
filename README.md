@@ -1,6 +1,6 @@
 # Career Overview
 
-I've been in the DevOps, Infrastructure, SRE, and Platform Engineering space for over a decade. Here's a small overview of my career thus far. 
+Hello! I'm Josh, I've been in the DevOps, Infrastructure, SRE, and Platform Engineering space for over a decade. Here's a brief overview of my career thus far. 
 
 ---
 
