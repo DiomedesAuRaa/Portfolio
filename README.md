@@ -78,6 +78,6 @@ For more details, visit the [GCP Terraform Stack repository](https://github.com/
 
 ---
 ## **Contact**  
-For inquiries, please visit my [Contact Form](https://diomedesauraa.github.io/portfolio/contact).  
+For inquiries, please visit my [Contact Form](https://diomedesauraa.github.io/Portfolio/contact).  
 
 Thanks for visiting!
