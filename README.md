@@ -35,15 +35,13 @@ Successfully orchestrated the seamless migration of over 1,500 Linux VMs running
 Led the upgrade of production Kubernetes clusters across RKE, EKS, GKE, AKS, and K3s. Managed complex upgrade processes, ensuring seamless transitions while maintaining high availability and reliability. Implemented automated upgrade strategies and rigorous testing protocols to minimize risks and ensure uninterrupted services.  
 
 ### **Open Source Grafana, Prometheus, and Alert Manager Implementation**  
-Designed and implemented a comprehensive monitoring and alerting system leveraging **Grafana**, **Prometheus**, and **Alert Manager**. Deployed these tools across both on-premises and cloud environments to effectively visualize critical production data. Established proactive alerting mechanisms to enable swift response and mitigate potential issues before they could impact business operations.
-
-Explore the implementation details in my repo: [https://github.com/DiomedesAuRaa/grafana-prometheus-alertmanager-stack](https://github.com/DiomedesAuRaa/grafana-prometheus-alertmanager-stack).
+Designed and implemented a comprehensive monitoring and alerting system leveraging **Grafana**, **Prometheus**, and **Alert Manager**. Deployed these tools across both on-premises and cloud environments to effectively visualize critical production data. Established proactive alerting mechanisms to enable swift response and mitigate potential issues before they could impact business operations. Explore the implementation details in my [repo](https://github.com/DiomedesAuRaa/grafana-prometheus-alertmanager-stack](https://github.com/DiomedesAuRaa/grafana-prometheus-alertmanager-stack).
 
 ### **AWS Infrastructure as Code with Terraform**  
 Developed and managed AWS infrastructure using Terraform, provisioning scalable EC2 instances for compute workloads and EKS clusters for containerized applications, ensuring high availability and fault tolerance. Automated deployments of RDS databases for managed SQL solutions and S3 buckets for secure and scalable object storage. Implemented infrastructure security best practices, including IAM roles, VPC configurations, and encryption, to ensure robust and secure cloud operations.
 For more details, visit the [AWS Terraform Stack repository](https://github.com/DiomedesAuRaa/aws-terraform-stack/tree/main).  
 
-**Cloud automation using Terraform and Ansible** 
+### **Cloud automation using Terraform and Ansible** 
 This project demonstrates leveraging Terraform and Ansible to provision and configure a basic load-balanced EC2 setup on AWS. Terraform is used to define and deploy the infrastructure, including EC2 instances, security groups, and an application load balancer. Ansible then takes over to configure the servers, ensuring they are set up with essential software and services. The entire workflow is automated using **GitHub Actions**, making it a seamless end-to-end solution for infrastructure-as-code (IaC) and configuration management. Check out the repository [here](https://github.com/DiomedesAuRaa/terraform-ansible-cloud-automation/tree/main).
 
 ### **Azure Infrastructure as Code with Terraform**  
