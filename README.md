@@ -53,14 +53,7 @@ Led the evaluation of diverse open-source and licensed solutions in collaboratio
 
 ### Datadog Implementation and Optimization
 
-This project focuses on leveraging **Datadog** to monitor and optimize cloud infrastructure across **AWS**, **Azure**, and **GCP** at scale. By integrating Datadog with Terraform, we automate the deployment of monitoring agents and dashboards, ensuring comprehensive visibility into key services such as **EC2**, **EKS**, **AKS**, **GKE**, **RDS**, **Azure SQL**, **Cloud SQL**, and more. The implementation includes:
-
-- **Unified Monitoring**: Centralized monitoring for multi-cloud environments, enabling seamless tracking of performance, logs, and traces.
-- **Automated Agent Deployment**: Using **ArgoCD** for Kubernetes clusters and **Ansible** or **cloud-init** for non-Kubernetes environments to ensure consistent agent installation.
-- **Custom Dashboards and Alerts**: Pre-configured dashboards and alerts for critical metrics, ensuring proactive issue detection and resolution.
-- **Scalability**: Designed to handle large-scale deployments across multiple regions and environments, with support for dynamic scaling and cost optimization.
-
-To learn more about the implementation details, explore my repo with some samples of basic integrations: [https://github.com/DiomedesAuRaa/datadog](https://github.com/DiomedesAuRaa/datadog).
+This project focuses on leveraging **Datadog** to monitor and optimize cloud infrastructure across **AWS**, **Azure**, and **GCP** at scale. By integrating Datadog with Terraform, we automate the deployment of monitoring agents and dashboards, ensuring comprehensive visibility into key services such as **EC2**, **EKS**, **AKS**, **GKE**, **RDS**, **Azure SQL**, **Cloud SQL**, and more. To learn more about the implementation details, explore my repo with some samples of very basic [integrations](https://github.com/DiomedesAuRaa/datadog).
 
 ### **GCP Infrastructure as Code with Terraform**  
 Developed Terraform-based automation for provisioning and managing GCP services, including Google Kubernetes Engine (GKE) for container orchestration, Google Compute Engine (GCE) for virtual machines, and Cloud Run for serverless container deployments. Implemented Cloud SQL for managed relational databases and BigQuery for scalable data analytics. Integrated Cloud CDN for content delivery and Cloud Armor for DDoS protection and web application security. Ensured scalable, secure, and cost-efficient cloud operations with infrastructure as code best practices. 
