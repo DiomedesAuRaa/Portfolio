@@ -12,9 +12,11 @@ Hello! I'm Josh, I've been in the DevOps, Infrastructure, SRE, and Platform Engi
   - [Custom Monitoring and Alerting](#custom-monitoring-and-alerting)  
   - [Kubernetes Platform Deployment and Delivery](#kubernetes-platform-deployment-and-delivery)  
   - [AWS Infrastructure as Code with Terraform](#aws-infrastructure-as-code-with-terraform)  
+  - [Cloud automation using Terraform and Ansible](#cloud-automation-using-terraform-and-ansible)  
   - [Azure Infrastructure as Code with Terraform](#azure-infrastructure-as-code-with-terraform)  
+  - [Datadog Implementation and Optimization](#datadog-implementation-and-optimization)  
   - [GCP Infrastructure as Code with Terraform](#gcp-infrastructure-as-code-with-terraform)  
-- [Contact](#contact) 
+- [Contact](#contact)  
 
 ---
 
