@@ -4,6 +4,20 @@ Hello! I'm Josh, I've been in the DevOps, Infrastructure, SRE, and Platform Engi
 
 ---
 
+## **Table of Contents**  
+- [Professional Expertise](#professional-expertise)  
+- [Projects](#projects)  
+  - [Production PaaS Host Migration](#production-paas-host-migration)  
+  - [Kubernetes Version Upgrades](#kubernetes-version-upgrades)  
+  - [Custom Monitoring and Alerting](#custom-monitoring-and-alerting)  
+  - [Kubernetes Platform Deployment and Delivery](#kubernetes-platform-deployment-and-delivery)  
+  - [AWS Infrastructure as Code with Terraform](#aws-infrastructure-as-code-with-terraform)  
+  - [Azure Infrastructure as Code with Terraform](#azure-infrastructure-as-code-with-terraform)  
+  - [GCP Infrastructure as Code with Terraform](#gcp-infrastructure-as-code-with-terraform)  
+- [Contact](#contact) 
+
+---
+
 ## **Professional Expertise**  
 
 ### **Cloud Architecture & Infrastructure**  
