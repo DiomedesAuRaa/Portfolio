@@ -64,6 +64,9 @@ This project demonstrates leveraging Terraform and Ansible to provision and conf
 Designed and deployed Azure infrastructure using Terraform, automating the provisioning of Azure Virtual Machines for compute needs and AKS clusters for container orchestration. Integrated Azure Blob Storage for scalable object storage and Azure Functions for serverless computing. Implemented Azure SQL for managed databases and CosmosDB for globally distributed NoSQL solutions. Applied best practices for security, scalability, and cost optimization, including role-based access control (RBAC) and network security groups (NSGs).
 For more details, visit the [Azure Terraform Stack repository](https://github.com/DiomedesAuRaa/azure-terraform-stack).
 
+### **CI/CD Development and Implementation**  
+I have extensive experience in developing CI/CD solutions, focusing on creating efficient and scalable pipelines to automate software development and deployment processes. By leveraging my expertise, I’ve built robust workflows that streamline the continuous integration and delivery pipeline, ensuring smooth and reliable deployments across various platforms. My work includes using tools like GitHub Actions, GitLab, Jenkins, CircleCI, and Azure DevOps to automate tests, builds, and deployments, helping improve productivity and collaboration within development teams. You can explore more about my CI/CD solutions [here](https://github.com/DiomedesAuRaa/ci-cd-solutions).
+
 ### **Kubernetes Platform Deployment and Delivery**  
 Led the evaluation of diverse open-source and licensed solutions in collaboration with stakeholders and leadership. Used gained insights to drive the development of a Kubernetes-based Platform as a Service (PaaS) solution. Built and deployed the platform with Infrastructure as Code (IaC) principles using Terraform, ensuring it met the unique requirements of developers for both testing and production environments.  
 
