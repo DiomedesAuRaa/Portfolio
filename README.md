@@ -5,6 +5,32 @@ I focus on **cloud architecture, automation, and observability**, helping teams 
 
 ---
 
+## 🧰 Tech Stack
+
+**Cloud:** AWS · Azure · GCP  
+**IaC:** Terraform · Ansible  
+**Containers:** Kubernetes (EKS, AKS, GKE, RKE, K3s, OpenShift) · Docker · ECS · Cloud Run  
+**CI/CD:** GitHub Actions · GitLab · Jenkins · Concourse · Spinnaker · ArgoCD · Azure DevOps  
+**Languages:** Bash · Python · Go · PowerShell  
+**Observability:** Datadog · Prometheus · Grafana · Alertmanager · Opsgenie · PagerDuty  
+**Security:** Vault · KMS · Secret Manager · RBAC · IAM  
+**Governance:** FinOps · Cost Explorer · Azure Cost Management · GCP Billing  
+
+---
+
+## 🧩 Technical Skills
+
+**Infrastructure:** Kubernetes (GKE, AKS, EKS, RKE, K3s, Red Hat OpenShift), Infrastructure as Code (Terraform, Ansible), Docker, Compute Clusters (Linux & Windows), ECS, Cloud Run  
+**Cloud Providers:** Multi-region architecture design and operations across AWS, GCP, and Azure  
+**CI/CD:** Spinnaker, Azure DevOps, Jenkins, Concourse, GitHub Actions, Bitbucket, GitLab, ArgoCD  
+**SRE & Dev Tools:** Grafana, Prometheus, Alertmanager, Datadog, YAML, Bash, PowerShell, Go, Python, BigQuery  
+**Business Continuity:** Backup & Disaster Recovery, high availability, networking, and security management. Experienced with DevOps, SRE, and Agile practices using Jira and ServiceNow.  
+**Security & Compliance:** HashiCorp Vault, AWS KMS, Azure Key Vault, GCP Secret Manager — secure secret management and encryption best practices.  
+**AI & Automation:** GPU-enabled and AI/ML-supporting infrastructure (Kubernetes + Cloud Run), AI-driven observability (Datadog anomaly detection, predictive alerting), and AI-assisted automation (GitHub Copilot, ChatGPT, cloud-native AI optimizations).  
+**Cost & Governance:** FinOps practices, cloud cost optimization, and spend governance across AWS Cost Explorer, GCP Billing, and Azure Cost Management.  
+
+---
+
 ## 🔧 Core Expertise
 
 - **Cloud Architecture (AWS, Azure, GCP):** Designed hybrid/multi-cloud systems, led on-prem → cloud migrations, implemented HA/DR strategies, and secured networks with Palo Alto, Juniper, and Cisco.  
@@ -14,33 +40,41 @@ I focus on **cloud architecture, automation, and observability**, helping teams 
 - **Containerized & Serverless Workloads:** Delivered microservices and event-driven systems on ECS, Cloud Run, and Azure Functions, optimizing for performance and cost.  
 - **CI/CD Pipelines:** Engineered pipelines with GitHub Actions, GitLab, Concourse, Jenkins, Spinnaker, and Azure DevOps — cutting deployment times from hours to minutes.  
 - **Observability & Incident Response:** Rolled out Datadog, Prometheus, Grafana, and Alertmanager. Integrated Opsgenie, PagerDuty, and ServiceNow to reduce MTTR and improve alert quality.  
-- **AI-driven Ops:** Leveraged AI/ML tools to reduce toil, improve observability, and accelerate incident analysis.  
+- **AI/ML Infrastructure:** Designed GPU-enabled Kubernetes and cloud environments for scalable model training and inference. Leveraged AI-driven observability and automation to optimize performance and reduce toil.  
+- **Security & Governance:** Implemented secret management with Vault, KMS, and cloud-native Secret Managers. Applied FinOps practices for cost visibility, security, and optimization across multi-cloud environments.  
 - **DevOps Culture:** Advocated strong collaboration frameworks, RBAC governance, and Agile delivery with Jira and cross-functional workflows.  
 
 ---
 
 ## 🚀 Featured Projects
 
-### **Production PaaS Migration**
-Migrated **1,500+ Linux VMs** across vSphere clusters with **zero downtime**, improving developer velocity and eliminating legacy infrastructure bottlenecks.
+### **Platform Modernization**
+Architected a unified Kubernetes-based PaaS using **Terraform + ArgoCD**, complete with reusable Helm charts and CI/CD integration. Standardized deployments across dev, staging, and production for consistent, auditable releases.
+
+### **Production Host Migration**
+Migrated **1,500+ Linux VMs** across clustered environments with **zero downtime**, eliminating legacy bottlenecks and improving developer productivity.
 
 ### **Kubernetes Upgrades at Scale**
-Orchestrated major version upgrades across **EKS, GKE, AKS, RKE, and K3s** clusters. Automated rollout and testing pipelines to maintain uptime during transitions.
+Automated major version upgrades across **EKS, GKE, AKS, RKE, and K3s** clusters. Designed rollout and testing pipelines to maintain uptime during transitions.
 
-### **Kubernetes Platform & GitOps Deployment**
-Built a Kubernetes-based PaaS with **Terraform + ArgoCD**, including custom Helm charts, CI/CD integration, and repeatable, auditable deployments across dev, staging, and prod.
+### **Infrastructure as Code at Scale**
+Delivered reusable, multi-cloud Terraform modules to manage compute, networking, and managed services with strong security and compliance foundations.
 
-### **Cloud IaC Stacks**
-Delivered reusable Terraform modules for **AWS, Azure, and GCP** implementing compute, networking, storage, and managed services with strong security and compliance baselines.
-
-### **CI/CD Solutions**
-Built CI/CD pipelines across multiple platforms — reduced deployment time by **90%** and enabled full rollback and environment parity.
+### **CI/CD Automation**
+Built CI/CD frameworks across multiple platforms — reducing deployment time by **90%** and enabling consistent, reversible, and environment-parity releases.
 
 ### **Monitoring & Incident Response**
-Unified observability across hybrid environments with **Prometheus, Grafana, and Alertmanager**. Automated Datadog setup with Terraform and integrated **Opsgenie + PagerDuty** for tighter incident response.
+Unified observability across hybrid environments using **Prometheus, Grafana, Alertmanager, and Datadog**. Automated configuration via IaC and integrated alerting tools to improve signal-to-noise and accelerate remediation.
 
 ### **Terraform + Ansible Automation**
-Built end-to-end infrastructure and configuration automation pipelines with **Terraform, Ansible, and GitHub Actions**, enabling one-command environment provisioning.
+Built end-to-end infrastructure and configuration pipelines using **Terraform, Ansible, and GitHub Actions**, enabling one-command provisioning and environment parity.
+
+---
+
+## 🎓 Education
+
+**B.S., Communication Media & Leadership Studies**
+Focused on leadership, communication, and project delivery — strengthening cross-team collaboration in technical environments.
 
 ---
 
