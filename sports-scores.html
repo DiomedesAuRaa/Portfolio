@@ -47,6 +47,13 @@
             margin: 4px 0;
             padding: 5px;
             border-left: 3px solid #0ff;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        
+        .game:active {
+            background: #222;
         }
         
         .game-status {
@@ -138,6 +145,10 @@
         ];
         
         const SPORTS_CONFIG = {
+            'NHL': {
+                url: `${API_BASE}/hockey/nhl/scoreboard`,
+                color: '#c8102e'
+            },
             'NBA': {
                 url: `${API_BASE}/basketball/nba/scoreboard`,
                 color: '#ff6b35'
@@ -174,9 +185,11 @@
             const statusType = status.type.name;
             
             if (statusType === 'STATUS_IN_PROGRESS') {
-                return `<span class="live">● LIVE - ${status.displayClock}</span>`;
+                const period = status.period ? `${status.type.shortDetail || 'Q' + status.period}` : '';
+                const clock = status.displayClock || '';
+                return `<span class="live">● LIVE - ${period} ${clock}</span>`.trim();
             } else if (statusType === 'STATUS_FINAL') {
-                return 'FINAL';
+                return status.type.shortDetail || 'FINAL';
             } else if (statusType === 'STATUS_SCHEDULED') {
                 return formatTime(competition.date);
             }
@@ -202,8 +215,11 @@
             const priorityBorder = isPriority ? 'border-left: 3px solid #ffd700; background: #1a1a00;' : '';
             const priorityLabel = isPriority ? '<span style="color: #ffd700; font-weight: bold;">⭐ </span>' : '';
             
+            // Get ESPN game link
+            const gameLink = competition.link || competition.links?.[0]?.href || '#';
+            
             return `
-                <div class="game" style="${priorityBorder}">
+                <a href="${gameLink}" target="_blank" class="game" style="${priorityBorder}">
                     <div class="game-status ${competition.status.type.name === 'STATUS_IN_PROGRESS' ? 'live' : ''}">${priorityLabel}${status}</div>
                     <div class="team-row">
                         <span class="team-name ${awayWinner ? 'winner' : ''}">${awayTeam.team.abbreviation || awayTeam.team.shortDisplayName}</span>
@@ -213,7 +229,7 @@
                         <span class="team-name ${homeWinner ? 'winner' : ''}">${homeTeam.team.abbreviation || homeTeam.team.shortDisplayName}</span>
                         <span class="score ${homeWinner ? 'winner' : ''}">${homeTeam.score || '-'}</span>
                     </div>
-                </div>
+                </a>
             `;
         }
 
