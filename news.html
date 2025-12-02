@@ -157,17 +157,18 @@
         const RSS_FEEDS = {
             'general': [
                 { name: 'BBC News', url: 'http://feeds.bbci.co.uk/news/rss.xml' },
-                { name: 'Reuters', url: 'https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best' }
+                { name: 'NYT', url: 'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml' }
             ],
             'technology': [
                 { name: 'TechCrunch', url: 'https://techcrunch.com/feed/' },
-                { name: 'The Verge', url: 'https://www.theverge.com/rss/index.xml' }
+                { name: 'Ars Technica', url: 'https://feeds.arstechnica.com/arstechnica/index' }
             ],
             'sports': [
-                { name: 'ESPN', url: 'https://www.espn.com/espn/rss/news' }
+                { name: 'ESPN', url: 'https://www.espn.com/espn/rss/news' },
+                { name: 'CBS Sports', url: 'https://www.cbssports.com/rss/headlines' }
             ],
             'business': [
-                { name: 'Reuters Business', url: 'https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best' }
+                { name: 'MarketWatch', url: 'https://feeds.marketwatch.com/marketwatch/topstories/' }
             ],
             'science': [
                 { name: 'Science Daily', url: 'https://www.sciencedaily.com/rss/all.xml' }
@@ -209,19 +210,44 @@
 
         async function fetchRSSFeed(feed) {
             try {
-                // Using rss2json service to parse RSS feeds
-                const rss2jsonUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&api_key=public&count=10`;
-                const response = await fetch(rss2jsonUrl);
+                // Try multiple RSS to JSON services
+                const services = [
+                    `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=10`,
+                    `https://api.allorigins.win/get?url=${encodeURIComponent(feed.url)}`
+                ];
                 
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                let data = null;
+                let articles = [];
                 
-                const data = await response.json();
-                
-                if (data.status !== 'ok') {
-                    throw new Error('RSS feed error');
+                // Try rss2json first
+                try {
+                    const response = await fetch(services[0]);
+                    if (response.ok) {
+                        const json = await response.json();
+                        if (json.status === 'ok' && json.items) {
+                            articles = json.items;
+                        }
+                    }
+                } catch (e) {
+                    console.log('RSS2JSON failed, trying alternative...');
                 }
                 
-                const articles = data.items || [];
+                // If rss2json failed, try allorigins and parse XML
+                if (articles.length === 0) {
+                    const response = await fetch(services[1]);
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    
+                    const json = await response.json();
+                    const parser = new DOMParser();
+                    const xml = parser.parseFromString(json.contents, 'text/xml');
+                    
+                    const items = xml.querySelectorAll('item');
+                    articles = Array.from(items).slice(0, 10).map(item => ({
+                        title: item.querySelector('title')?.textContent || '',
+                        link: item.querySelector('link')?.textContent || '',
+                        pubDate: item.querySelector('pubDate')?.textContent || ''
+                    }));
+                }
                 
                 if (articles.length === 0) {
                     return '';
