@@ -252,10 +252,13 @@
             );
         }
 
-        function renderStandingsRow(entry, rank, isPriority) {
+        function renderStandingsRow(entry, isPriority) {
             const team = entry.team;
             const stats = entry.stats || [];
             
+            // Get actual rank from stats
+            const rank = stats.find(s => s.name === 'rank' || s.name === 'playoffSeed')?.displayValue || 
+                         stats.find(s => s.name === 'divisionrank')?.displayValue || '-';
             const wins = stats.find(s => s.name === 'wins' || s.name === 'gamesPlayed')?.displayValue || '-';
             const losses = stats.find(s => s.name === 'losses')?.displayValue || '-';
             const pct = stats.find(s => s.name === 'winPercent' || s.name === 'winpercent')?.displayValue || '-';
@@ -295,10 +298,10 @@
                             <div class="col-pct">PCT</div>
                             <div class="col-gb">GB</div>
                         </div>
-                        ${standings.map((entry, idx) => {
+                        ${standings.map((entry) => {
                             const teamName = entry.team?.displayName || entry.team?.abbreviation || '';
                             const isPriority = isPriorityTeam(teamName);
-                            return renderStandingsRow(entry, idx + 1, isPriority);
+                            return renderStandingsRow(entry, isPriority);
                         }).join('')}
                     </div>
                 </div>
