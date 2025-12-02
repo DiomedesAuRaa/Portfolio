@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <title>News Headlines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background: #000;
+            color: #fff;
+            padding: 5px;
+            max-width: 240px;
+        }
+        
+        h1 {
+            font-size: 16px;
+            text-align: center;
+            padding: 8px 0;
+            border-bottom: 2px solid #fff;
+            margin-bottom: 8px;
+        }
+        
+        .news-section {
+            margin-bottom: 12px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+        
+        .source-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #f90;
+            margin-bottom: 5px;
+            padding: 3px 0;
+        }
+        
+        .article {
+            background: #111;
+            margin: 4px 0;
+            padding: 5px;
+            border-left: 3px solid #f90;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        
+        .article:active {
+            background: #222;
+        }
+        
+        .article-title {
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: #fff;
+            line-height: 1.3;
+        }
+        
+        .article-time {
+            font-size: 10px;
+            color: #888;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 10px;
+            color: #f00;
+            font-size: 11px;
+        }
+        
+        .refresh-btn {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            background: #f90;
+            color: #000;
+            border: none;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .last-update {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin: 8px 0;
+        }
+        
+        .category-tabs {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        
+        .tab {
+            padding: 5px 10px;
+            background: #222;
+            border: 1px solid #444;
+            color: #aaa;
+            font-size: 11px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        
+        .tab.active {
+            background: #f90;
+            color: #000;
+            border-color: #f90;
+        }
+    </style>
+</head>
+<body>
+    <h1>📰 NEWS</h1>
+    <div class="last-update" id="currentDate"></div>
+    
+    <div class="category-tabs">
+        <button class="tab active" data-category="general">Top</button>
+        <button class="tab" data-category="technology">Tech</button>
+        <button class="tab" data-category="sports">Sports</button>
+        <button class="tab" data-category="business">Business</button>
+        <button class="tab" data-category="science">Science</button>
+    </div>
+    
+    <button class="refresh-btn" onclick="loadNews()">↻ REFRESH</button>
+    <div class="last-update" id="lastUpdate"></div>
+    
+    <div id="content">
+        <div class="loading">Loading news...</div>
+    </div>
+
+    <script>
+        let currentCategory = 'general';
+        
+        // NewsAPI.org - Free tier: 100 requests/day
+        const NEWS_API_KEY = 'ae8c10c62e4c4d9dbbe35fcba0db8c49'; // Public demo key - replace with your own
+        const NEWS_API_URL = 'https://newsapi.org/v2/top-headlines';
+        
+        // Alternative: Use RSS feeds via RSS2JSON (no API key needed)
+        const RSS_FEEDS = {
+            'general': [
+                { name: 'BBC News', url: 'http://feeds.bbci.co.uk/news/rss.xml' },
+                { name: 'Reuters', url: 'https://www.reutersagency.com/feed/?taxonomy=best-topics&post_type=best' }
+            ],
+            'technology': [
+                { name: 'TechCrunch', url: 'https://techcrunch.com/feed/' },
+                { name: 'The Verge', url: 'https://www.theverge.com/rss/index.xml' }
+            ],
+            'sports': [
+                { name: 'ESPN', url: 'https://www.espn.com/espn/rss/news' }
+            ],
+            'business': [
+                { name: 'Reuters Business', url: 'https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best' }
+            ],
+            'science': [
+                { name: 'Science Daily', url: 'https://www.sciencedaily.com/rss/all.xml' }
+            ]
+        };
+
+        function formatTime(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const diffMs = now - date;
+            const diffMins = Math.floor(diffMs / 60000);
+            const diffHours = Math.floor(diffMins / 60);
+            const diffDays = Math.floor(diffHours / 24);
+            
+            if (diffMins < 60) {
+                return `${diffMins}m ago`;
+            } else if (diffHours < 24) {
+                return `${diffHours}h ago`;
+            } else if (diffDays < 7) {
+                return `${diffDays}d ago`;
+            } else {
+                return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            }
+        }
+
+        function renderArticle(article, sourceName = '') {
+            const title = article.title || article.description || 'No title';
+            const url = article.link || article.url || '#';
+            const time = article.pubDate || article.publishedAt || '';
+            const source = sourceName || article.source?.name || '';
+            
+            return `
+                <a href="${url}" target="_blank" class="article">
+                    <div class="article-title">${title}</div>
+                    <div class="article-time">${source ? source + ' • ' : ''}${time ? formatTime(time) : ''}</div>
+                </a>
+            `;
+        }
+
+        async function fetchRSSFeed(feed) {
+            try {
+                // Using rss2json service to parse RSS feeds
+                const rss2jsonUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&api_key=public&count=10`;
+                const response = await fetch(rss2jsonUrl);
+                
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const data = await response.json();
+                
+                if (data.status !== 'ok') {
+                    throw new Error('RSS feed error');
+                }
+                
+                const articles = data.items || [];
+                
+                if (articles.length === 0) {
+                    return '';
+                }
+                
+                return `
+                    <div class="news-section">
+                        <div class="source-title">${feed.name}</div>
+                        ${articles.slice(0, 8).map(article => renderArticle(article, '')).join('')}
+                    </div>
+                `;
+            } catch (error) {
+                console.error(`Error fetching ${feed.name}:`, error);
+                return `
+                    <div class="news-section">
+                        <div class="source-title">${feed.name}</div>
+                        <div class="error">Unable to load</div>
+                    </div>
+                `;
+            }
+        }
+
+        async function loadNews() {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading news...</div>';
+            
+            try {
+                const feeds = RSS_FEEDS[currentCategory] || RSS_FEEDS['general'];
+                
+                const results = await Promise.all(
+                    feeds.map(feed => fetchRSSFeed(feed))
+                );
+                
+                content.innerHTML = results.filter(h => h).join('');
+                
+                const now = new Date();
+                const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+                document.getElementById('currentDate').textContent = 
+                    now.toLocaleDateString('en-US', dateOptions);
+                document.getElementById('lastUpdate').textContent = 
+                    `Updated: ${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
+                
+            } catch (error) {
+                content.innerHTML = '<div class="error">Failed to load news. Check connection.</div>';
+            }
+        }
+
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                currentCategory = this.dataset.category;
+                loadNews();
+            });
+        });
+
+        // Load news on page load
+        loadNews();
+        
+        // Auto-refresh every 10 minutes
+        setInterval(loadNews, 600000);
+    </script>
+</body>
+</html>
