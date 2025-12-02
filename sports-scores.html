@@ -180,18 +180,40 @@
             return `${displayHours}:${minutes} ${ampm}`;
         }
 
+        function formatDate(timestamp) {
+            const date = new Date(timestamp);
+            const today = new Date();
+            const yesterday = new Date(today);
+            yesterday.setDate(yesterday.getDate() - 1);
+            
+            // Check if same day
+            if (date.toDateString() === today.toDateString()) {
+                return '';
+            } else if (date.toDateString() === yesterday.toDateString()) {
+                return 'Yesterday';
+            } else {
+                // Return short date format (e.g., "Nov 15")
+                const month = date.toLocaleDateString('en-US', { month: 'short' });
+                const day = date.getDate();
+                return `${month} ${day}`;
+            }
+        }
+        
         function getGameStatus(competition) {
             const status = competition.status;
             const statusType = status.type.name;
+            const gameDate = formatDate(competition.date);
             
             if (statusType === 'STATUS_IN_PROGRESS') {
                 const period = status.period ? `${status.type.shortDetail || 'Q' + status.period}` : '';
                 const clock = status.displayClock || '';
                 return `<span class="live">● LIVE - ${period} ${clock}</span>`.trim();
             } else if (statusType === 'STATUS_FINAL') {
-                return status.type.shortDetail || 'FINAL';
+                const finalText = status.type.shortDetail || 'FINAL';
+                return gameDate ? `${finalText} - ${gameDate}` : finalText;
             } else if (statusType === 'STATUS_SCHEDULED') {
-                return formatTime(competition.date);
+                const time = formatTime(competition.date);
+                return gameDate ? `${gameDate} ${time}` : time;
             }
             return status.type.shortDetail || 'Scheduled';
         }
