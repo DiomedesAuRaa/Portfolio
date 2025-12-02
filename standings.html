@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <title>Sports Standings</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background: #000;
+            color: #fff;
+            padding: 5px;
+            max-width: 240px;
+        }
+        
+        h1 {
+            font-size: 16px;
+            text-align: center;
+            padding: 8px 0;
+            border-bottom: 2px solid #fff;
+            margin-bottom: 8px;
+        }
+        
+        .sport-tabs {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        
+        .tab {
+            padding: 5px 10px;
+            background: #222;
+            border: 1px solid #444;
+            color: #aaa;
+            font-size: 11px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        
+        .tab.active {
+            background: #0ff;
+            color: #000;
+            border-color: #0ff;
+        }
+        
+        .division-section {
+            margin-bottom: 12px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+        
+        .division-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #0ff;
+            margin-bottom: 5px;
+            padding: 3px 0;
+        }
+        
+        .standings-table {
+            width: 100%;
+            font-size: 10px;
+        }
+        
+        .standings-header {
+            display: flex;
+            background: #222;
+            padding: 4px 2px;
+            font-weight: bold;
+            border-bottom: 1px solid #444;
+        }
+        
+        .standings-row {
+            display: flex;
+            padding: 3px 2px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .standings-row:hover {
+            background: #111;
+        }
+        
+        .standings-row.priority {
+            background: #1a1a00;
+            border-left: 3px solid #ffd700;
+        }
+        
+        .col-rank {
+            width: 20px;
+            text-align: center;
+        }
+        
+        .col-team {
+            flex: 1;
+            padding-left: 5px;
+        }
+        
+        .col-wins {
+            width: 25px;
+            text-align: center;
+        }
+        
+        .col-losses {
+            width: 25px;
+            text-align: center;
+        }
+        
+        .col-pct {
+            width: 35px;
+            text-align: center;
+        }
+        
+        .col-gb {
+            width: 30px;
+            text-align: center;
+        }
+        
+        .team-priority {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 10px;
+            color: #f00;
+            font-size: 11px;
+        }
+        
+        .refresh-btn {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            background: #0ff;
+            color: #000;
+            border: none;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .last-update {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 STANDINGS</h1>
+    <div class="last-update" id="currentDate"></div>
+    
+    <div class="sport-tabs">
+        <button class="tab active" data-sport="nhl">NHL</button>
+        <button class="tab" data-sport="nba">NBA</button>
+        <button class="tab" data-sport="nfl">NFL</button>
+        <button class="tab" data-sport="mlb">MLB</button>
+        <button class="tab" data-sport="ncaa">NCAA FB</button>
+    </div>
+    
+    <button class="refresh-btn" onclick="loadStandings()">↻ REFRESH</button>
+    <div class="last-update" id="lastUpdate"></div>
+    
+    <div id="content">
+        <div class="loading">Loading standings...</div>
+    </div>
+
+    <script>
+        const API_BASE = 'https://site.api.espn.com/apis/v2/sports';
+        
+        let currentSport = 'nhl';
+        
+        const PRIORITY_TEAMS = [
+            'DET', 'Detroit', 'Lions', 'Pistons', 'Tigers', 'Red Wings',
+            'MICH', 'Michigan', 'Wolverines'
+        ];
+        
+        const SPORTS_CONFIG = {
+            'nhl': {
+                name: 'NHL',
+                url: `${API_BASE}/hockey/nhl/standings`,
+                color: '#c8102e'
+            },
+            'nba': {
+                name: 'NBA',
+                url: `${API_BASE}/basketball/nba/standings`,
+                color: '#ff6b35'
+            },
+            'nfl': {
+                name: 'NFL',
+                url: `${API_BASE}/football/nfl/standings`,
+                color: '#004d40'
+            },
+            'mlb': {
+                name: 'MLB',
+                url: `${API_BASE}/baseball/mlb/standings`,
+                color: '#003087'
+            },
+            'ncaa': {
+                name: 'NCAA Football',
+                url: `${API_BASE}/football/college-football/standings`,
+                color: '#8b0000'
+            }
+        };
+
+        function isPriorityTeam(teamName) {
+            return PRIORITY_TEAMS.some(priority => 
+                teamName.toUpperCase().includes(priority.toUpperCase())
+            );
+        }
+
+        function renderStandingsRow(entry, rank, isPriority) {
+            const team = entry.team;
+            const stats = entry.stats || [];
+            
+            const wins = stats.find(s => s.name === 'wins' || s.name === 'gamesPlayed')?.displayValue || '-';
+            const losses = stats.find(s => s.name === 'losses')?.displayValue || '-';
+            const pct = stats.find(s => s.name === 'winPercent' || s.name === 'winpercent')?.displayValue || '-';
+            const gb = stats.find(s => s.name === 'gamesBehind')?.displayValue || '-';
+            
+            const teamName = team.abbreviation || team.shortDisplayName || team.displayName;
+            const priorityClass = isPriority ? 'priority' : '';
+            const teamClass = isPriority ? 'team-priority' : '';
+            
+            return `
+                <div class="standings-row ${priorityClass}">
+                    <div class="col-rank">${rank}</div>
+                    <div class="col-team ${teamClass}">${teamName}</div>
+                    <div class="col-wins">${wins}</div>
+                    <div class="col-losses">${losses}</div>
+                    <div class="col-pct">${pct}</div>
+                    <div class="col-gb">${gb}</div>
+                </div>
+            `;
+        }
+
+        function renderDivision(division) {
+            const divisionName = division.name || division.abbreviation || 'Division';
+            const standings = division.standings?.entries || [];
+            
+            if (standings.length === 0) return '';
+            
+            return `
+                <div class="division-section">
+                    <div class="division-title">${divisionName}</div>
+                    <div class="standings-table">
+                        <div class="standings-header">
+                            <div class="col-rank">#</div>
+                            <div class="col-team">TEAM</div>
+                            <div class="col-wins">W</div>
+                            <div class="col-losses">L</div>
+                            <div class="col-pct">PCT</div>
+                            <div class="col-gb">GB</div>
+                        </div>
+                        ${standings.map((entry, idx) => {
+                            const teamName = entry.team?.displayName || entry.team?.abbreviation || '';
+                            const isPriority = isPriorityTeam(teamName);
+                            return renderStandingsRow(entry, idx + 1, isPriority);
+                        }).join('')}
+                    </div>
+                </div>
+            `;
+        }
+
+        async function fetchStandings(sport) {
+            try {
+                const config = SPORTS_CONFIG[sport];
+                const response = await fetch(config.url);
+                
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const data = await response.json();
+                
+                // Different sports structure their standings data differently
+                let divisions = [];
+                
+                if (data.children) {
+                    // NHL/NBA format
+                    divisions = data.children;
+                } else if (data.standings) {
+                    // Alternative format
+                    divisions = data.standings;
+                }
+                
+                if (divisions.length === 0) {
+                    return '<div class="error">No standings available</div>';
+                }
+                
+                return divisions.map(div => renderDivision(div)).join('');
+                
+            } catch (error) {
+                console.error(`Error fetching standings:`, error);
+                return '<div class="error">Unable to load standings</div>';
+            }
+        }
+
+        async function loadStandings() {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading standings...</div>';
+            
+            try {
+                const html = await fetchStandings(currentSport);
+                content.innerHTML = html;
+                
+                const now = new Date();
+                const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+                document.getElementById('currentDate').textContent = 
+                    now.toLocaleDateString('en-US', dateOptions);
+                document.getElementById('lastUpdate').textContent = 
+                    `Updated: ${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
+                
+            } catch (error) {
+                content.innerHTML = '<div class="error">Failed to load standings. Check connection.</div>';
+            }
+        }
+
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                currentSport = this.dataset.sport;
+                loadStandings();
+            });
+        });
+
+        // Load standings on page load
+        loadStandings();
+    </script>
+</body>
+</html>
