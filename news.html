@@ -132,7 +132,8 @@
     <div class="last-update" id="currentDate"></div>
     
     <div class="category-tabs">
-        <button class="tab active" data-category="general">Top</button>
+        <button class="tab active" data-category="top">Top Stories</button>
+        <button class="tab" data-category="general">General</button>
         <button class="tab" data-category="technology">Tech</button>
         <button class="tab" data-category="sports">Sports</button>
         <button class="tab" data-category="business">Business</button>
@@ -147,7 +148,7 @@
     </div>
 
     <script>
-        let currentCategory = 'general';
+        let currentCategory = 'top';
         
         // NewsAPI.org - Free tier: 100 requests/day
         const NEWS_API_KEY = 'ae8c10c62e4c4d9dbbe35fcba0db8c49'; // Public demo key - replace with your own
@@ -155,6 +156,9 @@
         
         // Alternative: Use RSS feeds via RSS2JSON (no API key needed)
         const RSS_FEEDS = {
+            'top': [
+                { name: 'Top Stories', url: 'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml', limit: 5 }
+            ],
             'general': [
                 { name: 'BBC News', url: 'http://feeds.bbci.co.uk/news/rss.xml' },
                 { name: 'NYT', url: 'https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml' }
@@ -210,6 +214,8 @@
 
         async function fetchRSSFeed(feed) {
             try {
+                const maxArticles = feed.limit || 8;
+                
                 // Try multiple RSS to JSON services
                 const services = [
                     `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}&count=10`,
@@ -253,10 +259,12 @@
                     return '';
                 }
                 
+                const displayArticles = articles.slice(0, maxArticles);
+                
                 return `
                     <div class="news-section">
                         <div class="source-title">${feed.name}</div>
-                        ${articles.slice(0, 8).map(article => renderArticle(article, '')).join('')}
+                        ${displayArticles.map(article => renderArticle(article, '')).join('')}
                     </div>
                 `;
             } catch (error) {
