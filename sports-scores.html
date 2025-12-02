@@ -20,12 +20,35 @@
             max-width: 240px;
         }
         
+        .header {
+            position: sticky;
+            top: 0;
+            background: #000;
+            z-index: 100;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #fff;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 5px 0;
+            background: #222;
+            color: #0ff;
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 3px;
+        }
+        
+        .back-btn:active {
+            background: #333;
+        }
+        
         h1 {
             font-size: 16px;
             text-align: center;
             padding: 8px 0;
-            border-bottom: 2px solid #fff;
-            margin-bottom: 8px;
+            margin: 0;
         }
         
         .sport-section {
@@ -65,6 +88,22 @@
         .game-status.live {
             color: #f00;
             font-weight: bold;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        
+        .game-status.live::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: #f00;
+            border-radius: 50%;
+            margin-right: 4px;
+            animation: pulse 2s infinite;
         }
         
         .team-row {
@@ -124,8 +163,11 @@
     </style>
 </head>
 <body>
-    <h1>🏆 SPORTS SCORES</h1>
-    <div class="last-update" id="currentDate"></div>
+    <div class="header">
+        <a href="home.html" class="back-btn">← Back</a>
+        <h1>🏆 SPORTS SCORES</h1>
+        <div class="last-update" id="currentDate"></div>
+    </div>
     
     <button class="refresh-btn" onclick="loadScores()">↻ REFRESH</button>
     <div class="last-update" id="lastUpdate"></div>
@@ -322,8 +364,51 @@
             }
         }
 
-        async function loadScores() {
+        // Cache management
+        const CACHE_KEY = 'sports_scores_cache';
+        const CACHE_DURATION = 2 * 60 * 1000; // 2 minutes
+        
+        function getCachedData() {
+            try {
+                const cached = localStorage.getItem(CACHE_KEY);
+                if (cached) {
+                    const data = JSON.parse(cached);
+                    if (Date.now() - data.timestamp < CACHE_DURATION) {
+                        return data.content;
+                    }
+                }
+            } catch (e) {
+                console.error('Cache error:', e);
+            }
+            return null;
+        }
+        
+        function setCachedData(content) {
+            try {
+                localStorage.setItem(CACHE_KEY, JSON.stringify({
+                    content: content,
+                    timestamp: Date.now()
+                }));
+            } catch (e) {
+                console.error('Cache save error:', e);
+            }
+        }
+        
+        async function loadScores(forceRefresh = false) {
             const content = document.getElementById('content');
+            
+            // Show cached data immediately if available
+            if (!forceRefresh) {
+                const cached = getCachedData();
+                if (cached) {
+                    content.innerHTML = cached;
+                    updateTimestamp();
+                    // Refresh in background
+                    loadScores(true);
+                    return;
+                }
+            }
+            
             content.innerHTML = '<div class="loading">Loading scores...</div>';
             
             try {
@@ -378,23 +463,43 @@
                 
                 content.innerHTML = html;
                 
-                const now = new Date();
-                const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
-                document.getElementById('currentDate').textContent = 
-                    now.toLocaleDateString('en-US', dateOptions);
-                document.getElementById('lastUpdate').textContent = 
-                    `Updated: ${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
+                // Cache the results
+                if (forceRefresh) {
+                    setCachedData(html);
+                }
+                
+                updateTimestamp();
                 
             } catch (error) {
                 content.innerHTML = '<div class="error">Failed to load scores. Check connection.</div>';
             }
         }
+        
+        function updateTimestamp() {
+            const now = new Date();
+            const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+            document.getElementById('currentDate').textContent = 
+                now.toLocaleDateString('en-US', dateOptions);
+            document.getElementById('lastUpdate').textContent = 
+                `Updated: ${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
+        }
 
+        // Keyboard navigation for flip phone D-pad
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === 'SoftRight') {
+                const refreshBtn = document.querySelector('.refresh-btn');
+                if (refreshBtn) refreshBtn.click();
+            }
+            if (e.key === 'SoftLeft' || e.key === 'Backspace') {
+                window.location.href = 'home.html';
+            }
+        });
+        
         // Load scores on page load
         loadScores();
         
         // Auto-refresh every 2 minutes
-        setInterval(loadScores, 120000);
+        setInterval(() => loadScores(true), 120000);
     </script>
 </body>
 </html>
