@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <title>Sports Scores</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background: #000;
+            color: #fff;
+            padding: 5px;
+            max-width: 240px;
+        }
+        
+        h1 {
+            font-size: 16px;
+            text-align: center;
+            padding: 8px 0;
+            border-bottom: 2px solid #fff;
+            margin-bottom: 8px;
+        }
+        
+        .sport-section {
+            margin-bottom: 12px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+        
+        .sport-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #0ff;
+            margin-bottom: 5px;
+            padding: 3px 0;
+        }
+        
+        .game {
+            background: #111;
+            margin: 4px 0;
+            padding: 5px;
+            border-left: 3px solid #0ff;
+        }
+        
+        .game-status {
+            font-size: 10px;
+            color: #888;
+            margin-bottom: 2px;
+        }
+        
+        .game-status.live {
+            color: #f00;
+            font-weight: bold;
+        }
+        
+        .team-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 0;
+            font-size: 11px;
+        }
+        
+        .team-name {
+            flex: 1;
+        }
+        
+        .score {
+            font-weight: bold;
+            font-size: 13px;
+            min-width: 25px;
+            text-align: right;
+        }
+        
+        .winner {
+            color: #0f0;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+        
+        .error {
+            text-align: center;
+            padding: 10px;
+            color: #f00;
+            font-size: 11px;
+        }
+        
+        .refresh-btn {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            background: #0ff;
+            color: #000;
+            border: none;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        .last-update {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏆 SPORTS SCORES</h1>
+    
+    <button class="refresh-btn" onclick="loadScores()">↻ REFRESH</button>
+    <div class="last-update" id="lastUpdate"></div>
+    
+    <div id="content">
+        <div class="loading">Loading scores...</div>
+    </div>
+
+    <script>
+        // Free sports API endpoint - ESPN's public API
+        const API_BASE = 'https://site.api.espn.com/apis/site/v2/sports';
+        
+        // Detroit/Michigan teams to prioritize
+        const PRIORITY_TEAMS = [
+            'DET', 'Detroit', 'Lions', 'Pistons', 'Tigers', 'Red Wings',
+            'MICH', 'Michigan', 'Wolverines'
+        ];
+        
+        const SPORTS_CONFIG = {
+            'NBA': {
+                url: `${API_BASE}/basketball/nba/scoreboard`,
+                color: '#ff6b35'
+            },
+            'NFL': {
+                url: `${API_BASE}/football/nfl/scoreboard`,
+                color: '#004d40'
+            },
+            'NCAA FB': {
+                url: `${API_BASE}/football/college-football/scoreboard`,
+                color: '#8b0000'
+            },
+            'MLB': {
+                url: `${API_BASE}/baseball/mlb/scoreboard`,
+                color: '#003087'
+            },
+            'SOCCER': {
+                url: `${API_BASE}/soccer/usa.1/scoreboard`,
+                color: '#00a651'
+            }
+        };
+
+        function formatTime(timestamp) {
+            const date = new Date(timestamp);
+            const hours = date.getHours();
+            const minutes = date.getMinutes().toString().padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            const displayHours = hours % 12 || 12;
+            return `${displayHours}:${minutes} ${ampm}`;
+        }
+
+        function getGameStatus(competition) {
+            const status = competition.status;
+            const statusType = status.type.name;
+            
+            if (statusType === 'STATUS_IN_PROGRESS') {
+                return `<span class="live">● LIVE - ${status.displayClock}</span>`;
+            } else if (statusType === 'STATUS_FINAL') {
+                return 'FINAL';
+            } else if (statusType === 'STATUS_SCHEDULED') {
+                return formatTime(competition.date);
+            }
+            return status.type.shortDetail || 'Scheduled';
+        }
+
+        function isPriorityTeam(team) {
+            const teamName = team.team.abbreviation || team.team.shortDisplayName || team.team.displayName || '';
+            return PRIORITY_TEAMS.some(priority => 
+                teamName.toUpperCase().includes(priority.toUpperCase())
+            );
+        }
+        
+        function renderGame(competition, isPriority = false) {
+            const homeTeam = competition.competitors.find(t => t.homeAway === 'home');
+            const awayTeam = competition.competitors.find(t => t.homeAway === 'away');
+            
+            const homeWinner = homeTeam.winner;
+            const awayWinner = awayTeam.winner;
+            
+            const status = getGameStatus(competition);
+            
+            const priorityBorder = isPriority ? 'border-left: 3px solid #ffd700; background: #1a1a00;' : '';
+            const priorityLabel = isPriority ? '<span style="color: #ffd700; font-weight: bold;">⭐ </span>' : '';
+            
+            return `
+                <div class="game" style="${priorityBorder}">
+                    <div class="game-status ${competition.status.type.name === 'STATUS_IN_PROGRESS' ? 'live' : ''}">${priorityLabel}${status}</div>
+                    <div class="team-row">
+                        <span class="team-name ${awayWinner ? 'winner' : ''}">${awayTeam.team.abbreviation || awayTeam.team.shortDisplayName}</span>
+                        <span class="score ${awayWinner ? 'winner' : ''}">${awayTeam.score || '-'}</span>
+                    </div>
+                    <div class="team-row">
+                        <span class="team-name ${homeWinner ? 'winner' : ''}">${homeTeam.team.abbreviation || homeTeam.team.shortDisplayName}</span>
+                        <span class="score ${homeWinner ? 'winner' : ''}">${homeTeam.score || '-'}</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        async function fetchSportScores(sportName, config) {
+            try {
+                const response = await fetch(config.url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const data = await response.json();
+                const events = data.events || [];
+                
+                if (events.length === 0) {
+                    return {
+                        priorityGames: '',
+                        regularGames: `
+                            <div class="sport-section">
+                                <div class="sport-title" style="border-left: 3px solid ${config.color}; padding-left: 5px;">${sportName}</div>
+                                <div style="padding: 5px; color: #666; font-size: 11px;">No games today</div>
+                            </div>
+                        `
+                    };
+                }
+                
+                // Separate priority and regular games
+                const priorityGames = [];
+                const regularGames = [];
+                
+                events.slice(0, 15).forEach(event => {
+                    const competition = event.competitions[0];
+                    const hasPriorityTeam = competition.competitors.some(isPriorityTeam);
+                    
+                    if (hasPriorityTeam) {
+                        priorityGames.push(competition);
+                    } else {
+                        regularGames.push(competition);
+                    }
+                });
+                
+                const priorityHtml = priorityGames.length > 0 ? `
+                    <div class="sport-section">
+                        <div class="sport-title" style="border-left: 3px solid #ffd700; padding-left: 5px;">⭐ ${sportName} - DETROIT/MICHIGAN</div>
+                        ${priorityGames.map(comp => renderGame(comp, true)).join('')}
+                    </div>
+                ` : '';
+                
+                const regularHtml = regularGames.length > 0 ? `
+                    <div class="sport-section">
+                        <div class="sport-title" style="border-left: 3px solid ${config.color}; padding-left: 5px;">${sportName}</div>
+                        ${regularGames.slice(0, 10).map(comp => renderGame(comp, false)).join('')}
+                    </div>
+                ` : '';
+                
+                return {
+                    priorityGames: priorityHtml,
+                    regularGames: regularHtml
+                };
+            } catch (error) {
+                console.error(`Error fetching ${sportName}:`, error);
+                return {
+                    priorityGames: '',
+                    regularGames: `
+                        <div class="sport-section">
+                            <div class="sport-title" style="border-left: 3px solid ${config.color}; padding-left: 5px;">${sportName}</div>
+                            <div class="error">Unable to load</div>
+                        </div>
+                    `
+                };
+            }
+        }
+
+        async function loadScores() {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading scores...</div>';
+            
+            try {
+                const results = await Promise.all(
+                    Object.entries(SPORTS_CONFIG).map(([sport, config]) => 
+                        fetchSportScores(sport, config)
+                    )
+                );
+                
+                // Separate priority and regular games
+                const priorityGamesHtml = results.map(r => r.priorityGames).filter(h => h).join('');
+                const regularGamesHtml = results.map(r => r.regularGames).filter(h => h).join('');
+                
+                // Priority games first, then regular games
+                content.innerHTML = priorityGamesHtml + regularGamesHtml;
+                
+                const now = new Date();
+                document.getElementById('lastUpdate').textContent = 
+                    `Updated: ${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
+                
+            } catch (error) {
+                content.innerHTML = '<div class="error">Failed to load scores. Check connection.</div>';
+            }
+        }
+
+        // Load scores on page load
+        loadScores();
+        
+        // Auto-refresh every 2 minutes
+        setInterval(loadScores, 120000);
+    </script>
+</body>
+</html>
