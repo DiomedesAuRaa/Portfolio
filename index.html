@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiomedesAuRaa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00d4ff, #0ff, #00ffa3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-bottom: 50px;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn-sports {
+            border-color: #ffd700;
+        }
+        
+        .btn-sports:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: #ffd700;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        
+        .btn-portfolio {
+            border-color: #00d4ff;
+        }
+        
+        .btn-portfolio:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+        
+        .btn-contact {
+            border-color: #00ffa3;
+        }
+        
+        .btn-contact:hover {
+            background: rgba(0, 255, 163, 0.1);
+            border-color: #00ffa3;
+            box-shadow: 0 10px 30px rgba(0, 255, 163, 0.3);
+        }
+        
+        .icon {
+            margin-right: 10px;
+            font-size: 1.4em;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .btn {
+                padding: 15px 30px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DiomedesAuRaa</h1>
+        <p class="tagline">What's good.</p>
+        
+        <div class="buttons">
+            <a href="sports-scores.html" class="btn btn-sports">
+                <span class="icon">🏆</span>
+                Sports Scores
+            </a>
+            
+            <a href="https://github.com/DiomedesAuRaa" class="btn btn-portfolio" target="_blank">
+                <span class="icon">💼</span>
+                GitHub Portfolio
+            </a>
+            
+            <a href="contact.html" class="btn btn-contact">
+                <span class="icon">📧</span>
+                Contact Me
+            </a>
+        </div>
+    </div>
+</body>
+</html>
