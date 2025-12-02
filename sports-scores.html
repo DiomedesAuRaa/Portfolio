@@ -118,6 +118,7 @@
 </head>
 <body>
     <h1>🏆 SPORTS SCORES</h1>
+    <div class="last-update" id="currentDate"></div>
     
     <button class="refresh-btn" onclick="loadScores()">↻ REFRESH</button>
     <div class="last-update" id="lastUpdate"></div>
@@ -302,6 +303,9 @@
                 content.innerHTML = priorityGamesHtml + regularGamesHtml;
                 
                 const now = new Date();
+                const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+                document.getElementById('currentDate').textContent = 
+                    now.toLocaleDateString('en-US', dateOptions);
                 document.getElementById('lastUpdate').textContent = 
                     `Updated: ${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;
                 
