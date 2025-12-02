@@ -225,7 +225,7 @@
             );
         }
         
-        function renderGame(competition, isPriority = false) {
+        function renderGame(competition, isPriority = false, showSport = false) {
             const homeTeam = competition.competitors.find(t => t.homeAway === 'home');
             const awayTeam = competition.competitors.find(t => t.homeAway === 'away');
             
@@ -236,13 +236,14 @@
             
             const priorityBorder = isPriority ? 'border-left: 3px solid #ffd700; background: #1a1a00;' : '';
             const priorityLabel = isPriority ? '<span style="color: #ffd700; font-weight: bold;">⭐ </span>' : '';
+            const sportLabel = showSport && competition._sportName ? `<span style="color: #0ff; font-size: 10px;">[${competition._sportName}]</span> ` : '';
             
             // Get ESPN game link
             const gameLink = competition.link || competition.links?.[0]?.href || '#';
             
             return `
                 <a href="${gameLink}" target="_blank" class="game" style="${priorityBorder}">
-                    <div class="game-status ${competition.status.type.name === 'STATUS_IN_PROGRESS' ? 'live' : ''}">${priorityLabel}${status}</div>
+                    <div class="game-status ${competition.status.type.name === 'STATUS_IN_PROGRESS' ? 'live' : ''}">${priorityLabel}${sportLabel}${status}</div>
                     <div class="team-row">
                         <span class="team-name ${awayWinner ? 'winner' : ''}">${awayTeam.team.abbreviation || awayTeam.team.shortDisplayName}</span>
                         <span class="score ${awayWinner ? 'winner' : ''}">${awayTeam.score || '-'}</span>
@@ -265,13 +266,11 @@
                 
                 if (events.length === 0) {
                     return {
-                        priorityGames: '',
-                        regularGames: `
-                            <div class="sport-section">
-                                <div class="sport-title" style="border-left: 3px solid ${config.color}; padding-left: 5px;">${sportName}</div>
-                                <div style="padding: 5px; color: #666; font-size: 11px;">No games today</div>
-                            </div>
-                        `
+                        priorityGames: [],
+                        regularGames: [],
+                        hasGames: false,
+                        sportName: sportName,
+                        color: config.color
                     };
                 }
                 
@@ -281,6 +280,7 @@
                 
                 events.slice(0, 15).forEach(event => {
                     const competition = event.competitions[0];
+                    competition._sportName = sportName; // Add sport name to competition
                     const hasPriorityTeam = competition.competitors.some(isPriorityTeam);
                     
                     if (hasPriorityTeam) {
@@ -290,34 +290,22 @@
                     }
                 });
                 
-                const priorityHtml = priorityGames.length > 0 ? `
-                    <div class="sport-section">
-                        <div class="sport-title" style="border-left: 3px solid #ffd700; padding-left: 5px;">⭐ ${sportName} - DETROIT/MICHIGAN</div>
-                        ${priorityGames.map(comp => renderGame(comp, true)).join('')}
-                    </div>
-                ` : '';
-                
-                const regularHtml = regularGames.length > 0 ? `
-                    <div class="sport-section">
-                        <div class="sport-title" style="border-left: 3px solid ${config.color}; padding-left: 5px;">${sportName}</div>
-                        ${regularGames.slice(0, 10).map(comp => renderGame(comp, false)).join('')}
-                    </div>
-                ` : '';
-                
                 return {
-                    priorityGames: priorityHtml,
-                    regularGames: regularHtml
+                    priorityGames: priorityGames,
+                    regularGames: regularGames.slice(0, 10),
+                    hasGames: events.length > 0,
+                    sportName: sportName,
+                    color: config.color
                 };
             } catch (error) {
                 console.error(`Error fetching ${sportName}:`, error);
                 return {
-                    priorityGames: '',
-                    regularGames: `
-                        <div class="sport-section">
-                            <div class="sport-title" style="border-left: 3px solid ${config.color}; padding-left: 5px;">${sportName}</div>
-                            <div class="error">Unable to load</div>
-                        </div>
-                    `
+                    priorityGames: [],
+                    regularGames: [],
+                    hasGames: false,
+                    sportName: sportName,
+                    color: config.color,
+                    error: true
                 };
             }
         }
@@ -333,12 +321,50 @@
                     )
                 );
                 
-                // Separate priority and regular games
-                const priorityGamesHtml = results.map(r => r.priorityGames).filter(h => h).join('');
-                const regularGamesHtml = results.map(r => r.regularGames).filter(h => h).join('');
+                // Collect all priority games across all sports
+                const allPriorityGames = [];
+                results.forEach(result => {
+                    allPriorityGames.push(...result.priorityGames);
+                });
                 
-                // Priority games first, then regular games
-                content.innerHTML = priorityGamesHtml + regularGamesHtml;
+                // Build favorites section if there are any priority games
+                let html = '';
+                if (allPriorityGames.length > 0) {
+                    html += `
+                        <div class="sport-section">
+                            <div class="sport-title" style="border-left: 3px solid #ffd700; padding-left: 5px;">⭐ DETROIT/MICHIGAN FAVORITES</div>
+                            ${allPriorityGames.map(comp => renderGame(comp, true, true)).join('')}
+                        </div>
+                    `;
+                }
+                
+                // Build sections for each sport with regular games
+                results.forEach(result => {
+                    if (result.error) {
+                        html += `
+                            <div class="sport-section">
+                                <div class="sport-title" style="border-left: 3px solid ${result.color}; padding-left: 5px;">${result.sportName}</div>
+                                <div class="error">Unable to load</div>
+                            </div>
+                        `;
+                    } else if (result.regularGames.length > 0) {
+                        html += `
+                            <div class="sport-section">
+                                <div class="sport-title" style="border-left: 3px solid ${result.color}; padding-left: 5px;">${result.sportName}</div>
+                                ${result.regularGames.map(comp => renderGame(comp, false, false)).join('')}
+                            </div>
+                        `;
+                    } else if (!result.hasGames && allPriorityGames.length === 0) {
+                        html += `
+                            <div class="sport-section">
+                                <div class="sport-title" style="border-left: 3px solid ${result.color}; padding-left: 5px;">${result.sportName}</div>
+                                <div style="padding: 5px; color: #666; font-size: 11px;">No games today</div>
+                            </div>
+                        `;
+                    }
+                });
+                
+                content.innerHTML = html;
                 
                 const now = new Date();
                 const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
