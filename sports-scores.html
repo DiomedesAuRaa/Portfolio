@@ -238,11 +238,23 @@
             const priorityLabel = isPriority ? '<span style="color: #ffd700; font-weight: bold;">⭐ </span>' : '';
             const sportLabel = showSport && competition._sportName ? `<span style="color: #0ff; font-size: 10px;">[${competition._sportName}]</span> ` : '';
             
-            // Get ESPN game link
-            const gameLink = competition.link || competition.links?.[0]?.href || '#';
+            // Get ESPN game link - look for the gamecast link
+            let gameLink = '#';
+            if (competition.links) {
+                const gamecastLink = competition.links.find(link => link.text === 'Gamecast' || link.text === 'Game Info');
+                if (gamecastLink) {
+                    gameLink = gamecastLink.href;
+                } else if (competition.links[0]) {
+                    gameLink = competition.links[0].href;
+                }
+            }
+            
+            // If no valid link, make it non-clickable
+            const linkTag = gameLink !== '#' ? `<a href="${gameLink}" target="_blank" rel="noopener noreferrer" class="game" style="${priorityBorder}">` : `<div class="game" style="${priorityBorder}">`;
+            const closeTag = gameLink !== '#' ? '</a>' : '</div>';
             
             return `
-                <a href="${gameLink}" target="_blank" class="game" style="${priorityBorder}">
+                ${linkTag}
                     <div class="game-status ${competition.status.type.name === 'STATUS_IN_PROGRESS' ? 'live' : ''}">${priorityLabel}${sportLabel}${status}</div>
                     <div class="team-row">
                         <span class="team-name ${awayWinner ? 'winner' : ''}">${awayTeam.team.abbreviation || awayTeam.team.shortDisplayName}</span>
@@ -252,7 +264,7 @@
                         <span class="team-name ${homeWinner ? 'winner' : ''}">${homeTeam.team.abbreviation || homeTeam.team.shortDisplayName}</span>
                         <span class="score ${homeWinner ? 'winner' : ''}">${homeTeam.score || '-'}</span>
                     </div>
-                </a>
+                ${closeTag}
             `;
         }
 
