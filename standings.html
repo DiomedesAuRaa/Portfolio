@@ -241,7 +241,7 @@
             },
             'ncaa': {
                 name: 'NCAA Football',
-                url: `${API_BASE}/football/college-football/standings`,
+                url: `${API_BASE}/football/college-football/rankings`,
                 color: '#8b0000'
             }
         };
@@ -350,7 +350,29 @@
                 // Different sports structure their standings data differently
                 let divisions = [];
                 
-                if (data.children) {
+                if (sport === 'ncaa') {
+                    // NCAA rankings format - get AP Top 25
+                    if (data.rankings && data.rankings.length > 0) {
+                        const apPoll = data.rankings.find(r => r.name === 'AP Top 25' || r.type === 'poll');
+                        if (apPoll && apPoll.ranks) {
+                            divisions = [{
+                                name: 'AP Top 25',
+                                standings: {
+                                    entries: apPoll.ranks.map(rank => ({
+                                        team: rank.team,
+                                        stats: [
+                                            { name: 'rank', displayValue: rank.current || rank.rank },
+                                            { name: 'wins', displayValue: rank.recordSummary?.split('-')[0] || '-' },
+                                            { name: 'losses', displayValue: rank.recordSummary?.split('-')[1] || '-' },
+                                            { name: 'winPercent', displayValue: rank.team?.record?.items?.[0]?.stats?.find(s => s.name === 'winPercent')?.displayValue || '-' },
+                                            { name: 'gamesBehind', displayValue: '-' }
+                                        ]
+                                    }))
+                                }
+                            }];
+                        }
+                    }
+                } else if (data.children) {
                     // NHL/NBA format
                     divisions = data.children;
                 } else if (data.standings) {
