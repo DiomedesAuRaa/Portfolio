@@ -296,9 +296,25 @@
 
         function renderDivision(division) {
             const divisionName = division.name || division.abbreviation || 'Division';
-            const standings = division.standings?.entries || [];
+            let standings = division.standings?.entries || [];
             
             if (standings.length === 0) return '';
+            
+            // Sort standings by rank
+            standings = [...standings].sort((a, b) => {
+                const getRank = (entry) => {
+                    const stats = entry.stats || [];
+                    const rankStat = stats.find(s => 
+                        s.name === 'rank' || 
+                        s.name === 'playoffSeed' || 
+                        s.name === 'divisionrank' ||
+                        s.name === 'conferenceRank' ||
+                        s.abbreviation === 'RK'
+                    );
+                    return rankStat ? parseInt(rankStat.displayValue || rankStat.value || 999) : 999;
+                };
+                return getRank(a) - getRank(b);
+            });
             
             return `
                 <div class="division-section">
