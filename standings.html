@@ -241,7 +241,7 @@
             },
             'ncaa': {
                 name: 'NCAA Football',
-                url: `${API_BASE}/football/college-football/rankings`,
+                url: 'https://site.api.espn.com/apis/site/v2/sports/football/college-football/rankings',
                 color: '#8b0000'
             }
         };
@@ -351,21 +351,36 @@
                 let divisions = [];
                 
                 if (sport === 'ncaa') {
-                    // NCAA rankings format - get AP Top 25
+                    // NCAA rankings format - get AP Top 25 or CFP Rankings
                     if (data.rankings && data.rankings.length > 0) {
-                        const apPoll = data.rankings.find(r => r.name === 'AP Top 25' || r.type === 'poll');
-                        if (apPoll && apPoll.ranks) {
+                        // Try to find AP Top 25 first, then fall back to CFP or first available
+                        let poll = data.rankings.find(r => r.name && r.name.includes('AP Top 25'));
+                        if (!poll) {
+                            poll = data.rankings.find(r => r.shortName && r.shortName.includes('AP'));
+                        }
+                        if (!poll) {
+                            poll = data.rankings.find(r => r.type === 'cfp');
+                        }
+                        if (!poll) {
+                            poll = data.rankings[0]; // Use first available ranking
+                        }
+                        
+                        if (poll && poll.ranks) {
                             divisions = [{
-                                name: 'AP Top 25',
+                                name: poll.shortName || poll.name || 'Top 25',
                                 standings: {
-                                    entries: apPoll.ranks.map(rank => ({
-                                        team: rank.team,
+                                    entries: poll.ranks.map(rank => ({
+                                        team: {
+                                            displayName: rank.team.location || rank.team.name,
+                                            abbreviation: rank.team.abbreviation,
+                                            shortDisplayName: rank.team.nickname
+                                        },
                                         stats: [
-                                            { name: 'rank', displayValue: rank.current || rank.rank },
+                                            { name: 'rank', displayValue: rank.current.toString() },
                                             { name: 'wins', displayValue: rank.recordSummary?.split('-')[0] || '-' },
                                             { name: 'losses', displayValue: rank.recordSummary?.split('-')[1] || '-' },
-                                            { name: 'winPercent', displayValue: rank.team?.record?.items?.[0]?.stats?.find(s => s.name === 'winPercent')?.displayValue || '-' },
-                                            { name: 'gamesBehind', displayValue: '-' }
+                                            { name: 'winPercent', displayValue: '-' },
+                                            { name: 'gamesBehind', displayValue: rank.previous ? (rank.current - rank.previous).toString() : '-' }
                                         ]
                                     }))
                                 }
