@@ -252,17 +252,31 @@
             );
         }
 
-        function renderStandingsRow(entry, isPriority) {
+        function renderStandingsRow(entry, index, isPriority) {
             const team = entry.team;
             const stats = entry.stats || [];
             
-            // Get actual rank from stats
-            const rank = stats.find(s => s.name === 'rank' || s.name === 'playoffSeed')?.displayValue || 
-                         stats.find(s => s.name === 'divisionrank')?.displayValue || '-';
-            const wins = stats.find(s => s.name === 'wins' || s.name === 'gamesPlayed')?.displayValue || '-';
-            const losses = stats.find(s => s.name === 'losses')?.displayValue || '-';
-            const pct = stats.find(s => s.name === 'winPercent' || s.name === 'winpercent')?.displayValue || '-';
-            const gb = stats.find(s => s.name === 'gamesBehind')?.displayValue || '-';
+            // Try multiple rank fields - different sports use different names
+            let rank = '-';
+            const rankStat = stats.find(s => 
+                s.name === 'rank' || 
+                s.name === 'playoffSeed' || 
+                s.name === 'divisionrank' ||
+                s.name === 'conferenceRank' ||
+                s.abbreviation === 'RK'
+            );
+            
+            if (rankStat) {
+                rank = rankStat.displayValue || rankStat.value;
+            } else {
+                // If no rank found, use position in array + 1
+                rank = index + 1;
+            }
+            
+            const wins = stats.find(s => s.name === 'wins' || s.abbreviation === 'W')?.displayValue || '-';
+            const losses = stats.find(s => s.name === 'losses' || s.abbreviation === 'L')?.displayValue || '-';
+            const pct = stats.find(s => s.name === 'winPercent' || s.name === 'winpercent' || s.abbreviation === 'PCT')?.displayValue || '-';
+            const gb = stats.find(s => s.name === 'gamesBehind' || s.abbreviation === 'GB')?.displayValue || '-';
             
             const teamName = team.abbreviation || team.shortDisplayName || team.displayName;
             const priorityClass = isPriority ? 'priority' : '';
@@ -298,10 +312,10 @@
                             <div class="col-pct">PCT</div>
                             <div class="col-gb">GB</div>
                         </div>
-                        ${standings.map((entry) => {
+                        ${standings.map((entry, index) => {
                             const teamName = entry.team?.displayName || entry.team?.abbreviation || '';
                             const isPriority = isPriorityTeam(teamName);
-                            return renderStandingsRow(entry, isPriority);
+                            return renderStandingsRow(entry, index, isPriority);
                         }).join('')}
                     </div>
                 </div>
