@@ -44,6 +44,8 @@ jobs:
       
       - name: Generate Reddit Digest
         env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           SUBREDDITS: ${{ secrets.SUBREDDITS }}
           OUTPUT_HTML_PATH: '${{ github.workspace }}/Portfolio/reddit-digest.html'
