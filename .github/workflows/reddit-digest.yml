@@ -1,0 +1,68 @@
+name: Reddit Daily Digest
+
+# This workflow runs in the Portfolio repository but pulls code from the separate reddit repository
+# Repository structure:
+#   - DiomedesAuRaa/Portfolio: This repo, hosts GitHub Pages and workflow
+#   - DiomedesAuRaa/reddit: Separate repo with Python script (no secrets)
+# All secrets are stored in Portfolio repo secrets (Settings → Secrets and variables → Actions)
+
+on:
+  schedule:
+    # Run every day at 8 AM UTC (adjust to your preferred time)
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-digest:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Portfolio repo
+        uses: actions/checkout@v4
+        with:
+          repository: DiomedesAuRaa/Portfolio
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: Portfolio
+      
+      - name: Checkout reddit scripts
+        uses: actions/checkout@v4
+        with:
+          repository: DiomedesAuRaa/reddit
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: reddit-code
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          cd reddit-code
+          pip install -r requirements.txt
+      
+      - name: Generate Reddit Digest
+        env:
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: 'reddit-digest-bot/1.0 by DiomedesAuRaa'
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SUBREDDITS: ${{ secrets.SUBREDDITS }}
+          OUTPUT_HTML_PATH: '${{ github.workspace }}/Portfolio/reddit-digest.html'
+        run: |
+          cd reddit-code
+          python reddit_digest.py
+      
+      - name: Commit and push digest to Portfolio
+        working-directory: Portfolio
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add reddit-digest.html
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update Reddit digest - $(date +'%Y-%m-%d')" && git push)
+      
+      - name: Summary
+        run: |
+          echo "✅ Reddit digest generated and published!"
+          echo "📊 View at: https://diomediesauraa.github.io/Portfolio/reddit-digest.html"
