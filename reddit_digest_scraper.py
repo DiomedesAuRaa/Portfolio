@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Reddit Daily Digest Generator (Scraper Version)
-Fetches top posts from favorite subreddits using Reddit's .json endpoint (no API key needed)
+Reddit Daily Digest Generator (API Version)
+Fetches top posts from favorite subreddits using Reddit's official API via PRAW
 Generates:
 1. Discord webhook messages with rich text (supports per-subreddit webhooks with fallback)
 2. Static HTML page (optional - for GitHub Pages)
@@ -10,6 +10,9 @@ Usage:
     python reddit_digest_scraper.py
 
 Environment Variables:
+    REDDIT_CLIENT_ID: Reddit API client ID (required)
+    REDDIT_CLIENT_SECRET: Reddit API client secret (required)
+    REDDIT_USER_AGENT: Reddit API user agent (optional, defaults to 'RedditDigestBot/1.0')
     SUBREDDITS: Comma-separated list of subreddit names
     DISCORD_WEBHOOK_URL: Default Discord webhook URL (used as fallback)
     DISCORD_WEBHOOKS: JSON object mapping subreddit to webhook URL (optional)
@@ -28,8 +31,12 @@ import time
 from datetime import datetime
 from typing import List, Dict, Any, Optional
 import html as html_module
+import praw
 
 # Configuration
+REDDIT_CLIENT_ID = os.getenv('REDDIT_CLIENT_ID', '')
+REDDIT_CLIENT_SECRET = os.getenv('REDDIT_CLIENT_SECRET', '')
+REDDIT_USER_AGENT = os.getenv('REDDIT_USER_AGENT', 'RedditDigestBot/1.0')
 SUBREDDITS = os.getenv('SUBREDDITS', 'python,technology,news').split(',')
 DISCORD_WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK_URL', '')
 DISCORD_WEBHOOKS_JSON = os.getenv('DISCORD_WEBHOOKS', '')
@@ -38,7 +45,6 @@ GITHUB_PUSH = os.getenv('GITHUB_PUSH', 'false').lower() == 'true'
 GITHUB_REPO_PATH = os.getenv('GITHUB_REPO_PATH', '')
 MAX_POSTS_PER_SUB = 5
 MAX_COMMENTS_PER_POST = 5
-USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
 
 # Parse subreddit-specific webhooks
 DISCORD_WEBHOOKS = {}
@@ -50,54 +56,41 @@ if DISCORD_WEBHOOKS_JSON:
         DISCORD_WEBHOOKS = {}
 
 
-class RedditScraper:
-    """Reddit scraper using .json endpoints (no API key needed)"""
+class RedditFetcher:
+    """Reddit data fetcher using official Reddit API via PRAW"""
     
-    def __init__(self, user_agent: str):
-        self.user_agent = user_agent
-        self.session = requests.Session()
-        # Use headers that mimic a real browser to avoid 403 blocks
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'DNT': '1',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1',
-            'Sec-Fetch-Dest': 'document',
-            'Sec-Fetch-Mode': 'navigate',
-            'Sec-Fetch-Site': 'none',
-            'Sec-Fetch-User': '?1',
-            'Cache-Control': 'max-age=0',
-        })
+    def __init__(self, client_id: str, client_secret: str, user_agent: str):
+        """Initialize Reddit API connection"""
+        if not client_id or not client_secret:
+            raise ValueError("Reddit API credentials (REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET) are required")
+        
+        self.reddit = praw.Reddit(
+            client_id=client_id,
+            client_secret=client_secret,
+            user_agent=user_agent
+        )
+        print("✓ Connected to Reddit API")
     
     def get_top_posts(self, subreddit: str, limit: int = 5) -> List[Dict[str, Any]]:
         """Get top posts from a subreddit for the day"""
-        url = f'https://www.reddit.com/r/{subreddit}/top.json'
-        params = {'t': 'day', 'limit': limit}
-        
         try:
-            response = self.session.get(url, params=params, timeout=10)
-            response.raise_for_status()
-            data = response.json()
-            
+            subreddit_obj = self.reddit.subreddit(subreddit)
             posts = []
-            for post_data in data['data']['children']:
-                post = post_data['data']
+            
+            for submission in subreddit_obj.top(time_filter='day', limit=limit):
                 posts.append({
-                    'title': post['title'],
-                    'author': post.get('author', '[deleted]'),
-                    'score': post['score'],
-                    'url': f"https://www.reddit.com{post['permalink']}",
-                    'selftext': post.get('selftext', ''),
-                    'created_utc': post['created_utc'],
-                    'num_comments': post['num_comments'],
-                    'id': post['id'],
-                    'subreddit': post['subreddit'],
-                    'link_url': post.get('url', ''),
-                    'is_self': post.get('is_self', False),
-                    'upvote_ratio': post.get('upvote_ratio', 0),
+                    'title': submission.title,
+                    'author': str(submission.author) if submission.author else '[deleted]',
+                    'score': submission.score,
+                    'url': f"https://www.reddit.com{submission.permalink}",
+                    'selftext': submission.selftext if hasattr(submission, 'selftext') else '',
+                    'created_utc': submission.created_utc,
+                    'num_comments': submission.num_comments,
+                    'id': submission.id,
+                    'subreddit': submission.subreddit.display_name,
+                    'link_url': submission.url if hasattr(submission, 'url') else '',
+                    'is_self': submission.is_self,
+                    'upvote_ratio': submission.upvote_ratio,
                 })
             
             return posts
@@ -106,33 +99,26 @@ class RedditScraper:
             print(f"Error fetching posts from r/{subreddit}: {e}")
             return []
     
-    def get_top_comments(self, subreddit: str, post_id: str, limit: int = 5) -> List[Dict[str, Any]]:
+    def get_top_comments(self, submission_id: str, limit: int = 5) -> List[Dict[str, Any]]:
         """Get top comments for a post"""
-        url = f'https://www.reddit.com/r/{subreddit}/comments/{post_id}.json'
-        params = {'limit': limit, 'sort': 'top'}
-        
         try:
-            response = self.session.get(url, params=params, timeout=10)
-            response.raise_for_status()
-            data = response.json()
+            submission = self.reddit.submission(id=submission_id)
+            submission.comment_sort = 'top'
+            submission.comments.replace_more(limit=0)
             
             comments = []
-            if len(data) > 1:
-                comments_data = data[1]['data']['children']
-                
-                for comment_data in comments_data[:limit]:
-                    if comment_data['kind'] == 't1':
-                        comment = comment_data['data']
-                        comments.append({
-                            'author': comment.get('author', '[deleted]'),
-                            'body': comment.get('body', '[deleted]'),
-                            'score': comment.get('score', 0)
-                        })
+            for comment in submission.comments[:limit]:
+                if hasattr(comment, 'body'):
+                    comments.append({
+                        'author': str(comment.author) if comment.author else '[deleted]',
+                        'body': comment.body,
+                        'score': comment.score
+                    })
             
             return comments
             
         except Exception as e:
-            print(f"Error fetching comments for post {post_id}: {e}")
+            print(f"Error fetching comments for post {submission_id}: {e}")
             return []
     
     def fetch_all_data(self, subreddits: List[str]) -> Dict[str, List[Dict[str, Any]]]:
@@ -154,7 +140,7 @@ class RedditScraper:
             
             for post in posts:
                 print(f"  Fetching comments for: {post['title'][:50]}...")
-                comments = self.get_top_comments(subreddit, post['id'], MAX_COMMENTS_PER_POST)
+                comments = self.get_top_comments(post['id'], MAX_COMMENTS_PER_POST)
                 post['comments'] = comments
                 time.sleep(0.5)
             
@@ -614,8 +600,20 @@ class HTMLGenerator:
 def main():
     """Main execution function"""
     print("="*60)
-    print("Reddit Daily Digest Generator (Scraper Version)")
+    print("Reddit Daily Digest Generator (API Version)")
     print("="*60)
+    
+    # Validate Reddit API credentials
+    if not REDDIT_CLIENT_ID or not REDDIT_CLIENT_SECRET:
+        print("\nERROR: Reddit API credentials not configured!")
+        print("Please set the following environment variables:")
+        print("  - REDDIT_CLIENT_ID")
+        print("  - REDDIT_CLIENT_SECRET")
+        print("\nTo get these credentials:")
+        print("1. Go to https://www.reddit.com/prefs/apps")
+        print("2. Create an app (select 'script' type)")
+        print("3. Use the client ID and secret in GitHub Secrets")
+        sys.exit(1)
     
     subreddits = [s.strip() for s in SUBREDDITS if s.strip()]
     
@@ -634,10 +632,14 @@ def main():
     if DISCORD_WEBHOOK_URL:
         print(f"Default webhook: configured (fallback for unconfigured subreddits)")
     
-    print("\nInitializing Reddit scraper...")
-    scraper = RedditScraper(USER_AGENT)
+    print("\nInitializing Reddit API client...")
+    try:
+        fetcher = RedditFetcher(REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USER_AGENT)
+    except ValueError as e:
+        print(f"ERROR: {e}")
+        sys.exit(1)
     
-    digest_data = scraper.fetch_all_data(subreddits)
+    digest_data = fetcher.fetch_all_data(subreddits)
     
     if not digest_data:
         print("\n✗ No data fetched. Exiting.")
