@@ -4,7 +4,7 @@ Reddit Daily Digest Generator (Scraper Version)
 Fetches top posts from favorite subreddits using Reddit's .json endpoint (no API key needed)
 Generates:
 1. Discord webhook messages with rich text (supports per-subreddit webhooks with fallback)
-2. Static HTML page for GitHub Pages
+2. Static HTML page (optional - for GitHub Pages)
 
 Usage:
     python reddit_digest_scraper.py
@@ -14,12 +14,15 @@ Environment Variables:
     DISCORD_WEBHOOK_URL: Default Discord webhook URL (used as fallback)
     DISCORD_WEBHOOKS: JSON object mapping subreddit to webhook URL (optional)
                       Example: {"cfb": "url1", "nfl": "url2"}
-    OUTPUT_HTML_PATH: Path to output HTML file (default: reddit-digest.html)
+    OUTPUT_HTML_PATH: Path to output HTML file (optional - skip HTML generation if not set)
+    GITHUB_PUSH: Set to "true" to commit and push HTML to GitHub repo
+    GITHUB_REPO_PATH: Path to local git repo (required if GITHUB_PUSH=true)
 """
 
 import os
 import sys
 import json
+import subprocess
 import requests
 import time
 from datetime import datetime
@@ -30,7 +33,9 @@ import html as html_module
 SUBREDDITS = os.getenv('SUBREDDITS', 'python,technology,news').split(',')
 DISCORD_WEBHOOK_URL = os.getenv('DISCORD_WEBHOOK_URL', '')
 DISCORD_WEBHOOKS_JSON = os.getenv('DISCORD_WEBHOOKS', '')
-OUTPUT_HTML_PATH = os.getenv('OUTPUT_HTML_PATH', 'reddit-digest.html')
+OUTPUT_HTML_PATH = os.getenv('OUTPUT_HTML_PATH', '')
+GITHUB_PUSH = os.getenv('GITHUB_PUSH', 'false').lower() == 'true'
+GITHUB_REPO_PATH = os.getenv('GITHUB_REPO_PATH', '')
 MAX_POSTS_PER_SUB = 5
 MAX_COMMENTS_PER_POST = 5
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
@@ -51,7 +56,21 @@ class RedditScraper:
     def __init__(self, user_agent: str):
         self.user_agent = user_agent
         self.session = requests.Session()
-        self.session.headers.update({'User-Agent': user_agent})
+        # Use headers that mimic a real browser to avoid 403 blocks
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'DNT': '1',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1',
+            'Sec-Fetch-Dest': 'document',
+            'Sec-Fetch-Mode': 'navigate',
+            'Sec-Fetch-Site': 'none',
+            'Sec-Fetch-User': '?1',
+            'Cache-Control': 'max-age=0',
+        })
     
     def get_top_posts(self, subreddit: str, limit: int = 5) -> List[Dict[str, Any]]:
         """Get top posts from a subreddit for the day"""
@@ -626,10 +645,20 @@ def main():
     
     print(f"\n✓ Successfully fetched data from {len(digest_data)} subreddits")
     
-    print("\nGenerating HTML page...")
-    html_gen = HTMLGenerator()
-    html_gen.generate(digest_data, OUTPUT_HTML_PATH)
+    # Generate HTML page (optional)
+    if OUTPUT_HTML_PATH:
+        print("\nGenerating HTML page...")
+        html_gen = HTMLGenerator()
+        html_gen.generate(digest_data, OUTPUT_HTML_PATH)
+        
+        # Push to GitHub if configured
+        if GITHUB_PUSH and GITHUB_REPO_PATH:
+            print("\nPushing to GitHub...")
+            push_to_github(GITHUB_REPO_PATH, OUTPUT_HTML_PATH)
+    else:
+        print("\nSkipping HTML generation (OUTPUT_HTML_PATH not set)")
     
+    # Send to Discord
     if DISCORD_WEBHOOK_URL or DISCORD_WEBHOOKS:
         print("\nSending to Discord...")
         discord_sender = DiscordSender(DISCORD_WEBHOOK_URL, DISCORD_WEBHOOKS)
@@ -641,6 +670,31 @@ def main():
     print("\n" + "="*60)
     print("✓ Reddit Daily Digest Complete!")
     print("="*60)
+
+
+def push_to_github(repo_path: str, html_file: str):
+    """Commit and push HTML file to GitHub"""
+    try:
+        import shutil
+        # Copy HTML to repo
+        dest_path = os.path.join(repo_path, os.path.basename(html_file))
+        if html_file != dest_path:
+            shutil.copy(html_file, dest_path)
+        
+        # Git commands
+        subprocess.run(['git', '-C', repo_path, 'add', os.path.basename(html_file)], check=True)
+        
+        # Check if there are changes to commit
+        result = subprocess.run(['git', '-C', repo_path, 'diff', '--staged', '--quiet'])
+        if result.returncode != 0:
+            date_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            subprocess.run(['git', '-C', repo_path, 'commit', '-m', f'Update Reddit digest - {date_str}'], check=True)
+            subprocess.run(['git', '-C', repo_path, 'push'], check=True)
+            print("✓ Pushed to GitHub")
+        else:
+            print("No changes to commit")
+    except Exception as e:
+        print(f"Error pushing to GitHub: {e}")
 
 
 if __name__ == '__main__':
