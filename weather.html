@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background: #000;
+            color: #fff;
+            padding: 5px;
+            max-width: 240px;
+        }
+        
+        .header {
+            position: sticky;
+            top: 0;
+            background: #000;
+            z-index: 100;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #fff;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 2px 6px;
+            margin: 2px 0;
+            background: #222;
+            color: #0ff;
+            text-decoration: none;
+            font-size: 10px;
+            border-radius: 3px;
+        }
+        
+        .back-btn:active {
+            background: #333;
+        }
+        
+        h1 {
+            font-size: 14px;
+            text-align: center;
+            padding: 4px 0;
+            margin: 0;
+        }
+        
+        .current {
+            margin-bottom: 12px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+        
+        .weather-row {
+            background: #111;
+            margin: 4px 0;
+            padding: 5px;
+            border-left: 3px solid #0ff;
+        }
+        
+        .label {
+            font-size: 10px;
+            color: #888;
+            margin-bottom: 2px;
+        }
+        
+        .value {
+            font-size: 12px;
+            font-weight: bold;
+            color: #0ff;
+        }
+        
+        .section-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #0ff;
+            margin: 8px 0 4px 0;
+            padding: 3px 0;
+        }
+        
+        .hourly {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .hour {
+            background: #111;
+            padding: 4px;
+            border-left: 3px solid #0ff;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .hour-time {
+            font-weight: bold;
+            color: #0ff;
+            min-width: 40px;
+        }
+        
+        .hour-details {
+            display: flex;
+            gap: 8px;
+            flex: 1;
+            justify-content: flex-end;
+        }
+        
+        .hour-temp {
+            font-weight: bold;
+        }
+        
+        .hour-prob {
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html" class="back-btn">← Back</a>
+        <h1>Local Weather</h1>
+    </div>
+
+    <div class="current">
+        <div class="weather-row">
+            <div class="label">Temperature</div>
+            <div class="value" id="temp">—</div>
+        </div>
+        <div class="weather-row">
+            <div class="label">Condition</div>
+            <div class="value" id="desc">—</div>
+        </div>
+        <div class="weather-row">
+            <div class="label">Wind</div>
+            <div class="value" id="winds">—</div>
+        </div>
+        <div class="weather-row">
+            <div class="label">Precipitation</div>
+            <div class="value" id="precip">—</div>
+        </div>
+        <div class="weather-row">
+            <div class="label">Local time</div>
+            <div class="value" id="time">—</div>
+        </div>
+    </div>
+
+    <div class="section-title">Hour by Hour (next 24h)</div>
+    <div id="hourly" class="hourly"></div>
+
+    <script>
+    (function(){
+        // Coordinates for ZIP 30075 (adjust if you want more precision)
+        const lat = 33.776;
+        const lon = -84.296;
+        const elTemp = document.getElementById('temp');
+        const elDesc = document.getElementById('desc');
+        const elWinds = document.getElementById('winds');
+        const elTime = document.getElementById('time');
+        const elPrecip = document.getElementById('precip');
+
+        const weatherCodes = {
+            0: 'Clear', 1: 'Mainly clear', 2: 'Partly cloudy', 3: 'Overcast',
+            45: 'Fog', 48: 'Depositing rime fog',
+            51: 'Light drizzle', 53: 'Moderate drizzle', 55: 'Dense drizzle',
+            61: 'Slight rain', 63: 'Moderate rain', 65: 'Heavy rain',
+            71: 'Slight snow', 73: 'Moderate snow', 75: 'Heavy snow',
+            80: 'Rain showers', 81: 'Heavy rain showers', 82: 'Violent rain showers'
+        };
+
+        function cToF(c){ return Math.round((c*9/5)+32); }
+
+        fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&hourly=temperature_2m,weathercode,precipitation_probability&timezone=auto`)
+        .then(r=>r.ok? r.json(): Promise.reject('no data'))
+        .then(data=>{
+            const cw = data.current_weather;
+            if(!cw){ throw 'no current_weather'; }
+            const tempC = Math.round(cw.temperature);
+            elTemp.textContent = tempC + '°C / ' + cToF(tempC) + '°F';
+            elDesc.textContent = weatherCodes[cw.weathercode] || ('Code ' + cw.weathercode);
+            elWinds.textContent = cw.windspeed + ' m/s';
+            // show time if available
+            if(data.timezone) elTime.textContent = new Date().toLocaleString();
+
+            // precipitation: find matching hourly index for current weather time
+            if(data.hourly && Array.isArray(data.hourly.time) && Array.isArray(data.hourly.precipitation)){
+                const times = data.hourly.time;
+                const precs = data.hourly.precipitation;
+                const probs = data.hourly.precipitation_probability || [];
+                const target = cw.time;
+                let idx = times.indexOf(target);
+                if(idx === -1){
+                    const tms = times.map(t=>new Date(t).getTime());
+                    const tgt = new Date(target).getTime();
+                    let best = 0, bestDiff = Infinity;
+                    for(let i=0;i<tms.length;i++){
+                        const d = Math.abs(tms[i]-tgt);
+                        if(d < bestDiff){ bestDiff = d; best = i; }
+                    }
+                    idx = best;
+                }
+                const mm = precs[idx];
+                const inch = (mm/25.4);
+                const prob = probs[idx] !== undefined ? probs[idx] : null;
+                let text = mm.toFixed(1) + ' mm / ' + inch.toFixed(2) + ' in';
+                if(prob !== null) text += ' (' + prob + '% chance)';
+                elPrecip.textContent = text;
+            } else {
+                elPrecip.textContent = '—';
+            }
+
+            // hourly forecast - start from current hour, show next 24 hours
+            if(data.hourly && Array.isArray(data.hourly.time)){
+                const times = data.hourly.time;
+                const temps = data.hourly.temperature_2m || [];
+                const probs = data.hourly.precipitation_probability || [];
+                const container = document.getElementById('hourly');
+                const now = new Date();
+                const currentHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), 0, 0, 0);
+                const endTime = new Date(currentHour.getTime() + 24*3600*1000);
+                
+                let startIdx = -1;
+                for(let i=0;i<times.length;i++){
+                    const t = new Date(times[i]);
+                    if(t >= currentHour){
+                        startIdx = i;
+                        break;
+                    }
+                }
+                
+                if(startIdx === -1) startIdx = 0;
+                
+                for(let i=startIdx;i<Math.min(startIdx+24,times.length);i++){
+                    const t = new Date(times[i]);
+                    if(t > endTime) break;
+                    const h = t.getHours();
+                    const tempC = Math.round(temps[i]);
+                    const prob = probs[i] !== undefined ? probs[i] : 0;
+                    const html = `<div class="hour"><div class="hour-time">${h}:00</div><div class="hour-details"><span class="hour-temp">${tempC}°C</span><span class="hour-prob">${prob}%</span></div></div>`;
+                    container.innerHTML += html;
+                }
+            }
+        })
+        .catch(err=>{
+            elTemp.textContent = 'Unavailable';
+            elDesc.textContent = 'Unable to fetch';
+            elWinds.textContent = '—';
+            elTime.textContent = '—';
+            elPrecip.textContent = '—';
+        });
+    })();
+    </script>
+</body>
+</html>
