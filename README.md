@@ -115,18 +115,6 @@ Focused on leadership, communication, and project delivery — strengthening cro
 
 ---
 
-## 📰 Reddit Daily Digest
-
-This repository also hosts an automated **Reddit Daily Digest** system that:
-- 📊 Scrapes top posts from your favorite subreddits (no API key needed)
-- 💬 Includes full post content and top comments
-- 🌐 Generates a beautiful HTML page on GitHub Pages
-- 🔔 Sends rich Discord notifications with full text
-
-**[View Latest Digest](https://diomediesauraa.github.io/Portfolio/reddit-digest.html)** | **[Setup Guide](REDDIT_SETUP.md)**
-
----
-
 ## 📬 Contact
 
 I'm open to new opportunities in **DevOps, SRE, or Platform Engineering**.  
