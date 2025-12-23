@@ -5,29 +5,66 @@ I focus on **cloud architecture, automation, and observability**, helping teams 
 
 ---
 
-## 🧰 Tech Stack
+Here’s a **cleaned-up, single consolidated section** that merges **Tech Stack** and **Technical Skills**, removes duplicates, and keeps it tight and professional.
 
-**Cloud:** AWS · Azure · GCP  
-**IaC:** Terraform · Ansible  
-**Containers:** Kubernetes (EKS, AKS, GKE, RKE, K3s, OpenShift) · Docker · ECS · Cloud Run  
-**CI/CD:** GitHub Actions · GitLab · Jenkins · Concourse · Spinnaker · ArgoCD · Azure DevOps  
-**Languages:** Bash · Python · Go · PowerShell  
-**Observability:** Datadog · Prometheus · Grafana · Alertmanager · Opsgenie · PagerDuty  
-**Security:** Vault · KMS · Secret Manager · RBAC · IAM  
-**Governance:** FinOps · Cost Explorer · Azure Cost Management · GCP Billing  
+You can drop both old sections and replace them with this.
 
 ---
 
-## 🧩 Technical Skills
+## 🧰 Technical Skills & Tooling
 
-**Infrastructure:** Kubernetes (GKE, AKS, EKS, RKE, K3s, Red Hat OpenShift), Infrastructure as Code (Terraform, Ansible), Docker, Compute Clusters (Linux & Windows), ECS, Cloud Run  
-**Cloud Providers:** Multi-region architecture design and operations across AWS, GCP, and Azure  
-**CI/CD:** Spinnaker, Azure DevOps, Jenkins, Concourse, GitHub Actions, Bitbucket, GitLab, ArgoCD  
-**SRE & Dev Tools:** Grafana, Prometheus, Alertmanager, Datadog, YAML, Bash, PowerShell, Go, Python, BigQuery  
-**Business Continuity:** Backup & Disaster Recovery, high availability, networking, and security management. Experienced with DevOps, SRE, and Agile practices using Jira and ServiceNow.  
-**Security & Compliance:** HashiCorp Vault, AWS KMS, Azure Key Vault, GCP Secret Manager — secure secret management and encryption best practices.  
-**AI & Automation:** GPU-enabled and AI/ML-supporting infrastructure (Kubernetes + Cloud Run), AI-driven observability (Datadog anomaly detection, predictive alerting), and AI-assisted automation (GitHub Copilot, ChatGPT, cloud-native AI optimizations).  
-**Cost & Governance:** FinOps practices, cloud cost optimization, and spend governance across AWS Cost Explorer, GCP Billing, and Azure Cost Management.  
+**Cloud Platforms**
+
+* AWS · Azure · GCP
+* Multi-region and hybrid architecture design, migration, and operations
+
+**Infrastructure & Containers**
+
+* Kubernetes: EKS · AKS · GKE · RKE · K3s · Red Hat OpenShift
+* Docker · ECS · Cloud Run
+* Linux & Windows compute clusters
+
+**Infrastructure as Code & Automation**
+
+* Terraform (multi-cloud modules, state management, governance)
+* Ansible
+* Bash · Python · Go · PowerShell
+
+**CI/CD & GitOps**
+
+* GitHub Actions · GitLab CI · Jenkins · Concourse · Spinnaker · Azure DevOps
+* ArgoCD (GitOps workflows)
+* Helm (reusable, templated charts)
+
+**Observability & Reliability**
+
+* Datadog · Prometheus · Grafana · Alertmanager
+* Opsgenie · PagerDuty · ServiceNow
+* Alert tuning, SLOs, MTTR reduction, incident response
+
+**Security & Access Control**
+
+* HashiCorp Vault
+* AWS KMS · Azure Key Vault · GCP Secret Manager
+* IAM · RBAC · encryption best practices
+
+**AI / ML Infrastructure & Automation**
+
+* GPU-enabled Kubernetes and cloud environments
+* AI/ML workloads on Kubernetes and Cloud Run
+* AI-assisted observability (Datadog anomaly detection, predictive alerting)
+* AI-driven automation and productivity tooling
+
+**Cost Management & Governance**
+
+* FinOps practices
+* AWS Cost Explorer · Azure Cost Management · GCP Billing
+* Cost optimization, visibility, and spend controls
+
+**Delivery & Collaboration**
+
+* DevOps, SRE, and Agile practices
+* Jira-based workflows and cross-team collaboration
 
 ---
 
