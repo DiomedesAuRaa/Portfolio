@@ -1,148 +1,45 @@
 {
-  "timestamp": "2025-12-25T18:01:43.577864",
-  "generated_at": "2025-12-25 18:01:43 UTC",
+  "timestamp": "2025-12-25T19:01:37.365470",
+  "generated_at": "2025-12-25 19:01:37 UTC",
   "subreddits_count": 8,
-  "total_posts": 34,
+  "total_posts": 32,
   "data": {
     "cfb": [
       {
-        "title": "[Game Thread] Hawai'i Bowl: California @ Hawai'i (8:00 PM ET)",
-        "author": "CFB_Referee",
-        "score": 310,
-        "url": "https://www.reddit.com/r/CFB/comments/1pv0pak/game_thread_hawaii_bowl_california_hawaii_800_pm/",
-        "selftext": "**GAME** | [California](#f/california)California @ [Hawai'i](#f/hawaii)Hawai'i\n--:|:-- \n**Location** | [Hawai'i](#f/hawaii) Clarence T.C. Ching Athletics Complex \n**Time** | 8:00 PM ET\n**Watch** | **TV:** [ESPN](#l/espn) \n**Odds** | *Spread:* CAL -1.5 - *Over/Under:* 51.5\n|| [Flair](http://flair.redditcfb.com) ¦ [Discord](https://discord.gg/zSKCKtj3dY)\n\n***\n\n*Please keep trash talk civil, and report any comments that violate [**our rules**](https://rules.redditcfb.com).*\n\n### LET'S TALK FOOTBALL!",
-        "created_utc": 1766620809.0,
-        "num_comments": 4932,
-        "id": "1pv0pak",
-        "subreddit": "CFB",
-        "link_url": "https://www.reddit.com/r/CFB/comments/1pv0pak/game_thread_hawaii_bowl_california_hawaii_800_pm/",
-        "is_self": true,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "Honestly_",
-            "body": "Happy Christmas Eve and Die Hard to all who celebrate! \n\nAlso a happy Chinese Food & a Movie’s Eve, and an enjoy Vegas to my Persian comrades!\n\nCelebrate the giving season with the \\/r/CFB Holiday Drive, benefiting Toys For Tots & Children's Hospitals: [Info](https://old.reddit.com/r/CFB/comments/1pn7mdk/2025_rcfb_holiday_drive_toys_childrens_hospitals/) | Give: [PP](https://www.paypal.com/us/fundraiser/charity/4710394) & [V](https://account.venmo.com/u/OurCFB)",
-            "score": 1
-          },
-          {
-            "author": "Smash-Bros-Melee",
-            "body": "Avoiding relatives by watching the Hawaii Bowl, a tradition unlike any other",
-            "score": 68
-          },
-          {
-            "author": "bowl_of_scrotmeal",
-            "body": "After the Miami game from last year, I've learned that any game where Cal has the lead should be viewed as a close game until proven otherwise.  Hawai'i is still in this",
-            "score": 51
-          },
-          {
-            "author": "thehauntedmattress",
-            "body": "Hello from the [ESPN control room](https://imgur.com/a/rzZvzye)!",
-            "score": 49
-          },
-          {
-            "author": "CarlTheCrab",
-            "body": "\"California of the ACC\"\n\nWill never not be funny",
-            "score": 44
-          }
-        ]
-      },
-      {
-        "title": "FBS programs by average home attendance for 2025",
-        "author": "MysteriousEdge5643",
-        "score": 273,
-        "url": "https://www.reddit.com/r/CFB/comments/1puzom4/fbs_programs_by_average_home_attendance_for_2025/",
-        "selftext": "Data is sourced from [d1ticker.com](http://d1ticker.com) and is through Week 14.\n\n|School|Conference|Average Attendance|% of Capacity|\n|:-|:-|:-|:-|\n|Michigan|Big Ten|110,842|103.01%|\n|Penn State|Big Ten|107,093|100.49%|\n|Texas A&M|SEC|106,159|103.33%|\n|Ohio State|Big Ten|104,105|101.29%|\n|Texas|SEC|102,367|102.24%|\n|Tennessee|SEC|101,915|100.00%|\n|LSU|SEC|101,575|99.27%|\n|Alabama|SEC|100,077|100.00%|\n|Georgia|SEC|93,033|100.00%|\n|Florida|SEC|90,125|101.78%|\n|Auburn|SEC|88,043|100.00%|\n|Nebraska|Big Ten|86,549|101.28%|\n|Oklahoma|SEC|83,532|104.25%|\n|South Carolina|SEC|79,334|102.29%|\n|Clemson|ACC|79,142|97.11%|\n|Notre Dame|Independent|77,622|100.00%|\n|Wisconsin|Big Ten|70,403|92.57%|\n|Michigan State|Big Ten|70,389|94.02%|\n|Arkansas|SEC|69,762|91.54%|\n|Iowa|Big Ten|69,250|100.00%|\n|Washington|Big Ten|68,238|97.37%|\n|USC|Big Ten|67,783|87.46%|\n|Ole Miss|SEC|66,772|104.27%|\n|Florida State\\*|ACC|65,876|97.92%|\n|Miami (FL)|ACC|63,834|98.56%|\n|BYU|Big 12|63,789|102.76%|\n|Iowa State|Big 12|60,862|98.96%|\n|Texas Tech|Big 12|60,143|99.86%|\n|Virginia Tech|ACC|59,946|91.34%|\n|Oregon|Big Ten|58,582|108.49%|\n|Illinois|Big Ten|58,350|96.18%|\n|Kentucky|SEC|57,779|94.72%|\n|Missouri|SEC|57,321|91.54%|\n|NC State|ACC|56,919|100.00%|\n|Purdue|Big Ten|56,581|92.09%|\n|West Virginia|Big 12|54,506|90.84%|\n|Arizona State|Big 12|54,444|101.58%|\n|Mississippi State|SEC|53,186|88.19%|\n|Pittsburgh|ACC|51,845|75.80%|\n|Kansas State|Big 12|51,773|103.55%|\n|Utah|Big 12|51,701|100.50%|\n|Indiana|Big Ten|51,184|97.26%|\n|North Carolina|ACC|50,500|100.00%|\n|Colorado|Big 12|50,469|100.57%|\n|Louisville|ACC|50,292|82.72%|\n|Virginia|ACC|48,776|79.31%|\n|Rutgers|Big Ten|48,459|92.38%|\n|Georgia Tech|ACC|47,694|91.87%|\n|Minnesota|Big Ten|46,519|91.56%|\n|Oklahoma State|Big 12|44,664|85.39%|\n|UCF|Big 12|43,409|98.20%|\n|TCU|Big 12|43,319|92.17%|\n|Arizona|Big 12|41,782|82.28%|\n|Boston College|ACC|41,090|92.34%|\n|Maryland|Big Ten|40,765|88.26%|\n|Kansas\\*|Big 12|39,478|95.07%|\n|Baylor|Big 12|39,447|87.39%|\n|Syracuse|ACC|38,605|90.23%|\n|Fresno State|Mountain West|38,030|93.38%|\n|UCLA|Big Ten|37,282|41.56%|\n|ECU|American|37,097|72.74%|\n|Cincinnati|Big 12|36,052|94.65%|\n|California|ACC|34,991|56.01%|\n|Vanderbilt|SEC|34,813|86.28%|\n|SMU|ACC|33,530|104.78%|\n|South Florida|American|33,194|50.40%|\n|Boise State|Mountain West|32,891|90.39%|\n|Houston|Big 12|32,215|81.15%|\n|Navy|American|31,960|94.00%|\n|Colorado State|Mountain West|31,901|77.81%|\n|Appalachian State|Sun Belt|31,813|106.04%|\n|UNLV|Mountain West|31,589|48.60%|\n|UConn|Independent|30,444|80.11%|\n|Oregon State|Pac-12|30,145|84.80%|\n|Memphis|American|30,097|60.19%|\n|Wake Forest|ACC|29,433|93.44%|\n|Army West Point|American|28,390|94.63%|\n|Stanford|ACC|28,171|55.87%|\n|Southern Miss|Sun Belt|27,912|77.53%|\n|Air Force|Mountain West|26,665|67.61%|\n|Washington State|Pac-12|26,527|80.50%|\n|San Diego State|Mountain West|26,189|74.83%|\n|Marshall|Sun Belt|25,298|83.01%|\n|New Mexico|Mountain West|25,252|64.38%|\n|James Madison|Sun Belt|25,135|101.04%|\n|North Texas|American|24,493|81.37%|\n|UTSA|American|24,361|38.06%|\n|Duke|ACC|24,283|69.34%|\n|Tulane|American|24,068|80.23%|\n|Troy|Sun Belt|24,053|78.94%|\n|Wyoming|Mountain West|23,433|78.61%|\n|Rice|American|23,423|49.84%|\n|Georgia Southern|Sun Belt|22,541|90.16%|\n|Toledo|MAC|21,199|81.41%|\n|Ohio|MAC|21,007|87.53%|\n|Western Michigan|MAC|20,194|55.54%|\n|Jacksonville State|C-USA|19,993|88.86%|\n|Louisiana|Sun Belt|19,982|99.91%|\n|UAB|American|19,702|41.83%|\n|Utah State|Mountain West|18,855|73.90%|\n|Old Dominion|Sun Belt|18,583|84.68%|\n|Texas State|Sun Belt|18,565|65.40%|\n|Bowling Green|MAC|18,556|55.27%|\n|Liberty|C-USA|18,371|73.49%|\n|Coastal Carolina|Sun Belt|18,352|87.39%|\n|Nevada|Mountain West|17,875|66.20%|\n|Florida Atlantic|American|17,667|58.89%|\n|Temple|American|17,566|25.99%|\n|Louisiana–Monroe|Sun Belt|17,486|63.31%|\n|South Alabama|Sun Belt|17,273|67.87%|\n|Arkansas State|Sun Belt|16,964|55.79%|\n|Delaware|C-USA|16,751|90.55%|\n|Tulsa|American|16,369|54.56%|\n|Central Michigan|MAC|16,277|46.34%|\n|UTEP|C-USA|15,818|30.71%|\n|Georgia State|Sun Belt|15,500|63.70%|\n|Eastern Michigan|MAC|14,842|56.67%|\n|Western Kentucky|C-USA|14,772|66.80%|\n|San Jose State|Mountain West|13,997|76.90%|\n|FIU|C-USA|13,864|69.32%|\n|Buffalo|MAC|13,808|55.20%|\n|Hawaii|Mountain West|13,708|90.22%|\n|Louisiana Tech|C-USA|13,682|47.90%|\n|Charlotte|American|13,564|88.57%|\n|Middle Tennessee|C-USA|12,252|44.87%|\n|Miami (OH)|MAC|11,658|38.75%|\n|Northwestern\\*|Big Ten|11,548|96.05%|\n|Missouri State|C-USA|11,547|65.98%|\n|Kennesaw State|C-USA|10,743|105.32%|\n|Kent State|MAC|9,875|39.00%|\n|New Mexico State|C-USA|9,505|32.94%|\n|Northern Illinois|MAC|9,309|33.00%|\n|Ball State|MAC|8,968|39.86%|\n|Massachusetts|Independent|8,789|51.70%|\n|Akron|MAC|7,729|25.76%|\n|Sam Houston State|C-USA|4,773|34.09%|\n\n^(Table) ^(formatting) ^(by) [^(ExcelToReddit)](https://xl2redd.it/)",
-        "created_utc": 1766617465.0,
-        "num_comments": 293,
-        "id": "1puzom4",
-        "subreddit": "CFB",
-        "link_url": "https://www.reddit.com/r/CFB/comments/1puzom4/fbs_programs_by_average_home_attendance_for_2025/",
-        "is_self": true,
-        "upvote_ratio": 0.94,
-        "comments": [
-          {
-            "author": "Ordinaryjay",
-            "body": "These numbers are a lie or have to be “tickets sold” because no way we’ve had 25k outside of the Apple cup game",
-            "score": 355
-          },
-          {
-            "author": "bretticus733",
-            "body": "|Boise State|Mountain West|32,891|90.39%|\n|:-|:-|:-|:-|\n\n\nI would just like to point out real quick that the capacity % is incorrect here.  In a normal season, yes, the 90% would be more accurate.  However, the north end zone has been under construction for over a year now, so the capacity of the stadium was reduced down to 33,000.  So really, it's more like 99.67%",
-            "score": 144
-          },
-          {
-            "author": "Pro-Tip810",
-            "body": "How does a school have an attendance above 100%",
-            "score": 82
-          }
-        ]
-      },
-      {
-        "title": "The luckiest collapse/fraud check in in CFB history: The 1942 Boston College Eagles",
-        "author": "McWaylon",
-        "score": 206,
-        "url": "https://www.reddit.com/r/CFB/comments/1pv0i5q/the_luckiest_collapsefraud_check_in_in_cfb/",
-        "selftext": "The collapse: BC was riding an unbeaten season and was no 1. A berth in the Sugar Bowl and possible national title was in sight. All they had to do was win their last game of the season against their wee little rival Holy Cross at Fenway Park and its all sunshine and rainbows. HC was unranked and sporting a 4-4-1 record, BC is so confident that celebrations are already planned and possible parades are being discussed. You all know how this one goes....HC beats the \\*\\*\\*\\* out of BC 55-12. Boston is crestfallen, all celebrations are canceled, and the players go back to their rooms cussing and defeated.\n\nWhy it was lucky: That very night that BC got curb stomped, their victory party was planned at the famous Boston nightspot:  The Cocoanut Grove. Never heard of it? Well it was thanks to being overpacked the first thanksgiving since Pearl Harbor and a underage busboy accidently lighting a match in a gas fume-ridden room that the whole place ignited and became the worst nightclub fire in history. Due to having only one faulty turnstile front door and no other exits nearly 500 people are dead. The owner Barney Welansky is busted for numerous violations which due to good ol' Boston corruption he was allowed to operate until disaster struck. Welansky would die just 4 years later due to cancer after being set free from prison just before he dies, in his interview he said he wished he had died in the fire as well.  Numerous heads roll, building laws are strictly recalibrated and everyone forgets about the disaster that happened at Fenway earlier that day. Ill bet you those BC players sometimes thought to themselves that blowing it on such a grand scale ended up saving their lives.\n\nIll link two articles for you to peruse the subject: [https://news.holycross.edu/stories/holy-cross-footballs-historic-upset-against-boston-college-75-years-later](https://news.holycross.edu/stories/holy-cross-footballs-historic-upset-against-boston-college-75-years-later)\n\n[https://pressbreak.substack.com/p/the-greatest-days-in-college-football](https://pressbreak.substack.com/p/the-greatest-days-in-college-football)",
-        "created_utc": 1766620138.0,
-        "num_comments": 30,
-        "id": "1pv0i5q",
-        "subreddit": "CFB",
-        "link_url": "https://www.reddit.com/r/CFB/comments/1pv0i5q/the_luckiest_collapsefraud_check_in_in_cfb/",
-        "is_self": true,
-        "upvote_ratio": 0.96,
-        "comments": [
-          {
-            "author": "DirtyBirdDawg",
-            "body": "I recently listened to a Podcast about that fire and... yikes. The description of that fire gave me anxiety.",
-            "score": 97
-          },
-          {
-            "author": "BaltimoreBadger23",
-            "body": "Wow, that's a crazy story. The Cocoanut Grove fire was a horrific tragedy, and led to so many standard building codes today, most notably that exit doors must swing outward and visibility of exit signs.",
-            "score": 46
-          },
-          {
-            "author": "JB92103",
-            "body": "BTW: The mafia was 100% involved in this fire.",
-            "score": 35
-          }
-        ]
-      },
-      {
         "title": "CFB's Hardest Places to Play: A Data-Driven Approach",
         "author": "why_doineedausername",
-        "score": 199,
+        "score": 206,
         "url": "https://www.reddit.com/r/CFB/comments/1pv1hjh/cfbs_hardest_places_to_play_a_datadriven_approach/",
         "selftext": "I recently made a post about which teams had the best home field advantage (HFA). [That post](https://www.reddit.com/r/CFB/comments/1pki092/home_field_advantage_improved_methodology_w_fpi/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) was a measure of which teams gain the most points when playing at home. So I took a different approach to measuring this. Now I want to look at a simpler question: How hard is it to win at a given stadium. This approach will inevitably be *heavily influenced* by how good a team has been over the time frame, but still helps us answer the question.\n\nLet me be very clear: this list is NOT a ranking of which teams should have the largest \"home field advantage\" value applied when handicapping games. Those values can be found in the previous post. This is a list of the hardest places to play, period.\n\n**Methodology:** Looking at all FBS games played in the past 20 seasons, I calculated the \"expected performance\" of all opponents at a given stadium based on their performance in other road games. Then I calculated how many points better or worse teams did at a given stadium than the same teams did in their other road games. Only teams with at least 50 home games during that timeframe are included.\n\nThe correlation of this data with home win % is 0.49 and the correlation with average home margin is 0.47\n\n|Rank|TeamName|Stadium Name|Points Above Average|Conference|\n|:-|:-|:-|:-|:-|\n|1|Alabama|Bryant-Denny Stadium|9.6|SEC|\n|2|Ohio State|Ohio Stadium|9.0|Big Ten|\n|3|Oklahoma|Memorial Stadium (Norman, OK)|8.7|SEC|\n|4|Oregon|Autzen Stadium|8.5|Big Ten|\n|5|LSU|Tiger Stadium (LA)|7.7|SEC|\n|6|Georgia|Sanford Stadium|7.7|SEC|\n|7|Clemson|Memorial Stadium (Clemson, SC)|7.6|ACC|\n|8|USC|Los Angeles Memorial Coliseum|7.1|Big Ten|\n|9|Michigan|Michigan Stadium|6.7|Big Ten|\n|10|Penn State|Beaver Stadium|6.6|Big Ten|\n|11|Notre Dame|Notre Dame Stadium|6.5|Independent|\n|12|Wisconsin|Camp Randall Stadium|6.2|Big Ten|\n|13|Florida|Ben Hill Griffin Stadium|5.8|SEC|\n|14|Washington|Husky Stadium|5.7|Big Ten|\n|15|Utah|Rice-Eccles Stadium|5.7|Big 12|\n|16|Texas|DKR-Texas Memorial Stadium|5.6|SEC|\n|17|Boise State|Albertsons Stadium|5.6|MWC|\n|18|Oklahoma State|Boone Pickens Stadium|5.6|Big 12|\n|19|Kansas State|Bill Snyder Family Stadium|5.4|Big 12|\n|20|TCU|Amon G. Carter Stadium|5.3|Big 12|\n|21|Texas A&M|Kyle Field|5.2|SEC|\n|22|Auburn|Jordan-Hare Stadium|5.0|SEC|\n|23|Arizona State|Mountain America Stadium|4.9|Big 12|\n|24|Miami|Hard Rock Stadium|4.9|ACC|\n|25|Ole Miss|Vaught-Hemingway Stadium|4.7|SEC|\n|26|West Virginia|Milan Puskar Stadium|4.6|Big 12|\n|27|South Carolina|Williams-Brice Stadium|4.6|SEC|\n|28|Iowa|Kinnick Stadium|4.6|Big Ten|\n|29|Florida State|Doak Campbell Stadium|4.5|ACC|\n|30|Tennessee|Neyland Stadium|4.5|SEC|\n|31|Missouri|Memorial Stadium|4.5|SEC|\n|32|Arizona|Arizona Stadium|4.1|Big 12|\n|33|Virginia Tech|Lane Stadium|4.0|ACC|\n|34|Nebraska|Memorial Stadium (Lincoln, NE)|3.9|Big Ten|\n|35|Texas Tech|Jones AT&T Stadium|3.9|Big 12|\n|36|BYU|LaVell Edwards Stadium|3.8|Big 12|\n|37|Stanford|Stanford Stadium|3.7|ACC|\n|38|Baylor|McLane Stadium|3.7|Big 12|\n|39|California|California Memorial Stadium|3.5|ACC|\n|40|Cincinnati|Nippert Stadium|3.4|Big 12|\n|41|Mississippi State|Davis Wade Stadium|3.3|SEC|\n|42|Michigan State|Spartan Stadium|3.3|Big Ten|\n|43|UCLA|Rose Bowl|3.3|Big Ten|\n|44|Louisville|L&N Federal Credit Union Stadium|3.3|ACC|\n|45|Iowa State|Jack Trice Stadium|3.2|Big 12|\n|46|Pittsburgh|Acrisure Stadium|3.2|ACC|\n|47|Georgia Tech|Bobby Dodd Stadium|3.1|ACC|\n|48|North Carolina|Kenan Stadium|3.0|ACC|\n|49|Arkansas|Razorback Stadium|2.8|SEC|\n|50|Minnesota|Huntington Bank Stadium|2.6|Big Ten|\n|51|NC State|Carter-Finley Stadium|2.6|ACC|\n|52|UCF|FBC Mortgage Stadium|2.2|Big 12|\n|53|Kentucky|Kroger Field|2.1|SEC|\n|54|Houston|TDECU Stadium|2.1|Big 12|\n|55|Oregon State|Reser Stadium|2.1|Pac-12|\n|56|Washington State|Gesa Field|2.0|Pac-12|\n|57|App State|Kidd Brewer Stadium|1.9|Sun Belt|\n|58|Air Force|Falcon Stadium|1.6|MWC|\n|59|Boston College|Alumni Stadium (Chestnut Hill, MA)|1.4|ACC|\n|60|Colorado|Folsom Field|1.3|Big 12|\n|61|Wake Forest|Allegacy Federal Credit Union Stadium|1.1|ACC|\n|62|Indiana|Memorial Stadium (Bloomington, IN)|1.1|Big Ten|\n|63|SMU|Gerald J. Ford Stadium|1.0|ACC|\n|64|Northwestern|Lanny and Sharon Martin Stadium|1.0|Big Ten|\n|65|Navy|Navy-Marine Corps Memorial Stadium|1.0|American|\n|66|Virginia|Scott Stadium|0.8|ACC|\n|67|Toledo|Glass Bowl|0.7|MAC|\n|68|Illinois|Memorial Stadium (Champaign, IL)|0.7|Big Ten|\n|69|Maryland|SECU Stadium|0.7|Big Ten|\n|70|South Florida|Raymond James Stadium|0.6|American|\n|71|Georgia Southern|Allen E. Paulson Stadium|0.5|Sun Belt|\n|72|Rutgers|SHI Stadium|0.5|Big Ten|\n|73|Duke|Wallace Wade Stadium|0.4|ACC|\n|74|Marshall|Joan C. Edwards Stadium|0.4|Sun Belt|\n|75|Syracuse|JMA Wireless Dome|0.2|ACC|\n|76|Purdue|Ross-Ade Stadium|0.2|Big Ten|\n|77|Fresno State|Valley Children's Stadium|0.1|MWC|\n|78|San Diego State|Snapdragon Stadium|0.1|MWC|\n|79|Vanderbilt|FirstBank Stadium|0.0|SEC|\n|80|Kansas|Memorial Stadium|\\-0.1|Big 12|\n|81|East Carolina|Dowdy-Ficklen Stadium|\\-0.1|American|\n|82|Ohio|Peden Stadium|\\-0.5|MAC|\n|83|Memphis|Simmons Bank Liberty Stadium|\\-0.8|American|\n|84|Nevada|Mackay Stadium|\\-0.8|MWC|\n|85|Troy|Veterans Memorial Stadium (AL)|\\-0.9|Sun Belt|\n|86|Northern Illinois|Huskie Stadium|\\-0.9|MAC|\n|87|Arkansas State|Centennial Bank Stadium|\\-1.1|Sun Belt|\n|88|Western Michigan|Waldo Stadium|\\-1.1|MAC|\n|89|UConn|Pratt & Whitney Stadium|\\-1.2|Independent|\n|90|Utah State|Maverik Stadium|\\-1.2|MWC|\n|91|Louisiana Tech|Joe Aillet Stadium|\\-1.3|C-USA|\n|92|Hawai'i|Clarence T.C. Ching Athletics Complex|\\-1.4|MWC|\n|93|Wyoming|War Memorial Stadium|\\-1.4|MWC|\n|94|Temple|Lincoln Financial Field|\\-1.4|American|\n|95|UTSA|Alamodome|\\-1.5|American|\n|96|Central Michigan|Kelly/Shorts Stadium|\\-1.5|MAC|\n|97|Tulsa|Chapman Stadium|\\-1.5|American|\n|98|San José State|CEFCU Stadium|\\-2.0|MWC|\n|99|Colorado State|Canvas Stadium|\\-2.0|MWC|\n|100|Western Kentucky|Houchens Industries-L.T. Smith Stadium|\\-2.1|C-USA|\n|101|South Alabama|Hancock Whitney Stadium|\\-2.1|Sun Belt|\n|102|Louisiana|Cajun Field|\\-2.2|Sun Belt|\n|103|Tulane|Yulman Stadium|\\-2.2|American|\n|104|Middle Tennessee|Johnny \"Red\" Floyd Stadium|\\-2.2|C-USA|\n|105|Army|Michie Stadium|\\-2.4|American|\n|106|Buffalo|UB Stadium|\\-2.4|MAC|\n|107|UNLV|Allegiant Stadium|\\-2.5|MWC|\n|108|UAB|Protective Stadium|\\-2.6|American|\n|109|Old Dominion|S.B. Ballard Stadium|\\-2.6|Sun Belt|\n|110|Miami (OH)|Yager Stadium|\\-2.7|MAC|\n|111|Southern Miss|M. M. Roberts Stadium|\\-2.8|Sun Belt|\n|112|North Texas|DATCU Stadium|\\-3.0|American|\n|113|Florida Atlantic|FAU Stadium|\\-3.1|American|\n|114|Ball State|Scheumann Stadium|\\-3.3|MAC|\n|115|New Mexico|University Stadium (NM)|\\-3.6|MWC|\n|116|Rice|Rice Stadium|\\-3.8|American|\n|117|UL Monroe|Malone Stadium|\\-4.1|Sun Belt|\n|118|Texas State|Bobcat Stadium (TX)|\\-4.3|Sun Belt|\n|119|Bowling Green|Doyt L. Perry Stadium|\\-4.5|MAC|\n|120|Kent State|Dix Stadium|\\-4.5|MAC|\n|121|UTEP|Sun Bowl|\\-5.2|C-USA|\n|122|Florida International|Pitbull Stadium|\\-5.4|C-USA|\n|123|Georgia State|Center Parc Stadium|\\-5.8|Sun Belt|\n|124|Akron|InfoCision Stadium|\\-6.1|MAC|\n|125|Eastern Michigan|Rynearson Stadium|\\-6.3|MAC|\n|126|New Mexico State|Aggie Memorial Stadium|\\-6.4|C-USA|\n|127|Charlotte|Jerry Richardson Stadium|\\-7.1|American|\n|128|Massachusetts|Warren McGuirk Alumni Stadium|\\-8.3|Independent|",
         "created_utc": 1766623421.0,
-        "num_comments": 138,
+        "num_comments": 140,
         "id": "1pv1hjh",
         "subreddit": "CFB",
         "link_url": "https://www.reddit.com/r/CFB/comments/1pv1hjh/cfbs_hardest_places_to_play_a_datadriven_approach/",
         "is_self": true,
-        "upvote_ratio": 0.85,
+        "upvote_ratio": 0.86,
         "comments": [
           {
             "author": "LuaBear",
             "body": "I appreciate all the work you put into this. But it seems like this is just a measure of how good the home team is. How closely does this “home stadium advantage” track with overall record? \n\nMichigan being in the top 10 is surprising. That stadium is the least intimidating stadium in the Big 10. And Kyle Field being that low is also surprising. That’s the loudest stadium in the country. ",
-            "score": 335
+            "score": 337
           },
           {
             "author": "Villano5",
             "body": "It's funny how Syracuse basketball calls the Dome \"The Loud House\" yet for football it could be the \"Below Average House\"",
-            "score": 156
+            "score": 160
           },
           {
             "author": "PunishedLeBoymoder",
             "body": "37 is kinda crazy, that's punching way above our weight. Opposing teams have described the silence at Stanford Stadium as eerie before though",
-            "score": 69
+            "score": 67
           }
         ]
       },
       {
         "title": "Texas A&M EDGE Solomon Williams has entered the transfer portal",
         "author": "Cred811",
-        "score": 146,
+        "score": 150,
         "url": "https://www.reddit.com/r/CFB/comments/1pv30a5/texas_am_edge_solomon_williams_has_entered_the/",
         "selftext": "\\[Source\\](https://x.com/hayesfawcett3/status/2003999849482777037?s=46)\n\nMade with the /r/CFB \\[Recruiting and Draft Post Generator\\](https://posts.redditcfb.com/recruiting)",
         "created_utc": 1766628823.0,
@@ -156,22 +53,99 @@
           {
             "author": "giggity_giggity",
             "body": "I remain unconvinced that we should be capitalizing every letter of EDGE.",
-            "score": 106
+            "score": 111
           },
           {
             "author": "modshighkeypathetic",
             "body": "Follow your coach big dog",
-            "score": 89
+            "score": 94
           },
           {
             "author": "greenpenguinboy",
             "body": "Get your bag! 🫡",
-            "score": 69
+            "score": 71
           },
           {
             "author": "Cred811",
             "body": "A former blue-chip recruit who’s been buried behind more experienced EDGEs for the past two years. Was likely to see an uptick in PT this upcoming season with Cashius Howell and Dayon Hayes both graduating. I’d expect the Aggies to hit the portal pretty hard at the EDGE position now that Williams and Kennedy are out; TJ Searcy and Marco Jones are now the only returnees with any kind of real experience.",
-            "score": 31
+            "score": 33
+          }
+        ]
+      },
+      {
+        "title": "Linebacker Keith Brown is staying with Washington State",
+        "author": "definitelynotasalmon",
+        "score": 26,
+        "url": "https://www.reddit.com/r/CFB/comments/1pv0uyq/linebacker_keith_brown_is_staying_with_washington/",
+        "selftext": "[Source](https://247sports.com/player/keith-brown-46077002/college-308034/)\n\nMade with the /r/CFB [Recruiting and Draft Post Generator](https://posts.redditcfb.com/recruiting)",
+        "created_utc": 1766621301.0,
+        "num_comments": 13,
+        "id": "1pv0uyq",
+        "subreddit": "CFB",
+        "link_url": "https://www.reddit.com/r/CFB/comments/1pv0uyq/linebacker_keith_brown_is_staying_with_washington/",
+        "is_self": true,
+        "upvote_ratio": 0.8,
+        "comments": [
+          {
+            "author": "CieraVotedOutHerMom",
+            "body": "Cougs always find a way back home ♥️🩶",
+            "score": 15
+          },
+          {
+            "author": "definitelynotasalmon",
+            "body": "He was expected to start this year but sustained an injury in August and redshirted this year. Entered the portal after Jimmy Rogers left and has since withdrawn. \n\nHe has one year of eligibility left.",
+            "score": 14
+          },
+          {
+            "author": "Ichthyist1",
+            "body": "I saw that. Huge given how much experience we’re graduating on defense.",
+            "score": 10
+          },
+          {
+            "author": "JakeSteeleIII",
+            "body": "Joel Klatt furious at this headline",
+            "score": 5
+          },
+          {
+            "author": "infg2678",
+            "body": "Another portal L for Iowa State",
+            "score": 4
+          }
+        ]
+      },
+      {
+        "title": "[@DavidFurones_] Danny Kanell has the Miami Hurricanes going how far in the CFP?! 👀",
+        "author": "reddit-canes",
+        "score": 0,
+        "url": "https://www.reddit.com/r/CFB/comments/1pv17ev/davidfurones_danny_kanell_has_the_miami/",
+        "selftext": "",
+        "created_utc": 1766622472.0,
+        "num_comments": 53,
+        "id": "1pv17ev",
+        "subreddit": "CFB",
+        "link_url": "https://x.com/DavidFurones_/status/2003808840886968420?s=20",
+        "is_self": false,
+        "upvote_ratio": 0.27,
+        "comments": [
+          {
+            "author": "RampageTaco",
+            "body": "I refuse to click on this.  So I'll never know Danny Kanell's opinion.  Sad Christmas for me.",
+            "score": 88
+          },
+          {
+            "author": "Brave_Cow_3030",
+            "body": "My wife left me",
+            "score": 55
+          },
+          {
+            "author": "Relevant_Ad_1225",
+            "body": "ACC homer says ACC team goes far in playoffs. Shocker",
+            "score": 27
+          },
+          {
+            "author": "BrutusPetey",
+            "body": "Duke won the ACC",
+            "score": 13
           }
         ]
       }
@@ -180,11 +154,11 @@
       {
         "title": "Chargers LT Joe Alt made the 2026 AFC Pro Bowl roster despite playing in only 6 games this year. Because of that, the cost of his 5th year option jumps from 19m to ~25m",
         "author": "HE_A_FAN_HE_A_FAN",
-        "score": 4997,
+        "score": 5035,
         "url": "https://www.reddit.com/r/nfl/comments/1pv3yj2/chargers_lt_joe_alt_made_the_2026_afc_pro_bowl/",
         "selftext": "I saw a clip of Nick Wright on X talking about how Pro Bowl voting needs to be overhauled because of examples like this. For first-round picks, the fifth-year option amount isn’t fixed just by draft slot anymore. Instead, it has four tiers:\n\nBasic Tier: lowest salary, based mostly on positional averages.\n\nPlaytime Tier: higher than basic, based on playing time thresholds.\n\nOne Pro Bowl Tier: earns a salary equal to the transition tag at his position.\n\nMultiple Pro Bowls Tier: earns a salary equal to the franchise tag at his position. \n\nFWIW, alternate Pro Bowl selections do not count towards this. So Drake Maye for example, who was like the 8th backup Pro Bowler last year but a legit Pro Bowler this year, only has one pro Bowl counting towards his 5th year option raise.",
         "created_utc": 1766632280.0,
-        "num_comments": 381,
+        "num_comments": 383,
         "id": "1pv3yj2",
         "subreddit": "nfl",
         "link_url": "https://www.reddit.com/r/nfl/comments/1pv3yj2/chargers_lt_joe_alt_made_the_2026_afc_pro_bowl/",
@@ -194,64 +168,28 @@
           {
             "author": "likwitsnake",
             "body": "Seems like an easy fix implement a minimum games played rule like the NBA with end of year awards, you can even start small say 50%, getting a pro bowl for 6 games (35%) is ridic",
-            "score": 3698
+            "score": 3726
           },
           {
             "author": "mister_hoot",
             "body": "Lmao the league is just fucking with us lately.",
-            "score": 1794
+            "score": 1800
           },
           {
             "author": "ositola",
             "body": "Must have been a hell of a 6 game run ",
-            "score": 697
-          }
-        ]
-      },
-      {
-        "title": "[Underdog] Saquon Barkley on how he felt about HC Nick Sirianni before joining the Eagles in 2024: \"I couldn't stand that motherf*cker.\"",
-        "author": "BreakfastTop6899",
-        "score": 3438,
-        "url": "https://www.reddit.com/r/nfl/comments/1pv0mg1/underdog_saquon_barkley_on_how_he_felt_about_hc/",
-        "selftext": "",
-        "created_utc": 1766620544.0,
-        "num_comments": 365,
-        "id": "1pv0mg1",
-        "subreddit": "nfl",
-        "link_url": "https://bsky.app/profile/fantasynflnews.bsky.social/post/3marcddfjtc2k",
-        "is_self": false,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "Throwing-Gas",
-            "body": "I am 100 percent sure I would hate him if he coached a rival.",
-            "score": 2565
-          },
-          {
-            "author": "MeanderingExperience",
-            "body": "“I still can’t, but I used to, too”",
-            "score": 664
-          },
-          {
-            "author": "runningblack",
-            "body": "I would absolutely hate Nick Sirianni if I played for any team that wasn't the eagles",
-            "score": 636
-          },
-          {
-            "author": "PraporUniversity",
-            "body": "\"Player can't stand rival team's HC\"",
-            "score": 627
+            "score": 704
           }
         ]
       },
       {
         "title": "Mike Preston, the writer who wrote today about Lamar’s perceived work habits, wrote a similar article in 2004 about Ray Lewis",
         "author": "njb021",
-        "score": 1033,
+        "score": 1038,
         "url": "https://www.reddit.com/r/nfl/comments/1pv3ckc/mike_preston_the_writer_who_wrote_today_about/",
         "selftext": "",
         "created_utc": 1766630070.0,
-        "num_comments": 199,
+        "num_comments": 202,
         "id": "1pv3ckc",
         "subreddit": "nfl",
         "link_url": "https://www.baltimoresun.com/2004/12/28/q-and-a-with-the-suns-mike-preston-2/",
@@ -261,33 +199,33 @@
           {
             "author": "awak6n",
             "body": "It's not snowing on Christmas, it's all Lamar Jackson's fault.",
-            "score": 763
+            "score": 769
           },
           {
             "author": "Furiosa27",
             "body": "Dude said he wouldn’t offer Lamar another contract unless he willingly does a Tom Brady. This guy likely makes more money than a lot of us to say this btw",
-            "score": 591
+            "score": 589
           },
           {
             "author": "opeth10657",
             "body": "And where is Ray Lewis now?\n\nThat's right, not even on an NFL roster.",
-            "score": 491
+            "score": 513
           },
           {
             "author": "aheftyhippo",
             "body": "Everyone from Baltimore knows the Sun is Sinclair garbage.  Best way to stop stuff like this is to pretend it doesn’t exist.",
-            "score": 286
+            "score": 288
           }
         ]
       },
       {
         "title": "[highlight] Rewatching the first Brady Manningbowl - colts pats 2001 - and Gus Johnson just said Brady’s sister has DSLs",
         "author": "HFentonMudd",
-        "score": 809,
+        "score": 815,
         "url": "https://www.reddit.com/r/nfl/comments/1pv1ezg/highlight_rewatching_the_first_brady_manningbowl/",
         "selftext": "",
         "created_utc": 1766623183.0,
-        "num_comments": 155,
+        "num_comments": 156,
         "id": "1pv1ezg",
         "subreddit": "nfl",
         "link_url": "https://youtu.be/oehEJz9RgzU?si=rvqxxBGU88DfylYy&t=6956",
@@ -297,33 +235,33 @@
           {
             "author": "nkfish11",
             "body": "Dick sucking lips for the uninformed",
-            "score": 789
+            "score": 787
           },
           {
             "author": "illbelate2that",
             "body": "I'm sitting here trying my hardest to think of what else he could have been saying because no way did he say that on live tv. The world pre-social media was a crazy place",
-            "score": 710
+            "score": 715
           },
           {
             "author": "Sweaty_Desert_Balls",
             "body": "[Here You Go](https://imgur.com/a/6lqt11u) OP. I clipped just the relevant part.\n\nMods are losers.",
-            "score": 515
+            "score": 519
           },
           {
             "author": "tgcm26",
             "body": "Sir this is a 3+ hour video, at what exact point did Gus say this",
-            "score": 391
+            "score": 396
           }
         ]
       },
       {
         "title": "Cardinals' Josh Sweat irked after 'frustrating' Pro Bowl snub",
         "author": "NorthCoastToast",
-        "score": 763,
+        "score": 770,
         "url": "https://www.reddit.com/r/nfl/comments/1pv6b6t/cardinals_josh_sweat_irked_after_frustrating_pro/",
         "selftext": "",
         "created_utc": 1766640958.0,
-        "num_comments": 136,
+        "num_comments": 139,
         "id": "1pv6b6t",
         "subreddit": "nfl",
         "link_url": "https://www.espn.com/nfl/story/_/id/47408986/cardinals-josh-sweat-irked-frustrating-pro-bowl-snub",
@@ -333,22 +271,58 @@
           {
             "author": "EmuMan10",
             "body": "Number one, no fan was voting for him. He’s on the cardinals and there’s only like 12 fans of them. All of us are apathetic or hate the team, so we’re not voting for him. Second, lots of good pass rushers and a lot that were better than him. \n\nNot snubbed, do better next year",
-            "score": 755
+            "score": 770
           },
           {
             "author": "maladjustedfreek",
             "body": "Now you know you have really been snubbed when no one on Reddit wants to talk about you either.",
-            "score": 717
+            "score": 731
           },
           {
             "author": "AgentStansfield24",
             "body": "When you have nothing to play for in a team sport, individual accolades become important to many.",
-            "score": 307
+            "score": 317
           },
           {
             "author": "TonyPerkisReddit4",
             "body": "There's too many good pass rushers. Sweat wasn't snubbed imo",
             "score": 195
+          }
+        ]
+      },
+      {
+        "title": "Vikings' Kelly to IR after 3rd concussion of 2025, 6th of career",
+        "author": "Top-Conclusion-1259",
+        "score": 384,
+        "url": "https://www.reddit.com/r/nfl/comments/1pv15b8/vikings_kelly_to_ir_after_3rd_concussion_of_2025/",
+        "selftext": "",
+        "created_utc": 1766622272.0,
+        "num_comments": 40,
+        "id": "1pv15b8",
+        "subreddit": "nfl",
+        "link_url": "https://www.espn.com/nfl/story/_/id/47408628/vikings-kelly-ir-3rd-concussion-2025-6th-career",
+        "is_self": false,
+        "upvote_ratio": 0.97,
+        "comments": [
+          {
+            "author": "MembershipSingle7137",
+            "body": "Man. Been my favorite OL in the league since he got drafted. Alabama legend.\n\nGreat career for him if this is how it ends",
+            "score": 230
+          },
+          {
+            "author": "LemTheWise",
+            "body": "When he is out there and healthy he is one of the IOL's in the league and for sure one of the best centers in this generation. \n\nBut he needs to retire, CTE is very real and football is not worth your long term health and being there for your family. This is one of the sad sides to the sport but he really needs to step away for his own sake. The Streets won't forget Ryan Kelly.",
+            "score": 148
+          },
+          {
+            "author": "beerncheese69",
+            "body": "Sucks man. Thats a lot. The dark side of ball. Especially OL guys that dont get the spotlight.\n\nI was just talking to my friend about this today. We went for a beer after work and were talking about how much we love football and how upset you can get after an L. Especially if you have expectations for your team. But you gotta remember its just a game. Well for these guys its not just a game. Its their life. And theyre permanently damaging their brains. It just puts it into perspective a bit. Im Canadian and I grew up in the era of enforcers in hockey. A lot of those guys died by suicide, or were just permanently fucked up. They were good men but they knew something was wrong with them for the rest of their lives. I dont mean to get dark or pessimistic because its sporting, us fans are always gonna want it and enjoy it but these guys put a lot on the line.",
+            "score": 109
+          },
+          {
+            "author": "FrigOffRicky16",
+            "body": "Call it a career",
+            "score": 63
           }
         ]
       }
@@ -357,11 +331,11 @@
       {
         "title": "[Highlight] Lu Dort shows off his natural shooting motion twice against the Spurs",
         "author": "TimDunkinDonut",
-        "score": 7774,
+        "score": 8188,
         "url": "https://www.reddit.com/r/nba/comments/1pvfjs8/highlight_lu_dort_shows_off_his_natural_shooting/",
         "selftext": "",
         "created_utc": 1766676220.0,
-        "num_comments": 1093,
+        "num_comments": 1114,
         "id": "1pvfjs8",
         "subreddit": "nba",
         "link_url": "https://streamable.com/68qfxa",
@@ -376,28 +350,28 @@
           {
             "author": "CarlitosTaquitoss",
             "body": "Just play basketball. Fucking weirdo shit",
-            "score": 6613
+            "score": 6850
           },
           {
             "author": "Popeyes_69",
             "body": "How do u land twice",
-            "score": 2669
+            "score": 2816
           },
           {
             "author": "magic_spam",
             "body": "Embarrassing ",
-            "score": 2409
+            "score": 2487
           }
         ]
       },
       {
         "title": "Captain Klay Thompson is back boating in the Bay with two special guests",
         "author": "MrBuckBuck",
-        "score": 4583,
+        "score": 4617,
         "url": "https://www.reddit.com/r/nba/comments/1pv7eue/captain_klay_thompson_is_back_boating_in_the_bay/",
         "selftext": "",
         "created_utc": 1766645264.0,
-        "num_comments": 296,
+        "num_comments": 298,
         "id": "1pv7eue",
         "subreddit": "nba",
         "link_url": "https://streamable.com/ejggbg",
@@ -407,29 +381,29 @@
           {
             "author": "MikeyBastard1",
             "body": "OGs remember when random Klay posts would end up with 100s of comments being randomly awarded and people theorized it was the Toaster man himself.",
-            "score": 2799
+            "score": 2818
           },
           {
             "author": "MongooseEfficient206",
             "body": "You know what fuck the haters, Merry Xmas Klay",
-            "score": 1763
+            "score": 1772
           },
           {
             "author": "Akipella",
             "body": "I love how the \"two special guests\" title makes you think it *might* be Steph and Dray, but of course it's Megan and their dog lmao. That's hilarious. (Of course most Warriors fans know it wasn't gonna be them, but still).",
-            "score": 1637
+            "score": 1649
           },
           {
             "author": "Youngandidiotic",
             "body": "Oh he’s in love love",
-            "score": 612
+            "score": 622
           }
         ]
       },
       {
         "title": "Kawhi Leonard is quietly shooting 97.9% from Free Throws 2nd best all time",
         "author": "retardinho23",
-        "score": 3500,
+        "score": 3499,
         "url": "https://www.reddit.com/r/nba/comments/1pv26ad/kawhi_leonard_is_quietly_shooting_979_from_free/",
         "selftext": "If he can sustain it until the end of the season, it would be the 2nd best free throw percentage of all time after Jose Calderon 98.1% who was only shooting 2.3 FTA per game compared to Leonard's 5.1 FTA.\n\n[https://www.statmuse.com/ask/highest-free-throw-percentage-in-a-season?l=nba](https://www.statmuse.com/ask/highest-free-throw-percentage-in-a-season?l=nba)",
         "created_utc": 1766625839.0,
@@ -443,33 +417,33 @@
           {
             "author": "Inner-Buddy-4649",
             "body": "He’s kawhi.  He does everything quietly ",
-            "score": 2751
+            "score": 2761
           },
           {
             "author": "ClosPins",
             "body": "Had a gym teacher in high-school who used to brag that he could hit 100 out of 100 free throws.  No one believed him, so the students set up a charity event where he would shoot 100 shots - and get donations for every one he hit.  He hit 100.  In front of a crowd.",
-            "score": 858
+            "score": 859
           },
           {
             "author": "Cj_cruzz",
             "body": "Clippers and Kawhi really going to get away with 30million under the table deal huh",
-            "score": 782
+            "score": 785
           },
           {
             "author": "KARSbenicillin",
             "body": "A bit of context: that's in 19 games played so far. 5.1 * 19 = 97 FT attempts this season. Jose Calderon did it in 68 game * 2.3 FTA/game = 156 FTA. It should be interesting to see where Kawhi is at in about 10 more games.",
-            "score": 767
+            "score": 772
           }
         ]
       },
       {
         "title": "“Victor Wembanyama is playing limited minutes and the Spurs are dominating. That's not great news for the rest of the league.”",
         "author": "moby323",
-        "score": 3242,
+        "score": 3279,
         "url": "https://www.reddit.com/r/nba/comments/1pv7nhp/victor_wembanyama_is_playing_limited_minutes_and/",
         "selftext": "> The San Antonio Spurs are being overly cautious with Victor Wembanyama, who’s returning from a calf strain, but that has not hindered their upward trajectory.\n\n> Over the past five games (not including the loss in the NBA Cup Final), the Spurs have kept the Frenchman to 20.8 minutes per game as the franchise has gone undefeated.\n\n> Overall, the team has won seven consecutive games, not including the NBA Cup Finals, and on Christmas Day it faces a dominant Oklahoma City Thunder squad the Spurs have defeated twice in the past two weeks.\n\n> But what’s the ceiling for Wembanyama? And what does that mean for the Spurs and the rest of the league?\n\nArticle:\n\nhttps://sports.yahoo.com/nba/article/victor-wembanyama-is-playing-limited-minutes-and-the-spurs-are-dominating-thats-not-great-news-for-the-rest-of-the-league-184843116.html",
         "created_utc": 1766646210.0,
-        "num_comments": 408,
+        "num_comments": 411,
         "id": "1pv7nhp",
         "subreddit": "nba",
         "link_url": "https://www.reddit.com/r/nba/comments/1pv7nhp/victor_wembanyama_is_playing_limited_minutes_and/",
@@ -479,53 +453,53 @@
           {
             "author": "Freedjet27",
             "body": "I know that wemby gets a lot of the talk when in comes to the spurs, but they really have a great well rounded team. Feels threatening all over the floor and that really doesn't help when one dude can cover half of it.",
-            "score": 1699
+            "score": 1715
           },
           {
             "author": "igby1",
             "body": "Spurs get a generational game-breaking player in the draft. \n\nTurns out they don’t need him.",
-            "score": 904
+            "score": 913
           },
           {
             "author": "twovles31",
             "body": "Meh.  Although it would be funny making Charles Barkley have to go down to San Antonio for a big playoff series one of these years.",
-            "score": 441
+            "score": 444
           }
         ]
       },
       {
-        "title": "Every NBA Christmas Day game is better than the NFL’s",
-        "author": "SimilarOnion1655",
-        "score": 1356,
-        "url": "https://www.reddit.com/r/nba/comments/1pv0olw/every_nba_christmas_day_game_is_better_than_the/",
-        "selftext": "As an enjoyer of both leagues. \n\nCowboys Commanders are between two teams that are eliminated from playoff contention \nLions Vikings is a good Lions team vs a Vikings team without their starting quarterback or te and has max broader, a bum, starting at quarterback \nBroncos Chiefs. If the chiefs score more than 3 points, it will be a miracle. They are on their third string quarterback.\n\nEven Cavs Knicks, the worst Christmas Day game is better than those three combined ",
-        "created_utc": 1766620747.0,
-        "num_comments": 307,
-        "id": "1pv0olw",
+        "title": "I mapped every NBA team on an “Excitement vs. Winning” matrix. Turns out the best team in the league (OKC) is one of the most “boring” to watch.",
+        "author": "Kitchen_Animal_2644",
+        "score": 1065,
+        "url": "https://www.reddit.com/r/nba/comments/1pvds7v/i_mapped_every_nba_team_on_an_excitement_vs/",
+        "selftext": "Context: Being an NBA fan in a different time zone is tough. I built a spoiler-free rating tool called ReplayRank that rates games **0-100** using a volatility-based formula (clutch minutes, lead changes, pace, etc.) - **without showing the final score**.\n\n\n\nI plotted team season data **as of Dec 23, 2025**, and the results are… controversial.\n\n\n\n**The Matrix Insights**\n\n\n\n**The “Boring” Elites (Bottom-Right):**\n\n• **OKC** (**86.7%** win rate / **52.8** avg excitement).\n\nMy algorithm “hates” them because they’re too dominant. Blowouts kill late-game volatility. Great for OKC fans, less suspense for neutral viewers.\n\n• Another example in this quadrant: **NYK** (**70.0%** / **59.0**).\n\n\n\n**The True Elites (Top-Right):** teams that win *and* keep it dramatic\n\n• **DEN** (**72.4%** / **69.6**)\n\n• **SAS** (**73.3%** / **66.3**)\n\n• Also notable: **MIN** (**66.7%** / **70.7**)\n\nhttps://preview.redd.it/89m7umm6uc9g1.png?width=2317&format=png&auto=webp&s=6515abf23df49022db6b76c79119efc0de65c0a4\n\n**The Darlings (Top-Left):** not great records, but consistently sweaty games\n\n• **DAL** (**38.7%** / **69.9**)\n\n• **CHI** (**48.3%** / **69.1**)\n\n\n\n**The “Basement” (Bottom-Left):** you know them - losing *and* low suspense\n\n• **BKN** (**32.1%** / **52.2**)\n\n• **WAS** (**17.9%** / **53.3**)\n\n\n\n**Updates based on feedback**\n\n• **Score breakdowns** (Volatility / Player impact / Clutch) so you can see the “why”\n\n• **Fan voting** to flag games the algorithm underrated**.**\n\n\n\nIf you’re watching the Christmas slate and trying to stay spoiler-free, I can share an interactive version on request.\n\n\n\nHappy Holidays.",
+        "created_utc": 1766670632.0,
+        "num_comments": 208,
+        "id": "1pvds7v",
         "subreddit": "nba",
-        "link_url": "https://www.reddit.com/r/nba/comments/1pv0olw/every_nba_christmas_day_game_is_better_than_the/",
+        "link_url": "https://www.reddit.com/r/nba/comments/1pvds7v/i_mapped_every_nba_team_on_an_excitement_vs/",
         "is_self": true,
-        "upvote_ratio": 0.9,
+        "upvote_ratio": 0.86,
         "comments": [
           {
-            "author": "BucksMostFeared",
-            "body": "Yeah the nfl matchups for tomorrow is weak compared to the nba matchups",
-            "score": 610
+            "author": "KindaCoolGuy",
+            "body": "Classic the hawks are right in the middle of being fun to watch too lol",
+            "score": 790
           },
           {
-            "author": "Morezingis",
-            "body": "I don’t think anyone expected half those teams to be this bad this year. Commanders/Chiefs both had deep playoff runs, Vikings were 14-3 and Lions 15-2, and Cowboys… they still sucked. ",
-            "score": 417
+            "author": "TheFestusEzeli",
+            "body": "I don't think these results should be controversial, its a formula based on lead changes/volatility, this was really cool to look at and read.",
+            "score": 622
           },
           {
-            "author": "DeBooBoo",
-            "body": "4 months ago, the NFL Christmas games looked like marquee match-ups. Kinda nutty how that turned out",
-            "score": 384
+            "author": "anonymoususer6407",
+            "body": "Gotta agree with the Wolves. Most fun team to watch this season, and especially at home with those beautiful jerseys & enthusiastic fans",
+            "score": 239
           },
           {
-            "author": "kickinwood",
-            "body": "For decades (to me) Christmas has always been NBA and Thanksgiving was football. I like that balance.",
-            "score": 244
+            "author": "Embarrassed-Ninja592",
+            "body": "So you are saying it will be worth it to stay up until midnight to watch Wolves at Nugs?",
+            "score": 215
           }
         ]
       }
@@ -534,11 +508,11 @@
       {
         "title": "Every time the Houston Astros have been eliminated from the postseason",
         "author": "Ultrimus-Prime",
-        "score": 2293,
+        "score": 2343,
         "url": "https://www.reddit.com/r/baseball/comments/1pv5avc/every_time_the_houston_astros_have_been/",
         "selftext": "",
         "created_utc": 1766637160.0,
-        "num_comments": 304,
+        "num_comments": 308,
         "id": "1pv5avc",
         "subreddit": "baseball",
         "link_url": "https://v.redd.it/c0oypdl63a9g1",
@@ -548,28 +522,28 @@
           {
             "author": "BVBHawg",
             "body": "S tier hate post.",
-            "score": 882
+            "score": 896
           },
           {
             "author": "Ultrimus-Prime",
             "body": "Merry Christmas r/baseball I saved this one for the occasion",
-            "score": 670
+            "score": 678
           },
           {
             "author": "sanchower",
             "body": "Those 90s braves were all business",
-            "score": 310
+            "score": 311
           }
         ]
       },
       {
         "title": "[Passan] BREAKING: Left fielder Tyler Soderstrom and the A's are in agreement on a seven-year, $86 million contract extension, the largest guarantee in franchise history, sources tell ESPN. The deal includes an eighth-year club option and has escalators that max it out at $131 million.",
         "author": "JianClaymore",
-        "score": 1428,
+        "score": 1640,
         "url": "https://www.reddit.com/r/baseball/comments/1pvl9wj/passan_breaking_left_fielder_tyler_soderstrom_and/",
         "selftext": "",
         "created_utc": 1766692238.0,
-        "num_comments": 191,
+        "num_comments": 212,
         "id": "1pvl9wj",
         "subreddit": "baseball",
         "link_url": "https://bsky.app/profile/jeffpassanbot.bsky.social/post/3matkffp5jc2c",
@@ -579,33 +553,33 @@
           {
             "author": "grindingaway69",
             "body": "Buys out 3 year of arb and basically extends him for 4 additional. He gets lifetime security and hits FA at 31 years old, A’s have the potential of an absolute steal for a young breakout hitter \n\nTotal win win",
-            "score": 985
+            "score": 1079
           },
           {
             "author": "bloxision",
             "body": "Nick Kurtz 100 year extension 🔜",
-            "score": 570
+            "score": 664
           },
           {
             "author": "Frankie_48",
             "body": "Congrats to Tyler (shoutout the 209, represent!!) but the fact the A's are signing players to long term contracts all of a sudden, man fuck John Fisher dude. Never doing this while in Oakland is fucking bullshit.",
-            "score": 523
+            "score": 581
           },
           {
             "author": "hawkins126",
             "body": "The A’s start spending money right when they Oakland is fucked up ngl lmaoo",
-            "score": 342
+            "score": 361
           }
         ]
       },
       {
         "title": "Every MLB team's last player to wear jersey number 67",
         "author": "mercerclone",
-        "score": 1145,
+        "score": 1152,
         "url": "https://www.reddit.com/r/baseball/comments/1pv2dg1/every_mlb_teams_last_player_to_wear_jersey_number/",
         "selftext": "for the current times.\n\n(per baseball almanac)",
         "created_utc": 1766626552.0,
-        "num_comments": 219,
+        "num_comments": 220,
         "id": "1pv2dg1",
         "subreddit": "baseball",
         "link_url": "https://i.redd.it/c1rgl3no799g1.png",
@@ -615,33 +589,33 @@
           {
             "author": "who_are_you_people24",
             "body": "I have no memory of Tyson Miller. That person does not exist",
-            "score": 455
+            "score": 458
           },
           {
             "author": "OriolesMets",
             "body": "![gif](giphy|JczRsTy3OmbjS6qrPS|downsized)",
-            "score": 375
+            "score": 374
           },
           {
             "author": "dynnk",
             "body": "I consider myself a man of Cardinals baseball and I have no idea who Anthony Veneziano is.",
-            "score": 211
+            "score": 214
           },
           {
             "author": "AshlandJackson",
             "body": "Guess we’re all Brewers fans now",
-            "score": 111
+            "score": 110
           }
         ]
       },
       {
         "title": "It's Christmas morning! \"Big Christmas\", Jhonkensy Noel, is spending his holiday in DFA limbo",
         "author": "Hungry_Drama_1015",
-        "score": 902,
+        "score": 936,
         "url": "https://www.reddit.com/r/baseball/comments/1pvfp6l/its_christmas_morning_big_christmas_jhonkensy/",
         "selftext": "Although it's never been officially announced, it's clear that there's some kind of pause on the usual 7-day \"DFA limbo\" period during the holidays.\n\nFor those who don't know, teams who DFA a player have 5 days to work out a trade, and then the process of waiver claims which takes another 2 days.\n\nNoel was DFA'd 8 days ago, and the situation isn't likely to be resolved until a couple days after New Years' at least.\n\nHis nickname is famously \"Big Christmas\". He put up a nice .218/.288/.486 slash line in 2024 for a 115 OPS+ before falling off a cliff in 2025, hitting just .162/.183/.297.\n\nMerry Christmas",
         "created_utc": 1766676667.0,
-        "num_comments": 55,
+        "num_comments": 59,
         "id": "1pvfp6l",
         "subreddit": "baseball",
         "link_url": "https://i.redd.it/r1n6in9rcd9g1.jpeg",
@@ -651,12 +625,12 @@
           {
             "author": "Substantial_Bill2148",
             "body": "Rip to another exciting guardians prospect who completely floundered once the other team figured they can just throw into the opposing batters box for a free K",
-            "score": 348
+            "score": 359
           },
           {
             "author": "According_Setting303",
             "body": "my sister has the biggest crush on him. Was devastated when he got DFA’d",
-            "score": 67
+            "score": 73
           },
           {
             "author": "Conehead1",
@@ -668,31 +642,31 @@
       {
         "title": "A's new ballpark on Christmas.",
         "author": "Humble_General4082",
-        "score": 524,
+        "score": 690,
         "url": "https://www.reddit.com/r/baseball/comments/1pvm0sj/as_new_ballpark_on_christmas/",
         "selftext": "This might be a good hotel room to be in once the stadium is built, but for now not the greatest view from my room.",
         "created_utc": 1766694326.0,
-        "num_comments": 199,
+        "num_comments": 257,
         "id": "1pvm0sj",
         "subreddit": "baseball",
         "link_url": "https://i.redd.it/fg5bdxtyse9g1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.93,
+        "upvote_ratio": 0.94,
         "comments": [
           {
             "author": "Klutzy_Order_9559",
             "body": "With a breathtaking view of the... Mandalay Bay Hotel.",
-            "score": 368
+            "score": 457
           },
           {
             "author": "Full-Opportunity-261",
             "body": "Thumbs down. Thumbs down to Fisher. Thumbs down to the A's in Vegas.",
-            "score": 208
+            "score": 238
           },
           {
             "author": "Awatts2222",
             "body": "I wonder if the construction workers found my fanny pack I lost in 1991\n\nat the Tropicana. I believe I had two ten dollar chips and a Slots of Fun coupon in it. lmao",
-            "score": 97
+            "score": 129
           }
         ]
       }
@@ -701,16 +675,16 @@
       {
         "title": "The Post Christmas Dinner Rating Thread (",
         "author": "AnnieIWillKnow",
-        "score": 109,
+        "score": 114,
         "url": "https://www.reddit.com/r/soccer/comments/1pve0rz/the_post_christmas_dinner_rating_thread/",
         "selftext": "Share your Christmas dinner, wherever in the world you may be, for r/soccer to rate or trash.\n\nCheese boards, desserts and other snacks are also accepted.\n\n# Pictures are heavily encouraged - and for today, you can share directly in comments!",
         "created_utc": 1766671392.0,
-        "num_comments": 199,
+        "num_comments": 204,
         "id": "1pve0rz",
         "subreddit": "soccer",
         "link_url": "https://www.reddit.com/r/soccer/comments/1pve0rz/the_post_christmas_dinner_rating_thread/",
         "is_self": true,
-        "upvote_ratio": 0.82,
+        "upvote_ratio": 0.83,
         "comments": [
           {
             "author": "AnnieIWillKnow",
@@ -720,89 +694,89 @@
           {
             "author": "5_percent_discocunt",
             "body": "There are those among us who believe it’s wrong to serve Yorkshire puddings on a Christmas dinner.\n\nThese people can fuck off.\n\nMerry Christmas 👍",
-            "score": 81
+            "score": 84
           },
           {
             "author": "dunneetiger",
             "body": "u/AnnieIWillKnow is going to weight everyone after Christmas. If you didnt put on at least 3Kg, you are banned from r/soccer until you make weight!",
-            "score": 64
+            "score": 62
           },
           {
             "author": "Fresh2Desh",
             "body": "https://preview.redd.it/wzquovsbxc9g1.jpeg?width=3072&format=pjpg&auto=webp&s=16b3bfd3626365feeb96886545cc1c09e1402840\n\nMrs made a chocolate cake",
-            "score": 51
+            "score": 49
           },
           {
-            "author": "PromptAndReceive",
-            "body": "https://preview.redd.it/c6bcsl8c2e9g1.jpeg?width=2981&format=pjpg&auto=webp&s=a31c381c0e941319e9fd738326dfbebedc936893\n\nMelbourne, Australia - I worked my ass off to get this spread sorted, it was so nice to do all this for the family - but I think i'm a little bit tapped out and will try to reduce expectations next year. Wish me luck!",
-            "score": 45
+            "author": "AnnieIWillKnow",
+            "body": "https://preview.redd.it/9voqh2wh8d9g1.jpeg?width=3024&format=pjpg&auto=webp&s=7df31980c1367b00692090dffb17876f1003ed49\n\nEight different types of veg for veggie Christmas dinner 🙌🏻",
+            "score": 50
           }
         ]
       },
       {
         "title": "The \"Not Quite Football\" Chat Room (for games, books, films etc discussion)",
         "author": "AnnieIWillKnow",
-        "score": 81,
+        "score": 84,
         "url": "https://www.reddit.com/r/soccer/comments/1pvbz8t/the_not_quite_football_chat_room_for_games_books/",
         "selftext": "Inspired by your very own u/vvv4231, this thread is for discussion about the many forms of football-related media which are \"Not Quite Football\", such as:\n\n* Video or computer games (such as Football Manager, EA FC/FIFA, PES etc)\n* Fantasy football (Fantasy Premier League, LALIGA Fantasy, Cartola, Gran DT etc)\n* TV shows, films, books and other such cultural media related to football\n\nAnd given that your family probably see your love of football as your sole identifying feature, you've probably got loads of new football-related media as presents today to chat about - so it could not be better timed!",
         "created_utc": 1766664105.0,
-        "num_comments": 199,
+        "num_comments": 206,
         "id": "1pvbz8t",
         "subreddit": "soccer",
         "link_url": "https://www.reddit.com/r/soccer/comments/1pvbz8t/the_not_quite_football_chat_room_for_games_books/",
         "is_self": true,
-        "upvote_ratio": 0.86,
+        "upvote_ratio": 0.87,
         "comments": [
           {
             "author": "tastybiscuitenjoyer",
             "body": "I miss FIFA. That's it. That's the post. I miss being able to play career mode and have fun. The competitive online element has absolutely killed it. The career mode stuff is the same now as it was like ten years ago, same bugs and all.   \n\nAnd I just really miss playing it. I can still remember regen player names of teams I had back in the day, that I climbed the English pyramid with to the top.   \n\nSad.   \n\nI expect FC26 is the same. Might buy it 2nd hand in January. I'll probably regret it if I do.",
-            "score": 40
+            "score": 47
           },
           {
             "author": "[deleted]",
             "body": "[removed]",
-            "score": 32
+            "score": 28
           },
           {
             "author": "fedupofbrick",
             "body": "My girlfriend got me a retro Athletic jacket. I'm wearing it now like a child. Happy as a pig in shite",
-            "score": 24
+            "score": 26
           }
         ]
       },
       {
         "title": "Festive \"Sunday\" Support",
         "author": "AnnieIWillKnow",
-        "score": 66,
+        "score": 64,
         "url": "https://www.reddit.com/r/soccer/comments/1pva7zk/festive_sunday_support/",
         "selftext": "During the pandemic, we posted Sunday Support threads on r/soccer to provide a space for members of our commuity to discuss their mental health and emotional wellbeing - and to find support.\n\nOver the years, r/soccer has proved itself to be hugely supportive regarding these issues, and as such for many r/soccer has become a safe place in which people feel able to open up regarding issues which sadly do remain stigmatised in society at large. \n\nThe festive season can be a challenging time for many - and so on this day (even though it's not a Sunday) we are listening. \n\nYou can also find some resources for mental health on our [dedicated wiki page.](https://www.reddit.com/r/soccer/wiki/mentalhealth)\n\nI would especially like to highlight[ Campaign Against Living Miserably (CALM)](https://www.thecalmzone.net/) \\- a suicide prevention charity which does brilliant work, and has a particular focus on young men, the main demographic of this community.\n\n# Happy Holidays, one and all. You are not alone.",
         "created_utc": 1766656898.0,
-        "num_comments": 50,
+        "num_comments": 53,
         "id": "1pva7zk",
         "subreddit": "soccer",
         "link_url": "https://www.reddit.com/r/soccer/comments/1pva7zk/festive_sunday_support/",
         "is_self": true,
-        "upvote_ratio": 0.85,
+        "upvote_ratio": 0.84,
         "comments": [
           {
             "author": "AnnieIWillKnow",
             "body": "Guess I'll get the ball rolling\n\nI'm fortunate to not be alone this Christmas, spending it with my mum - the person most important to me in the world, it's a privilege to have her and this day together\n\nThis is the first Christmas without my dad though, who died unexpectedly 3 months ago, at just 69\n\nIt's strange, because since my parents separated about a decade ago it's not like he was a regular feature on the day itself - or a big part of Christmas. I'd see him on the 27th or 28th usually, with his extended family\n\nBut all Christmas Eve my mind and heart felt so heavy with thoughts and memories of him, which took me by surprise. Kept thinking back to all of our mad cap family Christmasses growing up, in a family of 7. The chaos, carnage, frivolity, arguments, board games, Christmas telly. Staying up late to watch the Boxing Day test. My dad worked a lot and sometimes even worked Christmas, but then there would be that moment he came home, too\n. \nI think it gets me too, what he's lost. We've lost him, but it hurts to know that he'll never again have the joy of Christmas, of seeing your family, of eating, drinking and being merry. He had a sweet smile, and I remember that image of him sitting back late on Christmas evening, heart full of good cheer, a big smile on his face\n\nMiss him more than I realise",
-            "score": 33
+            "score": 34
           },
           {
             "author": "Elliot_Kyouma",
             "body": "This is my first Christmas alone. I lost my dad 4 years ago and my mum 10 months ago and it's really been a tough couple of years. We were never big on the holidays in my family, no big dinners and extended family, but their absence still hurts.\n\nIn the past couple of months I've been pushing people away and getting more and more isolated and today I feel so alone. Football and reddit have been a welcome distraction, but I'm really lost in my life right now.\n\nHope everyone is having a merry Christmas",
-            "score": 26
+            "score": 28
           },
           {
             "author": "StevieHyperS",
             "body": "I mentioned in r/Gunners that this Xmas will be bittersweet for me. Next year will be the most difficult year of my life as I've been told by my wife, she plans to leave me next year. I'll have the kids, which I'm eternally thankful for because they are my world. However I'm having to put brave face on, act like I'm OK, when inside I'm in pain.\n\n\n20+ years with someone, gone. Through no fault of my own. ",
-            "score": 21
+            "score": 23
           },
           {
             "author": "bunsy_mcgee",
             "body": "Been going through a rough patch for a while now with my wife - been together 9 years married for one. We start therapy in January, but Im scared that it might be over and frightened about losing a best friend and someone incredibly important to me. That Christmas love isnt there at the moment. We alternate Christmases so I’m trying to enjoy as much as I can because who knows if this will be our last together with her family - I love em too and its all fucking sad. ",
-            "score": 20
+            "score": 24
           },
           {
             "author": "Broken_Pikachu",
@@ -814,7 +788,7 @@
       {
         "title": "(Festive) Free Talk Thread - Part 1",
         "author": "AnnieIWillKnow",
-        "score": 50,
+        "score": 52,
         "url": "https://www.reddit.com/r/soccer/comments/1pv0q3c/festive_free_talk_thread_part_1/",
         "selftext": "A festive edition of r/soccer's favourite stickied thread.\n\nWe will post a Part 2, to suit other time zones, at 19:00 GMT!",
         "created_utc": 1766620867.0,
@@ -831,24 +805,24 @@
             "score": 1
           },
           {
+            "author": "Destroyeh",
+            "body": "feels crazy when people talk about THAT r/soccer christmas day like it was yesterday. its was fucking 7 years ago \n\n\n\nhttps://preview.redd.it/rrpp09cv4b9g1.png?width=651&format=png&auto=webp&s=34f48c3316f8676d7e6f67f1a35caccbf231cf16",
+            "score": 44
+          },
+          {
             "author": "sga1",
             "body": "Used to be a Christmas tradition for my family to go to the pub, come home after a few hours and deck the Halls.\n\nTo be honest no idea why the Halls carried on living next door as long as they did.",
             "score": 45
           },
           {
-            "author": "Destroyeh",
-            "body": "feels crazy when people talk about THAT r/soccer christmas day like it was yesterday. its was fucking 7 years ago \n\n\n\nhttps://preview.redd.it/rrpp09cv4b9g1.png?width=651&format=png&auto=webp&s=34f48c3316f8676d7e6f67f1a35caccbf231cf16",
-            "score": 43
+            "author": "fatinternetcat",
+            "body": "https://preview.redd.it/5ukwri9ppb9g1.jpeg?width=4300&format=pjpg&auto=webp&s=73e9840453d8d9f736de81051d00fcbf9bdd16a0",
+            "score": 41
           },
           {
             "author": "Impressive-Fig-9248",
             "body": "Mum bought me Lego. I’m a fully grown man. Buzzing.",
-            "score": 38
-          },
-          {
-            "author": "nonhofantasia",
-            "body": "https://preview.redd.it/kf6kovgebb9g1.jpeg?width=1021&format=pjpg&auto=webp&s=a41541f29fcca17da9607292fbe37c17ce0d2b38\n\nMerry Christmas from Mr. Merry Christmas himself",
-            "score": 39
+            "score": 35
           }
         ]
       },
@@ -864,7 +838,7 @@
         "subreddit": "soccer",
         "link_url": "https://www.reddit.com/r/soccer/comments/1pv0q2t/rsoccer_christmas_day_2025_hub_thread/",
         "is_self": true,
-        "upvote_ratio": 0.74,
+        "upvote_ratio": 0.73,
         "comments": []
       }
     ],
@@ -872,7 +846,7 @@
       {
         "title": "Michigan naughty/nice list",
         "author": "Yo_gurt5",
-        "score": 20,
+        "score": 21,
         "url": "https://www.reddit.com/r/MichiganWolverines/comments/1pv60k2/michigan_naughtynice_list/",
         "selftext": "nice:\n\nBryce underwood\n\njustice haynes\n\nour RB coach\n\ninside zone plays\n\nthe big house in its entirety\n\nmichigan recruits who are staying\n\nthe score 13-10\n\n \n\nnaughty: \n\nsherrone moore\n\nMel tucker\n\nsemaj Morgan\n\nthe forward pass \n\nbiff poggi interviewing skills\n\nevery and all Notre dame, MSU, ohio state, and northwestern fan.\n\nwarde Manuel\n\ninjuries\n\nBrian Kelly (we all remember the hockey game incident don't take back your statements)",
         "created_utc": 1766639838.0,
@@ -896,17 +870,17 @@
           {
             "author": "DetroitOtaku",
             "body": "It wasn't too long ago that we learned that the evidence against Stalions for Signgate was leaked illegally by a former player who is now part of a rival team. Amazing how quickly that story vanished, isn't it? No follow-ups, no digging deeper, no nothing. Just big news for one day and now?",
-            "score": 6
+            "score": 8
           },
           {
             "author": "Kkizitoo",
             "body": "Damn fuck northwestern too? 😭",
-            "score": 8
+            "score": 7
           },
           {
             "author": "ds1224",
             "body": "Moore deserves something worse than coal",
-            "score": 4
+            "score": 5
           }
         ]
       }
@@ -915,11 +889,11 @@
       {
         "title": "Detroit Blood Born #One Pride",
         "author": "Ol_School_1961",
-        "score": 1112,
+        "score": 1176,
         "url": "https://www.reddit.com/r/detroitlions/comments/1pvi163/detroit_blood_born_one_pride/",
         "selftext": "Lions are still Detroit Pride, \nBlack Out Game Go Lions ",
         "created_utc": 1766683315.0,
-        "num_comments": 93,
+        "num_comments": 96,
         "id": "1pvi163",
         "subreddit": "detroitlions",
         "link_url": "https://i.redd.it/9hvu5kajwd9g1.jpeg",
@@ -929,60 +903,29 @@
           {
             "author": "Ol_School_1961",
             "body": "Merry Christmas Enjoy Life",
-            "score": 90
+            "score": 94
           },
           {
             "author": "BoatLessBoozeCruise5",
             "body": "Merry Christmas unc!! Happiest of days to you and your family! One pride!",
-            "score": 28
+            "score": 29
           },
           {
             "author": "namethatsnotused",
             "body": "Merry Christmas Unc. Let's get that win.",
-            "score": 26
+            "score": 27
           },
           {
             "author": "brucatlas1",
             "body": "Did you put the flag up on time today?",
-            "score": 19
-          }
-        ]
-      },
-      {
-        "title": "regardless of what happens on the field off the field they’re still really close",
-        "author": "MatthewTheGOATyt",
-        "score": 583,
-        "url": "https://www.reddit.com/r/detroitlions/comments/1puzz2p/regardless_of_what_happens_on_the_field_off_the/",
-        "selftext": "",
-        "created_utc": 1766618406.0,
-        "num_comments": 56,
-        "id": "1puzz2p",
-        "subreddit": "detroitlions",
-        "link_url": "https://i.redd.it/zr69660jj89g1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.99,
-        "comments": [
-          {
-            "author": "StickyMcdoodle",
-            "body": "I'm so curious about what is going on with DMo and the team. \n\nI don't think he's jealous of Gibbs. I would guess that he's as supportive of him as anyone. Moreso even. He just doesn't seem like the dramatic type. \n\n\nFurther, the whole vibe of the team has been off all season for whatever reason. \n\nI hope they figure it out before Dmo requests a trade.",
-            "score": 257
-          },
-          {
-            "author": "galaxy1985",
-            "body": "It was sonic and knuckles for a reason. They're more dynamic TOGETHER. They both need to be used for both to be more successful.",
-            "score": 78
-          },
-          {
-            "author": "Prestigious_Cycle160",
-            "body": "I’m going to be so fucking upset if they trade him…\n\nEdit: definitely not hoping",
-            "score": 66
+            "score": 21
           }
         ]
       },
       {
         "title": "Early Christmas Goff Chants",
         "author": "Agreeable-Coffee-582",
-        "score": 317,
+        "score": 316,
         "url": "https://www.reddit.com/r/detroitlions/comments/1pv5ayl/early_christmas_goff_chants/",
         "selftext": "One of my autistic kiddo's favorite thing to cheer every week! He prefers to be nonverbal, but always chants for 16! Got him this special shirt and glasses to celebrate his favorite player. \n\nMerry Christmas to the Pride! ",
         "created_utc": 1766637170.0,
@@ -996,12 +939,12 @@
           {
             "author": "cassimiro04",
             "body": "We need a offensive lineman kid, suit up!",
-            "score": 66
+            "score": 64
           },
           {
             "author": "FTDburner",
             "body": "Go lions!! Come on now. This is what the team should actually be playing for. Not curmudgeoned old guys like me lol",
-            "score": 19
+            "score": 18
           },
           {
             "author": "Exotic_Athlete4609",
@@ -1013,7 +956,7 @@
       {
         "title": "Broke out The Lions christmas sweater",
         "author": "kinda_alright",
-        "score": 295,
+        "score": 296,
         "url": "https://www.reddit.com/r/detroitlions/comments/1pvcj4m/broke_out_the_lions_christmas_sweater/",
         "selftext": "FTP! ",
         "created_utc": 1766666186.0,
@@ -1027,7 +970,7 @@
           {
             "author": "jcoddinc",
             "body": "https://i.redd.it/4tpshlwrlc9g1.gif",
-            "score": 10
+            "score": 11
           },
           {
             "author": "Stillwater-Scorp1381",
@@ -1037,7 +980,7 @@
           {
             "author": "Hot_Mud7172",
             "body": "I'll wear mine in solidarity. Go Lions & Merry Christmas!\n\nhttps://preview.redd.it/o9nvfly3gd9g1.jpeg?width=3060&format=pjpg&auto=webp&s=e83eb764e7cb29d7da0c81f9676734b272fcffcc",
-            "score": 3
+            "score": 4
           },
           {
             "author": "zep1021",
@@ -1054,7 +997,7 @@
       {
         "title": "Merry Christmas- my wife with the lions win",
         "author": "topcide",
-        "score": 280,
+        "score": 290,
         "url": "https://www.reddit.com/r/detroitlions/comments/1pvdsbd/merry_christmas_my_wife_with_the_lions_win/",
         "selftext": "Amazing gift from my wife this am.\n\n",
         "created_utc": 1766670640.0,
@@ -1073,12 +1016,12 @@
           {
             "author": "bj49615",
             "body": "Awesome! Looks like a keeper.",
-            "score": 5
+            "score": 4
           },
           {
             "author": "CryptographerHot6198",
             "body": "Holy shit man!!!",
-            "score": 3
+            "score": 4
           },
           {
             "author": "maxattaxthorax",
@@ -1091,13 +1034,44 @@
             "score": 1
           }
         ]
+      },
+      {
+        "title": "After today only one more game left to watch the beast this year",
+        "author": "acoasterlovered",
+        "score": 272,
+        "url": "https://www.reddit.com/r/detroitlions/comments/1pvffbw/after_today_only_one_more_game_left_to_watch_the/",
+        "selftext": "",
+        "created_utc": 1766675836.0,
+        "num_comments": 18,
+        "id": "1pvffbw",
+        "subreddit": "detroitlions",
+        "link_url": "https://i.redd.it/3uigoioaad9g1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.96,
+        "comments": [
+          {
+            "author": "kinda_alright",
+            "body": "![gif](giphy|1q5aS38snt4LgLmsqs)",
+            "score": 97
+          },
+          {
+            "author": "arenyk",
+            "body": "Change the image to sonic and knuckles. We need em both today!",
+            "score": 33
+          },
+          {
+            "author": "Ok-Physics1927",
+            "body": "At the VERY least, we have a fantasy football championship to win Jah. ",
+            "score": 26
+          }
+        ]
       }
     ],
     "DetroitPistons": [
       {
         "title": "We set an NBA milestone!",
         "author": "DaCurryMan00",
-        "score": 182,
+        "score": 184,
         "url": "https://www.reddit.com/r/DetroitPistons/comments/1pv223s/we_set_an_nba_milestone/",
         "selftext": "",
         "created_utc": 1766625415.0,
@@ -1111,12 +1085,12 @@
           {
             "author": "DeanwinchesterI979",
             "body": "Our defense is very legit",
-            "score": 38
+            "score": 41
           },
           {
             "author": "Unbeatable23",
             "body": "We got shutout in the second quarter, but then we got em back in the third 😤",
-            "score": 16
+            "score": 15
           },
           {
             "author": "GoLionsJD107",
@@ -1126,38 +1100,7 @@
           {
             "author": "SMZcrystals",
             "body": "What’s the deal? Why is it posted like this?",
-            "score": 3
-          }
-        ]
-      },
-      {
-        "title": "Throwback to last season west coast trip against the Lakers",
-        "author": "JeremieLoyalty",
-        "score": 122,
-        "url": "https://www.reddit.com/r/DetroitPistons/comments/1pv079l/throwback_to_last_season_west_coast_trip_against/",
-        "selftext": "",
-        "created_utc": 1766619137.0,
-        "num_comments": 3,
-        "id": "1pv079l",
-        "subreddit": "DetroitPistons",
-        "link_url": "https://v.redd.it/fb7jeg9pl89g1",
-        "is_self": false,
-        "upvote_ratio": 1.0,
-        "comments": [
-          {
-            "author": "RevNeutron",
-            "body": "Damn that’s a nice move. Might need to call him a smooth operator",
-            "score": 3
-          },
-          {
-            "author": "thabigQ",
-            "body": "And one",
-            "score": 2
-          },
-          {
-            "author": "Liquidmetalslimeno9",
-            "body": "I feel like Cade hasn't made too many of those type of moves this season even though he's playing better. (Minus the 3ball)",
-            "score": 0
+            "score": 4
           }
         ]
       },
@@ -1173,17 +1116,17 @@
         "subreddit": "DetroitPistons",
         "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1pv17fi/would_swapping_caris_levert_for_klay_thompson/",
         "is_self": true,
-        "upvote_ratio": 0.36,
+        "upvote_ratio": 0.35,
         "comments": [
           {
             "author": "twodoubles",
             "body": "No. Klay Thompson is washed mate.",
-            "score": 37
+            "score": 35
           },
           {
             "author": "MacReady_2112",
             "body": "If Megan The Stallion is included in the package.",
-            "score": 13
+            "score": 12
           },
           {
             "author": "ignoranceisbliss37",
@@ -1198,7 +1141,7 @@
           {
             "author": "Hastur24601",
             "body": "No?",
-            "score": 7
+            "score": 6
           }
         ]
       }
