@@ -182,7 +182,7 @@
             const cw = data.current_weather;
             if(!cw){ throw 'no current_weather'; }
             const tempC = Math.round(cw.temperature);
-            elTemp.textContent = tempC + '°C / ' + cToF(tempC) + '°F';
+            elTemp.textContent = cToF(tempC) + '°F';
             elDesc.textContent = weatherCodes[cw.weathercode] || ('Code ' + cw.weathercode);
             elWinds.textContent = cw.windspeed + ' m/s';
             // show time if available
@@ -241,8 +241,9 @@
                     if(t > endTime) break;
                     const h = t.getHours();
                     const tempC = Math.round(temps[i]);
+                    const tempF = cToF(tempC);
                     const prob = probs[i] !== undefined ? probs[i] : 0;
-                    const html = `<div class="hour"><div class="hour-time">${h}:00</div><div class="hour-details"><span class="hour-temp">${tempC}°C</span><span class="hour-prob">${prob}%</span></div></div>`;
+                    const html = `<div class="hour"><div class="hour-time">${h}:00</div><div class="hour-details"><span class="hour-temp">${tempF}°F</span><span class="hour-prob">${prob}%</span></div></div>`;
                     container.innerHTML += html;
                 }
             }
