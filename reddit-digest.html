@@ -241,6 +241,31 @@
             word-wrap: break-word;
         }
         
+        .comments-toggle {
+            background: #0079D3;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: background 0.2s;
+            margin-bottom: 15px;
+        }
+        
+        .comments-toggle:hover {
+            background: #0066b3;
+        }
+        
+        .comments-content {
+            display: none;
+        }
+        
+        .comments-content.expanded {
+            display: block;
+        }
+        
         footer {
             background: #1a1a1b;
             color: white;
@@ -436,7 +461,9 @@
                     
                     let commentsHtml = '';
                     if (post.comments && post.comments.length > 0) {
-                        commentsHtml = '<div class="comments"><div class="comments-header">💬 Top Comments:</div>';
+                        const postId = post.id;
+                        commentsHtml = `<button class="comments-toggle" onclick="toggleComments('${postId}')">💬 Show Top ${post.comments.length} Comments</button>`;
+                        commentsHtml += `<div class="comments comments-content" id="comments-${postId}"><div class="comments-header">💬 Top Comments:</div>`;
                         post.comments.forEach((comment, idx) => {
                             commentsHtml += `
                                 <div class="comment">
@@ -475,6 +502,19 @@
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
+        }
+        
+        function toggleComments(postId) {
+            const commentsDiv = document.getElementById(`comments-${postId}`);
+            const button = event.target;
+            
+            commentsDiv.classList.toggle('expanded');
+            
+            if (commentsDiv.classList.contains('expanded')) {
+                button.textContent = button.textContent.replace('Show', 'Hide');
+            } else {
+                button.textContent = button.textContent.replace('Hide', 'Show');
+            }
         }
         
         function scheduleRefresh() {
