@@ -5,12 +5,6 @@ I focus on **cloud architecture, automation, and observability**, helping teams 
 
 ---
 
-Here’s a **cleaned-up, single consolidated section** that merges **Tech Stack** and **Technical Skills**, removes duplicates, and keeps it tight and professional.
-
-You can drop both old sections and replace them with this.
-
----
-
 ## 🧰 Technical Skills & Tooling
 
 **Cloud Platforms**
