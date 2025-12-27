@@ -1,45 +1,14 @@
 {
-  "timestamp": "2025-12-26T19:01:31.527782",
-  "generated_at": "2025-12-26 19:01:31 UTC",
-  "subreddits_count": 7,
-  "total_posts": 27,
+  "timestamp": "2025-12-26T20:01:38.157849",
+  "generated_at": "2025-12-26 20:01:38 UTC",
+  "subreddits_count": 8,
+  "total_posts": 30,
   "data": {
     "cfb": [
       {
-        "title": "Indiana's Curt Cignetti Wants Changes to College Football Calendar, Seeks Commissioner",
-        "author": "Lakelyfe09",
-        "score": 1517,
-        "url": "https://www.reddit.com/r/CFB/comments/1pvqjum/indianas_curt_cignetti_wants_changes_to_college/",
-        "selftext": "",
-        "created_utc": 1766707822.0,
-        "num_comments": 213,
-        "id": "1pvqjum",
-        "subreddit": "CFB",
-        "link_url": "https://www.si.com/college/indiana/football/indiana-curt-cignetti-changes-college-football-calendar-seeks-commissioner-cfp",
-        "is_self": false,
-        "upvote_ratio": 0.97,
-        "comments": [
-          {
-            "author": "bd1047",
-            "body": "Changing the calendar is such an obvious fix that I have zero faith anything will happen",
-            "score": 1725
-          },
-          {
-            "author": "chimatt767",
-            "body": "They all want a commissioner until that commissioner rules against the school or conference. Then they will sue. ",
-            "score": 586
-          },
-          {
-            "author": "LimerickJim",
-            "body": "Play the championship game *on the Saturday* the week before the Super Bowl when the NFL isn't playing.",
-            "score": 367
-          }
-        ]
-      },
-      {
         "title": "Previous season betting odds",
         "author": "Songer98",
-        "score": 14,
+        "score": 13,
         "url": "https://www.reddit.com/r/CFB/comments/1pvrky4/previous_season_betting_odds/",
         "selftext": "I got tired of how bad the AP/Coaches polls are. So I made a college football power rating system, so far it's pretty accurate for this season. But I want to refine it. I'm going through old seasons and simulating them, but to do that, I use betting odds before games to compare my expectations vs Vegas to see the accuracy. Anyone know of websites/companies where I can look up historical data. I'd like to go as far back as 1966",
         "created_utc": 1766710961.0,
@@ -48,12 +17,12 @@
         "subreddit": "CFB",
         "link_url": "https://www.reddit.com/r/CFB/comments/1pvrky4/previous_season_betting_odds/",
         "is_self": true,
-        "upvote_ratio": 0.66,
+        "upvote_ratio": 0.65,
         "comments": [
           {
             "author": "Francis_X_Hummel",
             "body": "Get a time machine and go grab a Grays Sports Almanac?",
-            "score": 25
+            "score": 29
           },
           {
             "author": "wellsjc",
@@ -63,66 +32,25 @@
           {
             "author": "Specialist_Gap_3399",
             "body": "SportsOddsHistory is your best friend here, plus old Vegas newspaper lines via Newspapers.com. Love the “fix polls myself” energy.",
-            "score": 8
+            "score": 9
           },
           {
             "author": "vassago77379",
             "body": "At this point last season Tech had 50,000:1 odds when I was in Vegas, it was RIGHT before we went on a tear in the portal. Should have put a 100 on it and let the casino buy me out.",
-            "score": 4
+            "score": 5
           }
         ]
       }
     ],
     "nfl": [
       {
-        "title": "[Meirov] The #Lions have been eliminated from playoff contention.",
-        "author": "MembershipSingle7137",
-        "score": 12508,
-        "url": "https://www.reddit.com/r/nfl/comments/1pvr7kp/meirov_the_lions_have_been_eliminated_from/",
-        "selftext": "\nThe #Packers have clinched a playoff berth.",
-        "created_utc": 1766709832.0,
-        "num_comments": 1249,
-        "id": "1pvr7kp",
-        "subreddit": "nfl",
-        "link_url": "https://bsky.app/profile/nflnewsreposterbot.bsky.social/post/3mau2rggayc2x",
-        "is_self": false,
-        "upvote_ratio": 0.99,
-        "comments": [
-          {
-            "author": "suzukigun4life",
-            "body": "Defense: 3 net passing yards allowed\n\nOffense: 6 turnovers with the season on a line, after having 8 total turnovers in the first 15 games of the season. \n\nAbsolutely cursed game for the Lions.",
-            "score": 10121
-          },
-          {
-            "author": "SiphenPrax",
-            "body": "That NFC Championship two years ago really was their best shot and even Dan Campbell said that to his players after the game.\n\nI know the Lions have some players locked up but they really need to retool in the offseason if this core is ever gonna win a Super Bowl.",
-            "score": 4283
-          },
-          {
-            "author": "cashappmebitch",
-            "body": "God that whole lions chiefs super bowl shit ended rather poorly ngl",
-            "score": 3548
-          },
-          {
-            "author": "eliw6965",
-            "body": "Both 1st seeds from 2024 missed it this year. Wow",
-            "score": 2675
-          },
-          {
-            "author": "OnePieceAce",
-            "body": "What's more embarrassing?\n\n2023: Blow biggest lead in championship game history \n\n2024: Win a team record 15 games just to get blown out at home by a rookie QB as a double digit underdog\n\n2025: Get eliminated by Max Brosmer",
-            "score": 2435
-          }
-        ]
-      },
-      {
         "title": "Both of Last Year's 1 Seeds (KC, DET) Have Failed to Make the Playoffs This Year.",
         "author": "Individual_Cap_7850",
-        "score": 7815,
+        "score": 7864,
         "url": "https://www.reddit.com/r/nfl/comments/1pvt8ew/both_of_last_years_1_seeds_kc_det_have_failed_to/",
         "selftext": "The last time this happened was 2022, where the 2021 1 Seeds (TEN and GB) failed to make the playoffs the following year.",
         "created_utc": 1766716151.0,
-        "num_comments": 281,
+        "num_comments": 283,
         "id": "1pvt8ew",
         "subreddit": "nfl",
         "link_url": "https://www.reddit.com/r/nfl/comments/1pvt8ew/both_of_last_years_1_seeds_kc_det_have_failed_to/",
@@ -132,28 +60,28 @@
           {
             "author": "wishiwereagoonie",
             "body": "Remember to not take for granted when you get a chance in the playoffs",
-            "score": 3435
+            "score": 3456
           },
           {
             "author": "xdkarmadx",
             "body": "Man that Titans team being the first seed is still crazy",
-            "score": 2495
+            "score": 2499
           },
           {
             "author": "dianeblackeatsass",
             "body": "Feels nice to have brand new fresh teams in the playoffs right guys",
-            "score": 924
+            "score": 930
           }
         ]
       },
       {
         "title": "Max Brosmer is the only NFL QB in the Super Bowl era to play the entire game and finish with under 70 passing yards and 7+ sacks and yet still win.",
         "author": "BreakfastTop6899",
-        "score": 7490,
+        "score": 7577,
         "url": "https://www.reddit.com/r/nfl/comments/1pvvhtk/max_brosmer_is_the_only_nfl_qb_in_the_super_bowl/",
         "selftext": "",
         "created_utc": 1766723425.0,
-        "num_comments": 340,
+        "num_comments": 342,
         "id": "1pvvhtk",
         "subreddit": "nfl",
         "link_url": "https://www.sportingnews.com/ca/nfl/minnesota-vikings/news/vikings-max-brosmer-makes-football-history-never-done-nfl/3d976fc72b18401982ae0c40",
@@ -163,28 +91,28 @@
           {
             "author": "Helloiamok",
             "body": "MVP",
-            "score": 3440
+            "score": 3465
           },
           {
             "author": "caterham09",
             "body": "The fact that the vikings won by 2 scores is the craziest part. This is a decisive victory with effectively a black hole at the most important position in sports",
-            "score": 2203
+            "score": 2238
           },
           {
             "author": "lolhello2u",
             "body": "this is a vikings defense recognition post",
-            "score": 1525
+            "score": 1536
           }
         ]
       },
       {
         "title": "[Highlight] Dan Campbell after the Lions NFC Championship loss to the Niner in 2023: \"This may have been our only shot.\"",
         "author": "Mission_Pay_3373",
-        "score": 6343,
+        "score": 6443,
         "url": "https://www.reddit.com/r/nfl/comments/1pvvsgz/highlight_dan_campbell_after_the_lions_nfc/",
         "selftext": "",
         "created_utc": 1766724405.0,
-        "num_comments": 1239,
+        "num_comments": 1254,
         "id": "1pvvsgz",
         "subreddit": "nfl",
         "link_url": "https://v.redd.it/l70ceekpah9g1",
@@ -194,23 +122,23 @@
           {
             "author": "HereInTheCut",
             "body": "Dan Marino may be NFL history's greatest example of this phenomenon. Gets to the Super Bowl in his 2nd season out of 16 and never returns. That's brutal. Those chances can never be taken for granted.",
-            "score": 6076
+            "score": 6143
           },
           {
             "author": "Infinite303",
             "body": "Saw a post earlier on twitter making fun of Rodgers for \"Only\" having 11 playoff wins. People really underestimate how hard it is to win in the NFL",
-            "score": 3495
+            "score": 3529
           }
         ]
       },
       {
         "title": "Jared Goff in his last two elimination games: 2 TDs, 5 INTs, 4 fumbles lost and 7 sacks taken",
         "author": "Ih8reposts",
-        "score": 4768,
+        "score": 4776,
         "url": "https://www.reddit.com/r/nfl/comments/1pvrphv/jared_goff_in_his_last_two_elimination_games_2/",
         "selftext": "Tonight, Goff threw 2 picks and lost 3 fumbles along with getting sacked 5 times.  \n\nThe last time he played in an elimination game was in the NFC divisional round vs the Commanders last season, where he tossed 3 picks and lost a fumble along with getting sacked twice.  \n\nJared Goof strikes again.\n\nSource",
         "created_utc": 1766711359.0,
-        "num_comments": 804,
+        "num_comments": 805,
         "id": "1pvrphv",
         "subreddit": "nfl",
         "link_url": "https://www.pro-football-reference.com/boxscores/202501180det.htm",
@@ -220,17 +148,53 @@
           {
             "author": "AgentOfSPYRAL",
             "body": "Not great, Bob.",
-            "score": 2452
+            "score": 2455
           },
           {
             "author": "okay_throwaway_today",
             "body": "Sam Darnold if he looked kinda like Ryan Gosling",
-            "score": 1741
+            "score": 1752
           },
           {
             "author": "Yellow_Evan",
             "body": "Sigh he isn’t beating the allegations is he",
-            "score": 1051
+            "score": 1046
+          }
+        ]
+      },
+      {
+        "title": "[Highlight] Chiefs TE Travis Kelce taking the field in Kansas City for what could be the final time:",
+        "author": "LaDainianTomIinson",
+        "score": 3717,
+        "url": "https://www.reddit.com/r/nfl/comments/1pvrwap/highlight_chiefs_te_travis_kelce_taking_the_field/",
+        "selftext": "",
+        "created_utc": 1766711939.0,
+        "num_comments": 783,
+        "id": "1pvrwap",
+        "subreddit": "nfl",
+        "link_url": "https://v.redd.it/k51y2efn9g9g1",
+        "is_self": false,
+        "upvote_ratio": 0.87,
+        "comments": [
+          {
+            "author": "Theharlotnextdoor",
+            "body": "They just signed a $100m deal for the podcast. He's already got tens of millions. Marrying a billionaire. Chiefs probably aren't gonna be super bowl contenders next year. I'd be out. ",
+            "score": 3007
+          },
+          {
+            "author": "MUTSellerPS4",
+            "body": "Congrats on being a house-husband to taylor swift.. not a bad gig",
+            "score": 1972
+          },
+          {
+            "author": "TheWednesdayProject",
+            "body": "He‘s had a great career. It‘s time to hang it up, though.",
+            "score": 1207
+          },
+          {
+            "author": "thy_armageddon",
+            "body": "Me when my husband dies and I have to go on television constantly.",
+            "score": 894
           }
         ]
       }
@@ -239,11 +203,11 @@
       {
         "title": "Nikola Jokic tonight: 56 points, 16 rebounds, 15 assists, on 15-21 shooting, 4-6 from 3, 22-23 FT, team-high +18 in 42 mins",
         "author": "MembershipSingle7137",
-        "score": 9735,
+        "score": 9838,
         "url": "https://www.reddit.com/r/nba/comments/1pvxskj/nikola_jokic_tonight_56_points_16_rebounds_15/",
         "selftext": "Sometimes, words really don’t capture the brilliant game from the 3-time MVP, despite missing 3 starters (Christian Braun, Cam Johnson and Aaron Gordon)\n\nHis running mate Jamal Murray also had a fantastic game - 35 points, 10 assists on 12-32 shooting, 9-18 from 3. Best duo in the NBA right now.\n \nhttps://www.espn.com/nba/boxscore/_/gameId/401809242\n\nAn incredible day of hoops ending with an incredible match. A true gift to all NBA fans!\n\nMerry Christmas to all, and to all a good night",
         "created_utc": 1766731338.0,
-        "num_comments": 977,
+        "num_comments": 983,
         "id": "1pvxskj",
         "subreddit": "nba",
         "link_url": "https://www.reddit.com/r/nba/comments/1pvxskj/nikola_jokic_tonight_56_points_16_rebounds_15/",
@@ -253,33 +217,33 @@
           {
             "author": "iamhereforsomework",
             "body": "Video game numbers",
-            "score": 3188
+            "score": 3210
           },
           {
             "author": "ClimaticExodus",
             "body": "He is finally getting wins with 50 point outings",
-            "score": 2833
+            "score": 2863
           },
           {
             "author": "Guardax",
             "body": "This legitimately might be the best Christmas Day stat line in NBA history",
-            "score": 1827
+            "score": 1852
           },
           {
             "author": "rumblegod",
             "body": "Jokic was right, Chet needs to get fatter",
-            "score": 1623
+            "score": 1643
           }
         ]
       },
       {
         "title": "JJ Redick: Too often guys don't wanna make the choice, and it's pretty consistent who those guys are. Saturday's practice is gonna be uncomfortable.. I'm not doing another 53 games like this\"",
         "author": "RedditFan3510",
-        "score": 5198,
+        "score": 5261,
         "url": "https://www.reddit.com/r/nba/comments/1pvv1rr/jj_redick_too_often_guys_dont_wanna_make_the/",
         "selftext": "",
         "created_utc": 1766721907.0,
-        "num_comments": 1176,
+        "num_comments": 1181,
         "id": "1pvv1rr",
         "subreddit": "nba",
         "link_url": "https://www.youtube.com/watch?v=pxE5YXpAJp4",
@@ -289,28 +253,28 @@
           {
             "author": "sfcityrocker44",
             "body": "The vibes in that locker room are disastrous",
-            "score": 3546
+            "score": 3564
           },
           {
             "author": "peebeesweebees",
             "body": "I missed most of the game, who’s he talking about?",
-            "score": 1940
+            "score": 1953
           },
           {
             "author": "Western-Election-997",
             "body": "Maybe stop starting Rui who’s 0-6 with no defense ?",
-            "score": 1394
+            "score": 1397
           }
         ]
       },
       {
         "title": "[Highlight] Anthony Edwards tries to disrupt Nikola Jokic's preparation for the free throw in overtime, then acts like he didn't do it",
         "author": "MrBuckBuck",
-        "score": 4493,
+        "score": 4588,
         "url": "https://www.reddit.com/r/nba/comments/1pvz67w/highlight_anthony_edwards_tries_to_disrupt_nikola/",
         "selftext": "",
         "created_utc": 1766736620.0,
-        "num_comments": 426,
+        "num_comments": 431,
         "id": "1pvz67w",
         "subreddit": "nba",
         "link_url": "https://streamable.com/bqu727",
@@ -325,28 +289,28 @@
           {
             "author": "Gryll79",
             "body": "When jokic made the first one he def looked like \"fuck...it didn't work\"",
-            "score": 2323
+            "score": 2379
           },
           {
             "author": "Downisthenewup87",
             "body": "It's fun how much these teams and fanbases dislike each other. Definitely the biggest rivalry the Nuggets have had during my 30 plus years as a fan.",
-            "score": 1027
+            "score": 1042
           },
           {
             "author": "superdupermak",
             "body": "He also knock the ball on jokic hands trying to make an inbound pass then called for a delay of game preceded by a tech - and wolves fan are saying refs cooked them",
-            "score": 498
+            "score": 500
           }
         ]
       },
       {
         "title": "[Highlight] Anthony Edwards hits the big corner triple to bring the Timberwolves with 1.1 left on Christmas vs the Nuggets!",
         "author": "fbreaker",
-        "score": 4018,
+        "score": 4050,
         "url": "https://www.reddit.com/r/nba/comments/1pvx98o/highlight_anthony_edwards_hits_the_big_corner/",
         "selftext": "",
         "created_utc": 1766729340.0,
-        "num_comments": 191,
+        "num_comments": 192,
         "id": "1pvx98o",
         "subreddit": "nba",
         "link_url": "https://streamable.com/rdr07h",
@@ -361,24 +325,24 @@
           {
             "author": "ifuckwithit",
             "body": "ANTA CLAUS",
-            "score": 980
+            "score": 987
           },
           {
             "author": "Palifaith",
             "body": "Cold as fuck.",
-            "score": 814
+            "score": 824
           },
           {
             "author": "Joeyfingis",
             "body": "I can't believe the wolves have a guy like this. I haven't felt like this since KG. Crazy.",
-            "score": 499
+            "score": 508
           }
         ]
       },
       {
         "title": "Jimmy Butler on the Draymond Green and Steve Kerr argument and reconciliation this week\n\n“I like that. Y’all yell at each other. Turned me on a little bit. I’m not gonna lie.”",
         "author": "MrBuckBuck",
-        "score": 3622,
+        "score": 3642,
         "url": "https://www.reddit.com/r/nba/comments/1pvsx6a/jimmy_butler_on_the_draymond_green_and_steve_kerr/",
         "selftext": "",
         "created_utc": 1766715164.0,
@@ -392,27 +356,189 @@
           {
             "author": "Dependent-Effect6077",
             "body": "This sounds like something Joe Mazzulla would say lmao",
-            "score": 2712
+            "score": 2723
           },
           {
             "author": "LezbianaGrande",
             "body": "Honestly? I get it.",
-            "score": 918
+            "score": 923
           },
           {
             "author": "Accomplished_Pen4965",
             "body": "Jimmy is hilarious. Some of y'all gotta lighten up.",
-            "score": 820
+            "score": 825
           },
           {
             "author": "SloshaPacana",
             "body": "It's not weird at all imo, i've gotten HELLA bricked from people arguing to the point of leaking",
-            "score": 666
+            "score": 665
           },
           {
             "author": "Ghost6x",
             "body": "Jimmy finally got his first Christmas family argument in decades",
-            "score": 360
+            "score": 369
+          }
+        ]
+      }
+    ],
+    "baseball": [
+      {
+        "title": "[Highlight] Tim Anderson walks off the Yankees in the Field of Dreams game",
+        "author": "boxwoodbeagle",
+        "score": 2286,
+        "url": "https://www.reddit.com/r/baseball/comments/1pvv46c/highlight_tim_anderson_walks_off_the_yankees_in/",
+        "selftext": "",
+        "created_utc": 1766722130.0,
+        "num_comments": 196,
+        "id": "1pvv46c",
+        "subreddit": "baseball",
+        "link_url": "https://v.redd.it/2sk2qesw3h9g1",
+        "is_self": false,
+        "upvote_ratio": 0.92,
+        "comments": [
+          {
+            "author": "AutoModerator",
+            "body": "Please reply to this comment with any additional videos/angles of this highlight.\n*If you would like this comment automatically added to your highlight posts, please include [Highlight] in your post title.*\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/baseball) if you have any questions or concerns.*",
+            "score": 1
+          },
+          {
+            "author": "Equivalent_Waltz8890",
+            "body": "It’s crazy how the FOD will never host a better game than this.\n\nThey really got it right on the first try. One of my favorite games ever.",
+            "score": 1146
+          },
+          {
+            "author": "tendy_trux35",
+            "body": "This was the peak of being a white Sox fan between 2005 and today. And most likely for the next 6-7 years at least as well.",
+            "score": 596
+          },
+          {
+            "author": "boxwoodbeagle",
+            "body": "Though it's unfortunate how the end of his White Sox career played out, as an Iowan this is still one of my favorite baseball moments",
+            "score": 403
+          }
+        ]
+      },
+      {
+        "title": "Staff from the Athletic ranked the best front offices in the 4 major sports. Two MLB teams cracked their top 5",
+        "author": "tankyouout",
+        "score": 717,
+        "url": "https://www.reddit.com/r/baseball/comments/1pw7dw1/staff_from_the_athletic_ranked_the_best_front/",
+        "selftext": "",
+        "created_utc": 1766764198.0,
+        "num_comments": 582,
+        "id": "1pw7dw1",
+        "subreddit": "baseball",
+        "link_url": "https://i.redd.it/fraho9n1lk9g1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.88,
+        "comments": [
+          {
+            "author": "SperotheHero654",
+            "body": "We can all assume our team falls in the \"Other\" category. Top 6 babyyyy!",
+            "score": 869
+          },
+          {
+            "author": "Reiketsu_Nariseba",
+            "body": "And here's our World Series titles...IF WE HAD ANY",
+            "score": 609
+          },
+          {
+            "author": "involmasturb",
+            "body": "Surprise! The reigning champions from the four sports are the top 4.",
+            "score": 569
+          },
+          {
+            "author": "Zeke-Nnjai",
+            "body": "Baltimore is ridiculously overrated. In what world do they have the #3 best FO in the NFL?",
+            "score": 235
+          }
+        ]
+      },
+      {
+        "title": "How many times can someone be drafted",
+        "author": "Several-Assistant-51",
+        "score": 421,
+        "url": "https://www.reddit.com/r/baseball/comments/1pw9izd/how_many_times_can_someone_be_drafted/",
+        "selftext": "Seriously. This must be a record. Appears he had as many draft classes as years in the bigs. ",
+        "created_utc": 1766769502.0,
+        "num_comments": 122,
+        "id": "1pw9izd",
+        "subreddit": "baseball",
+        "link_url": "https://i.redd.it/uuegp1bq0l9g1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.97,
+        "comments": [
+          {
+            "author": "Jux_",
+            "body": "You should see his water bill",
+            "score": 339
+          },
+          {
+            "author": "Astral_Fogduke",
+            "body": "and he paid quite a lot in water fees as well!",
+            "score": 225
+          },
+          {
+            "author": "Salt_My_Sandals",
+            "body": "Idk what the record is, but theoretically you can get drafted as many times the NCAA will give you eligibility. Once out of high school, twice after each year of junior college, and after each season at an NCAA school.",
+            "score": 95
+          }
+        ]
+      },
+      {
+        "title": "1st overall pick Kelsie Whitmore officially signed with WPBL San Francisco for it’s inaugural season.",
+        "author": "Perryplat199",
+        "score": 423,
+        "url": "https://www.reddit.com/r/baseball/comments/1pwghdx/1st_overall_pick_kelsie_whitmore_officially/",
+        "selftext": "",
+        "created_utc": 1766786898.0,
+        "num_comments": 49,
+        "id": "1pwghdx",
+        "subreddit": "baseball",
+        "link_url": "https://i.redd.it/1o5541ijgm9g1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.89,
+        "comments": [
+          {
+            "author": "Whole_Step_7619",
+            "body": "I love baseball but as someone who grew up as a softball player I can't help but feel like AUSL is probably going to overtake this league quite quickly considering the support it's getting from MLB and other large vendors, not the mention its very fast traction.",
+            "score": 122
+          },
+          {
+            "author": "YodaForceGhost",
+            "body": "She has a career .037 BA and 12.04 ERA as a two-way player in Independent League ball. Maybe she turns it around in this league",
+            "score": 58
+          },
+          {
+            "author": "cubbies1016",
+            "body": "I'm incredibly excited for the WPBL. Can't wait to travel to Springfield Illinois for a few games this summer!",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "title": "Does adding a 4-5 war player to a team adds 4-5 wins over the course of a season?",
+        "author": "FriendlyNeighborOrca",
+        "score": 281,
+        "url": "https://www.reddit.com/r/baseball/comments/1pw8egh/does_adding_a_45_war_player_to_a_team_adds_45/",
+        "selftext": "Like hypothetically if you had replaced the worst starter in a team that won 90 games for a 4 war pitcher would that team have won 94 games instead?",
+        "created_utc": 1766766734.0,
+        "num_comments": 190,
+        "id": "1pw8egh",
+        "subreddit": "baseball",
+        "link_url": "https://www.reddit.com/r/baseball/comments/1pw8egh/does_adding_a_45_war_player_to_a_team_adds_45/",
+        "is_self": true,
+        "upvote_ratio": 0.91,
+        "comments": [
+          {
+            "author": "OutfieldOfNightmares",
+            "body": "Maybe",
+            "score": 1121
+          },
+          {
+            "author": "Prestigious-Swan6161",
+            "body": "That's how the calculation is supposed to work. Obviously it's not 1:1. A replacement level team wins 48 games on average and every WAR above 0 adds on to the theoretical win total",
+            "score": 494
           }
         ]
       }
@@ -421,7 +547,7 @@
       {
         "title": "The camera men during half-time at AFCON",
         "author": "GOAT-Antony",
-        "score": 5922,
+        "score": 5967,
         "url": "https://www.reddit.com/r/soccer/comments/1pvsztc/the_camera_men_during_halftime_at_afcon/",
         "selftext": "",
         "created_utc": 1766715391.0,
@@ -440,12 +566,12 @@
           {
             "author": "maxplaysmusic",
             "body": "It's really hard not to dance to that banger.",
-            "score": 1049
+            "score": 1048
           },
           {
             "author": "meme_tenretni",
             "body": "That continent is just a vibe",
-            "score": 329
+            "score": 327
           },
           {
             "author": "Competitive-Prompt86",
@@ -457,11 +583,11 @@
       {
         "title": "Park Ji-sung says he is not fit to be manager because \"There are things you must say that can hurt players, and I don't have the confidence to carry out that kind of complex control.\"",
         "author": "Korece",
-        "score": 5203,
+        "score": 5302,
         "url": "https://www.reddit.com/r/soccer/comments/1pw1k8x/park_jisung_says_he_is_not_fit_to_be_manager/",
         "selftext": "",
         "created_utc": 1766746151.0,
-        "num_comments": 127,
+        "num_comments": 129,
         "id": "1pw1k8x",
         "subreddit": "soccer",
         "link_url": "https://biz.chosun.com/en/en-sports/2025/12/25/NXRDWEMH4NG5TJKZWA45VKURIA/",
@@ -471,12 +597,12 @@
           {
             "author": "oldbaron",
             "body": "A nice lad.",
-            "score": 2952
+            "score": 3005
           },
           {
             "author": "BruiserBroly",
             "body": ">Ferguson knew players' tendencies exactly and deliberately provoked them. Even players who scored goals were criticized if the team needed to receive a message. I am not good at that kind of curved conversation. I tend to speak in a straight line.\n\nHe probably doesn’t need to copy everything Fergie did but fair enough.",
-            "score": 1695
+            "score": 1721
           },
           {
             "author": "infinitepounds",
@@ -488,11 +614,11 @@
       {
         "title": "Lamine Yamal surprised a group of kids by joining them for a game of beach football in Dubai",
         "author": "GOAT-Antony",
-        "score": 3559,
+        "score": 3575,
         "url": "https://www.reddit.com/r/soccer/comments/1pvrmio/lamine_yamal_surprised_a_group_of_kids_by_joining/",
         "selftext": "",
         "created_utc": 1766711099.0,
-        "num_comments": 205,
+        "num_comments": 203,
         "id": "1pvrmio",
         "subreddit": "soccer",
         "link_url": "https://v.redd.it/f0xeyskz6g9g1",
@@ -507,23 +633,23 @@
           {
             "author": "KaladinStormShat",
             "body": "Makes you realize how young he is lol",
-            "score": 2204
+            "score": 2222
           },
           {
             "author": "Abitou",
             "body": "Smurfing",
-            "score": 874
+            "score": 876
           }
         ]
       },
       {
         "title": "10 years ago today, Cuco Martina’s goal against Arsenal. It was the only goal he scored in the Premier League.",
         "author": "Sparky-moon",
-        "score": 2897,
+        "score": 2960,
         "url": "https://www.reddit.com/r/soccer/comments/1pw0kpg/10_years_ago_today_cuco_martinas_goal_against/",
         "selftext": "",
         "created_utc": 1766742336.0,
-        "num_comments": 84,
+        "num_comments": 86,
         "id": "1pw0kpg",
         "subreddit": "soccer",
         "link_url": "https://v.redd.it/c8twsjlyri9g1",
@@ -538,48 +664,43 @@
           {
             "author": "shrewphys",
             "body": "This is exactly the sort of thing that happens to me in FM. Absolute screamer of a goal, then \"that's his first goal for the club!\", and when you check on him he's been there for 10 years",
-            "score": 834
+            "score": 874
           },
           {
             "author": "guityofwuity",
             "body": "Arsenal existed to gift players and teams moments like this back in these times I swear",
-            "score": 593
+            "score": 600
           }
         ]
       },
       {
-        "title": "Thomas Müller on Florian Wirtz having 0 goals + 3 assists in 21 games for Liverpool: \"He would be under more pressure if he joined Bayern Munich instead of Liverpool: The media attention is nowhere near comparable to what he would get at Bayern. As a foreigner in England, you’re not talked as much\"",
-        "author": "GOAT-Antony",
-        "score": 2639,
-        "url": "https://www.reddit.com/r/soccer/comments/1pvqq89/thomas_müller_on_florian_wirtz_having_0_goals_3/",
-        "selftext": "**Thomas Müller:** Florian Wirtz took an international step with his move to Liverpool. At Bayern Munich, he would certainly have found it easier to adapt to the football scene, because he would have stayed in the same league…  \n  \n**Interviewer:** But he's not going through a good period with Liverpool right now (0 goals and 3 assists in 21 competitive games for Liverpool)?  \n  \n**Müller:** That's true. But that doesn't compare at all to the volume of media attention a player faces when things aren't going well for him at Bayern Munich. Here, you're under pressure every day. As a foreign player, you don't get talked about to the same extent.",
-        "created_utc": 1766708365.0,
-        "num_comments": 390,
-        "id": "1pvqq89",
+        "title": "Money spent by LaLiga clubs since Hansi Flick joined Barcelona",
+        "author": "mynamestartswithCa",
+        "score": 2501,
+        "url": "https://www.reddit.com/r/soccer/comments/1pw57n3/money_spent_by_laliga_clubs_since_hansi_flick/",
+        "selftext": "",
+        "created_utc": 1766758351.0,
+        "num_comments": 279,
+        "id": "1pw57n3",
         "subreddit": "soccer",
-        "link_url": "https://www.sueddeutsche.de/projekte/artikel/sport/thomas-mueller-interview-vancouver-fc-bayern-rueckkehr-e248327/?reduced=true",
+        "link_url": "https://i.redd.it/ce37m63j3k9g1.jpeg",
         "is_self": false,
         "upvote_ratio": 0.95,
         "comments": [
           {
             "author": "AutoModerator",
-            "body": "**This is a quotes thread. Remember that there's only one quotes post allowed per interview/press conference, so new quotes with the same origin will be removed. Feel free to comment other quotes/the whole interview as a reply to this comment so users can see them too!**\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/soccer) if you have any questions or concerns.*",
+            "body": "**Mirrors / Alternative Angles**\n  \n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/soccer) if you have any questions or concerns.*",
             "score": 1
           },
           {
-            "author": "-PM_ME_A_SECRET-",
-            "body": "He is probably correct that a German player at Bayern is the one place that he would get more scrutiny than a huge club in the premier league. Maybe there would be a similar media circus at Real or Barca.\n\nBut this feels a little like saying it is hotter on the face of the sun, than it is in Sahara Desert. The pressure on this lad is still immense, and I hope it works out for him.",
-            "score": 1734
+            "author": "callmebuzzkill69",
+            "body": "Crazy that 60 mil from this is for glass cannon Olmo😭",
+            "score": 2148
           },
           {
-            "author": "thatsexypotato-",
-            "body": "I can't comment on the English media, but from the perspective of the German media, Müller is right. In Germany, a lot of attention is focused on FC Bayern. If Wirtz had performed like that there, everyone would have pounced on him like hyenas. There would be new articles every day, and anyone who had ever had anything to do with him would be interviewed, etc. But since he moved to the Premier League I think the German media have been very forgiving towards him.",
-            "score": 933
-          },
-          {
-            "author": "Nero2t2",
-            "body": "He would get much more shit if he was doing the same, with the same price tag in another big club in england, lets be real. Compared to the rest of the big six, especially United and arsenal, liverpool have it VERY easy with the english media. Can you imagine the same situation at United? My god, the tabloids would be going crazy",
-            "score": 811
+            "author": "NumberHunter1",
+            "body": "These are always a bit misleading, due to not including wage bill.\n\nLike, yeah, RM got Mbappe on a free, and TAA nearly for free, but how much did they pay on signing bonuses?\n\nBarcelona has players on super high wages too.",
+            "score": 1165
           }
         ]
       }
@@ -602,17 +723,17 @@
           {
             "author": "entenduintransit",
             "body": "One of the coolest gifts I've gotten, no doubt. She even wrote a foreword for the book where she said, \"Who's got it better than us?\" in reference to our life together and considering she genuinely knows very little about sports overall that really... got to me.",
-            "score": 32
+            "score": 34
           },
           {
             "author": "Disastrous-Poem-1491",
             "body": "Let’s hope the last month or so didn’t make it in time for publication.",
-            "score": 27
+            "score": 26
           },
           {
             "author": "roberta_sparrow",
             "body": "This is epic",
-            "score": 7
+            "score": 6
           },
           {
             "author": "Hail2Victors_144",
@@ -638,7 +759,7 @@
           {
             "author": "The_Laugh21",
             "body": "Can I interest you in some duel pistons Wolverine basketball good year",
-            "score": 168
+            "score": 167
           },
           {
             "author": "PitifulPlantain7139",
@@ -655,7 +776,7 @@
       {
         "title": "Whittingham VS Monken",
         "author": "jcw1996yahoo",
-        "score": 29,
+        "score": 25,
         "url": "https://www.reddit.com/r/MichiganWolverines/comments/1pvxj4q/whittingham_vs_monken/",
         "selftext": "Per Chris Balas: the coaching decision is likely to come to a close FAST and Whittingham is the favorite over Monken. It appears Michigan is going for more of a bridge candidate opposite of Sherrone (youthful/inexperienced) to right the ship and culture for the next few seasons. ",
         "created_utc": 1766730371.0,
@@ -664,108 +785,36 @@
         "subreddit": "MichiganWolverines",
         "link_url": "https://www.reddit.com/r/MichiganWolverines/comments/1pvxj4q/whittingham_vs_monken/",
         "is_self": true,
-        "upvote_ratio": 0.67,
+        "upvote_ratio": 0.65,
         "comments": [
           {
             "author": "Michigan4life53",
             "body": "I just read the article and there’s nothing to indicate that Whittingham is the favorite. Balas says he has no idea how far Monken has gotten, and “Whittingham has some support” with the administrators.\n\n\nThat means nothing.",
-            "score": 72
+            "score": 71
           },
           {
             "author": "Squares9718",
             "body": "Per Chris “Harbaugh isn’t leaving for the NFL” Balas",
-            "score": 67
+            "score": 66
           },
           {
             "author": "lizardnewb",
             "body": "I'm going to trust the people saying it's Monken because A) I like that news better and B) I don't really like Chris Balas very much. I have no other basis for this decision than my feels.\n\n(If this happens, I doubt we look back ten years later and say Wittingham was \"a great hire\" but we could do a lot worse and there's something to be said for knowing the guy isn't gonna crater the program.)",
-            "score": 28
+            "score": 27
           },
           {
             "author": "MidwestPatriot91",
             "body": "The Georgia DC is the way",
-            "score": 21
+            "score": 23
           }
         ]
       }
     ],
     "DetroitLions": [
       {
-        "title": "Didn't even show up",
-        "author": "Thescatteredsun",
-        "score": 3519,
-        "url": "https://www.reddit.com/r/detroitlions/comments/1pvr3sh/didnt_even_show_up/",
-        "selftext": "Shitty crop for a shitty game and a rough season. \nBut merry Christmas everyone and hope you found a way outside the game to enjoy the holiday. See you next week",
-        "created_utc": 1766709512.0,
-        "num_comments": 229,
-        "id": "1pvr3sh",
-        "subreddit": "detroitlions",
-        "link_url": "https://i.redd.it/dvqbekqf2g9g1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.99,
-        "comments": [
-          {
-            "author": "nugentismycenter",
-            "body": "Not even mad anymore after all the refs mistakes this year, we simply are not a good team. Better miss the playoffs than embarass ourselves like we did last year vs Washington. Fix the O Line.",
-            "score": 839
-          },
-          {
-            "author": "Von_Halen",
-            "body": "Swept by GB. Swept by Minnesota.",
-            "score": 376
-          },
-          {
-            "author": "TheCreepyKing",
-            "body": "This team gave up weeks ago. I don't care how many players are out injured - there was no effort or life tonight. You'd think the fucking corners would learn not to give up coverage on end runs after last week but there goes Jordan fucking Addison.\n\nI'm starting to think Ben Johnson really was the secret sauce. Dan Campbell may be a great motivator but it takes more than that.",
-            "score": 278
-          },
-          {
-            "author": "coolstorybro50",
-            "body": "Dogwalked as -7.5 point favorites by a rookie QB yikes",
-            "score": 204
-          },
-          {
-            "author": "LederhosenSituation",
-            "body": "At least TeSlaa got that TD and Bates made that FG. \n\nThat's all I got.\n\nWe suck again.",
-            "score": 180
-          }
-        ]
-      },
-      {
-        "title": "All I can think of after today",
-        "author": "redwingjv",
-        "score": 1398,
-        "url": "https://www.reddit.com/r/detroitlions/comments/1pvr475/all_i_can_think_of_after_today/",
-        "selftext": "",
-        "created_utc": 1766709547.0,
-        "num_comments": 292,
-        "id": "1pvr475",
-        "subreddit": "detroitlions",
-        "link_url": "https://i.redd.it/fjgfmkni2g9g1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.94,
-        "comments": [
-          {
-            "author": "InternationalCorgi82",
-            "body": "Worst loss since I don’t even know when",
-            "score": 731
-          },
-          {
-            "author": "dnanninga",
-            "body": "3 things need to happen:\n\n1. Retooling the offensive line completely \n2. Get a significant edge rusher opposite Aidan\n3. Get some injury luck \n\nIf any of those 3 things don’t happen, then it’s probably true.",
-            "score": 414
-          },
-          {
-            "author": "Slow_Significance329",
-            "body": "I truly believe I will die without seeing this team lift the Lombardi",
-            "score": 211
-          }
-        ]
-      },
-      {
         "title": "Dan in the postgame",
         "author": "thekilla2074",
-        "score": 1262,
+        "score": 1283,
         "url": "https://www.reddit.com/r/detroitlions/comments/1pvs69l/dan_in_the_postgame/",
         "selftext": "",
         "created_utc": 1766712808.0,
@@ -779,33 +828,33 @@
           {
             "author": "BeerWithDonuts",
             "body": "Kyle Shanahan and Sean McVay have had their down years where everyone starts saying they’re past their prime, before they successfully retool their teams.\n\nLions are in good hands as long as Campbell is the coach. ",
-            "score": 1169
+            "score": 1168
           },
           {
             "author": "PirateMushroom",
             "body": "Best case scenario, this lites a fire under the team’s ass like we’ve never seen. Worst case scenario is we just suck.",
-            "score": 465
+            "score": 469
           },
           {
             "author": "NaderSalad",
             "body": "We gotta solve the injury issues. We continue to be the most injured team for multiple seasons now. Something ain’t right. Doesn’t matter who you sign in free agency if they can’t stay healthy.",
-            "score": 339
+            "score": 355
           },
           {
             "author": "maniacisback",
             "body": "Honestly going 15-2 and shitting the bed against the Commanders hurt way more than this and it’s not even close. This team has been showing us all season that this just wasn’t going to be the year. Let’s hope they draft well and fix the O-Line but the thing I’m most worried about is the safety situation. What is the deal with this mysterious knee injury that Kerby has? So much money tied into his contract and we don’t even know if he’ll ever be healthy enough to play consistently again.",
-            "score": 226
+            "score": 227
           }
         ]
       },
       {
         "title": "Lions Changed Schemes & The Data Shows What Happened",
         "author": "servebetter",
-        "score": 1249,
+        "score": 1272,
         "url": "https://www.reddit.com/r/detroitlions/comments/1pw4ss1/lions_changed_schemes_the_data_shows_what_happened/",
         "selftext": "Okay so earlier this year when Johnny Mo came on he said he wanted to...\n\n\"Hunt for explosives\"\n\nMo is from the school of the Air Coryell system.  It uses geometry to stretch the field wide and deep.\n\nThe issue, to get those chunk plays you need to hold the ball longer.\n\nThis season Lions rank #1 in 40+ yard completions.\n\nThe Ben Johnson likes the Erhart-Perkins system.\n\nThis system is based around simplicity.  Where the play call is very short, and the players run the same route just from different formations.\n\nIt resulted in short to mid range plays.\n\nThe data reveals what happened.\n\n2024 Lions - \nAverage depth to target 7.1 yards.\nAverage depth to target 3rd down 7.4\n\nGoff's pocket time was 2.3s\nPressure to sack 18.2%\nEPA + 0.22\n\nShift to this year\n\n2025 Lions - \n\nAverage depth to target 6.8\nAverage depth to target 3rd down 9.6\n\nGoff's pocket time was 2.6s\nPressure to sack 23.9%\nEPA + 0.18\n\nWhat all this means is, when Goff was throwing, he had to hold onto the ball longer, to allow plays to develop.  The system is reliant on deep routes to stretch the field.\n\nObviously with an interior offensive line made of rookies, 3rd stringers and a journeyman this was a storm waiting to happen.\n\nOne wrinkle to is average sack depth.\n\n2024 - 6.5\n2025 - 7.6\n\nChasing explosives put Goff in a position where he had to do more 7 step drops.  This forced a young offensive line to hold on for longer.\n\nAgain it worked against the personnel we had.  Getting the ball out quick isn't part of this scheme.\n\nAnother interesting thing, that I noticed was rhythm...\n\nLast year it felt like they'd get into a rhythm, which is a halmark of the Erhart-Perkins system.  Shorter plays to get yards to get the team in a rhythm.\n\nWhere this year if we got disrupted chasing chunk plays, we got behind in the count and things became disjointed.\n\nI'm still learning about football and these concepts...\n\nBut it's an interesting look at a few things I felt were off, but couldn't put a finger on it.\n\nEDIT: Added the part about sacks, and updated the average yards per attempt and 3rd down.\n",
         "created_utc": 1766757186.0,
-        "num_comments": 214,
+        "num_comments": 218,
         "id": "1pw4ss1",
         "subreddit": "detroitlions",
         "link_url": "https://www.reddit.com/r/detroitlions/comments/1pw4ss1/lions_changed_schemes_the_data_shows_what_happened/",
@@ -815,53 +864,130 @@
           {
             "author": "ben10toesdown",
             "body": "This man said \"I'm still learning about football\" as if this wasn't the most in depth analysis posted on this sub since the losing streak began. I'll be on the lookout for more of your posts/comments ",
-            "score": 1161
+            "score": 1180
           },
           {
             "author": "Crunchandbunch",
             "body": "Great analysis.",
-            "score": 272
+            "score": 278
           },
           {
             "author": "FrigOffRicky16",
             "body": "The Morton system sucked against any team that could generate any sort of pressure without heavy blitzes",
-            "score": 169
+            "score": 176
           },
           {
             "author": "Particular-Frosting3",
             "body": "This is exactly it.  \n\nThe quick hitter passes cause the D to freeze and stop them from selling out to stop the run. \n\nAlso the quick hitters are demoralizing to a D after they get nicked over and over. Eventually the D line gets exhausted by doing this over and over again",
-            "score": 103
+            "score": 110
           }
         ]
       },
       {
-        "title": "It's now official",
-        "author": "UltimateLionsFan",
-        "score": 1218,
-        "url": "https://www.reddit.com/r/detroitlions/comments/1pvrcce/its_now_official/",
+        "title": "Jared Goff Hate Makes No Sense..",
+        "author": "Gxcii1",
+        "score": 1251,
+        "url": "https://www.reddit.com/r/detroitlions/comments/1pw7u0b/jared_goff_hate_makes_no_sense/",
         "selftext": "",
-        "created_utc": 1766710239.0,
-        "num_comments": 62,
-        "id": "1pvrcce",
+        "created_utc": 1766765336.0,
+        "num_comments": 459,
+        "id": "1pw7u0b",
         "subreddit": "detroitlions",
-        "link_url": "https://i.redd.it/pmcbxlhl4g9g1.jpeg",
+        "link_url": "https://www.reddit.com/gallery/1pw7u0b",
         "is_self": false,
-        "upvote_ratio": 0.99,
+        "upvote_ratio": 0.94,
         "comments": [
           {
-            "author": "2AMBeautiful",
-            "body": "That 4th place schedule next year is going to hit, though.",
-            "score": 260
+            "author": "McMeanx2",
+            "body": "The o line was such ass yesterday.",
+            "score": 592
           },
           {
-            "author": "thekilla2074",
-            "body": "Chiefs have superbowls so they wouldn’t care we don’t 😭",
-            "score": 104
+            "author": "niss-uu",
+            "body": "Just live with it. I'm sure half of this sub also called Stafford \"Stat Padford\" back then. \"Can't beat good defenses.\" \"Pads in losses.\" No QB is ever good enough for some people.",
+            "score": 184
           },
           {
-            "author": "JoeSell2005",
-            "body": "i miss when this was fun and something i could look forward to",
-            "score": 39
+            "author": "fortunefades",
+            "body": "I think if Goff was slightly more mobile people wouldn’t be saying this stuff. My opinion is that people see him take sacks or dirt the ball and think that means he’s not good, when reality is its generally pretty smart, at least he’s not (usually) turning the ball over. But the flash of someone like Allen or Jackson makes people think they are far superior.",
+            "score": 141
+          },
+          {
+            "author": "Finkle737",
+            "body": "A comment from yesterday made that I feel is pertinent. \n\n“Most high volume posters are teenagers to early 20s, and that age group is dumb as fuck”",
+            "score": 99
+          }
+        ]
+      },
+      {
+        "title": "Skipper on this season",
+        "author": "thekilla2074",
+        "score": 916,
+        "url": "https://www.reddit.com/r/detroitlions/comments/1pvtcbf/skipper_on_this_season/",
+        "selftext": "",
+        "created_utc": 1766716497.0,
+        "num_comments": 121,
+        "id": "1pvtcbf",
+        "subreddit": "detroitlions",
+        "link_url": "https://i.redd.it/p8emxwf7ng9g1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 1.0,
+        "comments": [
+          {
+            "author": "CallmeKahn",
+            "body": "Skip's self awareness does him credit.",
+            "score": 544
+          },
+          {
+            "author": "jpfitz630",
+            "body": "Skip has always been a man of the people and here is once again putting it perfectly",
+            "score": 289
+          },
+          {
+            "author": "ssspanksta",
+            "body": "That's the most direct and honest assessment anyone has given of the teams performance this season. We should have been hearing a lot more of this for a lot of the season.",
+            "score": 209
+          },
+          {
+            "author": "RK4824",
+            "body": "Unfortunately don’t think Skipper will return next season and I love skip..",
+            "score": 176
+          },
+          {
+            "author": "YoungMiral",
+            "body": "No lie but you kind of felt the arrogance coming from the organization this year. Not the players but from Dan and the coaching staff saying we were “good.”Them raising ticket prices to the highest in the league was a red flag this season",
+            "score": 149
+          }
+        ]
+      },
+      {
+        "title": "What a pathetic display…",
+        "author": "bmattification",
+        "score": 795,
+        "url": "https://www.reddit.com/r/detroitlions/comments/1pvspjz/what_a_pathetic_display/",
+        "selftext": "",
+        "created_utc": 1766714507.0,
+        "num_comments": 37,
+        "id": "1pvspjz",
+        "subreddit": "detroitlions",
+        "link_url": "https://i.redd.it/3ysrcnt9hg9g1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.98,
+        "comments": [
+          {
+            "author": "butthole_surfer_1817",
+            "body": "6 turnovers will do that to you lol.  Jfc 3 yards",
+            "score": 171
+          },
+          {
+            "author": "YoungMiral",
+            "body": "Losing to a rookie QB that only had his 2nd NFL start is nothing short but hilarious but nothing new. We always made bums look like elite QB’s over the decades. I can’t even remember these days who we made look decent or elite",
+            "score": 76
+          },
+          {
+            "author": "CherokeeP3822",
+            "body": "Atleast we didn't make brosmer look good 👍🏻",
+            "score": 46
           }
         ]
       }
@@ -900,42 +1026,6 @@
             "author": "PerryBarnacle",
             "body": "Welcome!",
             "score": 2
-          }
-        ]
-      },
-      {
-        "title": "Found on my old hard drive from 2016",
-        "author": "CP_Conquer",
-        "score": 66,
-        "url": "https://www.reddit.com/r/DetroitPistons/comments/1pvqncn/found_on_my_old_hard_drive_from_2016/",
-        "selftext": "Back when I thought Stanley Johnson was gonna ball out for us lol",
-        "created_utc": 1766708117.0,
-        "num_comments": 17,
-        "id": "1pvqncn",
-        "subreddit": "DetroitPistons",
-        "link_url": "https://i.redd.it/z1htprbayf9g1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.96,
-        "comments": [
-          {
-            "author": "Nickbeau",
-            "body": "Oh hey it's Mr.  Cost us Devin booker and Donovan mitchell",
-            "score": 32
-          },
-          {
-            "author": "axemanozh",
-            "body": "Was never a fan of the gray jerseys but this version was a lot better than the updated version when Nike took over.",
-            "score": 7
-          },
-          {
-            "author": "GrooveDigger47",
-            "body": "nsfw this.",
-            "score": 8
-          },
-          {
-            "author": "AroundNdowN",
-            "body": "The highlight of his Pistons career was when he caught Marc Gasol on his back and gave him a piggyback ride without buckling even a little bit. \n\n\nHe's playing pretty well in Nagasaki though.",
-            "score": 3
           }
         ]
       }
