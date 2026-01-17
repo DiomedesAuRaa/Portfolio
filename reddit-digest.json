@@ -1,142 +1,106 @@
 {
-  "timestamp": "2026-01-17T00:02:24.312141",
-  "generated_at": "2026-01-17 00:02:24 UTC",
-  "subreddits_count": 10,
-  "total_posts": 50,
+  "timestamp": "2026-01-17T04:02:48.064365",
+  "generated_at": "2026-01-17 04:02:48 UTC",
+  "subreddits_count": 12,
+  "total_posts": 60,
   "data": {
     "cfb": [
       {
         "title": "Why isn’t the title game tonight?",
         "author": "radilrouge",
-        "score": 2483,
+        "score": 2605,
         "url": "https://www.reddit.com/r/CFB/comments/1qeikwz/why_isnt_the_title_game_tonight/",
         "selftext": "I assumed there was an NFL playoff game tonight.\n\nDoes putting it on MLK day help in anyway?",
         "created_utc": 1768576405.0,
-        "num_comments": 672,
+        "num_comments": 688,
         "id": "1qeikwz",
         "subreddit": "CFB",
         "link_url": "https://www.reddit.com/r/CFB/comments/1qeikwz/why_isnt_the_title_game_tonight/",
         "is_self": true,
-        "upvote_ratio": 0.94,
+        "upvote_ratio": 0.95,
         "comments": [
           {
             "author": "Infamous-Present-616",
             "body": "Basically Monday is the 3rd best option to maximize viewing numbers after Sunday and Saturday. Since the NFL has games on both of those days. We are relegated to Monday",
-            "score": 2262
+            "score": 2379
           },
           {
             "author": "doublem4545",
             "body": "TV Ratings. Diehards will watch regardless but more casual fans will tune in on a Monday night.",
-            "score": 581
+            "score": 602
           }
         ]
       },
       {
         "title": "[College Gameday] Notre Dame head coach Marcus Freeman will be joining GameDay as a guest analyst for the national championship 👏",
         "author": "cfbluvr",
-        "score": 420,
+        "score": 456,
         "url": "https://www.reddit.com/r/CFB/comments/1qej7n5/college_gameday_notre_dame_head_coach_marcus/",
         "selftext": "",
         "created_utc": 1768577824.0,
-        "num_comments": 407,
+        "num_comments": 413,
         "id": "1qej7n5",
         "subreddit": "CFB",
         "link_url": "https://x.com/collegegameday/status/2012178034728542270?s=46",
         "is_self": false,
-        "upvote_ratio": 0.86,
+        "upvote_ratio": 0.87,
         "comments": [
           {
             "author": "UGonGetGot",
             "body": "Back to back national championship appearances",
-            "score": 877
+            "score": 935
           },
           {
             "author": "cfbluvr",
             "body": "cue the “oh now he wants to be a part of the postseason” jokes",
-            "score": 434
+            "score": 448
           },
           {
             "author": "Character_Point_9745",
             "body": "This is perfect, now my wife can’t say no to watching college gameday",
-            "score": 325
+            "score": 350
           }
         ]
       },
       {
         "title": "Miami-Indiana Championship Game Has Fans Paying $30,000 a Seat",
         "author": "Leegend124",
-        "score": 323,
+        "score": 344,
         "url": "https://www.reddit.com/r/CFB/comments/1qei8pt/miamiindiana_championship_game_has_fans_paying/",
         "selftext": "",
         "created_utc": 1768575648.0,
-        "num_comments": 253,
+        "num_comments": 261,
         "id": "1qei8pt",
         "subreddit": "CFB",
         "link_url": "https://www.bloomberg.com/news/articles/2026-01-16/miami-indiana-championship-game-has-fans-paying-30-000-a-seat",
         "is_self": false,
-        "upvote_ratio": 0.87,
+        "upvote_ratio": 0.88,
         "comments": [
           {
             "author": "Upbeat-Armadillo1756",
             "body": "I would simply not pay that much money for a ticket to a football game. My hard limit is $27,000.",
-            "score": 800
+            "score": 834
           },
           {
             "author": "txgsu82",
             "body": ">\\*checks Ticketmaster\n\n>\\*sorts by most expensive first\n\n>\\*writes article\n\nTough day in the office, huh?",
-            "score": 505
+            "score": 516
           },
           {
             "author": "aisforaaron1",
             "body": "Suckers, I can just watch it on TV for free",
-            "score": 135
-          }
-        ]
-      },
-      {
-        "title": "Weird but True Facts",
-        "author": "Rude_Highlight3889",
-        "score": 146,
-        "url": "https://www.reddit.com/r/CFB/comments/1qe9eid/weird_but_true_facts/",
-        "selftext": "Here are some random facts. The fun kind you have feel like you have to google to see if thre true. Feel free to post your own!\n\nManny Diaz has an ACC title; Mario Cristobal does not.\n\nRyan Day won more playoff games in 2024 than Urban Meyer won his entire career. Likewise, Urban Meyer has more national championships than Ryan Day has wins versus Michigan.  \n\nLane Kiffin has never coached in a playoff game has a head coach. He joins Clay Helton as the only USC head coach to not coach in a playoff or national championship at some point in their career since Paul Hackett.  (Edit: if you include interims, Orgeron has also coached a playoff as a head coach but Williams has not).\n\nScott Frost had more conference losses his final full season with Nebraska than Tom Osborne had in his final 12 seasons. \n\nCurt Cignetti is 26-2 in two seasons at Indiana. As their head coach, he's never lost to a team that didn't play in the national championship. \n\nThe first 4 team playoff featured Bama getting beat by the Big 10 champ in the Sugar Bowl, who would go on to win it all over the Pac 12 champ, while the Pac 12 champ beat FSU in the Rose Bowl, and many said the Big 12 team from Texas had been snubbed. In the final 4 team playoff, the Big 10 champ beat Bama in the Rose Bowl, and went on to win it all over the Pac 12 champ. The Pac 12 champ beat a Big 12 team from Texas in the Sugar Bowl, with many saying FSU was snubbed. ",
-        "created_utc": 1768547827.0,
-        "num_comments": 185,
-        "id": "1qe9eid",
-        "subreddit": "CFB",
-        "link_url": "https://www.reddit.com/r/CFB/comments/1qe9eid/weird_but_true_facts/",
-        "is_self": true,
-        "upvote_ratio": 0.93,
-        "comments": [
-          {
-            "author": "Francis_X_Hummel",
-            "body": "When USC plays at UCLA, USC has the shorter commute.",
-            "score": 215
-          },
-          {
-            "author": "100shadesofcrazy",
-            "body": "Only one team in the history of cfb has lost twice to the same team in bowl games in the same year.",
-            "score": 96
-          },
-          {
-            "author": "Chester-A-Asskicker",
-            "body": "In just two seasons Curt Cignetti has 5% of IU's total wins (26 wins for Cignetti, 528 for IU)",
-            "score": 90
-          },
-          {
-            "author": "DonFlamenco2022",
-            "body": "An Indiana win will make them the first Big Ten team to go undefeated, untied, and win a national title NOT named Ohio State or Michigan since Minnesota in 1941.",
-            "score": 75
+            "score": 138
           }
         ]
       },
       {
         "title": "LSU WR Kyle Parker transfers to Ohio State",
         "author": "Mekthakkit",
-        "score": 134,
+        "score": 137,
         "url": "https://www.reddit.com/r/CFB/comments/1qekrtg/lsu_wr_kyle_parker_transfers_to_ohio_state/",
         "selftext": "[Source](https://www.elevenwarriors.com/ohio-state-football-recruiting/2026/01/161167/former-lsu-wide-receiver-kyle-parker-transfers-to-ohio-state)\n\nMade with the /r/CFB [Recruiting and Draft Post Generator](https://posts.redditcfb.com/recruiting)",
         "created_utc": 1768581213.0,
-        "num_comments": 165,
+        "num_comments": 167,
         "id": "1qekrtg",
         "subreddit": "CFB",
         "link_url": "https://www.reddit.com/r/CFB/comments/1qekrtg/lsu_wr_kyle_parker_transfers_to_ohio_state/",
@@ -146,17 +110,215 @@
           {
             "author": "AshamedHelp6164",
             "body": "OSU got LSU's WR coach, right?",
-            "score": 198
+            "score": 204
           },
           {
             "author": "wit_T_user_name",
             "body": "Man the NIL era is destroying college football. You hate to see the blue bloods pillaging these small conferences for talent.",
-            "score": 161
+            "score": 166
           },
           {
             "author": "gregcm1",
             "body": "He was our best WR this year, and was consistent last year too. If he could overcome this offense and still put up some production, he will really shine in OSU's system.",
             "score": 80
+          }
+        ]
+      },
+      {
+        "title": "Penn sprint football head coach Jerry McConnell dismissed after 18 seasons with the program",
+        "author": "BeatNavyAgain",
+        "score": 102,
+        "url": "https://www.reddit.com/r/CFB/comments/1qeg3wr/penn_sprint_football_head_coach_jerry_mcconnell/",
+        "selftext": "",
+        "created_utc": 1768570540.0,
+        "num_comments": 43,
+        "id": "1qeg3wr",
+        "subreddit": "CFB",
+        "link_url": "https://www.thedp.com/article/2026/01/penn-sprint-football-head-coach-jerry-mcconnell-dismissed",
+        "is_self": false,
+        "upvote_ratio": 0.93,
+        "comments": [
+          {
+            "author": "BeatNavyAgain",
+            "body": "Wikipedia:\n\n>Sprint football is a varsity sport played by United States colleges and universities, under standard American football rules. Participating institutions are members of either the Collegiate Sprint Football League (founded 1934) or the Midwest Sprint Football League (founded 2022).\n\n>In sprint football, players must weigh less than 178 lb (81 kg) and have a minimum of 5% body fat to be eligible to play. The end result of these weight restrictions is an emphasis on speed and agility rather than on size and strength.",
+            "score": 114
+          },
+          {
+            "author": "max_potion",
+            "body": "I really thought this said \"Penn State\" and I was very confused what timeline I was on",
+            "score": 80
+          },
+          {
+            "author": "Gobluewhat",
+            "body": "Weight limit has gone up 20 lbs since I played in the mid 90s.",
+            "score": 58
+          }
+        ]
+      }
+    ],
+    "nfl": [
+      {
+        "title": "[Highlight] The NFL Live crew's reaction to realizing they all picked the Texans to upset the Patriots 😂",
+        "author": "TheRuralCamel",
+        "score": 10861,
+        "url": "https://www.reddit.com/r/nfl/comments/1qeuvjf/highlight_the_nfl_live_crews_reaction_to/",
+        "selftext": "",
+        "created_utc": 1768603862.0,
+        "num_comments": 1299,
+        "id": "1qeuvjf",
+        "subreddit": "nfl",
+        "link_url": "https://v.redd.it/tuejvbsajsdg1",
+        "is_self": false,
+        "upvote_ratio": 0.97,
+        "comments": [
+          {
+            "author": "goonietunes2323",
+            "body": "When you realize your favorite hipster band actually sells out arenas",
+            "score": 11342
+          },
+          {
+            "author": "ChuzzoChumz",
+            "body": "“I don’t want to be in the screenshot”\n\nLmao",
+            "score": 4934
+          },
+          {
+            "author": "giving_nothing",
+            "body": "This video just started a second New England dynasty",
+            "score": 4528
+          },
+          {
+            "author": "fattes",
+            "body": "\"Me and Marcus gotta go to Foxborough!\" LOL they gonna catch that heat",
+            "score": 2508
+          }
+        ]
+      },
+      {
+        "title": "[Highlight] Gatorade gifted Kyle Monangai a custom bottle to help him remember how to drink after viral spilling video",
+        "author": "Popular_Tangerine457",
+        "score": 5721,
+        "url": "https://www.reddit.com/r/nfl/comments/1qeuu2s/highlight_gatorade_gifted_kyle_monangai_a_custom/",
+        "selftext": "",
+        "created_utc": 1768603775.0,
+        "num_comments": 132,
+        "id": "1qeuu2s",
+        "subreddit": "nfl",
+        "link_url": "https://v.redd.it/501mizr1jsdg1",
+        "is_self": false,
+        "upvote_ratio": 0.99,
+        "comments": [
+          {
+            "author": "StoneyGwynn",
+            "body": "Double side bottle would of been funnier",
+            "score": 2365
+          },
+          {
+            "author": "johnniesSac",
+            "body": "That video is pretty funny though … good on him for being a good sport",
+            "score": 740
+          },
+          {
+            "author": "RepulsiveWay1698",
+            "body": "It's so corny I love it",
+            "score": 250
+          }
+        ]
+      },
+      {
+        "title": "[Silver] There’s a sense inside the #Eagles locker room that Nick Sirianni, Howie Roseman, and Jeffrey Lurie are “reluctant to criticize” Jalen Hurts despite being the “source” of much internal frustration from teammates.",
+        "author": "parcellsrealGOAT",
+        "score": 5710,
+        "url": "https://www.reddit.com/r/nfl/comments/1qenug0/silver_theres_a_sense_inside_the_eagles_locker/",
+        "selftext": "",
+        "created_utc": 1768587764.0,
+        "num_comments": 1688,
+        "id": "1qenug0",
+        "subreddit": "nfl",
+        "link_url": "https://bsky.app/profile/mikesilver.bsky.social/post/3mckiwhy26k2l",
+        "is_self": false,
+        "upvote_ratio": 0.96,
+        "comments": [
+          {
+            "author": "MarqueeM00n1",
+            "body": "Gonna be a long offseason",
+            "score": 6577
+          },
+          {
+            "author": "and_therewego",
+            "body": "I dunno about Silver's sources in the Eagles' locker room but a lot of stuff he reported about the 49ers (which our fans threw fits over) ended up being accurate",
+            "score": 2848
+          },
+          {
+            "author": "Tushy-Pushy",
+            "body": "2022: Makes the Superbowl but loses while being arguably the best player on the field; the off-season chatter is all about how he is a top 10 QB \n\n2023: Epic collapse after starting 10-1 with the leagues worst defense and worse QB play than the prior season, the off-season chatter is all about how he's completely overrated and that noone is happy with him (despite it not really being the offenses fault) \n\n2024: After winning the Superbowl with Saquons monster season and being Superbowl MVP, the off-season chatter was all about how he is pushing the top 5 QBs in the league \n\n2025: Another new offensive coordinator taking that same Superbowl offense (for the most part) and at one point in the season is the 30th ranked offense in the NFL, turning the off-season chatter once again into everyone hating the QB and he is completely overrated \n\nMay the gods continue the cycle 🤝",
+            "score": 1257
+          }
+        ]
+      },
+      {
+        "title": "John Harbaugh and Jaxson Dart met for 2 hours before Giants coaching decision",
+        "author": "_Vaudeville_",
+        "score": 4441,
+        "url": "https://www.reddit.com/r/nfl/comments/1qecz66/john_harbaugh_and_jaxson_dart_met_for_2_hours/",
+        "selftext": "",
+        "created_utc": 1768560973.0,
+        "num_comments": 428,
+        "id": "1qecz66",
+        "subreddit": "nfl",
+        "link_url": "https://www.aol.com/articles/john-harbaugh-jaxson-dart-met-213131422.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAB2roJcHpD8ICDTd8ZrRiVjktv531o5U0SHQwPF0yzgbhITgCc3NNYeFgVXlmB5f-UH_6ApyEeNWlTuAkrvs4NkXv_YVSbDwzCaYolEvLSnTYb1xuysOuDaHl3hiQ1GrwMHdd50W8VcCQolkUJ8Y1M0VYQ2IMs-4SiGFXMg8FiMV",
+        "is_self": false,
+        "upvote_ratio": 0.99,
+        "comments": [
+          {
+            "author": "xFalcade",
+            "body": "I heard it was Harbaugh just showing Dart tape for 2 hours of Brady sliding and getting down. Not a word was exchanged the entire time.\n\n  \nAt the end Harbaugh said \"Do I make myself clear?\"",
+            "score": 4660
+          },
+          {
+            "author": "DoesntMatterBrian",
+            "body": "**Harbaugh:** \"Are you going to quit being a fucking dummy when you're running the ball?\"\n\n**Dart:** \"No, probably not.\"\n\n**Harbaugh**: \"...alright fuck it let's do this.\"\n\n**Skattebo**: \n#\"WOOOOOOOOOOOOOOOOOOOOOOOOOOOO\"",
+            "score": 1541
+          },
+          {
+            "author": "Responsible-Onion860",
+            "body": "Not a surprise. Harbaugh basically had his pick of jobs and had the luxury of being choosy. He's going to make sure he's comfortable with the QB before accepting.",
+            "score": 839
+          }
+        ]
+      },
+      {
+        "title": "[Santoliquito] Sources: A.J. Brown asked for a trade numerous times this past Eagles season",
+        "author": "bubblecuffer13",
+        "score": 4020,
+        "url": "https://www.reddit.com/r/nfl/comments/1qeypwr/santoliquito_sources_aj_brown_asked_for_a_trade/",
+        "selftext": "",
+        "created_utc": 1768612209.0,
+        "num_comments": 573,
+        "id": "1qeypwr",
+        "subreddit": "nfl",
+        "link_url": "https://www.bleedinggreennation.com/news/169138/source-a-j-brown-asked-for-a-trade-numerous-times-this-past-eagles-season",
+        "is_self": false,
+        "upvote_ratio": 0.98,
+        "comments": [
+          {
+            "author": "Candid-Boss6534",
+            "body": "The vibes are maculate ",
+            "score": 3898
+          },
+          {
+            "author": "dbchrisyo",
+            "body": "Eagles are speed running the Russell Wilson and DK Metcalf sagas ",
+            "score": 1823
+          },
+          {
+            "author": "JokerJangles123",
+            "body": "I do look forward to the 67654 different variations of this story being posted between now and the trade deadline",
+            "score": 940
+          },
+          {
+            "author": "itsxrizzo",
+            "body": "He has over 5,000 yards and 32 touchdowns in 4 years with the Eagles while missing 7 games over the last two seasons. He's never had a season under 1,000 yards in Philadelphia and he's *averaging* 8.4 targets/gm.",
+            "score": 656
           }
         ]
       }
@@ -165,11 +327,11 @@
       {
         "title": "Reporter to Jimmy Butler: “Usually as players get older, they get less athletic.” Jimmy: “I’m not old, first of all.” Reporter: “You’re not old, but you’re older than you were when you came into the league.” Jimmy: “Yeah, no sh*t. You’re older than you were yesterday”",
         "author": "F_CKMONEY",
-        "score": 9083,
+        "score": 10522,
         "url": "https://www.reddit.com/r/nba/comments/1qeptao/reporter_to_jimmy_butler_usually_as_players_get/",
         "selftext": "",
         "created_utc": 1768592065.0,
-        "num_comments": 394,
+        "num_comments": 436,
         "id": "1qeptao",
         "subreddit": "nba",
         "link_url": "https://streamable.com/982rcn",
@@ -179,33 +341,33 @@
           {
             "author": "ecclectic_collector",
             "body": "reminds me of a twitter post: \n\n\"You: \"I'm only 35 I have my whole life ahead of me\"  \n  \nSports Broadcaster: \"Here comes the oldest player in the league. He's 32. A miracle.\"\"",
-            "score": 5063
+            "score": 5687
           },
           {
             "author": "RentalGore",
             "body": "In the reporters defense, Jimmy’s looking like an old woman about to board the bus.",
-            "score": 2250
+            "score": 2540
           },
           {
             "author": "LilSmurkiooo",
             "body": "He old lmao 35+ in the league is old",
-            "score": 1950
+            "score": 2115
           },
           {
             "author": "optimator_h",
             "body": "\"One time, this guy handed me a picture of him. He said, \"Here's a picture of me when I was younger.\" Every picture is of you when you were younger. \"Here's a picture of me when I'm older.\", \"You son of a bitch! How'd you pull that off? Let me see that camera!\" \n\n\\- Mitch Hedberg",
-            "score": 672
+            "score": 766
           }
         ]
       },
       {
         "title": "Soooo... Has the Kawhi Aspiration Thing Been Swept Under the Rug?",
         "author": "Kheltosh",
-        "score": 7085,
+        "score": 7375,
         "url": "https://www.reddit.com/r/nba/comments/1qeg6oz/soooo_has_the_kawhi_aspiration_thing_been_swept/",
         "selftext": "It seems like it's not even in the news cycle anymore. Board man got paid, and Ballmer got away with it.",
         "created_utc": 1768570744.0,
-        "num_comments": 658,
+        "num_comments": 676,
         "id": "1qeg6oz",
         "subreddit": "nba",
         "link_url": "https://www.reddit.com/r/nba/comments/1qeg6oz/soooo_has_the_kawhi_aspiration_thing_been_swept/",
@@ -215,120 +377,120 @@
           {
             "author": "temple-of-the-dog",
             "body": "RELEASE THE ASPIRATION FILES",
-            "score": 5306
+            "score": 5505
           },
           {
             "author": "cleo22270",
             "body": "It’s been reported that no decision will be made until after the All Star break, but I would guess the league probably gives out some half-assed punishment and fine (similar to the tampering investigations)\n\nMy money is $100k fine and 2 seconds forfeited.",
-            "score": 3437
+            "score": 3560
           },
           {
             "author": "ucheekykuntm8",
             "body": "Listen to Pablo Torre’s latest pod on the subject. The investigation is still ongoing.",
-            "score": 1225
+            "score": 1275
           }
         ]
       },
       {
-        "title": "[Highlight] Eric Collins on Luka Doncic: \"This guy is a whiner.\"",
-        "author": "TheRealPdGaming",
-        "score": 5134,
-        "url": "https://www.reddit.com/r/nba/comments/1qe7t3z/highlight_eric_collins_on_luka_doncic_this_guy_is/",
+        "title": "Jokic's lone departing message for MPJ before he left the Nuggets group chat",
+        "author": "SliMShady55222",
+        "score": 3702,
+        "url": "https://www.reddit.com/r/nba/comments/1qevxd0/jokics_lone_departing_message_for_mpj_before_he/",
         "selftext": "",
-        "created_utc": 1768542543.0,
-        "num_comments": 626,
-        "id": "1qe7t3z",
+        "created_utc": 1768606070.0,
+        "num_comments": 96,
+        "id": "1qevxd0",
         "subreddit": "nba",
-        "link_url": "https://streamable.com/ntmbd0",
-        "is_self": false,
-        "upvote_ratio": 0.96,
-        "comments": [
-          {
-            "author": "AutoModerator",
-            "body": "**Replays/alternate angles**\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/nba) if you have any questions or concerns.*",
-            "score": 1
-          },
-          {
-            "author": "cashburro",
-            "body": "That's the worst thing I've ever heard Eric Collins say about anyone lmao",
-            "score": 3057
-          },
-          {
-            "author": "Anhdodo",
-            "body": "Tbh if I was a Lakers fan, it would be exhausting to watch him argue with refs, interacting with the opponent bench, or fans every night. This guy cannot just completely shut it off and focus on the game more than 2 minutes.",
-            "score": 1416
-          },
-          {
-            "author": "Otherwise-Radio-8787",
-            "body": "Lmao if he said that you know it's true",
-            "score": 1267
-          }
-        ]
-      },
-      {
-        "title": "[Highlight] The Lakers foul Kon Knueppel multiple times. No whistle is blown for any of them.",
-        "author": "CazOnReddit",
-        "score": 5076,
-        "url": "https://www.reddit.com/r/nba/comments/1qe96ha/highlight_the_lakers_foul_kon_knueppel_multiple/",
-        "selftext": "",
-        "created_utc": 1768547054.0,
-        "num_comments": 483,
-        "id": "1qe96ha",
-        "subreddit": "nba",
-        "link_url": "https://streamable.com/9vaj2j",
+        "link_url": "https://streamable.com/pdx9oa",
         "is_self": false,
         "upvote_ratio": 0.97,
         "comments": [
           {
-            "author": "AutoModerator",
-            "body": "**Replays/alternate angles**\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/nba) if you have any questions or concerns.*",
-            "score": 1
+            "author": "dwrek24",
+            "body": "Jokic generational at knowing his personnel",
+            "score": 2904
           },
           {
-            "author": "cl353",
-            "body": "...wtf is even that?",
-            "score": 3043
+            "author": "yoyoman831",
+            "body": "Shiii forward this msg to Ant",
+            "score": 1469
           },
           {
-            "author": "watevauwant",
-            "body": "Generational poor reffing in an unserious and inconsistent league. Adam Silver is a joke",
-            "score": 1688
+            "author": "Ace_Of_Glass",
+            "body": "Jokic's vision is unmatched",
+            "score": 1289
           },
           {
-            "author": "AddaYnymm",
-            "body": "maybe because he didn't scream AAAYYYYEEEE after he drives in 🤣",
-            "score": 1590
+            "author": "Frosty_Salamander_94",
+            "body": "Assists on and off the court",
+            "score": 494
           }
         ]
       },
       {
-        "title": "Nikola Jokic tries Taco Bell's quesarito for the first time",
-        "author": "jonsnowKITN",
-        "score": 2818,
-        "url": "https://www.reddit.com/r/nba/comments/1qep0kb/nikola_jokic_tries_taco_bells_quesarito_for_the/",
+        "title": "[Durant] asked if OKC is ‘grabby’ and ‘foul-prone’: “Nah, nah... They play with physicality for sure, but that’s what championship teams do. I don’t think they toe the line or anything. They just play swarming basketball, physical off-ball, great hands. I dont think they do too much, anything extra”",
+        "author": "AashyLarry",
+        "score": 2764,
+        "url": "https://www.reddit.com/r/nba/comments/1qeobmj/durant_asked_if_okc_is_grabby_and_foulprone_nah/",
         "selftext": "",
-        "created_utc": 1768590288.0,
-        "num_comments": 206,
-        "id": "1qep0kb",
+        "created_utc": 1768588796.0,
+        "num_comments": 723,
+        "id": "1qeobmj",
         "subreddit": "nba",
-        "link_url": "https://streamable.com/zghskj",
+        "link_url": "https://streamable.com/sh7snp",
         "is_self": false,
-        "upvote_ratio": 0.96,
+        "upvote_ratio": 0.92,
         "comments": [
           {
-            "author": "realscholarofficial",
-            "body": "The way he's swinging his feet LMAO",
-            "score": 1338
+            "author": "Schmoova",
+            "body": "All I’ll say is that the Suns game vs the Pistons yesterday was far, far more grabby and physical than any of our games vs the Thunder this year lol.",
+            "score": 1293
           },
           {
-            "author": "WhoUCuh",
-            "body": "There he goes\n\n\nGetting sloppy,  more dominant and there is nothing we can do about it.",
-            "score": 1231
+            "author": "Ok_Yoghurt9155",
+            "body": "Does this Durant dude know more than reddit basketball experts here?",
+            "score": 1092
           },
           {
-            "author": "gridironk",
-            "body": "If Nico saw Luka do this he’d be BIG MAD",
-            "score": 490
+            "author": "tagprobablylag",
+            "body": "Durant doesn’t usually bitch about the game",
+            "score": 1059
+          },
+          {
+            "author": "SquimJim",
+            "body": "Their entire defense is full of guys that make the 2nd, 3rd, and 4th effort. It's hard to beat that defense because even when you get it in rotation, you haven't necessarily created an advantage.",
+            "score": 511
+          }
+        ]
+      },
+      {
+        "title": "Dwyane Wade: \"They (Rockets) need a quarterback. They need a conductor. They need a guy who can get guys in their spots. They need a guy who can play with bigs. They got Sengun, they got Adams. Chris Paul out there. You need a veteran. You need a guy who don’t need to score. Chris Paul out there\"",
+        "author": "must_TATAKAE",
+        "score": 1893,
+        "url": "https://www.reddit.com/r/nba/comments/1qen868/dwyane_wade_they_rockets_need_a_quarterback_they/",
+        "selftext": "",
+        "created_utc": 1768586445.0,
+        "num_comments": 327,
+        "id": "1qen868",
+        "subreddit": "nba",
+        "link_url": "https://streamable.com/7svie2",
+        "is_self": false,
+        "upvote_ratio": 0.97,
+        "comments": [
+          {
+            "author": "ign_lifesaver2",
+            "body": "Too bad Vanvleet got injured he's exactly what they are describing,.",
+            "score": 2405
+          },
+          {
+            "author": "BlackMilk23",
+            "body": "They need the guy that's in street clothes on their bench.",
+            "score": 800
+          },
+          {
+            "author": "KL2ConspireLLC",
+            "body": "You heard the man Houston.  You need Chris Paul.  Send the Clips your best offer.",
+            "score": 537
           }
         ]
       }
@@ -337,11 +499,11 @@
       {
         "title": "[Passan] Infielder Bo Bichette and the New York Mets are in agreement on a three-year, $126 million contract, sources tell ESPN. After losing the Kyle Tucker sweepstakes, the Mets pivot quickly and get one of the best players left on the market, pending a physical.",
         "author": "T_Raycroft",
-        "score": 4199,
+        "score": 4319,
         "url": "https://www.reddit.com/r/baseball/comments/1qelog3/passan_infielder_bo_bichette_and_the_new_york/",
         "selftext": "",
         "created_utc": 1768583137.0,
-        "num_comments": 1305,
+        "num_comments": 1311,
         "id": "1qelog3",
         "subreddit": "baseball",
         "link_url": "https://www.espn.com/contributor/jeff-passan/b1f8c51b88a90",
@@ -356,28 +518,28 @@
           {
             "author": "obi-wan-kenobi-nil",
             "body": "Boy I haven’t felt this bad about baseball since, oh, I don’t know, two months ago",
-            "score": 3643
+            "score": 3674
           },
           {
             "author": "Macandme",
             "body": "Oops all infielders",
-            "score": 3380
+            "score": 3434
           },
           {
             "author": "CatsOnAcid",
             "body": "How many swift kicks in the nuts can blue jays fans survive?",
-            "score": 1621
+            "score": 1639
           }
         ]
       },
       {
         "title": "TIL the Dodgers get preferential treatment and get to shield much of their tv revenue from revenue sharing",
         "author": "70ga",
-        "score": 3656,
+        "score": 3754,
         "url": "https://www.reddit.com/r/baseball/comments/1qegx4p/til_the_dodgers_get_preferential_treatment_and/",
         "selftext": "",
         "created_utc": 1768572540.0,
-        "num_comments": 1195,
+        "num_comments": 1212,
         "id": "1qegx4p",
         "subreddit": "baseball",
         "link_url": "https://brewerfanatic.com/news-rumors/milwaukee-brewers/mlbs-revenue-sharing-model-has-two-big-problems-how-can-they-be-fixed-r3929/",
@@ -387,28 +549,28 @@
           {
             "author": "randomnate",
             "body": "McCourt turned the Dodgers into a joke, and the league thought it would be in their best interest if LA was a premier big market environment again ala the Lakers. It worked...too well.\n\nBut really, its not *just* the TV deal. Its the TV deal +\n\n\\-Guggenheim partners having access to crazy money in their own right (their total assets under management, which admittedly is not the same as cash on hand but certainly plays a role in what they can spend, is close to the combined net worth of every other MLB owner)\n\n\\-Shohei Ohtani being the most popular (and arguably best, along with Judge) player in the world with borderline deity status in Japan (which has more diehard baseball fans than any other country on earth), playing on a deal that pays him $2 million a year while he generates upwards of $100 million a year for the team in Japanese sponsorships, all while making the team the premier destination for elite Japanese talent\n\n\\-The organization being incredibly well-run (for example, they have the best farm system, despite almost all their premier players being brough in via Free Agency, which means that if they, say, decided they wanted to trade a bunch of top prospects for someone like Skubal they totally could and it wouldn't even impact them that much)\n\n\\-Now that they've won 2 rings in a row and are incredibly stacked, they're simply more desirable than any other team for a lot of players. Its been reported the Mets offer for Tucker was in the same ballpark as LA's, but if the money is even, why not go play where you can win a ring in nice weather and hang out with movie stars? Its like if the Lakers were as stacked as the Thunder, what player wouldn't want to go there?\n\nThey just have every advantage possible, all at the same time, to a degree that really only the most dominant Yankee dynasties of the past ever came close to matching.",
-            "score": 1836
+            "score": 1886
           },
           {
             "author": "FatherEsmoquin",
             "body": "I saw a dodgers fan comment on another thread that the reason why other teams can’t spend $2b+ in contract commitments due to their owners having most of their net worth tied up in the value of the franchise and not liquid capital is a “Skills Issue”.",
-            "score": 1710
+            "score": 1728
           },
           {
             "author": "SoSublim3",
             "body": "I do like the idea of the performance base in the rev sharing for the teams they call out that actually give a shit and compete unlike nutting",
-            "score": 625
+            "score": 631
           }
         ]
       },
       {
         "title": "[Nightengale] The Phillies had agreed to Bo Bichette’s request for a 7-year, $200 million deal last night and believed they would sign him until the Mets swooped in with their 3-year, $126 million offer after losing out in in the Kyle Tucker sweepstakes.",
         "author": "T_Raycroft",
-        "score": 2211,
+        "score": 2284,
         "url": "https://www.reddit.com/r/baseball/comments/1qemac5/nightengale_the_phillies_had_agreed_to_bo/",
         "selftext": "",
         "created_utc": 1768584435.0,
-        "num_comments": 497,
+        "num_comments": 512,
         "id": "1qemac5",
         "subreddit": "baseball",
         "link_url": "https://bsky.app/profile/bnightengale.bsky.social/post/3mckmltxj522z",
@@ -418,33 +580,33 @@
           {
             "author": "thediesel26",
             "body": "That’s why guys wait for a market to develop before signing.",
-            "score": 1558
+            "score": 1605
           },
           {
             "author": "EarthWarping",
             "body": "if this is correct... woo boy",
-            "score": 797
+            "score": 853
           },
           {
             "author": "THE-poop-knife",
             "body": "PHI dodged a bullet",
-            "score": 780
+            "score": 785
           },
           {
             "author": "saycheese95",
             "body": "Cool cool cool cool cool no doubt no doubt no doubt.",
-            "score": 561
+            "score": 581
           }
         ]
       },
       {
         "title": "Dodgers’ splurge on Tucker will increase calls for a salary cap, but MLB needs other fixes",
         "author": "amatom27",
-        "score": 1454,
+        "score": 1491,
         "url": "https://www.reddit.com/r/baseball/comments/1qehn5s/dodgers_splurge_on_tucker_will_increase_calls_for/",
         "selftext": "",
         "created_utc": 1768574256.0,
-        "num_comments": 1209,
+        "num_comments": 1220,
         "id": "1qehn5s",
         "subreddit": "baseball",
         "link_url": "https://www.nytimes.com/athletic/6976696/2026/01/16/dodgers-kyle-tucker-lockout-mlb-labor/",
@@ -454,123 +616,71 @@
           {
             "author": "slicebishybosh",
             "body": " > The Dodgers did not carry the game’s highest payroll last season. The New York Mets did, and failed to even make the playoffs.\n\nMets just catchin strays\n\nEDIT: I'm learning how deferrals actual work and why the luxury tax amount for contracts with deferrals is what it is. I recommend you all do the same if don't know already. u/Homie_Bama explained it very well to me.\n\n > Dodgers have to put the present value of the contract in escrow, not the future value which is 700 mil. So for example last year dodgers put 44 mil in escrow and gave Ohtani 2 mil which is a total of 46 mil. That 44 mil will grow to 68 mil in the years before disbursement has to take place.",
-            "score": 1510
+            "score": 1530
           },
           {
             "author": "salamiolivesonions",
             "body": "my least favorite part about this is that it sounds like a lot of other teams did the super heavy lifting and he just walked it over to the dodgers for $5m more per year.\n\nlike, mets offering $55m for this guy is STUPID in the first place. but whats literally to stop any free agent from doing the same. \n\nto me, if tucker is offered $55m why isn't he saying YES ABSOLUTELY right away. so this idea of, okay let me see what the dodgers say and i'll get back to you is insane.\n\ni will look forward to their missed playoff appearance this season (clown makeup)",
-            "score": 540
+            "score": 534
           },
           {
             "author": "JonTheWizard",
             "body": "You can fix multiple things at the same time.",
-            "score": 404
+            "score": 407
           },
           {
             "author": "tbclandot92",
             "body": "Usually I don't cheer for lockouts but yeah baseball needs a major change. Dodgers are basically an all star team. They were already an all star team and have now added Tucker and Diaz...",
-            "score": 359
+            "score": 365
           }
         ]
       },
       {
-        "title": "1 year of Kyle Tucker is now equivalent to 70% of the 2025 Miami Marlins payroll",
-        "author": "Mission_Pay_3373",
-        "score": 638,
-        "url": "https://www.reddit.com/r/baseball/comments/1qe71t6/1_year_of_kyle_tucker_is_now_equivalent_to_70_of/",
-        "selftext": "The Dodgers are paying Kyle Tucker 60 million dollars  per year while the payroll of the 2025 Miami Marlins was around 85.2 million dollars making it around 70%",
-        "created_utc": 1768540162.0,
-        "num_comments": 162,
-        "id": "1qe71t6",
+        "title": "[Corimer] Breaking: The New York Mets and Bo Bichette are in agreement on a three-year deal, pending physical, league source tells Will Sammon",
+        "author": "Turbostrider27",
+        "score": 563,
+        "url": "https://www.reddit.com/r/baseball/comments/1qelkhd/corimer_breaking_the_new_york_mets_and_bo/",
+        "selftext": "",
+        "created_utc": 1768582912.0,
+        "num_comments": 209,
+        "id": "1qelkhd",
         "subreddit": "baseball",
-        "link_url": "https://www.reddit.com/r/baseball/comments/1qe71t6/1_year_of_kyle_tucker_is_now_equivalent_to_70_of/",
-        "is_self": true,
-        "upvote_ratio": 0.97,
+        "link_url": "https://bsky.app/profile/yayroger.bsky.social/post/3mckl74yj6m2x",
+        "is_self": false,
+        "upvote_ratio": 0.96,
         "comments": [
           {
-            "author": "UsErNaMeS_aR_DuMb",
-            "body": "Behold. The statistic that both sides are gonna go back and forth on during the lockout.",
-            "score": 422
+            "author": "xho-",
+            "body": "METS SAID GIVE ME ALL OF THE SECOND BASEMEN IN THE LEAGUE",
+            "score": 409
           },
           {
-            "author": "BigHotdog2009",
-            "body": "Kyle Tucker hit .266 22 hrs and 73 RBIs last season and now makes more money than Josh Allen.",
-            "score": 191
+            "author": "see_mohn",
+            "body": "Wait what is our infield now, do we have five infielders and then Tyrone Taylor roaming the outfield on a motorcycle ",
+            "score": 275
+          },
+          {
+            "author": "yoboapp",
+            "body": "It’s all Bo-ver for us 😭",
+            "score": 241
+          },
+          {
+            "author": "Swaycuisway",
+            "body": "Just keep punching me in the nuts",
+            "score": 161
           }
         ]
       }
     ],
     "formula1": [
       {
-        "title": "Red Bull’s new livery was designed by Simon R, a designer who has been making fan concept liveries for years",
-        "author": "PDX_WiN",
-        "score": 4530,
-        "url": "https://www.reddit.com/r/formula1/comments/1qe8f1s/red_bulls_new_livery_was_designed_by_simon_r_a/",
-        "selftext": "",
-        "created_utc": 1768544500.0,
-        "num_comments": 122,
-        "id": "1qe8f1s",
-        "subreddit": "formula1",
-        "link_url": "https://www.reddit.com/gallery/1qe8f1s",
-        "is_self": false,
-        "upvote_ratio": 0.99,
-        "comments": [
-          {
-            "author": "laytsha",
-            "body": "From fan art to the actual grid Simon just lived every F1 fan’s dream, that’s insanely cool.",
-            "score": 1357
-          },
-          {
-            "author": "Snoo-29984",
-            "body": "He also made the [VCARB Las Vegas livery last year](https://simonrdesigns.com/2025-las-vegas-gp-official-livery-design-vcarb) and helped on [last year’s white Red Bull](https://simonrdesigns.com/official-white-bull-livery-reveal-red-bull-rb21-jpn).",
-            "score": 1176
-          }
-        ]
-      },
-      {
-        "title": "Q: \"Do you wanna spin to show us the whole kit? \". Max :\" do u wanna see my a**?\" :) fans :\"oohh\"",
-        "author": "Luffy710j",
-        "score": 2191,
-        "url": "https://www.reddit.com/r/formula1/comments/1qea5wz/q_do_you_wanna_spin_to_show_us_the_whole_kit_max/",
-        "selftext": "",
-        "created_utc": 1768550561.0,
-        "num_comments": 102,
-        "id": "1qea5wz",
-        "subreddit": "formula1",
-        "link_url": "https://dubz.link/c/153334",
-        "is_self": false,
-        "upvote_ratio": 0.97,
-        "comments": [
-          {
-            "author": "Ebolaeater",
-            "body": "Mad max is back baby!",
-            "score": 837
-          },
-          {
-            "author": "Jorrie90",
-            "body": "You can say ass here",
-            "score": 493
-          },
-          {
-            "author": "Luffy710j",
-            "body": "Everyone wanted to see Max's ass",
-            "score": 368
-          },
-          {
-            "author": "ThatWasntChick3n",
-            "body": "He looks to continue bringing his media energy into 2026. We love it.",
-            "score": 318
-          }
-        ]
-      },
-      {
         "title": "Before Anyone Gets Too Excited Analysing Launch Cars and Renders - Remember How Different the 2022 Launch Cars Were To Reality",
         "author": "Stumpy493",
-        "score": 1478,
+        "score": 1533,
         "url": "https://www.reddit.com/r/formula1/comments/1qebbsq/before_anyone_gets_too_excited_analysing_launch/",
         "selftext": "Just using Haas as an easy example, but most teams were exactly the same.\n\nThe car they released renders of didn't in any way resemble the final car in any way shape or form, almost nothing could be learnt from the renders in terms of Aero or Mechnical concept.\n\nAnalysis of designs can start from testing in reality.",
         "created_utc": 1768554953.0,
-        "num_comments": 201,
+        "num_comments": 203,
         "id": "1qebbsq",
         "subreddit": "formula1",
         "link_url": "https://www.reddit.com/gallery/1qebbsq",
@@ -580,12 +690,12 @@
           {
             "author": "Evantra_",
             "body": "Very true. Mazepin's car at launch was all nicely displayed in a studio, whilst in reality Mazepin's car would be lodged in a tyre wall.",
-            "score": 1619
+            "score": 1646
           },
           {
             "author": "smackells",
             "body": "It’s still so embarrassing to me that they basically turned the car into a Russian flag and then had to terminate the Uralkali sponsorship 2 weeks before the season started lmao",
-            "score": 1489
+            "score": 1545
           },
           {
             "author": "Izan_TM",
@@ -597,11 +707,11 @@
       {
         "title": "RB2 vs RB22 Livery Comparison",
         "author": "shrreyas",
-        "score": 841,
+        "score": 876,
         "url": "https://www.reddit.com/r/formula1/comments/1qebj0y/rb2_vs_rb22_livery_comparison/",
         "selftext": "",
         "created_utc": 1768555723.0,
-        "num_comments": 6,
+        "num_comments": 7,
         "id": "1qebj0y",
         "subreddit": "formula1",
         "link_url": "https://i.redd.it/0ei0lyw5kodg1.jpeg",
@@ -611,17 +721,17 @@
           {
             "author": "idocardio",
             "body": "cant wait to see it in daylight",
-            "score": 46
+            "score": 52
           },
           {
             "author": "ATWPH77",
             "body": "RB22 **W**",
-            "score": 21
+            "score": 25
           },
           {
             "author": "AbstractDart",
             "body": "It doesn’t look bad, but the RB2 livery differently looks dated. The gradient red, white and blue just look a bit plain and vague, and the silver look very of the time.",
-            "score": 22
+            "score": 21
           },
           {
             "author": "UKnowDaxoAndDancer",
@@ -633,11 +743,11 @@
       {
         "title": "Red Bull liveries throughout the years",
         "author": "Jorrie90",
-        "score": 700,
+        "score": 723,
         "url": "https://www.reddit.com/r/formula1/comments/1qebklp/red_bull_liveries_throughout_the_years/",
         "selftext": "",
         "created_utc": 1768555880.0,
-        "num_comments": 78,
+        "num_comments": 79,
         "id": "1qebklp",
         "subreddit": "formula1",
         "link_url": "https://i.redd.it/ttynqwmkkodg1.png",
@@ -647,71 +757,97 @@
           {
             "author": "Izan_TM",
             "body": "wow that picture of the 2026 livery REALLY does not do it justice",
-            "score": 629
+            "score": 642
           },
           {
             "author": "antz182",
             "body": "Why does that 2026 car look more matte/darker then the renders?",
-            "score": 101
+            "score": 106
           },
           {
             "author": "DeXyDeXy",
             "body": "2021 still goated",
-            "score": 45
+            "score": 47
           },
           {
             "author": "FacetiousInvective2",
             "body": "Why is that oracle font size bigger than red bull in 2026? And probably 2025",
-            "score": 34
+            "score": 35
+          }
+        ]
+      },
+      {
+        "title": "Saw a 2026 F1 car at The Sphere",
+        "author": "gphillips5",
+        "score": 150,
+        "url": "https://www.reddit.com/r/formula1/comments/1qebvgk/saw_a_2026_f1_car_at_the_sphere/",
+        "selftext": "",
+        "created_utc": 1768557021.0,
+        "num_comments": 32,
+        "id": "1qebvgk",
+        "subreddit": "formula1",
+        "link_url": "https://www.reddit.com/gallery/1qebvgk",
+        "is_self": false,
+        "upvote_ratio": 0.88,
+        "comments": [
+          {
+            "author": "DreamsOfLife",
+            "body": "Every once in a while motorsports will remind us that Motorola is still alive.",
+            "score": 72
+          },
+          {
+            "author": "alphaQ314",
+            "body": "What a terrible day to have eyes",
+            "score": 42
+          },
+          {
+            "author": "RainbowGames",
+            "body": "So when is this Motorola Lenovo F1 Team joining the grid?",
+            "score": 14
+          }
+        ]
+      },
+      {
+        "title": "Max Verstappen on Red Bull's new power unit and whether it can be competitive",
+        "author": "One_Impressionism",
+        "score": 100,
+        "url": "https://www.reddit.com/r/formula1/comments/1qeb5f7/max_verstappen_on_red_bulls_new_power_unit_and/",
+        "selftext": "",
+        "created_utc": 1768554287.0,
+        "num_comments": 16,
+        "id": "1qeb5f7",
+        "subreddit": "formula1",
+        "link_url": "https://streamain.com/en/s16wXOlDF8fRMcu/watch",
+        "is_self": false,
+        "upvote_ratio": 0.89,
+        "comments": [
+          {
+            "author": "EnvironmentalSong393",
+            "body": "TLDW: “We don’t know”",
+            "score": 146
+          },
+          {
+            "author": "Jeroen1707",
+            "body": "As if he's ever going to say a straight up yes or no to that question.",
+            "score": 40
+          },
+          {
+            "author": "zeekoes",
+            "body": "Assuming we're not getting a Spygate 2.0, no team will know yet.\n\nThey know whether they're hitting their internal targets, but no team knows yet how they stack up against eachother.",
+            "score": 13
           }
         ]
       }
     ],
     "formuladank": [
       {
-        "title": "This reached the wrong audience.Livery so shiny it caught the president’s attention.",
-        "author": "risquekittyfr",
-        "score": 5475,
-        "url": "https://www.reddit.com/r/formuladank/comments/1qe9shj/this_reached_the_wrong_audiencelivery_so_shiny_it/",
-        "selftext": "",
-        "created_utc": 1768549241.0,
-        "num_comments": 20,
-        "id": "1qe9shj",
-        "subreddit": "formuladank",
-        "link_url": "https://v.redd.it/ojpk405s0odg1",
-        "is_self": false,
-        "upvote_ratio": 0.95,
-        "comments": [
-          {
-            "author": "formuladank-ModTeam",
-            "body": "This post uses a polarising figure which means people have ignored the meme itself and started talking politics.\n\nSo just like with any post that has politics in the comments, we have locked the post and purged all political comments.\n\nWe are sports subreddit, if you want to discuss politics go elsewhere.",
-            "score": 1
-          },
-          {
-            "author": "MidnightZL1",
-            "body": "![gif](giphy|FfsKpBMnf0tO6Tgq4b)",
-            "score": 666
-          },
-          {
-            "author": "Mayhew-Fancy",
-            "body": "Red bull has decided to share the car with me, the President of USA, that’s the honour I deserve. Though, I should have been the first driver, but, I’ll do with sharing for now.",
-            "score": 284
-          },
-          {
-            "author": "BasKabelas",
-            "body": "This is peak off season content lol.",
-            "score": 165
-          }
-        ]
-      },
-      {
         "title": "It's about time",
         "author": "SpeedyDingo",
-        "score": 2714,
+        "score": 3959,
         "url": "https://www.reddit.com/r/formuladank/comments/1qerdow/its_about_time/",
         "selftext": "",
         "created_utc": 1768595668.0,
-        "num_comments": 32,
+        "num_comments": 45,
         "id": "1qerdow",
         "subreddit": "formuladank",
         "link_url": "https://i.redd.it/fb4cb32yurdg1.png",
@@ -721,69 +857,28 @@
           {
             "author": "ihathtelekinesis",
             "body": "I think you mean “Was I a good race engineer? Question.”",
-            "score": 330
-          },
-          {
-            "author": "notrajinikanth",
-            "body": "next time they'll sack the radio itself",
-            "score": 257
+            "score": 492
           },
           {
             "author": "m0r0l1d1n",
             "body": "No more Ricky, no more Xavi... Both legends are gone. 😢\n\nWho will be checking now?",
-            "score": 206
+            "score": 464
           },
           {
-            "author": "ingmarnl",
-            "body": "He lasted longer than expected honestly",
-            "score": 89
-          }
-        ]
-      },
-      {
-        "title": "Is it just me or...",
-        "author": "COZMO_BOT0616",
-        "score": 1917,
-        "url": "https://www.reddit.com/r/formuladank/comments/1qe7erd/is_it_just_me_or/",
-        "selftext": "",
-        "created_utc": 1768541273.0,
-        "num_comments": 36,
-        "id": "1qe7erd",
-        "subreddit": "formuladank",
-        "link_url": "https://i.redd.it/nti8w5u6dndg1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "Minimum_Neck_7911",
-            "body": "Maxatron ",
-            "score": 171
-          },
-          {
-            "author": "jklz14",
-            "body": "#OPTIMUM PRIDE EUGH OUGH IEGH OUGH",
-            "score": 75
-          },
-          {
-            "author": "downtofxck",
-            "body": "I mean, he IS the leader.\n\n![gif](giphy|NYx77GABHTji|downsized)",
-            "score": 41
-          },
-          {
-            "author": "RunSuper2525",
-            "body": "https://preview.redd.it/iqsgyvi0iodg1.jpeg?width=736&format=pjpg&auto=webp&s=235b216cda13c9e000eec1afc06c1fa895886884",
-            "score": 35
+            "author": "notrajinikanth",
+            "body": "next time they'll sack the radio itself",
+            "score": 331
           }
         ]
       },
       {
         "title": "New rules are coming",
         "author": "K_R_S",
-        "score": 1037,
+        "score": 1519,
         "url": "https://www.reddit.com/r/formuladank/comments/1qeniv9/new_rules_are_coming/",
         "selftext": "",
         "created_utc": 1768587057.0,
-        "num_comments": 12,
+        "num_comments": 14,
         "id": "1qeniv9",
         "subreddit": "formuladank",
         "link_url": "https://i.redd.it/3wobubq45rdg1.jpeg",
@@ -793,29 +888,29 @@
           {
             "author": "AggravatingSeries683",
             "body": "not a very good news for the rear ending masterclass that was arvid in his f2 season",
-            "score": 158
+            "score": 239
           },
           {
             "author": "Street_Mall9536",
             "body": "If a lift and coast caused George to crash into a wall imagine what a brake check might do...",
-            "score": 127
+            "score": 154
           },
           {
             "author": "AbeBaconKingFroman",
             "body": "Such bullshit they gave Alonso that penalty for letting off the brakes early, causing Russell to get too close, lose down force, and crash. \n\nIt should have been a 10s penalty for Ocon.",
-            "score": 67
+            "score": 88
           },
           {
             "author": "Storm_Chaser06",
             "body": "Rip Charles’s title ambitions",
-            "score": 14
+            "score": 25
           }
         ]
       },
       {
         "title": "Nice...",
         "author": "ItsNotKnown",
-        "score": 1033,
+        "score": 1078,
         "url": "https://www.reddit.com/r/formuladank/comments/1qebe5h/nice/",
         "selftext": "",
         "created_utc": 1768555196.0,
@@ -829,76 +924,102 @@
           {
             "author": "Current-Ad-649",
             "body": "we already saw it max",
-            "score": 204
+            "score": 212
           },
           {
             "author": "Internal-Example1232",
             "body": "![gif](giphy|SVgKToBLI6S6DUye1Y)",
-            "score": 59
+            "score": 65
           },
           {
             "author": "fappin4verstappenn",
             "body": "Nice",
-            "score": 53
+            "score": 59
           },
           {
             "author": "NoBailOnReddit",
             "body": "Isack be like\n\n![gif](giphy|A38YkEn7xhCehkX2sV)",
-            "score": 48
+            "score": 50
+          }
+        ]
+      },
+      {
+        "title": "this sub currently",
+        "author": "sBinnator",
+        "score": 1049,
+        "url": "https://www.reddit.com/r/formuladank/comments/1qeeg7c/this_sub_currently/",
+        "selftext": "",
+        "created_utc": 1768565857.0,
+        "num_comments": 15,
+        "id": "1qeeg7c",
+        "subreddit": "formuladank",
+        "link_url": "https://i.redd.it/j8xc356aepdg1.png",
+        "is_self": false,
+        "upvote_ratio": 0.99,
+        "comments": [
+          {
+            "author": "lolschrauber",
+            "body": "rightfully so",
+            "score": 196
+          },
+          {
+            "author": "Foodconsumer3000",
+            "body": "because the VCARB livery is a nothingburger with nothing. RB at least changed the blue",
+            "score": 96
+          },
+          {
+            "author": "OpposedScroll75",
+            "body": "I'm sorry, but the Racing Bulls livery is mid at best. \n\nThe sharp cuts they made around the back of the engine cover and the around the front suspension look absolutely terrible. The numbers are way too big as well. The wheel covers will look alright when the car's moving but look terrible when it's static.\n\n They took last year's best livery and ruined it. (Like how Mercedes ruined their 2024 livery with the W16 last year)",
+            "score": 35
+          }
+        ]
+      },
+      {
+        "title": "Oh My God it's happening",
+        "author": "GullibleAttempt7568",
+        "score": 968,
+        "url": "https://www.reddit.com/r/formuladank/comments/1qen1t1/oh_my_god_its_happening/",
+        "selftext": "",
+        "created_utc": 1768586077.0,
+        "num_comments": 60,
+        "id": "1qen1t1",
+        "subreddit": "formuladank",
+        "link_url": "https://i.redd.it/tv8mfe6f2rdg1.png",
+        "is_self": false,
+        "upvote_ratio": 0.99,
+        "comments": [
+          {
+            "author": "Dream_Journey_",
+            "body": "It's going to be a new race engineer with Adami in his ear telling him what to say to Lewis\n\n\"TELL HIM TO USE K1\"\n\nhttps://preview.redd.it/a4wth3nf4rdg1.jpeg?width=960&format=pjpg&auto=webp&s=15d96adc404280434bb43e940c48a38a686b31fb",
+            "score": 328
+          },
+          {
+            "author": "listfunction",
+            "body": "YES , LETS REPLACE EVERYONE BUT JHON ELKANN\n\nhttps://i.redd.it/wledj75m4rdg1.gif",
+            "score": 135
+          },
+          {
+            "author": "HuTyphoon",
+            "body": "First race Hamilton is gonna hear a muffled giggling on radio and then \"Adami how many times do you think I can say 'Russell 2 seconds behind' this lap before he loses it\"",
+            "score": 85
+          },
+          {
+            "author": "kerbalmaster98",
+            "body": "![gif](giphy|sswgPJkpeFxew|downsized)\n\nXavi Marcos about to make his comeback",
+            "score": 52
           }
         ]
       }
     ],
     "CoDCompetitive": [
       {
-        "title": "Every Ex teammate Havok has ever had describing him",
-        "author": "DylanCodsCokeLine",
-        "score": 306,
-        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1qe7a40/every_ex_teammate_havok_has_ever_had_describing/",
-        "selftext": "",
-        "created_utc": 1768540864.0,
-        "num_comments": 31,
-        "id": "1qe7a40",
-        "subreddit": "CoDCompetitive",
-        "link_url": "https://v.redd.it/9pe7m04zbndg1",
-        "is_self": false,
-        "upvote_ratio": 0.95,
-        "comments": [
-          {
-            "author": "chris1198karma",
-            "body": "“……A bitch……” with a devious ass smile. This shit gets me EVERY single time LOL",
-            "score": 110
-          },
-          {
-            "author": "FrFrHun",
-            "body": "That’s good stuff 😂",
-            "score": 74
-          },
-          {
-            "author": "Ajernaca",
-            "body": "Havok has only ever won when his team was radar glitching lol",
-            "score": 37
-          },
-          {
-            "author": "TrashtalkInc",
-            "body": "A b-word",
-            "score": 34
-          },
-          {
-            "author": "BackgroundToe4149",
-            "body": "I remember nameless tweaking in iw 😂",
-            "score": 30
-          }
-        ]
-      },
-      {
         "title": "Havok’s former teammates loading up to tell their horror stories when dealing with him",
         "author": "GodMode____",
-        "score": 135,
+        "score": 142,
         "url": "https://www.reddit.com/r/CoDCompetitive/comments/1qelg04/havoks_former_teammates_loading_up_to_tell_their/",
         "selftext": "",
         "created_utc": 1768582647.0,
-        "num_comments": 32,
+        "num_comments": 35,
         "id": "1qelg04",
         "subreddit": "CoDCompetitive",
         "link_url": "https://v.redd.it/lubywxdurqdg1",
@@ -908,12 +1029,12 @@
           {
             "author": "kingdukeee",
             "body": "Definitely didn't expect Havok to be getting cooked waking up",
-            "score": 68
+            "score": 70
           },
           {
             "author": "ScrillyBoi",
             "body": "When highly accomplished players like Swooty, Lqgend, Encourage and Vikul speak you listen. ",
-            "score": 54
+            "score": 55
           },
           {
             "author": "januarytwenty",
@@ -923,55 +1044,55 @@
           {
             "author": "Mistyarouma",
             "body": "Havok getting more hate than swooty is insane to me tbh",
-            "score": 35
+            "score": 34
           },
           {
             "author": "Himu797",
             "body": "Havok has murdered teammates back in the BO3 IW days",
-            "score": 13
+            "score": 15
           }
         ]
       },
       {
         "title": "Havok responds to Vikul's comments on him as a teammate",
         "author": "TheRealPdGaming",
-        "score": 65,
+        "score": 68,
         "url": "https://www.reddit.com/r/CoDCompetitive/comments/1qejt67/havok_responds_to_vikuls_comments_on_him_as_a/",
         "selftext": "",
         "created_utc": 1768579158.0,
-        "num_comments": 69,
+        "num_comments": 74,
         "id": "1qejt67",
         "subreddit": "CoDCompetitive",
         "link_url": "https://v.redd.it/pyzpwxgnhqdg1",
         "is_self": false,
-        "upvote_ratio": 0.94,
+        "upvote_ratio": 0.95,
         "comments": [
           {
             "author": "Ashman-20",
             "body": "https://preview.redd.it/dmlcdt7pjqdg1.jpeg?width=447&format=pjpg&auto=webp&s=76d3f861065c31aaf3f8efc651a6ac7b58a65d9b\n\nPeople kill Haggy for being a bad teammate but at least he was a top player at one point",
-            "score": 98
+            "score": 102
           },
           {
             "author": "Himu797",
             "body": "Can’t believe I’m seeking Vikul posts in 2026…",
-            "score": 91
+            "score": 90
           },
           {
             "author": "TheErectGunner",
             "body": "Havok has an ego of scump but a career path of Fire40.",
-            "score": 61
+            "score": 66
           },
           {
             "author": "kokoscenes",
             "body": "Vikul said this a year ago btw so he’s not hopping in a bandwagon.",
-            "score": 52
+            "score": 58
           }
         ]
       },
       {
         "title": "Havok is not the problem, Swooty crying is",
         "author": "Sensitive-Fennel722",
-        "score": 55,
+        "score": 58,
         "url": "https://www.reddit.com/r/CoDCompetitive/comments/1qek2wo/havok_is_not_the_problem_swooty_crying_is/",
         "selftext": "Seeing the whole SwootyxHavok thing play out, you can tell that Swooty is not cut for something like Pro Cod, his attitude problem and his lack of confidence is his biggest problem as to why Stallions are the way that they are. IMO Stallions should be, Okis, Swaggchecked, Encourage and Havok or Cimbels",
         "created_utc": 1768579730.0,
@@ -985,53 +1106,261 @@
           {
             "author": "Blues4Bolt",
             "body": "Just rename this sub the stallions drama sub",
-            "score": 155
+            "score": 163
           },
           {
             "author": "Jello-Melo99",
             "body": "God can 3pm get here fast enough lmao",
-            "score": 53
+            "score": 52
           },
           {
             "author": "wethebest21",
             "body": "Havok had some generational PR ever since he started his ranked grind. He’s always been a problem, which is funny for how unimpressive he was in the league",
-            "score": 35
-          },
-          {
-            "author": "TheErectGunner",
-            "body": "Havok failed to qualify but the guy he replaced qualified, and then threw his teammate under the bus as an excuse and to get engagements. \n\nBeing the older, more mature person he sure failed to act like it.",
-            "score": 25
+            "score": 37
           }
         ]
       },
       {
-        "title": "Scrap gets deleted by 04",
-        "author": "TheRealPdGaming",
-        "score": 55,
-        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1qe6ypn/scrap_gets_deleted_by_04/",
-        "selftext": "",
-        "created_utc": 1768539894.0,
-        "num_comments": 21,
-        "id": "1qe6ypn",
+        "title": "Could Kenny be retiring ?",
+        "author": "Cool_Pop_5645",
+        "score": 54,
+        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1qefbvt/could_kenny_be_retiring/",
+        "selftext": "Was thinking it through, is it possible the reason Theives won't drop Kenny before the major no matter what because he is potentially retiring after the major trying one last time to go out on a high ? \n\nThat would explain why they agreed to give only a week after the major to pick up Nium and also why they are so set on finishing it with him even with how things are looking. ",
+        "created_utc": 1768568469.0,
+        "num_comments": 28,
+        "id": "1qefbvt",
         "subreddit": "CoDCompetitive",
-        "link_url": "https://v.redd.it/0uxkvzn29ndg1",
+        "link_url": "https://www.reddit.com/r/CoDCompetitive/comments/1qefbvt/could_kenny_be_retiring/",
+        "is_self": true,
+        "upvote_ratio": 0.88,
+        "comments": [
+          {
+            "author": "Hulkmantisbug",
+            "body": "Would explain why yappy scrappy has been so quiet on their issues. He doesn’t normally know when to shut his mouth.",
+            "score": 70
+          },
+          {
+            "author": "notbuswaiter",
+            "body": "He's gonna join the flank",
+            "score": 28
+          },
+          {
+            "author": "Pale-Championship520",
+            "body": "This theory makes the most sense to me. Probably gonna go the route of content. He’d be a good addition if he decides to join the flank or the optic watch parties. Hes very knowledgeable about cod still",
+            "score": 24
+          }
+        ]
+      },
+      {
+        "title": "we need to ban clipper tweets from the sub",
+        "author": "ComplexityFanboy",
+        "score": 21,
+        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1qecqsn/we_need_to_ban_clipper_tweets_from_the_sub/",
+        "selftext": "constantly spreading misinformation and are doing it for an elon musk paycheck",
+        "created_utc": 1768560134.0,
+        "num_comments": 12,
+        "id": "1qecqsn",
+        "subreddit": "CoDCompetitive",
+        "link_url": "https://www.reddit.com/r/CoDCompetitive/comments/1qecqsn/we_need_to_ban_clipper_tweets_from_the_sub/",
+        "is_self": true,
+        "upvote_ratio": 0.78,
+        "comments": [
+          {
+            "author": "Ok_Employ_9862",
+            "body": "Is there even clipper tweets in the sub?",
+            "score": 7
+          },
+          {
+            "author": "DOCTOR_NOWHERE0",
+            "body": "who's clipper?",
+            "score": 5
+          },
+          {
+            "author": "Ashman-20",
+            "body": "I mean look at CDL Hater\n\nStarted as a meme/hater account and now clips shit with sensational captions because he has Rainbet in his bio\n\nThe creators are the only ones who can stop it. Same way popular streamers too action to stop the Stake logo clippers\n\nThey have to reach out and threaten legal action sounds crazy but it’s real. They’re using their IP and manipulating it",
+            "score": 4
+          }
+        ]
+      }
+    ],
+    "soccer": [
+      {
+        "title": "If Man City sign Guehi in January as being reported Pep Guardiola will have signed an entire starting 11 worth over £500m since last January",
+        "author": "Laliga23",
+        "score": 6596,
+        "url": "https://www.reddit.com/r/soccer/comments/1qeieyt/if_man_city_sign_guehi_in_january_as_being/",
+        "selftext": "",
+        "created_utc": 1768576033.0,
+        "num_comments": 966,
+        "id": "1qeieyt",
+        "subreddit": "soccer",
+        "link_url": "https://i.redd.it/c1g6ml5k8qdg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.96,
+        "comments": [
+          {
+            "author": "AutoModerator",
+            "body": "**This is a stats thread. Remember that there's only one stat post allowed per match/team, so new stats about the same will be removed. Feel free to comment other stats as a reply to this comment so users can see them too!**\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/soccer) if you have any questions or concerns.*",
+            "score": 1
+          },
+          {
+            "author": "ELST0B",
+            "body": "I forgot they bought Ait-Nouri",
+            "score": 2479
+          },
+          {
+            "author": "andre1992",
+            "body": "Even trafford is missing here",
+            "score": 1811
+          },
+          {
+            "author": "MiguelAlmiron",
+            "body": "What the hell happened to Vitor Reis, haven't heard his name since the transfer.",
+            "score": 1497
+          },
+          {
+            "author": "jupiterspringsteen",
+            "body": "What's happened to the PL charges?",
+            "score": 1315
+          }
+        ]
+      },
+      {
+        "title": "Video of Moroccan fans repeatedly stealing Nigerian GK Stanley Nwabali's towel during the game",
+        "author": "cofango",
+        "score": 5853,
+        "url": "https://www.reddit.com/r/soccer/comments/1qefddg/video_of_moroccan_fans_repeatedly_stealing/",
+        "selftext": "",
+        "created_utc": 1768568580.0,
+        "num_comments": 537,
+        "id": "1qefddg",
+        "subreddit": "soccer",
+        "link_url": "https://v.redd.it/m11lz1odmpdg1",
         "is_self": false,
         "upvote_ratio": 0.95,
         "comments": [
           {
-            "author": "chris1198karma",
-            "body": "Tbf he just got cameraed into oblivion. It happens. Its basically the subs greatest strength. If you not cameraing people up close with slide cancel cods, you are trolling.",
-            "score": 41
+            "author": "AnnieIWillKnow",
+            "body": "An apparently necessary reminder that racism and xenophobia are not okay, and you will be permanently banned for it.",
+            "score": 1
           },
           {
-            "author": "nicckk_loco",
-            "body": "https://preview.redd.it/6bnk22ifbndg1.jpeg?width=629&format=pjpg&auto=webp&s=cd9a02314d0f8717f8ac0c2717e4a233edfb0f29",
-            "score": 27
+            "author": "hotelmotelshit",
+            "body": "That ain't fans, that's people working at the stadium \n\nWhat the hell is that?",
+            "score": 7774
           },
           {
-            "author": "DefinitionSad7752",
-            "body": "Its been rough lately 🦒",
-            "score": 7
+            "author": "EstablishmentSure486",
+            "body": "Why not put it inside the goal after the 3rd time?",
+            "score": 2267
+          },
+          {
+            "author": "jyeatbvg",
+            "body": "That's straight up workers which makes this so much worse.",
+            "score": 1749
+          }
+        ]
+      },
+      {
+        "title": "Arbeloa is living Raúl's dream: Real Madrid legend Raúl spent 7 years coaching his beloved club's youth team, winning the UEFA Youth League & San Gabriel Cup. He left this summer after losing patience with the management and was succeeded by Arbeloa, who got promoted to the first team 6 months later",
+        "author": "DamnThatsInsaneLol",
+        "score": 4785,
+        "url": "https://www.reddit.com/r/soccer/comments/1qel7s8/arbeloa_is_living_raúls_dream_real_madrid_legend/",
+        "selftext": "",
+        "created_utc": 1768582157.0,
+        "num_comments": 240,
+        "id": "1qel7s8",
+        "subreddit": "soccer",
+        "link_url": "https://www.msn.com/de-de/sport/fussball/jetzt-lebt-ein-anderer-seinen-unerf%C3%BCllten-traum/ar-AA1Ui8cX",
+        "is_self": false,
+        "upvote_ratio": 0.99,
+        "comments": [
+          {
+            "author": "concious_Cappucino",
+            "body": "Raul is by far the most disrespected legend of real Madrid and part of it is because Florentino Perez never liked him.\n\nDude was #1 goal scorer of the club  despite playing most of his career in shadow of bigger players like Ronaldo Zidane Figo etc.\n\nHis loyalty to also stick during the clownshow Galacticos era of mid 2000s and always delivering for the team is also so underrated by most madrid fans.\n\nWhen Ronaldo Benzema Kaka arrived in 2009, Raul never showed his *Club legend ego* to bully his place into team, heck he willingly left in 2010 when Mourinho actually wanted him to stay for a substitute role.\n\nAnd now this Manager case is also correct, dude spent years coaching  the youth team & yet Perez never trusted him for even a interim job.",
+            "score": 4335
+          },
+          {
+            "author": "swannyhypno",
+            "body": "Raul gotta do the ultimate switch, went from Atleti to Real as a player, do the opposite as a manager, replace Simeone and make Atleti great",
+            "score": 986
+          }
+        ]
+      },
+      {
+        "title": "[Romano] Marc Guehi to Manchester City, here we go! Official proposal accepted by Crystal Palace right now — understand fee will be around £20m. Guehi has Accepted move to MCFC. Exclusive story, now confirmed.",
+        "author": "Sparky-moon",
+        "score": 3286,
+        "url": "https://www.reddit.com/r/soccer/comments/1qegjgi/romano_marc_guehi_to_manchester_city_here_we_go/",
+        "selftext": "",
+        "created_utc": 1768571621.0,
+        "num_comments": 906,
+        "id": "1qegjgi",
+        "subreddit": "soccer",
+        "link_url": "https://bsky.app/profile/fabrizioromano.yopro20.com/post/3mckanfhyfh2e",
+        "is_self": false,
+        "upvote_ratio": 0.94,
+        "comments": [
+          {
+            "author": "AutoModerator",
+            "body": "\nTo reduce the spam of reports regarding the same move during transfer windows we try to allow **only one submission about each transfer saga per day**. The submission in question also needs to contain relevant new information regarding the potential move, and not just being a \"no/minor developments\" report.   \n\nIf there are important/official developments or new valuable information about a saga, we will allow extra threads in the same day, but for the rest of minor news please just comment them as a reply to this comment. Please help us reporting unnecessary threads for being duplicates. \n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/soccer) if you have any questions or concerns.*",
+            "score": 1
+          },
+          {
+            "author": "ash_ninetyone",
+            "body": "£20m 😭😭😭😭",
+            "score": 4474
+          },
+          {
+            "author": "Sparky-moon",
+            "body": "Lost their manager and club captain in 15 minutes.",
+            "score": 2650
+          },
+          {
+            "author": "TheNotoriousJN",
+            "body": "£20m and Liverpool are briefing we dont have unlimited money and are driven by market opportunity.\n\nTHIS remains a market opportunity. £20m is fine given the inflated wages, signing fees and agent fees for free agents ffs",
+            "score": 1304
+          }
+        ]
+      },
+      {
+        "title": "PSG 2-0 Lille - Ousmane Dembélé 64'",
+        "author": "Meladroit10",
+        "score": 3208,
+        "url": "https://www.reddit.com/r/soccer/comments/1qesngb/psg_20_lille_ousmane_dembélé_64/",
+        "selftext": "",
+        "created_utc": 1768598596.0,
+        "num_comments": 301,
+        "id": "1qesngb",
+        "subreddit": "soccer",
+        "link_url": "https://streamain.com/Su41wy5cVv9XvCj/watch",
+        "is_self": false,
+        "upvote_ratio": 0.98,
+        "comments": [
+          {
+            "author": "AutoModerator",
+            "body": "**Mirrors / Alternative Angles**\n  \n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/soccer) if you have any questions or concerns.*",
+            "score": 1
+          },
+          {
+            "author": "alttoby",
+            "body": "Absolutely insane goal.",
+            "score": 974
+          },
+          {
+            "author": "OfficialARM8",
+            "body": "One of the best goals I've ever seen. Some composure.",
+            "score": 638
+          },
+          {
+            "author": "Littletoof",
+            "body": "Damn he is really back",
+            "score": 571
+          },
+          {
+            "author": "albertbanning",
+            "body": "Oh my word…",
+            "score": 393
           }
         ]
       }
@@ -1040,11 +1369,11 @@
       {
         "title": "DB Mason Curtis is back for 2026",
         "author": "DaCurryMan00",
-        "score": 368,
+        "score": 370,
         "url": "https://www.reddit.com/r/MichiganWolverines/comments/1qekgey/db_mason_curtis_is_back_for_2026/",
         "selftext": "",
         "created_utc": 1768580535.0,
-        "num_comments": 37,
+        "num_comments": 38,
         "id": "1qekgey",
         "subreddit": "MichiganWolverines",
         "link_url": "https://i.redd.it/4h84ab4ylqdg1.jpeg",
@@ -1054,27 +1383,27 @@
           {
             "author": "Rebel_Bertine",
             "body": "Gotta think he’s in contention to start / get a lot of reps with the attrition in the safety room. I also really don’t see Rob Moore playing meaningful snaps either with his knee",
-            "score": 43
+            "score": 41
           },
           {
             "author": "HardballBD",
             "body": "Has anyone been counting the \"enter portal but then return\" players? \n\nAre we up to a dozen of them...more?",
-            "score": 13
-          },
-          {
-            "author": "bdylan05",
-            "body": "This is huge",
-            "score": 11
-          },
-          {
-            "author": "IFHelper",
-            "body": "Ladies and gentlemen,  we have a safety room.",
-            "score": 13
+            "score": 14
           },
           {
             "author": "buckeyehater",
             "body": "I wonder if the coaches will approach him with a plan to bulk up and move down a level. He’s certainly got the athleticism and it would alleviate some concerns about the LB room. Either way, nice to have a young guy who played a lot of snaps back in the fold.",
-            "score": 11
+            "score": 13
+          },
+          {
+            "author": "IFHelper",
+            "body": "Ladies and gentlemen,  we have a safety room.",
+            "score": 12
+          },
+          {
+            "author": "bdylan05",
+            "body": "This is huge",
+            "score": 12
           }
         ]
       },
@@ -1085,7 +1414,7 @@
         "url": "https://www.reddit.com/r/MichiganWolverines/comments/1qek07a/de_cam_brandt_is_back_for_2026/",
         "selftext": "",
         "created_utc": 1768579567.0,
-        "num_comments": 24,
+        "num_comments": 25,
         "id": "1qek07a",
         "subreddit": "MichiganWolverines",
         "link_url": "https://i.redd.it/iviwdzi2jqdg1.jpeg",
@@ -1095,7 +1424,7 @@
           {
             "author": "Ambitious_Bus_4054",
             "body": "I cannot wait for this portal to close. The spectacle the transfer portal has become is gross",
-            "score": 69
+            "score": 72
           },
           {
             "author": "WhiteBeanChili",
@@ -1110,49 +1439,13 @@
         ]
       },
       {
-        "title": "Adding a safety",
-        "author": "SHough61086",
-        "score": 155,
-        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1qe6wdi/adding_a_safety/",
-        "selftext": "That was fast",
-        "created_utc": 1768539701.0,
-        "num_comments": 15,
-        "id": "1qe6wdi",
-        "subreddit": "MichiganWolverines",
-        "link_url": "https://www.reddit.com/gallery/1qe6wdi",
-        "is_self": false,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "_Mr5_",
-            "body": "Class of 2026 Safety, ranked as the 72nd CB via 247. Composite wise, he’s 108th CB and nationally 1277th. Probably a decent depth piece that we could develop\n\nEdit: He already has 2 crystal ball predictions to come here, those came in a few hours ago.",
-            "score": 37
-          },
-          {
-            "author": "yummiboi21",
-            "body": "hope this Ernest waits until AFTER his career to get a spiritual awakening",
-            "score": 18
-          },
-          {
-            "author": "andy312",
-            "body": "The last 2 ernests were pretty good, why not get another. Go blue. There were  probably some old timey ernests that were good too.",
-            "score": 9
-          },
-          {
-            "author": "MichiganFootbal25",
-            "body": "If he balls out like Haussmann, this defense is gonna be a lot better than we think.",
-            "score": 6
-          }
-        ]
-      },
-      {
         "title": "What to expect from a Kyle Whittingham/Jay Hill defense, from a Utah fan",
         "author": "Upstairs_Seaweed8199",
-        "score": 88,
+        "score": 95,
         "url": "https://www.reddit.com/r/MichiganWolverines/comments/1qee67c/what_to_expect_from_a_kyle_whittinghamjay_hill/",
         "selftext": "I've been following Kyle Whittingham since he was an assistant at Utah, and I can tell you what you will get with his defenses. Jay Hill is a disciple of his, and they have essentially the same philosophy.\n\n\\- The #1 thing you will likely hear them talk about is making the other team one-dimensional. The basic philosophy is getting big, block-eating defensive tackles to eat up blocks and allow linebackers to stop the run. Once they give up on the run, turn up the volume and force the QB to make good decisions under pressure.\n\n\\- Challenge the offense by trusting our defensive backs to win 1 v 1 matchups with their receivers while we hound the QB.\n\nTo make this work we NEED our defensive tackles to do their job and/or the linebackers to be good enough to cover for their deficiencies. Last year, Utah had neither of those at the end of the year (the DTs were too light and inexperienced, and two of the linebackers had been severely injured in previous years and lost a step), and we were worse than I've ever seen a defense be under Kyle Whittingham.\n\nAs long as we have guys that can plug up running gaps (DTs or LBs) we will have, at minimum, a top 30 defense.\n\nMy question for you is, who do we have that will make this kind of defense work?",
         "created_utc": 1768564994.0,
-        "num_comments": 81,
+        "num_comments": 82,
         "id": "1qee67c",
         "subreddit": "MichiganWolverines",
         "link_url": "https://www.reddit.com/r/MichiganWolverines/comments/1qee67c/what_to_expect_from_a_kyle_whittinghamjay_hill/",
@@ -1162,48 +1455,79 @@
           {
             "author": "labrador45",
             "body": "1 on 1 vs OSU receiver just isn't doable for any team in CFB. Macdonald and Minter had it figured out- you must have elite DL that can get pressure rushing 4 and still be able to stop the run. Then drop 5 or more into coverage.",
-            "score": 124
+            "score": 126
           },
           {
             "author": "jus256",
             "body": ">\\- Challenge the offense by trusting our defensive backs to win 1 v 1 matchups with their receivers while we hound the QB.\n\nEven before Cignetti got there, Indiana and Ohio State in particular used to destroy these with crossing routes.",
-            "score": 44
+            "score": 45
           },
           {
             "author": "GoDaytonFlyers",
             "body": "Just need DTs and LBs? Easy peasy.\n\n(looks at roster)\n\nFuck...",
-            "score": 14
+            "score": 15
           }
         ]
       },
       {
-        "title": "Surprised",
-        "author": "Nickyg912",
-        "score": 78,
-        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1qe72r2/surprised/",
-        "selftext": "I just can’t get over how despite everything that’s happened the last few years and Moores exit, whatever we don’t even know about the malpractice of SM and how he coached or lack there of. The vast majority of the talent has remained on the roster and even quite a few of those who entered the portal have withdrawn out with time left for more. Lost a few I wish we hadn’t but overall I honestly had horrible expectations when everything went down. Than a surprise great hire, and really excited to see how much better these players are next year with real coaching and leadership instead of a coach gooning with assistants and OF models with his own family",
-        "created_utc": 1768540243.0,
-        "num_comments": 44,
-        "id": "1qe72r2",
+        "title": "Where to watch Polynesian Bowl 2026: NFL Network or FUBO (Salesi Moa declaring during game, looking like Michigan)",
+        "author": "Zealousideal_Bug7390",
+        "score": 49,
+        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1qekj24/where_to_watch_polynesian_bowl_2026_nfl_network/",
+        "selftext": "Posting in part for my fellow Football crazed fans, didn't know the game was airing on NFL Network until I looked it up. Tons of D1 commits playing in the game should be a fun watch.\n\nMichigan wise: Salesi Moa has announced he will declare during the game and is heavily rumored to be coming to Michigan, he was a top 60 recruit this year in HS (DB and WR) who declared to Utah to play WR, would be a huge get IMO.",
+        "created_utc": 1768580695.0,
+        "num_comments": 16,
+        "id": "1qekj24",
         "subreddit": "MichiganWolverines",
-        "link_url": "https://www.reddit.com/r/MichiganWolverines/comments/1qe72r2/surprised/",
-        "is_self": true,
-        "upvote_ratio": 0.95,
+        "link_url": "https://www.sportingnews.com/us/high-school/news/watch-polynesian-bowl-2026-time-channel-stream-rosterswhere-watch-polynesian-bowl-2026-time-channel-live-stream-rosters-high-school-football-all-star-game/f246e30174e3091c51acaa73",
+        "is_self": false,
+        "upvote_ratio": 0.94,
         "comments": [
           {
-            "author": "cwargoblue",
-            "body": " the teams most punished by the Moore scandal are… Utah and BYU.\n\nGO BLUE",
-            "score": 55
+            "author": "WhiteBeanChili",
+            "body": "Have we heard of any other schools in contention? I feel pretty confident about this one",
+            "score": 9
           },
           {
-            "author": "Kramerica_CEO",
-            "body": "I agree, I think this is even better than I would’ve imagined. This is better than what I would’ve considered a best case scenario",
-            "score": 58
+            "author": "Stock_Alternative507",
+            "body": "Commits to Michigan just now on ESPN.",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "title": "Free Talk Friday",
+        "author": "AutoModerator",
+        "score": 10,
+        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1qec1cf/free_talk_friday/",
+        "selftext": "Welcome to Free Talk Friday. This is a weekly off-topic thread for asking questions or discussing anything & everything with fellow Michigan Wolverines. Feel free to join our [discord](https://discord.gg/JnmVz9e) or follow our [twitter](https://twitter.com/UM_Wolvereddit) as well!",
+        "created_utc": 1768557609.0,
+        "num_comments": 8,
+        "id": "1qec1cf",
+        "subreddit": "MichiganWolverines",
+        "link_url": "https://www.reddit.com/r/MichiganWolverines/comments/1qec1cf/free_talk_friday/",
+        "is_self": true,
+        "upvote_ratio": 1.0,
+        "comments": [
+          {
+            "author": "EmuWorried5112",
+            "body": "So glad the transfer portal is nearly over with. ",
+            "score": 7
           },
           {
-            "author": "SimplyTheBlackGuy",
-            "body": "Whit’s number one priority was roster retention and I’m still surprised with how much we have coming back. Kudos to him, the staff, and the people who do the NIL.",
-            "score": 16
+            "author": "No_Photograph_6884",
+            "body": "Hockey today",
+            "score": 3
+          },
+          {
+            "author": "a_standing_poop",
+            "body": "Please get another LB",
+            "score": 2
+          },
+          {
+            "author": "Straight-Tower8776",
+            "body": "Transfer portal was whelming. Several positions lacking depth headed into 2026, WR, DL, DB. \n\nThe OL and RB squad looks insane and the TE room is stacked. Run game should be wicked.",
+            "score": 1
           }
         ]
       }
@@ -1212,11 +1536,11 @@
       {
         "title": "Dan Campbell ranked #8 in The Athletic’s list of most admired leaders in sports.",
         "author": "DanielBryanCMPunk",
-        "score": 857,
+        "score": 909,
         "url": "https://www.reddit.com/r/detroitlions/comments/1qemq89/dan_campbell_ranked_8_in_the_athletics_list_of/",
         "selftext": "",
         "created_utc": 1768585389.0,
-        "num_comments": 121,
+        "num_comments": 129,
         "id": "1qemq89",
         "subreddit": "detroitlions",
         "link_url": "https://i.redd.it/ml8rl2y20rdg1.jpeg",
@@ -1226,12 +1550,12 @@
           {
             "author": "Routine_Society_7402",
             "body": "How on earth did they come up with this list?",
-            "score": 456
+            "score": 485
           },
           {
             "author": "Cynicalstoic1234",
             "body": "Izzo gotta be in the top 5",
-            "score": 97
+            "score": 107
           },
           {
             "author": "rjsca",
@@ -1243,7 +1567,7 @@
       {
         "title": "Detroit Lions 1st Round Mock Draft Selection: The Athletic's Dane Brugler has the Lions drafting LT Caleb Lomu out of Utah, with the 17th pick:",
         "author": "Gxcii1",
-        "score": 257,
+        "score": 273,
         "url": "https://www.reddit.com/r/detroitlions/comments/1qekifn/detroit_lions_1st_round_mock_draft_selection_the/",
         "selftext": "\"It shouldn't surprise anyone if the Lions address their offensive line early, although I am intrigued by which prospect Brad Holmes and Dan Campbell would see as the best fit.\"\n\nLomu is a terrific athlete, but is still considered raw in his run blocking ability, something the Lions have always prioritized. He was the third tackle off the board in this mock draft. Spencer Fano (Utah) and Francis Mauigoa (Miami) were both off the board in the top 10.\n\nAs Taylor Decker weighs retirement, the Lions must find a long-term solution at LT.",
         "created_utc": 1768580658.0,
@@ -1252,12 +1576,12 @@
         "subreddit": "detroitlions",
         "link_url": "https://i.redd.it/52zfqslamqdg1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.97,
+        "upvote_ratio": 0.98,
         "comments": [
           {
             "author": "Duckney",
             "body": "OL or DE - whichever is better and less injured",
-            "score": 276
+            "score": 289
           },
           {
             "author": "F_ckYo_",
@@ -1267,14 +1591,14 @@
           {
             "author": "Zealousideal_Bug7390",
             "body": "Gigantic crazy athletic Polynesian Tackle?\n\nWorked pretty well the last time.",
-            "score": 113
+            "score": 111
           }
         ]
       },
       {
         "title": "This Seasons Lions Doodles As Stickers :)",
         "author": "CornDoggyLOL",
-        "score": 201,
+        "score": 217,
         "url": "https://www.reddit.com/r/detroitlions/comments/1qencq4/this_seasons_lions_doodles_as_stickers/",
         "selftext": "",
         "created_utc": 1768586694.0,
@@ -1288,12 +1612,12 @@
           {
             "author": "Heisenbread77",
             "body": "I will be placing my yearly order soon!",
-            "score": 8
+            "score": 9
           },
           {
             "author": "anb7120",
             "body": "The Goff one kills me every time 😅",
-            "score": 7
+            "score": 8
           },
           {
             "author": "ill_report348",
@@ -1305,26 +1629,26 @@
       {
         "title": "Rewatched the NFC Championship game last night… pain",
         "author": "Lower_Huckleberry296",
-        "score": 132,
+        "score": 139,
         "url": "https://www.reddit.com/r/detroitlions/comments/1qeispq/rewatched_the_nfc_championship_game_last_night/",
         "selftext": "",
         "created_utc": 1768576898.0,
-        "num_comments": 57,
+        "num_comments": 59,
         "id": "1qeispq",
         "subreddit": "detroitlions",
         "link_url": "https://i.redd.it/rjdxuzr2bqdg1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.78,
+        "upvote_ratio": 0.79,
         "comments": [
           {
             "author": "incrediblejonas",
             "body": "why would you do that to yourself",
-            "score": 169
+            "score": 179
           },
           {
             "author": "Calkky",
             "body": "I had a really bad feeling, despite our seemingly insurmountable lead.",
-            "score": 43
+            "score": 45
           },
           {
             "author": "HuntinginColter",
@@ -1336,7 +1660,7 @@
       {
         "title": "There were some real head-scratching personnel decisions this year.",
         "author": "awkward_vegetable69",
-        "score": 47,
+        "score": 51,
         "url": "https://www.reddit.com/r/detroitlions/comments/1qehpyd/there_were_some_real_headscratching_personnel/",
         "selftext": "Starting Kingsley over Graham against the Vikings in a must-win game really stands out. Kingsley was a disaster. Obviously a spouse is going to stick up for her man, but Graham’s wife on Twitter all but confirmed he was healthy enough to play, despite what we were told. He’s not a good center, but we would have been in a better position.\n\nMarcus Davenport playing over 50% of defensive snaps when he came back was another one. I actually liked what I saw from him last year, but this year he was a total non-factor. I know AQM can be a liability in the run game, but we were getting gashed in must-win games anyway—so at that point, who really cares?\n\nAidan Hutchinson playing well over 90% of the snaps every game was wild. Most people weren’t expecting a world-beater opposite Hutch, but having some young depth felt like a realistic expectation that just didn’t happen. That’s an insane workload, and it’s honestly crazy how good of shape he had to be in to stay as effective as he was.\n\nChristian Mahogany didn’t look right when he came back from injury. In his first game back he got banged up pretty good and looked extremely ineffective. It would’ve been nice to see Miles Frazier out there, especially considering how flippant the staff seemed about subbing OL starters in must-win games.\n\nJamo for the first few games. Enough said.\n\nOverall, there was a lot of head-scratching stuff. Not like I know better, but in hindsight you start to notice some weird decisions. What really struck me was how often the coaching staff asked players to do things they clearly weren’t good at—minimal adjustment when safeties went out, slow-developing pulls on the OL, etc. Any others I’m missing?",
         "created_utc": 1768574437.0,
@@ -1345,7 +1669,7 @@
         "subreddit": "detroitlions",
         "link_url": "https://www.reddit.com/r/detroitlions/comments/1qehpyd/there_were_some_real_headscratching_personnel/",
         "is_self": true,
-        "upvote_ratio": 0.74,
+        "upvote_ratio": 0.75,
         "comments": [
           {
             "author": "gachzonyea",
@@ -1355,7 +1679,7 @@
           {
             "author": "drj1485",
             "body": ">Jamo for the first few games. Enough said.\n\nExplain.  Your post is about weird personnel decisions.  how is this one?",
-            "score": 41
+            "score": 43
           },
           {
             "author": "Casty201",
@@ -1372,81 +1696,76 @@
     ],
     "DetroitPistons": [
       {
-        "title": "Met Rip Hamilton",
-        "author": "MartinIsFarting",
-        "score": 301,
-        "url": "https://www.reddit.com/r/DetroitPistons/comments/1qe8xdw/met_rip_hamilton/",
-        "selftext": "Is he a top 10 piston OAT?",
-        "created_utc": 1768546215.0,
-        "num_comments": 31,
-        "id": "1qe8xdw",
+        "title": "Duncan appreciation post. Dude has stepped up this role this year! Also he got a little dawg in him",
+        "author": "uncle_t_rav",
+        "score": 206,
+        "url": "https://www.reddit.com/r/DetroitPistons/comments/1qex6p5/duncan_appreciation_post_dude_has_stepped_up_this/",
+        "selftext": "",
+        "created_utc": 1768608789.0,
+        "num_comments": 19,
+        "id": "1qex6p5",
         "subreddit": "DetroitPistons",
-        "link_url": "https://i.redd.it/wihzbl8wrndg1.jpeg",
+        "link_url": "https://i.redd.it/h9nl29lyxsdg1.jpeg",
         "is_self": false,
         "upvote_ratio": 1.0,
         "comments": [
           {
-            "author": "Downtown_Evidence372",
-            "body": "Thats my hero. \n\nNot MJ, not Magic, not Dr. J, not LeBron, not Kobe. He was all of them rolled into one to me when I was a young lad. Lol",
-            "score": 42
+            "author": "Go_J",
+            "body": "Dawgin Robinson",
+            "score": 35
           },
           {
-            "author": "syncopated56",
-            "body": "Were you lying down when you met Rip?",
-            "score": 43
+            "author": "Pistons-32",
+            "body": "His ability to finish at the rim has been the most surprising thing for me",
+            "score": 24
           },
           {
-            "author": "TaxsDodgersFallstar",
-            "body": "That's not him - no mask!",
-            "score": 17
+            "author": "Cholecosa",
+            "body": "I thought his career was heading downwards the last few years in Miami. Boy am I happy I was wrong. He’s been a solid pairing to Cade. Provides ample spacing and overall a good vet presence for the team.",
+            "score": 19
           },
           {
-            "author": "kamalamading",
-            "body": "Am I misled by nostalgia or do you see parts of Rip‘s game in Duncan Robinson? Often running on the wings, quick catch&shoot with the occasional drive to the rim",
-            "score": 8
-          },
-          {
-            "author": "Liquidmetalslimeno9",
-            "body": "Did you ask him about Chanucey and if he thinks he will be ok?",
-            "score": 7
+            "author": "ShitFuckDickButt420",
+            "body": "The difference between him and Levert defensively is jarring. It’s obvious which one played years in a defensive system built on accountability. He makes the right decisions and gets to the right spots.",
+            "score": 20
           }
         ]
       },
       {
         "title": "The Pistons & Celtics are both showing interest in Jaren Jackson Jr. per @MikeAScotto league sources told HoopsHype",
         "author": "marvelavengers",
-        "score": 140,
+        "score": 150,
         "url": "https://www.reddit.com/r/DetroitPistons/comments/1qen8v0/the_pistons_celtics_are_both_showing_interest_in/",
         "selftext": "",
         "created_utc": 1768586475.0,
-        "num_comments": 237,
+        "num_comments": 244,
         "id": "1qen8v0",
         "subreddit": "DetroitPistons",
         "link_url": "https://www.hoopshype.com/story/sports/nba/2026/01/16/nba-intel-ja-morant-jaren-jackson-jr-anthony-davis-kyrie-irving-peyton-watson-jonathan-kuminga/88210035007/",
         "is_self": false,
-        "upvote_ratio": 0.96,
+        "upvote_ratio": 0.95,
         "comments": [
           {
             "author": "Which_Sun910",
             "body": "he’s averaging 19, y’all crazy to not wanna trade uncle tobi for him",
-            "score": 143
+            "score": 152
           },
           {
             "author": "CleverFox3",
             "body": "Do all of the people shitting on JJJ’s rebounding aware that Tobias Harris is our current starting 4?",
-            "score": 86
+            "score": 96
           },
           {
             "author": "yeropinionman",
             "body": "If a former DPOY who can play two positions, shoot threes, and be a secondary creator on drives isn’t good enough, it’s hard to know who *does* fit. \n\nIf the front office deems that a $50m salary doesn’t work in a future where we are paying Cade, JD, and Ausar (and maybe Ivey to a reasonable deal), I respect that. In that case we have to get a long-term answer at PF this off season, someone like Santi Aldama who is not perfect but makes a reasonable salary.",
-            "score": 58
+            "score": 62
           }
         ]
       },
       {
         "title": "The Pistons Currently Have 2 Of The 5 Best Post Players In The NBA!",
         "author": "Stat-Defender",
-        "score": 91,
+        "score": 95,
         "url": "https://www.reddit.com/r/DetroitPistons/comments/1qeg2nv/the_pistons_currently_have_2_of_the_5_best_post/",
         "selftext": "Most Points Per Possession On Post Ups In The 2025-26 NBA Regular Season (Min. 30 Total Post Up Possessions) :\n\n1.  Tobias Harris  —  1.32\n\n2.  John Collins  —  1.31\n\n2.  DeMar DeRozan  —  1.31\n\n4.  Cade Cunningham  —  1.30\n\n5.  Nikola Jokic  —  1.28\n\n6.  Jaime Jaquez Jr.  —  1.25\n\n6.  Miles Bridges  —  1.25\n\n8.  Kristaps Porzingis  —  1.23\n\n9.  Saddiq Bey  —  1.20\n\n10.  Jimmy Butler  —  1.19\n\n11.  Russell Westbrook  —  1.17\n\n12.  Giannis Antetokounmpo  —  1.16",
         "created_utc": 1768570451.0,
@@ -1465,7 +1784,7 @@
           {
             "author": "BadAndy4life",
             "body": "“TOBIAS HARRIS OVER ME?!?” \n\n-clown\n\n\nWe’re so lucky to have him back, and paired with our young core!!",
-            "score": 13
+            "score": 14
           },
           {
             "author": "durtymrclean",
@@ -1487,7 +1806,7 @@
       {
         "title": "Poor offensive performances have cost the Pistons losses but we always have to remember that it has been defense that has been earning the team its wins this season",
         "author": "TeamRAF19",
-        "score": 60,
+        "score": 59,
         "url": "https://www.reddit.com/r/DetroitPistons/comments/1qeknzf/poor_offensive_performances_have_cost_the_pistons/",
         "selftext": "During the closing minutes of the game last night against Phoenix, tension was expressed by many fans on the Pistons sub and some Pistons fan site, even Greg and George, that the Pistons would let the game slip away. Cade, visibly still bothered by an injury, was missing free throws. So were his other teammates. The Suns were not going down without a fight.\n\nBut I found myself relaxed while I was watching. It's because I looked at the score and I computed in my head \"Phoenix will not reach 110 pts. The Pistons got this.\"\n\nThe Pistons scored just 108 points last night, 8 points below the league average of 116 pts per game this season. Including last night's game, the Pistons played 6 games where they scored 108 points or less. They split those games, winning three, and losing three.\n\nWhat is more interesting for me, though, is the other side of the equation. Phoenix scored just 105 points last night. In the 39 games so far this season, the Pistons have limited their opponents to 105 points or less ten times, of which they lost only once. That would be the previous game against the Clippers when Cade, Duren, Stew, and Tobias were all out.\n\nWhich leads me to another fun observation. The Pistons have not lost in fourteen games so far this season where Cade played and their opponents were limited to 111 points or below. Basically when Cade plays and the team's defense shows up, it has been an auto win this season.\n\nLast night, Cade played his most horrific scoring game so far this season. Inefficient Cade is not a recipe for success. In the six games this season where Cade had a horrible true shooting percentage below 50%, the Pistons have only won twice.\n\nBut then again, there is another stat showing that the Pistons won almost 80% of the games when Cade hit double digit assists, which happened in 19 out of 39 games so far.\n\nSo what is the point of my rambling? Nothing really sophisticated. LOL. I guess I just want to argue that if the Pistons do upgrade the offense this season before the trade deadline, I sincerely hope they do not do it at the expense of 1) the elite defense and 2) Cade's elite playmaking that made this miraculous turnaround and gave the team its identity. So please, no CJ Mccollum or Colin Sexton or heck even Lauri Markkanen who is currently having the worst defensive season of his career. An offensive upgrade is needed by the Pistons but it should not make the team lose its winning identity that has been built on defense.\n\nThe Alex Caruso for Josh Giddey trade comes to mind. When that trade came about, a lot in reddit and in the mainstream media were highlighting that Caruso addressed a weakness which was Giddey's 3P shooting. The funny twist is that after the trade, Giddey became the much better three point shooter than Alex. LOL. But the Caruso trade did work out for OKC not because Alex plugged the team's weakness in three point shooting but rather because his acquisition was the Thunder doubling down on the team's already elite defense.\n\nThe Nuggets this season is another example. They have accepted that their team's strength is on offense so they doubled down on becoming even more offensive minded, going from 4th in offensive rating last season to the best this season, even if it meant sliding down the  league rankings on defense (from 22nd to 24th).\n\nJust like in other things in life, we often find weaknesses glaring, but it should not make the Pistons blind of the strengths that carried the team to the top of the East at the halfway mark of the season.",
         "created_utc": 1768580988.0,
@@ -1501,24 +1820,24 @@
           {
             "author": "Swimming_Snow_5904",
             "body": "This is why we need more shooters on this team. Once playoff comes and the games scores are more closer, it hurts more when the opponent goes on a scoring run because we can't shoot.",
-            "score": 9
+            "score": 10
           },
           {
             "author": "csstew55",
             "body": "People love to forget that this team plays an ugly style of basketball  (compared to the rest of the nba) with physical defense and  pound it inside offense. \n\nPeople also love to say the games are over in the middle of the second or third quarters when the team is either up or down double digit leads.\n\nYes the pistons shot poorly from the line, yes Cade played like crap , yet we still won the game. No need to freak out about it just forget it and move on to the next game",
-            "score": 9
+            "score": 6
           },
           {
             "author": "Duckney",
             "body": "Teams who have a great offense and no defense don't have anything to fall back on when their shots aren't falling. \n\nTeams who have a great defense can stay competitive even if the offense is having a rough night. Maybe the offense comes alive in the 4th, who knows. Wouldn't matter if you were already down by 20.\n\nYou're seeing this with the Lions. When you can't stop anyone on defense, your offense needs to be pretty damn close to perfect if you want to win games.",
-            "score": 4
+            "score": 5
           }
         ]
       },
       {
         "title": "Jalen Duren has 21 career games with 15+ points and 15+ rebounds — that's the 10th most in the NBA since he debuted in 2022-23",
         "author": "Basketball_Reference",
-        "score": 55,
+        "score": 58,
         "url": "https://www.reddit.com/r/DetroitPistons/comments/1qelm5m/jalen_duren_has_21_career_games_with_15_points/",
         "selftext": "",
         "created_utc": 1768583005.0,
@@ -1527,12 +1846,12 @@
         "subreddit": "DetroitPistons",
         "link_url": "https://i.redd.it/2x3veai6tqdg1.png",
         "is_self": false,
-        "upvote_ratio": 0.98,
+        "upvote_ratio": 0.96,
         "comments": [
           {
             "author": "BlueeyeswhitePIKA",
             "body": "Jokic the goat. Cool list for Duren to join",
-            "score": 5
+            "score": 6
           },
           {
             "author": "Top-dog68",
@@ -1549,44 +1868,13 @@
     ],
     "BillSimmons": [
       {
-        "title": "their total payroll next season is projected at $413 million; the Marlins spent $67 million last year",
-        "author": "EnvironmentNo5690",
-        "score": 495,
-        "url": "https://www.reddit.com/r/billsimmons/comments/1qe92i8/their_total_payroll_next_season_is_projected_at/",
-        "selftext": "",
-        "created_utc": 1768546700.0,
-        "num_comments": 313,
-        "id": "1qe92i8",
-        "subreddit": "billsimmons",
-        "link_url": "https://i.redd.it/iq1kgmnssndg1.png",
-        "is_self": false,
-        "upvote_ratio": 0.99,
-        "comments": [
-          {
-            "author": "bruiser_blade",
-            "body": "The owners that want a salary cap are going to love the fact that the Dodgers ended up signing the top position player and the top reliever available in Edwin Diaz.",
-            "score": 190
-          },
-          {
-            "author": "an_arc_of_doves",
-            "body": "Sounds like the marlins need to STEP UP",
-            "score": 103
-          },
-          {
-            "author": "SomeUIUCboi",
-            "body": "It’s always surprised me that mlb doesn’t have a salary cap. I don’t really see the argument against it.",
-            "score": 85
-          }
-        ]
-      },
-      {
         "title": "Where does NBC paying MJ millions for a 2 hour interview rank in the all time scams pyramid?",
         "author": "sylviaplath6667",
-        "score": 483,
+        "score": 492,
         "url": "https://www.reddit.com/r/billsimmons/comments/1qem90v/where_does_nbc_paying_mj_millions_for_a_2_hour/",
         "selftext": "",
         "created_utc": 1768584356.0,
-        "num_comments": 141,
+        "num_comments": 142,
         "id": "1qem90v",
         "subreddit": "billsimmons",
         "link_url": "https://i.redd.it/6xu82v42xqdg1.jpeg",
@@ -1596,33 +1884,33 @@
           {
             "author": "TallGuyinBushwick",
             "body": "More work than what Kawhi did for Aspiration. ",
-            "score": 302
+            "score": 322
           },
           {
             "author": "HectorBananaBread",
             "body": "When this came out Bill was in the camp of “I realized I could hear Jordan talk about anything. He’s a fascinating dude.”\n\nJordan would go on to say nothing of consequence and Bill would never mention the interviews again.",
-            "score": 299
+            "score": 306
           },
           {
             "author": "One_Drummer_8970",
             "body": "It was meant to herald the return of the NBA on NBC\n\nIt was always a promotional, celebratory, limited thing",
-            "score": 193
+            "score": 190
           },
           {
             "author": "IAmReborn11111",
             "body": "2 hour interview and they discussed load management lol",
-            "score": 92
+            "score": 91
           }
         ]
       },
       {
         "title": "We are all Texans this weekend",
         "author": "Interesting_Fun_8656",
-        "score": 310,
+        "score": 323,
         "url": "https://www.reddit.com/r/billsimmons/comments/1qedjg1/we_are_all_texans_this_weekend/",
         "selftext": "",
         "created_utc": 1768562915.0,
-        "num_comments": 144,
+        "num_comments": 147,
         "id": "1qedjg1",
         "subreddit": "billsimmons",
         "link_url": "https://i.redd.it/d61ybqcj5pdg1.jpeg",
@@ -1632,33 +1920,33 @@
           {
             "author": "yung_indigestion",
             "body": "WE ARE CHRISTIAN KIRK!!!!",
-            "score": 135
+            "score": 136
           },
           {
             "author": "DonovanMcTigerWoods",
             "body": "When you name your team “Texans” but the majority of Texans root for the Cowboys",
-            "score": 86
+            "score": 84
           },
           {
             "author": "RepeatSpiritual8108",
             "body": "Generic franchise.",
-            "score": 65
+            "score": 67
           },
           {
             "author": "Powerful-Web-4992",
             "body": "Bill never reacts to losses in a way that is satisfying anyways . idk why we even care if his teams win",
-            "score": 46
+            "score": 48
           }
         ]
       },
       {
         "title": "The 49ers electrical substation has already gotten to Simmons",
         "author": "Full_Cat5323",
-        "score": 227,
+        "score": 238,
         "url": "https://www.reddit.com/r/billsimmons/comments/1qei200/the_49ers_electrical_substation_has_already/",
         "selftext": "",
         "created_utc": 1768575216.0,
-        "num_comments": 13,
+        "num_comments": 12,
         "id": "1qei200",
         "subreddit": "billsimmons",
         "link_url": "https://i.redd.it/vatiwwt46qdg1.jpeg",
@@ -1668,29 +1956,29 @@
           {
             "author": "Victorcreedbratton",
             "body": "This is about as good of an image as they could have used.",
-            "score": 63
+            "score": 64
           },
           {
             "author": "flareon123",
             "body": "Most people, like the 49ers players, are comprised of ~60% water, but Bill is 60% water… with lemon. He’s impervious to the electromagnetic energy of the substation, it bounces right off him. \n\nFuck lemonade, when life gave Bill lemons he stuck them in hot water. He’s always two steps ahead.",
-            "score": 45
+            "score": 51
           },
           {
             "author": "FreemanCantJump",
             "body": "Move over New Owner Syndrome, NFL Havana Syndrome is here.",
-            "score": 23
+            "score": 26
           },
           {
             "author": "studioguy9575",
             "body": "If I’m a player, I’m not letting electromagnetic waves risk injury to my body. I’m just not.",
-            "score": 12
+            "score": 19
           }
         ]
       },
       {
         "title": "As a bears fan, so frustrated Simmons picked us",
         "author": "rawness_of_truth",
-        "score": 102,
+        "score": 103,
         "url": "https://www.reddit.com/r/billsimmons/comments/1qek83v/as_a_bears_fan_so_frustrated_simmons_picked_us/",
         "selftext": "",
         "created_utc": 1768580043.0,
@@ -1704,27 +1992,63 @@
           {
             "author": "ManufacturerLow3161",
             "body": "As a Bills fan, I love the chance that I may get to listen to the Sunday night pod and hear Bill say “why did I pick Bo Nix vs Josh Allen!”",
-            "score": 76
+            "score": 78
           },
           {
             "author": "IukeskywaIker",
             "body": "Nothing like the BS kiss of death.",
-            "score": 56
+            "score": 58
           },
           {
             "author": "WARLOCK1239",
             "body": "He did? Shit, we're toast.\n\nIt was a good run while it lasted.",
-            "score": 35
+            "score": 36
           },
           {
             "author": "AlPastorKing",
             "body": "Simmons doing his best to put a bad Stafford/Rams game into the universe.",
-            "score": 36
+            "score": 37
           },
           {
             "author": "cesc05651",
             "body": "He’s picking all the teams that he perceives are weak so it’s the best route for the patriots. Bc he’s deluded into thinking the pats can win it",
-            "score": 16
+            "score": 20
+          }
+        ]
+      },
+      {
+        "title": "Bo Bichette to the Mets 3/$126m!",
+        "author": "1Leoski",
+        "score": 99,
+        "url": "https://www.reddit.com/r/billsimmons/comments/1qer77w/bo_bichette_to_the_mets_3126m/",
+        "selftext": "This is my Mets happy face",
+        "created_utc": 1768595241.0,
+        "num_comments": 48,
+        "id": "1qer77w",
+        "subreddit": "billsimmons",
+        "link_url": "https://i.redd.it/5fuss1cotrdg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.91,
+        "comments": [
+          {
+            "author": "sadduckfan",
+            "body": "I like Bo Bichette because it sounds so much like Boba Fett",
+            "score": 98
+          },
+          {
+            "author": "Available-Reason9841",
+            "body": "because the team needed another middle infielder. some real genius from david stearns",
+            "score": 34
+          },
+          {
+            "author": "SeeYaLaterDylan",
+            "body": "Can't wait for Mets Corner",
+            "score": 28
+          },
+          {
+            "author": "djh2121",
+            "body": "Sean looks like a lesbian",
+            "score": 22
           }
         ]
       }
