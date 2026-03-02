@@ -1,54 +1,85 @@
 {
-  "timestamp": "2026-03-01T20:02:46.412743",
-  "generated_at": "2026-03-01 20:02:46 UTC",
+  "timestamp": "2026-03-02T00:02:41.377751",
+  "generated_at": "2026-03-02 00:02:41 UTC",
   "subreddits_count": 12,
-  "total_posts": 60,
+  "total_posts": 58,
   "data": {
     "cfb": [
       {
         "title": "Colorado quarterback Dominiq Ponder dies at 23",
         "author": "tehkoolkat",
-        "score": 407,
+        "score": 1515,
         "url": "https://www.reddit.com/r/CFB/comments/1ridw2b/colorado_quarterback_dominiq_ponder_dies_at_23/",
         "selftext": "",
         "created_utc": 1772410822.0,
-        "num_comments": 77,
+        "num_comments": 277,
         "id": "1ridw2b",
         "subreddit": "CFB",
         "link_url": "https://www.espn.com/college-football/story/_/id/48077044/colorado-quarterback-dominiq-ponder-dies-23",
         "is_self": false,
-        "upvote_ratio": 0.99,
+        "upvote_ratio": 0.97,
         "comments": [
           {
             "author": "potato_bus",
             "body": "Said to be a car crash. ",
-            "score": 383
+            "score": 1318
           },
           {
             "author": "WuTang4thechildrn",
             "body": "I met this kid when my son was on a recruiting visit to BCU a few years ago.  \n\nReally nice young man.   Rest well Dominiq",
-            "score": 256
+            "score": 660
           },
           {
             "author": "CUBuffs1992",
             "body": "Was woken up at 3am due to a bunch of sirens. Turned my police scanner app on heard a bad accident happen. Deputy had said single male, unconscious and not breathing but needed the FD to extract him. Obviously not confirmed but fatal accidents don’t happen in Boulder or Boulder County every day.  \n\nWhere this accident happened, it’s on a curve with a steep drop off on one side into a lake. The road is also banked the wrong way and speed drops without warning. \n\nPrayers to his family and RIP Dom. Got to meet him a couple times and he was a great young man who had his whole life ahead of him.",
-            "score": 160
+            "score": 590
+          }
+        ]
+      },
+      {
+        "title": "The Michigan State community mourns the passing of Zeke the Wonderdog",
+        "author": "kdotrukon1200",
+        "score": 227,
+        "url": "https://www.reddit.com/r/CFB/comments/1riga3g/the_michigan_state_community_mourns_the_passing/",
+        "selftext": "",
+        "created_utc": 1772417330.0,
+        "num_comments": 21,
+        "id": "1riga3g",
+        "subreddit": "CFB",
+        "link_url": "https://app.lockerverse.com/spartans-illustrated/articles/the-michigan-state-community-mourns-the-passing-of-zeke-the-wonderdog",
+        "is_self": false,
+        "upvote_ratio": 0.98,
+        "comments": [
+          {
+            "author": "WhiteBeanChili",
+            "body": "Legendary good boy",
+            "score": 54
           },
           {
-            "author": "AstuteCouch87",
-            "body": "WTFFFFF. RIP",
-            "score": 99
+            "author": "Nervous_Metal_9445",
+            "body": "RIP Zeke. Even though I was raised to root for the Wolverines, I will say you were a part of one of the best traditions in College football. ",
+            "score": 40
+          },
+          {
+            "author": "thecravenone",
+            "body": "He was a Good Boy.",
+            "score": 42
+          },
+          {
+            "author": "ImGoingtoRegretThis5",
+            "body": "Good dog.\n\nGiving my guy a few more head scratches tonight in observance.",
+            "score": 24
           }
         ]
       },
       {
         "title": "Who is the next P4 team to breakthrough and finish in the AP Top Ten for the first time ever?",
         "author": "DonFlamenco2022",
-        "score": 156,
+        "score": 177,
         "url": "https://www.reddit.com/r/CFB/comments/1rhqfba/who_is_the_next_p4_team_to_breakthrough_and/",
         "selftext": "In 2025 Texas Tech finally got over the hump and finished in the AP Top 10 for the first time in school history.\n\nThe Red Raiders finished #7 besting a #11 finish in 1938 and 1973.\n\nSo who’s next?\n\nHere are your 5 P4 schools who have never finished in the AP Top 10 along with their highest historical ranking:\n\nRutgers - finished #12 in 2006\n\nVanderbilt - finished #12 in 1948\n\nNC State - finished #11 in 1974\n\nWake Forest - finished #15 in 2021\n\nVirginia - finished #13 in 1951\n\nEDIT for a fun fact: Vanderbilt is the only P4 team to never make the Preseason AP Top 25 in school history. I’m guessing that could be in jeopardy this year. ",
         "created_utc": 1772347893.0,
-        "num_comments": 69,
+        "num_comments": 74,
         "id": "1rhqfba",
         "subreddit": "CFB",
         "link_url": "https://www.reddit.com/r/CFB/comments/1rhqfba/who_is_the_next_p4_team_to_breakthrough_and/",
@@ -58,55 +89,24 @@
           {
             "author": "Due_Bluebird3562",
             "body": "I'm genuinely suprised at NC State. They've had quite a bit of NFL talent in the last two decades unlike the other schools listed here. Including several NFL starter level QBs.",
-            "score": 120
+            "score": 147
           },
           {
             "author": "allisthepriceofall",
             "body": "NC State being on this list is kind of suprising",
-            "score": 120
+            "score": 127
           },
           {
             "author": "586WingsFan",
             "body": "Out of those 5 probably Vanderbilt",
-            "score": 71
-          }
-        ]
-      },
-      {
-        "title": "Who is the next P4 team to finish their first season ever by losing every game they play?",
-        "author": "DonFlamenco2022",
-        "score": 59,
-        "url": "https://www.reddit.com/r/CFB/comments/1rhmyoj/who_is_the_next_p4_team_to_finish_their_first/",
-        "selftext": "Sort of the opposite of my other thread featuring the 9 P4 teams who have never finished a season without a loss or tie. \n\nFor this thread we’re looking at the 15 P4 teams who have never had a season in which they lost EVERY GAME. \n\nNo wins. No ties. For a season you took the field and lost each time regardless of number of games played.\n\nNeedless to say, that means you WANT to be on this list. \n\nOf these teams who is most likely to lose every game they play in a season for the first time in program history? \n\nPenn State\n\nOhio State\n\nNebraska\n\nOregon\n\nGeorgia\n\nKentucky\n\nArkansas\n\nTexas\n\nTexas A&M\n\nMissouri\n\nTexas Tech\n\nOklahoma State\n\nMiami\n\nClemson\n\nPittsburgh\n\n\n\n\n\n\n\n  \n",
-        "created_utc": 1772336739.0,
-        "num_comments": 103,
-        "id": "1rhmyoj",
-        "subreddit": "CFB",
-        "link_url": "https://www.reddit.com/r/CFB/comments/1rhmyoj/who_is_the_next_p4_team_to_finish_their_first/",
-        "is_self": true,
-        "upvote_ratio": 0.74,
-        "comments": [
-          {
-            "author": "xenosilver",
-            "body": "None of them because they all play at least 2-3 cupcakes again. However, if I had to pick, Arkansas. They’ve lost every conference game before I believe in 2018.",
-            "score": 158
-          },
-          {
-            "author": "Fly_The_Dub",
-            "body": "Ahhh crap....it's Arkansas isn't it?",
-            "score": 52
-          },
-          {
-            "author": "AlbertCoholic",
-            "body": "Dear sweet little baby Jesus please let it be Texas.",
-            "score": 46
+            "score": 82
           }
         ]
       },
       {
         "title": "[Zenitz] Maryland is expected to hire Matt Barnes as special teams coordinator, sources tell CBS Sports. Barnes, who worked at Maryland from 2016-18, was most recently co-DC at Mississippi State. Before that, was DC at Memphis and an assistant at Ohio State, including interim DC in 2021.",
         "author": "Drexlore",
-        "score": 48,
+        "score": 65,
         "url": "https://www.reddit.com/r/CFB/comments/1ri8bvm/zenitz_maryland_is_expected_to_hire_matt_barnes/",
         "selftext": "",
         "created_utc": 1772397405.0,
@@ -115,53 +115,58 @@
         "subreddit": "CFB",
         "link_url": "https://x.com/mzenitz/status/2028130223510659441",
         "is_self": false,
-        "upvote_ratio": 0.89,
+        "upvote_ratio": 0.9,
         "comments": [
           {
-            "author": "J_Taylor85",
-            "body": "So that’s what Swaggy P is up to these days",
+            "author": "[deleted]",
+            "body": "[deleted]",
             "score": 6
           },
           {
             "author": "IhateLukaDoncic",
             "body": "Basketball matt barnes?",
-            "score": 0
+            "score": 5
           }
         ]
       },
       {
-        "title": "[Zenitz] Syracuse is hiring Brandon Napoleon as a defensive backs coach, sources tell me and Chris Hummer. The former 247Sports 30 under 30 selection was defensive pass game coordinator and DB coach at Wofford. Helped Wofford rank 4th in the FCS in scoring defense and 7th in INTs.",
-        "author": "Drexlore",
-        "score": 37,
-        "url": "https://www.reddit.com/r/CFB/comments/1ri7zvs/zenitz_syracuse_is_hiring_brandon_napoleon_as_a/",
-        "selftext": "",
-        "created_utc": 1772396651.0,
-        "num_comments": 7,
-        "id": "1ri7zvs",
+        "title": "Big 12 Uniform Tracker 2025: The Uniform Awards",
+        "author": "matte_purple",
+        "score": 58,
+        "url": "https://www.reddit.com/r/CFB/comments/1ricsg6/big_12_uniform_tracker_2025_the_uniform_awards/",
+        "selftext": "Hello r/CFB! Welcome to the 2025 Big 12 Uniform Tracker! In this extra special edition, the final one of the 2025 season review, we’ll take part in one of my favorite segments: the Uniform Awards! I'll go over the suits, helmets, and teams that popped through the 2025 season in the Big 12. If you want to see my broader thoughts on each Big 12 team’s seasons and uniforms, my 2025 Season Review is linked at the bottom of the post.\n\n\n\nCrack open a celebratory beverage, settle in, and let’s all get together and look back at this good looking, highly entertaining season in the Big 12. Three cheers for our season winners!\n\n\n\nI’m u/matte_purple, and let's 3, 2, 1 go! \n\n  \n\n\n**Time Machine - Best Throwback:** [**TTU 100 Year Celebration Suit**](https://imgur.com/a/texas-tech-week-7-2025-3m8FT0e)\n\n\n\n* 2nd Place: [ASU’s Fiesta Bowl Tribute](https://imgur.com/a/arizona-state-week-8-2025-Dff6cIm)\n* 3rd Place: [WVU’s 1965 Look](https://imgur.com/a/west-virginia-week-5-2025-wjjP7bn)\n* Honorable Mention: [Arizona’s Fauxback](https://imgur.com/a/arizona-week-3-2025-2xiYk7V)\n\n\n\nWe’ll work in ascending order. The **Arizona** Wildcats donned a fauxback punctuated with a chunkier 80’s edition Block A. The helmet also features award stickers in the shape of a wildcat paw, another logo used from that timeframe. When adding this helmet to the classic Arizona uniform set, you get a tasteful throwback uniform that makes a lot of people happy. Plus, the award stickers stayed through the season, adding a nice sprinkle of individuality to an already great suit. \n\n\n\n**WVU’s** throwbacks featured a light-blue West Virginia state outline that really gave the old-gold helmet a sweet technicolor vibe back in ‘65, but nowadays looks classic in the best of ways. The color was inspired by the old Star City bridge on the north side of Morgantown, which used to have blue steel girders. It’s the first time old gold has appeared in a WVU uniform since 1978. My only gripe about these is as follows: the helmet and pants shade doesn’t match. But these *are* throwbacks, so I’m sure the designers intentionally mismatched the two in order to maintain historical accuracy, but it does irk me a tad. Regardless, I think this suit was very solid!\n\n\n\nOpposite of the WVU suit, **Arizona State** made a new change to their throwback suits. Take a peek at the [original 1975](https://imgur.com/a/OveRIrz) Fiesta Bowl suit versus the one linked above. The changes are fairly minor, sans the double stripe on the leg. The newer single leg stripe, in my mind, better mimics the helmet stripe and creates a nice bit of symmetry. Not exactly historically accurate, but it maintains the overall spirit and improves slightly. Not that there’s much to improve in the first place! The colored shoulder tri-stripe? Incredible. The more vintage cream white coloring? Wonderful. The two different Sunburst logos, one on the helmet (first time we’ve seen it on a lid since 2020) and one featuring Sparky on the shoulders? Awesome. Plus the vintage number font, gray facemask, and tasteful accessories. A *very* good looking suit to be sure!\n\n**Texas Tech’s** throwbacks had to take the No. 1 spot. They seamlessly rolled a century of Red Raider history into one fantastic uniform for their homecoming game and 100 year anniversary of Tech football. The TECH wordmark is an homage to the logo present on their  very first uniforms, back when they were the Texas Technological College “Matadors.” The logo utilized on the helmet and collar come from 1926, the first appearance of the Double T, while the helmet stars mimic those awarded for good play in 1965. The striped shoulder pattern with the integrated logo is sourced directly from the 1930 jersey design, with the number font choice coming from the 1935 jerseys, the first time numbers showed up on Tech jerseys. The leg stripe mimics the harness collar on the Masked Rider’s steed from 1965. These flow well, the combo choice itself is excellent, and the intricacies of each design choice is wonderful. As a fun aside, KU wore [throwbacks](https://imgur.com/a/PTjhqhA) vs Tech in 2011, but I’d say the Red Raiders’ ones are a little better. I’m definitely not biased. \n\n  \n\n\n**Keep Moving Forward - Most Improved Uniform Team: Cincinnati Bearcats**\n\n\n\n* 2nd Place: Iowa State Cyclones\n* 3rd Place: UCF Knights\n* Honorable Mention: Houston Coogs and Arizona State\n\n\n\nFour schools totally revamped their core set this past summer, and one school feels brand new after removing an important piece. Let's get into it: \n\n\n\n[**Houston**](https://imgur.com/a/houston-new-uniform-comparison-photo-gegZxWQ) and [**Arizona State**](https://imgur.com/a/arizona-state-comparison-photo-8dQFNFb) made some changes to their set alongside the standard Nike/Adidas templates, particularly adding/editing their wordmark to the chest, which I feel adds to the wardrobe. Houston also opted for different colored cuffs and collars for the first time since 2012. Arizona also utilized Sparky far more and utilized the logo on a white helmet for the first time ever, wore 10 distinct color combos, and introduced a devilish (ha) throwback that I just spoke about. Both very good improvements to the rotation.\n\n\n\n[**UCF**](https://imgur.com/a/ucf-new-uniform-comparison-MkemGN0) made several brand new changes to the suit. For one, they updated to the newer Nike F.U.S.E template. But on that template, they added bigger numbers, better font, gold drop shadow and number perforations, TV numbers, bigger stars on the legs and better emphasized pegasus wings on the shoulder. They also updated their Knightmode set (one of my favorite alternates of theirs), added gold pants to the rotation, and introduced another Space Game look to the tradition. It's really hard to pick apart these awesome suits from the Knights!\n\n\n\nWhile **Iowa State** already updated their look in 2024, I put them in second place because of a season-long omission: The Block I-State logo. The Cyclones appear to have removed the Block I logo from the helmets in favor of the fan-favorite Script Cyclone wordmark. That *alone* is worthy of a ranking, but Iowa State also reintroduced the Cy-Nado logo, wore gold pants for the first time since 2016, and limited their slightly less popular black and white suits to two appearances. The Cyclones looked more like the team I remember, and they are having a renaissance threadwise!\n\nBy far the most improved wardrobe in the Big 12, to my eyes, was [**Cincinnati**](https://imgur.com/a/cincinnati-new-uniform-comparison-UUv1BiW). There are noticeable differences to last year’s template, the contrasting collar and sleeve hems are gone, the new numbers have different fonts and outlines (structured with the same notch as the C-Paw logo and outlined for the first time since 2007) along with the new “Cincinnati Stripe.” I really like the geometry of these shoulder and pant stripes. These changes create a fantastically tailored and personal look, but maintain the simplicity to encourage mixing combos while maintaining identity. The Bearcats also introduced a new helmet logo, the first time they’ve ever worn script on a helmet, in color-corrected, glossy lids. All of those changes create a lovely uniform set that continued to grow on me all season. Even some of the more “out there” choices looked better with this new template. Bravo to Cincy. I was not expecting this set to grow on me as much as it did.\n\n  \n\n\n**Appetizer Award - Best Non-Con Uniform Matchup:** [**K-State vs North Dakota**](https://imgur.com/a/Iw4xOWu)\n\n\n\n* 2nd Place: [“The Border War”](https://imgur.com/a/XTxF9vi)\n* 3rd Place: [Colorado vs Wyoming](https://imgur.com/a/Su0T3Ak)\n* Honorable Mention: [UCLA vs Utah](https://imgur.com/a/utah-vs-ucla-5w2y3EA)\n\n\n\nIn the honorable mention spot, I had to go with a classic red vs blue look. But more than that, I like the interplay between these two “classic” uniforms. UCLA has a fashion sense that has remained mostly the same for a very long time. **Utah** has been going back to their roots more and more with these throwbacks. Though UCLA has small pieces of white in their suits, the two suits are almost entirely contrasting. Just a really traditional, classic, easy contrast! Simple as that!\n\n\n\nSimply put, I love a color on color matchup, and I can’t pass up speaking on this rare treat. This one featuring the **Colorado Buffaloes** and Wyoming Cowboys was a particularly great showing. Put Wyoming's stellar gold alternates, complete with mountainous shoulders, script Wyoming wordmark, and saloon numbers against the more geometric and new age style of Colorado’s 2024 blackout suits and you get a really wonderful “Old West vs New West” battle. Seriously, this Wyoming look is AWESOME. \n\n\n\nI had to shout out **Kansas** and their “Red Legs” uniform vs the Missouri Tigers. This suit holds significance that adds to the lore of this rivalry while also looking very aesthetic. As a safeguard against Missouri aggression and to aid the [Union](https://www.legendsofamerica.com/ah-unioncivilwar/) cause, a company of Kansan border scouts was formed in late 1862. They were known to wear red or tan leather leggings to identify themselves, thus the term. These bold men were never regularly mustered into the United States service, but were nonetheless an important part of Civil War history. This is easily one of my favorite away combos that KU has. Matched against the traditional and highly contrasting black and gold uniform that Mizzou has and you get an eye-pleasing battle on the gridiron.\n\n\n\nIn last year’s Big 12 Awards, I wondered what UND would wear vs **K-State** in 2025 after loving the Wildcat’s uniform clash vs Tulane. Little did I know, we would see a treat from both teams! For one, North Dakota doesn’t get to flaunt their brilliant green color much outside of Grand Forks, save for occasional color v color games. Second, this was a banner game uniform wise for K-State. It was the first time since 1991 that white uniforms had been worn at home, only the 4th alt helmet used since 2022, and the first time K-State had EVER worn 3 straight alternate helmets in a row. The matchup was beautiful. The pops of lavender and deeper purple in the crowd accompanied by K-State’s purple and white clashed well against the Fighting Hawk’s bright green helmets and jerseys. Am I perhaps a tad biased? Maybe, but I think this uniform matchup would be a favorite regardless. K-State plays Tulane again in 2026, so watch out for a similar color scheme!\n\n  \n\n\n**New Threads - Best New Alternate:** [**Arizona Sandstorm Suit**](https://imgur.com/a/B16nAU1)\n\n\n\n* 2nd Place: [UCF “Space Game”](https://imgur.com/a/bPOSIDV)\n* 3rd Place: [Bearcat’s “Cincy Red”](https://imgur.com/a/gtfDK3A)\n* Honorable Mention: [Houston “Luv Ya Blue”](https://imgur.com/a/zHfTiy6)\n\n\n\nBefore I begin, I just want to clarify something: there were enough alternate looks this year (sweet!) that I felt I had to break them into different categories. So, this category is for any non-whiteout or blackout alternate. Let's begin!\n\n\n\nThe third edition of the Luv Ya Blue suits in as many years. It’s not just the old Houston Oilers team that used this color, it’s a Bayou City staple! The color is used in **Houston's** distinctive blue curb signs, HPD’s vintage blue police cruisers and even the official city flag. It's a gorgeous shade with meaning far beyond sports.Constant battles with the Tennessee Titans has made nailing down a supreme version tough. I think I’ll always be partial to the first version from [2023](https://imgur.com/NnhxUcq), but these are still an excellent shakeup for Houston’s standard look, and more in line with their updated 2025 uniform set (as seen by the white collar and modified leg stripe). That blue is a *really* great color. \n\n\n\n**Cincy** started the season out with a bang, wearing an all red uniform that featured an altered helmet logo and wordmark. This was the first time they’ve ever worn a script logo on a helmet. Making these even more special is the reworked red helmet paint. Whereas the last version had a velvet-y sheen to them, these are a bolder red. It was an excellent way to make the new uniform even more exciting, and really helped sow the seeds of what became my favorite update of the season, as I spoke about earlier. Wearing it against Nebraska was a bit of a gamble, since you normally peg the Cornhuskers as mostly red and Cincinnati as mostly black and white. Regardless, when judging the uniforms in a vacuum, I believe this one was a valuable new addition to the wardrobe. \n\n\n\nThe Space Game is a well loved tradition at **UCF**. They’ve designed special uniforms inspired by various aspects of space exploration every year since 2017, with looks inspired by the moon, exoplanets, extraterrestrial soils, NASA, rockets, and constellations. Here’s a [great resource](https://ucfknights.com/ucf-space-game-history) on the history of the space game and the previous uniforms worn, or “Mission Logs,” as the site states. For 2025, the theme was \"hyperspace,\" an ode to the 2024 partnership with the U.S. Air Force to launch the Center of Excellence in Hypersonic and Space Propulsion - aka the HyperSpace Center. These incorporate a lot of elements from previous looks, notably a similar vibe to the [2022 uniform](https://imgur.com/GemsaoG), but emphasize the popular sci-fi idea of what true hyperspace looks like, seen in the helmet stripe, shoulders, and numbers. SPACE U is emblazoned on the pant legs, and my favorite element is the back helmet bumper, which reads “Citius Est Futurum” (The Future is Faster.) It’s hard to nitpick the actual design elements in these suits as they aren't designed for season-long wear; they are allowed to design normally strange choices (like full shoulder endcaps) because they are meant to convey a message, not simply look good. But still, I really like these. I don't think they trump my previous favorites of the [2023](https://imgur.com/NXMv88h) and [2019](https://imgur.com/a/Lc60gbI) suits, but it is still a wonderful uniform! Also a quick note, I don’t really consider this a blackout uniform, which is a separate category all its own. Drip U strikes again!\n\n\n\nFinally, the best new alternative of 2025 was **Arizona’s** sweet Sandstorm look. Very clearly a different shade of white, reminiscent of the LA Rams “bone” color. They still maintain the dual-colored stripes on the shoulders and the stripless red pants, but added a bolder red collar and opted for red numbers with a blue stroke, as opposed to the reverse on their normal away look. I think the emphasis on red is really great, in fact it’s a change I would love to see implemented in their actual away uniforms, similar to how Oklahoma State has both black and orange versions of their away [threads.Plus](http://threads.Plus), this was a new helmet, using a candy apple red shell with the “Cactus” logo. Reminds me of their throwback [helmet from last year](https://imgur.com/a/yNxCvhA) which I loved! These didn’t grab me at first, but now that I've had some time with them, I’ve really grown to like these!\n\n\n\n**Mr. Clean - Best Whiteout Alternate:** [**Texas Tech Mahomes Alt**](https://imgur.com/a/fm2soOD)\n\n\n\n* 2nd Place: [KU’s New “Whitehawk”](https://imgur.com/a/vOoXwCR)\n* 3rd Place: [K-State Whiteout at Home](https://imgur.com/a/ziBZIhj)\n* Honorable Mention: [Colorado Week 14](https://imgur.com/a/XMhJyH3)\n\n\n\n**Colorado** has dabbled with all white uniforms before, generally being worn 1-2 times a season from  2016-2019. Each of those suits sported primarily black details, font color, and facemask (including the [2016 look](https://imgur.com/a/2jpaKWP), which also features one of my favorite Oregon uniforms). But the Buffs flipped the script in 2023, opening against TCU sporting a whiteout with gold details. That same style has been worn 3 more times since then, including the newly updated 2024 Nike F.U.S.E version seen here. It’s just a visually striking suit that capitalized on the crisp light of winter snowfall accompanying an early start time. The gold facemask is *wonderful* and the mountain pattern on the shoulders seems to stand out more nicely on this particular version. Very very good whiteout from CU.\n\n\n\nWe spoke on **K-State’s** white alternate (and how rare it is) earlier, so I’ll move on to the next. If you missed it, it’s in the non-con section! The Jayhawks are more used to wearing all-white football uniforms (five times from 2022-2024), but I’m more interested in the design of these. **KU’s** “Whitehawk” look, as these are called, features all of the details we love from the “Blackhawk” suits but seems more palatable, easier to combine with other elements, and are, of course, more easily worn during away games. It’s hard not to like these, even despite the argument that Circus font belongs to KU basketball, not football. We only saw these Whitehawk jerseys twice this season, so I hope they get more use in 2026!\n\n\n\nIt’s hard to overstate how much better this **Texas Tech** alternate is compared to the [2024 version](https://imgur.com/a/texas-tech-week-11-2024-bjquCzU) of the Mahomes uniforms. I questioned the choice to feature silvery numbers on an already gray home uniform, and the red seemed to get lost a bit. On the white version, the steel-like texture gets a chance to really shine, and the “TECH” wordmark works a little better here, too. The red pops, the dimensions feel more clearly defined, and honestly, how many star alumni return to schools to help design new uniforms? I hate to judge a uniform strictly off of vibes, but these are simply magnificent!\n\n\n\n**Back in Black - Best Blackout Alternate:** [**UCF “Knightmode”**](https://imgur.com/a/aLRRIL4)\n\n\n\n* 2nd Place: [Coal Rush - WVU](https://imgur.com/a/gJTD4qJ)\n* 3rd Place: [Utah - Week 13](https://imgur.com/a/p5UTzsm)\n* Honorable Mention: [OK-State - Week 4](https://imgur.com/a/K9Z8tGN)\n\n\n\nOnto the blackout looks. These are just as tricky - if not more difficult - to pull off than the whiteout uniforms. If you’ll notice, all of these schools either claim black as a school color or utilize it as a “bigger than football” highlight. While I could have included plenty of others, I’d say these suits 1) have the best claim to a blackout, and 2) looked the best wearing it. \n\n\n\nI have always said that **Oklahoma State’s** uniform set is one of the best in the Big 12. Some of the choices they put on the field are strange, but when it comes together? Magic. The most noticeable part of this suit is the helmet logo. This particular Pistol Pete has never been worn on a black shell, and it’s the first time we’ve seen this Pete head on a helmet since 2018. Personally, I love it! I like the full body Pistol Pete better, but this is a particularly welcome change. The simple identity elements of the “Cimmaron” font on the chest, the Northwestern style stripes reminiscent of OSU’s 1980s uniforms, and the stripe-free pants/helmet emphasize the blackout while maintaining the spirit of OSU football well. A simple elegance indeed. \n\n\n\nOne of the things I really enjoyed about **Utah** this year was their almost full embrace of the throwbacks (which are closer to their current standard than the technical standard). They were worn in eight of the thirteen games played in 2026 and look so much better than the previous/sometimes current set. These are absolutely striking. For me, the facemask makes all the difference here. It’s only Utah’s third time trying it out on a black helmet, with both previous times being from “Ute Proud” games in 2022 and 2023. It provides a magical pop of red that looks oh-so-good with the numbers and striping. Notice that the EQ staff also removed the standard helmet stripe from these C and F lids, making this, technically, a brand new helmet option. The Utes simply found the best of both worlds with this combo! The throwbacks look awesome, but everyone likes the C and F logo more… So why not combine the two?\n\n\n\n**WVU’s** Coal Rush suits are back for the second year in a row! The designers of these used many ideas pulled straight from the industry. The sleeve and collar of the jersey feature a pattern sourced directly from a West Virginia coal wall, while reflective safety stripes on the pants, shoulders, and numbers mimic those found on a coal miner. The cuff’s pattern looks like the blade of a mine shearer, and the center stripe of the helmet fades from white to black, simulating the light of a miner's headlamp. The state decal looks incredible on the black helmet shell, too. These are an awesome tribute to a cornerstone of West Virginia’s economy and gritty culture. \n\n\n\nThe Knights of **UCF** took their previous “Knightmode” look and made it better, updating the number font, adding TV numbers and finishing it off with flat gold decals instead of chrome. The shoulder logo feels meaner, and small details - like the numbers getting outlined in black and the pant’s Polaris stars becoming larger - help a lot. I think it showcases their aforementioned 2025 update well and emphasizes my favorite UCF logo - the Knighthead Secondary (specifically designed to help UCF as a Big 12 brand). This shade of gold mixed with the black is excellent, and seems to be matched better than some previous UCF templates we’ve seen. Excellent uniform, sire!\n\n  \n\n\n**Brand New Hat! - Best New Helmet:** [**Iowa State Whirly Bird**](https://imgur.com/a/15KLfOL)\n\n\n\n* 2nd Place: [Glossy Blue from WVU](https://imgur.com/a/nLjMbVM)\n* 3rd Place: [Gold Chrome Domes - Baylor](https://imgur.com/a/VnMbURy)\n* Honorable Mention: [White Sparky Lid - ASU](https://imgur.com/a/VNYEcAP)\n\n\n\nIn a season full of new uniform material from the Sun Devils, I think this one was one of the most exciting. Do you know how many times **ASU’s** glorious Sparky logo has been featured on a helmet shell color other than gold? One time! This was the very first time that ASU tried out this much requested helmet, and it worked extremely well, especially considering what suit it was paired with. The maroon and white majority on the helmet perfectly reflected the White/White/Maroon combo choice. A historic helmet that could open the door to additional fun. Considering ASU amended their longstanding tradition for this one, I *had* to put it on here!\n\n\n\nThe “chrome domes” are storied in the best of ways, showing up for some great **Baylor** victories and crushing losses, like the 61-58 Revivalry game, the Big 12 title in 2014, losses to Michigan State in the Cotton Bowl/UCF in the Fiesta Bowl. They are *iconic*. And they FEEL LIKE BAYLOR. This feels like a great modern interpretation of Baylor’s bygone helmets, especially the Week 14 version that features a green Baylor logo with white outline. They’re cool, they feel like Baylor, mesh well with the current uniform set, and did I mention they are cool? I *really* hope that this year brings on more chrome for Baylor moving forward, despite both appearances this year being losses. \n\n\n\n**West Virginia** brought back the fan-favorite glossy helmets, improving them with some gold flakes that really shine. Why did these ever go away? I was, by no means, one to besmirch the matte finish that WVU has used for the past few seasons (last worn in 2012), but these are downright beautiful. It is so obvious to me why fans wanted these back. Even better, the standard one pictured here was worn in eight games through 2025. I’m more than okay throwing in the Coal Rush look, throwbacks, or even the white helmets we saw this year, into the rotation, but keep these as the mainstay from now on. Dang, what a helmet! \n\n\n\nWhether the **ISU** fans call it the “Cy-nado,” “Whirlybird,” or “Blender Logo,” I can bet you one thing: they are glad it’s back on a helmet for the first time since 2007. Fans rejoiced when they realized the dreaded Block I logo was gone, replaced with a better Script Cyclone design. But this particular logo is a well loved and requested favorite. Oh, the Script logo is becoming a bit stale? Okay, throw out the most anticipated helmet in a decade! The logo itself could be a tiny bit larger on the helmet, but the overall dimensions are sublime! Putting it on a helmet in Matt Campbell's last year as head coach could spur on a revival of the best of Iowa State’s logo history while maintaining what did work from the latest uniform update. INCREDIBLE work from the EQ staff in Ames! I really hope new HC Jimmy Rogers continues encouraging their great work from this past year. \n\n\n\n**Conference Apparel - Best Conference Matchup:** [**Cincy vs UCF**](https://imgur.com/a/6LhWtCg)\n\n\n\n* 2nd Place: [TCU vs Baylor](https://imgur.com/a/GYQ5OjJ)\n* 3rd Place: [BYU vs Utah](https://imgur.com/a/OXpesWN)\n* Honorable Mention: [BYU vs Tech](https://imgur.com/a/cf-cincinnati-1st-place-best-conference-uniform-matchup-2025-Ex43d4b)\n\n\n\nWith nearly 50 conference games to choose from, this one was tough. I ended up going with uniforms that created interesting and more eye pleasing matchups, rather than straight up Red vs Blue or Black vs White, even though there were quite a few of those. Now, for our honorable mentions:\n\n\n\n**BYU’s** color palette lends itself to great color clashes. Such a brilliant shade of blue contrasts well against most every color, but it works especially well against red. Hence both of these games **vs Tech** and **vs Utah**. One is more traditional, but gets props for being a rare game in which BYU wears a helmet alternate (Sailor Cougar is excellent, as always!) vs another alternate (the “Iced Out” Mahomes look). The other is, of course, one of the best color vs color matchups in college football. I think Utah could have worn a better suit in this particular game, but the matchup itself is still one for the history books. \n\n\n\nThe “Blue Bonnet Battle,” or the unofficial - and better named - “Revivalry” of **TCU vs Baylor** was a particularly excellent matchup this year. This game has looked bafflingly bad in the recent past ([2023](https://imgur.com/a/R21VRxP)), so seeing this clash between good looking and relatively uncommon uniform combos from these rivals is a delight. Purple/Purple/Black has been worn only one other time by the Horned Frogs since 2022. Similarly, Baylor has only worn this look twice on the tracker, both times in 2025. Both of these teams have fairly good uniform templates, but they still feel lackluster compared to what they once had. I think this is about the best we can get from them with their current sets. Hopefully, they both can return to their former uniform glory in short order!\n\n\n\nThe newer members of the Big 12 have brought some intrigue to this edition of the uniform awards, and this unorthodox-looking matchup held my interest quite a bit! For one, the contrast between **Cincinnati and UCF** here is striking. Brilliant gold pants and white tops vs a bold and aggressive red and black suit is nice already, but factor in the new pieces! This was only the 2nd time the Bearcats wore their new script helmet AND featured a relatively uncommon Red/Black/Red combo. Concerning UCF, this was their first time wearing gold pants (a new version of them, I might add) since [2022](https://imgur.com/ucf-week-3-2022-6LgyR3U), in the same combo. But their 2025 update has elevated their look greatly, matching gold shades better - as I’ve mentioned before. A wonderfully rare set of uniforms matched together in a great way. \n\n\n\nu/matte_purple **Favorite Suits:** [**Week 7 Stunner - OK-State**](https://imgur.com/a/qNB7mYY)\n\n\n\n* 2nd Place: [ASU’s Black and Gold - ASU Week 9](https://imgur.com/a/5dHWNIV)\n* 3rd Place: [BYU Sailor Cougar - Week 11](https://imgur.com/a/cCCijKH)\n* Honorable Mention: [Week 9 Double Feature - Utah vs CU](https://imgur.com/a/z0PNGiu)\n\n\n\nBefore we get to the final podium, I wanted to shout out some of my favorite uniforms from this season. No real category to these, just a simple enjoyment factor! \n\n\n\nSomething about the interplay between these two suits - new “old school” renditions for both **Colorado and Utah** \\- makes me happy. The new gold Colorado jerseys are excellent compared to the [1998](https://imgur.com/a/oqI7Jcn) on-offs against Baylor and the valiantly executed 1930s throwbacks worn in [2009](https://imgur.com/a/uMCKUUf). I could see these working very well with white helmets and pants. Utah’s W/R/W throwback is much more conventional, but it looks splendid. They draw from various designs, including 1970s-1990s shoulder stripes, the interlocking UU logo from the 1960s, and - my favorite touch - the unique font from the 1970s. These are incredibly sexy. Can you see why I want the Utes to go back to their throwbacks full time?\n\n\n\nThe Sailor Cougar logo had been worn on a **BYU** helmet in two games before this battle with Texas Tech: in 2021 as a back helmet decal; and 2022 as the focal point. This game featured the incredible logo on a pure royal blue helmet for the first time ever, though. That *automatically* makes this the best helmet the logo has appeared on. The color is one I've talked about often, and dang does it pop here. A special uniform for a special game, even though the result was not what BYU fans wanted. \n\n\n\n**Arizona State** sported their first full head-to-toe [blackout uniform](https://imgur.com/a/arizona-state-week-5-2025-prnmaCG) since 2018, with a brand new satin finished helmet that smartly complemented the overall look, but I think the Sun Devils incorporated gold and black together in a better way a few weeks later. Their Week 9 suit is awesome, black and gold creating wonderful contrast. And, in general, this just feels more like the Sun Devils we know and love here on the tracker. It’s basically the standard home look, utilizing black instead of maroon, which makes sense for when you’re facing a team that utilizes plenty of red. Less experimental, more identity based, and sharp! This combo has appeared once previously: in [2019 vs Colorado](https://imgur.com/a/arizona-state-2019-gold-black-gold-GUog9kA). The previously mentioned features in the 2025 update clean these up, too. Great work from the Sun Devils!\n\n\n\nI said it earlier in the awards, but it bears repeating: **OK-State** can put together some really awesome suits. Often compared to Oregon for their expansive uniform collection, they can sometimes get a little lost in the options. But 2026 had some excellent looks, including plenty of classics, highlighted by their Week 7 stunner. It’s INCREDIBLE. The combo itself has only been worn twice since I started this project - in 2025 and 2023’s Bedlam - but I found it worn in 2021, 2019, 2013 and 2011, for a record of 5-1 (2025 was its only loss in that time). And Pistol Pete makes it more special! The first time we saw the full-body Pete on a helmet was 2017, and this was the only instance it’s been featured on a black helmet with an orange facemask. The logo itself is vertical, a unique, hard to pull off look that works so well. It was actually reoriented compared to other Pete logos in the modern era. Its rarity makes the look even sweeter! I love how the combo looks, the logo is great, and the orange facemask sets it all off. \n\n  \n\n\n***Drumroll please... The moment you’ve all been waiting for!***\n\n\n\n**Top of the XII - Big 12 2025 Uniform Team of the Year: Arizona State Sun Devils**\n\n\n\n* **2nd Place: Texas Tech Red Raiders**\n* **3rd Place: Iowa State Cyclones**\n* **Honorable Mention: Cincinnati Bearcats & WVU**\n\n\n\nThis was definitely the hardest award to give out. I’ve narrowed it down to who I believe are the best candidates, so I’ll get into it, from Honorable Mention to 1st place!\n\n\n\n**Cincinnati and WVU** both greatly improved their uniform rotation this year. Cincinnati revamped their suit to add great identity, some new helmet logo and jersey options, and a general uniqueness that feels well-earned and special while maintaining the simple elegance that Cincy has prioritized in the past. Props to Greg Bruner, JD Jordan, and UC’s whole EQ staff.West Virginia went back to what worked for them in the glossy blue helmets, but they also went the extra mile to improve their update, adding gold flake to the helmet shells and continued to stun with their 2024 update to the Nike F.U.S.E template. Plus, the Mountaineers wore the crowd favorite Coal Rush uniform and introduced a very nice throwback. Great work from Dan Nehlen, Austin Blake, and the whole WVU EQ team.\n\n\n\n**Iowa State** seems to have finally surpassed the design hurdle of the Block I logo. After pleading from fans and uniform aficionados alike, the Script Cyclone logo and oft-pined-for Cy-Nado logo returned to much applause. Plus, ISU seems to have mostly gotten over the blackout phase that struck in 2020-2022, wearing the black or whiteout suits a respectable two times in 2025. They also finally broke out gold pants teased in 2024 AND wore cardinal pants for the first time since 2023. The 2024 uniform update, when added to the greatness of the reprioritized logo set and injected with a slightly vintage feel, easily carries these to 3rd place. Thank you, Cyclone Football, for finally listening to the fans!\n\n\n\n**Texas Tech!** What a uniform year. The Red Raiders introduced a brand new template in 2024 and wore it well in 2025. They had only one true repeat, their Black/Red/Black look which I suspect many would choose as their favorite. The other looks were all great in their own right. But their season as a whole was highlighted by the two other repeating combos (W/W/W & Black/Black/White), in two different templates (the Mahomes look & the 100th anniversary throwback, which were both mentioned in the uniform awards). Slotting in at 2nd place this year, they very well could gun for 1st next year, as the university undergoes a massive [2026-2027 academic year rebrand](https://texastech.com/news/2025/10/7/general-tech-athletics-introduces-modernized-double-t-additional-marks). \n\n\n\nThe only Big 12 school that could outdo Texas Tech, both on the field and in the scope of their uniforms, was **Arizona State**. To my mind, they are the clear 1st place team and the Big 12 Uniform team of the year! The list of new, altered, and improved uniform details is staggering - and they ALREADY had a great set! They updated their Adidas uniform template with a new wordmark, new fonts, simplified pants w/ smaller hip logo. They introduced a true all black uniform for the first time since 2018 with new black lids. They crafted a new 1975 throwback complete with the awesome sunburst logo shoulders and helmets (my second favorite throwback of the year). They introduced a white Sparky helmet for the first time EVER and wore some form of Sparky six times, one more time over 2024’s 5 appearances. And that doesn’t even cover the Gold/Maroon/Gold Sparky uniform that some consider to be the best in the conference. Excellent, EXCELLENT uniform set from the Sun Devils and their Equipment room in 2025.\n\n\n\n**2025 Season Uniform Galleries:**\n\n[Arizona](https://imgur.com/a/arizona-2025-season-uniforms-n9CTLci) \\- [Arizona State](https://imgur.com/a/arizona-state-2025-season-uniforms-9B6ib6l) \\- [Baylor](https://imgur.com/a/baylor-2025-season-uniforms-eONBdw7) \\- [BYU](https://imgur.com/a/byu-2025-season-uniforms-TmRAZrf) \\- [Cincinnati](https://imgur.com/a/cincinnati-2025-season-uniforms-XMLmZge) \\- [Colorado](https://imgur.com/a/colorado-2025-season-uniforms-1Hqow03) \\- [Houston](https://imgur.com/a/houston-2025-season-uniforms-AC8QQyG) \\- [Iowa State](https://imgur.com/a/iowa-state-2025-season-uniforms-kOdGxBH)\n\n[KU](https://imgur.com/a/kansas-2025-season-uniforms-wuqxvtf) \\- [K-State](https://imgur.com/a/k-state-2025-season-uniforms-FPkIlI3) \\- [Oklahoma State](https://imgur.com/a/ok-state-2025-season-uniforms-TTYtx92) \\- [TCU](https://imgur.com/a/tcu-2025-season-uniforms-9NunZTE) \\- [Texas Tech](https://imgur.com/a/texas-tech-2025-season-uniforms-w8v2oXn) \\- [UCF](https://imgur.com/a/ucf-2025-season-uniforms-Wj26eEs) \\- [Utah](https://imgur.com/a/utah-2025-season-uniforms-Ot4TsvU) \\- [West Virginia](https://imgur.com/a/wvu-2025-season-uniforms-4cHLgAe)\n\n\n\n[**2025 Season-in-Review Post**](https://www.reddit.com/r/CFB/comments/1qnkoxf/2025_big_12_uniform_tracker_season_review/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)\n\nWell, there you go! The 2025 Uniform season is *finally* over. 16 teams’ seasons and uniforms reviewed. Thank you for your patience in this slow release! It was nice to look back, and I hope this was a fun read! I want to thank[ u/CockADoodleBOOM](https://www.reddit.com/u/CockADoodleBOOM/), WVUniforms304 and ASU\\_Uniformity on Twitter, and[ u/holytrolly\\_](https://www.reddit.com/u/holytrolly_/) for providing excellent stats and groundwork for further tracking. I appreciate the opportunity to continue running the tracker, and I'm excited to again in 2026! If you have any questions about the tracker or a team, feel free to shoot over a PM or comment, and leave an upvote! I appreciate every single one of you, from the constant hardcore uniform lovers to casual CFB readers. Cheers to you,[ ](https://www.reddit.com/u/CFB/)and cheers to a short offseason! Until next season, in America's best dressed football conference!",
+        "created_utc": 1772407999.0,
+        "num_comments": 9,
+        "id": "1ricsg6",
         "subreddit": "CFB",
-        "link_url": "https://x.com/mzenitz/status/2028177427621392509",
-        "is_self": false,
-        "upvote_ratio": 0.95,
+        "link_url": "https://www.reddit.com/r/CFB/comments/1ricsg6/big_12_uniform_tracker_2025_the_uniform_awards/",
+        "is_self": true,
+        "upvote_ratio": 0.92,
         "comments": [
           {
-            "author": "fignewtonattack",
-            "body": "Now that is a last name",
-            "score": 11
+            "author": "Muh_Nado",
+            "body": "Adidas has been killing it for ASU ever since they brought them on, happy to see the love here",
+            "score": 16
           },
           {
-            "author": "Fragrant_Analysis181",
-            "body": "Seems like a bad idea to hire someone named Napoleon in a town that snows that much",
-            "score": 3
+            "author": "whriskeybizness",
+            "body": "This was very entertaining lol good job op",
+            "score": 9
           },
           {
-            "author": "Volsforlife98",
-            "body": "I think Fran Brown has made some great hires this offseason, hopefully he shows his first season wasn’t a fluke.",
-            "score": 1
+            "author": "Nervous_Metal_9445",
+            "body": "I always enjoy your posts. I really appreciate your work as I don't see every game, but I do love checking out the jerseys that teams wear, so I look forward you your posts each week. ",
+            "score": 9
           },
           {
-            "author": "NotAnOwlOrAZebra",
-            "body": "Fun fact: Napoleon Bonaparte was average height.",
-            "score": 1
+            "author": "SpicyDMLookALike",
+            "body": "Stylin on these mfs",
+            "score": 8
+          },
+          {
+            "author": "Pizza_Jon",
+            "body": "WVU throwbacks look so good",
+            "score": 9
           }
         ]
       }
@@ -170,11 +175,11 @@
       {
         "title": "[Schefter] The Dolphins almost certainly will designate Tua Tagovailoa as a post-June 1 release to help defray some of the $99.2 million in dead money it will cost to release him",
         "author": "BreakfastTop6899",
-        "score": 3033,
+        "score": 3411,
         "url": "https://www.reddit.com/r/nfl/comments/1ri0wk7/schefter_the_dolphins_almost_certainly_will/",
         "selftext": "",
         "created_utc": 1772380879.0,
-        "num_comments": 438,
+        "num_comments": 474,
         "id": "1ri0wk7",
         "subreddit": "nfl",
         "link_url": "https://www.threads.com/@adamschefter/post/DVWHmcjFQUg",
@@ -184,33 +189,33 @@
           {
             "author": "ScruffMixHaha",
             "body": "What an awful contract",
-            "score": 2425
+            "score": 2663
           },
           {
             "author": "Brix001",
             "body": "The Dolphins are that guy posting a beater car on Facebook Marketplace\n\n\n“300k miles, was in 4 accidents, salvage title, ran when parked, no smoke no dogs. $12345 NO LOWBALLERS I KNOW WHAT I GOT”",
-            "score": 773
+            "score": 840
           },
           {
             "author": "Mawx",
             "body": "\"Just eat it\" - the dolphins literally will struggle to field a team if they do.",
-            "score": 549
+            "score": 583
           },
           {
             "author": "liljakeyplzandthnx",
             "body": "Tank for Tua turns into Tank because of Tua",
-            "score": 407
+            "score": 510
           }
         ]
       },
       {
         "title": "[Highlight] Markel Bell runs a 5.36u at 6'9\" and 346 pounds",
         "author": "nfl",
-        "score": 2493,
+        "score": 3357,
         "url": "https://www.reddit.com/r/nfl/comments/1ri4ytt/highlight_markel_bell_runs_a_536u_at_69_and_346/",
         "selftext": "",
         "created_utc": 1772389947.0,
-        "num_comments": 251,
+        "num_comments": 295,
         "id": "1ri4ytt",
         "subreddit": "nfl",
         "link_url": "https://v.redd.it/tjbf9xm99hmg1",
@@ -220,59 +225,28 @@
           {
             "author": "fliteriskk",
             "body": "If this man ran into me at full speed I would evaporate.",
-            "score": 2966
-          },
-          {
-            "author": "SeminalVesicles",
-            "body": "Friendly reminder that Dontari Poe ran a 4.98 at 346 lbs at the 2012 combine. ",
-            "score": 962
+            "score": 3866
           },
           {
             "author": "cl353",
             "body": "can u imagine him blocking for bryce? mofo would be blocking out the damn sun",
-            "score": 875
-          }
-        ]
-      },
-      {
-        "title": "[Highlight] Anthony Richardson throws an effortless 70 yard pass",
-        "author": "Ok-Reindeer5879",
-        "score": 2443,
-        "url": "https://www.reddit.com/r/nfl/comments/1rhkjyq/highlight_anthony_richardson_throws_an_effortless/",
-        "selftext": "",
-        "created_utc": 1772329735.0,
-        "num_comments": 317,
-        "id": "1rhkjyq",
-        "subreddit": "nfl",
-        "link_url": "https://v.redd.it/up49g2r4acmg1",
-        "is_self": false,
-        "upvote_ratio": 0.96,
-        "comments": [
-          {
-            "author": "AFC-Wimbledon-Stan",
-            "body": "This single throw did more to blindly move me than I’d like to admit",
-            "score": 2545
+            "score": 1174
           },
           {
-            "author": "Tyreek10_StoleMyBike",
-            "body": "I remember watching this live and it’s the single reason it took me so long to give up on this guy",
-            "score": 971
-          },
-          {
-            "author": "NoLeg5522",
-            "body": "Effortless 70 but somehow overthrowing a 5-yard slant is the real challenge 😭",
-            "score": 881
+            "author": "SeminalVesicles",
+            "body": "Friendly reminder that Dontari Poe ran a 4.98 at 346 lbs at the 2012 combine. ",
+            "score": 1139
           }
         ]
       },
       {
         "title": "Rap: Kyler Murray likely to be released by the Cardinals barring last minute trade.",
         "author": "Ancient_Response_787",
-        "score": 2349,
+        "score": 3036,
         "url": "https://www.reddit.com/r/nfl/comments/1ri601o/rap_kyler_murray_likely_to_be_released_by_the/",
         "selftext": "[https://www.cbssports.com/fantasy/football/news/cardinals-kyler-murray-likely-done-in-arizona/](https://www.cbssports.com/fantasy/football/news/cardinals-kyler-murray-likely-done-in-arizona/)\n\nIf the Cardinals cannot find a trade suitor, the Cardinals will likely release the former number 1 overall pick. Teams such as Minnesota, Atlanta, Cleveland, Pittsburgh and the Jets are expected to be interested.",
         "created_utc": 1772392204.0,
-        "num_comments": 238,
+        "num_comments": 320,
         "id": "1ri601o",
         "subreddit": "nfl",
         "link_url": "https://www.reddit.com/r/nfl/comments/1ri601o/rap_kyler_murray_likely_to_be_released_by_the/",
@@ -282,28 +256,28 @@
           {
             "author": "SiphenPrax",
             "body": "That 2019 QB draft class = 🤮",
-            "score": 1842
+            "score": 2371
           },
           {
             "author": "_Wp619_",
             "body": "By all means, good on the Cardinals for biting the bullet, but they _really_ gotta hit on draft picks with that dead cap hit.",
-            "score": 666
+            "score": 890
           },
           {
             "author": "rubyschnees",
             "body": "nobody's trading for this man",
-            "score": 579
+            "score": 707
           }
         ]
       },
       {
         "title": "[Graziano] Multiple teams have the opinion that Geno Smith was “held back” by the Raiders offensive system last season and are eager to see him released.",
         "author": "JCameron181",
-        "score": 1826,
+        "score": 2212,
         "url": "https://www.reddit.com/r/nfl/comments/1ri1wad/graziano_multiple_teams_have_the_opinion_that/",
         "selftext": "",
         "created_utc": 1772383138.0,
-        "num_comments": 376,
+        "num_comments": 410,
         "id": "1ri1wad",
         "subreddit": "nfl",
         "link_url": "https://heavy.com/sports/nfl/minnesota-vikings/geno-smith-nfl-combine-offseason-rumors-news/",
@@ -313,17 +287,53 @@
           {
             "author": "Herby_Hoover",
             "body": "I think Geno has shown his median at this point.",
-            "score": 1545
+            "score": 1827
           },
           {
             "author": "GobiYumaMojave",
             "body": "he was definitely shell shocked by like week five… Did not have any of the swagger/Mojo/confidence\n\nhe also sucked",
-            "score": 524
+            "score": 592
           },
           {
             "author": "Upper_Knowledge_6439",
             "body": "Chip Kelly is the excuse that just keeps giving.",
-            "score": 390
+            "score": 473
+          }
+        ]
+      },
+      {
+        "title": "[Highlight] ASU WR Jordyn Tyson Lifts 26 Reps of 225 at the NFL Combine. The WR Record is 27.",
+        "author": "JCameron181",
+        "score": 1683,
+        "url": "https://www.reddit.com/r/nfl/comments/1ri6gyh/highlight_asu_wr_jordyn_tyson_lifts_26_reps_of/",
+        "selftext": "",
+        "created_utc": 1772393233.0,
+        "num_comments": 264,
+        "id": "1ri6gyh",
+        "subreddit": "nfl",
+        "link_url": "https://v.redd.it/6j0nhkn1jhmg1",
+        "is_self": false,
+        "upvote_ratio": 0.95,
+        "comments": [
+          {
+            "author": "JayQuips",
+            "body": "A guy like me would’ve put two more up to beat the record, that’s just me tho",
+            "score": 1955
+          },
+          {
+            "author": "No_Bill7679",
+            "body": "… Do these count? Looks like he’s cheating on the form with the hip thrusts.\n\nEdit: to be clear it is still impressive and he’s clearly a top 1% athlete. From someone who hurt his neck by brushing his teeth, I was taught to bench press by not arching my back. I’ve never hip thrust while bench pressing because it just looks awkward.",
+            "score": 675
+          },
+          {
+            "author": "Headlesshorsman02",
+            "body": "He is going to be so hard to play against in press coverage as he is obviously strong as showed here but he is so good at losing his man at the line of scrimmage with quick footwork",
+            "score": 629
+          },
+          {
+            "author": "Ganjagod420",
+            "body": "Bros air fuckin",
+            "score": 509
           }
         ]
       }
@@ -332,11 +342,11 @@
       {
         "title": "LeBron James on Zhuri (his daughter) potentially playing basketball one day:\n“She’s a volleyball player. Don’t get my wife mad. My wife is done with this basketball sh*t. She’s done with it.”",
         "author": "MrBuckBuck",
-        "score": 10711,
+        "score": 11904,
         "url": "https://www.reddit.com/r/nba/comments/1rhznof/lebron_james_on_zhuri_his_daughter_potentially/",
         "selftext": "",
         "created_utc": 1772377917.0,
-        "num_comments": 324,
+        "num_comments": 338,
         "id": "1rhznof",
         "subreddit": "nba",
         "link_url": "https://streamable.com/37mir6",
@@ -346,136 +356,100 @@
           {
             "author": "Fabulous_Bowl_816",
             "body": "he almost slipped that “ one more year” out",
-            "score": 3580
+            "score": 3968
           },
           {
             "author": "Adorable-Bike-9689",
             "body": "Damn. Done with basketball soon as Bronny gets to the league",
-            "score": 1839
+            "score": 2022
           },
           {
             "author": "pmmeyourbobandvagene",
             "body": "LeWhateverMyWifeSays",
-            "score": 1174
+            "score": 1255
           },
           {
             "author": "TheMoorNextDoor",
             "body": "She’ll be Team USA Volleyball player in another 10-12 years.",
-            "score": 661
+            "score": 739
           }
         ]
       },
       {
         "title": "Doris Burke after Anthony Edwards gets called for the push off: \"I'm gonna be honest with you. Oklahoma City fans are going to start hating on me right now. How many times does Shai get away with that exact kind of [play].\"",
         "author": "AncientOneAurelius",
-        "score": 6612,
+        "score": 10691,
         "url": "https://www.reddit.com/r/nba/comments/1rib6yh/doris_burke_after_anthony_edwards_gets_called_for/",
         "selftext": "",
         "created_utc": 1772404085.0,
-        "num_comments": 837,
+        "num_comments": 1185,
         "id": "1rib6yh",
         "subreddit": "nba",
         "link_url": "https://streamable.com/e40yzs",
         "is_self": false,
-        "upvote_ratio": 0.96,
+        "upvote_ratio": 0.95,
         "comments": [
           {
             "author": "Huntermainlol",
             "body": "The main problem that everyone has for OKC has always been the perception that you can’t touch Shai but Caruso/dort/ what have you can play super physically. \n\nBiased ofc",
-            "score": 3951
+            "score": 5942
           },
           {
             "author": "KennySmithsKnees",
             "body": "She's not wrong",
-            "score": 1354
+            "score": 2104
           },
           {
             "author": "Refs_Fan",
             "body": "Push offs, so hot right now",
-            "score": 910
-          },
-          {
-            "author": "SimonBirchDid911",
-            "body": "Heartbreaking: The Worst Person You Know Just Made A Great Point",
-            "score": 545
+            "score": 1497
           }
         ]
       },
       {
-        "title": "Charles Barkley: \"I get sick of people saying they’re contenders... The Lakers are not a good team. I just think it's funny how the media's turned on Luka [Doncic]... I guess we’re contractually obligated to talk about them every day.\"",
-        "author": "AncientOneAurelius",
-        "score": 5467,
-        "url": "https://www.reddit.com/r/nba/comments/1rhkzws/charles_barkley_i_get_sick_of_people_saying/",
+        "title": "[Highlight] Karl-Anthony Towns to the ref after being called for the offensive foul: \"He's 7'4'', 260!\"",
+        "author": "MrBuckBuck",
+        "score": 3666,
+        "url": "https://www.reddit.com/r/nba/comments/1ri7jkk/highlight_karlanthony_towns_to_the_ref_after/",
         "selftext": "",
-        "created_utc": 1772330986.0,
-        "num_comments": 578,
-        "id": "1rhkzws",
+        "created_utc": 1772395637.0,
+        "num_comments": 585,
+        "id": "1ri7jkk",
         "subreddit": "nba",
-        "link_url": "https://streamable.com/0szew1",
+        "link_url": "https://streamable.com/6aeev9",
         "is_self": false,
-        "upvote_ratio": 0.95,
-        "comments": [
-          {
-            "author": "patriarch37",
-            "body": "Chuck: why do we have to talk about the lakers?\n\nErnie: because they’re playing in a few minutes",
-            "score": 3665
-          },
-          {
-            "author": "justletmeregisteryou",
-            "body": "People keep complaining about bveing tired of Lakers talk... while shitting on the Lakers, everyone is literally doing the thing they say they're tired of lol. No soul is viewing them as a contender anyway, so where even is the discourse coming from?",
-            "score": 1110
-          },
-          {
-            "author": "sukari",
-            "body": "Lakers have a shot if Ayton turns into Clint",
-            "score": 969
-          }
-        ]
-      },
-      {
-        "title": "Deandre \"Not Clint Capela\" Ayton in the blowout win against the Warriors: 4 PTS (2/5 FG, 0/2FT), 10 REB in 20 mins",
-        "author": "Waikuku3",
-        "score": 3698,
-        "url": "https://www.reddit.com/r/nba/comments/1rhmxdy/deandre_not_clint_capela_ayton_in_the_blowout_win/",
-        "selftext": "Despite the huge blowout win by the Lakers, Ayton continues to play with minimal effort in this game and **the blowout has nothing to do with him**.  He was grilled by Mike Breen and Tim Legler because he literally jogging back to defense in Q1 for multiple times and let the Warriors easily scores layups.  Against the shorter defender (I remember it's either Payton or Spencer) he refuses to dunk the ball and spins 360 to miss the bunny.  This guy is not serious with extremely low motor.  He is certainly not Clint Capela because he is worse than Clint in all facets.\n\n* 4 PTS\n* 2/5 FG\n* 0/2 FT\n* 10 REB\n\n[https://www.espn.com/nba/boxscore/\\_/gameId/401810721](https://www.espn.com/nba/boxscore/_/gameId/401810721)",
-        "created_utc": 1772336632.0,
-        "num_comments": 277,
-        "id": "1rhmxdy",
-        "subreddit": "nba",
-        "link_url": "https://www.reddit.com/r/nba/comments/1rhmxdy/deandre_not_clint_capela_ayton_in_the_blowout_win/",
-        "is_self": true,
         "upvote_ratio": 0.97,
         "comments": [
           {
-            "author": "Classic_Reference_92",
-            "body": "And horrifying defence. He makes Luka and Reaves look like tony allen and pippen. Atleast he rebounded this game",
-            "score": 1510
+            "author": "AutoModerator",
+            "body": "**Replays/alternate angles**\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/nba) if you have any questions or concerns.*",
+            "score": 1
           },
           {
-            "author": "shadesofclearance",
-            "body": "how you 7 foot and not serious enough to dunk on gary payton?? he really out here cardio running",
-            "score": 1408
+            "author": "sobanoodle-1",
+            "body": "KAT got a lot of flack early this season but man’s a board machine. This shit had me dying ngl 🤣",
+            "score": 1743
           },
           {
-            "author": "YoungDetective",
-            "body": "outplayed by 2026 Maxi Kleber",
-            "score": 609
+            "author": "Ilikesporks_",
+            "body": "where tf did 260 come from lol",
+            "score": 1313
           },
           {
-            "author": "Ok_Possible_5702",
-            "body": "Is JJ going to:\n\n* bench him forever and play Hayes as a starter\n* commit seppuku in his next press conference when someone asks him about Dominayton\n* physically assault DA in practice\n* sign Dwight Howard out of retirement\n\n?\n\nmultiple choices are plausible too",
-            "score": 490
+            "author": "1000Isand1",
+            "body": "Wemby has definitely learned to flop",
+            "score": 729
           }
         ]
       },
       {
         "title": "[Slater] Kerr walks back comments on Kristaps Porzingis' diagnosis: \"It's a medical issue way beyond my capabilities explaining anything. He's sick. He won't play\"",
         "author": "The_MadStork",
-        "score": 3370,
+        "score": 3609,
         "url": "https://www.reddit.com/r/nba/comments/1rhvvns/slater_kerr_walks_back_comments_on_kristaps/",
         "selftext": "[https://www.espn.com/nba/story/\\_/id/48067180/warriors-porzingis-sits-fourth-straight-game-illness](https://www.espn.com/nba/story/_/id/48067180/warriors-porzingis-sits-fourth-straight-game-illness)\n\n>This comes one day after Kerr went on local Bay Area radio and stated that Porzingis isn't actually dealing with postural orthostatic tachycardia syndrome (POTS), despite Porzingis publicly detailing his battle with it in the last year.\n\n>\"I read about the POTS diagnosis and called the Hawks \\[general manager\\] Onsi Saleh,\" Kerr said. \"He's a good friend of mine and I said 'Is this POTS story real?' He said it's actually not POTS. That was some misinformation that was out there.\"\n\nThis feels like a big deal. Kerr obviously shouldn't be talking about his medicals, but did the Warriors really trade for Porzingis after Saleh told his buddy Kerr \"yeah bro it's not POTS\" when Porzingis has spoken publicly about having it? What's going on here?",
         "created_utc": 1772367422.0,
-        "num_comments": 397,
+        "num_comments": 420,
         "id": "1rhvvns",
         "subreddit": "nba",
         "link_url": "https://www.reddit.com/r/nba/comments/1rhvvns/slater_kerr_walks_back_comments_on_kristaps/",
@@ -485,169 +459,128 @@
           {
             "author": "OpeDefinitely",
             "body": "kerr is right. he should've just shut the fuck up.",
-            "score": 2644
+            "score": 2787
           },
           {
             "author": "xyouRABitchx",
             "body": "The code had been restored",
-            "score": 2211
+            "score": 2341
           },
           {
             "author": "Existing_Set2100",
             "body": "Maybe it’s cause I haven’t had my coffee yet or I’m a bit dim but I read this five times and I’m still confused.  \n\nDoes he have it or not? Because by his own admission he does. \n\nAnd Kerr talking about this so openly is definitely bizarre. Is the implication that Porzingis is… lying? Or his doctors told him a lie?",
-            "score": 781
+            "score": 815
+          }
+        ]
+      },
+      {
+        "title": "[Krishnamurthy] Tyler Herro poked fun at Kevin Durant for his burner accounts during Heat vs. Rockets game - “I know what burners you run… You a b**ch”",
+        "author": "moby323",
+        "score": 2601,
+        "url": "https://www.reddit.com/r/nba/comments/1rhxlqe/krishnamurthy_tyler_herro_poked_fun_at_kevin/",
+        "selftext": "> The moment occurred during live action as Tyler Herro and Kevin Durant traded words in close proximity, drawing attention from teammates and officials.\n\n> What started as competitive talk quickly escalated when Herro targeted Durant’s past social media controversy.\n\n> “I know what burners you run… You a b—-!”\n\n> The comments prompted a visible reaction from Durant as the two were separated before play resumed between the two teams….[continued]\n\n\n[Full article.](https://sports.yahoo.com/articles/tyler-herro-poked-fun-kevin-130000297.html?)\n\nSometimes I really wish I could read lips because I also want to know what Durant was saying to that fan in the front row because every time Durant came into the game and went to the scorer’s table he made sure to stop by that fan and tell him a bunch of shit.",
+        "created_utc": 1772372595.0,
+        "num_comments": 116,
+        "id": "1rhxlqe",
+        "subreddit": "nba",
+        "link_url": "https://www.reddit.com/r/nba/comments/1rhxlqe/krishnamurthy_tyler_herro_poked_fun_at_kevin/",
+        "is_self": true,
+        "upvote_ratio": 0.97,
+        "comments": [
+          {
+            "author": "StrtupJ",
+            "body": "I saw them dap up and hug after the game, and couldn’t help but think that’s some elite trash talk compartmentalization ",
+            "score": 1269
+          },
+          {
+            "author": "EbenezerAD",
+            "body": "I thought it was real drama until i saw them both laughing minutes after. \n\nProbably just trashtalk from Herro to get in his head.",
+            "score": 497
+          },
+          {
+            "author": "bucs009",
+            "body": "Someone data mine herro hate on x, easy way to narrow down his new burner",
+            "score": 330
           }
         ]
       }
     ],
     "baseball": [
       {
-        "title": "The Rockies have a Ballpark Pass giving you tickets to every game after Opening Day for only $199",
-        "author": "Guardax",
-        "score": 2058,
-        "url": "https://www.reddit.com/r/baseball/comments/1rhmap3/the_rockies_have_a_ballpark_pass_giving_you/",
+        "title": "Preview of the WBC Team Dominican Republic 👀",
+        "author": "retroanduwu24",
+        "score": 1779,
+        "url": "https://www.reddit.com/r/baseball/comments/1ribmv8/preview_of_the_wbc_team_dominican_republic/",
         "selftext": "",
-        "created_utc": 1772334755.0,
-        "num_comments": 345,
-        "id": "1rhmap3",
+        "created_utc": 1772405157.0,
+        "num_comments": 150,
+        "id": "1ribmv8",
         "subreddit": "baseball",
-        "link_url": "https://www.mlb.com/rockies/tickets/ballpark-pass",
+        "link_url": "https://i.redd.it/qoye4cgiiimg1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.99,
+        "upvote_ratio": 0.97,
         "comments": [
           {
-            "author": "Guardax",
-            "body": "The good news about having a horrendous baseball team is all the cheap tickets!",
-            "score": 1697
+            "author": "sobanoodle-1",
+            "body": "“How you know I’m Dominican papi” personified",
+            "score": 609
           },
           {
-            "author": "LowDot187",
-            "body": "I know the rockies arent good but i would still purchase this IN A HEARTBEAT if i lived in colorado. Watching any ball game in the MLB for less than $3 is so worth",
-            "score": 884
+            "author": "mxza10001",
+            "body": "Soto smiling with this team is clearly a cry for help that he wants off the Mets",
+            "score": 345
           },
           {
-            "author": "dsramsey",
-            "body": "Rockies going all in on the “bar that they happen to play baseball in” approach to Coors",
-            "score": 731
+            "author": "mooreroad",
+            "body": "Julioooooooo",
+            "score": 249
           },
           {
-            "author": "Hungry_Drama_1015",
-            "body": "Or $40 a month, holy shit. Might as well not get mlb.tv if you’re a Rockies fan lmao",
-            "score": 369
+            "author": "philocity",
+            "body": "Team USA could never be this much fun",
+            "score": 183
           }
         ]
       },
       {
         "title": "I think this is a new team",
         "author": "Mr_bootmandem",
-        "score": 1574,
+        "score": 1729,
         "url": "https://www.reddit.com/r/baseball/comments/1rhz7dm/i_think_this_is_a_new_team/",
         "selftext": "",
         "created_utc": 1772376810.0,
-        "num_comments": 176,
+        "num_comments": 187,
         "id": "1rhz7dm",
         "subreddit": "baseball",
         "link_url": "https://i.redd.it/qvn19xl76gmg1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.97,
+        "upvote_ratio": 0.98,
         "comments": [
           {
             "author": "photomike",
             "body": "Those mfs signed the entire Kansas City Royals???",
-            "score": 1151
+            "score": 1240
           },
           {
             "author": "slicebishybosh",
             "body": "I just saw a video a guy posted with his new Seahawks Super Bowl champions hat he ordered where the back said Patriots just like this.",
-            "score": 307
+            "score": 334
           },
           {
             "author": "shoelessjp",
             "body": "This isn't even made by Fanatics, but I somehow feel like this is Fanatics fault... by osmosis, or something, perhaps?",
-            "score": 214
-          }
-        ]
-      },
-      {
-        "title": "[Jeff Fletcher] “Mike Trout had a sprint speed of 29.9 ft/sec trying to beat out a hit today.”",
-        "author": "morepesa25",
-        "score": 988,
-        "url": "https://www.reddit.com/r/baseball/comments/1rhm4xd/jeff_fletcher_mike_trout_had_a_sprint_speed_of/",
-        "selftext": "Is the 5 tool Fish man back!",
-        "created_utc": 1772334290.0,
-        "num_comments": 192,
-        "id": "1rhm4xd",
-        "subreddit": "baseball",
-        "link_url": "https://www.ocregister.com/2026/02/28/zach-neto-homers-but-angels-blow-lead-in-loss-to-diamondbacks/",
-        "is_self": false,
-        "upvote_ratio": 0.97,
-        "comments": [
-          {
-            "author": "Good_Nyborg",
-            "body": ">The last time Trout ran that fast in a regular-season game was April 29, 2024, which was the game when he suffered the knee injury that cost him the rest of the season.\n\nThat's always the problem with Trout; he breaks reality and his body just couldn't handle it.",
-            "score": 960
-          },
-          {
-            "author": "LowDot187",
-            "body": "Even as a baseball fan first, this makes me really nervous but cautiously excited for him 😭. \n\nI miss seeing Trouts insane defensive highlights the most tbh.",
-            "score": 610
-          },
-          {
-            "author": "MyDogThinksISmell",
-            "body": "I truly hope Trout goes 30-30 this season with 160 games played. Healthy productive Mike Trout is good for baseball.",
-            "score": 372
-          }
-        ]
-      },
-      {
-        "title": "Preview of the WBC Team Dominican Republic 👀",
-        "author": "retroanduwu24",
-        "score": 957,
-        "url": "https://www.reddit.com/r/baseball/comments/1ribmv8/preview_of_the_wbc_team_dominican_republic/",
-        "selftext": "",
-        "created_utc": 1772405157.0,
-        "num_comments": 95,
-        "id": "1ribmv8",
-        "subreddit": "baseball",
-        "link_url": "https://i.redd.it/qoye4cgiiimg1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "sobanoodle-1",
-            "body": "“How you know I’m Dominican papi” personified",
-            "score": 346
-          },
-          {
-            "author": "mxza10001",
-            "body": "Soto smiling with this team is clearly a cry for help that he wants off the Mets",
-            "score": 218
-          },
-          {
-            "author": "mooreroad",
-            "body": "Julioooooooo",
-            "score": 151
-          },
-          {
-            "author": "philocity",
-            "body": "Team USA could never be this much fun",
-            "score": 123
-          },
-          {
-            "author": "saltface14",
-            "body": "![gif](giphy|j8YQGCoizJiUc4Ayyy)",
-            "score": 109
+            "score": 228
           }
         ]
       },
       {
         "title": "[Highlight] #1 Prospect Konnor Griffin hits a first-inning nuke for his third home run this spring",
         "author": "AndrewAllStar888",
-        "score": 793,
+        "score": 895,
         "url": "https://www.reddit.com/r/baseball/comments/1ri4khq/highlight_1_prospect_konnor_griffin_hits_a/",
         "selftext": "",
         "created_utc": 1772389084.0,
-        "num_comments": 139,
+        "num_comments": 164,
         "id": "1ri4khq",
         "subreddit": "baseball",
         "link_url": "https://v.redd.it/9fw0pqgp6hmg1",
@@ -662,56 +595,92 @@
           {
             "author": "st1nkynoob",
             "body": "This kid might be good",
-            "score": 254
+            "score": 290
           },
           {
             "author": "YakFull8300",
             "body": "Never thought I'd see a Cubs fan posting about a Pirates prospect...",
-            "score": 123
+            "score": 124
+          }
+        ]
+      },
+      {
+        "title": "HSK reports to Team Korea for the WBC",
+        "author": "Constant_Cap5407",
+        "score": 872,
+        "url": "https://www.reddit.com/r/baseball/comments/1rige15/hsk_reports_to_team_korea_for_the_wbc/",
+        "selftext": "",
+        "created_utc": 1772417633.0,
+        "num_comments": 106,
+        "id": "1rige15",
+        "subreddit": "baseball",
+        "link_url": "https://i.redd.it/re4u82m9jjmg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.95,
+        "comments": [
+          {
+            "author": "Harry-Flashman",
+            "body": "I think I now understand Kpop",
+            "score": 829
+          },
+          {
+            "author": "arsenallad",
+            "body": "![gif](giphy|0GIeJS0yDSMa9YBuRQ|downsized)",
+            "score": 268
+          },
+          {
+            "author": "Jux_",
+            "body": "I’m not confused you’re confused",
+            "score": 255
+          },
+          {
+            "author": "CT_2136",
+            "body": "![gif](giphy|WnBYZrPIkgQYe8B5Hy)",
+            "score": 254
+          }
+        ]
+      },
+      {
+        "title": "Spring training prices in AZ are INSANE this year",
+        "author": "FatherEsmoquin",
+        "score": 779,
+        "url": "https://www.reddit.com/r/baseball/comments/1ri0obv/spring_training_prices_in_az_are_insane_this_year/",
+        "selftext": "I’m gonna old-man-yells-at-cloud. Lawn tix on a Saturday afternoon at Scottsdale Stadium are $75 EACH. Resales are over $100. For a piece of wet grass and mud to sit your bum on. The only thing worse is the $300 tee times and $18 Bud Light cans. Shrink the game /s (but not really)",
+        "created_utc": 1772380356.0,
+        "num_comments": 222,
+        "id": "1ri0obv",
+        "subreddit": "baseball",
+        "link_url": "https://www.reddit.com/r/baseball/comments/1ri0obv/spring_training_prices_in_az_are_insane_this_year/",
+        "is_self": true,
+        "upvote_ratio": 0.97,
+        "comments": [
+          {
+            "author": "problyurdad_",
+            "body": "For 14 years straight, I went to Clearwater for Phillies spring training. I used to go for a whole week, and go see several games.     \n       \nThen it started really taking off, and prices started going up. So I was going for 5 days. Then a 3 day weekend. This year? It was cheaper to go to Costa Rica for a week in a private villa on the Pacific Ocean than it was to go to Florida for a 3 day weekend.",
+            "score": 903
+          },
+          {
+            "author": "0rionNe5ula",
+            "body": "So it's not just me. I was going to grab a lawn ticket today and was scouting the prices. Thought I was losing my mind. Cheapest I found was $30 for a lawn ticket to the A's game. Prices have gone up significantly from last year.",
+            "score": 267
+          },
+          {
+            "author": "SevroReturns",
+            "body": "66 bucks for two vodka lemonades at Steinbrenner. Doubles, with 15% tip.",
+            "score": 117
           }
         ]
       }
     ],
     "formula1": [
       {
-        "title": "Just to put into perspective how crazy the 2011 Canadian Grand Prix was",
-        "author": "CatchZestyclose8594",
-        "score": 5962,
-        "url": "https://www.reddit.com/r/formula1/comments/1rhkzv5/just_to_put_into_perspective_how_crazy_the_2011/",
-        "selftext": "",
-        "created_utc": 1772330982.0,
-        "num_comments": 169,
-        "id": "1rhkzv5",
-        "subreddit": "formula1",
-        "link_url": "https://i.redd.it/kqakqm9ydcmg1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "bubba-yo",
-            "body": "Wasn't even last 'at one point'. He was last on lap 40 of a 70 lap race. He did a last to first run in less than half the race. ",
-            "score": 2486
-          },
-          {
-            "author": "space_eleven",
-            "body": "watching this was full-on crazy. like I still can’t quite believe it happened.",
-            "score": 677
-          },
-          {
-            "author": "Molti-Ventuno",
-            "body": "This race is like watching Apollo 13 the movie. You know the outcome, but no matter what you spend the whole time thinking, there is no way this will happen.",
-            "score": 281
-          }
-        ]
-      },
-      {
         "title": "Breaking: Ferrari Confirms Livery Guidelines Mandatory Even at Weddings",
         "author": "OnlyReacher",
-        "score": 5809,
+        "score": 6324,
         "url": "https://www.reddit.com/r/formula1/comments/1rhsb2h/breaking_ferrari_confirms_livery_guidelines/",
         "selftext": "/s\n\nCongrats to CHARLES LECLERC, ALEXANDRA and HP ",
         "created_utc": 1772354612.0,
-        "num_comments": 55,
+        "num_comments": 57,
         "id": "1rhsb2h",
         "subreddit": "formula1",
         "link_url": "https://i.redd.it/sciz75o7cemg1.jpeg",
@@ -726,33 +695,28 @@
           {
             "author": "mustang_s550",
             "body": "Shit post indeed",
-            "score": 475
+            "score": 522
           },
           {
             "author": "semar_on",
             "body": "This Wedding was sponsored by HP. And also the car was sponsored by HP. And the suit was also sponsored by HP. And their first child is received by the help of HP.",
-            "score": 287
+            "score": 336
           },
           {
             "author": "uhujkill",
             "body": "Big win, free sponsorship wedding.",
-            "score": 196
-          },
-          {
-            "author": "mickmenn",
-            "body": "Last dance of shitposts",
-            "score": 66
+            "score": 197
           }
         ]
       },
       {
         "title": "Lewis and Charles’ helmet sets",
         "author": "littletreble07",
-        "score": 3657,
+        "score": 4105,
         "url": "https://www.reddit.com/r/formula1/comments/1ri13va/lewis_and_charles_helmet_sets/",
         "selftext": "",
         "created_utc": 1772381335.0,
-        "num_comments": 138,
+        "num_comments": 144,
         "id": "1ri13va",
         "subreddit": "formula1",
         "link_url": "https://www.reddit.com/gallery/1ri13va",
@@ -767,64 +731,64 @@
           {
             "author": "NegotiationNew9264",
             "body": "Holy stickers",
-            "score": 759
+            "score": 834
           },
           {
             "author": "ImpossibleRadio6685",
             "body": "Sticker set with Lego pieces",
-            "score": 273
+            "score": 292
           },
           {
             "author": "Careos",
             "body": "Sir Lewis looks like hes wearing an NFL guardian cap",
-            "score": 209
+            "score": 235
           }
         ]
       },
       {
         "title": "One week till our first disappoiment",
         "author": "Pristine_Youth_6953",
-        "score": 1768,
+        "score": 3637,
         "url": "https://www.reddit.com/r/formula1/comments/1ric7si/one_week_till_our_first_disappoiment/",
         "selftext": "pls be good ",
         "created_utc": 1772406575.0,
-        "num_comments": 73,
+        "num_comments": 115,
         "id": "1ric7si",
         "subreddit": "formula1",
         "link_url": "https://i.redd.it/99uduq8qmimg1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.97,
+        "upvote_ratio": 0.96,
         "comments": [
           {
             "author": "The100th_Idiot",
             "body": "RAWE CEEK",
-            "score": 547
+            "score": 771
           },
           {
             "author": "LLCNC",
             "body": "Ah, the good old Rawe Ceek poster popping up again. I’m optimistic  actually. I guess that’s the first step towards disappointment, but this is how we roll.",
-            "score": 212
+            "score": 634
           },
           {
             "author": "Careful-Door2724",
             "body": "Ferrari gonna be fastest in all free practices and fourth fastest in quali ",
-            "score": 61
+            "score": 144
           },
           {
             "author": "ViperRaptor-",
             "body": "1-2 in quali, 1-2 in the race lets go Ferrari 🔥",
-            "score": 44
+            "score": 72
           }
         ]
       },
       {
         "title": "Q “what’s the biggest difference [this season]?”\n\nlando: “i have a number one on my car, instead of a number four”",
         "author": "One_Impressionism",
-        "score": 1708,
+        "score": 1854,
         "url": "https://www.reddit.com/r/formula1/comments/1rhvu4j/q_whats_the_biggest_difference_this_season_lando/",
         "selftext": "",
         "created_utc": 1772367278.0,
-        "num_comments": 145,
+        "num_comments": 154,
         "id": "1rhvu4j",
         "subreddit": "formula1",
         "link_url": "https://streamain.com/UwyuGDBKm6T8Wpi/watch",
@@ -834,71 +798,71 @@
           {
             "author": "MogiNatsuki",
             "body": "Will Buxton level of quote there!",
-            "score": 682
+            "score": 750
           },
           {
             "author": "Careful-Door2724",
             "body": "The world championship hotline is open all season",
-            "score": 531
+            "score": 568
           },
           {
             "author": "Guilty_Feature5469",
             "body": "Oscar also has the number 1 on his car\n\nPapaya rules)))",
-            "score": 358
+            "score": 385
           },
           {
             "author": "sportslance",
             "body": "I know Reddit hates lando, but this is a good answer to an absolutely stupid question.",
-            "score": 202
+            "score": 237
+          }
+        ]
+      },
+      {
+        "title": "max: “and i’m sure i’ve been mentioned a lot also to the drivers, on how to maybe deal with me or handle me in a race weekend. the beautiful thing is there’s no way of handling me.”",
+        "author": "SimonTheSalmon69",
+        "score": 1665,
+        "url": "https://www.reddit.com/r/formula1/comments/1riclhy/max_and_im_sure_ive_been_mentioned_a_lot_also_to/",
+        "selftext": "",
+        "created_utc": 1772407511.0,
+        "num_comments": 341,
+        "id": "1riclhy",
+        "subreddit": "formula1",
+        "link_url": "https://streamain.com/QESmLtH25JIlmYN/watch",
+        "is_self": false,
+        "upvote_ratio": 0.93,
+        "comments": [
+          {
+            "author": "Magnus_Helgisson",
+            "body": "Has anyone ever tried promising to give him a cat if he lets them through?",
+            "score": 631
+          },
+          {
+            "author": "Consistent_Squash",
+            "body": "2021 was insane and toxic but it was cinema",
+            "score": 567
+          },
+          {
+            "author": "Pure_Power_8091",
+            "body": "I think there is one man that can handle him and that is Charles, their battles are always clean and nobody knows who will come on top",
+            "score": 303
+          },
+          {
+            "author": "gerstiii",
+            "body": "Max vs Schumacher would be a wild one.",
+            "score": 189
           }
         ]
       }
     ],
     "formuladank": [
       {
-        "title": "Charles wedding day photo",
-        "author": "theK1LLB0T",
-        "score": 12317,
-        "url": "https://www.reddit.com/r/formuladank/comments/1rhklv7/charles_wedding_day_photo/",
-        "selftext": "",
-        "created_utc": 1772329887.0,
-        "num_comments": 66,
-        "id": "1rhklv7",
-        "subreddit": "formuladank",
-        "link_url": "https://i.redd.it/ju8lw63pacmg1.png",
-        "is_self": false,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "ExternalNeither78",
-            "body": "I’m so used to the horrendous HP logo on their F1 cars, it took me a moment to figure out what was wrong here…",
-            "score": 2053
-          },
-          {
-            "author": "jamminjoenapo",
-            "body": "This is the low effort dank I come here for",
-            "score": 563
-          },
-          {
-            "author": "dcdonut21",
-            "body": "✨something blue✨",
-            "score": 515
-          },
-          {
-            "author": "ISDSocialMedia",
-            "body": "HP logo can be bigger",
-            "score": 152
-          }
-        ]
-      },
-      {
         "title": "It is my pleasure to inform you all that:",
         "author": "Letsplay1108",
-        "score": 6884,
+        "score": 7567,
         "url": "https://www.reddit.com/r/formuladank/comments/1rhu7y4/it_is_my_pleasure_to_inform_you_all_that/",
         "selftext": "(if your week starts with a Sunday)",
         "created_utc": 1772361649.0,
-        "num_comments": 148,
+        "num_comments": 149,
         "id": "1rhu7y4",
         "subreddit": "formuladank",
         "link_url": "https://i.redd.it/svhate15xemg1.jpeg",
@@ -908,29 +872,29 @@
           {
             "author": "Eroda",
             "body": "![gif](giphy|T7W6nGRcSxwyI)\n\nIt's Rawe Creek in 1 hour 50 minutes",
-            "score": 925
+            "score": 1007
           },
           {
             "author": "suorastas",
             "body": "If your week starts on a Sunday the race isn’t until next week",
-            "score": 613
+            "score": 651
           },
           {
             "author": "Bolter_NL",
             "body": "Even if your week starts on a Sunday it wouldn't be race week... ",
-            "score": 493
+            "score": 513
           },
           {
             "author": "_SteeringWheel",
             "body": "How can raceweeks start on sundays? The race is on Sunday, would be the shortest weeks ever.",
-            "score": 243
+            "score": 259
           }
         ]
       },
       {
         "title": "human rights",
         "author": "jibbris",
-        "score": 3679,
+        "score": 4051,
         "url": "https://www.reddit.com/r/formuladank/comments/1rhxeyo/human_rights/",
         "selftext": "",
         "created_utc": 1772372055.0,
@@ -944,148 +908,220 @@
           {
             "author": "BigBowser14",
             "body": "![gif](giphy|l3q2Z6S6n38zjPswo|downsized)\n\nOP hitting post",
-            "score": 426
+            "score": 475
           },
           {
             "author": "[deleted]",
             "body": "[removed]",
-            "score": 67
+            "score": 65
           },
           {
             "author": "[deleted]",
             "body": "[removed]",
-            "score": 47
+            "score": 48
           },
           {
             "author": "[deleted]",
             "body": "[removed]",
-            "score": 23
+            "score": 22
           }
         ]
       },
       {
-        "title": "Why is this strange man wearing two watches?",
-        "author": "TheSoberCannibal",
-        "score": 2343,
-        "url": "https://www.reddit.com/r/formuladank/comments/1rhlxk6/why_is_this_strange_man_wearing_two_watches/",
+        "title": "\"Silver Arrows\"",
+        "author": "originalhairhair",
+        "score": 2169,
+        "url": "https://www.reddit.com/r/formuladank/comments/1ric5k4/silver_arrows/",
         "selftext": "",
-        "created_utc": 1772333688.0,
-        "num_comments": 114,
-        "id": "1rhlxk6",
+        "created_utc": 1772406418.0,
+        "num_comments": 25,
+        "id": "1ric5k4",
         "subreddit": "formuladank",
-        "link_url": "https://i.redd.it/mt7a5ktzlcmg1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.99,
-        "comments": [
-          {
-            "author": "SlowMissiles",
-            "body": "He wearing an Apple watch which is probably his own personal watch and he wearing a IWC Schaffhausen which is one of the sponsor of Mercedes.  \nIt's the IWC Pilot Chronograph Mercedes-AMG Petronas watch.",
-            "score": 1822
-          },
-          {
-            "author": "Emergency-Celery3875",
-            "body": "Why settle for 1 watch sponsorship when you have 2 arms?\n\n![gif](giphy|d3mlE7uhX8KFgEmY)",
-            "score": 489
-          },
-          {
-            "author": "the_passive_bot",
-            "body": "IWC sponsorship, they are probably required to wear one despite using Apple Watch as their personal watch. Same thing with the Ferrari guys and Richard Mille",
-            "score": 306
-          },
-          {
-            "author": "dcinsd76",
-            "body": "Rumor has it that one watch is still set to Abu Dhabi 2021 time, as he’s having trouble moving on from that moment.",
-            "score": 250
-          }
-        ]
-      },
-      {
-        "title": "POV: Me and boys arriving at the Middle East races",
-        "author": "Key_Item5198",
-        "score": 1670,
-        "url": "https://www.reddit.com/r/formuladank/comments/1rhn5hz/pov_me_and_boys_arriving_at_the_middle_east_races/",
-        "selftext": "",
-        "created_utc": 1772337321.0,
-        "num_comments": 21,
-        "id": "1rhn5hz",
-        "subreddit": "formuladank",
-        "link_url": "https://v.redd.it/q0r5d1vqwcmg1",
+        "link_url": "https://i.redd.it/o9qmw269mimg1.jpeg",
         "is_self": false,
         "upvote_ratio": 0.97,
         "comments": [
           {
-            "author": "teh_herper",
-            "body": "https://preview.redd.it/qh2v7eaz3dmg1.jpeg?width=640&format=pjpg&auto=webp&s=a7586c2c1e0646a3b0bda269b1f07ede4194366a",
-            "score": 214
+            "author": "Rofton_Rev_1005",
+            "body": "https://preview.redd.it/co7nyp8m4jmg1.jpeg?width=320&format=pjpg&auto=webp&s=fd2b46667fcec36a3a3f9c7d0a4cb9ad4a804908",
+            "score": 210
           },
           {
-            "author": "NavSH27",
-            "body": "Russell in his home leg boutta rip heads off 🔥",
-            "score": 44
+            "author": "admiraltt",
+            "body": "https://preview.redd.it/n1xdc8k4cjmg1.png?width=1080&format=png&auto=webp&s=68354822e1f0e7cfc04c2240fb4a21102169f1d6\n\nHeading into turn 1 like it's Kuwait",
+            "score": 1
           },
           {
-            "author": "FrancaOnomatophobia",
-            "body": "\"Bono my flares are gone\"",
-            "score": 32
+            "author": "kerbalmaster98",
+            "body": "![gif](giphy|7wDHQvBvUuVMc)",
+            "score": 36
           },
           {
-            "author": "ApexGT44",
-            "body": "Obligatory\n\nhttps://preview.redd.it/2uwmcnq04gmg1.jpeg?width=679&format=pjpg&auto=webp&s=0fae04ae56a05d6b173b85974f3e4317e805b6e3",
-            "score": 27
+            "author": "suicinivtf",
+            "body": "*Processing img 8vahg6k8rimg1...*",
+            "score": 30
+          }
+        ]
+      },
+      {
+        "title": "I feel like people don't make fun of Briatore enough, time to fix that.",
+        "author": "Nickolas_Zannithakis",
+        "score": 1797,
+        "url": "https://www.reddit.com/r/formuladank/comments/1ri4pqd/i_feel_like_people_dont_make_fun_of_briatore/",
+        "selftext": "",
+        "created_utc": 1772389404.0,
+        "num_comments": 148,
+        "id": "1ri4pqd",
+        "subreddit": "formuladank",
+        "link_url": "https://i.redd.it/2crt0an17hmg1.png",
+        "is_self": false,
+        "upvote_ratio": 0.94,
+        "comments": [
+          {
+            "author": "ferry_peril",
+            "body": "Oh you mean that Crashgate guy? The one who got a lifetime ban from F1? That guy?",
+            "score": 1200
           },
           {
-            "author": "ATertiaryEffect",
-            "body": "I got to go over there a few times. Some fun times.",
-            "score": 19
+            "author": "thegreatgau8",
+            "body": "I want the 2026 season to be the season of bullying Briatore.",
+            "score": 594
+          },
+          {
+            "author": "hash303",
+            "body": "Alleged Epstein island frequent flyer Flavio Briatorre?!?!?",
+            "score": 410
+          },
+          {
+            "author": "ug61dec",
+            "body": "Alpine have, and now deserve, zero fans.",
+            "score": 309
+          }
+        ]
+      },
+      {
+        "title": "The Middle East has been declared safe to race",
+        "author": "Rvsyre",
+        "score": 1363,
+        "url": "https://www.reddit.com/r/formuladank/comments/1ri2m1z/the_middle_east_has_been_declared_safe_to_race/",
+        "selftext": "",
+        "created_utc": 1772384755.0,
+        "num_comments": 34,
+        "id": "1ri2m1z",
+        "subreddit": "formuladank",
+        "link_url": "https://i.redd.it/aa9e6w2utgmg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.95,
+        "comments": [
+          {
+            "author": "Drowned-Puck",
+            "body": "Ooo Italy would be quaking in their boots then\n\n![gif](giphy|a6xsRd7gRHDDUuKLK8|downsized)",
+            "score": 84
+          },
+          {
+            "author": "apple_tesfaye",
+            "body": "Let's goo, finally his true powers are being used.( Kidding, no offense to george)",
+            "score": 49
+          },
+          {
+            "author": "AverageKhorneWorship",
+            "body": "Mashallah, all praise the new Ayatollah.",
+            "score": 46
           }
         ]
       }
     ],
     "CoDCompetitive": [
       {
-        "title": "OpTic hitting flow is such a beautiful site.",
-        "author": "Flyers7914",
-        "score": 456,
-        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1rhlhsc/optic_hitting_flow_is_such_a_beautiful_site/",
-        "selftext": "apologies if this is T1 glazing, but I thought these 3 hills consecutively by OpTic today was awesome, especially with the perfectly timed listen-in.\n\ntracking of who's alive, creating space/taking space away from LAT, picking up lanes, spawns etc..\n\nwhile I love optic, I love great CoD maybe even more & boy did they bring that in map 4.",
-        "created_utc": 1772332408.0,
-        "num_comments": 60,
-        "id": "1rhlhsc",
+        "title": "Huke.. that’s it.",
+        "author": "BobbyTarrantino301",
+        "score": 431,
+        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1ridrlc/huke_thats_it/",
+        "selftext": "",
+        "created_utc": 1772410498.0,
+        "num_comments": 41,
+        "id": "1ridrlc",
         "subreddit": "CoDCompetitive",
-        "link_url": "https://v.redd.it/ifskntp6icmg1",
+        "link_url": "https://i.redd.it/q4d1xw8eyimg1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.93,
+        "upvote_ratio": 0.99,
         "comments": [
           {
-            "author": "JakeD51",
-            "body": "Also I feel like a proud father hearing Huke being genuinely the best IGL in the league",
-            "score": 209
+            "author": "studio-hours",
+            "body": "Huke hitting a second but even better prime is a beautiful sight to see. Seems like such a good kid. Can’t help but root for his success",
+            "score": 133
           },
           {
-            "author": "dillonz321",
-            "body": "Scrap couldn’t win a gunfight Vs Dashy that series too",
-            "score": 150
+            "author": "allhailchopper",
+            "body": "Forehead huke best huke",
+            "score": 60
           },
           {
-            "author": "LZRD12",
-            "body": "Far and away the most dangerous team to take your foot off the gas against ",
-            "score": 84
+            "author": "Flyers7914",
+            "body": "The glue. Was last year & he is this year. As Jay said he's become the human radar.",
+            "score": 56
           },
           {
-            "author": "xJamesio",
-            "body": "Hukes comms are insane",
-            "score": 68
+            "author": "vShock_and_Awev",
+            "body": "He’s the heart of the team. Never drop him again.",
+            "score": 39
+          },
+          {
+            "author": "m_preddy",
+            "body": "☢️",
+            "score": 15
+          }
+        ]
+      },
+      {
+        "title": "Me every time I watch Cuyler “Huke” Garland play some Call of Duty",
+        "author": "JannyPhantom",
+        "score": 306,
+        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1rie2p8/me_every_time_i_watch_cuyler_huke_garland_play/",
+        "selftext": "",
+        "created_utc": 1772411306.0,
+        "num_comments": 10,
+        "id": "1rie2p8",
+        "subreddit": "CoDCompetitive",
+        "link_url": "https://v.redd.it/a7ijzcgs0jmg1",
+        "is_self": false,
+        "upvote_ratio": 0.99,
+        "comments": [
+          {
+            "author": "iStryker",
+            "body": "When the hinge Hail Mary gets a response",
+            "score": 26
+          },
+          {
+            "author": "dontshootisuck",
+            "body": "Literally A1 post. Coffee through nostrils type shit.",
+            "score": 26
+          },
+          {
+            "author": "No-Dog579",
+            "body": "Cuyler “Cuyler Huke Garland” Garland",
+            "score": 13
+          },
+          {
+            "author": "LonelyBK",
+            "body": "Yet people still say they should’ve dropped him for Simp",
+            "score": 6
+          },
+          {
+            "author": "Dayzkiller99",
+            "body": "Was that his reaction to Mercs clutch at champs",
+            "score": 3
           }
         ]
       },
       {
         "title": "You gotta be Sick if your enjoying this GM8 (especially Sib) downfall.",
         "author": "Ibrah_11",
-        "score": 260,
+        "score": 303,
         "url": "https://www.reddit.com/r/CoDCompetitive/comments/1ri8tus/you_gotta_be_sick_if_your_enjoying_this_gm8/",
         "selftext": "",
         "created_utc": 1772398562.0,
-        "num_comments": 55,
+        "num_comments": 69,
         "id": "1ri8tus",
         "subreddit": "CoDCompetitive",
         "link_url": "https://i.redd.it/742wyn4wyhmg1.png",
@@ -1095,140 +1131,99 @@
           {
             "author": "Singhflex",
             "body": "After that Huke nonsense I always hate sib little arrogant rat",
-            "score": 163
+            "score": 203
           },
           {
             "author": "PostCoitalMaleGusto",
             "body": "Nothing makes my Sunday more than watching Smug Sib getting the smackdown.",
-            "score": 52
-          },
-          {
-            "author": "Izzybee_123",
-            "body": "If sib wasn’t so cocky and he didn’t talk a bunch of shit that he couldn’t back up people wouldn’t be on his ass",
-            "score": 38
+            "score": 64
           },
           {
             "author": "da_xlaws",
             "body": "https://preview.redd.it/6nc119fgzhmg1.jpeg?width=989&format=pjpg&auto=webp&s=9ad176e0f53035905157f2279f7ba6b0d089bbcb",
-            "score": 32
+            "score": 44
+          },
+          {
+            "author": "Izzybee_123",
+            "body": "If sib wasn’t so cocky and he didn’t talk a bunch of shit that he couldn’t back up people wouldn’t be on his ass",
+            "score": 41
           }
         ]
       },
       {
-        "title": "The Nose really always Knows",
-        "author": "Confident-Setting889",
-        "score": 218,
-        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1rhrdcz/the_nose_really_always_knows/",
-        "selftext": "the fact that “its mercules” is unironically a valid response to a 3v1 scenario is comedy. ",
-        "created_utc": 1772351230.0,
-        "num_comments": 6,
-        "id": "1rhrdcz",
-        "subreddit": "CoDCompetitive",
-        "link_url": "https://v.redd.it/zl2l0hx32emg1",
-        "is_self": false,
-        "upvote_ratio": 0.99,
-        "comments": [
-          {
-            "author": "sooopy336",
-            "body": "Sam’s reactions any time OpTic beats LAT are always so fucking funny",
-            "score": 96
-          },
-          {
-            "author": "ExoHazzy",
-            "body": "NICE MASE",
-            "score": 86
-          },
-          {
-            "author": "kishan209",
-            "body": "Big nose hate watching LAT is beautiful.",
-            "score": 56
-          },
-          {
-            "author": "Unhappy-Menu-6682",
-            "body": "Yeah man… Merc is absolutely iced out of his fucking mind",
-            "score": 30
-          },
-          {
-            "author": "C0mbatBully",
-            "body": "Shit is definitely aids Larew 😂",
-            "score": 15
-          }
-        ]
-      },
-      {
-        "title": "Post Match Thread: Toronto KOI vs. Paris Gentle Mates | Major II Qualifiers | CDL 2026 | @GGBreakingPoint",
-        "author": "TheRealPdGaming",
-        "score": 176,
-        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1ri8vo6/post_match_thread_toronto_koi_vs_paris_gentle/",
+        "title": "Post Match Thread: Vancouver Surge vs. Optic Texas | Major II Qualifiers | CDL 2026 | @GGBreakingPoint",
+        "author": "arunvenu_",
+        "score": 236,
+        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1ridse6/post_match_thread_vancouver_surge_vs_optic_texas/",
         "selftext": "",
-        "created_utc": 1772398684.0,
-        "num_comments": 106,
-        "id": "1ri8vo6",
+        "created_utc": 1772410554.0,
+        "num_comments": 139,
+        "id": "1ridse6",
         "subreddit": "CoDCompetitive",
-        "link_url": "https://www.reddit.com/gallery/1ri8vo6",
-        "is_self": false,
-        "upvote_ratio": 1.0,
-        "comments": [
-          {
-            "author": "salvctorez",
-            "body": "04 would tear his pussy trying to do what Nep or JoeDeceives just did",
-            "score": 201
-          },
-          {
-            "author": "BecomingSavior",
-            "body": "No talent in challengers btw",
-            "score": 181
-          },
-          {
-            "author": "iamdoingwork",
-            "body": "It’s just Johnvoy post Major 1.",
-            "score": 166
-          },
-          {
-            "author": "SalhtGod",
-            "body": "Sib might have pulled a Shotzzy and cursed the GM8s with all that shit talking",
-            "score": 82
-          },
-          {
-            "author": "MY-NAME_IS_MY-NAME",
-            "body": "Thanks, Kips! You’ve saved my life.\n\nDylan Jonvoy is back I fear",
-            "score": 77
-          }
-        ]
-      },
-      {
-        "title": "This is the first time Simp has lost to Snoopy & PurJ",
-        "author": "shambxlic",
-        "score": 174,
-        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1riatzb/this_is_the_first_time_simp_has_lost_to_snoopy/",
-        "selftext": "",
-        "created_utc": 1772403225.0,
-        "num_comments": 37,
-        "id": "1riatzb",
-        "subreddit": "CoDCompetitive",
-        "link_url": "https://i.redd.it/hsy911ircimg1.jpeg",
+        "link_url": "https://www.reddit.com/gallery/1ridse6",
         "is_self": false,
         "upvote_ratio": 0.98,
         "comments": [
           {
-            "author": "shambxlic",
-            "body": "https://preview.redd.it/4q72wk4vcimg1.jpeg?width=2047&format=pjpg&auto=webp&s=91794a0f3b32c76ccf9dbd6b85bb65257fa0e23e",
-            "score": 87
+            "author": "BabyGirl-Kat",
+            "body": "Huke bo7 demon 🔥",
+            "score": 201
           },
           {
-            "author": "Lightnxss",
-            "body": "Lmaoo, tweeting this like they're handicapped players 🤣",
-            "score": 75
+            "author": "pcawesom",
+            "body": "Merc has a quiet weekend and the team looks better than ever. Scary for everyone else",
+            "score": 155
           },
           {
-            "author": "BalIKnower",
-            "body": "Script was written after that Faze doc came out",
-            "score": 23
+            "author": "Ok_Honey_7151",
+            "body": "Are we sure all 4 surge players are in the same voice channel for comms?\n\nAlso keep the Huke praise as loud as the disrespect was!",
+            "score": 121
           },
           {
-            "author": "dillonz321",
-            "body": "“Time to farm Purj.” 💀😂",
+            "author": "ningaslayer69",
+            "body": "https://preview.redd.it/melw8h3tyimg1.png?width=1241&format=png&auto=webp&s=900d067e5317c82bd2f957709fc730bd80d0f795\n\nHUKE THE NUKE!!",
+            "score": 118
+          },
+          {
+            "author": "indios2",
+            "body": "https://preview.redd.it/g6cyrpmoyimg1.jpeg?width=720&format=pjpg&auto=webp&s=f9ae3c4dde50d4a4c3f425e0f2f6746cbfca96bd",
+            "score": 116
+          }
+        ]
+      },
+      {
+        "title": "Major 2 Huke",
+        "author": "BackgroundToe4149",
+        "score": 236,
+        "url": "https://www.reddit.com/r/CoDCompetitive/comments/1ridavk/major_2_huke/",
+        "selftext": "...",
+        "created_utc": 1772409312.0,
+        "num_comments": 10,
+        "id": "1ridavk",
+        "subreddit": "CoDCompetitive",
+        "link_url": "https://i.redd.it/wdajprfsuimg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.98,
+        "comments": [
+          {
+            "author": "SantaCruzinNotLosin",
+            "body": "You’re the best!!",
             "score": 18
+          },
+          {
+            "author": "MaximumIce5632",
+            "body": "Bro opened reddit one time and saw yall talking shit on him. He took that personally ",
+            "score": 15
+          },
+          {
+            "author": "KrispeeKreme4",
+            "body": "Best overall player in stage 2 so far. Comms pacing slaying damage output… only knock was snd and it’s getting better",
+            "score": 8
+          },
+          {
+            "author": "ExoHazzy",
+            "body": "the truth",
+            "score": 3
           }
         ]
       }
@@ -1237,11 +1232,11 @@
       {
         "title": "Manchester United fans display ‘MUFC proudly colonised by immigrants’ banner in Stretford End",
         "author": "ElitistHatPropaganda",
-        "score": 8676,
+        "score": 9375,
         "url": "https://www.reddit.com/r/soccer/comments/1ri0m7f/manchester_united_fans_display_mufc_proudly/",
         "selftext": "",
         "created_utc": 1772380218.0,
-        "num_comments": 468,
+        "num_comments": 480,
         "id": "1ri0m7f",
         "subreddit": "soccer",
         "link_url": "https://i.redd.it/jhykftk9ggmg1.jpeg",
@@ -1256,28 +1251,28 @@
           {
             "author": "Justnotstressed",
             "body": "Don’t let them divide us. Don’t let the toxins of Farage and the far right pollute our country. These guys are not on your side.",
-            "score": 1781
+            "score": 1893
           },
           {
             "author": "pacothebattlefly",
             "body": "Are you reading that Big Jim?",
-            "score": 1648
+            "score": 1787
           },
           {
             "author": "gavinwinks",
             "body": "I mean historically a lot of Man United legends were foreign. Going back to George Best, Cantona, Keane, and Ronaldo.",
-            "score": 812
+            "score": 908
           }
         ]
       },
       {
         "title": "Tottenham have won 0 out of their last 10 Premier League games.",
         "author": "Sparky-moon",
-        "score": 7628,
+        "score": 8317,
         "url": "https://www.reddit.com/r/soccer/comments/1ri11i2/tottenham_have_won_0_out_of_their_last_10_premier/",
         "selftext": "",
         "created_utc": 1772381187.0,
-        "num_comments": 371,
+        "num_comments": 394,
         "id": "1ri11i2",
         "subreddit": "soccer",
         "link_url": "https://i.redd.it/0qe8yj67jgmg1.jpeg",
@@ -1292,28 +1287,28 @@
           {
             "author": "jonathanPoindexter",
             "body": "I'm not cutting my hair until Tottenham win 1 game.",
-            "score": 4019
+            "score": 4282
           },
           {
             "author": "MistaBobD0balina",
             "body": "- 4 points from the last 30\n- Last league win 28th December",
-            "score": 2297
+            "score": 2546
           },
           {
             "author": "swannyhypno",
             "body": "And yet of course Pep couldn't beat them",
-            "score": 1165
+            "score": 1278
           }
         ]
       },
       {
         "title": "Ronaldinho after retirement",
         "author": "AMR42",
-        "score": 6180,
+        "score": 6566,
         "url": "https://www.reddit.com/r/soccer/comments/1rhu4o7/ronaldinho_after_retirement/",
         "selftext": "",
         "created_utc": 1772361305.0,
-        "num_comments": 366,
+        "num_comments": 370,
         "id": "1rhu4o7",
         "subreddit": "soccer",
         "link_url": "https://v.redd.it/4oc9ylw0wemg1",
@@ -1328,33 +1323,33 @@
           {
             "author": "GoblinPiledriver90",
             "body": "He might not have the stats of Messi and Ronaldo, but no one has ever been more entertaining to watch than him. What a fucking player",
-            "score": 3133
+            "score": 3263
           },
           {
             "author": "Ajax_Trees_Again",
             "body": "It’s not just nostalgia bait, football has got more boring",
-            "score": 1144
+            "score": 1196
           },
           {
             "author": "Kaliyu123",
             "body": "The only player to have a retirement highlights reel😭",
-            "score": 889
+            "score": 955
           },
           {
             "author": "mg10pp",
             "body": "Damn his technique is impressive as always",
-            "score": 751
+            "score": 874
           }
         ]
       },
       {
         "title": "Cardiff City’s centre-back Dylan Lawlor with a great solo goal vs Doncaster.",
         "author": "Sparky-moon",
-        "score": 5654,
+        "score": 5860,
         "url": "https://www.reddit.com/r/soccer/comments/1rhthyx/cardiff_citys_centreback_dylan_lawlor_with_a/",
         "selftext": "[Source](https://xcancel.com/SkyBetLeagueOne/status/2027812210978812221)",
         "created_utc": 1772359057.0,
-        "num_comments": 171,
+        "num_comments": 174,
         "id": "1rhthyx",
         "subreddit": "soccer",
         "link_url": "https://v.redd.it/ugszy7cdpemg1",
@@ -1369,28 +1364,28 @@
           {
             "author": "BaoJinyang",
             "body": "This looks like a really bad football film where they need to show the main character scoring a wonder goal so all the defenders just move out of his way.",
-            "score": 2568
+            "score": 2673
           },
           {
             "author": "Belgian_Voodoo_Witch",
             "body": "That is horrendous defending, went through the entire pitch with 2 contentions.",
-            "score": 1796
+            "score": 1830
           },
           {
             "author": "ElRonHubbardo",
             "body": "Love the kid but every time I watch the video I'm more in awe of rovers' lack of defending. There's one (maybe two at a stretch) proper challenge put in while he's cantering down 75% of the field? Feel like his similar goal v orient was somewhat more impressive just by virtue of having more resistance",
-            "score": 404
+            "score": 402
           }
         ]
       },
       {
         "title": "Chelsea penalty shout against Arsenal checked by VAR - no penalty 44'",
         "author": "Imbasauce",
-        "score": 4875,
+        "score": 5230,
         "url": "https://www.reddit.com/r/soccer/comments/1ri31eo/chelsea_penalty_shout_against_arsenal_checked_by/",
         "selftext": "",
         "created_utc": 1772385720.0,
-        "num_comments": 886,
+        "num_comments": 942,
         "id": "1ri31eo",
         "subreddit": "soccer",
         "link_url": "https://v.redd.it/cl2yxpuiwgmg1",
@@ -1405,154 +1400,78 @@
           {
             "author": "TheBrightman",
             "body": "Genuinely wtf haha. 2 hand hug into hand ball combo is unmatched.",
-            "score": 4211
+            "score": 4485
           },
           {
             "author": "Educational_Oil_7757",
             "body": "His arm's in a natural grappling position.",
-            "score": 2474
+            "score": 2804
           },
           {
             "author": "aaa-ccc",
             "body": "I cannot understand how that wasn't a penalty, Rice has made 2 offenses if anything",
-            "score": 1921
+            "score": 2073
           },
           {
             "author": "Headlesshorsman02",
             "body": "Bro is hugging him like a backpack lmao 🤣",
-            "score": 1682
+            "score": 1812
           }
         ]
       }
     ],
     "MichiganWolverines": [
       {
-        "title": "Next Man Up",
-        "author": "wildwing8",
-        "score": 250,
-        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1rhjp4y/next_man_up/",
-        "selftext": "",
-        "created_utc": 1772327336.0,
-        "num_comments": 15,
-        "id": "1rhjp4y",
-        "subreddit": "MichiganWolverines",
-        "link_url": "https://i.redd.it/ep48erp33cmg1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 1.0,
-        "comments": [
-          {
-            "author": "616GoBlue",
-            "body": "One of the best things about the team is their depth. Cason is a big blow but they are what 9 guys deep?",
-            "score": 41
-          },
-          {
-            "author": "Jayslacks",
-            "body": "Exactly.",
-            "score": 24
-          },
-          {
-            "author": "rainmaker2332",
-            "body": "Cason has lowkey been our best guard the last…. what, 7 games or so? Losing him truly sucks, we were 9 deep with him.\n\nBut I have faith in McKenney! Some Roddy Gayle vs A&M would be nice too.\n",
-            "score": 14
-          }
-        ]
-      },
-      {
-        "title": "Every Team Would Be Lucky To Have A Player Like Will Tschetter",
-        "author": "eadricsilvaticus",
-        "score": 228,
-        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1rhnhqp/every_team_would_be_lucky_to_have_a_player_like/",
-        "selftext": "Nails what makes him such a special Wolverine. The relentless energy, toughness and selflessness he brings to the team simply cannot be overstated. ",
-        "created_utc": 1772338343.0,
-        "num_comments": 18,
-        "id": "1rhnhqp",
-        "subreddit": "MichiganWolverines",
-        "link_url": "https://v.redd.it/dak4l29nzcmg1",
-        "is_self": false,
-        "upvote_ratio": 1.0,
-        "comments": [
-          {
-            "author": "theglove",
-            "body": "Like Zack Novak he is exactly the kind of guy we needed at the right time.",
-            "score": 23
-          },
-          {
-            "author": "Abeds_BananaStand",
-            "body": "That’s a good call out\n\nWhat is this clip from?",
-            "score": 17
-          },
-          {
-            "author": "jkroxxx",
-            "body": "It’s not a direct fit for LJ, but I’m happy we have Will who can eat some of his minutes. He hasn’t been amazing recently but he’s showed up many times over his career at M and deserves to contribute. LJ was such a dawg though (and has been), reminds me of Levert a bit",
-            "score": 8
-          },
-          {
-            "author": "Lifereaper7",
-            "body": "Props to coach Howard for the awesome recommendation.",
-            "score": 7
-          },
-          {
-            "author": "McGooYou",
-            "body": "Give him a job as a recruiter after graduation.  Sounds like he had a big part in bringing in transfers and recruits.  Him and Dusty will kill it for years to come.",
-            "score": 8
-          }
-        ]
-      },
-      {
-        "title": "With MSU beating OSU in the 13th (!) round of the shootout tonight, Michigan holds a 2 point lead in the Big Ten and will need help from Minnesota this coming Thursday and Friday",
-        "author": "michigan_matt",
-        "score": 61,
-        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1rhn74d/with_msu_beating_osu_in_the_13th_round_of_the/",
-        "selftext": "Michigan's regular season is complete due to a bye next weekend. \n\n  \nMichigan State has 2 games in Minnesota this week and will clinch a share of the conference title with 2 more points and will win outright with 3 or more. \n\n  \nReminder NCAA uses the 3-2-1-0 format where a regulation win is with 3 points and an overtime win is worth 2.  Needless to say it doesn't look great, but MSU was also expected to get more than the 2 points they got this weekend over OSU, so anything is still possible.\n\n  \nGo.....Gophers?!",
-        "created_utc": 1772337459.0,
-        "num_comments": 7,
-        "id": "1rhn74d",
-        "subreddit": "MichiganWolverines",
-        "link_url": "https://www.reddit.com/r/MichiganWolverines/comments/1rhn74d/with_msu_beating_osu_in_the_13th_round_of_the/",
-        "is_self": true,
-        "upvote_ratio": 0.98,
-        "comments": [
-          {
-            "author": "Its-a-Shitbox",
-            "body": "Regardless of how they end their season, we’ve had an absolutely fantastic one, and I’m very much looking forward to the Big Ten tournament!\n\nOne thing I did notice while watching Sharty tonight, was how dirtbag it is of them to have both penalty boxes on their bench side. Makes their players getting back to the bench after their penalties are over far, far easier than the opponent. How is that even legal?!",
-            "score": 24
-          },
-          {
-            "author": "michiganfan101",
-            "body": "Go blue! Big Ten uses that point system, not NCAA. I believe if MSU gets 2 points, they hold the tiebreaker since they and 2-2 but UM won one in OT. Not very likely, but would be great if we could get the 1 seed bye for the tourney",
-            "score": 4
-          },
-          {
-            "author": "Massive_Contract_908",
-            "body": "Thank god, I thought we were completely done for when we lost our last game",
-            "score": 2
-          },
-          {
-            "author": "pprrrrrbbbbtttt",
-            "body": "Dropping that game to Minnesota was brutal. Its MSUs league to lose unfortunately. Little chance they don’t come away with at least 2 points but maybe theyll hand us an all time choke",
-            "score": 2
-          }
-        ]
-      },
-      {
         "title": "Michigan Softball Plays Villanova and Virginia today At Virginia",
         "author": "Nervous_Metal_9445",
-        "score": 26,
+        "score": 28,
         "url": "https://www.reddit.com/r/MichiganWolverines/comments/1ri29wv/michigan_softball_plays_villanova_and_virginia/",
         "selftext": "",
         "created_utc": 1772384003.0,
-        "num_comments": 0,
+        "num_comments": 1,
         "id": "1ri29wv",
         "subreddit": "MichiganWolverines",
         "link_url": "https://i.redd.it/6jbs9h0mrgmg1.jpeg",
         "is_self": false,
         "upvote_ratio": 1.0,
-        "comments": []
+        "comments": [
+          {
+            "author": "Majik9",
+            "body": "Massive last inning choke job and pathetic managing",
+            "score": 2
+          }
+        ]
+      },
+      {
+        "title": "Thoughts on the LJ injury.",
+        "author": "DropPowerful9081",
+        "score": 17,
+        "url": "https://www.reddit.com/r/MichiganWolverines/comments/1riey5b/thoughts_on_the_lj_injury/",
+        "selftext": "So we all know that this is a tough blow. 40% three point shooter. Instant spark plug off the bench. LJ provided energy when our offense got stagnant throughout the season. It isn’t as bad as 2021 though.\n\nThe good news is I believe (with a good draw) we won’t get seriously seriously challenged until the Elite Eight. I think this team is too good even without LJ to lose before then.\n\nThree things to hope for though that will make things easier:\n\n1)The draw is everything. Even though this team is basically matchup-proof, there are still some matchups that could make us uncomfortable. Hopefully, we get a good draw. From what I have seen from the mock brackets though, we might get a bad draw. Knock on wood. \n\n2) Cinderella makes its return and wrecks havoc in our region. Hopefully, we can get the benefit of 1-2 top-4 seeds getting upset before we have to face them.\n\n3) This is kind of going off of #1, but not facing elite three point shooting teams. I think we can beat any team if they aren’t making threes, but if we play a Nebraska, Wisconsin, Alabama, etc, combined with those teams’ talent, could make things dicey. With LJ being out, we need to avoid as many elite three-point shooting teams as possible. ",
+        "created_utc": 1772413637.0,
+        "num_comments": 18,
+        "id": "1riey5b",
+        "subreddit": "MichiganWolverines",
+        "link_url": "https://www.reddit.com/r/MichiganWolverines/comments/1riey5b/thoughts_on_the_lj_injury/",
+        "is_self": true,
+        "upvote_ratio": 0.84,
+        "comments": [
+          {
+            "author": "QuickPea3259",
+            "body": "Trey Mckenney and nimari will absorb his minutes. Barring no more injuries we'll be fine. ",
+            "score": 19
+          },
+          {
+            "author": "Simmumah",
+            "body": "Honestly we're so deep I dont think it will hurt too much. McKenney is legit.",
+            "score": 15
+          }
+        ]
       },
       {
         "title": "Strategy for Chicago B1G tournament attendance?",
         "author": "BeardoTheHero",
-        "score": 4,
+        "score": 5,
         "url": "https://www.reddit.com/r/MichiganWolverines/comments/1rial2w/strategy_for_chicago_b1g_tournament_attendance/",
         "selftext": "Hey all, I’m sure there are many other Chicago based wolverines on here hoping to see the team in action in a couple weeks at United Center.\n\nWhat are your plans for getting to see Michigan?\n\nI’m thinking of getting early tickets while they’re still cheap for sessions, then maybe selling or scalping later on if it wasn’t the right session to see our team?\n\nI’m sure the tickets will skyrocket once the games are announced. Anyone regularly attend the tournaments elsewhere and have a good strategy? ",
         "created_utc": 1772402634.0,
@@ -1561,12 +1480,12 @@
         "subreddit": "MichiganWolverines",
         "link_url": "https://www.reddit.com/r/MichiganWolverines/comments/1rial2w/strategy_for_chicago_b1g_tournament_attendance/",
         "is_self": true,
-        "upvote_ratio": 0.83,
+        "upvote_ratio": 0.7,
         "comments": [
           {
             "author": "Professional_Feed268",
             "body": "We’re the 1 seed, so the sessions are known. They’ll play the early session Friday then Saturday and Sunday are 1 session anyway.",
-            "score": 3
+            "score": 7
           }
         ]
       }
@@ -1575,11 +1494,11 @@
       {
         "title": "“Told Yall he wanted out!” Meanwhile, Dmo:",
         "author": "JP_IS_ME_91",
-        "score": 1478,
+        "score": 1604,
         "url": "https://www.reddit.com/r/detroitlions/comments/1rhz4ie/told_yall_he_wanted_out_meanwhile_dmo/",
         "selftext": "",
         "created_utc": 1772376605.0,
-        "num_comments": 121,
+        "num_comments": 123,
         "id": "1rhz4ie",
         "subreddit": "detroitlions",
         "link_url": "https://i.redd.it/zeq75v2m5gmg1.jpeg",
@@ -1589,100 +1508,131 @@
           {
             "author": "1DDub",
             "body": "https://preview.redd.it/0f77zt3d6gmg1.jpeg?width=896&format=pjpg&auto=webp&s=8aeaeb5e097f3c7e3d33ce20dc56c2b4b03ad53d",
-            "score": 679
+            "score": 740
           },
           {
             "author": "StattPadford",
             "body": "You didn't even have to do that for me to know better. Thanks Dmo",
-            "score": 481
+            "score": 513
           },
           {
             "author": "CherokeeP3822",
             "body": "![gif](giphy|XiEGxufqFU7pNEIpgH)",
-            "score": 251
+            "score": 252
           },
           {
             "author": "juanadod",
             "body": "I don’t trust underdog NFL as much as what Brad & Dan were saying at the combine",
-            "score": 161
+            "score": 172
+          }
+        ]
+      },
+      {
+        "title": "If he's available, Get him",
+        "author": "ezio8133",
+        "score": 133,
+        "url": "https://www.reddit.com/r/detroitlions/comments/1rigb3w/if_hes_available_get_him/",
+        "selftext": "",
+        "created_utc": 1772417408.0,
+        "num_comments": 14,
+        "id": "1rigb3w",
+        "subreddit": "detroitlions",
+        "link_url": "https://i.redd.it/t3vtt9be7gmg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.99,
+        "comments": [
+          {
+            "author": "MRio31",
+            "body": "This dude looks like he graduated highschool in 2005",
+            "score": 41
+          },
+          {
+            "author": "Ok-Pair4547",
+            "body": "Looks like a more sophisticated MCDC",
+            "score": 24
+          },
+          {
+            "author": "chrisjlee84",
+            "body": "He looks like Nerd Dan Campbell.",
+            "score": 7
           }
         ]
       },
       {
         "title": "Decker who?👀",
         "author": "Nbknepper",
-        "score": 95,
+        "score": 121,
         "url": "https://www.reddit.com/r/detroitlions/comments/1ri7uuc/decker_who/",
         "selftext": "",
         "created_utc": 1772396342.0,
-        "num_comments": 65,
+        "num_comments": 72,
         "id": "1ri7uuc",
         "subreddit": "detroitlions",
         "link_url": "https://i.redd.it/ovoorlw3shmg1.png",
         "is_self": false,
-        "upvote_ratio": 0.83,
+        "upvote_ratio": 0.85,
         "comments": [
           {
             "author": "PerformanceWeekly651",
             "body": "https://preview.redd.it/eio0impuuhmg1.jpeg?width=1200&format=pjpg&auto=webp&s=17d40d12d6ae8c9b107f14df8e8e653a693b4d74\n\nLast time Holmes took a tackle off measurables…",
-            "score": 108
+            "score": 124
           },
           {
             "author": "TopHatTony11",
             "body": "This is the type of shit Brad looks at when his wife isn’t home.",
-            "score": 57
+            "score": 64
           },
           {
             "author": "Troutalope",
             "body": "Nobody gives a shit what a O-lineman's RAS score is. 10 out of 10 times, the defender lined across from them is the better athlete.",
-            "score": 27
+            "score": 28
           }
         ]
       },
       {
         "title": "UM OT Francis Mauigoa's Player Size Comp Is Penei Sewell",
         "author": "JCameron181",
-        "score": 79,
+        "score": 95,
         "url": "https://www.reddit.com/r/detroitlions/comments/1ri8s6j/um_ot_francis_mauigoas_player_size_comp_is_penei/",
         "selftext": "",
         "created_utc": 1772398453.0,
-        "num_comments": 22,
+        "num_comments": 27,
         "id": "1ri8s6j",
         "subreddit": "detroitlions",
         "link_url": "https://i.redd.it/7brs90ghyhmg1.png",
         "is_self": false,
-        "upvote_ratio": 0.98,
+        "upvote_ratio": 0.95,
         "comments": [
           {
             "author": "WTFH2S",
             "body": "Can we have another?",
-            "score": 61
-          },
-          {
-            "author": "Background_Trust3123",
-            "body": "Twin Towers",
-            "score": 35
+            "score": 80
           },
           {
             "author": "ChetCustard",
             "body": "Sir, a second Penei Sewell’s Measurables have hit the draft board",
-            "score": 38
+            "score": 49
+          },
+          {
+            "author": "Background_Trust3123",
+            "body": "Twin Towers",
+            "score": 36
           },
           {
             "author": "nem704",
             "body": "He'll be gone when the Lions pick",
-            "score": 27
+            "score": 30
           }
         ]
       },
       {
         "title": "A Dan Campbell Player If I've Ever Seen One: Projected Day-2 Pick IOWA OT Gennings \"Mullet\" Dunker",
         "author": "JCameron181",
-        "score": 61,
+        "score": 89,
         "url": "https://www.reddit.com/r/detroitlions/comments/1ribryx/a_dan_campbell_player_if_ive_ever_seen_one/",
         "selftext": "",
         "created_utc": 1772405500.0,
-        "num_comments": 7,
+        "num_comments": 11,
         "id": "1ribryx",
         "subreddit": "detroitlions",
         "link_url": "https://v.redd.it/c8rl9t9ejimg1",
@@ -1692,63 +1642,22 @@
           {
             "author": "Et_Crudites",
             "body": "He could have a weekly highlight reel called “Dunker Ooohs”",
-            "score": 18
+            "score": 23
           },
           {
             "author": "gmwdim",
             "body": "He and Tate Ratledge will feed off each other’s hair.",
-            "score": 9
+            "score": 16
           },
           {
             "author": "Hopeful-Flounder-203",
             "body": "I demand they draft him. My middle name is Duncan and my nickname is Dunk.",
-            "score": 4
-          },
-          {
-            "author": "jdooley99",
-            "body": "The Big Dunker",
-            "score": 3
+            "score": 8
           },
           {
             "author": "PixelBy_Pixel",
             "body": "He is so insanely slow that it isn’t even funny",
-            "score": 3
-          }
-        ]
-      },
-      {
-        "title": "What do yall think of the LLM end of season gift this year?",
-        "author": "Bowhunt343",
-        "score": 62,
-        "url": "https://www.reddit.com/r/detroitlions/comments/1ri416k/what_do_yall_think_of_the_llm_end_of_season_gift/",
-        "selftext": "I am on the fence on this one. I loved the jersey cert, and the helmet was cool. Last years football was ok, but this year just seems cheesy to me. feels like its went downhill a bit each year over the oast 3 or 4 years. ",
-        "created_utc": 1772387918.0,
-        "num_comments": 32,
-        "id": "1ri416k",
-        "subreddit": "detroitlions",
-        "link_url": "https://i.redd.it/hw29snv83hmg1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.95,
-        "comments": [
-          {
-            "author": "taftpanda",
-            "body": "Seems like plate is just sort of crooked and stuck on there, which feels lazy to me",
-            "score": 64
-          },
-          {
-            "author": "Crafty_Substance_954",
-            "body": "It’s actual junk.",
-            "score": 29
-          },
-          {
-            "author": "bebop_cola_",
-            "body": "Be sure to drink your Ovaltine",
-            "score": 28
-          },
-          {
-            "author": "Chemical-Bee-8876",
-            "body": "I think it’s pretty cool but the quality looks awful. The plate looks very crooked.",
-            "score": 19
+            "score": 5
           }
         ]
       }
@@ -1757,7 +1666,7 @@
       {
         "title": "Bad boys for life",
         "author": "ArchAngelN7",
-        "score": 214,
+        "score": 248,
         "url": "https://www.reddit.com/r/DetroitPistons/comments/1ri7aqz/bad_boys_for_life/",
         "selftext": "\"Always two, there are. No more. No less. A Master and an apprentice.\"\n\nEmbrace the dark side.\n\nWhen the Detroit Pistons have 2 big men that play and are top level enforcers, they win championships. \n\nJalen Duren and Isaiah Stewart look to join an elite legacy of Pistons.\n",
         "created_utc": 1772395109.0,
@@ -1769,19 +1678,19 @@
         "upvote_ratio": 0.99,
         "comments": [
           {
-            "author": "Outrageous-Leader135",
-            "body": "DEEE triot basketball",
-            "score": 5
-          },
-          {
             "author": "AirFriedSushi",
             "body": "Haven’t won a playoff series yet, got a long way to go before we give them that title.",
-            "score": 4
+            "score": 12
           },
           {
             "author": "Professional-Play-38",
             "body": "No team represents their city better then the pistons. I’ll die by that take",
-            "score": 5
+            "score": 6
+          },
+          {
+            "author": "Outrageous-Leader135",
+            "body": "DEEE triot basketball",
+            "score": 4
           },
           {
             "author": "soilentgleem",
@@ -1791,9 +1700,76 @@
         ]
       },
       {
+        "title": "Post Game Thread - NBA: The Pistons defeat the Magic on Mar 1, 2026, the final score is 92-106.",
+        "author": "basketball-app",
+        "score": 236,
+        "url": "https://www.reddit.com/r/DetroitPistons/comments/1rifete/post_game_thread_nba_the_pistons_defeat_the_magic/",
+        "selftext": "This post contains content not supported on old Reddit. [Click here to view the full post](https://sh.reddit.com/r/DetroitPistons/comments/1rifete)",
+        "created_utc": 1772414880.0,
+        "num_comments": 153,
+        "id": "1rifete",
+        "subreddit": "DetroitPistons",
+        "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1rifete/post_game_thread_nba_the_pistons_defeat_the_magic/",
+        "is_self": true,
+        "upvote_ratio": 1.0,
+        "comments": [
+          {
+            "author": "KarimFF7",
+            "body": "5 first round picks traded just to be owned by Tobias Harris",
+            "score": 259
+          },
+          {
+            "author": "Insonarc",
+            "body": "Remember when Jonathon Isaac said, “We are who DET thinks they are.”\n\nWell.. take that GG. Y’all got PIST ON",
+            "score": 138
+          },
+          {
+            "author": "clownbaby88",
+            "body": "Duncan needs to get his shot back ASAP, this team cant afford for our only shooter fall apart. 4-30 aint it lol",
+            "score": 129
+          },
+          {
+            "author": "DilucMeliodas",
+            "body": "That’s why you close out with Ausar!!!!",
+            "score": 94
+          },
+          {
+            "author": "Dexd667",
+            "body": "GOD I AM SO HAPPY WE BEAT THE MAGIC",
+            "score": 69
+          }
+        ]
+      },
+      {
+        "title": "just kidding, im single af",
+        "author": "defhimself",
+        "score": 119,
+        "url": "https://www.reddit.com/r/DetroitPistons/comments/1rifk2z/just_kidding_im_single_af/",
+        "selftext": "wanna come over and watch a Tobias Harris Midrange compilation?",
+        "created_utc": 1772415290.0,
+        "num_comments": 2,
+        "id": "1rifk2z",
+        "subreddit": "DetroitPistons",
+        "link_url": "https://i.redd.it/on1a5fhccjmg1.png",
+        "is_self": false,
+        "upvote_ratio": 0.98,
+        "comments": [
+          {
+            "author": "mc_foucault",
+            "body": "https://preview.redd.it/s7so2npsejmg1.png?width=1080&format=png&auto=webp&s=50d0e754bfa06a1ddee8836f482c218c69ccbcdb",
+            "score": 8
+          },
+          {
+            "author": "Witty_Nebula",
+            "body": "😆 🤣 😂",
+            "score": 2
+          }
+        ]
+      },
+      {
         "title": "We Here For It, Deeetroit Basketball",
         "author": "Ol_School_1961",
-        "score": 79,
+        "score": 107,
         "url": "https://www.reddit.com/r/DetroitPistons/comments/1ric8wz/we_here_for_it_deeetroit_basketball/",
         "selftext": "Yep yep, What Up Doe Family Together ",
         "created_utc": 1772406649.0,
@@ -1812,147 +1788,80 @@
         ]
       },
       {
-        "title": "Tobias Harris on Instagram: \"and it’s all good….\"",
-        "author": "Ol_School_1961",
-        "score": 74,
-        "url": "https://www.reddit.com/r/DetroitPistons/comments/1ri667y/tobias_harris_on_instagram_and_its_all_good/",
-        "selftext": "What Up Doe Ol School Unc to Unc T, thanks for the Detroit Love ",
-        "created_utc": 1772392571.0,
-        "num_comments": 8,
-        "id": "1ri667y",
+        "title": "Tobias gave an excellent post-game interview. Still only 3 or 4 questions courtside but he took his time answering. Great to hear Uncle T's veteran perspective on the game tonight and the team's relationship to the flow",
+        "author": "NearEarthOrbit",
+        "score": 94,
+        "url": "https://www.reddit.com/r/DetroitPistons/comments/1rifsiu/tobias_gave_an_excellent_postgame_interview_still/",
+        "selftext": "The dude has no ego on our team full of young guns. He's perfect in his role. And he's DEADLY on the blocks with his back to the bucket.\n\nedit to add: We got some fans in Florida too, boy. Huge cheers at the end of the road game in Orlando.",
+        "created_utc": 1772415949.0,
+        "num_comments": 9,
+        "id": "1rifsiu",
         "subreddit": "DetroitPistons",
-        "link_url": "https://www.instagram.com/reel/DVUdZ46AINN/?igsh=MTd1MXRnOTQza3lmdQ==",
-        "is_self": false,
+        "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1rifsiu/tobias_gave_an_excellent_postgame_interview_still/",
+        "is_self": true,
         "upvote_ratio": 0.99,
         "comments": [
           {
-            "author": "earora4498",
-            "body": "Unc got the shoutout, let’s go",
-            "score": 24
+            "author": "Ol_School_1961",
+            "body": "YKTPWA",
+            "score": 36
           },
           {
-            "author": "scotiadk",
-            "body": "Whatupdoe!!! That’s awesome Unc!",
-            "score": 17
+            "author": "mc_foucault",
+            "body": "https://preview.redd.it/c0gdhb6efjmg1.png?width=1080&format=png&auto=webp&s=402af2e9734e7c94df25f9106d614a994bfbacdc",
+            "score": 30
           },
           {
-            "author": "soilentgleem",
-            "body": "I really hope he ends up staying a Piston for the rest of his career. I've always liked Tobias a lot, and I'm still salty about him getting traded for Blake lol",
-            "score": 15
-          },
-          {
-            "author": "Mrfunguykawhi",
-            "body": "Yessir 🔥🔥🔥",
-            "score": 15
-          },
-          {
-            "author": "DisenfranchisedCynic",
-            "body": "My man is an old soul 💯",
-            "score": 7
-          }
-        ]
-      },
-      {
-        "title": "Kevin Huerter",
-        "author": "dadylonglegs54",
-        "score": 51,
-        "url": "https://www.reddit.com/r/DetroitPistons/comments/1rhz29b/kevin_huerter/",
-        "selftext": "Trust in the coaches who see him in practice daily, but anyone else having a hard time understanding he’s just hasn’t been good enough to crack any playing time at all? He’s looked lost when he gets it. We’re talking about a significant shooter / role player for more than one good playoff team in the past 5-6 years. Age isn’t a necessarily a concern, he came from a dooky Bulls team which I thought mainly contributed to his slightly worse play, etc. his ceiling is so important for the bench unit’s next step. Interested to see if it’s possible to get him in the mix for the playoffs, but as of now it doesn’t look on the table. ",
-        "created_utc": 1772376442.0,
-        "num_comments": 125,
-        "id": "1rhz29b",
-        "subreddit": "DetroitPistons",
-        "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1rhz29b/kevin_huerter/",
-        "is_self": true,
-        "upvote_ratio": 0.87,
-        "comments": [
-          {
-            "author": "jemstone_croc",
-            "body": "I think the real prize was moving up in the first round.  May not be a huge jump but unfortunately this was Iveys value.",
-            "score": 97
-          },
-          {
-            "author": "Boj3nkin5",
-            "body": "The Ivey trade was not done to acquire huerter. It was done to move ivey so we didnt have to pay him more than his actual value. Huerter is there just to balance money and might end up being a decent bench piece with limited minutes. Trajan is punting on this season to see how far we can go with our current set up, then will try and fill gaps to solve our weaknesses in the off season. Think of how the thunder moved from 2024 to 2025.",
-            "score": 58
-          },
-          {
-            "author": "Cautious-Activity706",
-            "body": "I think he’s still getting to know the team and system.  At least that’s what I hope.  Pistons like to run and play fast, that can take a while to get used too, and you don’t want to put somebody in the rotation who doesn’t know where to be on the break.",
-            "score": 41
-          },
-          {
-            "author": "Quinn_tEskimo",
-            "body": "The trade was for the pick swap and the expiring contract, Huerter has no long term role here",
-            "score": 17
-          }
-        ]
-      },
-      {
-        "title": "Game Thread: Orlando Magic vs Detroit Pistons Live Score | NBA | Mar 1, 2026",
-        "author": "basketball-app",
-        "score": 45,
-        "url": "https://www.reddit.com/r/DetroitPistons/comments/1ri8xl1/game_thread_orlando_magic_vs_detroit_pistons_live/",
-        "selftext": "This post contains content not supported on old Reddit. [Click here to view the full post](https://sh.reddit.com/r/DetroitPistons/comments/1ri8xl1)",
-        "created_utc": 1772398805.0,
-        "num_comments": 985,
-        "id": "1ri8xl1",
-        "subreddit": "DetroitPistons",
-        "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1ri8xl1/game_thread_orlando_magic_vs_detroit_pistons_live/",
-        "is_self": true,
-        "upvote_ratio": 1.0,
-        "comments": [
-          {
-            "author": "cursed_franchise",
-            "body": "This is the last game beef stew is suspended right?",
+            "author": "JustinTheCreator",
+            "body": "He's truly such a significant part of our team/culture. On top of his overall tenure in the NBA, he's played for Detroit previously and understands how much the team means to the city at large. He's been so great at spreading a positive and hardworking mindset to our young stars. ",
             "score": 18
           },
           {
-            "author": "sanitycheck2001",
-            "body": "It's actually hilarious how bad we are at 3s like come the fuck on",
-            "score": 17
+            "author": "Motor-Staff-8501",
+            "body": "He will coach once he retires.",
+            "score": 11
           },
           {
-            "author": "StepmaniaGod",
-            "body": "These fuckers are gonna have 50+ free throws before the end of this game. Its borderline unwatchable",
-            "score": 16
-          },
-          {
-            "author": "OnAnOpenFieldNed",
-            "body": "bancheros ugly as FUCK",
-            "score": 16
+            "author": "sadistic-squid",
+            "body": "I was there. We broke out into a chant of YKTPWA!",
+            "score": 8
           }
         ]
       }
     ],
     "BillSimmons": [
       {
-        "title": "OKC is the fastest a team has gone from media darling to most unlikable",
-        "author": "OpportunityStraight1",
-        "score": 303,
-        "url": "https://www.reddit.com/r/billsimmons/comments/1rhnqpm/okc_is_the_fastest_a_team_has_gone_from_media/",
-        "selftext": "I’m a hater but i think it is fully warranted. They got FTA who is borderline unwatchable. The whole team seems to be getting more dirty by the day lead by Lu Dirty himself. And everybody has gotten sick of the cringe postgame celebrations. \n\nIf this is the next dynasty the league has a big problem ",
-        "created_utc": 1772339130.0,
-        "num_comments": 173,
-        "id": "1rhnqpm",
+        "title": "Michael Jordan just won his third straight race as an owner to start the NASCAR season",
+        "author": "DogwoodDagwood",
+        "score": 462,
+        "url": "https://www.reddit.com/r/billsimmons/comments/1rieepf/michael_jordan_just_won_his_third_straight_race/",
+        "selftext": "Suffice to say, his executive career in motorsports is going about 7000 times better than his career as an NBA executive.",
+        "created_utc": 1772412205.0,
+        "num_comments": 74,
+        "id": "1rieepf",
         "subreddit": "billsimmons",
-        "link_url": "https://www.reddit.com/r/billsimmons/comments/1rhnqpm/okc_is_the_fastest_a_team_has_gone_from_media/",
-        "is_self": true,
-        "upvote_ratio": 0.83,
+        "link_url": "https://i.redd.it/04ugy19m2jmg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.96,
         "comments": [
           {
-            "author": "hubbs76",
-            "body": "Any media darling stuff was all east coast based\n\nAny fan of any western conference team has hated them all along",
-            "score": 322
+            "author": "MurderHornet41",
+            "body": "I don’t think the Hornets ever won 3 in a row when he was an owner",
+            "score": 281
           },
           {
-            "author": "Overall-Palpitation6",
-            "body": "I feel like the Memphis Grizzlies got there faster in the 2022-23 range, and they didn't even need to win anything to do it.",
-            "score": 219
+            "author": "Guardsred70",
+            "body": "lol.  Look how fucking happy he is.   \n\nLove it for him.  He gave us a lot of memories over the decades and I’m just happy to see him enjoying himself.",
+            "score": 101
           },
           {
-            "author": "carsmello",
-            "body": "If Wemby wins an MVP over Jokic him and the Spurs are suddenly going to become unlikeable too",
+            "author": "cursed_franchise",
+            "body": "Are his hands that enormous? I knew they were big but they look crazy big here ",
+            "score": 81
+          },
+          {
+            "author": "Paulbegalia",
+            "body": "Hilarious how he’s given NASCAR on Fox more camera time for free compared to the one interview with Tirico",
             "score": 80
           }
         ]
@@ -1960,31 +1869,31 @@
       {
         "title": "Is tonight’s Pod Zach Lowe’s version of Game 6 in Boston?",
         "author": "Busy_Bed5532",
-        "score": 235,
+        "score": 262,
         "url": "https://www.reddit.com/r/billsimmons/comments/1ri00xg/is_tonights_pod_zach_lowes_version_of_game_6_in/",
         "selftext": "Everyone recognizes he’s a talented and marquee figure in the pod game, but is he really THE guy? Is he really the best co-host for the biggest pods of the year? After facing some criticism for recent performances on the big stage, all ears will be locked in to how he responds.",
         "created_utc": 1772378817.0,
-        "num_comments": 111,
+        "num_comments": 116,
         "id": "1ri00xg",
         "subreddit": "billsimmons",
         "link_url": "https://i.redd.it/z1lck0h1cgmg1.jpeg",
         "is_self": false,
-        "upvote_ratio": 0.87,
+        "upvote_ratio": 0.88,
         "comments": [
           {
             "author": "MVPete1",
             "body": "I’m sure Zach Lowe printed out Reddit comments and posted them to his bulletin board.",
-            "score": 302
+            "score": 322
           },
           {
             "author": "goingtothegreek",
             "body": "When half the games this time of the year are ass it’s tough to make genuinely good content. They’ll talk about Denver for 20 minutes, OKC for 20 minutes, and the Celtics for the rest of the time.\n\nIf you’re lucky they might even sprinkle in some MVP talk, the lowest form of podcasting",
-            "score": 136
+            "score": 143
           },
           {
             "author": "riverphoenixdays",
             "body": "I enjoy Bill and Zach talkin basketball, maybe I’m a fucking piece of shit?",
-            "score": 41
+            "score": 48
           },
           {
             "author": "Driveshaft48",
@@ -1994,13 +1903,75 @@
         ]
       },
       {
+        "title": "Zach Lowe was never a problem you guys just don’t like actual basketball conversations and prefer First Take Light",
+        "author": "CheesyBasil132",
+        "score": 216,
+        "url": "https://www.reddit.com/r/billsimmons/comments/1rij2jp/zach_lowe_was_never_a_problem_you_guys_just_dont/",
+        "selftext": "",
+        "created_utc": 1772425361.0,
+        "num_comments": 46,
+        "id": "1rij2jp",
+        "subreddit": "billsimmons",
+        "link_url": "https://i.redd.it/knv7pi7l6kmg1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.93,
+        "comments": [
+          {
+            "author": "Suspicious_Guide4286",
+            "body": "kind of surprised about the discourse for this guy on here, thought he was mostly liked.   i am not even an nba guy but could hear him talk ball all day, hes one of the best out there at what he does.",
+            "score": 59
+          },
+          {
+            "author": "WhitePeopleLoveCurry",
+            "body": "This sub is everything it claims to hate.",
+            "score": 25
+          },
+          {
+            "author": "ND7020",
+            "body": "I like Zach and I’m also very confused about the contention from some of his defenders here that his pod is about intense or technical basketball analysis. It’s not at all. It’s still first take light, just maybe light-light as opposed to Bill’s simply light. ",
+            "score": 10
+          }
+        ]
+      },
+      {
+        "title": "CR Month Re-Apexing every week",
+        "author": "harry_powell",
+        "score": 150,
+        "url": "https://www.reddit.com/r/billsimmons/comments/1ri9pdn/cr_month_reapexing_every_week/",
+        "selftext": "",
+        "created_utc": 1772400571.0,
+        "num_comments": 91,
+        "id": "1ri9pdn",
+        "subreddit": "billsimmons",
+        "link_url": "https://i.redd.it/9vb0gqiv4img1.jpeg",
+        "is_self": false,
+        "upvote_ratio": 0.96,
+        "comments": [
+          {
+            "author": "BrainSpiritual8567",
+            "body": "To live and die in LA is the type of movie we as a society have to get back to.\n\nIt’s pure nonsense, but just an elite action thriller.\n",
+            "score": 75
+          },
+          {
+            "author": "ScofieldReturns",
+            "body": "LA Confidential plz",
+            "score": 52
+          },
+          {
+            "author": "doobie3101",
+            "body": "Was on my 8th rewatch of Sicario and realized that Benicio del Toro is really just helping out so he can get revenge.",
+            "score": 23
+          }
+        ]
+      },
+      {
         "title": "So are you guys expecting Iran to get the new coach bump?",
         "author": "danielbauer1375",
-        "score": 125,
+        "score": 140,
         "url": "https://www.reddit.com/r/billsimmons/comments/1rhx8n3/so_are_you_guys_expecting_iran_to_get_the_new/",
         "selftext": "Whoever comes in has gotta switch some things up, but they’ve got the talent, and are like two months away from being two months away when it comes to nukes. I don’t know. I see some potential there.",
         "created_utc": 1772371550.0,
-        "num_comments": 36,
+        "num_comments": 38,
         "id": "1rhx8n3",
         "subreddit": "billsimmons",
         "link_url": "https://www.reddit.com/r/billsimmons/comments/1rhx8n3/so_are_you_guys_expecting_iran_to_get_the_new/",
@@ -2010,94 +1981,22 @@
           {
             "author": "andrew2018022",
             "body": "Looking ahead at their schedule I see\n\nHome Israel\n\nHome USA\n\nHome EU\n\nAway Israel\n\nAway UAE\n\nI dunno Sal I just don’t see it",
-            "score": 152
+            "score": 172
           },
           {
             "author": "LetsGoKnickerbock3rs",
             "body": "Everyone’s always talking about “Iran is getting close to a nuke.” It’s been decades. Can I see it first? Is that asking too much?",
-            "score": 112
+            "score": 126
           },
           {
             "author": "yngwiegiles",
             "body": "Player empowerment Iranians gonna coach themselves let’s see how that goes",
-            "score": 33
+            "score": 44
           },
           {
             "author": "LarryAv",
             "body": "Thibs would be perfect for this team",
-            "score": 29
-          }
-        ]
-      },
-      {
-        "title": "Was Ron Livingston market corrected by Paul Rudd?",
-        "author": "ToddPacker5",
-        "score": 114,
-        "url": "https://www.reddit.com/r/billsimmons/comments/1rhncud/was_ron_livingston_market_corrected_by_paul_rudd/",
-        "selftext": "After Office Space and Band of Brothers, Livingston looked like a pretty versatile actor, but wasn’t in a lot of notable work the rest of the 2000s. And a few years after BOB was when Rudd came onto the scene with Anchorman and 40 year virgin, which are 2 roles I could easily see Ron in and the movie doesn’t change at all",
-        "created_utc": 1772337918.0,
-        "num_comments": 51,
-        "id": "1rhncud",
-        "subreddit": "billsimmons",
-        "link_url": "https://www.reddit.com/r/billsimmons/comments/1rhncud/was_ron_livingston_market_corrected_by_paul_rudd/",
-        "is_self": true,
-        "upvote_ratio": 0.93,
-        "comments": [
-          {
-            "author": "MasterBurner2",
-            "body": "Should have been willing to play Goofy. People would have killed for that part.",
-            "score": 81
-          },
-          {
-            "author": "tyedge",
-            "body": "Honestly I might’ve said Kyle Chandler. Ron is funnier. Kyle is more serious. But Ron did Band of Brothers…could he have had clear eyes and a full heart?",
-            "score": 70
-          },
-          {
-            "author": "iscrambleyoureggs",
-            "body": "Paul Rudd was on the scene with Clueless.\n\nIt’s actually kind of a weird comparison bc Livingston (who I enjoy) only plays the straight man.\n\nEven in a tough to watch show like Loudermilk where Ron Livingston is overwhelmingly and obnoxiously grouchy, he is still the straight man.",
-            "score": 63
-          },
-          {
-            "author": "hammystyle",
-            "body": "Nah, Livingston is just a bit limited. He’s fine in Swingers. But it’s not like anyone was predicting greatness from him of the guys in that movie.\n\nHe’s great in Office Space. No notes. Perfect role for him. \n\nHe’s fine in Band of Brothers. Didn’t pull it down, but he’s not a standout performer there. \n\nIt’s years later so it’s not a market correction, but Adam Scott is a better version. He could’ve done Office Space. He can do a bit more",
-            "score": 57
-          },
-          {
-            "author": "an_arc_of_doves",
-            "body": "I'm gonna zag and say he lost the battle because of his name. Not a lot of great Rons in this century. And the whole Ronald Reagan piece really hurt the name in certain circles. Ron Howard was grandfathered in because he got his start before the presidency. Livingston is a politician's name. Or an englishman who owns a lot of land. At best the name of a stage actor circa 1920. Everything was working against him.\n\nMeanwhile, Paul's parents shortened their surname from Rudnitsky to Rudd. Much better name. Snappy, to the point, biblical but neutral, easy to remember, easy to cast.",
-            "score": 49
-          }
-        ]
-      },
-      {
-        "title": "CR Month Re-Apexing every week",
-        "author": "harry_powell",
-        "score": 114,
-        "url": "https://www.reddit.com/r/billsimmons/comments/1ri9pdn/cr_month_reapexing_every_week/",
-        "selftext": "",
-        "created_utc": 1772400571.0,
-        "num_comments": 63,
-        "id": "1ri9pdn",
-        "subreddit": "billsimmons",
-        "link_url": "https://i.redd.it/9vb0gqiv4img1.jpeg",
-        "is_self": false,
-        "upvote_ratio": 0.94,
-        "comments": [
-          {
-            "author": "BrainSpiritual8567",
-            "body": "To live and die in LA is the type of movie we as a society have to get back to.\n\nIt’s pure nonsense, but just an elite action thriller.\n",
-            "score": 49
-          },
-          {
-            "author": "ScofieldReturns",
-            "body": "LA Confidential plz",
-            "score": 44
-          },
-          {
-            "author": "Hour-Ad-9508",
-            "body": "To live and die in LA is one of the most underrated movies ever.\n\nHonestly probably would’ve been the best LA movie if Heat never existed",
-            "score": 15
+            "score": 36
           }
         ]
       }
