@@ -94,7 +94,10 @@
             btn.addEventListener("click", () => {
               if (currentIndex === i) return;
               currentIndex = i;
-              showsContainer.querySelectorAll(".show-button").forEach((b, j) => b.classList.toggle("selected", j === i));
+              showsContainer.querySelectorAll(".show-button").forEach((b, j) => {
+                if (j === i) b.classList.add("selected");
+                else b.classList.remove("selected");
+              });
               renderEpisodes(show);
             });
             showsContainer.appendChild(btn);
@@ -139,16 +142,26 @@
           });
         }
 
-        fetch("podcast-manifest.json?cb=" + Date.now())
-          .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-          .then((data) => {
-            shows = data;
-            if (!shows.length) { setStatus("No shows found."); return; }
-            currentIndex = 0;
-            renderShows();
-            renderEpisodes(shows[0]);
-          })
-          .catch(() => setStatus("Could not load podcast manifest."));
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "podcast-manifest.json?cb=" + Date.now(), true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState !== 4) return;
+          if (xhr.status >= 200 && xhr.status < 300) {
+            try {
+              shows = JSON.parse(xhr.responseText);
+              if (!shows.length) { setStatus("No shows found."); return; }
+              currentIndex = 0;
+              renderShows();
+              renderEpisodes(shows[0]);
+            } catch (e) {
+              setStatus("Could not parse manifest.");
+            }
+          } else {
+            setStatus("Could not load podcast manifest.");
+          }
+        };
+        xhr.onerror = function () { setStatus("Could not load podcast manifest."); };
+        xhr.send();
       })();
     </script>
   </body>
