@@ -301,6 +301,9 @@
         const nowPlayingTitle = document.getElementById("nowPlayingTitle");
         const audio = document.getElementById("audio");
 
+        // limit how many episodes we bother parsing/downloading
+        const MAX_EPISODES = 5;
+
         let currentShowIndex = 0;
 
         function setStatus(message) {
@@ -341,9 +344,60 @@
           });
         }
 
+        // proxy used only if direct fetch fails (some feeds may block CORS)
         function buildAllOriginsUrl(feedUrl) {
           const encoded = encodeURIComponent(feedUrl);
           return "https://api.allorigins.win/get?url=" + encoded;
+        }
+
+        // try to pull just enough of the feed to satisfy `limit` items,
+        // aborting the fetch once we see that many closing tags. this
+        // keeps the download from draining the entire RSS file.
+        async function fetchFeedLimited(feedUrl, limit = 5) {
+          const controller = new AbortController();
+          const resp = await fetch(feedUrl, { signal: controller.signal });
+          if (!resp.ok) {
+            throw new Error("Network response was not ok");
+          }
+          if (!resp.body) {
+            // no streaming support, just grab everything
+            return resp.text();
+          }
+
+          const reader = resp.body.getReader();
+          const decoder = new TextDecoder();
+          let xml = "";
+          let closings = 0;
+
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            xml += decoder.decode(value, { stream: true });
+
+            // count complete items/entries seen so far
+            const m1 = xml.match(/<item\b/gi);
+            const m2 = xml.match(/<entry\b/gi);
+            closings = (m1 ? m1.length : 0) + (m2 ? m2.length : 0);
+            if (closings >= limit) {
+              // keep a little extra in case parser needs closing tags
+              controller.abort();
+              break;
+            }
+          }
+
+          return xml;
+        }
+
+        async function fetchFeedWithFallback(feedUrl, limit = 5) {
+          try {
+            return await fetchFeedLimited(feedUrl, limit);
+          } catch (err) {
+            // fallback to public proxy if CORS/error problems occur
+            const response = await fetch(buildAllOriginsUrl(feedUrl));
+            if (!response.ok) throw err;
+            const data = await response.json();
+            return (data && data.contents) || "";
+          }
         }
 
         async function loadFeed(show) {
@@ -353,16 +407,11 @@
           setStatus("Loading episodes...");
 
           try {
-            const response = await fetch(buildAllOriginsUrl(show.url));
-            if (!response.ok) {
-              throw new Error("Network response was not ok");
-            }
-            const data = await response.json();
-            const xmlString = data && data.contents ? data.contents : "";
+            const xmlString = await fetchFeedWithFallback(show.url, MAX_EPISODES);
             if (!xmlString) {
               throw new Error("Empty feed");
             }
-            const episodes = parseRss(xmlString).slice(0, 15);
+            const episodes = parseRss(xmlString).slice(0, MAX_EPISODES);
 
             if (!episodes.length) {
               episodesCount.textContent = "";
