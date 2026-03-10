@@ -1,223 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=240px, initial-scale=1.0">
     <title>Podcasts</title>
     <style>
-      :root {
-        color-scheme: light;
-        --bg: #f7f7f7;
-        --bg-card: #ffffff;
-        --text: #111111;
-        --text-muted: #666666;
-        --accent: #0057ff;
-        --accent-soft: #e0ebff;
-        --border: #dddddd;
-      }
-      * { box-sizing: border-box; }
-      body { margin: 0; padding: 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); }
-      .app { max-width: 480px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; }
-      header { padding: 0.75rem 1rem; background: var(--bg-card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
-      header h1 { margin: 0; font-size: 1.2rem; }
-      main { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; padding: 0.5rem 0 0.75rem; }
-      .shows-container { padding: 0 0.75rem; }
-      .shows-label { font-size: 0.8rem; color: var(--text-muted); margin: 0 0 0.25rem; }
-      .shows-list { display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 0.25rem; }
-      .show-button { border: 1px solid var(--border); background: var(--bg-card); color: var(--text); border-radius: 999px; padding: 0.5rem 0.75rem; font-size: 0.85rem; white-space: nowrap; min-width: 3.5rem; text-align: center; flex-shrink: 0; cursor: pointer; -webkit-appearance: none; appearance: none; }
-      .show-button.selected { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
-      .episodes-container { margin: 0.25rem 0 0; padding: 0 0.75rem 0.5rem; }
-      .episodes-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.25rem; }
-      .episodes-title { font-size: 0.9rem; font-weight: 600; }
-      .episodes-count { font-size: 0.75rem; color: var(--text-muted); }
-      .status-text { font-size: 0.8rem; color: var(--text-muted); padding: 0.5rem 0; }
-      .episodes-list { list-style: none; margin: 0; padding: 0; border-radius: 0.5rem; background: var(--bg-card); border: 1px solid var(--border); max-height: calc(100vh - 280px); overflow-y: auto; }
-      .episode-item { border-bottom: 1px solid var(--border); }
-      .episode-button { display: block; width: 100%; text-align: left; padding: 0.85rem 0.75rem; background: transparent; border: none; cursor: pointer; color: var(--text); -webkit-appearance: none; appearance: none; }
-      .episode-button:disabled { opacity: 0.5; cursor: default; }
-      .episode-button:active:not(:disabled), .episode-button:focus-visible:not(:disabled) { outline: none; background: #eef1ff; }
-      .episode-title { font-size: 0.9rem; margin-bottom: 0.15rem; }
-      .episode-date { font-size: 0.75rem; color: var(--text-muted); }
-      .episode-item:last-child { border-bottom: none; }
-      .player-container { border-top: 1px solid var(--border); background: var(--bg-card); padding: 0.4rem 0.75rem 0.6rem; position: sticky; bottom: 0; }
-      .now-playing-label { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.1rem; }
-      .now-playing-title { font-size: 0.8rem; margin-bottom: 0.25rem; max-height: 2.4em; overflow: hidden; }
-      audio { width: 100%; }
-      .hidden { display: none; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            background: #000;
+            color: #fff;
+            padding: 5px;
+            max-width: 240px;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background: #000;
+            z-index: 100;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #fff;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 5px 0;
+            background: #222;
+            color: #f90;
+            text-decoration: none;
+            font-size: 11px;
+            border-radius: 3px;
+        }
+
+        .back-btn:active {
+            background: #333;
+        }
+
+        h1 {
+            font-size: 16px;
+            text-align: center;
+            padding: 8px 0;
+            margin: 0;
+        }
+
+        .show-tabs {
+            display: flex;
+            gap: 5px;
+            margin: 10px 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .tab {
+            padding: 5px 10px;
+            background: #222;
+            border: 1px solid #444;
+            color: #aaa;
+            font-size: 11px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .tab.active {
+            background: #f90;
+            color: #000;
+            border-color: #f90;
+        }
+
+        .refresh-btn {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            background: #f90;
+            color: #000;
+            border: none;
+            font-weight: bold;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .last-update {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin: 4px 0;
+        }
+
+        .episode {
+            background: #111;
+            margin: 4px 0;
+            padding: 5px;
+            border-left: 3px solid #f90;
+            cursor: pointer;
+            display: block;
+            color: inherit;
+        }
+
+        .episode:active {
+            background: #222;
+        }
+
+        .episode-title {
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: #fff;
+            line-height: 1.3;
+        }
+
+        .episode-meta {
+            font-size: 10px;
+            color: #888;
+        }
+
+        .player-bar {
+            position: sticky;
+            bottom: 0;
+            background: #111;
+            border-top: 2px solid #f90;
+            padding: 5px;
+            display: none;
+        }
+
+        .now-playing-label {
+            font-size: 9px;
+            color: #f90;
+            margin-bottom: 2px;
+        }
+
+        .now-playing-title {
+            font-size: 10px;
+            color: #fff;
+            margin-bottom: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+
+        .error {
+            text-align: center;
+            padding: 10px;
+            color: #f00;
+            font-size: 11px;
+        }
     </style>
-  </head>
-  <body>
-    <div class="app">
-      <header><h1>Podcasts</h1></header>
-      <main>
-        <section class="shows-container" aria-label="Podcast shows">
-          <p class="shows-label">Shows</p>
-          <div class="shows-list" id="shows"></div>
-        </section>
-        <section class="episodes-container" aria-label="Episodes">
-          <div class="episodes-header">
-            <div class="episodes-title" id="episodesTitle">Episodes</div>
-            <div class="episodes-count" id="episodesCount"></div>
-          </div>
-          <div class="status-text" id="statusText">Loading…</div>
-          <ul class="episodes-list" id="episodesList" aria-live="polite"></ul>
-        </section>
-      </main>
-      <section class="player-container hidden" id="playerContainer" aria-label="Now playing">
-        <div class="now-playing-label">Now playing</div>
+</head>
+<body>
+    <div class="header">
+        <a href="home.html" class="back-btn">← Back</a>
+        <h1>🎙 PODCASTS</h1>
+        <div class="last-update" id="currentDate"></div>
+    </div>
+
+    <div class="show-tabs" id="showTabs"></div>
+
+    <button class="refresh-btn" onclick="loadEpisodes()">↻ REFRESH</button>
+    <div class="last-update" id="lastUpdate"></div>
+
+    <div id="content">
+        <div class="loading">Loading...</div>
+    </div>
+
+    <div class="player-bar" id="playerBar">
+        <div class="now-playing-label">NOW PLAYING</div>
         <div class="now-playing-title" id="nowPlayingTitle"></div>
         <audio id="audio" controls preload="none"></audio>
-      </section>
     </div>
+
     <script>
-      (function () {
-        var showsContainer  = document.getElementById("shows");
-        var episodesList    = document.getElementById("episodesList");
-        var episodesTitle   = document.getElementById("episodesTitle");
-        var episodesCount   = document.getElementById("episodesCount");
-        var statusText      = document.getElementById("statusText");
-        var playerContainer = document.getElementById("playerContainer");
-        var nowPlayingTitle = document.getElementById("nowPlayingTitle");
-        var audio           = document.getElementById("audio");
-        var shows = [];
-        var currentIndex = -1;
+        let currentShow = 0;
+        let shows = [];
 
         function buildAllTab(rawShows) {
-          var all = [];
-          for (var s = 0; s < rawShows.length; s++) {
-            var show = rawShows[s];
-            if (!show.episodes) continue;
-            for (var e = 0; e < show.episodes.length; e++) {
-              var ep = show.episodes[e];
-              all.push({
-                title: ep.title,
-                date: ep.date,
-                dateSort: ep.dateSort || "",
-                audioUrl: ep.audioUrl,
-                showName: show.name
-              });
+            const all = [];
+            for (let s = 0; s < rawShows.length; s++) {
+                const show = rawShows[s];
+                if (!show.episodes) continue;
+                for (let e = 0; e < show.episodes.length; e++) {
+                    const ep = show.episodes[e];
+                    all.push({
+                        title: ep.title,
+                        date: ep.date,
+                        dateSort: ep.dateSort || '',
+                        audioUrl: ep.audioUrl,
+                        showName: show.name
+                    });
+                }
             }
-          }
-          all.sort(function (a, b) {
-            if (a.dateSort > b.dateSort) return -1;
-            if (a.dateSort < b.dateSort) return 1;
-            return 0;
-          });
-          return { name: "All", episodes: all, isAll: true };
+            all.sort((a, b) => {
+                if (a.dateSort > b.dateSort) return -1;
+                if (a.dateSort < b.dateSort) return 1;
+                return 0;
+            });
+            return { name: 'All', episodes: all };
         }
 
-        function setStatus(msg) {
-          statusText.textContent = msg;
-          statusText.classList.remove("hidden");
+        function renderTabs() {
+            const container = document.getElementById('showTabs');
+            container.innerHTML = '';
+            shows.forEach((show, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'tab' + (i === currentShow ? ' active' : '');
+                btn.textContent = show.name;
+                btn.addEventListener('click', function() {
+                    currentShow = i;
+                    document.querySelectorAll('.tab').forEach((t, j) => {
+                        if (j === i) t.classList.add('active');
+                        else t.classList.remove('active');
+                    });
+                    renderEpisodes();
+                });
+                container.appendChild(btn);
+            });
         }
 
-        function clearStatus() {
-          statusText.textContent = "";
-          statusText.classList.add("hidden");
-        }
+        function renderEpisodes() {
+            const content = document.getElementById('content');
+            const show = shows[currentShow];
 
-        function selectShow(index) {
-          currentIndex = index;
-          var buttons = showsContainer.querySelectorAll(".show-button");
-          for (var i = 0; i < buttons.length; i++) {
-            if (i === index) {
-              buttons[i].classList.add("selected");
-            } else {
-              buttons[i].classList.remove("selected");
+            if (!show || !show.episodes || !show.episodes.length) {
+                content.innerHTML = '<div class="error">No episodes available.</div>';
+                return;
             }
-          }
-        }
 
-        function makeShowClickHandler(index, show) {
-          return function () {
-            if (currentIndex === index) return;
-            selectShow(index);
-            renderEpisodes(show);
-          };
-        }
-
-        function renderShows() {
-          showsContainer.innerHTML = "";
-          for (var i = 0; i < shows.length; i++) {
-            var show = shows[i];
-            var btn = document.createElement("button");
-            btn.type = "button";
-            btn.className = "show-button" + (i === currentIndex ? " selected" : "");
-            btn.textContent = show.name;
-            btn.addEventListener("click", makeShowClickHandler(i, show));
-            showsContainer.appendChild(btn);
-          }
-        }
-
-        function makeEpisodeClickHandler(ep) {
-          return function () {
-            audio.src = ep.audioUrl;
-            nowPlayingTitle.textContent = ep.title;
-            playerContainer.classList.remove("hidden");
-            try { audio.play(); } catch (e) {}
-          };
-        }
-
-        function renderEpisodes(show) {
-          episodesTitle.textContent = show.name;
-          episodesList.innerHTML = "";
-          if (!show.episodes || !show.episodes.length) {
-            episodesCount.textContent = "";
-            setStatus("No episodes available.");
-            return;
-          }
-          episodesCount.textContent = show.episodes.length + " episodes";
-          clearStatus();
-          for (var i = 0; i < show.episodes.length; i++) {
-            var ep = show.episodes[i];
-            var li = document.createElement("li");
-            li.className = "episode-item";
-            var btn = document.createElement("button");
-            btn.type = "button";
-            btn.className = "episode-button";
-            btn.disabled = !ep.audioUrl;
-            var titleEl = document.createElement("div");
-            titleEl.className = "episode-title";
-            titleEl.textContent = ep.title;
-            var dateEl = document.createElement("div");
-            dateEl.className = "episode-date";
-            var prefix = ep.showName ? ep.showName + " · " : "";
-            var datePart = ep.date || "";
-            dateEl.textContent = ep.audioUrl
-              ? (prefix + datePart)
-              : (prefix + datePart + " (no audio)");
-            btn.appendChild(titleEl);
-            btn.appendChild(dateEl);
-            if (ep.audioUrl) {
-              btn.addEventListener("click", makeEpisodeClickHandler(ep));
+            let html = '';
+            for (let i = 0; i < show.episodes.length; i++) {
+                const ep = show.episodes[i];
+                if (!ep.audioUrl) continue;
+                const meta = (ep.showName ? ep.showName + ' · ' : '') + (ep.date || '');
+                html += `
+                    <div class="episode" onclick="playEpisode('${ep.audioUrl.replace(/'/g, "\\'")}', '${ep.title.replace(/'/g, "\\'")}')">
+                        <div class="episode-title">${ep.title}</div>
+                        <div class="episode-meta">${meta}</div>
+                    </div>
+                `;
             }
-            li.appendChild(btn);
-            episodesList.appendChild(li);
-          }
+
+            content.innerHTML = html || '<div class="error">No playable episodes.</div>';
+
+            const now = new Date();
+            document.getElementById('currentDate').textContent =
+                now.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+            document.getElementById('lastUpdate').textContent =
+                'Updated: ' + now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0');
         }
 
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "podcast-manifest.json?cb=" + Date.now(), true);
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState !== 4) return;
-          if (xhr.status >= 200 && xhr.status < 300) {
+        function playEpisode(url, title) {
+            const audio = document.getElementById('audio');
+            const bar = document.getElementById('playerBar');
+            document.getElementById('nowPlayingTitle').textContent = title;
+            audio.src = url;
+            bar.style.display = 'block';
+            try { audio.play(); } catch(e) {}
+        }
+
+        async function loadEpisodes() {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading...</div>';
             try {
-              var raw = JSON.parse(xhr.responseText);
-              if (!raw.length) { setStatus("No shows found."); return; }
-              shows = [buildAllTab(raw)].concat(raw);
-              currentIndex = 0;
-              renderShows();
-              renderEpisodes(shows[0]);
+                const response = await fetch('podcast-manifest.json?cb=' + Date.now());
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                const raw = await response.json();
+                if (!raw.length) { content.innerHTML = '<div class="error">No shows found.</div>'; return; }
+                shows = [buildAllTab(raw)].concat(raw);
+                currentShow = 0;
+                renderTabs();
+                renderEpisodes();
             } catch (e) {
-              setStatus("Could not parse manifest.");
+                content.innerHTML = '<div class="error">Could not load manifest.</div>';
             }
-          } else {
-            setStatus("Could not load podcast manifest.");
-          }
-        };
-        xhr.onerror = function () { setStatus("Could not load podcast manifest."); };
-        xhr.send();
-      })();
+        }
+
+        loadEpisodes();
     </script>
-  </body>
+</body>
 </html>
