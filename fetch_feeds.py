@@ -20,6 +20,14 @@ MAX_EPISODES = 5
 with open(SUBS_FILE, "r") as f:
     subs = yaml.safe_load(f)["podcasts"]
 
+def get_parsed_time(entry):
+    """Try every date field feedparser might populate."""
+    for field in ("published_parsed", "updated_parsed", "created_parsed"):
+        val = getattr(entry, field, None)
+        if val:
+            return val
+    return None
+
 def format_date(parsed_time):
     if not parsed_time:
         return ""
@@ -46,7 +54,6 @@ def get_audio_url(entry):
                 return url
         except Exception:
             pass
-    # fallback to entry link
     return getattr(entry, "link", None)
 
 manifest = []
@@ -54,7 +61,7 @@ manifest = []
 for sub in subs:
     name = sub["name"]
     feed_url = sub["feed_url"]
-    print(f"Fetching: {name}")
+    print("Fetching: " + name)
 
     try:
         feed = feedparser.parse(feed_url)
@@ -63,19 +70,20 @@ for sub in subs:
             audio_url = get_audio_url(entry)
             if not audio_url:
                 continue
+            parsed_time = get_parsed_time(entry)
             episodes.append({
                 "title": getattr(entry, "title", "Untitled"),
-                "date": format_date(getattr(entry, "published_parsed", None)),
-                "dateSort": sort_date(getattr(entry, "published_parsed", None)),
+                "date": format_date(parsed_time),
+                "dateSort": sort_date(parsed_time),
                 "audioUrl": audio_url,
             })
         manifest.append({"name": name, "episodes": episodes})
-        print(f"  -> {len(episodes)} episodes")
+        print("  -> " + str(len(episodes)) + " episodes")
     except Exception as e:
-        print(f"  [!] Failed to fetch {name}: {e}")
+        print("  [!] Failed to fetch " + name + ": " + str(e))
         manifest.append({"name": name, "episodes": []})
 
 with open(MANIFEST_FILE, "w") as f:
     json.dump(manifest, f, indent=2)
 
-print(f"\nManifest written: {MANIFEST_FILE}")
+print("\nManifest written: " + MANIFEST_FILE)
