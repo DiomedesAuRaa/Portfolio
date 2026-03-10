@@ -363,61 +363,13 @@
           );
         }
 
-        // FIX: Wrap streaming fetch so an intentional abort doesn't
-        // bubble up as an error and trigger the proxy fallback.
-        async function fetchFeedLimited(feedUrl, limit) {
-          const controller = new AbortController();
-          let collectedXml = "";
-          let intentionalAbort = false;
-
-          try {
-            const resp = await fetch(feedUrl, { signal: controller.signal });
-            if (!resp.ok) throw new Error("HTTP " + resp.status);
-
-            // No streaming support — grab everything
-            if (!resp.body) {
-              return await resp.text();
-            }
-
-            const reader = resp.body.getReader();
-            const decoder = new TextDecoder();
-
-            while (true) {
-              const { done, value } = await reader.read();
-              if (done) break;
-
-              collectedXml += decoder.decode(value, { stream: true });
-
-              const itemCount =
-                (collectedXml.match(/<item\b/gi) || []).length +
-                (collectedXml.match(/<entry\b/gi) || []).length;
-
-              if (itemCount >= limit) {
-                intentionalAbort = true;
-                controller.abort();
-                break; // exit loop — collectedXml is already returned below
-              }
-            }
-          } catch (err) {
-            // Re-throw only if this was NOT our own intentional abort
-            if (!intentionalAbort) throw err;
-          }
-
-          return collectedXml;
-        }
-
-        async function fetchFeedWithFallback(feedUrl, limit) {
-          try {
-            const xml = await fetchFeedLimited(feedUrl, limit);
-            if (xml) return xml;
-            throw new Error("Empty response from direct fetch");
-          } catch (directErr) {
-            // CORS or network failure — fall back to proxy
-            const resp = await fetch(buildAllOriginsUrl(feedUrl));
-            if (!resp.ok) throw new Error("Proxy fetch failed");
-            const data = await resp.json();
-            return (data && data.contents) || "";
-          }
+        // Always use the allorigins proxy — direct fetch fails for most
+        // podcast feeds due to CORS headers on their servers.
+        async function fetchFeedWithFallback(feedUrl) {
+          const resp = await fetch(buildAllOriginsUrl(feedUrl));
+          if (!resp.ok) throw new Error("Proxy fetch failed: HTTP " + resp.status);
+          const data = await resp.json();
+          return (data && data.contents) || "";
         }
 
         async function loadFeed(show) {
@@ -427,10 +379,7 @@
           setStatus("Loading…");
 
           try {
-            const xmlString = await fetchFeedWithFallback(
-              show.url,
-              MAX_EPISODES
-            );
+            const xmlString = await fetchFeedWithFallback(show.url);
             if (!xmlString) throw new Error("Empty feed");
 
             const episodes = parseRss(xmlString).slice(0, MAX_EPISODES);
