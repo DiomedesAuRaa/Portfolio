@@ -28,6 +28,15 @@ def format_date(parsed_time):
     except Exception:
         return ""
 
+def sort_date(parsed_time):
+    """ISO date string for sorting, e.g. 2025-03-05"""
+    if not parsed_time:
+        return ""
+    try:
+        return datetime(*parsed_time[:6]).strftime("%Y-%m-%d")
+    except Exception:
+        return ""
+
 def get_audio_url(entry):
     if getattr(entry, "enclosures", None):
         try:
@@ -57,6 +66,7 @@ for sub in subs:
             episodes.append({
                 "title": getattr(entry, "title", "Untitled"),
                 "date": format_date(getattr(entry, "published_parsed", None)),
+                "dateSort": sort_date(getattr(entry, "published_parsed", None)),
                 "audioUrl": audio_url,
             })
         manifest.append({"name": name, "episodes": episodes})

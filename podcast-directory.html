@@ -81,6 +81,30 @@
         const audio           = document.getElementById("audio");
         let shows = [], currentIndex = -1;
 
+        function buildAllTab(rawShows) {
+          var all = [];
+          for (var s = 0; s < rawShows.length; s++) {
+            var show = rawShows[s];
+            if (!show.episodes) continue;
+            for (var e = 0; e < show.episodes.length; e++) {
+              var ep = show.episodes[e];
+              all.push({
+                title: ep.title,
+                date: ep.date,
+                dateSort: ep.dateSort || "",
+                audioUrl: ep.audioUrl,
+                showName: show.name
+              });
+            }
+          }
+          all.sort(function (a, b) {
+            if (a.dateSort > b.dateSort) return -1;
+            if (a.dateSort < b.dateSort) return 1;
+            return 0;
+          });
+          return { name: "All", episodes: all, isAll: true };
+        }
+
         function setStatus(msg) { statusText.textContent = msg; statusText.classList.remove("hidden"); }
         function clearStatus()  { statusText.textContent = ""; statusText.classList.add("hidden"); }
 
@@ -126,7 +150,9 @@
             titleEl.textContent = ep.title;
             const dateEl = document.createElement("div");
             dateEl.className = "episode-date";
-            dateEl.textContent = ep.audioUrl ? (ep.date || "") : ((ep.date || "") + " (no audio)");
+            dateEl.textContent = ep.audioUrl
+              ? ((ep.showName ? ep.showName + " · " : "") + (ep.date || ""))
+              : ((ep.showName ? ep.showName + " · " : "") + (ep.date || "") + " (no audio)");
             btn.appendChild(titleEl);
             btn.appendChild(dateEl);
             if (ep.audioUrl) {
@@ -150,6 +176,7 @@
             try {
               shows = JSON.parse(xhr.responseText);
               if (!shows.length) { setStatus("No shows found."); return; }
+              shows.unshift(buildAllTab(shows));
               currentIndex = 0;
               renderShows();
               renderEpisodes(shows[0]);
