@@ -88,15 +88,15 @@
         text-align: center;
         flex-shrink: 0;
         cursor: pointer;
+        /* Fix: explicit color so browsers don't override */
+        -webkit-appearance: none;
+        appearance: none;
       }
 
-      /* Enhanced focus states for flip phone D-Pad navigation */
-      .show-button:focus,
-      .episode-button:focus,
-      audio:focus {
-        outline: 2px solid var(--accent);
-        outline-offset: -2px;
-        background-color: var(--accent-soft);
+      .show-button:active,
+      .show-button:focus-visible {
+        outline: none;
+        border-color: var(--accent);
       }
 
       .show-button.selected {
@@ -140,7 +140,8 @@
         border-radius: 0.5rem;
         background: var(--bg-card);
         border: 1px solid var(--border);
-        max-height: 50vh;
+        /* Fix: use calc so it doesn't crush on small screens */
+        max-height: calc(100vh - 280px);
         overflow-y: auto;
       }
 
@@ -152,10 +153,25 @@
         display: block;
         width: 100%;
         text-align: left;
-        padding: 0.65rem 0.75rem;
+        /* Fix: larger tap target for flipphone */
+        padding: 0.85rem 0.75rem;
         background: transparent;
         border: none;
         cursor: pointer;
+        color: var(--text);
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+      .episode-button:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      .episode-button:active:not(:disabled),
+      .episode-button:focus-visible:not(:disabled) {
+        outline: none;
+        background: #eef1ff;
       }
 
       .episode-title {
@@ -189,12 +205,8 @@
       .now-playing-title {
         font-size: 0.8rem;
         margin-bottom: 0.25rem;
-        /* Better text truncation for long episode titles */
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+        max-height: 2.4em;
         overflow: hidden;
-        text-overflow: ellipsis;
       }
 
       audio {
@@ -247,17 +259,50 @@
     <script>
       (function () {
         const shows = [
-          { name: "Bill Simmons Podcast", url: "https://feeds.megaphone.fm/the-bill-simmons-podcast" },
-          { name: "The Watch", url: "https://feeds.megaphone.fm/the-watch" },
-          { name: "Zach Lowe", url: "https://feeds.megaphone.fm/zach-lowe" },
-          { name: "Joel Klatt", url: "https://feeds.feedburner.com/BreakingTheHuddle" },
-          { name: "With the Perrys", url: "https://feeds.simplecast.com/wZpv0WKy" },
-          { name: "Shally", url: "https://www.shallowford.church/sermons?format=rss" },
-          { name: "Village Church", url: "http://feeds.thevillagechurch.net/sermons" },
-          { name: "Ringer Tailgate", url: "https://feeds.megaphone.fm/GLT4074129955" },
-          { name: "Big Picture", url: "https://feeds.megaphone.fm/the-big-picture" },
-          { name: "Knowing Faith", url: "https://feeds.simplecast.com/V2lHo6VQ" },
-          { name: "P1 with Matt and Tommy", url: "https://feeds.acast.com/public/shows/63e24225436c36001119fc66" },
+          {
+            name: "Bill Simmons Podcast",
+            url: "https://feeds.megaphone.fm/the-bill-simmons-podcast",
+          },
+          {
+            name: "The Watch",
+            url: "https://feeds.megaphone.fm/the-watch",
+          },
+          {
+            name: "Zach Lowe",
+            url: "https://feeds.megaphone.fm/zach-lowe",
+          },
+          {
+            name: "Joel Klatt",
+            url: "https://feeds.feedburner.com/BreakingTheHuddle",
+          },
+          {
+            name: "With the Perrys",
+            url: "https://feeds.simplecast.com/wZpv0WKy",
+          },
+          {
+            name: "Shally",
+            url: "https://www.shallowford.church/sermons?format=rss",
+          },
+          {
+            name: "Village Church",
+            url: "http://feeds.thevillagechurch.net/sermons",
+          },
+          {
+            name: "Ringer Tailgate",
+            url: "https://feeds.megaphone.fm/GLT4074129955",
+          },
+          {
+            name: "Big Picture",
+            url: "https://feeds.megaphone.fm/the-big-picture",
+          },
+          {
+            name: "Knowing Faith",
+            url: "https://feeds.simplecast.com/V2lHo6VQ",
+          },
+          {
+            name: "P1 with Matt and Tommy",
+            url: "https://feeds.acast.com/public/shows/63e24225436c36001119fc66",
+          },
         ];
 
         const showsContainer = document.getElementById("shows");
@@ -270,7 +315,8 @@
         const audio = document.getElementById("audio");
 
         const MAX_EPISODES = 5;
-        let currentShowIndex = 0;
+
+        let currentShowIndex = -1;
 
         function setStatus(message) {
           statusText.textContent = message;
@@ -287,7 +333,8 @@
           shows.forEach((show, index) => {
             const btn = document.createElement("button");
             btn.type = "button";
-            btn.className = "show-button" + (index === currentShowIndex ? " selected" : "");
+            btn.className =
+              "show-button" + (index === currentShowIndex ? " selected" : "");
             btn.textContent = show.name;
             btn.setAttribute("aria-pressed", index === currentShowIndex);
             btn.addEventListener("click", () => {
@@ -309,20 +356,67 @@
           });
         }
 
-        // Reliably fetch the feed. Tries direct first, falls back to a proxy if blocked by CORS.
-        async function fetchFeedWithFallback(feedUrl) {
+        function buildAllOriginsUrl(feedUrl) {
+          return (
+            "https://api.allorigins.win/get?url=" +
+            encodeURIComponent(feedUrl)
+          );
+        }
+
+        // FIX: Wrap streaming fetch so an intentional abort doesn't
+        // bubble up as an error and trigger the proxy fallback.
+        async function fetchFeedLimited(feedUrl, limit) {
+          const controller = new AbortController();
+          let collectedXml = "";
+          let intentionalAbort = false;
+
           try {
-            const resp = await fetch(feedUrl);
-            if (!resp.ok) throw new Error("Direct fetch failed");
-            return await resp.text();
+            const resp = await fetch(feedUrl, { signal: controller.signal });
+            if (!resp.ok) throw new Error("HTTP " + resp.status);
+
+            // No streaming support — grab everything
+            if (!resp.body) {
+              return await resp.text();
+            }
+
+            const reader = resp.body.getReader();
+            const decoder = new TextDecoder();
+
+            while (true) {
+              const { done, value } = await reader.read();
+              if (done) break;
+
+              collectedXml += decoder.decode(value, { stream: true });
+
+              const itemCount =
+                (collectedXml.match(/<item\b/gi) || []).length +
+                (collectedXml.match(/<entry\b/gi) || []).length;
+
+              if (itemCount >= limit) {
+                intentionalAbort = true;
+                controller.abort();
+                break; // exit loop — collectedXml is already returned below
+              }
+            }
           } catch (err) {
-            // Fallback to proxy if a CORS or network error occurs
-            const encoded = encodeURIComponent(feedUrl);
-            const proxyUrl = "https://api.allorigins.win/get?url=" + encoded;
-            const response = await fetch(proxyUrl);
-            if (!response.ok) throw new Error("Proxy fetch failed");
-            const data = await response.json();
-            return data.contents || "";
+            // Re-throw only if this was NOT our own intentional abort
+            if (!intentionalAbort) throw err;
+          }
+
+          return collectedXml;
+        }
+
+        async function fetchFeedWithFallback(feedUrl, limit) {
+          try {
+            const xml = await fetchFeedLimited(feedUrl, limit);
+            if (xml) return xml;
+            throw new Error("Empty response from direct fetch");
+          } catch (directErr) {
+            // CORS or network failure — fall back to proxy
+            const resp = await fetch(buildAllOriginsUrl(feedUrl));
+            if (!resp.ok) throw new Error("Proxy fetch failed");
+            const data = await resp.json();
+            return (data && data.contents) || "";
           }
         }
 
@@ -330,18 +424,18 @@
           episodesTitle.textContent = show.name;
           episodesCount.textContent = "";
           episodesList.innerHTML = "";
-          setStatus("Loading episodes...");
+          setStatus("Loading…");
 
           try {
-            const xmlString = await fetchFeedWithFallback(show.url);
+            const xmlString = await fetchFeedWithFallback(
+              show.url,
+              MAX_EPISODES
+            );
             if (!xmlString) throw new Error("Empty feed");
-            
-            // Parse full XML safely, then slice the array to limit DOM elements
+
             const episodes = parseRss(xmlString).slice(0, MAX_EPISODES);
 
             if (!episodes.length) {
-              episodesCount.textContent = "";
-              episodesList.innerHTML = "";
               setStatus("No episodes found.");
               return;
             }
@@ -349,8 +443,7 @@
             episodesCount.textContent = episodes.length + " episodes";
             renderEpisodes(episodes);
             clearStatus();
-          } catch (error) {
-            console.error(error);
+          } catch (err) {
             episodesList.innerHTML = "";
             episodesCount.textContent = "";
             setStatus("Could not load episodes.");
@@ -362,84 +455,67 @@
             const parser = new DOMParser();
             const doc = parser.parseFromString(xmlString, "application/xml");
             const items = Array.from(doc.getElementsByTagName("item"));
-            
-            if (!items.length) {
-              const entries = Array.from(doc.getElementsByTagName("entry"));
-              if (!entries.length) return [];
-              return entries.map((entry) => mapEntryToEpisode(entry));
-            }
-            return items.map((item) => mapItemToEpisode(item));
+            if (items.length) return items.map(mapItemToEpisode);
+            const entries = Array.from(doc.getElementsByTagName("entry"));
+            return entries.map(mapEntryToEpisode);
           } catch (e) {
             return [];
           }
         }
 
-        function textContentOrNull(parent, tagName) {
+        function textOf(parent, tagName) {
           const el = parent.getElementsByTagName(tagName)[0];
           return el ? el.textContent.trim() : null;
         }
 
         function mapItemToEpisode(item) {
-          const title = textContentOrNull(item, "title") || "Untitled episode";
-          const pubDate = textContentOrNull(item, "pubDate");
-          let audioUrl = null;
-
+          const title = textOf(item, "title") || "Untitled episode";
+          const pubDate = textOf(item, "pubDate");
           const enclosure = item.getElementsByTagName("enclosure")[0];
-          if (enclosure && enclosure.getAttribute("url")) {
-            audioUrl = enclosure.getAttribute("url");
-          } else {
-            const link = textContentOrNull(item, "link");
-            if (link && /^https?:\/\//i.test(link)) {
-              audioUrl = link;
-            }
-          }
-
+          const audioUrl =
+            (enclosure && enclosure.getAttribute("url")) ||
+            textOf(item, "link") ||
+            null;
           return { title, dateText: formatDate(pubDate), audioUrl };
         }
 
         function mapEntryToEpisode(entry) {
-          const title = textContentOrNull(entry, "title") || "Untitled episode";
-          const pubDate = textContentOrNull(entry, "updated") || textContentOrNull(entry, "published");
-          let audioUrl = null;
-
+          const title = textOf(entry, "title") || "Untitled episode";
+          const pubDate =
+            textOf(entry, "updated") || textOf(entry, "published");
           const links = Array.from(entry.getElementsByTagName("link"));
           const audioLink = links.find((l) => {
-            const rel = l.getAttribute("rel");
             const type = l.getAttribute("type") || "";
             return (
-              (rel === "enclosure" || type.indexOf("audio/") === 0 || type.indexOf("mpeg") !== -1) &&
-              l.getAttribute("href")
+              l.getAttribute("rel") === "enclosure" ||
+              type.startsWith("audio/") ||
+              type.includes("mpeg")
             );
           });
-          
-          if (audioLink) {
-            audioUrl = audioLink.getAttribute("href");
-          } else {
-            const hrefLink = links.find((l) => l.getAttribute("href"));
-            if (hrefLink) audioUrl = hrefLink.getAttribute("href");
-          }
-
+          const audioUrl =
+            (audioLink && audioLink.getAttribute("href")) ||
+            (links[0] && links[0].getAttribute("href")) ||
+            null;
           return { title, dateText: formatDate(pubDate), audioUrl };
         }
 
         function formatDate(raw) {
           if (!raw) return "";
-          const date = new Date(raw);
-          if (!isNaN(date.getTime())) {
-            try {
-              return date.toLocaleDateString(undefined, {
-                year: "numeric", month: "short", day: "numeric",
-              });
-            } catch (e) {
-              return date.toISOString().slice(0, 10);
-            }
+          const d = new Date(raw);
+          if (isNaN(d.getTime())) return raw;
+          try {
+            return d.toLocaleDateString(undefined, {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            });
+          } catch (_) {
+            return d.toISOString().slice(0, 10);
           }
-          return raw;
         }
 
         function renderEpisodes(episodes) {
           episodesList.innerHTML = "";
-
           episodes.forEach((episode) => {
             const li = document.createElement("li");
             li.className = "episode-item";
@@ -454,16 +530,16 @@
             titleEl.textContent = episode.title;
 
             const dateEl = document.createElement("div");
-            date.className = "episode-date";
-            dateEl.textContent = episode.dateText || "";
+            dateEl.className = "episode-date";
+            dateEl.textContent = episode.audioUrl
+              ? episode.dateText || ""
+              : (episode.dateText || "") + " (no audio)";
 
             button.appendChild(titleEl);
             button.appendChild(dateEl);
 
             if (episode.audioUrl) {
               button.addEventListener("click", () => playEpisode(episode));
-            } else {
-              dateEl.textContent = (episode.dateText || "") + " (no audio)";
             }
 
             li.appendChild(button);
@@ -476,14 +552,16 @@
           audio.src = episode.audioUrl;
           nowPlayingTitle.textContent = episode.title;
           playerContainer.classList.remove("hidden");
-          audio.play().catch(() => {
-            // Mobile browsers often block autoplay; user can just hit the play button
+          audio.play().catch(function () {
+            // Autoplay blocked — user can tap play manually
           });
         }
 
         function init() {
           renderShows();
           if (shows.length > 0) {
+            currentShowIndex = 0;
+            updateSelectedShowButtons();
             loadFeed(shows[0]);
           }
         }
