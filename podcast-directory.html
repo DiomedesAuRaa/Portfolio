@@ -71,15 +71,16 @@
     </div>
     <script>
       (function () {
-        const showsContainer  = document.getElementById("shows");
-        const episodesList    = document.getElementById("episodesList");
-        const episodesTitle   = document.getElementById("episodesTitle");
-        const episodesCount   = document.getElementById("episodesCount");
-        const statusText      = document.getElementById("statusText");
-        const playerContainer = document.getElementById("playerContainer");
-        const nowPlayingTitle = document.getElementById("nowPlayingTitle");
-        const audio           = document.getElementById("audio");
-        let shows = [], currentIndex = -1;
+        var showsContainer  = document.getElementById("shows");
+        var episodesList    = document.getElementById("episodesList");
+        var episodesTitle   = document.getElementById("episodesTitle");
+        var episodesCount   = document.getElementById("episodesCount");
+        var statusText      = document.getElementById("statusText");
+        var playerContainer = document.getElementById("playerContainer");
+        var nowPlayingTitle = document.getElementById("nowPlayingTitle");
+        var audio           = document.getElementById("audio");
+        var shows = [];
+        var currentIndex = -1;
 
         function buildAllTab(rawShows) {
           var all = [];
@@ -105,27 +106,56 @@
           return { name: "All", episodes: all, isAll: true };
         }
 
-        function setStatus(msg) { statusText.textContent = msg; statusText.classList.remove("hidden"); }
-        function clearStatus()  { statusText.textContent = ""; statusText.classList.add("hidden"); }
+        function setStatus(msg) {
+          statusText.textContent = msg;
+          statusText.classList.remove("hidden");
+        }
+
+        function clearStatus() {
+          statusText.textContent = "";
+          statusText.classList.add("hidden");
+        }
+
+        function selectShow(index) {
+          currentIndex = index;
+          var buttons = showsContainer.querySelectorAll(".show-button");
+          for (var i = 0; i < buttons.length; i++) {
+            if (i === index) {
+              buttons[i].classList.add("selected");
+            } else {
+              buttons[i].classList.remove("selected");
+            }
+          }
+        }
+
+        function makeShowClickHandler(index, show) {
+          return function () {
+            if (currentIndex === index) return;
+            selectShow(index);
+            renderEpisodes(show);
+          };
+        }
 
         function renderShows() {
           showsContainer.innerHTML = "";
-          shows.forEach((show, i) => {
-            const btn = document.createElement("button");
+          for (var i = 0; i < shows.length; i++) {
+            var show = shows[i];
+            var btn = document.createElement("button");
             btn.type = "button";
             btn.className = "show-button" + (i === currentIndex ? " selected" : "");
             btn.textContent = show.name;
-            btn.addEventListener("click", () => {
-              if (currentIndex === i) return;
-              currentIndex = i;
-              showsContainer.querySelectorAll(".show-button").forEach((b, j) => {
-                if (j === i) b.classList.add("selected");
-                else b.classList.remove("selected");
-              });
-              renderEpisodes(show);
-            });
+            btn.addEventListener("click", makeShowClickHandler(i, show));
             showsContainer.appendChild(btn);
-          });
+          }
+        }
+
+        function makeEpisodeClickHandler(ep) {
+          return function () {
+            audio.src = ep.audioUrl;
+            nowPlayingTitle.textContent = ep.title;
+            playerContainer.classList.remove("hidden");
+            try { audio.play(); } catch (e) {}
+          };
         }
 
         function renderEpisodes(show) {
@@ -138,34 +168,32 @@
           }
           episodesCount.textContent = show.episodes.length + " episodes";
           clearStatus();
-          show.episodes.forEach((ep) => {
-            const li = document.createElement("li");
+          for (var i = 0; i < show.episodes.length; i++) {
+            var ep = show.episodes[i];
+            var li = document.createElement("li");
             li.className = "episode-item";
-            const btn = document.createElement("button");
+            var btn = document.createElement("button");
             btn.type = "button";
             btn.className = "episode-button";
             btn.disabled = !ep.audioUrl;
-            const titleEl = document.createElement("div");
+            var titleEl = document.createElement("div");
             titleEl.className = "episode-title";
             titleEl.textContent = ep.title;
-            const dateEl = document.createElement("div");
+            var dateEl = document.createElement("div");
             dateEl.className = "episode-date";
+            var prefix = ep.showName ? ep.showName + " · " : "";
+            var datePart = ep.date || "";
             dateEl.textContent = ep.audioUrl
-              ? ((ep.showName ? ep.showName + " · " : "") + (ep.date || ""))
-              : ((ep.showName ? ep.showName + " · " : "") + (ep.date || "") + " (no audio)");
+              ? (prefix + datePart)
+              : (prefix + datePart + " (no audio)");
             btn.appendChild(titleEl);
             btn.appendChild(dateEl);
             if (ep.audioUrl) {
-              btn.addEventListener("click", () => {
-                audio.src = ep.audioUrl;
-                nowPlayingTitle.textContent = ep.title;
-                playerContainer.classList.remove("hidden");
-                audio.play().catch(() => {});
-              });
+              btn.addEventListener("click", makeEpisodeClickHandler(ep));
             }
             li.appendChild(btn);
             episodesList.appendChild(li);
-          });
+          }
         }
 
         var xhr = new XMLHttpRequest();
@@ -174,9 +202,9 @@
           if (xhr.readyState !== 4) return;
           if (xhr.status >= 200 && xhr.status < 300) {
             try {
-              shows = JSON.parse(xhr.responseText);
-              if (!shows.length) { setStatus("No shows found."); return; }
-              shows.unshift(buildAllTab(shows));
+              var raw = JSON.parse(xhr.responseText);
+              if (!raw.length) { setStatus("No shows found."); return; }
+              shows = [buildAllTab(raw)].concat(raw);
               currentIndex = 0;
               renderShows();
               renderEpisodes(shows[0]);
