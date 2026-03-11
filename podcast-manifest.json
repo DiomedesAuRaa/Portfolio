@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "NFL Over/Unders, an Oscars Preview, and a Brady-Pats Feud | With Cousin Sal, Sean Fennessey, and Seth Wickersham",
+        "date": "Mar 11, 2026",
+        "dateSort": "2026-03-11",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1019378840.mp3"
+      },
+      {
         "title": "Tatum\u2019s Stunning Return, Wemby\u2019s Big Weekend, and a 2011 MVP Deep Dive With Zach Lowe",
         "date": "Mar 09, 2026",
         "dateSort": "2026-03-09",
@@ -25,12 +31,6 @@
         "date": "Mar 02, 2026",
         "dateSort": "2026-03-02",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1515522766.mp3"
-      },
-      {
-        "title": "Luka\u2019s Strange L.A. Ride, a New York Sports Drought, Lost NBA Nicknames, and a Big Mailbag With Max Kellerman",
-        "date": "Feb 27, 2026",
-        "dateSort": "2026-02-27",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5861079987.mp3"
       }
     ]
   },
