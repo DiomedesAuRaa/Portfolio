@@ -317,20 +317,28 @@
             currentUrl = url;
             const bar = document.getElementById('playerBar');
             document.getElementById('nowPlayingTitle').textContent = title;
-            audio.src = url;
 
             const saved = getProgress(url);
-            if (saved > 10) {
-                audio.addEventListener('loadedmetadata', function onLoaded() {
-                    audio.currentTime = saved;
-                    audio.removeEventListener('loadedmetadata', onLoaded);
-                });
+
+            // Only set src and seek if this is a different episode
+            // Avoids re-downloading if user taps the same episode again
+            if (audio.dataset.loadedUrl !== url) {
+                audio.src = url;
+                audio.dataset.loadedUrl = url;
+
+                if (saved > 10) {
+                    // Seek only once metadata is ready — no double-buffer on range-supporting servers
+                    // On servers without range support this still downloads once, not twice
+                    audio.addEventListener('canplay', function onCanPlay() {
+                        audio.currentTime = saved;
+                        audio.removeEventListener('canplay', onCanPlay);
+                    });
+                }
             }
 
             bar.style.display = 'block';
             try { audio.play(); } catch(e) {}
 
-            // Refresh episode list to show active state
             renderEpisodes();
         }
 
@@ -338,7 +346,7 @@
             const content = document.getElementById('content');
             content.innerHTML = '<div class="loading">Loading...</div>';
             try {
-                const response = await fetch('podcast-manifest.json?cb=' + Date.now());
+                const response = await fetch('podcast-manifest.json');
                 if (!response.ok) throw new Error('HTTP ' + response.status);
                 const raw = await response.json();
                 if (!raw.length) { content.innerHTML = '<div class="error">No shows found.</div>'; return; }
