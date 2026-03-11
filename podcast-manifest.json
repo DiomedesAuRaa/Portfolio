@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our 2026 Chinese GP predictions",
+        "date": "Mar 11, 2026",
+        "dateSort": "2026-03-11",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b023799ac0576a5ac34784/media.mp3"
+      },
+      {
         "title": "Australian GP Driver Ratings",
         "date": "Mar 09, 2026",
         "dateSort": "2026-03-09",
@@ -344,12 +350,6 @@
         "date": "Mar 06, 2026",
         "dateSort": "2026-03-06",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69aa7b2c21c9999fa2447149/media.mp3"
-      },
-      {
-        "title": "Our 2026 Australian GP predictions",
-        "date": "Mar 03, 2026",
-        "dateSort": "2026-03-03",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69a61dde03124fd5a9c7f8ba/media.mp3"
       }
     ]
   }
