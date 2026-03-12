@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "Our Final 2026 Oscar Predictions: Who Will Win, and Who Should Win",
+        "date": "Mar 12, 2026",
+        "dateSort": "2026-03-12",
+        "audioUrl": "https://traffic.megaphone.fm/GLT2520019750.mp3?updated=1773276881"
+      },
+      {
         "title": "The \"Anything But Oscars\" Mailbag! Plus: \u2018Hoppers\u2019",
         "date": "Mar 09, 2026",
         "dateSort": "2026-03-09",
@@ -274,18 +280,18 @@
         "date": "Feb 27, 2026",
         "dateSort": "2026-02-27",
         "audioUrl": "https://traffic.megaphone.fm/GLT4124384574.mp3"
-      },
-      {
-        "title": "The Final Best Picture Power Rankings and a \u2018Sinners\u2019 Second Look With Autumn Durald Arkapaw!",
-        "date": "Feb 24, 2026",
-        "dateSort": "2026-02-24",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7386346303.mp3"
       }
     ]
   },
   {
     "name": "Knowing Faith",
     "episodes": [
+      {
+        "title": "Should The 10 Commandments Be Posted Publicly? (Part 2)",
+        "date": "Mar 12, 2026",
+        "dateSort": "2026-03-12",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/74351724-e9b2-41a6-8f48-a98effc53d48/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=74351724-e9b2-41a6-8f48-a98effc53d48&feed=V2lHo6VQ"
+      },
       {
         "title": "Should The 10 Commandments Be Posted Publicly? (Part 1)",
         "date": "Mar 05, 2026",
@@ -309,12 +315,6 @@
         "date": "Feb 12, 2026",
         "dateSort": "2026-02-12",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/bc25d484-385c-4b4d-839e-e938f4e48289/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=bc25d484-385c-4b4d-839e-e938f4e48289&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Does The Manner Of Our Burial Matter?",
-        "date": "Feb 05, 2026",
-        "dateSort": "2026-02-05",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/4cb4737b-a40b-47f8-83f0-11694d7da0ca/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=4cb4737b-a40b-47f8-83f0-11694d7da0ca&feed=V2lHo6VQ"
       }
     ]
   },
