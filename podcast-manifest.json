@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Bam Backlash, Kawhi\u2019s Heater, East vs. West, and SGA vs. Jokic, With Tim Legler",
+        "date": "Mar 13, 2026",
+        "dateSort": "2026-03-13",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5624412209.mp3"
+      },
+      {
         "title": "NFL Over/Unders, an Oscars Preview, and a Brady-Pats Feud | With Cousin Sal, Sean Fennessey, and Seth Wickersham",
         "date": "Mar 11, 2026",
         "dateSort": "2026-03-11",
@@ -25,12 +31,6 @@
         "date": "Mar 04, 2026",
         "dateSort": "2026-03-04",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6331047790.mp3?updated=1772604741"
-      },
-      {
-        "title": "Burning NBA Questions and a \u201cHoly Crap, Charlotte!!!\u201d Deep Dive With Zach Lowe",
-        "date": "Mar 02, 2026",
-        "dateSort": "2026-03-02",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1515522766.mp3"
       }
     ]
   },
