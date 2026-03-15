@@ -38,14 +38,13 @@
     }
 
     /* ── Shell scrolls internally; page never scrolls ── */
+    html, body { height: 100%; overflow: hidden; }
     .shell {
-      position: fixed;
-      inset: 0;
+      height: 100%;
       overflow-y: auto;
       -webkit-overflow-scrolling: touch;
       max-width: 340px;
-      left: 50%;
-      transform: translateX(-50%);
+      margin: 0 auto;
       padding: 6px 6px 8px;
       display: flex;
       flex-direction: column;
@@ -368,7 +367,7 @@ function startGame() {
   next    = makePiece(nextFromBag());
   spawnPiece();
   closeOverlay();
-  lockFocusToGame(canvas);
+  refocusCapture();
   updateUI();
   scheduleDropTimer();
 }
@@ -635,7 +634,6 @@ window.addEventListener('load',()=>{
 
 
 
-document.getElementById('nav-title').textContent = 'Tetris';
 
 /* ── KaiOS: full arrow key takeover ─────────────────────
    1. window capture — fires before spatial nav engine
@@ -678,21 +676,8 @@ document.addEventListener('focusout', function(e) {
   if(el) setTimeout(function(){ el.focus(); }, 30);
 });
 
-function lockFocusToGame(el) {
-  document.querySelectorAll('a, button, input').forEach(function(n){
-    n.setAttribute('tabindex', '-1');
-  });
-  if(el) { el.setAttribute('tabindex','0'); el.style.outline='none'; el.focus(); }
-}
 
-function unlockFocus() {
-  /* no-op — nav uses onclick, not keyboard focus */
-}
 
-function toggleNav() {
-  var nl = document.getElementById('nav-links');
-  if(nl) nl.style.display = nl.style.display === 'none' ? 'flex' : 'none';
-}
 
 
 
