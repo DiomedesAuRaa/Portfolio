@@ -233,22 +233,93 @@
     td.rank      { color: var(--text-dim); width: 18px; }
     td.score-val { text-align: right; color: var(--accent); }
     td.date-val  { text-align: right; color: var(--text-dim); font-size: 10px; }
+  
+    /* ── Compact nav ─────────────────────────────────────── */
+    .compact-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 2px;
+      border-bottom: 1px solid var(--border);
+      gap: 4px;
+    }
+    .nav-home {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 12px;
+      padding: 3px 6px;
+      background: var(--accent-lo);
+      border: 1px solid var(--accent-hi);
+      border-radius: var(--radius);
+      white-space: nowrap;
+      tabindex: -1;
+    }
+    .nav-title {
+      flex: 1;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .nav-toggle {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 14px;
+      padding: 3px 7px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      line-height: 1;
+    }
+    .nav-toggle:hover { color: var(--accent); border-color: var(--accent-hi); }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding: 4px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 11px;
+      padding: 2px 6px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .nav-links a:hover { color: var(--accent); border-color: var(--accent-hi); }
+
+  
+    /* KaiOS spatial nav — pin focus to game element */
+    canvas:focus, #board:focus, #grid:focus {
+      outline: none;
+      nav-up: self;
+      nav-down: self;
+      nav-left: self;
+      nav-right: self;
+    }
+    /* Wordle grid needs focus too */
+    #grid { outline: none; }
+
   </style>
 </head>
 <body>
 <div class="shell">
-  <nav>
-    <a href="../home.html">home</a>
-    <a href="../news.html">news</a>
-    <a href="../weather.html">weather</a>
-    <a href="../sports-scores.html">scores</a>
-    <a href="../standings.html">standings</a>
-    <a href="../reddit-digest.html">reddit</a>
+    <div class="compact-nav">
+    <a href="../home.html" class="nav-home">← Home</a>
+    <span class="nav-title" id="nav-title">GAME</span>
+    <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()">☰</button>
+  </div>
+  <div class="nav-links" id="nav-links" style="display:none">
     <a href="2048.html">2048</a>
     <a href="snake.html">snake</a>
-    <a href="minesweeper.html" class="active">mines</a>
+    <a href="minesweeper.html">mines</a>
+    <a href="tetris.html">tetris</a>
+    <a href="wordle.html">wordle</a>
     <a href="../contact.html">contact</a>
-  </nav>
+  </div>
 
   <div class="hdr">
     <h1>Minesweeper</h1>
@@ -278,7 +349,7 @@
   </div>
 
   <div class="board-wrap" id="board-wrap">
-    <div id="board"></div>
+    <div id="board" tabindex="0" style="outline:none"></div>
     <div class="overlay show" id="overlay">
       <h2 id="ov-title">MINESWEEPER</h2>
       <p id="ov-msg">Navigate with arrow keys or d-pad.<br>Enter/Space = reveal · F = flag<br>Or tap to reveal, long-press to flag.</p>
@@ -361,6 +432,7 @@ function newGame() {
   elapsed  = 0; flagMode = false;
   clearInterval(timerInterval);
   cursor = {x: Math.floor(cols/2), y: Math.floor(rows/2)};
+  lockFocusToGame(document.getElementById("board"));
 
   document.getElementById('timer').textContent      = '0s';
   document.getElementById('mines-left').textContent = mineCount;
@@ -607,6 +679,37 @@ document.addEventListener("keydown", function(e) {
   var scrollKeys = ["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"," ","Enter"];
   if(scrollKeys.indexOf(e.key) !== -1) e.preventDefault();
 }, {passive: false, capture: true});
+
+/* ── KaiOS: kill scroll & spatial nav ───────────────────── */
+document.addEventListener('keydown', function(e) {
+  var keys = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if(keys.indexOf(e.key) !== -1) e.preventDefault();
+}, {passive: false, capture: true});
+
+function lockFocusToGame(el) {
+  /* Pull focus to game element; strip tabindex from everything else
+     so KaiOS spatial nav has nowhere to escape to */
+  document.querySelectorAll('a, button').forEach(function(n) {
+    n.setAttribute('data-ti', n.tabIndex);
+    n.tabIndex = -1;
+  });
+  if(el) { el.tabIndex = 0; el.focus(); }
+}
+
+function unlockFocus() {
+  document.querySelectorAll('a, button').forEach(function(n) {
+    var ti = n.getAttribute('data-ti');
+    if(ti !== null) n.tabIndex = parseInt(ti);
+    else n.removeAttribute('tabindex');
+  });
+}
+
+function toggleNav() {
+  var nl = document.getElementById('nav-links');
+  nl.style.display = nl.style.display === 'none' ? 'flex' : 'none';
+}
+
+document.getElementById('nav-title').textContent = 'Mines';
 </script>
 </body>
 </html>
