@@ -243,6 +243,35 @@
     .overlay-full h2{font-size:20px;color:var(--accent);}
     .overlay-full p{font-size:12px;color:var(--text-dim);text-align:center;}
 
+  
+    /* ── Tap-to-activate banner ─────────────────────────── */
+    .game-zone { position: relative; flex-shrink: 0; }
+    #tap-banner {
+      position: absolute;
+      inset: 0;
+      background: rgba(255,69,0,0.10);
+      border: 2px dashed var(--accent);
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      z-index: 4;
+      cursor: pointer;
+    }
+    #tap-banner .tb-icon { font-size: 22px; }
+    #tap-banner .tb-text {
+      font-size: 11px;
+      font-weight: bold;
+      color: var(--accent);
+      letter-spacing: 0.5px;
+    }
+    #tap-banner .tb-sub {
+      font-size: 10px;
+      color: var(--text-dim);
+    }
+
   </style>
 </head>
 <body>
@@ -254,7 +283,7 @@
 
 <div class="shell">
   <!-- KaiOS key capture — always focused, invisible -->
-  <input id="key-capture" type="text" readonly autocomplete="off">
+  <input id="key-capture" type="text" inputmode="none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 
   <div class="nav-bar">
     <a href="../home.html" class="nav-home">← Home</a>
@@ -281,9 +310,15 @@
     <div class="score-box"><div class="label">Moves</div><div class="val" id="moves">0</div></div>
   </div>
 
-  <div class="board-wrap">
+  <div class="game-zone"><div class="board-wrap">
     <div id="board"></div>
   </div>
+    <div id="tap-banner" onclick="activateKeys()">
+      <div class="tb-icon">▶</div>
+      <div class="tb-text">TAP TO USE D-PAD KEYS</div>
+      <div class="tb-sub">then arrow keys navigate</div>
+    </div>
+  </div><!-- game-zone -->
 
   <div class="controls">
     <button class="btn" onclick="newGame()">↺ New</button>
@@ -328,6 +363,7 @@ let grid, score, moves, prevGrid, prevScore, prevMoves, won;
 function emptyGrid() { return Array.from({length:4}, ()=>Array(4).fill(0)); }
 
 function newGame() {
+  activateKeys();
   grid = emptyGrid();
   score = 0; moves = 0; won = false;
   prevGrid = null; prevScore = 0; prevMoves = 0;
@@ -567,41 +603,58 @@ function renderTable(scores,tbody){
   if(!scores.length) tbody.innerHTML='<tr><td colspan="3" style="color:var(--text-dim);padding:4px">no scores yet</td></tr>';
 }
 
-/* ── KaiOS key capture ──────────────────────────────────
-   Hidden <input> stays focused — KaiOS gives inputs full
-   keyboard ownership so spatial nav cannot intercept.    */
+/* ── KaiOS key capture ──────────────────────────────────────
+   KaiOS web apps cannot grab keyboard on load without a user
+   gesture. Pattern: tap game area → focus hidden input →
+   arrow keys owned until user navigates away.             */
 var _keyCapture = document.getElementById('key-capture');
+var _activated  = false;
 
-function refocusCapture() {
-  if(_keyCapture && document.activeElement !== _keyCapture) {
-    _keyCapture.focus();
-  }
+function activateKeys() {
+  _keyCapture.focus();
+  _activated = true;
+  var banner = document.getElementById('tap-banner');
+  if(banner) banner.style.display = 'none';
 }
 
-window.addEventListener('keydown', function(e) {
-  var blocked = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(blocked.indexOf(e.key) !== -1) {
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    if(typeof gameKey === 'function') gameKey(e.key);
-  }
-}, {capture: true, passive: false});
+function deactivateKeys() {
+  _activated = false;
+  var banner = document.getElementById('tap-banner');
+  if(banner) banner.style.display = 'flex';
+}
 
 _keyCapture.addEventListener('keydown', function(e) {
-  var blocked = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(blocked.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
+  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if(typeof gameKey === 'function') gameKey(e.key);
 });
 
-document.addEventListener('click',    function(){ refocusCapture(); });
-document.addEventListener('touchend', function(){ refocusCapture(); });
+/* Belt+suspenders: window capture for any keys that slip through */
+window.addEventListener('keydown', function(e) {
+  if(!_activated) return;
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
+  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if(typeof gameKey === 'function') gameKey(e.key);
+}, {capture: true, passive: false});
+
+_keyCapture.addEventListener('blur', function() {
+  setTimeout(function() {
+    /* Only show banner if focus went to something outside the game */
+    if(document.activeElement !== _keyCapture) deactivateKeys();
+  }, 100);
+});
+
+/* Nav/button taps re-focus after action */
+function refocusCapture() {
+  if(_activated) activateKeys();
+}
 
 function toggleNav() {
   var nl = document.getElementById('nav-links');
   if(nl) nl.classList.toggle('open');
-  refocusCapture();
 }
 
+/* Leaderboard fetch helper */
 function lbFetch(scoresUrl, lsKey, topN, sortFn) {
   var status = document.getElementById('lb-status');
   var tbody  = document.getElementById('lb-body');
@@ -635,8 +688,9 @@ function lbSave(key, entry, topN, sortFn) {
   scores.sort(sortFn);
   localStorage.setItem(key, JSON.stringify(scores.slice(0,topN)));
 }
-
-window.addEventListener('load', function(){ refocusCapture(); });
+function lbRender(scores, tbody) {
+  if(typeof renderTable === 'function') renderTable(scores, tbody);
+}
 
 </script>
 </body>
