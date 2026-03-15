@@ -3,400 +3,165 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>Wordle | Josh</title>
+  <title>Wordle</title>
   <style>
 
-    /* ── Reset ─────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 13px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      overscroll-behavior: none;
-    }
-
-    /* ── KaiOS key capture input ────────────────────────
-       position:fixed at 0,0 with size 0 — invisible but
-       always focused so KaiOS treats this page as an app  */
-    #key-capture {
-      position: fixed;
-      top: 0; left: 0;
-      width: 1px; height: 1px;
-      opacity: 0;
-      border: none; outline: none;
-      background: transparent;
-      color: transparent;
-      pointer-events: none;
-      z-index: 9999;
-    }
-
-    /* ── Shell scrolls internally; page never scrolls ── */
-    html, body { height: 100%; overflow: hidden; }
-    .shell {
-      height: 100%;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 6px 6px 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    /* ── Compact nav ────────────────────────────────────*/
-    .nav-bar {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 4px;
-      flex-shrink: 0;
-    }
-    .nav-home {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 11px;
-      padding: 3px 7px;
-      background: var(--accent-lo);
-      border: 1px solid var(--accent-hi);
-      border-radius: var(--radius);
-      white-space: nowrap;
-    }
-    .nav-title {
-      flex: 1;
-      text-align: center;
-      font-size: 12px;
-      font-weight: bold;
-      color: var(--accent);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    .nav-menu-btn {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 15px;
-      padding: 2px 7px;
-      border-radius: var(--radius);
-      cursor: pointer;
-      line-height: 1.4;
-    }
-    .nav-links {
-      display: none;
-      flex-wrap: wrap;
-      gap: 4px;
-      padding: 4px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-links.open { display: flex; }
-    .nav-links a {
-      color: var(--text-dim);
-      text-decoration: none;
-      font-size: 11px;
-      padding: 2px 6px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-    }
-    .nav-links a.cur { color: var(--accent); border-color: var(--accent-hi); }
-
-    /* ── Score boxes ────────────────────────────────────*/
-    .score-bar { display: flex; gap: 5px; flex-shrink: 0; }
-    .score-box {
-      flex: 1;
-      background: var(--accent-lo);
-      border: 1px solid var(--surface2);
-      border-top: 2px solid var(--accent);
-      border-radius: var(--radius);
-      text-align: center;
-      padding: 4px 2px 3px;
-    }
-    .score-box .label {
-      font-size: 9px; color: var(--text-dim);
-      text-transform: uppercase; letter-spacing: 1px;
-    }
-    .score-box .val {
-      font-size: 15px; color: var(--accent);
-      font-weight: bold; line-height: 1.2;
-    }
-
-    /* ── Buttons ────────────────────────────────────────*/
-    .btn {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 11px;
-      padding: 5px 9px;
-      border-radius: var(--radius);
-      cursor: pointer;
-    }
-    .btn:active { color: var(--accent); border-color: var(--accent-hi); }
-
-    /* ── Controls row ───────────────────────────────────*/
-    .controls {
-      display: flex; gap: 5px;
-      justify-content: space-between;
-      flex-shrink: 0;
-    }
-
-    /* ── D-pad ──────────────────────────────────────────*/
-    .dpad {
-      display: grid;
-      grid-template-columns: repeat(3, 40px);
-      grid-template-rows:    repeat(3, 40px);
-      gap: 3px;
-      margin: 0 auto;
-      width: fit-content;
-      flex-shrink: 0;
-    }
-    .dpad .btn {
-      width: 40px; height: 40px;
-      padding: 0; font-size: 16px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .dpad .btn-sm { font-size: 10px; line-height: 1.2; text-align: center; }
-
-    .hint {
-      font-size: 10px; color: var(--text-dim);
-      text-align: center; flex-shrink: 0;
-    }
-
-    /* ── Leaderboard ────────────────────────────────────*/
-    .lb-wrap { border-top: 1px solid var(--border); padding-top: 5px; flex-shrink: 0; }
-    .lb-hdr {
-      font-size: 10px; color: var(--text-dim);
-      text-transform: uppercase; letter-spacing: 1px;
-      margin-bottom: 4px;
-      display: flex; justify-content: space-between;
-    }
-    .lb-status { font-size: 9px; }
-    .lb-status.ok  { color: var(--accent-hi); }
-    .lb-status.err { color: #a05030; }
-    table { width: 100%; border-collapse: collapse; font-size: 11px; }
-    th { color: var(--text-dim); font-weight: normal; text-align: left;
-         padding: 1px 3px; border-bottom: 1px solid var(--border); }
-    td { padding: 2px 3px; color: var(--text);
-         border-bottom: 1px solid var(--surface2); }
-    tr:first-child td { color: var(--accent); }
-    td.r { color: var(--text-dim); width: 18px; }
-    td.sv { text-align: right; color: var(--accent); }
-    td.dv { text-align: right; color: var(--text-dim); font-size: 10px; }
-
-
     :root {
-      --bg:#fff; --surface:#f6f7f8; --surface2:#edeff1; --border:#edeff1;
-      --accent:#ff4500; --accent-hi:#ff6314; --accent-lo:#fff3ef;
-      --text:#1c1c1c; --text-dim:#878a8c; --radius:4px;
-      --tc:#ff4500; --tp:#ffb300; --ta:#787c7e;
+      --bg:#0d1b2a; --bg2:#1a2f45; --bg3:#243b55;
+      --accent:#00c8ff; --accent2:#ff6b35;
+      --text:#fff; --text-dim:#8aafc8;
+      --softkey-bg:#0a1628;
     }
-    /* Wordle shell can scroll (keyboard takes up space) */
-    .shell { overflow-y: auto; }
-    .meta-bar{
-      display:flex;justify-content:space-between;align-items:center;
-      font-size:10px;color:var(--text-dim);background:var(--accent-lo);
-      border:1px solid var(--surface2);border-left:3px solid var(--accent);
-      border-radius:var(--radius);padding:4px 7px;flex-shrink:0;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{
+      width:240px;max-width:240px;height:320px;max-height:320px;
+      overflow:hidden;background:var(--bg);color:var(--text);
+      font-family:'Segoe UI',Arial,sans-serif;font-size:12px;
+      user-select:none;-webkit-user-select:none;touch-action:manipulation;
     }
-    .meta-bar strong{color:var(--accent);}
-    .toast{
-      position:fixed;top:50px;left:50%;transform:translateX(-50%);
-      background:var(--text);color:#fff;font-size:12px;font-weight:bold;
-      padding:6px 14px;border-radius:20px;opacity:0;transition:opacity .2s;
-      z-index:20;pointer-events:none;white-space:nowrap;
+    .shell{display:flex;flex-direction:column;width:240px;height:320px;overflow:hidden;position:relative}
+    .game-header{
+      background:var(--bg2);padding:4px 8px 3px;
+      display:flex;align-items:center;justify-content:space-between;
+      border-bottom:1px solid var(--bg3);flex-shrink:0;height:30px;
     }
-    .toast.show{opacity:1;}
-    .grid-wrap{display:flex;justify-content:center;padding:4px 0;flex-shrink:0;}
-    #grid{
-      display:grid;grid-template-rows:repeat(6,1fr);
-      grid-template-columns:repeat(5,1fr);gap:5px;
-      width:min(260px,82vw);
+    .game-title{font-size:13px;font-weight:bold;color:var(--accent);letter-spacing:1px}
+    .score-strip{display:flex;gap:8px;align-items:center}
+    .score-item{text-align:center}
+    .score-item .sl{font-size:8px;color:var(--text-dim);text-transform:uppercase;display:block}
+    .score-item .sv{font-size:12px;font-weight:bold;color:#fff}
+    .score-item .sv.hi{color:var(--accent)}
+    .game-area{
+      flex:1;display:flex;align-items:center;justify-content:center;
+      background:var(--bg);overflow:hidden;position:relative;
     }
-    .tile{
-      aspect-ratio:1;display:flex;align-items:center;justify-content:center;
-      font-size:clamp(16px,6vw,22px);font-weight:900;
-      border:2px solid #d3d6da;background:#fff;color:var(--text);
-      text-transform:uppercase;border-radius:2px;
+    #tap-banner{
+      position:absolute;inset:0;background:rgba(13,27,42,0.88);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:5px;z-index:10;cursor:pointer;
     }
-    .tile.filled{border-color:#999;animation:pop .1s ease;}
-    .tile.correct{background:var(--tc);border-color:var(--tc);color:#fff;}
-    .tile.present{background:var(--tp);border-color:var(--tp);color:#fff;}
-    .tile.absent {background:var(--ta);border-color:var(--ta);color:#fff;}
-    .tile.shake  {animation:shake .4s ease;}
-    @keyframes pop  {0%{transform:scale(1.1)}100%{transform:scale(1)}}
-    @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
-    .keyboard{display:flex;flex-direction:column;gap:5px;padding:0 2px;flex-shrink:0;}
-    .kb-row{display:flex;gap:4px;justify-content:center;}
-    .key{
-      height:38px;min-width:26px;flex:1;max-width:32px;
-      background:#edeff1;border:none;border-radius:3px;
-      font-size:12px;font-weight:700;color:var(--text);cursor:pointer;
+    #tap-banner .tb-icon{font-size:26px}
+    #tap-banner .tb-text{font-size:11px;font-weight:bold;color:var(--accent)}
+    #tap-banner .tb-sub{font-size:9px;color:var(--text-dim)}
+    .overlay{
+      position:absolute;inset:0;background:rgba(13,27,42,0.93);
+      display:none;flex-direction:column;align-items:center;justify-content:center;
+      gap:8px;z-index:8;
+    }
+    .overlay.show{display:flex}
+    .overlay h2{font-size:18px;font-weight:bold;color:var(--accent)}
+    .overlay p{font-size:11px;color:var(--text-dim);text-align:center;line-height:1.5}
+    .ov-btn{
+      background:var(--accent2);color:#fff;border:none;
+      padding:6px 20px;border-radius:20px;font-size:12px;font-weight:bold;cursor:pointer;
+    }
+    .softkeys{
+      background:var(--softkey-bg);border-top:1px solid var(--bg3);
+      display:flex;align-items:center;height:26px;flex-shrink:0;
+    }
+    .sk{
+      flex:1;height:100%;background:none;border:none;color:var(--text);
+      font-size:11px;font-weight:bold;cursor:pointer;padding:0 4px;
       display:flex;align-items:center;justify-content:center;
-      text-transform:uppercase;-webkit-tap-highlight-color:transparent;
     }
-    .key.wide{max-width:46px;font-size:10px;}
-    .key:active{filter:brightness(.9);}
-    .key.correct{background:var(--tc);color:#fff;}
-    .key.present{background:var(--tp);color:#fff;}
-    .key.absent {background:#c0c2c4;color:#fff;}
-    .result-bar{
-      background:var(--accent-lo);border:1px solid var(--surface2);
-      border-left:3px solid var(--accent);border-radius:var(--radius);
-      padding:8px 10px;font-size:12px;display:none;flex-shrink:0;
+    .sk:active{background:var(--bg3)}
+    .sk.left{justify-content:flex-start;color:var(--accent)}
+    .sk.right{justify-content:flex-end;color:var(--accent)}
+    .sk.mid{font-size:11px;color:#fff}
+    .nav-drawer{
+      position:absolute;top:0;left:0;right:0;background:var(--bg2);
+      border-bottom:2px solid var(--accent);z-index:20;
+      transform:translateY(-100%);transition:transform 0.15s ease;
     }
-    .result-bar.show{display:block;}
-    .result-bar strong{color:var(--accent);font-size:14px;}
-    .result-bar .sub{color:var(--text-dim);font-size:11px;margin-top:2px;}
-    .result-bar .share{margin-top:6px;display:flex;gap:5px;}
-    .result-bar .share .btn{flex:1;}
+    .nav-drawer.open{transform:translateY(0)}
+    .nav-drawer a{
+      display:block;padding:7px 10px;color:var(--text-dim);
+      text-decoration:none;font-size:12px;border-bottom:1px solid var(--bg3);
+    }
+    .nav-drawer a.cur{color:var(--accent);font-weight:bold}
+    .nav-close{display:flex;align-items:center;justify-content:space-between;padding:5px 10px;background:var(--bg3)}
+    .nav-close span{font-size:11px;color:var(--text-dim)}
+    .nav-close button{background:none;border:none;color:var(--accent);font-size:14px;cursor:pointer}
+    #key-capture{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;border:none;outline:none}
 
-  
-    /* ── Tap-to-activate banner ─────────────────────────── */
-    .game-zone { position: relative; flex-shrink: 0; }
-    #tap-banner {
-      position: absolute;
-      inset: 0;
-      background: rgba(255,69,0,0.10);
-      border: 2px dashed var(--accent);
-      border-radius: var(--radius);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      z-index: 4;
-      cursor: pointer;
-    }
-    #tap-banner .tb-icon { font-size: 22px; }
-    #tap-banner .tb-text {
-      font-size: 11px;
-      font-weight: bold;
-      color: var(--accent);
-      letter-spacing: 0.5px;
-    }
-    #tap-banner .tb-sub {
-      font-size: 10px;
-      color: var(--text-dim);
-    }
-
-  
-    /* ── Nokia 2780 Flip: 240×320px exact fit ──────────── */
-    html, body {
-      width: 240px !important;
-      max-width: 240px !important;
-      overflow-x: hidden;
-    }
-    .shell {
-      width: 240px !important;
-      max-width: 240px !important;
-      padding: 3px 4px 4px !important;
-      gap: 3px !important;
-    }
-    /* Nav: single tight row */
-    .nav-bar { padding-bottom: 3px !important; }
-    .nav-home { font-size: 10px !important; padding: 2px 5px !important; }
-    .nav-title { font-size: 10px !important; }
-    .nav-menu-btn { font-size: 12px !important; padding: 1px 5px !important; }
-    /* Score boxes: compact */
-    .score-box { padding: 2px 1px 2px !important; }
-    .score-box .label { font-size: 8px !important; letter-spacing: 0 !important; }
-    .score-box .val { font-size: 13px !important; }
-    /* Buttons */
-    .btn { font-size: 10px !important; padding: 4px 7px !important; }
-    /* D-pad: 32px cells to fit width */
-    .dpad {
-      grid-template-columns: repeat(3, 32px) !important;
-      grid-template-rows: repeat(3, 32px) !important;
-      gap: 2px !important;
-    }
-    .dpad .btn { width: 32px !important; height: 32px !important; font-size: 13px !important; }
-    /* Hint */
-    .hint { font-size: 9px !important; }
-    /* Headings */
-    h1 { font-size: 16px !important; }
-    /* Tap banner text */
-    #tap-banner .tb-text { font-size: 10px !important; }
-    #tap-banner .tb-sub  { font-size: 9px !important; }
-    #tap-banner .tb-icon { font-size: 16px !important; }
-
-    /* Wordle grid: 5 tiles, fit in 232px with 4px gaps → tile=(232-4*4)/5=43px */
-    #grid {
-      width: 232px !important;
-      gap: 4px !important;
-    }
-    .tile { font-size: 18px !important; }
-    /* Keyboard: fit 10 keys per row in 232px */
-    .key { min-width: 20px !important; height: 34px !important; font-size: 11px !important; }
-    .key.wide { max-width: 34px !important; font-size: 9px !important; }
-
+    .shell{overflow-y:auto;height:320px;}
+    .w-meta{display:flex;justify-content:space-between;font-size:9px;color:var(--text-dim);
+      padding:2px 8px;background:var(--bg2);border-bottom:1px solid var(--bg3);flex-shrink:0;}
+    .w-meta strong{color:var(--accent);}
+    #grid{display:grid;grid-template-rows:repeat(6,1fr);grid-template-columns:repeat(5,1fr);
+      gap:4px;width:228px;}
+    .tile{aspect-ratio:1;display:flex;align-items:center;justify-content:center;
+      font-size:20px;font-weight:900;border:2px solid var(--bg3);background:var(--bg2);
+      color:#fff;text-transform:uppercase;border-radius:4px;}
+    .tile.filled{border-color:var(--text-dim);animation:wpop .1s ease;}
+    .tile.correct{background:#2e7d32;border-color:#2e7d32;}
+    .tile.present{background:#f57c00;border-color:#f57c00;}
+    .tile.absent{background:#37474f;border-color:#37474f;}
+    .tile.shake{animation:wshake .4s ease;}
+    @keyframes wpop{0%{transform:scale(1.1)}100%{transform:scale(1)}}
+    @keyframes wshake{0%,100%{transform:translateX(0)}25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+    .keyboard{display:flex;flex-direction:column;gap:4px;padding:4px;flex-shrink:0;}
+    .kb-row{display:flex;gap:3px;justify-content:center;}
+    .key{height:34px;min-width:19px;flex:1;max-width:26px;background:var(--bg3);border:none;
+      border-radius:4px;font-size:11px;font-weight:700;color:#fff;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;text-transform:uppercase;}
+    .key.wide{max-width:38px;font-size:9px;}
+    .key:active{filter:brightness(1.4);}
+    .key.correct{background:#2e7d32;}.key.present{background:#f57c00;}.key.absent{background:#455a64;}
+    .result-bar{background:var(--bg2);padding:5px 8px;font-size:11px;flex-shrink:0;border-top:1px solid var(--bg3);}
+    .result-bar strong{color:var(--accent);}
+    .result-bar .rsub{color:var(--text-dim);font-size:10px;margin-top:2px;}
+    
   </style>
 </head>
 <body>
-<div class="toast" id="toast"></div>
+<input id="key-capture" type="text" inputmode="none" autocomplete="off">
 <div class="shell">
-  <!-- KaiOS key capture — always focused, invisible -->
-  <input id="key-capture" type="text" inputmode="none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-
-  <div class="nav-bar">
-    <a href="../home.html" class="nav-home">← Home</a>
-    <span class="nav-title">WORDLE</span>
-    <button class="nav-menu-btn" onclick="toggleNav()">☰</button>
+  <div class="nav-drawer" id="nav-drawer">
+    <div class="nav-close"><span>NAVIGATE</span><button onclick="toggleNav()">&#x2715;</button></div>
+    <a href="../home.html">&#x2190; Home</a>
+    <a href="2048.html">2048</a>
+    <a href="snake.html">Snake</a>
+    <a href="minesweeper.html">Minesweeper</a>
+    <a href="tetris.html">Tetris</a>
+    <a href="wordle.html" class="cur">Wordle</a>
   </div>
-  <div class="nav-links" id="nav-links">
-    <a href="2048.html" >2048</a>
-    <a href="snake.html" >snake</a>
-    <a href="minesweeper.html" >mines</a>
-    <a href="tetris.html" >tetris</a>
-    <a href="wordle.html" class="cur">wordle</a>
-    <a href="../contact.html">contact</a>
+  <div class="game-header">
+    <span class="game-title">WORDLE</span>
+    <span id="puzzle-num" style="font-size:10px;color:var(--text-dim)">#--</span>
   </div>
-
-  <div style="display:flex;align-items:baseline;justify-content:space-between;flex-shrink:0">
-    <h1 style="font-size:22px;color:var(--accent);letter-spacing:-1px">Wordle</h1>
-    <span style="color:var(--text-dim);font-size:10px" id="puzzle-num">#—</span>
-  </div>
-
-  <div class="meta-bar">
+  <div class="w-meta">
     <span id="meta-date">Today</span>
-    <span>Streak: <strong id="streak">0</strong> 🔥</span>
-    <span>Wins: <strong id="wins">0</strong></span>
+    <span>Streak:<strong id="streak">0</strong> Wins:<strong id="wins">0</strong></span>
   </div>
-
-  <div class="game-zone"><div class="grid-wrap"><div id="grid" tabindex="-1" onclick="activateKeys()"></div></div>
-
-  <div class="result-bar" id="result-bar">
-    <strong id="result-title">—</strong>
-    <div class="sub" id="result-answer"></div>
-    <div class="share">
-      <button class="btn" onclick="copyShare()">⎘ Copy</button>
-      <button class="btn" onclick="resetForDemo()">↺ Practice</button>
+  <div class="game-area" onclick="activateKeys()">
+    <div style="display:flex;flex-direction:column;align-items:center;width:100%;gap:2px">
+      <div style="display:flex;justify-content:center;padding:4px 0">
+        <div id="grid"></div>
+      </div>
+      <div class="result-bar" id="result-bar" style="display:none;width:100%">
+        <strong id="result-title">--</strong>
+        <div class="rsub" id="result-answer"></div>
+      </div>
+      <div class="keyboard" id="keyboard" style="width:100%">
+        <div class="kb-row" id="row0"></div>
+        <div class="kb-row" id="row1"></div>
+        <div class="kb-row" id="row2"></div>
+      </div>
+    </div>
+    <div id="tap-banner" onclick="activateKeys()">
+      <div class="tb-icon">&#x25BA;</div>
+      <div class="tb-text">TAP TO ACTIVATE KEYS</div>
+      <div class="tb-sub">then use arrow keys</div>
     </div>
   </div>
-
-  <div class="keyboard" id="keyboard">
-    <div class="kb-row" id="row0"></div>
-    <div class="kb-row" id="row1"></div>
-    <div class="kb-row" id="row2"></div>
-  </div>
-
-  <button class="btn" style="width:100%;margin-top:4px" onclick="lbToggle()">⊞ History</button>
-
-  <div class="lb-wrap" id="lb-wrap" style="display:none">
-    <div class="lb-hdr"><span>Win History</span><span class="lb-status" id="lb-status">local</span></div>
-    <table><thead><tr><th>#</th><th>Word</th><th>Guesses</th><th>Date</th></tr></thead>
-    <tbody id="lb-body"></tbody></table>
+  <div class="softkeys">
+    <button class="sk left" onclick="resetForDemo()">Practice</button>
+    <button class="sk mid" onclick="copyShare()">Share</button>
+    <button class="sk right" onclick="toggleNav()">Menu</button>
   </div>
 </div>
-
 <script>
-
 /* ── Word list — 500 common 5-letter words ─────────────────── */
 const WORDS = `about above abuse actor acute admin admit adobe adopt after again agent agile agree ahead aisle alarm album alert alien align alike alive allay alley allot allow alone along aloof aloud alpha altar alter among ample angel anger angle angry anime annex annoy antic anvil aorta apart aphid apple apply apron aptly arena argue arise armor aroma arose array aside asset atlas atone attic audit augur avail avant avert avian avoid avid award aware awful badly baker basic basis beach beard beast beaut began begin being below bench berry bevel bidet biker birch bison black blade blame bland blast blaze bleed blend bless blind blink bliss bloat block blood bloom blown blues blunt blurt blush board bonus boost booth bored bound brain brake brand brave brawl break breed breve brick bride brief brine bring brink broil broke brook broth brows brunt brush build built bulge bumpy burst buyer bylaw cabal cadet camel cameo canal candy cargo carry cause cease cedar chain chair chaos charm chart chase cheap cheat check cheek cheer chess chest chief china choir chord chunk civic civil clack claim clamp clang clank clash clasp clean clear click cliff climb cling clock clone close cloth cloud clout clown clunk coact coach coapt coeur coils color comic comma count court cover crack craft crane crash crave craze creak creek creep crest crimp crisp cross crowd crown crude cruel crumb cruse crush crypt cubic curve cycle daddy dairy dance dandy dealt debug decay decor decoy delve dense depot depth derby deter devil digit dimly dirty disco discs dodge dogma doing dopey doubt dough dowry drank drawl dream dried drift drink drool droop drove drown druid drums dryer duchy dulls dummy dunce duped dusty dwarf dwell dying eager eagle early earth eight elect elite ember emote empty enjoy envoy equip ethic evade event every exert exile exist extra fable facet faint fairy faith fancy farce fatal fault favor feast ferry fetch fever field fiend fight filth final fixed fizzy fjord flaky flame flank flare flash flask flawy flaw flesh flick fling flock flood flora floss flout flown fluke flunk flute focus folio folly forge forth forum found foyer frail frame freak fresh friar front frost froth froze fully fungi funky funny futon fuzzy gaudy gaunt gauze gavel gawky gimmick girth given glare gleam glean glide glint gloat gloom gloss glove glyph gnash godly goose grace grade graft grain grasp graze greet grief grill grimy gripe grit groan groin groom grope gross group grove growl gruel gruff grump guava guile guise gusto gypsy hairy handy hatch haunt haves hazel heady heart heavy hedge helix hence heron hippo hired hoist holly homer honey honor horde hotel hound hover humid hurry hyena hydra icily icing ideal idiom idiot inept infer ingot inlay input inter intro irony issue ivory jaunt jazzy jelly joust joker jumbo kaput kayak kinky knife knoll knot kudos label lance lanky lapel large laser latch later latte lathe layer leach leaky leapt leech leery legal lemma lemon level liege liken limbo lingo lipid liter liver livid local lofty logic loose lousy lover lowly lumpy lusty lying lyric magic maker mania manly maple march marry masse match matte maxim media medic melee mercy merge messy metal midst might mimic mirth miser mixed model money month moody morph mossy motel motor motto moult mound mourn muddy muggy munch murky myrrh nadir naive nasty needy nerve newly night noble noise nomad north notch novel nudge nymph occur ocean offal often olive optic orbit order other ought outdo outer oxide oxide ozone padre panic papal paper party pasta pasty patch patio patsy pause peace pearl pedal penal petty phase piano pithy pixel pixel pizza pixel place plaid plain plane plank plant plaza plaza plead pleat plied plumb plume plunk plush poach podgy point poker polar polka poppy porch posse pouch pouty power prawn press price pride prime primp print prism prize probe prone proof prose prove prowl psalm pudgy pulse punch purge quack quaff quake qualm quark quart quasi quill quilt quirk quota quota quota quote quota rabbi radar radii rainy rally ranch rangy rapid raven raspy reach realm rebus rebel recap reedy regal reign relay realm remit repay repel repot rerun reset resin retro revel rhyme rider rigid risky rivet robot rocky rogue rondo roomy roped rosin rouge rough rouse rowdy ruder rugby ruler rumba rusty sadly saint savvy scald scalp scoff scold scone scoop scorn scout scowl scram screw scrub seize shack shaft shaky shale shall shalt shame shank share shark shawl sheen shelf shell shift shire shirt shoal shook shore shout shovel shred shrub shrug shunt siege sigma silly since sixth sixty skiff skimp skull slab slack slant slurp smack small smash smear smirk smite smock snaky snare sneak sneer snide sniff snore solar sonar sorry south sower spark spawn spear speck spend spire splat split spoil spoke spoof sport spout spree sprig spunk squad squat squid stain stale stalk stall stamp stark stash stave stead steer stern stick stiff still sting stink stoic stomp stone stout stove strap stray strew strip strut study stump stung style suave suede suite sulky sunny super surge swamp swank swarm swear sweat sweep swept swift swirl taint tangy taunt tawny tease terse their thorn three threw throb throw tiger timid titan toadal token tonic topaz total touch touchy towel toxic track trait tramp trend tribe trice trick tried tripe troll troth trout trove truce trump trunk tryst tulip tumor tuned tunic twang tweak twirl twist tying tying udder ultra uncut unfit unify unity until unwed upset urban usher usual utter uvula vague vapor vault vaunt vegan vigor vigor vigil viral vital vivid vocal vodka voila voila vouch vying waltz waver weary wedge weedy weigh weird whack whale whiff while whiff whirl whisk which witty witty women world wordy wrath wring wrote yacht yearn yield young zeal zilch zippy zoned`.split(/\s+/).filter(w=>w.length===5);
 
@@ -617,16 +382,6 @@ function bounceRow(r) {
 }
 
 /* ── End state ────────────────────────── */
-function showResult(won) {
-  const bar=document.getElementById('result-bar');
-  bar.classList.add('show');
-  document.getElementById('result-title').textContent = won
-    ? `✓ Solved in ${guesses.length}/${MAX_GUESSES}`
-    : `✗ The word was: ${answer.toUpperCase()}`;
-  document.getElementById('result-answer').textContent = won
-    ? `Word: ${answer.toUpperCase()} · ${practiceMode?'Practice':'Daily #'+todayIndex()}`
-    : `Better luck tomorrow!`;
-}
 
 function copyShare() {
   const colors={correct:'🟧',present:'🟨',absent:'⬜'};
@@ -663,24 +418,9 @@ function updateMeta() {
 
 /* ── Toast ────────────────────────────── */
 let toastTimer;
-function toast(msg) {
-  const el=document.getElementById('toast');
-  el.textContent=msg; el.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer=setTimeout(()=>el.classList.remove('show'),1500);
-}
 
 /* ── Scores ───────────────────────────── */
 function getLocalScores(){ try{return JSON.parse(localStorage.getItem(LS_SCORES)||'[]');}catch{return[];} }
-function saveScore(numGuesses) {
-  if(practiceMode) return;
-  const scores=getLocalScores();
-  // don't double-save same date
-  if(scores.some(s=>s.date===todayStr())) return;
-  scores.unshift({date:todayStr(),word:answer,guesses:numGuesses,won:true,puzzle:todayIndex()});
-  localStorage.setItem(LS_SCORES,JSON.stringify(scores.slice(0,TOP_N)));
-  updateMeta();
-}
 
 /* ── Leaderboard ──────────────────────── */
 let lbVisible=false;
@@ -688,15 +428,6 @@ function toggleLB(){
   lbVisible=!lbVisible;
   document.getElementById('lb-section').style.display=lbVisible?'':'none';
   if(lbVisible) renderTable(getLocalScores(),document.getElementById('lb-body'));
-}
-function renderTable(scores,tbody){
-  tbody.innerHTML=scores.map((s,i)=>`<tr>
-    <td class="rank">${i+1}</td>
-    <td class="score-val">${(s.word||'—').toUpperCase()}</td>
-    <td>${s.guesses||'—'}/6</td>
-    <td class="date-val">${s.date||'—'}</td>
-  </tr>`).join('');
-  if(!scores.length)tbody.innerHTML='<tr><td colspan="4" style="color:var(--text-dim);padding:4px 3px">no wins yet</td></tr>';
 }
 
 /* ── Physical keyboard ────────────────── */
@@ -731,24 +462,12 @@ window.addEventListener('load',()=>{
   }
 });
 
-
-
-
-
-
-
 function gameKey(key) {
   if(key==='Enter')     { handleKey('↵'); return; }
   if(key==='Backspace') { handleKey('⌫'); return; }
   if(/^[a-zA-Z]$/.test(key)) handleKey(key.toLowerCase());
 }
 
-var _lbOpen=false;
-function lbToggle(){
-  _lbOpen=!_lbOpen;
-  document.getElementById('lb-wrap').style.display=_lbOpen?'':'none';
-  if(_lbOpen) renderTable(getLocalScores(),document.getElementById('lb-body'));
-}
 function renderTable(scores,tbody){
   tbody.innerHTML=scores.map(function(s,i){
     return '<tr><td class="r">'+(i+1)+'</td><td class="sv">'+((s.word||'—').toUpperCase())+'</td><td>'+(s.guesses||'—')+'/6</td><td class="dv">'+(s.date||'—')+'</td></tr>';
@@ -756,93 +475,91 @@ function renderTable(scores,tbody){
   if(!scores.length) tbody.innerHTML='<tr><td colspan="4" style="color:var(--text-dim);padding:4px">no wins yet</td></tr>';
 }
 
-/* ── KaiOS key capture ──────────────────────────────────────
-   KaiOS web apps cannot grab keyboard on load without a user
-   gesture. Pattern: tap game area → focus hidden input →
-   arrow keys owned until user navigates away.             */
-var _keyCapture = document.getElementById('key-capture');
-var _activated  = false;
-
-function activateKeys() {
-  _keyCapture.focus();
-  _activated = true;
-  var banner = document.getElementById('tap-banner');
-  if(banner) banner.style.display = 'none';
-}
-
-function deactivateKeys() {
-  _activated = false;
-  var banner = document.getElementById('tap-banner');
-  if(banner) banner.style.display = 'flex';
-}
-
-_keyCapture.addEventListener('keydown', function(e) {
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  if(typeof gameKey === 'function') gameKey(e.key);
-});
-
-/* Belt+suspenders: window capture for any keys that slip through */
-window.addEventListener('keydown', function(e) {
-  if(!_activated) return;
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  if(typeof gameKey === 'function') gameKey(e.key);
-}, {capture: true, passive: false});
-
-_keyCapture.addEventListener('blur', function() {
-  setTimeout(function() {
-    /* Only show banner if focus went to something outside the game */
-    if(document.activeElement !== _keyCapture) deactivateKeys();
-  }, 100);
-});
+/* ─
 
 /* Nav/button taps re-focus after action */
-function refocusCapture() {
-  if(_activated) activateKeys();
-}
-
-function toggleNav() {
-  var nl = document.getElementById('nav-links');
-  if(nl) nl.classList.toggle('open');
-}
 
 /* Leaderboard fetch helper */
-function lbFetch(scoresUrl, lsKey, topN, sortFn) {
-  var status = document.getElementById('lb-status');
-  var tbody  = document.getElementById('lb-body');
-  if(!status||!tbody) return;
-  status.textContent = 'syncing…'; status.className = 'lb-status';
-  var local = lbLocalScores(lsKey);
-  lbRender(local, tbody);
-  fetch(scoresUrl+'?_='+Date.now(),{cache:'no-store'})
-    .then(function(r){ return r.ok?r.json():Promise.reject(); })
-    .then(function(remote){
-      var merged = remote.concat(local);
-      merged.sort(sortFn);
-      var seen = {}, deduped = [];
-      merged.forEach(function(e){
-        var k = JSON.stringify(e);
-        if(!seen[k]){seen[k]=1;deduped.push(e);}
-      });
-      lbRender(deduped.slice(0,topN), tbody);
-      status.textContent = '✓ git'; status.className = 'lb-status ok';
-    })
-    .catch(function(){
-      status.textContent = '✓ local'; status.className = 'lb-status err';
-    });
+
+function gameKey(key) {
+  if (key === 'Enter') handleKey('\u21b5');
+  else if (key === 'Backspace') handleKey('\u232b');
+  else if (/^[a-zA-Z]$/.test(key)) handleKey(key.toLowerCase());
 }
-function lbLocalScores(key) {
-  try { return JSON.parse(localStorage.getItem(key)||'[]'); } catch{ return []; }
+
+function showResult(won) {
+  var bar = document.getElementById('result-bar');
+  if (bar) bar.style.display = 'block';
+  var rt = document.getElementById('result-title');
+  var ra = document.getElementById('result-answer');
+  if (rt) rt.textContent = won ? 'Solved in ' + guesses.length + '/6!' : 'The word was: ' + answer.toUpperCase();
+  if (ra) ra.textContent = won ? 'Word: ' + answer.toUpperCase() : 'Better luck tomorrow!';
 }
-function lbSave(key, entry, topN, sortFn) {
-  var scores = lbLocalScores(key);
-  scores.push(entry);
-  scores.sort(sortFn);
-  localStorage.setItem(key, JSON.stringify(scores.slice(0,topN)));
+
+var _toastTimer;
+function toast(msg) {
+  var el = document.getElementById('wtoast');
+  if (!el) { el = document.createElement('div'); el.id = 'wtoast'; el.style.cssText =
+    'position:fixed;top:35px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,0.92);' +
+    'color:#000;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:14px;' +
+    'opacity:0;transition:opacity .2s;z-index:30;pointer-events:none;white-space:nowrap;';
+    document.body.appendChild(el); }
+  el.textContent = msg;
+  el.style.opacity = '1';
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(function(){ el.style.opacity = '0'; }, 1400);
 }
-function lbRender(scores, tbody) {
-  if(typeof renderTable === 'function') renderTable(scores, tbody);
+
+window.addEventListener('load', function() {
+  buildGrid(); buildKeyboard();
+  if (!loadTodayState()) initGame(false);
+  guesses.forEach(function(guess, r) {
+    var result = evalGuess(guess);
+    for (var c = 0; c < 5; c++) {
+      var t = document.getElementById('t' + r + c);
+      if (t) { t.textContent = guess[c].toUpperCase(); t.className = 'tile ' + result[c]; }
+    }
+  });
+  renderKeyboard(); updateMeta();
+  if (gameOver) {
+    var won = guesses.length > 0 && evalGuess(guesses[guesses.length-1]).every(function(r){ return r==='correct'; });
+    showResult(won);
+  }
+});
+
+
+/* ── KaiOS key capture ─────────────────────────────────── */
+var _kc = document.getElementById('key-capture');
+var _act = false;
+
+
+
+_kc.addEventListener('keydown', function(e) {
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof gameKey === 'function') gameKey(e.key);
+});
+
+window.addEventListener('keydown', function(e) {
+  if (!_act) return;
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+}, {capture: true, passive: false});
+
+_kc.addEventListener('blur', function() {
+  setTimeout(function() {
+    if (document.activeElement !== _kc) deactivateKeys();
+  }, 80);
+});
+
+
+function lbLocalScores(k) {
+  try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch(e) { return []; }
+}
+function lbSave(k, entry, n, sf) {
+  var s = lbLocalScores(k);
+  s.push(entry); s.sort(sf);
+  localStorage.setItem(k, JSON.stringify(s.slice(0, n)));
 }
 
 </script>

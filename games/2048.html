@@ -3,402 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>2048 | Josh</title>
+  <title>2048</title>
   <style>
 
-    /* ── Reset ─────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 13px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      overscroll-behavior: none;
-    }
-
-    /* ── KaiOS key capture input ────────────────────────
-       position:fixed at 0,0 with size 0 — invisible but
-       always focused so KaiOS treats this page as an app  */
-    #key-capture {
-      position: fixed;
-      top: 0; left: 0;
-      width: 1px; height: 1px;
-      opacity: 0;
-      border: none; outline: none;
-      background: transparent;
-      color: transparent;
-      pointer-events: none;
-      z-index: 9999;
-    }
-
-    /* ── Shell scrolls internally; page never scrolls ── */
-    html, body { height: 100%; overflow: hidden; }
-    .shell {
-      height: 100%;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 6px 6px 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    /* ── Compact nav ────────────────────────────────────*/
-    .nav-bar {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 4px;
-      flex-shrink: 0;
-    }
-    .nav-home {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 11px;
-      padding: 3px 7px;
-      background: var(--accent-lo);
-      border: 1px solid var(--accent-hi);
-      border-radius: var(--radius);
-      white-space: nowrap;
-    }
-    .nav-title {
-      flex: 1;
-      text-align: center;
-      font-size: 12px;
-      font-weight: bold;
-      color: var(--accent);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    .nav-menu-btn {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 15px;
-      padding: 2px 7px;
-      border-radius: var(--radius);
-      cursor: pointer;
-      line-height: 1.4;
-    }
-    .nav-links {
-      display: none;
-      flex-wrap: wrap;
-      gap: 4px;
-      padding: 4px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-links.open { display: flex; }
-    .nav-links a {
-      color: var(--text-dim);
-      text-decoration: none;
-      font-size: 11px;
-      padding: 2px 6px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-    }
-    .nav-links a.cur { color: var(--accent); border-color: var(--accent-hi); }
-
-    /* ── Score boxes ────────────────────────────────────*/
-    .score-bar { display: flex; gap: 5px; flex-shrink: 0; }
-    .score-box {
-      flex: 1;
-      background: var(--accent-lo);
-      border: 1px solid var(--surface2);
-      border-top: 2px solid var(--accent);
-      border-radius: var(--radius);
-      text-align: center;
-      padding: 4px 2px 3px;
-    }
-    .score-box .label {
-      font-size: 9px; color: var(--text-dim);
-      text-transform: uppercase; letter-spacing: 1px;
-    }
-    .score-box .val {
-      font-size: 15px; color: var(--accent);
-      font-weight: bold; line-height: 1.2;
-    }
-
-    /* ── Buttons ────────────────────────────────────────*/
-    .btn {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 11px;
-      padding: 5px 9px;
-      border-radius: var(--radius);
-      cursor: pointer;
-    }
-    .btn:active { color: var(--accent); border-color: var(--accent-hi); }
-
-    /* ── Controls row ───────────────────────────────────*/
-    .controls {
-      display: flex; gap: 5px;
-      justify-content: space-between;
-      flex-shrink: 0;
-    }
-
-    /* ── D-pad ──────────────────────────────────────────*/
-    .dpad {
-      display: grid;
-      grid-template-columns: repeat(3, 40px);
-      grid-template-rows:    repeat(3, 40px);
-      gap: 3px;
-      margin: 0 auto;
-      width: fit-content;
-      flex-shrink: 0;
-    }
-    .dpad .btn {
-      width: 40px; height: 40px;
-      padding: 0; font-size: 16px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .dpad .btn-sm { font-size: 10px; line-height: 1.2; text-align: center; }
-
-    .hint {
-      font-size: 10px; color: var(--text-dim);
-      text-align: center; flex-shrink: 0;
-    }
-
-    /* ── Leaderboard ────────────────────────────────────*/
-    .lb-wrap { border-top: 1px solid var(--border); padding-top: 5px; flex-shrink: 0; }
-    .lb-hdr {
-      font-size: 10px; color: var(--text-dim);
-      text-transform: uppercase; letter-spacing: 1px;
-      margin-bottom: 4px;
-      display: flex; justify-content: space-between;
-    }
-    .lb-status { font-size: 9px; }
-    .lb-status.ok  { color: var(--accent-hi); }
-    .lb-status.err { color: #a05030; }
-    table { width: 100%; border-collapse: collapse; font-size: 11px; }
-    th { color: var(--text-dim); font-weight: normal; text-align: left;
-         padding: 1px 3px; border-bottom: 1px solid var(--border); }
-    td { padding: 2px 3px; color: var(--text);
-         border-bottom: 1px solid var(--surface2); }
-    tr:first-child td { color: var(--accent); }
-    td.r { color: var(--text-dim); width: 18px; }
-    td.sv { text-align: right; color: var(--accent); }
-    td.dv { text-align: right; color: var(--text-dim); font-size: 10px; }
-
-
     :root {
-      --bg:#fff; --surface:#f6f7f8; --surface2:#edeff1; --border:#edeff1;
-      --accent:#ff4500; --accent-hi:#ff6314; --accent-lo:#fff3ef;
-      --text:#1c1c1c; --text-dim:#878a8c; --radius:4px;
-      --gap:5px; --tile-size:clamp(52px,19vw,70px);
-      --t2:#fdf9f7; --t2c:#cc3600; --t4:#fdeee6; --t4c:#b33000;
-      --t8:#fcd8c5; --t8c:#8c2400; --t16:#fab99a; --t16c:#6b1a00;
-      --t32:#f89670; --t32c:#fff; --t64:#ff6314; --t64c:#fff;
-      --t128:#ff4500; --t128c:#fff; --t256:#e03c00; --t256c:#fff;
-      --t512:#c23300; --t512c:#ffe8e0; --t1024:#a52b00; --t1024c:#ffe0d0;
-      --t2048:#ff4500; --t2048c:#fff;
+      --bg:#0d1b2a; --bg2:#1a2f45; --bg3:#243b55;
+      --accent:#00c8ff; --accent2:#ff6b35;
+      --text:#fff; --text-dim:#8aafc8;
+      --softkey-bg:#0a1628;
     }
-    .board-wrap {
-      background:var(--surface); border:1px solid var(--border);
-      border-top:2px solid var(--accent); border-radius:var(--radius);
-      padding:var(--gap); flex-shrink:0;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{
+      width:240px;max-width:240px;height:320px;max-height:320px;
+      overflow:hidden;background:var(--bg);color:var(--text);
+      font-family:'Segoe UI',Arial,sans-serif;font-size:12px;
+      user-select:none;-webkit-user-select:none;touch-action:manipulation;
     }
-    #board {
-      display:grid;
-      grid-template-columns:repeat(4,var(--tile-size));
-      grid-template-rows:repeat(4,var(--tile-size));
-      gap:var(--gap); margin:0 auto; width:fit-content;
+    .shell{display:flex;flex-direction:column;width:240px;height:320px;overflow:hidden;position:relative}
+    .game-header{
+      background:var(--bg2);padding:4px 8px 3px;
+      display:flex;align-items:center;justify-content:space-between;
+      border-bottom:1px solid var(--bg3);flex-shrink:0;height:30px;
     }
-    .tile {
-      width:var(--tile-size); height:var(--tile-size);
-      background:#dae0e6; border:1px solid var(--border);
-      border-radius:var(--radius); display:flex;
-      align-items:center; justify-content:center;
-      font-weight:900; font-size:clamp(12px,4.5vw,20px);
+    .game-title{font-size:13px;font-weight:bold;color:var(--accent);letter-spacing:1px}
+    .score-strip{display:flex;gap:8px;align-items:center}
+    .score-item{text-align:center}
+    .score-item .sl{font-size:8px;color:var(--text-dim);text-transform:uppercase;display:block}
+    .score-item .sv{font-size:12px;font-weight:bold;color:#fff}
+    .score-item .sv.hi{color:var(--accent)}
+    .game-area{
+      flex:1;display:flex;align-items:center;justify-content:center;
+      background:var(--bg);overflow:hidden;position:relative;
     }
-    .tile[data-v] { animation:pop .12s ease-out; }
-    @keyframes pop { 0%{transform:scale(1.12)} 100%{transform:scale(1)} }
-    .tile[data-v="2"]   {background:var(--t2);  color:var(--t2c)}
-    .tile[data-v="4"]   {background:var(--t4);  color:var(--t4c)}
-    .tile[data-v="8"]   {background:var(--t8);  color:var(--t8c)}
-    .tile[data-v="16"]  {background:var(--t16); color:var(--t16c)}
-    .tile[data-v="32"]  {background:var(--t32); color:var(--t32c)}
-    .tile[data-v="64"]  {background:var(--t64); color:var(--t64c)}
-    .tile[data-v="128"] {background:var(--t128);color:var(--t128c);font-size:clamp(10px,3.8vw,16px)}
-    .tile[data-v="256"] {background:var(--t256);color:var(--t256c);font-size:clamp(10px,3.8vw,16px)}
-    .tile[data-v="512"] {background:var(--t512);color:var(--t512c);font-size:clamp(10px,3.8vw,16px)}
-    .tile[data-v="1024"]{background:var(--t1024);color:var(--t1024c);font-size:clamp(8px,3.2vw,13px)}
-    .tile[data-v="2048"]{background:var(--t2048);color:var(--t2048c);font-size:clamp(8px,3.2vw,13px);box-shadow:0 0 10px var(--accent)}
-    .overlay-full {
-      position:fixed;inset:0;background:rgba(255,255,255,0.93);
-      display:none;flex-direction:column;align-items:center;
-      justify-content:center;gap:10px;z-index:10;
+    #tap-banner{
+      position:absolute;inset:0;background:rgba(13,27,42,0.88);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:5px;z-index:10;cursor:pointer;
     }
-    .overlay-full.show{display:flex;}
-    .overlay-full h2{font-size:20px;color:var(--accent);}
-    .overlay-full p{font-size:12px;color:var(--text-dim);text-align:center;}
+    #tap-banner .tb-icon{font-size:26px}
+    #tap-banner .tb-text{font-size:11px;font-weight:bold;color:var(--accent)}
+    #tap-banner .tb-sub{font-size:9px;color:var(--text-dim)}
+    .overlay{
+      position:absolute;inset:0;background:rgba(13,27,42,0.93);
+      display:none;flex-direction:column;align-items:center;justify-content:center;
+      gap:8px;z-index:8;
+    }
+    .overlay.show{display:flex}
+    .overlay h2{font-size:18px;font-weight:bold;color:var(--accent)}
+    .overlay p{font-size:11px;color:var(--text-dim);text-align:center;line-height:1.5}
+    .ov-btn{
+      background:var(--accent2);color:#fff;border:none;
+      padding:6px 20px;border-radius:20px;font-size:12px;font-weight:bold;cursor:pointer;
+    }
+    .softkeys{
+      background:var(--softkey-bg);border-top:1px solid var(--bg3);
+      display:flex;align-items:center;height:26px;flex-shrink:0;
+    }
+    .sk{
+      flex:1;height:100%;background:none;border:none;color:var(--text);
+      font-size:11px;font-weight:bold;cursor:pointer;padding:0 4px;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .sk:active{background:var(--bg3)}
+    .sk.left{justify-content:flex-start;color:var(--accent)}
+    .sk.right{justify-content:flex-end;color:var(--accent)}
+    .sk.mid{font-size:11px;color:#fff}
+    .nav-drawer{
+      position:absolute;top:0;left:0;right:0;background:var(--bg2);
+      border-bottom:2px solid var(--accent);z-index:20;
+      transform:translateY(-100%);transition:transform 0.15s ease;
+    }
+    .nav-drawer.open{transform:translateY(0)}
+    .nav-drawer a{
+      display:block;padding:7px 10px;color:var(--text-dim);
+      text-decoration:none;font-size:12px;border-bottom:1px solid var(--bg3);
+    }
+    .nav-drawer a.cur{color:var(--accent);font-weight:bold}
+    .nav-close{display:flex;align-items:center;justify-content:space-between;padding:5px 10px;background:var(--bg3)}
+    .nav-close span{font-size:11px;color:var(--text-dim)}
+    .nav-close button{background:none;border:none;color:var(--accent);font-size:14px;cursor:pointer}
+    #key-capture{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;border:none;outline:none}
 
-  
-    /* ── Tap-to-activate banner ─────────────────────────── */
-    .game-zone { position: relative; flex-shrink: 0; }
-    #tap-banner {
-      position: absolute;
-      inset: 0;
-      background: rgba(255,69,0,0.10);
-      border: 2px dashed var(--accent);
-      border-radius: var(--radius);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      z-index: 4;
-      cursor: pointer;
-    }
-    #tap-banner .tb-icon { font-size: 22px; }
-    #tap-banner .tb-text {
-      font-size: 11px;
-      font-weight: bold;
-      color: var(--accent);
-      letter-spacing: 0.5px;
-    }
-    #tap-banner .tb-sub {
-      font-size: 10px;
-      color: var(--text-dim);
-    }
-
-  
-    /* ── Nokia 2780 Flip: 240×320px exact fit ──────────── */
-    html, body {
-      width: 240px !important;
-      max-width: 240px !important;
-      overflow-x: hidden;
-    }
-    .shell {
-      width: 240px !important;
-      max-width: 240px !important;
-      padding: 3px 4px 4px !important;
-      gap: 3px !important;
-    }
-    /* Nav: single tight row */
-    .nav-bar { padding-bottom: 3px !important; }
-    .nav-home { font-size: 10px !important; padding: 2px 5px !important; }
-    .nav-title { font-size: 10px !important; }
-    .nav-menu-btn { font-size: 12px !important; padding: 1px 5px !important; }
-    /* Score boxes: compact */
-    .score-box { padding: 2px 1px 2px !important; }
-    .score-box .label { font-size: 8px !important; letter-spacing: 0 !important; }
-    .score-box .val { font-size: 13px !important; }
-    /* Buttons */
-    .btn { font-size: 10px !important; padding: 4px 7px !important; }
-    /* D-pad: 32px cells to fit width */
-    .dpad {
-      grid-template-columns: repeat(3, 32px) !important;
-      grid-template-rows: repeat(3, 32px) !important;
-      gap: 2px !important;
-    }
-    .dpad .btn { width: 32px !important; height: 32px !important; font-size: 13px !important; }
-    /* Hint */
-    .hint { font-size: 9px !important; }
-    /* Headings */
-    h1 { font-size: 16px !important; }
-    /* Tap banner text */
-    #tap-banner .tb-text { font-size: 10px !important; }
-    #tap-banner .tb-sub  { font-size: 9px !important; }
-    #tap-banner .tb-icon { font-size: 16px !important; }
-
-    /* 2048: tile = 53px, gap = 4px, board = 4*53+3*4 = 224px, wrap padding 3px → total 230px */
-    #board {
-      grid-template-columns: repeat(4, 53px) !important;
-      grid-template-rows:    repeat(4, 53px) !important;
-      gap: 4px !important;
-    }
-    .tile {
-      width: 53px !important; height: 53px !important;
-      font-size: 14px !important; border-radius: 2px !important;
-    }
-    .tile[data-v="128"],.tile[data-v="256"],.tile[data-v="512"] { font-size: 11px !important; }
-    .tile[data-v="1024"],.tile[data-v="2048"] { font-size: 9px !important; }
-    .board-wrap { padding: 3px !important; }
-
+    #board{display:grid;grid-template-columns:repeat(4,53px);grid-template-rows:repeat(4,53px);
+      gap:5px;background:var(--bg2);padding:5px;border-radius:10px;}
+    .tile{width:53px;height:53px;border-radius:8px;display:flex;align-items:center;
+      justify-content:center;font-weight:900;font-size:18px;background:var(--bg3);color:#fff;}
+    .tile[data-v]{animation:tpop .1s ease-out}
+    @keyframes tpop{0%{transform:scale(1.12)}100%{transform:scale(1)}}
+    .tile[data-v="2"]{background:#6b4fa0}.tile[data-v="4"]{background:#d4601a}
+    .tile[data-v="8"]{background:#cc2222}.tile[data-v="16"]{background:#c87820}
+    .tile[data-v="32"]{background:#d4892a}.tile[data-v="64"]{background:#e04040}
+    .tile[data-v="128"]{background:#9b2fa0;font-size:13px}
+    .tile[data-v="256"]{background:#1a7acc;font-size:13px}
+    .tile[data-v="512"]{background:#0fa06e;font-size:13px}
+    .tile[data-v="1024"]{background:#e0a020;font-size:10px}
+    .tile[data-v="2048"]{background:#ff6b35;font-size:10px;box-shadow:0 0 10px #ff6b35}
+    
   </style>
 </head>
 <body>
-<div class="overlay-full" id="overlay">
-  <h2 id="overlay-title">2048</h2>
-  <p id="overlay-msg"></p>
-  <button class="btn" onclick="newGame()">[ NEW GAME ]</button>
-</div>
-
+<input id="key-capture" type="text" inputmode="none" autocomplete="off">
 <div class="shell">
-  <!-- KaiOS key capture — always focused, invisible -->
-  <input id="key-capture" type="text" inputmode="none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-
-  <div class="nav-bar">
-    <a href="../home.html" class="nav-home">← Home</a>
-    <span class="nav-title">2048</span>
-    <button class="nav-menu-btn" onclick="toggleNav()">☰</button>
-  </div>
-  <div class="nav-links" id="nav-links">
+  <div class="nav-drawer" id="nav-drawer">
+    <div class="nav-close"><span>NAVIGATE</span><button onclick="toggleNav()">&#x2715;</button></div>
+    <a href="../home.html">&#x2190; Home</a>
     <a href="2048.html" class="cur">2048</a>
-    <a href="snake.html" >snake</a>
-    <a href="minesweeper.html" >mines</a>
-    <a href="tetris.html" >tetris</a>
-    <a href="wordle.html" >wordle</a>
-    <a href="../contact.html">contact</a>
+    <a href="snake.html">Snake</a>
+    <a href="minesweeper.html">Minesweeper</a>
+    <a href="tetris.html">Tetris</a>
+    <a href="wordle.html">Wordle</a>
   </div>
-
-  <div style="display:flex;align-items:baseline;justify-content:space-between;flex-shrink:0">
-    <h1 style="font-size:22px;color:var(--accent);letter-spacing:-1px">2048</h1>
-    <span style="color:var(--text-dim);font-size:10px">merge tiles</span>
-  </div>
-
-  <div class="score-bar">
-    <div class="score-box"><div class="label">Score</div><div class="val" id="score">0</div></div>
-    <div class="score-box"><div class="label">Best</div><div class="val" id="best">0</div></div>
-    <div class="score-box"><div class="label">Moves</div><div class="val" id="moves">0</div></div>
-  </div>
-
-  <div class="game-zone"><div class="board-wrap">
-    <div id="board"></div>
-  </div>
-    <div id="tap-banner" onclick="activateKeys()">
-      <div class="tb-icon">▶</div>
-      <div class="tb-text">TAP TO USE D-PAD KEYS</div>
-      <div class="tb-sub">then arrow keys navigate</div>
+  <div class="game-header">
+    <span class="game-title">2048</span>
+    <div class="score-strip">
+      <div class="score-item"><span class="sl">Score</span><span class="sv" id="score">0</span></div>
+      <div class="score-item"><span class="sl">Best</span><span class="sv hi" id="best">0</span></div>
     </div>
-  </div><!-- game-zone -->
-
-  <div class="controls">
-    <button class="btn" onclick="newGame()">↺ New</button>
-    <button class="btn" onclick="undoMove()">⎌ Undo</button>
-    <button class="btn" onclick="lbToggle()">⊞ Scores</button>
   </div>
-
-  <div class="dpad">
-    <button class="btn" style="grid-column:2;grid-row:1" onclick="move('up');refocusCapture()">▲</button>
-    <button class="btn" style="grid-column:1;grid-row:2" onclick="move('left');refocusCapture()">◀</button>
-    <button class="btn btn-sm" style="grid-column:2;grid-row:2" onclick="newGame()">new</button>
-    <button class="btn" style="grid-column:3;grid-row:2" onclick="move('right');refocusCapture()">▶</button>
-    <button class="btn" style="grid-column:2;grid-row:3" onclick="move('down');refocusCapture()">▼</button>
+  <div class="game-area" onclick="activateKeys()">
+    <div class="overlay" id="overlay">
+      <h2 id="ov-title">2048</h2><p id="ov-msg">Merge tiles to reach 2048</p>
+      <button class="ov-btn" onclick="newGame()">NEW GAME</button>
+    </div>
+    <div id="board"></div>
+    <div id="tap-banner" onclick="activateKeys()">
+      <div class="tb-icon">&#x25BA;</div>
+      <div class="tb-text">TAP TO ACTIVATE KEYS</div>
+      <div class="tb-sub">then use arrow keys</div>
+    </div>
   </div>
-
-  <p class="hint">Arrow / WASD / Swipe / D-pad</p>
-
-  <div class="lb-wrap" id="lb-wrap" style="display:none">
-    <div class="lb-hdr"><span>Top Scores</span><span class="lb-status" id="lb-status"></span></div>
-    <table><thead><tr><th>#</th><th>Score</th><th>Date</th></tr></thead>
-    <tbody id="lb-body"></tbody></table>
+  <div class="softkeys">
+    <button class="sk left" onclick="newGame()">New</button>
+    <button class="sk mid" id="sk-mid">0 moves</button>
+    <button class="sk right" onclick="toggleNav()">Menu</button>
   </div>
 </div>
-
 <script>
-
 /* ═══════════════════════════════════════════════════════════════
    CONFIG — update REPO to your GitHub user/repo
    Scores are read from scores.json in your repo root.
@@ -505,31 +245,10 @@ function render() {
   }));
 }
 
-function updateScoreBest() {
-  document.getElementById('score').textContent = score;
-  document.getElementById('moves').textContent = moves;
-  const best = getBest();
-  document.getElementById('best').textContent = Math.max(best, score);
-}
-
 /* ─── Scoring / Persistence ──────────────────────────────────── */
-function getBest() {
-  const scores = getLocalScores();
-  return scores.length ? scores[0].score : 0;
-}
 
 function getLocalScores() {
   try { return JSON.parse(localStorage.getItem(LS_SCORES)||'[]'); } catch{ return []; }
-}
-
-function checkAndSaveScore() {
-  if(score===0) return;
-  const scores = getLocalScores();
-  scores.push({ score, moves, date: new Date().toISOString().split('T')[0] });
-  scores.sort((a,b)=>b.score-a.score);
-  const top = scores.slice(0,TOP_N);
-  localStorage.setItem(LS_SCORES, JSON.stringify(top));
-  return top;
 }
 
 function saveState() {
@@ -549,14 +268,6 @@ function loadState() {
 }
 
 /* ─── Overlay ────────────────────────────────────────────────── */
-function showOverlay(title, msg) {
-  document.getElementById('overlay-title').textContent = title;
-  document.getElementById('overlay-msg').textContent   = msg;
-  document.getElementById('overlay').classList.add('show');
-}
-function closeOverlay() {
-  document.getElementById('overlay').classList.remove('show');
-}
 
 /* ─── Leaderboard ────────────────────────────────────────────── */
 let lbVisible = false;
@@ -602,16 +313,6 @@ async function loadLeaderboard() {
   }
 }
 
-function renderTable(scores, tbody) {
-  tbody.innerHTML = scores.map((s,i)=>`
-    <tr>
-      <td class="rank">${i+1}</td>
-      <td class="score-val">${s.score.toLocaleString()}</td>
-      <td class="date-val">${s.date||'—'}</td>
-    </tr>`).join('');
-  if(!scores.length) tbody.innerHTML='<tr><td colspan="3" style="color:var(--text-dim);padding:4px 3px">no scores yet</td></tr>';
-}
-
 /* ─── Input: keyboard ────────────────────────────────────────── */
 /* keyboard via gameKey() */
 
@@ -631,25 +332,12 @@ document.getElementById('board').addEventListener('touchend', e=>{
 /* ─── Boot ─────────────────────────────────────── */
 window.addEventListener("load", function(){ loadState(); });
 
-
-
-
-
-
-
-
 function gameKey(key) {
   var map = {ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',
              w:'up',s:'down',a:'left',d:'right'};
   if(map[key]) move(map[key]);
 }
 
-var _lbOpen=false;
-function lbToggle(){
-  _lbOpen=!_lbOpen;
-  document.getElementById('lb-wrap').style.display=_lbOpen?'':'none';
-  if(_lbOpen) lbFetch(SCORES_URL,LS_SCORES,TOP_N,function(a,b){return b.score-a.score;});
-}
 function renderTable(scores,tbody){
   tbody.innerHTML=scores.map(function(s,i){
     return '<tr><td class="r">'+(i+1)+'</td><td class="sv">'+s.score.toLocaleString()+'</td><td class="dv">'+(s.date||'—')+'</td></tr>';
@@ -657,93 +345,90 @@ function renderTable(scores,tbody){
   if(!scores.length) tbody.innerHTML='<tr><td colspan="3" style="color:var(--text-dim);padding:4px">no scores yet</td></tr>';
 }
 
-/* ── KaiOS key capture ──────────────────────────────────────
-   KaiOS web apps cannot grab keyboard on load without a user
-   gesture. Pattern: tap game area → focus hidden input →
-   arrow keys owned until user navigates away.             */
-var _keyCapture = document.getElementById('key-capture');
-var _activated  = false;
-
-function activateKeys() {
-  _keyCapture.focus();
-  _activated = true;
-  var banner = document.getElementById('tap-banner');
-  if(banner) banner.style.display = 'none';
-}
-
-function deactivateKeys() {
-  _activated = false;
-  var banner = document.getElementById('tap-banner');
-  if(banner) banner.style.display = 'flex';
-}
-
-_keyCapture.addEventListener('keydown', function(e) {
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  if(typeof gameKey === 'function') gameKey(e.key);
-});
-
-/* Belt+suspenders: window capture for any keys that slip through */
-window.addEventListener('keydown', function(e) {
-  if(!_activated) return;
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  if(typeof gameKey === 'function') gameKey(e.key);
-}, {capture: true, passive: false});
-
-_keyCapture.addEventListener('blur', function() {
-  setTimeout(function() {
-    /* Only show banner if focus went to something outside the game */
-    if(document.activeElement !== _keyCapture) deactivateKeys();
-  }, 100);
-});
+/* ── KaiOS key captur
 
 /* Nav/button taps re-focus after action */
-function refocusCapture() {
-  if(_activated) activateKeys();
-}
-
-function toggleNav() {
-  var nl = document.getElementById('nav-links');
-  if(nl) nl.classList.toggle('open');
-}
 
 /* Leaderboard fetch helper */
-function lbFetch(scoresUrl, lsKey, topN, sortFn) {
-  var status = document.getElementById('lb-status');
-  var tbody  = document.getElementById('lb-body');
-  if(!status||!tbody) return;
-  status.textContent = 'syncing…'; status.className = 'lb-status';
-  var local = lbLocalScores(lsKey);
-  lbRender(local, tbody);
-  fetch(scoresUrl+'?_='+Date.now(),{cache:'no-store'})
-    .then(function(r){ return r.ok?r.json():Promise.reject(); })
-    .then(function(remote){
-      var merged = remote.concat(local);
-      merged.sort(sortFn);
-      var seen = {}, deduped = [];
-      merged.forEach(function(e){
-        var k = JSON.stringify(e);
-        if(!seen[k]){seen[k]=1;deduped.push(e);}
-      });
-      lbRender(deduped.slice(0,topN), tbody);
-      status.textContent = '✓ git'; status.className = 'lb-status ok';
-    })
-    .catch(function(){
-      status.textContent = '✓ local'; status.className = 'lb-status err';
-    });
+
+function gameKey(key) {
+  var map = {ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',
+             w:'up',s:'down',a:'left',d:'right'};
+  if (map[key]) move(map[key]);
+  if (key === 'z' || key === 'u') undoMove();
 }
-function lbLocalScores(key) {
-  try { return JSON.parse(localStorage.getItem(key)||'[]'); } catch{ return []; }
+
+function getBest() {
+  var s = lbLocalScores(LS_SCORES);
+  return s.length ? s[0].score : 0;
 }
-function lbSave(key, entry, topN, sortFn) {
-  var scores = lbLocalScores(key);
-  scores.push(entry);
-  scores.sort(sortFn);
-  localStorage.setItem(key, JSON.stringify(scores.slice(0,topN)));
+
+function updateScoreBest() {
+  document.getElementById('score').textContent = score;
+  document.getElementById('sk-mid').textContent = moves + ' moves';
+  document.getElementById('best').textContent = Math.max(getBest(), score);
 }
-function lbRender(scores, tbody) {
-  if(typeof renderTable === 'function') renderTable(scores, tbody);
+
+function showOverlay(t, m) {
+  document.getElementById('ov-title').textContent = t;
+  document.getElementById('ov-msg').textContent = m;
+  document.getElementById('overlay').classList.add('show');
+}
+function closeOverlay() { document.getElementById('overlay').classList.remove('show'); }
+
+function checkAndSaveScore() {
+  if (!score) return;
+  lbSave(LS_SCORES, {score:score, moves:moves, date:new Date().toISOString().split('T')[0]},
+    TOP_N, function(a,b){ return b.score - a.score; });
+}
+
+/* swipe */
+var _tx=0, _ty=0;
+document.querySelector('.game-area').addEventListener('touchstart', function(e) {
+  _tx=e.touches[0].clientX; _ty=e.touches[0].clientY;
+}, {passive:true});
+document.querySelector('.game-area').addEventListener('touchend', function(e) {
+  var dx=e.changedTouches[0].clientX-_tx, dy=e.changedTouches[0].clientY-_ty;
+  if (Math.max(Math.abs(dx),Math.abs(dy)) < 15) return;
+  if (Math.abs(dx) > Math.abs(dy)) move(dx>0?'right':'left');
+  else move(dy>0?'down':'up');
+}, {passive:true});
+
+window.addEventListener('load', function() { loadState(); });
+
+
+/* ── KaiOS key capture ─────────────────────────────────── */
+var _kc = document.getElementById('key-capture');
+var _act = false;
+
+
+
+_kc.addEventListener('keydown', function(e) {
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof gameKey === 'function') gameKey(e.key);
+});
+
+window.addEventListener('keydown', function(e) {
+  if (!_act) return;
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+}, {capture: true, passive: false});
+
+_kc.addEventListener('blur', function() {
+  setTimeout(function() {
+    if (document.activeElement !== _kc) deactivateKeys();
+  }, 80);
+});
+
+
+function lbLocalScores(k) {
+  try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch(e) { return []; }
+}
+function lbSave(k, entry, n, sf) {
+  var s = lbLocalScores(k);
+  s.push(entry); s.sort(sf);
+  localStorage.setItem(k, JSON.stringify(s.slice(0, n)));
 }
 
 </script>

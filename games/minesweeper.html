@@ -3,382 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>Minesweeper | Josh</title>
+  <title>Minesweeper</title>
   <style>
 
-    /* ── Reset ─────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 13px;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      overscroll-behavior: none;
-    }
-
-    /* ── KaiOS key capture input ────────────────────────
-       position:fixed at 0,0 with size 0 — invisible but
-       always focused so KaiOS treats this page as an app  */
-    #key-capture {
-      position: fixed;
-      top: 0; left: 0;
-      width: 1px; height: 1px;
-      opacity: 0;
-      border: none; outline: none;
-      background: transparent;
-      color: transparent;
-      pointer-events: none;
-      z-index: 9999;
-    }
-
-    /* ── Shell scrolls internally; page never scrolls ── */
-    html, body { height: 100%; overflow: hidden; }
-    .shell {
-      height: 100%;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 6px 6px 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-    }
-
-    /* ── Compact nav ────────────────────────────────────*/
-    .nav-bar {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 4px;
-      flex-shrink: 0;
-    }
-    .nav-home {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 11px;
-      padding: 3px 7px;
-      background: var(--accent-lo);
-      border: 1px solid var(--accent-hi);
-      border-radius: var(--radius);
-      white-space: nowrap;
-    }
-    .nav-title {
-      flex: 1;
-      text-align: center;
-      font-size: 12px;
-      font-weight: bold;
-      color: var(--accent);
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    .nav-menu-btn {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      font-size: 15px;
-      padding: 2px 7px;
-      border-radius: var(--radius);
-      cursor: pointer;
-      line-height: 1.4;
-    }
-    .nav-links {
-      display: none;
-      flex-wrap: wrap;
-      gap: 4px;
-      padding: 4px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-links.open { display: flex; }
-    .nav-links a {
-      color: var(--text-dim);
-      text-decoration: none;
-      font-size: 11px;
-      padding: 2px 6px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-    }
-    .nav-links a.cur { color: var(--accent); border-color: var(--accent-hi); }
-
-    /* ── Score boxes ────────────────────────────────────*/
-    .score-bar { display: flex; gap: 5px; flex-shrink: 0; }
-    .score-box {
-      flex: 1;
-      background: var(--accent-lo);
-      border: 1px solid var(--surface2);
-      border-top: 2px solid var(--accent);
-      border-radius: var(--radius);
-      text-align: center;
-      padding: 4px 2px 3px;
-    }
-    .score-box .label {
-      font-size: 9px; color: var(--text-dim);
-      text-transform: uppercase; letter-spacing: 1px;
-    }
-    .score-box .val {
-      font-size: 15px; color: var(--accent);
-      font-weight: bold; line-height: 1.2;
-    }
-
-    /* ── Buttons ────────────────────────────────────────*/
-    .btn {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-dim);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 11px;
-      padding: 5px 9px;
-      border-radius: var(--radius);
-      cursor: pointer;
-    }
-    .btn:active { color: var(--accent); border-color: var(--accent-hi); }
-
-    /* ── Controls row ───────────────────────────────────*/
-    .controls {
-      display: flex; gap: 5px;
-      justify-content: space-between;
-      flex-shrink: 0;
-    }
-
-    /* ── D-pad ──────────────────────────────────────────*/
-    .dpad {
-      display: grid;
-      grid-template-columns: repeat(3, 40px);
-      grid-template-rows:    repeat(3, 40px);
-      gap: 3px;
-      margin: 0 auto;
-      width: fit-content;
-      flex-shrink: 0;
-    }
-    .dpad .btn {
-      width: 40px; height: 40px;
-      padding: 0; font-size: 16px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .dpad .btn-sm { font-size: 10px; line-height: 1.2; text-align: center; }
-
-    .hint {
-      font-size: 10px; color: var(--text-dim);
-      text-align: center; flex-shrink: 0;
-    }
-
-    /* ── Leaderboard ────────────────────────────────────*/
-    .lb-wrap { border-top: 1px solid var(--border); padding-top: 5px; flex-shrink: 0; }
-    .lb-hdr {
-      font-size: 10px; color: var(--text-dim);
-      text-transform: uppercase; letter-spacing: 1px;
-      margin-bottom: 4px;
-      display: flex; justify-content: space-between;
-    }
-    .lb-status { font-size: 9px; }
-    .lb-status.ok  { color: var(--accent-hi); }
-    .lb-status.err { color: #a05030; }
-    table { width: 100%; border-collapse: collapse; font-size: 11px; }
-    th { color: var(--text-dim); font-weight: normal; text-align: left;
-         padding: 1px 3px; border-bottom: 1px solid var(--border); }
-    td { padding: 2px 3px; color: var(--text);
-         border-bottom: 1px solid var(--surface2); }
-    tr:first-child td { color: var(--accent); }
-    td.r { color: var(--text-dim); width: 18px; }
-    td.sv { text-align: right; color: var(--accent); }
-    td.dv { text-align: right; color: var(--text-dim); font-size: 10px; }
-
-
     :root {
-      --bg:#fff; --surface:#f6f7f8; --surface2:#edeff1; --border:#edeff1;
-      --accent:#ff4500; --accent-hi:#ff6314; --accent-lo:#fff3ef;
-      --text:#1c1c1c; --text-dim:#878a8c; --radius:4px;
-      --n1:#0000cc;--n2:#007700;--n3:#cc0000;--n4:#000077;
-      --n5:#770000;--n6:#007777;--n7:#770077;--n8:#777;
+      --bg:#0d1b2a; --bg2:#1a2f45; --bg3:#243b55;
+      --accent:#00c8ff; --accent2:#ff6b35;
+      --text:#fff; --text-dim:#8aafc8;
+      --softkey-bg:#0a1628;
     }
-    .diff-bar{display:flex;gap:3px;flex-shrink:0;}
-    .diff-btn{
-      flex:1;background:var(--surface);border:1px solid var(--border);
-      color:var(--text-dim);font-size:11px;padding:4px 2px;
-      border-radius:var(--radius);cursor:pointer;text-align:center;
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{
+      width:240px;max-width:240px;height:320px;max-height:320px;
+      overflow:hidden;background:var(--bg);color:var(--text);
+      font-family:'Segoe UI',Arial,sans-serif;font-size:12px;
+      user-select:none;-webkit-user-select:none;touch-action:manipulation;
     }
-    .diff-btn.active{background:var(--accent-lo);border-color:var(--accent);color:var(--accent);font-weight:bold;}
-    .board-wrap{
-      background:var(--surface);border:1px solid var(--border);
-      border-top:2px solid var(--accent);border-radius:var(--radius);
-      padding:5px;display:flex;justify-content:center;position:relative;
-      overflow:hidden;flex-shrink:0;
+    .shell{display:flex;flex-direction:column;width:240px;height:320px;overflow:hidden;position:relative}
+    .game-header{
+      background:var(--bg2);padding:4px 8px 3px;
+      display:flex;align-items:center;justify-content:space-between;
+      border-bottom:1px solid var(--bg3);flex-shrink:0;height:30px;
     }
-    #board{display:grid;gap:2px;}
-    .cell{
-      display:flex;align-items:center;justify-content:center;
-      font-weight:700;border-radius:2px;cursor:pointer;
-      background:#dae0e6;border:1px solid #c8d0d8;
+    .game-title{font-size:13px;font-weight:bold;color:var(--accent);letter-spacing:1px}
+    .score-strip{display:flex;gap:8px;align-items:center}
+    .score-item{text-align:center}
+    .score-item .sl{font-size:8px;color:var(--text-dim);text-transform:uppercase;display:block}
+    .score-item .sv{font-size:12px;font-weight:bold;color:#fff}
+    .score-item .sv.hi{color:var(--accent)}
+    .game-area{
+      flex:1;display:flex;align-items:center;justify-content:center;
+      background:var(--bg);overflow:hidden;position:relative;
     }
-    .cell.revealed{background:var(--surface2);border-color:var(--border);}
-    .cell.flagged{background:var(--accent-lo);border-color:var(--accent-hi);}
-    .cell.mine-hit{background:var(--accent);color:#fff;}
-    .cell.cursor{outline:2px solid var(--accent);outline-offset:-2px;}
-    .cell[data-n="1"]{color:var(--n1)}.cell[data-n="2"]{color:var(--n2)}
-    .cell[data-n="3"]{color:var(--n3)}.cell[data-n="4"]{color:var(--n4)}
-    .cell[data-n="5"]{color:var(--n5)}.cell[data-n="6"]{color:var(--n6)}
-    .cell[data-n="7"]{color:var(--n7)}.cell[data-n="8"]{color:var(--n8)}
+    #tap-banner{
+      position:absolute;inset:0;background:rgba(13,27,42,0.88);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:5px;z-index:10;cursor:pointer;
+    }
+    #tap-banner .tb-icon{font-size:26px}
+    #tap-banner .tb-text{font-size:11px;font-weight:bold;color:var(--accent)}
+    #tap-banner .tb-sub{font-size:9px;color:var(--text-dim)}
     .overlay{
-      position:absolute;inset:0;background:rgba(255,255,255,0.94);
-      display:none;flex-direction:column;align-items:center;
-      justify-content:center;gap:8px;z-index:5;
+      position:absolute;inset:0;background:rgba(13,27,42,0.93);
+      display:none;flex-direction:column;align-items:center;justify-content:center;
+      gap:8px;z-index:8;
     }
-    .overlay.show{display:flex;}
-    .overlay h2{font-size:18px;color:var(--accent);}
-    .overlay p{font-size:11px;color:var(--text-dim);text-align:center;line-height:1.5;}
+    .overlay.show{display:flex}
+    .overlay h2{font-size:18px;font-weight:bold;color:var(--accent)}
+    .overlay p{font-size:11px;color:var(--text-dim);text-align:center;line-height:1.5}
+    .ov-btn{
+      background:var(--accent2);color:#fff;border:none;
+      padding:6px 20px;border-radius:20px;font-size:12px;font-weight:bold;cursor:pointer;
+    }
+    .softkeys{
+      background:var(--softkey-bg);border-top:1px solid var(--bg3);
+      display:flex;align-items:center;height:26px;flex-shrink:0;
+    }
+    .sk{
+      flex:1;height:100%;background:none;border:none;color:var(--text);
+      font-size:11px;font-weight:bold;cursor:pointer;padding:0 4px;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .sk:active{background:var(--bg3)}
+    .sk.left{justify-content:flex-start;color:var(--accent)}
+    .sk.right{justify-content:flex-end;color:var(--accent)}
+    .sk.mid{font-size:11px;color:#fff}
+    .nav-drawer{
+      position:absolute;top:0;left:0;right:0;background:var(--bg2);
+      border-bottom:2px solid var(--accent);z-index:20;
+      transform:translateY(-100%);transition:transform 0.15s ease;
+    }
+    .nav-drawer.open{transform:translateY(0)}
+    .nav-drawer a{
+      display:block;padding:7px 10px;color:var(--text-dim);
+      text-decoration:none;font-size:12px;border-bottom:1px solid var(--bg3);
+    }
+    .nav-drawer a.cur{color:var(--accent);font-weight:bold}
+    .nav-close{display:flex;align-items:center;justify-content:space-between;padding:5px 10px;background:var(--bg3)}
+    .nav-close span{font-size:11px;color:var(--text-dim)}
+    .nav-close button{background:none;border:none;color:var(--accent);font-size:14px;cursor:pointer}
+    #key-capture{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;border:none;outline:none}
 
-  
-    /* ── Tap-to-activate banner ─────────────────────────── */
-    .game-zone { position: relative; flex-shrink: 0; }
-    #tap-banner {
-      position: absolute;
-      inset: 0;
-      background: rgba(255,69,0,0.10);
-      border: 2px dashed var(--accent);
-      border-radius: var(--radius);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 4px;
-      z-index: 4;
-      cursor: pointer;
-    }
-    #tap-banner .tb-icon { font-size: 22px; }
-    #tap-banner .tb-text {
-      font-size: 11px;
-      font-weight: bold;
-      color: var(--accent);
-      letter-spacing: 0.5px;
-    }
-    #tap-banner .tb-sub {
-      font-size: 10px;
-      color: var(--text-dim);
-    }
-
-  
-    /* ── Nokia 2780 Flip: 240×320px exact fit ──────────── */
-    html, body {
-      width: 240px !important;
-      max-width: 240px !important;
-      overflow-x: hidden;
-    }
-    .shell {
-      width: 240px !important;
-      max-width: 240px !important;
-      padding: 3px 4px 4px !important;
-      gap: 3px !important;
-    }
-    /* Nav: single tight row */
-    .nav-bar { padding-bottom: 3px !important; }
-    .nav-home { font-size: 10px !important; padding: 2px 5px !important; }
-    .nav-title { font-size: 10px !important; }
-    .nav-menu-btn { font-size: 12px !important; padding: 1px 5px !important; }
-    /* Score boxes: compact */
-    .score-box { padding: 2px 1px 2px !important; }
-    .score-box .label { font-size: 8px !important; letter-spacing: 0 !important; }
-    .score-box .val { font-size: 13px !important; }
-    /* Buttons */
-    .btn { font-size: 10px !important; padding: 4px 7px !important; }
-    /* D-pad: 32px cells to fit width */
-    .dpad {
-      grid-template-columns: repeat(3, 32px) !important;
-      grid-template-rows: repeat(3, 32px) !important;
-      gap: 2px !important;
-    }
-    .dpad .btn { width: 32px !important; height: 32px !important; font-size: 13px !important; }
-    /* Hint */
-    .hint { font-size: 9px !important; }
-    /* Headings */
-    h1 { font-size: 16px !important; }
-    /* Tap banner text */
-    #tap-banner .tb-text { font-size: 10px !important; }
-    #tap-banner .tb-sub  { font-size: 9px !important; }
-    #tap-banner .tb-icon { font-size: 16px !important; }
-
-    .board-wrap { padding: 3px !important; }
-    /* Cells sized by JS initCanvas but constrain wrap */
-    #board-wrap { max-width: 234px !important; overflow: hidden !important; }
-
+    #board{display:grid;gap:2px;}
+    .cell{display:flex;align-items:center;justify-content:center;font-weight:700;
+      border-radius:4px;cursor:pointer;background:var(--bg3);color:#fff;font-size:12px;}
+    .cell.revealed{background:var(--bg2);}
+    .cell.flagged{background:#7b1a1a;}
+    .cell.mine-hit{background:#cc2222;}
+    .cell.cursor{outline:2px solid var(--accent);outline-offset:-2px;}
+    .cell[data-n="1"]{color:#64b5f6}.cell[data-n="2"]{color:#81c784}
+    .cell[data-n="3"]{color:#e57373}.cell[data-n="4"]{color:#ba68c8}
+    .cell[data-n="5"]{color:#ff8a65}.cell[data-n="6"]{color:#4dd0e1}
+    .cell[data-n="7"]{color:#fff176}.cell[data-n="8"]{color:#cfd8dc}
+    .diff-row{display:flex;gap:3px;width:100%;padding:0 2px;margin-bottom:2px;flex-shrink:0;}
+    .diff-btn{flex:1;background:var(--bg3);border:none;color:var(--text-dim);
+      font-size:10px;padding:3px 2px;border-radius:4px;cursor:pointer;text-align:center;}
+    .diff-btn.active{background:var(--accent2);color:#fff;font-weight:bold;}
+    .mine-wrap{display:flex;flex-direction:column;align-items:center;gap:3px;width:100%;}
+    
   </style>
 </head>
 <body>
+<input id="key-capture" type="text" inputmode="none" autocomplete="off">
 <div class="shell">
-  <!-- KaiOS key capture — always focused, invisible -->
-  <input id="key-capture" type="text" inputmode="none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-
-  <div class="nav-bar">
-    <a href="../home.html" class="nav-home">← Home</a>
-    <span class="nav-title">MINES</span>
-    <button class="nav-menu-btn" onclick="toggleNav()">☰</button>
+  <div class="nav-drawer" id="nav-drawer">
+    <div class="nav-close"><span>NAVIGATE</span><button onclick="toggleNav()">&#x2715;</button></div>
+    <a href="../home.html">&#x2190; Home</a>
+    <a href="2048.html">2048</a>
+    <a href="snake.html">Snake</a>
+    <a href="minesweeper.html" class="cur">Minesweeper</a>
+    <a href="tetris.html">Tetris</a>
+    <a href="wordle.html">Wordle</a>
   </div>
-  <div class="nav-links" id="nav-links">
-    <a href="2048.html" >2048</a>
-    <a href="snake.html" >snake</a>
-    <a href="minesweeper.html" class="cur">mines</a>
-    <a href="tetris.html" >tetris</a>
-    <a href="wordle.html" >wordle</a>
-    <a href="../contact.html">contact</a>
-  </div>
-
-  <div style="display:flex;align-items:baseline;justify-content:space-between;flex-shrink:0">
-    <h1 style="font-size:22px;color:var(--accent);letter-spacing:-1px">Mines</h1>
-    <span style="color:var(--text-dim);font-size:10px">clear the board</span>
-  </div>
-
-  <div class="score-bar">
-    <div class="score-box"><div class="label">Time</div><div class="val" id="timer">0s</div></div>
-    <div class="score-box"><div class="label">Mines</div><div class="val" id="mines-left">0</div></div>
-    <div class="score-box"><div class="label">Best</div><div class="val" id="best">—</div></div>
-  </div>
-
-  <div class="diff-bar">
-    <div class="diff-btn active" id="d-easy"   onclick="setDiff('easy')">Easy<br><small>8×8·10</small></div>
-    <div class="diff-btn"        id="d-medium" onclick="setDiff('medium')">Med<br><small>10×10·20</small></div>
-    <div class="diff-btn"        id="d-hard"   onclick="setDiff('hard')">Hard<br><small>12×12·35</small></div>
-  </div>
-
-  <div class="game-zone"><div class="board-wrap" id="board-wrap" onclick="activateKeys()">
-    <div id="board" tabindex="-1"></div>
-    <div class="overlay show" id="overlay">
-      <h2 id="ov-title">MINESWEEPER</h2>
-      <p id="ov-msg">Arrows = move cursor<br>Enter/Space = reveal<br>F = flag · tap = reveal<br>long-press = flag</p>
-      <button class="btn" onclick="newGame()">[ START ]</button>
+  <div class="game-header">
+    <span class="game-title">MINES</span>
+    <div class="score-strip">
+      <div class="score-item"><span class="sl">Time</span><span class="sv" id="timer">0s</span></div>
+      <div class="score-item"><span class="sl">Mines</span><span class="sv" id="mines-left">0</span></div>
+      <div class="score-item"><span class="sl">Best</span><span class="sv hi" id="best">--</span></div>
     </div>
   </div>
-
-  <div class="controls">
-    <button class="btn" onclick="newGame()">↺ New</button>
-    <button class="btn" onclick="toggleFlag()" id="flag-btn">⚑ Flag</button>
-    <button class="btn" onclick="lbToggle()">⊞ Scores</button>
+  <div class="game-area" onclick="activateKeys()">
+    <div class="overlay show" id="overlay">
+      <h2 id="ov-title">MINES</h2>
+      <p id="ov-msg">Arrows=move Enter=reveal<br>F=flag  R=new game</p>
+      <button class="ov-btn" onclick="newGame()">START</button>
+    </div>
+    <div class="mine-wrap">
+      <div class="diff-row">
+        <div class="diff-btn active" id="d-easy" onclick="setDiff('easy')">Easy 8x8</div>
+        <div class="diff-btn" id="d-medium" onclick="setDiff('medium')">Med 10x10</div>
+        <div class="diff-btn" id="d-hard" onclick="setDiff('hard')">Hard 12x12</div>
+      </div>
+      <div id="board-wrap" onclick="activateKeys()" style="display:flex;justify-content:center">
+        <div id="board"></div>
+      </div>
+    </div>
+    <div id="tap-banner" onclick="activateKeys()">
+      <div class="tb-icon">&#x25BA;</div>
+      <div class="tb-text">TAP TO ACTIVATE KEYS</div>
+      <div class="tb-sub">then use arrow keys</div>
+    </div>
   </div>
-
-  <div class="dpad">
-    <button class="btn" style="grid-column:2;grid-row:1" onclick="moveCursor(0,-1);refocusCapture()">▲</button>
-    <button class="btn" style="grid-column:1;grid-row:2" onclick="moveCursor(-1,0);refocusCapture()">◀</button>
-    <button class="btn btn-sm" style="grid-column:2;grid-row:2" onclick="activateCell();refocusCapture()">open/<br>flag</button>
-    <button class="btn" style="grid-column:3;grid-row:2" onclick="moveCursor(1,0);refocusCapture()">▶</button>
-    <button class="btn" style="grid-column:2;grid-row:3" onclick="moveCursor(0,1);refocusCapture()">▼</button>
-  </div>
-
-  <p class="hint">Arrows · Enter=reveal · F=flag · Tap · Long-press</p>
-
-  <div class="lb-wrap" id="lb-wrap" style="display:none">
-    <div class="lb-hdr"><span>Best Times</span><span class="lb-status" id="lb-status"></span></div>
-    <table><thead><tr><th>#</th><th>Time</th><th>Diff</th><th>Date</th></tr></thead>
-    <tbody id="lb-body"></tbody></table>
+  <div class="softkeys">
+    <button class="sk left" onclick="newGame()">New</button>
+    <button class="sk mid" id="flag-btn" onclick="toggleFlag()">Flag: OFF</button>
+    <button class="sk right" onclick="toggleNav()">Menu</button>
   </div>
 </div>
-
 <script>
-
 const REPO       = 'DiomedesAuRaa/Portfolio';
 const SCORES_URL = `https://raw.githubusercontent.com/${REPO}/main/games/scores-mines.json`;
 const LS_SCORES  = 'games_mines_scores';
@@ -510,12 +283,6 @@ function toggleFlagCell(c,r) {
   renderBoard();
 }
 
-function updateMinesLeft() {
-  let flags=0;
-  flagged.forEach(row=>row.forEach(f=>{if(f)flags++;}));
-  document.getElementById('mines-left').textContent = mineCount-flags;
-}
-
 function checkWin() {
   let unrevealed=0;
   for(let r=0;r<rows;r++) for(let c=0;c<cols;c++) {
@@ -585,39 +352,14 @@ function moveCursor(dx,dy) {
 function activateCell() {
   flagMode ? toggleFlagCell(cursor.x,cursor.y) : reveal(cursor.x,cursor.y);
 }
-function toggleFlag() {
-  flagMode=!flagMode;
-  document.getElementById('mines-left').style.color = flagMode?'var(--accent)':'var(--accent)';
-  // visual feedback on button
-  const btn = document.querySelector('.controls button:nth-child(2)');
-  btn.style.color      = flagMode?'var(--accent)':'';
-  btn.style.borderColor= flagMode?'var(--accent)':'';
-}
 
 /* keyboard via gameKey() */
 
 /* ── Overlay ─────────────────────────────── */
-function showOverlay(title, msg) {
-  document.getElementById('ov-title').textContent = title;
-  document.getElementById('ov-msg').innerHTML = msg;
-  document.getElementById('overlay').classList.add('show');
-}
-function closeOverlay() { document.getElementById('overlay').classList.remove('show'); }
 
 /* ── Scores ──────────────────────────────── */
 function getLocalScores() {
   try { return JSON.parse(localStorage.getItem(LS_SCORES)||'[]'); } catch{ return []; }
-}
-function getBestFor(d) {
-  const s = getLocalScores().filter(x=>x.diff===d);
-  return s.length ? s[0].time : null;
-}
-function saveScore() {
-  if(!won) return;
-  const scores = getLocalScores();
-  scores.push({ time:elapsed, diff, date: new Date().toISOString().split('T')[0] });
-  scores.sort((a,b)=>a.time-b.time);
-  localStorage.setItem(LS_SCORES, JSON.stringify(scores.slice(0,TOP_N)));
 }
 
 /* ── Leaderboard ─────────────────────────── */
@@ -645,24 +387,9 @@ async function loadLeaderboard() {
     status.textContent='✓ local'; status.className='lb-status err';
   }
 }
-function renderTable(scores,tbody) {
-  tbody.innerHTML=scores.map((s,i)=>`<tr>
-    <td class="rank">${i+1}</td>
-    <td class="score-val">${s.time}s</td>
-    <td>${s.diff||'—'}</td>
-    <td class="date-val">${s.date||'—'}</td>
-  </tr>`).join('');
-  if(!scores.length) tbody.innerHTML='<tr><td colspan="4" style="color:var(--text-dim);padding:4px 3px">no wins yet</td></tr>';
-}
 
 /* ── Boot ────────────────────────────────── */
 window.addEventListener('load',()=>{ newGame(); });
-
-
-
-
-
-
 
 function gameKey(key) {
   var mv={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]};
@@ -672,12 +399,6 @@ function gameKey(key) {
   if(key.toLowerCase()==='r'){ newGame(); }
 }
 
-var _lbOpen=false;
-function lbToggle(){
-  _lbOpen=!_lbOpen;
-  document.getElementById('lb-wrap').style.display=_lbOpen?'':'none';
-  if(_lbOpen) lbFetch(SCORES_URL,LS_SCORES,TOP_N,function(a,b){return a.time-b.time;});
-}
 function renderTable(scores,tbody){
   tbody.innerHTML=scores.map(function(s,i){
     return '<tr><td class="r">'+(i+1)+'</td><td class="sv">'+s.time+'s</td><td>'+(s.diff||'—')+'</td><td class="dv">'+(s.date||'—')+'</td></tr>';
@@ -685,93 +406,86 @@ function renderTable(scores,tbody){
   if(!scores.length) tbody.innerHTML='<tr><td colspan="4" style="color:var(--text-dim);padding:4px">no wins yet</td></tr>';
 }
 
-/* ── KaiOS key capture ──────────────────────────────────────
-   KaiOS web apps cannot grab keyboard on load without a user
-   gesture. Pattern: tap game area → focus hidden input →
-   arrow keys owned until user navigates away.             */
-var _keyCapture = document.getElementById('key-capture');
-var _activated  = false;
-
-function activateKeys() {
-  _keyCapture.focus();
-  _activated = true;
-  var banner = document.getElementById('tap-banner');
-  if(banner) banner.style.display = 'none';
-}
-
-function deactivateKeys() {
-  _activated = false;
-  var banner = document.getElementById('tap-banner');
-  if(banner) banner.style.display = 'flex';
-}
-
-_keyCapture.addEventListener('keydown', function(e) {
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  if(typeof gameKey === 'function') gameKey(e.key);
-});
-
-/* Belt+suspenders: window capture for any keys that slip through */
-window.addEventListener('keydown', function(e) {
-  if(!_activated) return;
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if(nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  if(typeof gameKey === 'function') gameKey(e.key);
-}, {capture: true, passive: false});
-
-_keyCapture.addEventListener('blur', function() {
-  setTimeout(function() {
-    /* Only show banner if focus went to something outside the game */
-    if(document.activeElement !== _keyCapture) deactivateKeys();
-  }, 100);
-});
+/* ── Ka
 
 /* Nav/button taps re-focus after action */
-function refocusCapture() {
-  if(_activated) activateKeys();
-}
-
-function toggleNav() {
-  var nl = document.getElementById('nav-links');
-  if(nl) nl.classList.toggle('open');
-}
 
 /* Leaderboard fetch helper */
-function lbFetch(scoresUrl, lsKey, topN, sortFn) {
-  var status = document.getElementById('lb-status');
-  var tbody  = document.getElementById('lb-body');
-  if(!status||!tbody) return;
-  status.textContent = 'syncing…'; status.className = 'lb-status';
-  var local = lbLocalScores(lsKey);
-  lbRender(local, tbody);
-  fetch(scoresUrl+'?_='+Date.now(),{cache:'no-store'})
-    .then(function(r){ return r.ok?r.json():Promise.reject(); })
-    .then(function(remote){
-      var merged = remote.concat(local);
-      merged.sort(sortFn);
-      var seen = {}, deduped = [];
-      merged.forEach(function(e){
-        var k = JSON.stringify(e);
-        if(!seen[k]){seen[k]=1;deduped.push(e);}
-      });
-      lbRender(deduped.slice(0,topN), tbody);
-      status.textContent = '✓ git'; status.className = 'lb-status ok';
-    })
-    .catch(function(){
-      status.textContent = '✓ local'; status.className = 'lb-status err';
-    });
+
+function gameKey(key) {
+  var mv = {ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]};
+  if (mv[key]) { moveCursor(mv[key][0], mv[key][1]); return; }
+  if (key === 'Enter' || key === ' ') { activateCell(); return; }
+  if (key.toLowerCase() === 'f') { toggleFlagCell(cursor.x, cursor.y); return; }
+  if (key.toLowerCase() === 'r') newGame();
 }
-function lbLocalScores(key) {
-  try { return JSON.parse(localStorage.getItem(key)||'[]'); } catch{ return []; }
+
+function showOverlay(t, m) {
+  document.getElementById('ov-title').textContent = t;
+  document.getElementById('ov-msg').innerHTML = m;
+  document.getElementById('overlay').classList.add('show');
 }
-function lbSave(key, entry, topN, sortFn) {
-  var scores = lbLocalScores(key);
-  scores.push(entry);
-  scores.sort(sortFn);
-  localStorage.setItem(key, JSON.stringify(scores.slice(0,topN)));
+function closeOverlay() { document.getElementById('overlay').classList.remove('show'); }
+
+function updateMinesLeft() {
+  var fl = 0;
+  flagged.forEach(function(r){ r.forEach(function(f){ if(f) fl++; }); });
+  document.getElementById('mines-left').textContent = mineCount - fl;
 }
-function lbRender(scores, tbody) {
-  if(typeof renderTable === 'function') renderTable(scores, tbody);
+
+function toggleFlag() {
+  flagMode = !flagMode;
+  var b = document.getElementById('flag-btn');
+  b.textContent = flagMode ? 'Flag: ON' : 'Flag: OFF';
+  b.style.color = flagMode ? 'var(--accent2)' : 'var(--text)';
+}
+
+function saveScore() {
+  if (!won) return;
+  lbSave(LS_SCORES, {time:elapsed, diff:diff, date:new Date().toISOString().split('T')[0]},
+    TOP_N, function(a,b){ return a.time - b.time; });
+}
+
+function getBestFor(d) {
+  var s = lbLocalScores(LS_SCORES).filter(function(x){ return x.diff === d; });
+  return s.length ? s[0].time : null;
+}
+
+window.addEventListener('load', function() { newGame(); });
+
+
+/* ── KaiOS key capture ─────────────────────────────────── */
+var _kc = document.getElementById('key-capture');
+var _act = false;
+
+
+
+_kc.addEventListener('keydown', function(e) {
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof gameKey === 'function') gameKey(e.key);
+});
+
+window.addEventListener('keydown', function(e) {
+  if (!_act) return;
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+}, {capture: true, passive: false});
+
+_kc.addEventListener('blur', function() {
+  setTimeout(function() {
+    if (document.activeElement !== _kc) deactivateKeys();
+  }, 80);
+});
+
+
+function lbLocalScores(k) {
+  try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch(e) { return []; }
+}
+function lbSave(k, entry, n, sf) {
+  var s = lbLocalScores(k);
+  s.push(entry); s.sort(sf);
+  localStorage.setItem(k, JSON.stringify(s.slice(0, n)));
 }
 
 </script>
