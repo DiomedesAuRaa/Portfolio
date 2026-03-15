@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%23218838%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2752%25%27%20font-size%3D%2744%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%20font-family%3D%27Apple%20Color%20Emoji%2CSegoe%20UI%20Emoji%2CSegoe%20UI%20Symbol%2CEmojiSymbols%2Csans-serif%27%20fill%3D%27%23ffffff%27%3E%F0%9F%9F%A9%3C%2Ftext%3E%3C%2Fsvg%3E">
   <title>Wordle</title>
   <style>
 
@@ -163,6 +162,56 @@
   </div>
 </div>
 <script>
+/* ── KaiOS key capture ─────────────────────────────────── */
+var _kc = document.getElementById('key-capture');
+var _act = false;
+
+function activateKeys() {
+  _kc.focus();
+  _act = true;
+  var b = document.getElementById('tap-banner');
+  if (b) b.style.display = 'none';
+}
+
+function deactivateKeys() {
+  _act = false;
+  var b = document.getElementById('tap-banner');
+  if (b) b.style.display = 'flex';
+}
+
+function toggleNav() {
+  var d = document.getElementById('nav-drawer');
+  if (d) d.classList.toggle('open');
+}
+
+function lbLocalScores(k) {
+  try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch(e) { return []; }
+}
+
+function lbSave(k, entry, n, sf) {
+  var s = lbLocalScores(k);
+  s.push(entry); s.sort(sf);
+  localStorage.setItem(k, JSON.stringify(s.slice(0, n)));
+}
+
+_kc.addEventListener('keydown', function(e) {
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof gameKey === 'function') gameKey(e.key);
+});
+
+window.addEventListener('keydown', function(e) {
+  if (!_act) return;
+  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+}, {capture: true, passive: false});
+
+_kc.addEventListener('blur', function() {
+  setTimeout(function() {
+    if (document.activeElement !== _kc) deactivateKeys();
+  }, 80);
+});
+
 /* ── Word list — 500 common 5-letter words ─────────────────── */
 const WORDS = `about above abuse actor acute admin admit adobe adopt after again agent agile agree ahead aisle alarm album alert alien align alike alive allay alley allot allow alone along aloof aloud alpha altar alter among ample angel anger angle angry anime annex annoy antic anvil aorta apart aphid apple apply apron aptly arena argue arise armor aroma arose array aside asset atlas atone attic audit augur avail avant avert avian avoid avid award aware awful badly baker basic basis beach beard beast beaut began begin being below bench berry bevel bidet biker birch bison black blade blame bland blast blaze bleed blend bless blind blink bliss bloat block blood bloom blown blues blunt blurt blush board bonus boost booth bored bound brain brake brand brave brawl break breed breve brick bride brief brine bring brink broil broke brook broth brows brunt brush build built bulge bumpy burst buyer bylaw cabal cadet camel cameo canal candy cargo carry cause cease cedar chain chair chaos charm chart chase cheap cheat check cheek cheer chess chest chief china choir chord chunk civic civil clack claim clamp clang clank clash clasp clean clear click cliff climb cling clock clone close cloth cloud clout clown clunk coact coach coapt coeur coils color comic comma count court cover crack craft crane crash crave craze creak creek creep crest crimp crisp cross crowd crown crude cruel crumb cruse crush crypt cubic curve cycle daddy dairy dance dandy dealt debug decay decor decoy delve dense depot depth derby deter devil digit dimly dirty disco discs dodge dogma doing dopey doubt dough dowry drank drawl dream dried drift drink drool droop drove drown druid drums dryer duchy dulls dummy dunce duped dusty dwarf dwell dying eager eagle early earth eight elect elite ember emote empty enjoy envoy equip ethic evade event every exert exile exist extra fable facet faint fairy faith fancy farce fatal fault favor feast ferry fetch fever field fiend fight filth final fixed fizzy fjord flaky flame flank flare flash flask flawy flaw flesh flick fling flock flood flora floss flout flown fluke flunk flute focus folio folly forge forth forum found foyer frail frame freak fresh friar front frost froth froze fully fungi funky funny futon fuzzy gaudy gaunt gauze gavel gawky gimmick girth given glare gleam glean glide glint gloat gloom gloss glove glyph gnash godly goose grace grade graft grain grasp graze greet grief grill grimy gripe grit groan groin groom grope gross group grove growl gruel gruff grump guava guile guise gusto gypsy hairy handy hatch haunt haves hazel heady heart heavy hedge helix hence heron hippo hired hoist holly homer honey honor horde hotel hound hover humid hurry hyena hydra icily icing ideal idiom idiot inept infer ingot inlay input inter intro irony issue ivory jaunt jazzy jelly joust joker jumbo kaput kayak kinky knife knoll knot kudos label lance lanky lapel large laser latch later latte lathe layer leach leaky leapt leech leery legal lemma lemon level liege liken limbo lingo lipid liter liver livid local lofty logic loose lousy lover lowly lumpy lusty lying lyric magic maker mania manly maple march marry masse match matte maxim media medic melee mercy merge messy metal midst might mimic mirth miser mixed model money month moody morph mossy motel motor motto moult mound mourn muddy muggy munch murky myrrh nadir naive nasty needy nerve newly night noble noise nomad north notch novel nudge nymph occur ocean offal often olive optic orbit order other ought outdo outer oxide oxide ozone padre panic papal paper party pasta pasty patch patio patsy pause peace pearl pedal penal petty phase piano pithy pixel pixel pizza pixel place plaid plain plane plank plant plaza plaza plead pleat plied plumb plume plunk plush poach podgy point poker polar polka poppy porch posse pouch pouty power prawn press price pride prime primp print prism prize probe prone proof prose prove prowl psalm pudgy pulse punch purge quack quaff quake qualm quark quart quasi quill quilt quirk quota quota quota quote quota rabbi radar radii rainy rally ranch rangy rapid raven raspy reach realm rebus rebel recap reedy regal reign relay realm remit repay repel repot rerun reset resin retro revel rhyme rider rigid risky rivet robot rocky rogue rondo roomy roped rosin rouge rough rouse rowdy ruder rugby ruler rumba rusty sadly saint savvy scald scalp scoff scold scone scoop scorn scout scowl scram screw scrub seize shack shaft shaky shale shall shalt shame shank share shark shawl sheen shelf shell shift shire shirt shoal shook shore shout shovel shred shrub shrug shunt siege sigma silly since sixth sixty skiff skimp skull slab slack slant slurp smack small smash smear smirk smite smock snaky snare sneak sneer snide sniff snore solar sonar sorry south sower spark spawn spear speck spend spire splat split spoil spoke spoof sport spout spree sprig spunk squad squat squid stain stale stalk stall stamp stark stash stave stead steer stern stick stiff still sting stink stoic stomp stone stout stove strap stray strew strip strut study stump stung style suave suede suite sulky sunny super surge swamp swank swarm swear sweat sweep swept swift swirl taint tangy taunt tawny tease terse their thorn three threw throb throw tiger timid titan toadal token tonic topaz total touch touchy towel toxic track trait tramp trend tribe trice trick tried tripe troll troth trout trove truce trump trunk tryst tulip tumor tuned tunic twang tweak twirl twist tying tying udder ultra uncut unfit unify unity until unwed upset urban usher usual utter uvula vague vapor vault vaunt vegan vigor vigor vigil viral vital vivid vocal vodka voila voila vouch vying waltz waver weary wedge weedy weigh weird whack whale whiff while whiff whirl whisk which witty witty women world wordy wrath wring wrote yacht yearn yield young zeal zilch zippy zoned`.split(/\s+/).filter(w=>w.length===5);
 
@@ -528,40 +577,6 @@ window.addEventListener('load', function() {
   }
 });
 
-
-/* ── KaiOS key capture ─────────────────────────────────── */
-var _kc = document.getElementById('key-capture');
-var _act = false;
-
-
-
-_kc.addEventListener('keydown', function(e) {
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  if (typeof gameKey === 'function') gameKey(e.key);
-});
-
-window.addEventListener('keydown', function(e) {
-  if (!_act) return;
-  var nav = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
-  if (nav.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-}, {capture: true, passive: false});
-
-_kc.addEventListener('blur', function() {
-  setTimeout(function() {
-    if (document.activeElement !== _kc) deactivateKeys();
-  }, 80);
-});
-
-
-function lbLocalScores(k) {
-  try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch(e) { return []; }
-}
-function lbSave(k, entry, n, sf) {
-  var s = lbLocalScores(k);
-  s.push(entry); s.sort(sf);
-  localStorage.setItem(k, JSON.stringify(s.slice(0, n)));
-}
 
 </script>
 </body>
