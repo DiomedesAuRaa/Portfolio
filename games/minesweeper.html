@@ -584,51 +584,6 @@ function renderTable(scores,tbody) {
 /* ── Boot ────────────────────────────────── */
 window.addEventListener('load',()=>{ newGame(); });
 
-}
-
-
-
-
-/* ── KaiOS: full arrow key takeover ─────────────────────
-   1. window capture — fires before spatial nav engine
-   2. Strip all focusable elements at DOMContentLoaded
-   3. Focus game element immediately, re-focus if lost    */
-
-var GAME_KEYS = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',
-                 ' ','Enter','Backspace'];
-
-window.addEventListener('keydown', function(e) {
-  if(GAME_KEYS.indexOf(e.key) !== -1) {
-    e.preventDefault();
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-  }
-}, {passive: false, capture: true});
-
-/* Remove all tab stops except the game target on load */
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('a, button, input, select, textarea').forEach(function(el) {
-    el.setAttribute('tabindex', '-1');
-  });
-  /* Focus game element right away so KaiOS spatial nav has no candidates */
-  var el = document.getElementById('c') ||          /* snake/tetris canvas */
-           document.getElementById('board') ||      /* 2048/mines          */
-           document.getElementById('grid');         /* wordle              */
-  if(el) {
-    el.setAttribute('tabindex', '0');
-    el.style.outline = 'none';
-    /* Small delay ensures DOM is painted */
-    setTimeout(function(){ el.focus(); }, 50);
-  }
-});
-
-/* Re-focus if user somehow navigates away */
-document.addEventListener('focusout', function(e) {
-  var el = document.getElementById('c') ||
-           document.getElementById('board') ||
-           document.getElementById('grid');
-  if(el) setTimeout(function(){ el.focus(); }, 30);
-});
 
 
 
@@ -637,7 +592,7 @@ document.addEventListener('focusout', function(e) {
 
 function gameKey(key) {
   var mv={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]};
-  if(mv[key]){ moveCursor(...mv[key]); return; }
+  if(mv[key]){ moveCursor(mv[key][0],mv[key][1]); return; }
   if(key==='Enter'||key===' '){ activateCell(); return; }
   if(key.toLowerCase()==='f'){ toggleFlagCell(cursor.x,cursor.y); return; }
   if(key.toLowerCase()==='r'){ newGame(); }
@@ -656,11 +611,9 @@ function renderTable(scores,tbody){
   if(!scores.length) tbody.innerHTML='<tr><td colspan="4" style="color:var(--text-dim);padding:4px">no wins yet</td></tr>';
 }
 
-
 /* ── KaiOS key capture ──────────────────────────────────
-   A hidden <input> is always re-focused. KaiOS gives inputs
-   full keyboard ownership — spatial nav does not intercept.
-   We forward its keydown events to the game handler.       */
+   Hidden <input> stays focused — KaiOS gives inputs full
+   keyboard ownership so spatial nav cannot intercept.    */
 var _keyCapture = document.getElementById('key-capture');
 
 function refocusCapture() {
@@ -669,9 +622,8 @@ function refocusCapture() {
   }
 }
 
-/* Also catch keys at window level as belt+suspenders */
 window.addEventListener('keydown', function(e) {
-  var blocked = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  var blocked = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
   if(blocked.indexOf(e.key) !== -1) {
     e.preventDefault();
     e.stopImmediatePropagation();
@@ -680,26 +632,20 @@ window.addEventListener('keydown', function(e) {
 }, {capture: true, passive: false});
 
 _keyCapture.addEventListener('keydown', function(e) {
-  var blocked = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
-  if(blocked.indexOf(e.key) !== -1) {
-    e.preventDefault();
-    e.stopImmediatePropagation();
-  }
+  var blocked = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
+  if(blocked.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if(typeof gameKey === 'function') gameKey(e.key);
 });
 
-/* Re-focus after any click/tap so keys keep working */
-document.addEventListener('click', function() { refocusCapture(); });
-document.addEventListener('touchend', function() { refocusCapture(); });
+document.addEventListener('click',    function(){ refocusCapture(); });
+document.addEventListener('touchend', function(){ refocusCapture(); });
 
-/* Nav toggle */
 function toggleNav() {
   var nl = document.getElementById('nav-links');
   if(nl) nl.classList.toggle('open');
   refocusCapture();
 }
 
-/* Leaderboard helpers (shared) */
 function lbFetch(scoresUrl, lsKey, topN, sortFn) {
   var status = document.getElementById('lb-status');
   var tbody  = document.getElementById('lb-body');
@@ -734,7 +680,6 @@ function lbSave(key, entry, topN, sortFn) {
   localStorage.setItem(key, JSON.stringify(scores.slice(0,topN)));
 }
 
-/* Focus capture on load */
 window.addEventListener('load', function(){ refocusCapture(); });
 
 </script>
