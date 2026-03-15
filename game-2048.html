@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>2048 | Josh</title>
+  <style>
+    /* ── Flip-phone target: 240×320 – 320×480 viewport ──────────────── */
+    :root {
+      /* Reddit light palette exactly */
+      --bg:        #ffffff;
+      --surface:   #f6f7f8;
+      --surface2:  #edeff1;
+      --border:    #edeff1;
+      --accent:    #ff4500;   /* Reddit orange */
+      --accent-hi: #ff6314;   /* lighter orange */
+      --accent-lo: #fff3ef;   /* very pale orange tint */
+      --text:      #1c1c1c;
+      --text-dim:  #878a8c;
+      --tile-empty:#dae0e6;
+      --radius:    4px;
+      --gap:       5px;
+      --tile-size: clamp(48px, 19vw, 72px);
+
+      /* tile ramp – pale cream → full Reddit orange → deep red */
+      --t2:    #fdf9f7; --t2c:    #cc3600;
+      --t4:    #fdeee6; --t4c:    #b33000;
+      --t8:    #fcd8c5; --t8c:    #8c2400;
+      --t16:   #fab99a; --t16c:   #6b1a00;
+      --t32:   #f89670; --t32c:   #ffffff;
+      --t64:   #ff6314; --t64c:   #ffffff;
+      --t128:  #ff4500; --t128c:  #ffffff;
+      --t256:  #e03c00; --t256c:  #ffffff;
+      --t512:  #c23300; --t512c:  #ffe8e0;
+      --t1024: #a52b00; --t1024c: #ffe0d0;
+      --t2048: #ff4500; --t2048c: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 13px;
+      overscroll-behavior: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+    }
+
+    /* ── Layout ─────────────────────────────────────────────── */
+    .shell {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      max-width: 340px;
+      margin: 0 auto;
+      padding: 6px 6px 2px;
+      gap: 5px;
+    }
+
+    /* ── Nav ─────────────────────────────────────────────────── */
+    nav {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+    }
+    nav a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 11px;
+      padding: 2px 4px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+    }
+    nav a:hover, nav a.active {
+      color: var(--accent);
+      border-color: var(--accent-hi);
+    }
+
+    /* ── Header row ─────────────────────────────────────────── */
+    .hdr {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .hdr h1 {
+      font-size: 22px;
+      color: var(--accent);
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+    .hdr .prompt { color: var(--text-dim); font-size: 10px; }
+
+    /* ── Score bar ───────────────────────────────────────────── */
+    .score-bar {
+      display: flex;
+      gap: 5px;
+    }
+    .score-box {
+      flex: 1;
+      background: var(--accent-lo);
+      border: 1px solid var(--surface2);
+      border-top: 2px solid var(--accent);
+      border-radius: var(--radius);
+      text-align: center;
+      padding: 4px 2px 3px;
+    }
+    .score-box .label { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+    .score-box .val   { font-size: 16px; color: var(--accent); font-weight: bold; line-height: 1.2; }
+
+    /* ── Board ───────────────────────────────────────────────── */
+    .board-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--accent);
+      border-radius: var(--radius);
+      padding: var(--gap);
+    }
+    #board {
+      display: grid;
+      grid-template-columns: repeat(4, var(--tile-size));
+      grid-template-rows:    repeat(4, var(--tile-size));
+      gap: var(--gap);
+      margin: 0 auto;
+      width: fit-content;
+    }
+
+    /* ── Tiles ───────────────────────────────────────────────── */
+    .tile {
+      width: var(--tile-size);
+      height: var(--tile-size);
+      background: var(--tile-empty);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: clamp(12px, 4.5vw, 20px);
+      transition: background 0.08s, color 0.08s;
+      position: relative;
+    }
+    .tile[data-v]  { animation: pop 0.12s ease-out; }
+    .tile[data-new]{ animation: appear 0.15s ease-out; }
+
+    @keyframes pop    { 0%{transform:scale(1.12)} 100%{transform:scale(1)} }
+    @keyframes appear { 0%{transform:scale(0.5);opacity:0} 100%{transform:scale(1);opacity:1} }
+
+    .tile[data-v="2"]    { background:var(--t2);    color:var(--t2c); }
+    .tile[data-v="4"]    { background:var(--t4);    color:var(--t4c); }
+    .tile[data-v="8"]    { background:var(--t8);    color:var(--t8c); }
+    .tile[data-v="16"]   { background:var(--t16);   color:var(--t16c); }
+    .tile[data-v="32"]   { background:var(--t32);   color:var(--t32c); }
+    .tile[data-v="64"]   { background:var(--t64);   color:var(--t64c); }
+    .tile[data-v="128"]  { background:var(--t128);  color:var(--t128c); font-size: clamp(10px,3.8vw,16px); }
+    .tile[data-v="256"]  { background:var(--t256);  color:var(--t256c); font-size: clamp(10px,3.8vw,16px); }
+    .tile[data-v="512"]  { background:var(--t512);  color:var(--t512c); font-size: clamp(10px,3.8vw,16px); }
+    .tile[data-v="1024"] { background:var(--t1024); color:var(--t1024c); font-size: clamp(8px,3.2vw,13px); }
+    .tile[data-v="2048"] { background:var(--t2048); color:var(--t2048c); font-size: clamp(8px,3.2vw,13px);
+                           box-shadow: 0 0 12px var(--accent); animation: glow 1s infinite alternate; }
+    @keyframes glow { from{box-shadow:0 0 6px var(--accent-hi)} to{box-shadow:0 0 18px var(--accent)} }
+
+    /* ── Controls ────────────────────────────────────────────── */
+    .controls {
+      display: flex;
+      gap: 5px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 11px;
+      padding: 5px 9px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: color 0.1s, border-color 0.1s;
+    }
+    button:hover, button:active {
+      color: var(--accent);
+      border-color: var(--accent-hi);
+    }
+    .hint { font-size: 10px; color: var(--text-dim); text-align: center; line-height: 1.4; }
+
+    /* ── D-pad (flip phone soft keys) ────────────────────────── */
+    .dpad {
+      display: grid;
+      grid-template-columns: repeat(3, 36px);
+      grid-template-rows:    repeat(3, 36px);
+      gap: 3px;
+      margin: 0 auto;
+      width: fit-content;
+    }
+    .dpad button {
+      width: 36px;
+      height: 36px;
+      padding: 0;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .dpad .center { grid-column: 2; grid-row: 2; font-size: 9px; }
+
+    /* ── Overlay (game over / win) ───────────────────────────── */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,0.92);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      z-index: 10;
+      display: none;
+    }
+    .overlay.show { display: flex; }
+    .overlay h2 { font-size: 20px; color: var(--accent); }
+    .overlay p  { color: var(--text-dim); font-size: 12px; text-align: center; }
+
+    /* ── Leaderboard ─────────────────────────────────────────── */
+    .lb-section { border-top: 1px solid var(--border); padding-top: 5px; }
+    .lb-title {
+      font-size: 10px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .lb-status { font-size: 9px; }
+    .lb-status.ok    { color: var(--accent-hi); }
+    .lb-status.err   { color: #a05030; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11px;
+    }
+    th {
+      color: var(--text-dim);
+      font-weight: normal;
+      text-align: left;
+      padding: 1px 3px;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 2px 3px;
+      color: var(--text);
+      border-bottom: 1px solid var(--tile-empty);
+    }
+    tr:first-child td { color: var(--accent); }
+    td.rank { color: var(--text-dim); width: 18px; }
+    td.score-val { text-align: right; color: var(--accent); }
+    td.date-val  { text-align: right; color: var(--text-dim); font-size: 10px; }
+  </style>
+</head>
+<body>
+
+<div class="overlay" id="overlay">
+  <h2 id="overlay-title">GAME OVER</h2>
+  <p id="overlay-msg">Score: <span id="overlay-score">0</span></p>
+  <button onclick="newGame()">[ NEW GAME ]</button>
+</div>
+
+<div class="shell">
+  <nav>
+    <a href="home.html">home</a>
+    <a href="news.html">news</a>
+    <a href="weather.html">weather</a>
+    <a href="sports-scores.html">scores</a>
+    <a href="standings.html">standings</a>
+    <a href="reddit-digest.html">reddit</a>
+    <a href="game-2048.html" class="active">2048</a>
+    <a href="contact.html">contact</a>
+  </nav>
+
+  <div class="hdr">
+    <h1>2048</h1>
+    <span class="prompt">$ ./play --no-sleep</span>
+  </div>
+
+  <div class="score-bar">
+    <div class="score-box">
+      <div class="label">Score</div>
+      <div class="val" id="score">0</div>
+    </div>
+    <div class="score-box">
+      <div class="label">Best</div>
+      <div class="val" id="best">0</div>
+    </div>
+    <div class="score-box">
+      <div class="label">Moves</div>
+      <div class="val" id="moves">0</div>
+    </div>
+  </div>
+
+  <div class="board-wrap">
+    <div id="board"></div>
+  </div>
+
+  <div class="controls">
+    <button onclick="newGame()">↺ New</button>
+    <button onclick="undoMove()">⎌ Undo</button>
+    <button onclick="toggleLB()">⊞ Scores</button>
+  </div>
+
+  <!-- D-pad for flip phones without swipe -->
+  <div class="dpad" id="dpad">
+    <button style="grid-column:2;grid-row:1" onclick="move('up')">▲</button>
+    <button style="grid-column:1;grid-row:2" onclick="move('left')">◀</button>
+    <button class="center" style="grid-column:2;grid-row:2" onclick="newGame()">new</button>
+    <button style="grid-column:3;grid-row:2" onclick="move('right')">▶</button>
+    <button style="grid-column:2;grid-row:3" onclick="move('down')">▼</button>
+  </div>
+
+  <p class="hint">Arrow keys · WASD · Swipe · D-pad</p>
+
+  <!-- Leaderboard -->
+  <div class="lb-section" id="lb-section" style="display:none">
+    <div class="lb-title">
+      <span>Top Scores</span>
+      <span class="lb-status" id="lb-status">loading…</span>
+    </div>
+    <table>
+      <thead><tr><th>#</th><th>Score</th><th>Date</th></tr></thead>
+      <tbody id="lb-body"></tbody>
+    </table>
+  </div>
+
+</div><!-- .shell -->
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   CONFIG — update REPO to your GitHub user/repo
+   Scores are read from scores.json in your repo root.
+   To write back: commit scores.json via GitHub Actions or manually.
+═══════════════════════════════════════════════════════════════ */
+const REPO       = 'DiomedesAuRaa/Portfolio';
+const SCORES_URL = `https://raw.githubusercontent.com/${REPO}/main/scores.json`;
+const LS_SCORES  = '2048_scores';   // localStorage key for local high scores
+const LS_STATE   = '2048_state';    // localStorage key for game state
+const LS_UNDO    = '2048_undo';
+const TOP_N      = 10;
+
+/* ─── Game State ─────────────────────────────────────────────── */
+let grid, score, moves, prevGrid, prevScore, prevMoves, won;
+
+function emptyGrid() { return Array.from({length:4}, ()=>Array(4).fill(0)); }
+
+function newGame() {
+  grid = emptyGrid();
+  score = 0; moves = 0; won = false;
+  prevGrid = null; prevScore = 0; prevMoves = 0;
+  addRandom(); addRandom();
+  closeOverlay();
+  render();
+  saveState();
+}
+
+function addRandom() {
+  const empties = [];
+  grid.forEach((row,r) => row.forEach((v,c) => { if(!v) empties.push([r,c]); }));
+  if(!empties.length) return;
+  const [r,c] = empties[Math.floor(Math.random()*empties.length)];
+  grid[r][c] = Math.random()<0.9 ? 2 : 4;
+}
+
+/* ─── Movement ───────────────────────────────────────────────── */
+function slide(row) {
+  let r = row.filter(v=>v);
+  let gained = 0;
+  for(let i=0; i<r.length-1; i++) {
+    if(r[i]===r[i+1]) { r[i]*=2; gained+=r[i]; r.splice(i+1,1); }
+  }
+  while(r.length<4) r.push(0);
+  return [r, gained];
+}
+
+function move(dir) {
+  const before = JSON.stringify(grid);
+  prevGrid  = JSON.parse(JSON.stringify(grid));
+  prevScore = score; prevMoves = moves;
+
+  let gained = 0;
+  if(dir==='left')  { grid.forEach((row,i)=>{ const[r,g]=slide(row); grid[i]=r; gained+=g; }); }
+  if(dir==='right') { grid.forEach((row,i)=>{ const[r,g]=slide([...row].reverse()); grid[i]=r.reverse(); gained+=g; }); }
+  if(dir==='up')    { for(let c=0;c<4;c++){ const col=grid.map(r=>r[c]); const[r,g]=slide(col); r.forEach((v,r2)=>grid[r2][c]=v); gained+=g; } }
+  if(dir==='down')  { for(let c=0;c<4;c++){ const col=grid.map(r=>r[c]).reverse(); const[r,g]=slide(col); r.reverse().forEach((v,r2)=>grid[r2][c]=v); gained+=g; } }
+
+  if(JSON.stringify(grid)===before) return; // no change
+
+  score += gained; moves++;
+  addRandom();
+
+  if(!won && grid.some(row=>row.includes(2048))) {
+    won = true;
+    showOverlay('YOU WIN', `Score: ${score} in ${moves} moves`);
+  } else if(!canMove()) {
+    checkAndSaveScore();
+    showOverlay('GAME OVER', `Final score: ${score}`);
+  }
+
+  updateScoreBest();
+  render();
+  saveState();
+}
+
+function canMove() {
+  if(grid.some(row=>row.includes(0))) return true;
+  for(let r=0;r<4;r++) for(let c=0;c<4;c++) {
+    const v=grid[r][c];
+    if(c<3 && grid[r][c+1]===v) return true;
+    if(r<3 && grid[r+1][c]===v) return true;
+  }
+  return false;
+}
+
+function undoMove() {
+  if(!prevGrid) return;
+  grid=prevGrid; score=prevScore; moves=prevMoves;
+  prevGrid=null;
+  updateScoreBest(); render(); saveState();
+}
+
+/* ─── Render ─────────────────────────────────────────────────── */
+function render() {
+  const board = document.getElementById('board');
+  board.innerHTML='';
+  grid.forEach(row => row.forEach(v => {
+    const t = document.createElement('div');
+    t.className = 'tile';
+    if(v){ t.textContent=v; t.setAttribute('data-v',v); }
+    board.appendChild(t);
+  }));
+}
+
+function updateScoreBest() {
+  document.getElementById('score').textContent = score;
+  document.getElementById('moves').textContent = moves;
+  const best = getBest();
+  document.getElementById('best').textContent = Math.max(best, score);
+}
+
+/* ─── Scoring / Persistence ──────────────────────────────────── */
+function getBest() {
+  const scores = getLocalScores();
+  return scores.length ? scores[0].score : 0;
+}
+
+function getLocalScores() {
+  try { return JSON.parse(localStorage.getItem(LS_SCORES)||'[]'); } catch{ return []; }
+}
+
+function checkAndSaveScore() {
+  if(score===0) return;
+  const scores = getLocalScores();
+  scores.push({ score, moves, date: new Date().toISOString().split('T')[0] });
+  scores.sort((a,b)=>b.score-a.score);
+  const top = scores.slice(0,TOP_N);
+  localStorage.setItem(LS_SCORES, JSON.stringify(top));
+  return top;
+}
+
+function saveState() {
+  localStorage.setItem(LS_STATE, JSON.stringify({grid,score,moves,won}));
+  localStorage.setItem(LS_UNDO,  JSON.stringify({prevGrid,prevScore,prevMoves}));
+}
+
+function loadState() {
+  try {
+    const s = JSON.parse(localStorage.getItem(LS_STATE));
+    if(s && s.grid) { grid=s.grid; score=s.score; moves=s.moves; won=s.won; }
+    else { newGame(); return; }
+    const u = JSON.parse(localStorage.getItem(LS_UNDO)||'null');
+    if(u) { prevGrid=u.prevGrid; prevScore=u.prevScore; prevMoves=u.prevMoves; }
+    updateScoreBest(); render();
+  } catch { newGame(); }
+}
+
+/* ─── Overlay ────────────────────────────────────────────────── */
+function showOverlay(title, msg) {
+  document.getElementById('overlay-title').textContent = title;
+  document.getElementById('overlay-msg').textContent   = msg;
+  document.getElementById('overlay').classList.add('show');
+}
+function closeOverlay() {
+  document.getElementById('overlay').classList.remove('show');
+}
+
+/* ─── Leaderboard ────────────────────────────────────────────── */
+let lbVisible = false;
+
+function toggleLB() {
+  lbVisible = !lbVisible;
+  document.getElementById('lb-section').style.display = lbVisible ? '' : 'none';
+  if(lbVisible) loadLeaderboard();
+}
+
+async function loadLeaderboard() {
+  const status = document.getElementById('lb-status');
+  const tbody  = document.getElementById('lb-body');
+  status.textContent = 'syncing…';
+  status.className   = 'lb-status';
+
+  // Start with local scores immediately
+  const local = getLocalScores();
+  renderTable(local, tbody);
+
+  // Try to fetch from git (scores.json in repo)
+  try {
+    const res = await fetch(SCORES_URL + '?_=' + Date.now(), {cache:'no-store'});
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const remote = await res.json();
+
+    // Merge remote + local, deduplicate by date+score, keep top N
+    const merged = [...remote, ...local];
+    merged.sort((a,b)=>b.score-a.score);
+    const seen = new Set();
+    const deduped = merged.filter(e=>{
+      const k=`${e.score}_${e.date}`;
+      if(seen.has(k)) return false;
+      seen.add(k); return true;
+    }).slice(0,TOP_N);
+
+    renderTable(deduped, tbody);
+    status.textContent = '✓ git';
+    status.className   = 'lb-status ok';
+  } catch(e) {
+    status.textContent = '✓ local';
+    status.className   = 'lb-status err';
+  }
+}
+
+function renderTable(scores, tbody) {
+  tbody.innerHTML = scores.map((s,i)=>`
+    <tr>
+      <td class="rank">${i+1}</td>
+      <td class="score-val">${s.score.toLocaleString()}</td>
+      <td class="date-val">${s.date||'—'}</td>
+    </tr>`).join('');
+  if(!scores.length) tbody.innerHTML='<tr><td colspan="3" style="color:var(--text-dim);padding:4px 3px">no scores yet</td></tr>';
+}
+
+/* ─── Input: keyboard ────────────────────────────────────────── */
+document.addEventListener('keydown', e=>{
+  const map = {ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',
+               w:'up',s:'down',a:'left',d:'right',
+               k:'up',j:'down',h:'left',l:'right'};
+  if(map[e.key]) { e.preventDefault(); move(map[e.key]); }
+});
+
+/* ─── Input: touch swipe ─────────────────────────────────────── */
+let tx=0, ty=0;
+document.getElementById('board').addEventListener('touchstart', e=>{
+  tx=e.touches[0].clientX; ty=e.touches[0].clientY;
+},{passive:true});
+document.getElementById('board').addEventListener('touchend', e=>{
+  const dx=e.changedTouches[0].clientX-tx;
+  const dy=e.changedTouches[0].clientY-ty;
+  if(Math.max(Math.abs(dx),Math.abs(dy))<15) return;
+  if(Math.abs(dx)>Math.abs(dy)) move(dx>0?'right':'left');
+  else move(dy>0?'down':'up');
+},{passive:true});
+
+/* ─── Boot ───────────────────────────────────────────────────── */
+loadState();
+</script>
+</body>
+</html>
