@@ -1,267 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Josh | DevOps · SRE · Platform</title>
-  <style>
-    :root {
-      --bg:        #ffffff;
-      --surface:   #f6f7f8;
-      --border:    #edeff1;
-      --accent:    #ff4500;
-      --accent-dim:#ff6314;
-      --accent-lo: #ffe8e0;
-      --text:      #1c1c1c;
-      --text-dim:  #878a8c;
-      --radius:    4px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiomedesAuRaa</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .container { text-align: center; max-width: 600px; width: 100%; }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00d4ff, #0ff, #00ffa3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s infinite;
+        }
+        @keyframes shimmer { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+        
+        .tagline { font-size: 1.2em; color: #aaa; margin-bottom: 50px; }
+        
+        .section-heading {
+            font-size: 1.5em;
+            color: #00d4ff;
+            margin: 30px 0 20px 0;
+            text-align: center;
+            font-weight: 600;
+        }
+        .section-heading.games-heading { color: #ff6314; }
+        
+        .buttons { display: flex; flex-direction: column; gap: 20px; align-items: center; }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px 40px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+        }
+        .btn:active { transform: translateY(0); }
+        
+        .btn-sports { border-color: #ffd700; }
+        .btn-sports:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: #ffd700;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+        .btn-portfolio { border-color: #00d4ff; }
+        .btn-portfolio:hover {
+            background: rgba(0, 212, 255, 0.1);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+        }
+        .btn-contact { border-color: #00ffa3; }
+        .btn-contact:hover {
+            background: rgba(0, 255, 163, 0.1);
+            border-color: #00ffa3;
+            box-shadow: 0 10px 30px rgba(0, 255, 163, 0.3);
+        }
+        .btn-game { border-color: #ff4500; }
+        .btn-game:hover {
+            background: rgba(255, 69, 0, 0.12);
+            border-color: #ff6314;
+            box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
+        }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        /* 3-up games row */
+        .games-row {
+            display: flex;
+            gap: 12px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .games-row .btn {
+            flex: 1;
+            padding: 18px 6px;
+            font-size: 1em;
+        }
 
-    html, body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .shell {
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 6px 8px 24px;
-    }
-
-    /* ── Nav ── */
-    nav {
-      display: flex;
-      gap: 4px;
-      flex-wrap: wrap;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 5px;
-      margin-bottom: 10px;
-    }
-    nav a {
-      color: var(--text-dim);
-      text-decoration: none;
-      font-size: 11px;
-      padding: 3px 5px;
-      border: 1px solid transparent;
-      border-radius: var(--radius);
-    }
-    nav a:hover, nav a.active {
-      color: var(--accent);
-      border-color: var(--accent-dim);
-    }
-
-    /* ── Hero ── */
-    .hero {
-      background: var(--accent-lo);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      border-radius: var(--radius);
-      padding: 10px 12px;
-      margin-bottom: 10px;
-    }
-    .hero h1 {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--accent);
-      line-height: 1.1;
-    }
-    .hero .tagline {
-      font-size: 12px;
-      color: var(--text-dim);
-      margin-top: 3px;
-    }
-
-    /* ── Section ── */
-    section { margin-bottom: 12px; }
-    h2 {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 3px;
-      margin-bottom: 7px;
-    }
-
-    /* ── Skill chips ── */
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-    }
-    .chip {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 99px;
-      font-size: 11px;
-      padding: 2px 8px;
-      color: var(--text);
-      white-space: nowrap;
-    }
-    .chip.hot {
-      background: var(--accent-lo);
-      border-color: var(--accent-dim);
-      color: var(--accent);
-    }
-
-    /* ── Projects ── */
-    .project {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 8px 10px;
-      margin-bottom: 6px;
-    }
-    .project h3 {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 2px;
-    }
-    .project p {
-      font-size: 11px;
-      color: var(--text-dim);
-      line-height: 1.4;
-    }
-    .project .badge {
-      display: inline-block;
-      font-size: 10px;
-      background: var(--accent-lo);
-      color: var(--accent);
-      border-radius: 3px;
-      padding: 1px 5px;
-      margin-top: 4px;
-    }
-
-    /* ── Contact / Links ── */
-    .link-row {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-top: 4px;
-    }
-    .link-row a {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 5px 12px;
-      border-radius: var(--radius);
-    }
-    .link-row a.secondary {
-      background: var(--surface);
-      color: var(--accent);
-      border: 1px solid var(--accent-dim);
-    }
-
-    /* ── Footer ── */
-    footer {
-      font-size: 10px;
-      color: var(--text-dim);
-      text-align: center;
-      margin-top: 16px;
-      padding-top: 8px;
-      border-top: 1px solid var(--border);
-    }
-  </style>
+        .icon { margin-right: 10px; font-size: 1.4em; }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .btn { padding: 15px 30px; font-size: 1em; }
+            .games-row .btn { padding: 14px 4px; font-size: 0.9em; }
+        }
+    </style>
 </head>
 <body>
-<div class="shell">
+    <div class="container">
+        <h1>DiomedesAuRaa</h1>
+        <p class="tagline">What's good.</p>
+        
+        <h2 class="section-heading">Flip Phone Pages</h2>
+        <div class="buttons">
+            <a href="sports-scores.html" class="btn btn-sports"><span class="icon">🏆</span>Sports Scores</a>
+            <a href="standings.html"     class="btn btn-sports"><span class="icon">📊</span>Standings</a>
+            <a href="news.html"          class="btn btn-sports"><span class="icon">📰</span>News Headlines</a>
+            <a href="weather.html"       class="btn btn-sports"><span class="icon">🌤️</span>Weather</a>
+            <a href="bible.html"         class="btn btn-sports"><span class="icon">📖</span>Bible (ESV)</a>
+            <a href="reddit-digest.html" class="btn btn-sports"><span class="icon">🔴</span>Reddit Digest</a>
+            <a href="podcast-directory.html" class="btn btn-sports"><span class="icon">🎧</span>Podcast Directory</a>
+        </div>
 
-  <nav>
-    <a href="home.html" class="active">home</a>
-    <a href="news.html">news</a>
-    <a href="weather.html">weather</a>
-    <a href="sports-scores.html">scores</a>
-    <a href="standings.html">standings</a>
-    <a href="reddit-digest.html">reddit</a>
-    <a href="game-2048.html">2048</a>
-    <a href="contact.html">contact</a>
-  </nav>
-
-  <div class="hero">
-    <h1>Josh</h1>
-    <div class="tagline">DevOps · SRE · Platform Engineer · 10+ yrs</div>
-  </div>
-
-  <section>
-    <h2>Core Skills</h2>
-    <div class="chips">
-      <span class="chip hot">Kubernetes</span>
-      <span class="chip hot">Terraform</span>
-      <span class="chip hot">AWS · Azure · GCP</span>
-      <span class="chip">ArgoCD</span>
-      <span class="chip">Helm</span>
-      <span class="chip">Datadog</span>
-      <span class="chip">Prometheus</span>
-      <span class="chip">GitHub Actions</span>
-      <span class="chip">Vault</span>
-      <span class="chip">Python · Go · Bash</span>
-      <span class="chip">Docker · ECS</span>
-      <span class="chip">FinOps</span>
+        <h2 class="section-heading games-heading">🎮 Games</h2>
+        <div class="buttons">
+            <div class="games-row">
+                <a href="games/2048.html"        class="btn btn-game"><span class="icon">🟧</span>2048</a>
+                <a href="games/snake.html"        class="btn btn-game"><span class="icon">🐍</span>Snake</a>
+                <a href="games/minesweeper.html"  class="btn btn-game"><span class="icon">💣</span>Mines</a>
+            </div>
+        </div>
+        
+        <h2 class="section-heading">Other</h2>
+        <div class="buttons">
+            <a href="./"           class="btn btn-portfolio"><span class="icon">💼</span>Portfolio</a>
+            <a href="contact.html" class="btn btn-contact"><span class="icon">📧</span>Contact Me</a>
+        </div>
     </div>
-  </section>
-
-  <section>
-    <h2>Featured Projects</h2>
-
-    <div class="project">
-      <h3>Platform Modernization</h3>
-      <p>Terraform + ArgoCD PaaS with reusable Helm charts and full CI/CD across dev/staging/prod.</p>
-      <span class="badge">GitOps</span>
-    </div>
-
-    <div class="project">
-      <h3>Production Host Migration</h3>
-      <p>1,500+ Linux VMs migrated across clustered environments with zero downtime.</p>
-      <span class="badge">Zero Downtime</span>
-    </div>
-
-    <div class="project">
-      <h3>Kubernetes Upgrades at Scale</h3>
-      <p>Automated major-version upgrades across EKS, GKE, AKS, RKE, and K3s.</p>
-      <span class="badge">Multi-cluster</span>
-    </div>
-
-    <div class="project">
-      <h3>CI/CD Automation</h3>
-      <p>Deployment time cut by 90% across GitHub Actions, GitLab, Concourse, Jenkins, Spinnaker.</p>
-      <span class="badge">90% faster</span>
-    </div>
-
-    <div class="project">
-      <h3>Observability Unification</h3>
-      <p>Prometheus + Grafana + Datadog + Alertmanager across hybrid infra. Reduced MTTR via IaC-managed alerting.</p>
-      <span class="badge">SRE</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p style="font-size:12px;color:var(--text-dim);margin-bottom:8px">Open to DevOps, SRE, and Platform Engineering roles.</p>
-    <div class="link-row">
-      <a href="contact.html">Contact Me</a>
-      <a class="secondary" href="https://github.com/DiomedesAuRaa/Portfolio" target="_blank">GitHub</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p style="font-size:12px;color:var(--text-dim)">B.S., Communication Media &amp; Leadership Studies</p>
-  </section>
-
-  <footer>
-    &copy; 2026 Josh &mdash; <a href="https://github.com/DiomedesAuRaa/Portfolio" style="color:var(--accent);text-decoration:none">DiomedesAuRaa/Portfolio</a>
-  </footer>
-
-</div>
 </body>
 </html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Snake | Josh</title>
+  <style>
+    :root {
+      --bg:        #ffffff;
+      --surface:   #f6f7f8;
+      --surface2:  #edeff1;
+      --border:    #edeff1;
+      --accent:    #ff4500;
+      --accent-hi: #ff6314;
+      --accent-lo: #fff3ef;
+      --text:      #1c1c1c;
+      --text-dim:  #878a8c;
+      --radius:    4px;
+
+      --snake-head: #cc3600;
+      --snake-body: #ff4500;
+      --snake-tail: #ffb89a;
+      --food:       #1c1c1c;
+      --food-hi:    #ff4500;
+      --grid-line:  #f0f0f0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 13px;
+      overscroll-behavior: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+    }
+
+    .shell {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      max-width: 340px;
+      margin: 0 auto;
+      padding: 6px 6px 4px;
+      gap: 5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+    }
+    nav a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 11px;
+      padding: 2px 4px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+    }
+    nav a:hover, nav a.active {
+      color: var(--accent);
+      border-color: var(--accent-hi);
+    }
+
+    .hdr {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .hdr h1 { font-size: 22px; color: var(--accent); letter-spacing: -1px; line-height: 1; }
+    .hdr .sub { color: var(--text-dim); font-size: 10px; }
+
+    .score-bar { display: flex; gap: 5px; }
+    .score-box {
+      flex: 1;
+      background: var(--accent-lo);
+      border: 1px solid var(--surface2);
+      border-top: 2px solid var(--accent);
+      border-radius: var(--radius);
+      text-align: center;
+      padding: 4px 2px 3px;
+    }
+    .score-box .label { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 1px; }
+    .score-box .val   { font-size: 16px; color: var(--accent); font-weight: bold; line-height: 1.2; }
+
+    .canvas-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    canvas {
+      display: block;
+      image-rendering: pixelated;
+    }
+
+    /* Overlay */
+    .overlay {
+      position: absolute;
+      inset: 5px;
+      background: rgba(255,255,255,0.93);
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border-radius: var(--radius);
+      z-index: 5;
+    }
+    .overlay.show { display: flex; }
+    .overlay h2 { font-size: 18px; color: var(--accent); }
+    .overlay p  { font-size: 11px; color: var(--text-dim); text-align: center; line-height: 1.5; }
+
+    .controls { display: flex; gap: 5px; justify-content: space-between; }
+    button {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 11px;
+      padding: 5px 9px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: color 0.1s, border-color 0.1s;
+    }
+    button:hover, button:active { color: var(--accent); border-color: var(--accent-hi); }
+
+    /* Speed indicator */
+    .speed-bar {
+      display: flex;
+      gap: 3px;
+      align-items: center;
+      font-size: 10px;
+      color: var(--text-dim);
+    }
+    .speed-pip {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+      transition: background 0.2s;
+    }
+    .speed-pip.on { background: var(--accent); }
+
+    /* D-pad */
+    .dpad {
+      display: grid;
+      grid-template-columns: repeat(3, 40px);
+      grid-template-rows:    repeat(3, 40px);
+      gap: 3px;
+      margin: 0 auto;
+      width: fit-content;
+    }
+    .dpad button {
+      width: 40px; height: 40px;
+      padding: 0; font-size: 16px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .dpad .center { font-size: 9px; }
+
+    .hint { font-size: 10px; color: var(--text-dim); text-align: center; }
+
+    /* Leaderboard */
+    .lb-section { border-top: 1px solid var(--border); padding-top: 5px; }
+    .lb-title {
+      font-size: 10px; color: var(--text-dim);
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 4px;
+      display: flex; justify-content: space-between;
+    }
+    .lb-status { font-size: 9px; }
+    .lb-status.ok  { color: var(--accent-hi); }
+    .lb-status.err { color: #a05030; }
+    table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    th { color: var(--text-dim); font-weight: normal; text-align: left; padding: 1px 3px; border-bottom: 1px solid var(--border); }
+    td { padding: 2px 3px; color: var(--text); border-bottom: 1px solid var(--surface2); }
+    tr:first-child td { color: var(--accent); }
+    td.rank      { color: var(--text-dim); width: 18px; }
+    td.score-val { text-align: right; color: var(--accent); }
+    td.date-val  { text-align: right; color: var(--text-dim); font-size: 10px; }
+  </style>
+</head>
+<body>
+<div class="shell">
+  <nav>
+    <a href="../home.html">home</a>
+    <a href="../news.html">news</a>
+    <a href="../weather.html">weather</a>
+    <a href="../sports-scores.html">scores</a>
+    <a href="../standings.html">standings</a>
+    <a href="../reddit-digest.html">reddit</a>
+    <a href="2048.html">2048</a>
+    <a href="snake.html" class="active">snake</a>
+    <a href="minesweeper.html">mines</a>
+    <a href="../contact.html">contact</a>
+  </nav>
+
+  <div class="hdr">
+    <h1>Snake</h1>
+    <span class="sub">eat · grow · survive</span>
+  </div>
+
+  <div class="score-bar">
+    <div class="score-box">
+      <div class="label">Score</div>
+      <div class="val" id="score">0</div>
+    </div>
+    <div class="score-box">
+      <div class="label">Best</div>
+      <div class="val" id="best">0</div>
+    </div>
+    <div class="score-box">
+      <div class="label">Length</div>
+      <div class="val" id="length">2</div>
+    </div>
+  </div>
+
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="c"></canvas>
+    <div class="overlay show" id="overlay">
+      <h2 id="ov-title">SNAKE</h2>
+      <p id="ov-msg">Use arrow keys, WASD,<br>swipe, or the d-pad.<br>Eat the 🟠 food. Don't crash.</p>
+      <button onclick="startGame()">[ START ]</button>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="speed-bar">
+      <span>spd</span>
+      <div class="speed-pip" id="p1"></div>
+      <div class="speed-pip" id="p2"></div>
+      <div class="speed-pip" id="p3"></div>
+      <div class="speed-pip" id="p4"></div>
+      <div class="speed-pip" id="p5"></div>
+    </div>
+    <button onclick="startGame()">↺ New</button>
+    <button onclick="toggleLB()">⊞ Scores</button>
+  </div>
+
+  <div class="dpad">
+    <button style="grid-column:2;grid-row:1" onclick="setDir(0,-1)">▲</button>
+    <button style="grid-column:1;grid-row:2" onclick="setDir(-1,0)">◀</button>
+    <button class="center" style="grid-column:2;grid-row:2" onclick="startGame()">new</button>
+    <button style="grid-column:3;grid-row:2" onclick="setDir(1,0)">▶</button>
+    <button style="grid-column:2;grid-row:3" onclick="setDir(0,1)">▼</button>
+  </div>
+
+  <p class="hint">Arrow keys · WASD · Swipe · D-pad</p>
+
+  <div class="lb-section" id="lb-section" style="display:none">
+    <div class="lb-title">
+      <span>Top Scores</span>
+      <span class="lb-status" id="lb-status">loading…</span>
+    </div>
+    <table>
+      <thead><tr><th>#</th><th>Score</th><th>Len</th><th>Date</th></tr></thead>
+      <tbody id="lb-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+const REPO       = 'DiomedesAuRaa/Portfolio';
+const SCORES_URL = `https://raw.githubusercontent.com/${REPO}/main/games/scores-snake.json`;
+const LS_SCORES  = 'games_snake_scores';
+const TOP_N      = 10;
+const COLS       = 20;
+const ROWS       = 20;
+const BASE_MS    = 180;   // starting interval ms
+const MIN_MS     = 70;    // fastest interval
+
+let canvas, ctx, CELL;
+let snake, dir, nextDir, food, gameScore, loop, running, dead;
+
+/* ── Init canvas to fit container ─── */
+function initCanvas() {
+  canvas = document.getElementById('c');
+  const wrap = document.getElementById('canvas-wrap');
+  const w = Math.min(wrap.clientWidth - 10, 310);
+  CELL = Math.floor(w / COLS);
+  canvas.width  = COLS * CELL;
+  canvas.height = ROWS * CELL;
+  ctx = canvas.getContext('2d');
+}
+
+/* ── Game logic ──────────────────── */
+function startGame() {
+  clearInterval(loop);
+  snake    = [{x:10,y:10},{x:9,y:10}];
+  dir      = {x:1,y:0};
+  nextDir  = {x:1,y:0};
+  gameScore= 0;
+  dead     = false;
+  running  = true;
+  placeFood();
+  closeOverlay();
+  updateUI();
+  scheduleLoop();
+}
+
+function scheduleLoop() {
+  const ms = Math.max(MIN_MS, BASE_MS - (snake.length - 2) * 5);
+  clearInterval(loop);
+  loop = setInterval(tick, ms);
+  updateSpeed(ms);
+}
+
+function tick() {
+  dir = nextDir;
+  const head = { x: snake[0].x + dir.x, y: snake[0].y + dir.y };
+
+  // wall or self collision
+  if(head.x<0||head.x>=COLS||head.y<0||head.y>=ROWS||
+     snake.some(s=>s.x===head.x&&s.y===head.y)) {
+    die(); return;
+  }
+
+  snake.unshift(head);
+  if(head.x===food.x && head.y===food.y) {
+    gameScore += 10 + Math.floor(snake.length / 2);
+    placeFood();
+    scheduleLoop(); // re-schedule = might speed up
+  } else {
+    snake.pop();
+  }
+
+  updateUI();
+  draw();
+}
+
+function die() {
+  clearInterval(loop);
+  dead = true; running = false;
+  saveScore();
+  showOverlay('GAME OVER', `Score: ${gameScore} · Length: ${snake.length}`);
+  draw();
+}
+
+function placeFood() {
+  const empties = [];
+  for(let x=0;x<COLS;x++) for(let y=0;y<ROWS;y++) {
+    if(!snake.some(s=>s.x===x&&s.y===y)) empties.push({x,y});
+  }
+  food = empties[Math.floor(Math.random()*empties.length)];
+}
+
+function setDir(dx, dy) {
+  // prevent 180
+  if(dx===-dir.x && dy===-dir.y) return;
+  nextDir = {x:dx, y:dy};
+  if(!running && !dead) startGame();
+}
+
+/* ── Draw ─────────────────────────── */
+function draw() {
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  // grid
+  ctx.strokeStyle = '#f0f0f0';
+  ctx.lineWidth   = 0.5;
+  for(let x=0;x<=COLS;x++){ctx.beginPath();ctx.moveTo(x*CELL,0);ctx.lineTo(x*CELL,canvas.height);ctx.stroke();}
+  for(let y=0;y<=ROWS;y++){ctx.beginPath();ctx.moveTo(0,y*CELL);ctx.lineTo(canvas.width,y*CELL);ctx.stroke();}
+
+  // food — pulsing orange dot
+  const pulse = Math.sin(Date.now()/200)*0.15+0.85;
+  ctx.fillStyle = '#ff4500';
+  const fc = CELL*0.35*pulse;
+  ctx.beginPath();
+  ctx.arc(food.x*CELL+CELL/2, food.y*CELL+CELL/2, fc, 0, Math.PI*2);
+  ctx.fill();
+
+  // snake
+  snake.forEach((seg,i) => {
+    const t = i/snake.length;
+    // head is dark, tail fades to pale orange
+    if(i===0) {
+      ctx.fillStyle = '#cc3600';
+    } else {
+      const r = Math.round(204 + (255-204)*t);
+      const g = Math.round(54  + (184-54)*t);
+      const b = Math.round(0   + (154-0)*t);
+      ctx.fillStyle = `rgb(${r},${g},${b})`;
+    }
+    const pad = i===0 ? 1 : 2;
+    ctx.fillRect(seg.x*CELL+pad, seg.y*CELL+pad, CELL-pad*2, CELL-pad*2);
+  });
+
+  // dead flash
+  if(dead) {
+    ctx.fillStyle = 'rgba(255,69,0,0.12)';
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+  }
+}
+
+/* ── UI helpers ───────────────────── */
+function updateUI() {
+  document.getElementById('score').textContent  = gameScore;
+  document.getElementById('length').textContent = snake.length;
+  const best = getBest();
+  document.getElementById('best').textContent   = Math.max(best, gameScore);
+}
+
+function updateSpeed(ms) {
+  const level = Math.min(5, Math.ceil((BASE_MS - ms) / ((BASE_MS - MIN_MS) / 5)) + 1);
+  for(let i=1;i<=5;i++) {
+    document.getElementById(`p${i}`).className = 'speed-pip' + (i<=level?' on':'');
+  }
+}
+
+function showOverlay(title, msg) {
+  document.getElementById('ov-title').textContent = title;
+  document.getElementById('ov-msg').innerHTML = msg;
+  document.getElementById('overlay').classList.add('show');
+}
+function closeOverlay() { document.getElementById('overlay').classList.remove('show'); }
+
+/* ── Scores ───────────────────────── */
+function getLocalScores() {
+  try { return JSON.parse(localStorage.getItem(LS_SCORES)||'[]'); } catch{ return []; }
+}
+function getBest() {
+  const s = getLocalScores(); return s.length ? s[0].score : 0;
+}
+function saveScore() {
+  if(gameScore===0) return;
+  const scores = getLocalScores();
+  scores.push({ score:gameScore, length:snake.length, date: new Date().toISOString().split('T')[0] });
+  scores.sort((a,b)=>b.score-a.score);
+  localStorage.setItem(LS_SCORES, JSON.stringify(scores.slice(0,TOP_N)));
+}
+
+/* ── Leaderboard ──────────────────── */
+let lbVisible = false;
+function toggleLB() {
+  lbVisible = !lbVisible;
+  document.getElementById('lb-section').style.display = lbVisible ? '' : 'none';
+  if(lbVisible) loadLeaderboard();
+}
+async function loadLeaderboard() {
+  const status = document.getElementById('lb-status');
+  const tbody  = document.getElementById('lb-body');
+  status.textContent = 'syncing…'; status.className = 'lb-status';
+  renderTable(getLocalScores(), tbody);
+  try {
+    const res = await fetch(SCORES_URL+'?_='+Date.now(),{cache:'no-store'});
+    if(!res.ok) throw new Error();
+    const remote = await res.json();
+    const merged = [...remote,...getLocalScores()];
+    merged.sort((a,b)=>b.score-a.score);
+    const seen = new Set();
+    const deduped = merged.filter(e=>{const k=`${e.score}_${e.date}`;if(seen.has(k))return false;seen.add(k);return true;}).slice(0,TOP_N);
+    renderTable(deduped, tbody);
+    status.textContent='✓ git'; status.className='lb-status ok';
+  } catch {
+    status.textContent='✓ local'; status.className='lb-status err';
+  }
+}
+function renderTable(scores, tbody) {
+  tbody.innerHTML = scores.map((s,i)=>`<tr>
+    <td class="rank">${i+1}</td>
+    <td class="score-val">${s.score}</td>
+    <td>${s.length||'—'}</td>
+    <td class="date-val">${s.date||'—'}</td>
+  </tr>`).join('');
+  if(!scores.length) tbody.innerHTML='<tr><td colspan="4" style="color:var(--text-dim);padding:4px 3px">no scores yet</td></tr>';
+}
+
+/* ── Input ────────────────────────── */
+document.addEventListener('keydown', e=>{
+  const map = {ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0],
+               w:[0,-1],s:[0,1],a:[-1,0],d:[1,0]};
+  if(map[e.key]){ e.preventDefault(); setDir(...map[e.key]); }
+  if(e.key===' '||e.key==='Enter') { if(!running) startGame(); }
+});
+
+let tx=0,ty=0;
+canvas && canvas.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
+
+/* ── Boot ─────────────────────────── */
+window.addEventListener('load', ()=>{
+  initCanvas();
+  // attach touch after canvas exists
+  canvas.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
+  canvas.addEventListener('touchend',e=>{
+    const dx=e.changedTouches[0].clientX-tx, dy=e.changedTouches[0].clientY-ty;
+    if(Math.max(Math.abs(dx),Math.abs(dy))<15) return;
+    if(Math.abs(dx)>Math.abs(dy)) setDir(dx>0?1:-1,0);
+    else setDir(0,dy>0?1:-1);
+  },{passive:true});
+
+  // draw idle state
+  snake=[{x:10,y:10},{x:9,y:10}]; food={x:14,y:10};
+  dir={x:1,y:0}; nextDir={x:1,y:0}; gameScore=0; dead=false;
+  draw();
+  updateUI();
+  document.getElementById('best').textContent = getBest();
+
+  // food pulse animation on start screen
+  requestAnimationFrame(function pulse(){
+    if(!running) { draw(); requestAnimationFrame(pulse); }
+  });
+});
+</script>
+</body>
+</html>
