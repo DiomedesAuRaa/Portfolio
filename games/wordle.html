@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <title>Wordle | Josh</title>
   <style>
     :root {
@@ -321,6 +321,22 @@
     /* Wordle grid needs focus too */
     #grid { outline: none; }
 
+  
+        body {
+      position: fixed !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden !important;
+      top: 0; left: 0;
+    }
+    /* The shell scrolls internally — browser never sees a scroll target */
+    .shell {
+      position: absolute !important;
+      inset: 0 !important;
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+      height: 100% !important;
+    }
   </style>
 </head>
 <body>
@@ -353,7 +369,7 @@
   </div>
 
   <div class="grid-wrap">
-    <div id="grid"></div>
+    <div id="grid" tabindex="0"></div>
   </div>
 
   <div class="result-bar" id="result-bar">
@@ -725,42 +741,69 @@ window.addEventListener('load',()=>{
   }
 });
 
-/* ── KaiOS: intercept arrow/space keys before browser scroll ── */
-document.addEventListener("keydown", function(e) {
-  var scrollKeys = ["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"," ","Enter"];
-  if(scrollKeys.indexOf(e.key) !== -1) e.preventDefault();
+}
+
+
+
+document.getElementById('nav-title').textContent = 'Wordle';
+
+/* ── KaiOS: full arrow key takeover ─────────────────────
+   1. window capture — fires before spatial nav engine
+   2. Strip all focusable elements at DOMContentLoaded
+   3. Focus game element immediately, re-focus if lost    */
+
+var GAME_KEYS = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',
+                 ' ','Enter','Backspace'];
+
+window.addEventListener('keydown', function(e) {
+  if(GAME_KEYS.indexOf(e.key) !== -1) {
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+  }
 }, {passive: false, capture: true});
 
-/* ── KaiOS: kill scroll & spatial nav ───────────────────── */
-document.addEventListener('keydown', function(e) {
-  var keys = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
-  if(keys.indexOf(e.key) !== -1) e.preventDefault();
-}, {passive: false, capture: true});
+/* Remove all tab stops except the game target on load */
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a, button, input, select, textarea').forEach(function(el) {
+    el.setAttribute('tabindex', '-1');
+  });
+  /* Focus game element right away so KaiOS spatial nav has no candidates */
+  var el = document.getElementById('c') ||          /* snake/tetris canvas */
+           document.getElementById('board') ||      /* 2048/mines          */
+           document.getElementById('grid');         /* wordle              */
+  if(el) {
+    el.setAttribute('tabindex', '0');
+    el.style.outline = 'none';
+    /* Small delay ensures DOM is painted */
+    setTimeout(function(){ el.focus(); }, 50);
+  }
+});
+
+/* Re-focus if user somehow navigates away */
+document.addEventListener('focusout', function(e) {
+  var el = document.getElementById('c') ||
+           document.getElementById('board') ||
+           document.getElementById('grid');
+  if(el) setTimeout(function(){ el.focus(); }, 30);
+});
 
 function lockFocusToGame(el) {
-  /* Pull focus to game element; strip tabindex from everything else
-     so KaiOS spatial nav has nowhere to escape to */
-  document.querySelectorAll('a, button').forEach(function(n) {
-    n.setAttribute('data-ti', n.tabIndex);
-    n.tabIndex = -1;
+  document.querySelectorAll('a, button, input').forEach(function(n){
+    n.setAttribute('tabindex', '-1');
   });
-  if(el) { el.tabIndex = 0; el.focus(); }
+  if(el) { el.setAttribute('tabindex','0'); el.style.outline='none'; el.focus(); }
 }
 
 function unlockFocus() {
-  document.querySelectorAll('a, button').forEach(function(n) {
-    var ti = n.getAttribute('data-ti');
-    if(ti !== null) n.tabIndex = parseInt(ti);
-    else n.removeAttribute('tabindex');
-  });
+  /* no-op — nav uses onclick, not keyboard focus */
 }
 
 function toggleNav() {
   var nl = document.getElementById('nav-links');
-  nl.style.display = nl.style.display === 'none' ? 'flex' : 'none';
+  if(nl) nl.style.display = nl.style.display === 'none' ? 'flex' : 'none';
 }
 
-document.getElementById('nav-title').textContent = 'Wordle';
 </script>
 </body>
 </html>
