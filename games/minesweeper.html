@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-                <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%236c757d%27%2F%3E%3Ccircle%20cx%3D%2732%27%20cy%3D%2732%27%20r%3D%2710%27%20fill%3D%27none%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%276%27%2F%3E%3Cpath%20d%3D%27M32%2022%20v-8%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%276%27%2F%3E%3Cpath%20d%3D%27M32%2042%20v8%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%276%27%2F%3E%3Cpath%20d%3D%27M22%2032%20h-8%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%276%27%2F%3E%3Cpath%20d%3D%27M42%2032%20h8%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%276%27%2F%3E%3C%2Fsvg%3E">
+  <meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <title>Minesweeper | Josh</title>
   <style>
 
@@ -264,6 +263,50 @@
       color: var(--text-dim);
     }
 
+  
+    /* ── Nokia 2780 Flip: 240×320px exact fit ──────────── */
+    html, body {
+      width: 240px !important;
+      max-width: 240px !important;
+      overflow-x: hidden;
+    }
+    .shell {
+      width: 240px !important;
+      max-width: 240px !important;
+      padding: 3px 4px 4px !important;
+      gap: 3px !important;
+    }
+    /* Nav: single tight row */
+    .nav-bar { padding-bottom: 3px !important; }
+    .nav-home { font-size: 10px !important; padding: 2px 5px !important; }
+    .nav-title { font-size: 10px !important; }
+    .nav-menu-btn { font-size: 12px !important; padding: 1px 5px !important; }
+    /* Score boxes: compact */
+    .score-box { padding: 2px 1px 2px !important; }
+    .score-box .label { font-size: 8px !important; letter-spacing: 0 !important; }
+    .score-box .val { font-size: 13px !important; }
+    /* Buttons */
+    .btn { font-size: 10px !important; padding: 4px 7px !important; }
+    /* D-pad: 32px cells to fit width */
+    .dpad {
+      grid-template-columns: repeat(3, 32px) !important;
+      grid-template-rows: repeat(3, 32px) !important;
+      gap: 2px !important;
+    }
+    .dpad .btn { width: 32px !important; height: 32px !important; font-size: 13px !important; }
+    /* Hint */
+    .hint { font-size: 9px !important; }
+    /* Headings */
+    h1 { font-size: 16px !important; }
+    /* Tap banner text */
+    #tap-banner .tb-text { font-size: 10px !important; }
+    #tap-banner .tb-sub  { font-size: 9px !important; }
+    #tap-banner .tb-icon { font-size: 16px !important; }
+
+    .board-wrap { padding: 3px !important; }
+    /* Cells sized by JS initCanvas but constrain wrap */
+    #board-wrap { max-width: 234px !important; overflow: hidden !important; }
+
   </style>
 </head>
 <body>
@@ -489,9 +532,9 @@ function checkWin() {
 /* ── Render ─────────────────────────────── */
 function renderBoard() {
   const bd = document.getElementById('board');
-  const wrap = document.getElementById('board-wrap');
-  const avail = Math.min(wrap.clientWidth-10, 310);
-  const cellSize = Math.max(20, Math.floor(avail/cols));
+  // Nokia 2780: 240px - 8px shell - 6px wrap = 226px usable
+  const avail = 226;
+  const cellSize = Math.max(16, Math.floor(avail/cols));
   bd.style.gridTemplateColumns = `repeat(${cols},${cellSize}px)`;
   bd.style.gridTemplateRows    = `repeat(${rows},${cellSize}px)`;
   bd.style.gap = '2px';

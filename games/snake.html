@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-                <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2328a745%27%2F%3E%3Cpath%20d%3D%27M18%2032%20h10%20v6%20h6%20v6%20h10%27%20stroke%3D%27%23ffffff%27%20stroke-width%3D%276%27%20fill%3D%27none%27%20stroke-linecap%3D%27round%27%2F%3E%3C%2Fsvg%3E">
+  <meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <title>Snake | Josh</title>
   <style>
 
@@ -244,6 +243,50 @@
       font-size: 10px;
       color: var(--text-dim);
     }
+
+  
+    /* ── Nokia 2780 Flip: 240×320px exact fit ──────────── */
+    html, body {
+      width: 240px !important;
+      max-width: 240px !important;
+      overflow-x: hidden;
+    }
+    .shell {
+      width: 240px !important;
+      max-width: 240px !important;
+      padding: 3px 4px 4px !important;
+      gap: 3px !important;
+    }
+    /* Nav: single tight row */
+    .nav-bar { padding-bottom: 3px !important; }
+    .nav-home { font-size: 10px !important; padding: 2px 5px !important; }
+    .nav-title { font-size: 10px !important; }
+    .nav-menu-btn { font-size: 12px !important; padding: 1px 5px !important; }
+    /* Score boxes: compact */
+    .score-box { padding: 2px 1px 2px !important; }
+    .score-box .label { font-size: 8px !important; letter-spacing: 0 !important; }
+    .score-box .val { font-size: 13px !important; }
+    /* Buttons */
+    .btn { font-size: 10px !important; padding: 4px 7px !important; }
+    /* D-pad: 32px cells to fit width */
+    .dpad {
+      grid-template-columns: repeat(3, 32px) !important;
+      grid-template-rows: repeat(3, 32px) !important;
+      gap: 2px !important;
+    }
+    .dpad .btn { width: 32px !important; height: 32px !important; font-size: 13px !important; }
+    /* Hint */
+    .hint { font-size: 9px !important; }
+    /* Headings */
+    h1 { font-size: 16px !important; }
+    /* Tap banner text */
+    #tap-banner .tb-text { font-size: 10px !important; }
+    #tap-banner .tb-sub  { font-size: 9px !important; }
+    #tap-banner .tb-icon { font-size: 16px !important; }
+
+    /* Snake: 20×20 grid, cell=11px → canvas=220×220px */
+    canvas#c { width: 220px !important; height: 220px !important; }
+    .canvas-wrap { padding: 3px !important; }
 
   </style>
 </head>
