@@ -3,10 +3,16 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Bam Backlash, Kawhi\u2019s Heater, East vs. West, and SGA vs. Jokic, With Tim Legler",
+        "date": "Mar 13, 2026",
+        "dateSort": "2026-03-13",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5624412209.mp3"
+      },
+      {
         "title": "NFL Over/Unders, an Oscars Preview, and a Brady-Pats Feud | With Cousin Sal, Sean Fennessey, and Seth Wickersham",
         "date": "Mar 11, 2026",
         "dateSort": "2026-03-11",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1019378840.mp3"
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1019378840.mp3?updated=1773249441"
       },
       {
         "title": "Tatum\u2019s Stunning Return, Wemby\u2019s Big Weekend, and a 2011 MVP Deep Dive With Zach Lowe",
@@ -25,18 +31,18 @@
         "date": "Mar 04, 2026",
         "dateSort": "2026-03-04",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6331047790.mp3?updated=1772604741"
-      },
-      {
-        "title": "Burning NBA Questions and a \u201cHoly Crap, Charlotte!!!\u201d Deep Dive With Zach Lowe",
-        "date": "Mar 02, 2026",
-        "dateSort": "2026-03-02",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1515522766.mp3"
       }
     ]
   },
   {
     "name": "The Watch",
     "episodes": [
+      {
+        "title": "\u2018The Pitt\u2019 Season 2, Episodes 9 and 10, Checking In on \u2018Paradise\u2019 S2, and Kate Winslet Is the Next \u2018LOTR\u2019 Lead. Plus, Wrapping Up the \u2018Industry\u2019 Mailbag.",
+        "date": "Mar 13, 2026",
+        "dateSort": "2026-03-13",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5603578653.mp3"
+      },
       {
         "title": "How the Warner Bros. Sale Changes Television. Plus, \u2018DTF St. Louis\u2019 and \u2018Rooster\u2019 Strike Out.",
         "date": "Mar 09, 2026",
@@ -60,18 +66,18 @@
         "date": "Feb 27, 2026",
         "dateSort": "2026-02-27",
         "audioUrl": "https://traffic.megaphone.fm/GLT7799903747.mp3"
-      },
-      {
-        "title": "\u2018A Knight of the Seven Kingdoms\u2019 Season 1 Finale and \u2018Industry\u2019 S4E7",
-        "date": "Feb 23, 2026",
-        "dateSort": "2026-02-23",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2805241995.mp3"
       }
     ]
   },
   {
     "name": "Zach Lowe",
     "episodes": [
+      {
+        "title": "SGA and Bam\u2019s Record Breaking Nights!",
+        "date": "Mar 13, 2026",
+        "dateSort": "2026-03-13",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5465585952.mp3?updated=1773396325"
+      },
       {
         "title": "Is SGA the Best Player in the League? Plus, Tatum\u2019s Return and All-Defensive Team Picks.",
         "date": "Mar 10, 2026",
@@ -95,12 +101,6 @@
         "date": "Feb 27, 2026",
         "dateSort": "2026-02-27",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7879918375.mp3?updated=1772228986"
-      },
-      {
-        "title": "Spurs Withstand the Pistons Physicality and Sorting Through the Middle of the West",
-        "date": "Feb 27, 2026",
-        "dateSort": "2026-02-27",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4354191385.mp3?updated=1772229221"
       }
     ]
   },
@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "Offseason Grab Bag: Bam\u2019s 83 Points, USA Baseball in Crisis, and Sherrone Moore Update",
+        "date": "Mar 11, 2026",
+        "dateSort": "2026-03-11",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1475541728.mp3"
+      },
+      {
         "title": "Breakout Performers: Who Won the NFL Combine?",
         "date": "Mar 05, 2026",
         "dateSort": "2026-03-05",
@@ -239,18 +245,18 @@
         "date": "Feb 11, 2026",
         "dateSort": "2026-02-11",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8370329237.mp3"
-      },
-      {
-        "title": "Welcome to the Offseason: National Signing Day, Deion\u2019s Fines, and Senior Bowl Recap",
-        "date": "Feb 04, 2026",
-        "dateSort": "2026-02-04",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2127096851.mp3"
       }
     ]
   },
   {
     "name": "Big Picture",
     "episodes": [
+      {
+        "title": "Our Final 2026 Oscar Predictions: Who Will Win, and Who Should Win",
+        "date": "Mar 12, 2026",
+        "dateSort": "2026-03-12",
+        "audioUrl": "https://traffic.megaphone.fm/GLT2520019750.mp3?updated=1773276881"
+      },
       {
         "title": "The \"Anything But Oscars\" Mailbag! Plus: \u2018Hoppers\u2019",
         "date": "Mar 09, 2026",
@@ -274,12 +280,6 @@
         "date": "Feb 27, 2026",
         "dateSort": "2026-02-27",
         "audioUrl": "https://traffic.megaphone.fm/GLT4124384574.mp3"
-      },
-      {
-        "title": "The Final Best Picture Power Rankings and a \u2018Sinners\u2019 Second Look With Autumn Durald Arkapaw!",
-        "date": "Feb 24, 2026",
-        "dateSort": "2026-02-24",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7386346303.mp3"
       }
     ]
   },
@@ -287,7 +287,13 @@
     "name": "Knowing Faith",
     "episodes": [
       {
-        "title": "Should the 10 Commandments be posted publicly? (Part 1)",
+        "title": "Should The 10 Commandments Be Posted Publicly? (Part 2)",
+        "date": "Mar 12, 2026",
+        "dateSort": "2026-03-12",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/74351724-e9b2-41a6-8f48-a98effc53d48/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=74351724-e9b2-41a6-8f48-a98effc53d48&feed=V2lHo6VQ"
+      },
+      {
+        "title": "Should The 10 Commandments Be Posted Publicly? (Part 1)",
         "date": "Mar 05, 2026",
         "dateSort": "2026-03-05",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/f657488d-b2d6-4c5c-be36-e5bed4d3d417/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=f657488d-b2d6-4c5c-be36-e5bed4d3d417&feed=V2lHo6VQ"
@@ -309,18 +315,30 @@
         "date": "Feb 12, 2026",
         "dateSort": "2026-02-12",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/bc25d484-385c-4b4d-839e-e938f4e48289/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=bc25d484-385c-4b4d-839e-e938f4e48289&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Does The Manner Of Our Burial Matter?",
-        "date": "Feb 05, 2026",
-        "dateSort": "2026-02-05",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/4cb4737b-a40b-47f8-83f0-11694d7da0ca/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=4cb4737b-a40b-47f8-83f0-11694d7da0ca&feed=V2lHo6VQ"
       }
     ]
   },
   {
     "name": "P1 with Matt and Tommy",
     "episodes": [
+      {
+        "title": "Reaction to Chinese GP qualifying",
+        "date": "Mar 14, 2026",
+        "dateSort": "2026-03-14",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b52f37a2d796b92c38591a/media.mp3"
+      },
+      {
+        "title": "Reaction to Chinese GP sprint race",
+        "date": "Mar 14, 2026",
+        "dateSort": "2026-03-14",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b4e2be9f4b7ad940ab6b9a/media.mp3"
+      },
+      {
+        "title": "Reaction to Chinese GP sprint qualifying",
+        "date": "Mar 13, 2026",
+        "dateSort": "2026-03-13",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b3e578c208f0039f73527c/media.mp3"
+      },
       {
         "title": "Our 2026 Chinese GP predictions",
         "date": "Mar 11, 2026",
@@ -332,24 +350,6 @@
         "date": "Mar 09, 2026",
         "dateSort": "2026-03-09",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69af062fac9dedf60f4d3a5f/media.mp3"
-      },
-      {
-        "title": "Australian GP race review",
-        "date": "Mar 08, 2026",
-        "dateSort": "2026-03-08",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69ad227b1898b6acd34e8335/media.mp3"
-      },
-      {
-        "title": "Reaction to Australian GP qualifying",
-        "date": "Mar 07, 2026",
-        "dateSort": "2026-03-07",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69abe299536ce938787c1568/media.mp3"
-      },
-      {
-        "title": "Reaction to Australian GP practice",
-        "date": "Mar 06, 2026",
-        "dateSort": "2026-03-06",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69aa7b2c21c9999fa2447149/media.mp3"
       }
     ]
   }
