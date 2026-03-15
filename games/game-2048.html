@@ -273,14 +273,16 @@
 
 <div class="shell">
   <nav>
-    <a href="home.html">home</a>
-    <a href="news.html">news</a>
-    <a href="weather.html">weather</a>
-    <a href="sports-scores.html">scores</a>
-    <a href="standings.html">standings</a>
-    <a href="reddit-digest.html">reddit</a>
-    <a href="game-2048.html" class="active">2048</a>
-    <a href="contact.html">contact</a>
+    <a href="../home.html">home</a>
+    <a href="../news.html">news</a>
+    <a href="../weather.html">weather</a>
+    <a href="../sports-scores.html">scores</a>
+    <a href="../standings.html">standings</a>
+    <a href="../reddit-digest.html">reddit</a>
+    <a href="2048.html" class="active">2048</a>
+    <a href="snake.html">snake</a>
+    <a href="minesweeper.html">mines</a>
+    <a href="../contact.html">contact</a>
   </nav>
 
   <div class="hdr">
@@ -345,10 +347,10 @@
    To write back: commit scores.json via GitHub Actions or manually.
 ═══════════════════════════════════════════════════════════════ */
 const REPO       = 'DiomedesAuRaa/Portfolio';
-const SCORES_URL = `https://raw.githubusercontent.com/${REPO}/main/scores.json`;
-const LS_SCORES  = '2048_scores';   // localStorage key for local high scores
-const LS_STATE   = '2048_state';    // localStorage key for game state
-const LS_UNDO    = '2048_undo';
+const SCORES_URL = `https://raw.githubusercontent.com/${REPO}/main/games/scores-2048.json`;
+const LS_SCORES  = 'games_2048_scores';
+const LS_STATE   = 'games_2048_state';
+const LS_UNDO    = 'games_2048_undo';
 const TOP_N      = 10;
 
 /* ─── Game State ─────────────────────────────────────────────── */
