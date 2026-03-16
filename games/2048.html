@@ -137,9 +137,9 @@ kc.addEventListener('keydown', function(e) {
 });
 
 window.addEventListener('keydown', function(e) {
-  if (!active) return;
   var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
 
 kc.addEventListener('blur', function() {
@@ -289,10 +289,13 @@ function showOverlay(t, m) {
 function hideOverlay() { document.getElementById('ovr').classList.remove('show'); }
 
 function handleKey(key) {
-  var map = {ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right',
-             w:'up',s:'down',a:'left',d:'right'};
+  var map = {
+    ArrowUp:'up', ArrowDown:'down', ArrowLeft:'left', ArrowRight:'right',
+    '2':'up', '8':'down', '4':'left', '6':'right',
+    w:'up', s:'down', a:'left', d:'right'
+  };
   if (map[key]) doMove(map[key]);
-  else if (key==='z'||key==='u') undo();
+  else if (key==='z'||key==='u'||key==='0') undo();
 }
 
 /* swipe */

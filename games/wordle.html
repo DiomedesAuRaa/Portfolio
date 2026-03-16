@@ -105,11 +105,11 @@ kc.addEventListener('keydown',function(e){
   if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
   handleKey(e.key);
 });
-window.addEventListener('keydown',function(e){
-  if(!active)return;
-  var d=['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Enter'];
-  if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
-},{capture:true,passive:false});
+window.addEventListener('keydown', function(e) {
+  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof handleKey === 'function') handleKey(e.key);
+}, {capture:true, passive:false});
 kc.addEventListener('blur',function(){setTimeout(function(){if(document.activeElement!==kc)activate();},80);});
 /* For Wordle, always keep focus active since keyboard is the primary input */
 document.addEventListener('click',function(){activate();});
@@ -201,8 +201,8 @@ function renderKeys(){
 
 function handleKey(key){
   if(gameOver)return;
-  if(key==='\x08'||key==='Backspace'){curGuess=curGuess.slice(0,-1);renderGrid();return;}
-  if(key==='\r'||key==='Enter'){submitGuess();return;}
+  if(key==='\x08'||key==='Backspace'||key==='*'){curGuess=curGuess.slice(0,-1);renderGrid();return;}
+  if(key==='\r'||key==='Enter'||key==='5'){submitGuess();return;}
   if(/^[a-zA-Z]$/.test(key)&&curGuess.length<5){curGuess+=key.toLowerCase();renderGrid();}
 }
 

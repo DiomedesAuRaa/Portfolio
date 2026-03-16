@@ -114,11 +114,11 @@ kc.addEventListener('keydown',function(e){
   if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
   handleKey(e.key);
 });
-window.addEventListener('keydown',function(e){
-  if(!active)return;
-  var d=['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
-  if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
-},{capture:true,passive:false});
+window.addEventListener('keydown', function(e) {
+  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof handleKey === 'function') handleKey(e.key);
+}, {capture:true, passive:false});
 kc.addEventListener('blur',function(){setTimeout(function(){if(document.activeElement!==kc)deactivate();},80);});
 
 var LS='games_mines_scores',TOPN=10;
@@ -256,12 +256,15 @@ function saveScore(){
 }
 function showOverlay(t,m){document.getElementById('ovrtitle').textContent=t;document.getElementById('ovrmsg').innerHTML=m;document.getElementById('ovr').classList.add('show');}
 function hideOverlay(){document.getElementById('ovr').classList.remove('show');}
-function handleKey(key){
-  var mv={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]};
-  if(mv[key]){moveCursor(mv[key][0],mv[key][1]);return;}
-  if(key==='Enter'||key===' '){activateCell();return;}
-  if(key.toLowerCase()==='f'){toggleFlag(cursor.x,cursor.y);return;}
-  if(key.toLowerCase()==='r')newGame();
+function handleKey(key) {
+  var mv = {
+    ArrowUp:[0,-1], ArrowDown:[0,1], ArrowLeft:[-1,0], ArrowRight:[1,0],
+    '2':[0,-1], '8':[0,1], '4':[-1,0], '6':[1,0]
+  };
+  if (mv[key]) { moveCursor(mv[key][0], mv[key][1]); return; }
+  if (key==='Enter'||key===' '||key==='5') { activateCell(); return; }
+  if (key.toLowerCase()==='f'||key==='#') { toggleFlag(cursor.x, cursor.y); return; }
+  if (key.toLowerCase()==='r'||key==='0') newGame();
 }
 window.addEventListener('load',function(){newGame();});
 </script>

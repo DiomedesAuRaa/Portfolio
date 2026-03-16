@@ -108,11 +108,11 @@ kc.addEventListener('keydown',function(e){
   if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
   handleKey(e.key);
 });
-window.addEventListener('keydown',function(e){
-  if(!active)return;
-  var d=['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
-  if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
-},{capture:true,passive:false});
+window.addEventListener('keydown', function(e) {
+  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
+  if (typeof handleKey === 'function') handleKey(e.key);
+}, {capture:true, passive:false});
 kc.addEventListener('blur',function(){setTimeout(function(){if(document.activeElement!==kc)deactivate();},80);});
 
 var LS='games_tetris_scores',TOPN=10,COLS=10,ROWS=16,CELL=16;
@@ -227,15 +227,16 @@ function saveScore(){
 }
 function showOverlay(t,m){document.getElementById('ovrtitle').textContent=t;document.getElementById('ovrmsg').innerHTML=m;document.getElementById('ovr').classList.add('show');}
 function hideOverlay(){document.getElementById('ovr').classList.remove('show');}
-function handleKey(key){
-  if(!running||over)return;
-  if(key==='p'||key==='P'||key==='Escape'){togglePause();return;}
-  if(paused)return;
-  if(key==='ArrowLeft'||key==='a')moveLeft();
-  else if(key==='ArrowRight'||key==='d')moveRight();
-  else if(key==='ArrowDown'||key==='s')softDrop();
-  else if(key==='ArrowUp'||key==='w')rotatePiece();
-  else if(key===' ')hardDrop();
+function handleKey(key) {
+  if (!running||over) return;
+  if (key==='p'||key==='P'||key==='Escape') { togglePause(); return; }
+  if (paused) return;
+  if (key==='ArrowLeft' ||key==='4'||key==='a') moveLeft();
+  else if (key==='ArrowRight'||key==='6'||key==='d') moveRight();
+  else if (key==='ArrowDown' ||key==='8'||key==='s') softDrop();
+  else if (key==='ArrowUp'  ||key==='2'||key==='w') rotatePiece();
+  else if (key===' '||key==='5') hardDrop();
+  else if (key==='0') startGame();
 }
 /* swipe */
 var tx=0,ty=0,sl=false;
