@@ -1,153 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiomedesAuRaa</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            padding: 20px;
-        }
-        
-        .container { text-align: center; max-width: 600px; width: 100%; }
-        
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #00d4ff, #0ff, #00ffa3);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shimmer 3s infinite;
-        }
-        @keyframes shimmer { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
-        
-        .tagline { font-size: 1.2em; color: #aaa; margin-bottom: 50px; }
-        
-        .section-heading {
-            font-size: 1.5em;
-            color: #00d4ff;
-            margin: 30px 0 20px 0;
-            text-align: center;
-            font-weight: 600;
-        }
-        .section-heading.games-heading { color: #ff6314; }
-        
-        .buttons { display: flex; flex-direction: column; gap: 20px; align-items: center; }
-        
-        .btn {
-            display: block;
-            width: 100%;
-            max-width: 400px;
-            padding: 20px 40px;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #fff;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-        .btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: rgba(255, 255, 255, 0.4);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
-        }
-        .btn:active { transform: translateY(0); }
-        
-        .btn-sports { border-color: #ffd700; }
-        .btn-sports:hover {
-            background: rgba(255, 215, 0, 0.1);
-            border-color: #ffd700;
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
-        }
-        .btn-portfolio { border-color: #00d4ff; }
-        .btn-portfolio:hover {
-            background: rgba(0, 212, 255, 0.1);
-            border-color: #00d4ff;
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
-        }
-        .btn-contact { border-color: #00ffa3; }
-        .btn-contact:hover {
-            background: rgba(0, 255, 163, 0.1);
-            border-color: #00ffa3;
-            box-shadow: 0 10px 30px rgba(0, 255, 163, 0.3);
-        }
-        .btn-game { border-color: #ff4500; }
-        .btn-game:hover {
-            background: rgba(255, 69, 0, 0.12);
-            border-color: #ff6314;
-            box-shadow: 0 10px 30px rgba(255, 69, 0, 0.3);
-        }
-
-        /* 3-up games row */
-        .games-row {
-            display: flex;
-            gap: 12px;
-            width: 100%;
-            max-width: 400px;
-        }
-        .games-row .btn {
-            flex: 1;
-            padding: 18px 6px;
-            font-size: 1em;
-        }
-
-        .icon { margin-right: 10px; font-size: 1.4em; }
-        
-        @media (max-width: 600px) {
-            h1 { font-size: 2em; }
-            .btn { padding: 15px 30px; font-size: 1em; }
-            .games-row .btn { padding: 14px 4px; font-size: 0.9em; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>Key Debug</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:240px;height:320px;overflow:hidden;background:#0d1b2a;color:#fff;
+  font-family:'Segoe UI',Arial,sans-serif;font-size:11px;touch-action:manipulation}
+.shell{display:flex;flex-direction:column;width:240px;height:320px}
+.hdr{background:#1a2f45;padding:6px 10px;font-size:13px;font-weight:bold;
+  color:#00c8ff;border-bottom:1px solid #243b55;flex-shrink:0}
+.tap{background:#ff6b35;color:#fff;border:none;width:100%;padding:8px;
+  font-size:12px;font-weight:bold;cursor:pointer;flex-shrink:0}
+.log{flex:1;overflow-y:auto;padding:6px}
+.row{padding:3px 4px;border-bottom:1px solid #243b55;color:#8aafc8;font-size:10px;
+  font-family:monospace}
+.row .k{color:#00c8ff;font-weight:bold}
+.row .code{color:#ff6b35}
+.row .kc{color:#ffb300}
+.none{color:#37474f;font-style:italic;padding:8px}
+.skeys{background:#0a1628;border-top:1px solid #243b55;display:flex;height:26px;flex-shrink:0}
+.sk{flex:1;background:none;border:none;color:#8aafc8;font-size:10px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center}
+.sk:active{background:#243b55}
+#kc{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;
+  pointer-events:none;border:none;outline:none;padding:0;background:none}
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>DiomedesAuRaa</h1>
-        <p class="tagline">What's good.</p>
-        
-        <h2 class="section-heading">Flip Phone Pages</h2>
-        <div class="buttons">
-            <a href="sports-scores.html" class="btn btn-sports"><span class="icon">🏆</span>Sports Scores</a>
-            <a href="standings.html"     class="btn btn-sports"><span class="icon">📊</span>Standings</a>
-            <a href="news.html"          class="btn btn-sports"><span class="icon">📰</span>News Headlines</a>
-            <a href="weather.html"       class="btn btn-sports"><span class="icon">🌤️</span>Weather</a>
-            <a href="bible.html"         class="btn btn-sports"><span class="icon">📖</span>Bible (ESV)</a>
-            <a href="reddit-digest.html" class="btn btn-sports"><span class="icon">🔴</span>Reddit Digest</a>
-            <a href="podcast-directory.html" class="btn btn-sports"><span class="icon">🎧</span>Podcast Directory</a>
-        </div>
+<button id="kc" tabindex="0" aria-hidden="true"></button>
+<div class="shell">
+  <div class="hdr">&#x1F3AE; Key Debugger</div>
+  <button class="tap" onclick="focusKc()">TAP HERE FIRST, THEN PRESS KEYS</button>
+  <div class="log" id="log">
+    <div class="none">Press any key after tapping above...</div>
+  </div>
+  <div class="skeys">
+    <button class="sk" onclick="document.getElementById('log').innerHTML='<div class=none>Cleared...</div>'">Clear</button>
+    <button class="sk" id="status">● not focused</button>
+    <button class="sk" onclick="focusKc()">Re-focus</button>
+  </div>
+</div>
+<script>
+var kc = document.getElementById('kc');
+var log = document.getElementById('log');
+var count = 0;
 
-        <h2 class="section-heading games-heading">🎮 Games</h2>
-        <div class="buttons">
-            <div class="games-row">
-                <a href="games/2048.html"        class="btn btn-game"><span class="icon">🟧</span>2048</a>
-                <a href="games/snake.html"        class="btn btn-game"><span class="icon">🐍</span>Snake</a>
-                <a href="games/minesweeper.html"  class="btn btn-game"><span class="icon">💣</span>Mines</a>
-            </div>
-            <div class="games-row">
-                <a href="games/tetris.html"      class="btn btn-game"><span class="icon">🧱</span>Tetris</a>
-                <a href="games/wordle.html"       class="btn btn-game"><span class="icon">🟩</span>Wordle</a>
-            </div>
-        </div>
-        
-        <h2 class="section-heading">Other</h2>
-        <div class="buttons">
-            <a href="./"           class="btn btn-portfolio"><span class="icon">💼</span>Portfolio</a>
-            <a href="contact.html" class="btn btn-contact"><span class="icon">📧</span>Contact Me</a>
-        </div>
-    </div>
+function focusKc() {
+  kc.focus();
+  document.getElementById('status').textContent = '● focused';
+  document.getElementById('status').style.color = '#00c8ff';
+}
+
+kc.addEventListener('blur', function() {
+  document.getElementById('status').textContent = '● lost focus';
+  document.getElementById('status').style.color = '#ff6b35';
+});
+
+kc.addEventListener('focus', function() {
+  document.getElementById('status').textContent = '● focused';
+  document.getElementById('status').style.color = '#00c8ff';
+});
+
+function logKey(type, e) {
+  // Clear placeholder
+  var placeholder = log.querySelector('.none');
+  if (placeholder) placeholder.remove();
+
+  count++;
+  var div = document.createElement('div');
+  div.className = 'row';
+  div.innerHTML =
+    '<span style="color:#555">' + count + ' ' + type + '</span> ' +
+    'key=<span class="k">' + JSON.stringify(e.key) + '</span> ' +
+    'code=<span class="code">' + (e.code||'?') + '</span> ' +
+    'kc=<span class="kc">' + e.keyCode + '</span>';
+  log.insertBefore(div, log.firstChild);
+
+  // Keep only last 15
+  while (log.children.length > 15) log.removeChild(log.lastChild);
+}
+
+// Listen on BOTH kc and window to catch everything
+kc.addEventListener('keydown',  function(e) { e.preventDefault(); logKey('kc↓', e); });
+kc.addEventListener('keyup',    function(e) { e.preventDefault(); logKey('kc↑', e); });
+
+window.addEventListener('keydown', function(e) {
+  e.preventDefault(); e.stopImmediatePropagation();
+  logKey('win↓', e);
+}, {capture: true, passive: false});
+
+// Also log touch events to confirm tap is working
+document.querySelector('.tap').addEventListener('touchend', function() {
+  focusKc();
+  var div = document.createElement('div');
+  div.className = 'row';
+  div.innerHTML = '<span style="color:#81c784">TAP detected — button focused</span>';
+  log.insertBefore(div, log.firstChild);
+  var placeholder = log.querySelector('.none');
+  if (placeholder) placeholder.remove();
+});
+</script>
 </body>
 </html>
