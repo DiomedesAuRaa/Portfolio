@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "The Good Shepherd",
+        "date": "Mar 15, 2026",
+        "dateSort": "2026-03-15",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17300447/23685f93daaa4775b398f8311d96a24b_20260315_MK_Standalone.mp3"
+      },
+      {
         "title": "That You May Know",
         "date": "Mar 08, 2026",
         "dateSort": "2026-03-08",
@@ -204,12 +210,6 @@
         "date": "Feb 15, 2026",
         "dateSort": "2026-02-15",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17277441/fc6f1c1577d44321bfe96b16b509e313_20260215_MK_ThatYouMayKnow_Wk4.mp3"
-      },
-      {
-        "title": "Holding Fast to Christ",
-        "date": "Feb 08, 2026",
-        "dateSort": "2026-02-08",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17273097/4680ba9dbdda46cc9c8b78bfd0b5424b_20260208_MC_ThatYouMayKnow_Wk3.mp3"
       }
     ]
   },
