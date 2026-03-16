@@ -92,7 +92,7 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
     <div class="overlay" id="ovr">
       <h2 id="ovrtitle">2048</h2>
       <p id="ovrmsg">Swipe or use arrow keys<br>to merge tiles</p>
-      <button class="obtn" onclick="event.stopPropagation();newGame()">NEW GAME</button>
+      <button class="obtn" onclick="event.stopPropagation();newGame();activate()">NEW GAME</button>
     </div>
     <div class="tapbanner" id="tap" onclick="activate()">
       <div class="ti">&#x25BA;</div>
@@ -141,12 +141,8 @@ window.addEventListener('keydown', function(e) {
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
+document.addEventListener('click', function(){activate();});
 
-kc.addEventListener('blur', function() {
-  setTimeout(function() {
-    if (document.activeElement !== kc) deactivate();
-  }, 80);
-});
 
 /* ── Game ── */
 var REPO = 'DiomedesAuRaa/Portfolio';

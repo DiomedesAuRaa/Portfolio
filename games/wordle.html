@@ -110,7 +110,6 @@ window.addEventListener('keydown', function(e) {
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
-kc.addEventListener('blur',function(){setTimeout(function(){if(document.activeElement!==kc)activate();},80);});
 /* For Wordle, always keep focus active since keyboard is the primary input */
 document.addEventListener('click',function(){activate();});
 

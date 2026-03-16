@@ -84,7 +84,7 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
     <div class="overlay show" id="ovr">
       <h2 id="ovrtitle">MINES</h2>
       <p id="ovrmsg">Arrows=move  Enter=reveal<br>F=flag  R=new game</p>
-      <button class="obtn" onclick="event.stopPropagation();newGame()">START</button>
+      <button class="obtn" onclick="event.stopPropagation();newGame();activate()">START</button>
     </div>
     <div class="tapbanner" id="tap" onclick="activate()">
       <div class="ti">&#x25BA;</div><div class="tt">TAP TO ACTIVATE KEYS</div>
@@ -119,7 +119,7 @@ window.addEventListener('keydown', function(e) {
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
-kc.addEventListener('blur',function(){setTimeout(function(){if(document.activeElement!==kc)deactivate();},80);});
+document.addEventListener('click', function(){activate();});
 
 var LS='games_mines_scores',TOPN=10;
 var DIFFS={easy:{c:8,r:8,m:10},medium:{c:10,r:10,m:20},hard:{c:12,r:12,m:35}};

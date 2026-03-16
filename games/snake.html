@@ -75,7 +75,7 @@ canvas{display:block;image-rendering:pixelated}
     <div class="overlay show" id="ovr">
       <h2 id="ovrtitle">SNAKE</h2>
       <p id="ovrmsg">Eat the food to grow<br>Don't hit the walls!</p>
-      <button class="obtn" onclick="event.stopPropagation();startGame()">PLAY</button>
+      <button class="obtn" onclick="event.stopPropagation();startGame();activate()">PLAY</button>
     </div>
     <div class="tapbanner" id="tap" onclick="activate()">
       <div class="ti">&#x25BA;</div><div class="tt">TAP TO ACTIVATE KEYS</div>
@@ -118,7 +118,7 @@ window.addEventListener('keydown', function(e) {
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
-kc.addEventListener('blur',function(){setTimeout(function(){if(document.activeElement!==kc)deactivate();},80);});
+document.addEventListener('click', function(){activate();});
 
 var LS='games_snake_scores',TOPN=10,COLS=20,ROWS=20,CELL=11;
 var canvas,ctx,snake,dir,nextDir,food,gameScore,loop,running,dead;

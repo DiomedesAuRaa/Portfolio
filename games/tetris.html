@@ -75,7 +75,7 @@ canvas{display:block;image-rendering:pixelated}
     <div class="overlay show" id="ovr">
       <h2 id="ovrtitle">TETRIS</h2>
       <p id="ovrmsg">Left/Right=move  Up=rotate<br>Down=soft  Space=hard drop</p>
-      <button class="obtn" onclick="event.stopPropagation();startGame()">PLAY</button>
+      <button class="obtn" onclick="event.stopPropagation();startGame();activate()">PLAY</button>
     </div>
     <div class="tapbanner" id="tap" onclick="activate()">
       <div class="ti">&#x25BA;</div><div class="tt">TAP TO ACTIVATE KEYS</div>
@@ -113,7 +113,7 @@ window.addEventListener('keydown', function(e) {
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
-kc.addEventListener('blur',function(){setTimeout(function(){if(document.activeElement!==kc)deactivate();},80);});
+document.addEventListener('click', function(){activate();});
 
 var LS='games_tetris_scores',TOPN=10,COLS=10,ROWS=16,CELL=16;
 var COLORS={I:'#00c8ff',O:'#ffb300',T:'#cc3600',S:'#00a86b',Z:'#cc2222',J:'#1a7acc',L:'#ff6b35'};
