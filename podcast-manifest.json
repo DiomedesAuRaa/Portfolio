@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 2026 Academy Awards: \u2018One Battle After Another\u2019 Earns More Than a Few Small Oscars",
+        "date": "Mar 16, 2026",
+        "dateSort": "2026-03-16",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8016865725.mp3"
+      },
+      {
         "title": "Our Final 2026 Oscar Predictions: Who Will Win, and Who Should Win",
         "date": "Mar 12, 2026",
         "dateSort": "2026-03-12",
@@ -274,12 +280,6 @@
         "date": "Mar 03, 2026",
         "dateSort": "2026-03-03",
         "audioUrl": "https://traffic.megaphone.fm/GLT2208161230.mp3?updated=1772517722"
-      },
-      {
-        "title": "Paramount Wins Warner Bros. Now What? Plus: \u2018Scream 7,\u2019 Heat 2,\u2019 and \u2018Nirvanna the Band the Show the Movie\u2019 With Matt Johnson!",
-        "date": "Feb 27, 2026",
-        "dateSort": "2026-02-27",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4124384574.mp3"
       }
     ]
   },
