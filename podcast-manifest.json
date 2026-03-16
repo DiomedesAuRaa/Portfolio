@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "One Award After Another: Oscars Recap. Plus, \u2018Paradise\u2019 Season 2, Episodes 4-6.",
+        "date": "Mar 16, 2026",
+        "dateSort": "2026-03-16",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1360434366.mp3"
+      },
+      {
         "title": "\u2018The Pitt\u2019 Season 2, Episodes 9 and 10, Checking In on \u2018Paradise\u2019 S2, and Kate Winslet Is the Next \u2018LOTR\u2019 Lead. Plus, Wrapping Up the \u2018Industry\u2019 Mailbag.",
         "date": "Mar 13, 2026",
         "dateSort": "2026-03-13",
@@ -60,12 +66,6 @@
         "date": "Mar 02, 2026",
         "dateSort": "2026-03-02",
         "audioUrl": "https://traffic.megaphone.fm/GLT3334601525.mp3?updated=1772413184"
-      },
-      {
-        "title": "\u2018Wonder Man\u2019 Co-Creator on the Show\u2019s Origins, Near Cancellation, and the Status of the \u2018Community\u2019 Movie. Plus, \u2018The Pitt\u2019 S2E8.",
-        "date": "Feb 27, 2026",
-        "dateSort": "2026-02-27",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7799903747.mp3"
       }
     ]
   },
