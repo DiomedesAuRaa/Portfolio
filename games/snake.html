@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2328a745%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2752%25%27%20font-size%3D%2744%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%20font-family%3D%27Apple%20Color%20Emoji%2CSegoe%20UI%20Emoji%2CSegoe%20UI%20Symbol%2CEmojiSymbols%2Csans-serif%27%20fill%3D%27%23ffffff%27%3E%F0%9F%90%8D%3C%2Ftext%3E%3C%2Fsvg%3E">
 <title>Snake</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -93,6 +92,15 @@ canvas{display:block;image-rendering:pixelated}
     <button class="sk" id="skmid">tap to play</button>
     <button class="sk r" onclick="toggleNav()">Menu</button>
   </div>
+  <!-- D-pad for on-screen directional control -->
+  <div style="display:grid;grid-template-columns:repeat(3,44px);grid-template-rows:repeat(2,44px);gap:3px;margin:4px auto;width:fit-content;flex-shrink:0">
+    <button onclick="setDir(-1,0);activate()" style="grid-column:1;grid-row:1;width:44px;height:44px;background:#1a2f45;border:1px solid #243b55;color:#fff;font-size:18px;border-radius:6px;cursor:pointer">&#x25C4;</button>
+    <button onclick="setDir(0,-1);activate()" style="grid-column:2;grid-row:1;width:44px;height:44px;background:#1a2f45;border:1px solid #243b55;color:#fff;font-size:18px;border-radius:6px;cursor:pointer">&#x25B2;</button>
+    <button onclick="setDir(1,0);activate()"  style="grid-column:3;grid-row:1;width:44px;height:44px;background:#1a2f45;border:1px solid #243b55;color:#fff;font-size:18px;border-radius:6px;cursor:pointer">&#x25BA;</button>
+    <button onclick="startGame()"              style="grid-column:1;grid-row:2;width:44px;height:44px;background:#243b55;border:1px solid #243b55;color:#8aafc8;font-size:9px;border-radius:6px;cursor:pointer">new</button>
+    <button onclick="setDir(0,1);activate()"  style="grid-column:2;grid-row:2;width:44px;height:44px;background:#1a2f45;border:1px solid #243b55;color:#fff;font-size:18px;border-radius:6px;cursor:pointer">&#x25BC;</button>
+    <button onclick="activate()"               style="grid-column:3;grid-row:2;width:44px;height:44px;background:#243b55;border:1px solid #243b55;color:#00c8ff;font-size:9px;border-radius:6px;cursor:pointer">keys</button>
+  </div>
 </div>
 <script>
 var kc=document.getElementById('kc'),active=false;
@@ -103,7 +111,7 @@ function closeNav(){document.getElementById('nav').classList.remove('open');}
 kc.addEventListener('keydown',function(e){
   var d=['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
   if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
-  handleKey(e.key);
+  /* handleKey called by window capture listener - no double-fire */
 });
 window.addEventListener('keydown', function(e) {
   var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
