@@ -74,8 +74,9 @@
             (cfg.leagues || []).forEach(function(league) {
                 if (league.enabled === false) return;
                 SPORTS_CONFIG[league.name] = {
-                    url:   API_BASE + '/' + league.espn_path + '/scoreboard',
-                    color: league.color || '#0ff'
+                    url:        API_BASE + '/' + league.espn_path + '/scoreboard',
+                    color:      league.color || '#0ff',
+                    scoresType: league.scores_type || 'default'
                 };
             });
         }
@@ -113,6 +114,46 @@
             return PRIORITY_TEAMS.some(function(p) { return name.includes(p.toUpperCase()); });
         }
 
+        function renderRace(comp, isPriority, showSport) {
+            var isLive  = comp.status.type.name === 'STATUS_IN_PROGRESS';
+            var status  = getGameStatus(comp);
+            var pLabel  = isPriority ? '<span style="color:#ffd700;font-weight:bold;">* </span>' : '';
+            var sLabel  = (showSport && comp._sportName) ? '<span style="color:#0ff;font-size:10px;">[' + comp._sportName + ']</span> ' : '';
+            var pStyle  = isPriority ? 'border-left:3px solid #ffd700;background:#1a1a00;' : '';
+
+            // For races, competitors are individual drivers — show top 3 finishers or full grid
+            var drivers = (comp.competitors || []).slice(0, 3);
+            var driverRows = drivers.map(function(d) {
+                var pos   = d.order || d.score || '-';
+                var name  = (d.athlete && (d.athlete.shortName || d.athlete.displayName)) ||
+                            d.team && (d.team.abbreviation || d.team.shortDisplayName) || '?';
+                var time  = d.displayClock || d.score || '';
+                return '<div class="team-row">' +
+                    '<span class="team-name">' + pos + '. ' + name + '</span>' +
+                    '<span class="score" style="font-size:10px;color:#888">' + time + '</span>' +
+                    '</div>';
+            }).join('');
+
+            if (!driverRows) {
+                // Upcoming race — just show name and time
+                var raceName = comp.name || comp.shortName || 'Race';
+                driverRows = '<div class="team-row"><span class="team-name" style="color:#888">' + raceName + '</span></div>';
+            }
+
+            var link = '#';
+            if (comp.links) {
+                var gc = comp.links.find(function(l) { return l.text === 'Gamecast' || l.text === 'Race Center'; });
+                link = gc ? gc.href : (comp.links[0] ? comp.links[0].href : '#');
+            }
+            var open  = link !== '#' ? '<a href="' + link + '" target="_blank" rel="noopener noreferrer" class="game" style="' + pStyle + '">' : '<div class="game" style="' + pStyle + '">';
+            var close = link !== '#' ? '</a>' : '</div>';
+
+            return open +
+                '<div class="game-status ' + (isLive ? 'live' : '') + '">' + pLabel + sLabel + status + '</div>' +
+                driverRows +
+            close;
+        }
+
         function renderGame(comp, isPriority, showSport) {
             var home = comp.competitors.find(function(t) { return t.homeAway === 'home'; });
             var away = comp.competitors.find(function(t) { return t.homeAway === 'away'; });
@@ -142,9 +183,16 @@
                 var priorityGames = [], regularGames = [];
                 events.slice(0, 15).forEach(function(event) {
                     var comp = event.competitions[0];
-                    comp._sportName = sportName;
-                    if (comp.competitors.some(isPriorityTeam)) priorityGames.push(comp);
-                    else regularGames.push(comp);
+                    comp._sportName  = sportName;
+                    comp._scoresType = config.scoresType || 'default';
+                    if (config.scoresType === 'racing') {
+                        // Racing events have no home/away — never priority, always regular
+                        regularGames.push(comp);
+                    } else if (comp.competitors.some(isPriorityTeam)) {
+                        priorityGames.push(comp);
+                    } else {
+                        regularGames.push(comp);
+                    }
                 });
                 return { priorityGames: priorityGames, regularGames: regularGames.slice(0, 10), hasGames: events.length > 0, sportName: sportName, color: config.color };
             } catch(err) {
@@ -177,13 +225,13 @@
                 results.forEach(function(r) { allPriority = allPriority.concat(r.priorityGames); });
                 var html = '';
                 if (allPriority.length > 0) {
-                    html += '<div class="sport-section" id="section-FAVORITES"><div class="sport-title" style="border-left:3px solid #ffd700;padding-left:5px;">FAVORITES</div>' + allPriority.map(function(c) { return renderGame(c, true, true); }).join('') + '</div>';
+                    html += '<div class="sport-section" id="section-FAVORITES"><div class="sport-title" style="border-left:3px solid #ffd700;padding-left:5px;">FAVORITES</div>' + allPriority.map(function(c) { return c._scoresType === 'racing' ? renderRace(c, true, true) : renderGame(c, true, true); }).join('') + '</div>';
                 }
                 results.forEach(function(result) {
                     if (result.error) {
                         html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div class="error">Unable to load</div></div>';
                     } else if (result.regularGames.length > 0) {
-                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div>' + result.regularGames.map(function(c) { return renderGame(c, false, false); }).join('') + '</div>';
+                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div>' + result.regularGames.map(function(c) { return c._scoresType === 'racing' ? renderRace(c, false, false) : renderGame(c, false, false); }).join('') + '</div>';
                     } else if (!result.hasGames && allPriority.length === 0) {
                         html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div style="padding:5px;color:#666;font-size:11px;">No games today</div></div>';
                     }
