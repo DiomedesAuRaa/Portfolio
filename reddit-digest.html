@@ -579,12 +579,14 @@
             }
 
             let commentsHtml = '';
-            if (post.comments && post.comments.length > 0) {
+            const comments = (post.comments || []).filter(c => c.author !== 'AutoModerator');
+            if (comments.length > 0) {
+                post = { ...post, comments }; // shadow with filtered copy
                 commentsHtml = `<button class="comments-toggle" onclick="toggleComments('${instanceId}')">
-                    💬 Show Top ${post.comments.length} Comments</button>
+                    💬 Show Top ${comments.length} Comments</button>
                 <div class="comments comments-content" id="comments-${instanceId}">
                     <div style="font-weight:600;margin-bottom:12px;color:#1a1a1b">💬 Top Comments:</div>
-                    ${post.comments.map(c => `
+                    ${comments.map(c => `
                         <div class="comment">
                             <div class="comment-meta">
                                 <span class="comment-author">u/${escapeHtml(c.author)}</span>
