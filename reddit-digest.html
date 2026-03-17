@@ -105,6 +105,9 @@
         .subreddit-header {
             background: linear-gradient(135deg, #FF4500, #ff6b35); color: white;
             padding: 15px 25px; border-radius: 6px; margin-bottom: 25px;
+            display: flex; flex-direction: column; gap: 10px;
+        }
+        .subreddit-header-top {
             display: flex; align-items: center; justify-content: space-between;
         }
         .subreddit-header h2 { font-size: 1.8em; font-weight: 600; }
@@ -128,6 +131,19 @@
         /* ── Feed post lists (only active feed visible) ── */
         .feed-posts { display: none; }
         .feed-posts.active { display: block; }
+
+        /* ── Per-subreddit feed tabs ── */
+        .sub-feed-tabs {
+            display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px;
+        }
+        .sub-feed-tab {
+            background: rgba(255,255,255,0.15); color: white;
+            border: 1px solid rgba(255,255,255,0.35);
+            padding: 4px 12px; border-radius: 14px; cursor: pointer;
+            font-size: 0.8em; font-weight: 600; transition: all 0.2s; white-space: nowrap;
+        }
+        .sub-feed-tab:hover { background: rgba(255,255,255,0.3); }
+        .sub-feed-tab.active { background: white; color: #FF4500; border-color: white; }
 
         /* ── Posts ── */
         .post {
@@ -362,14 +378,32 @@
             activeFeed = label;
             localStorage.setItem('activeFeed', label);
 
-            // Update tab buttons
+            // Update global tab buttons
             document.querySelectorAll('.feed-tab')
                 .forEach(btn => btn.classList.toggle('active', btn.dataset.feed === label));
 
-            // Swap visible feed-posts in every subreddit at once
-            document.querySelectorAll('.feed-posts').forEach(el => {
+            // Swap every subreddit to the same feed, and sync per-sub tabs
+            document.querySelectorAll('.subreddit').forEach(subDiv => {
+                const subreddit = subDiv.id.replace('sub-', '');
+                switchSubFeed(subreddit, label, /* updateGlobal= */ false);
+            });
+        }
+
+        function switchSubFeed(subreddit, label, updateGlobal = true) {
+            // Swap visible feed-posts for this subreddit only
+            const postsWrapper = document.getElementById(`posts-${subreddit}`);
+            if (!postsWrapper) return;
+            postsWrapper.querySelectorAll('.feed-posts').forEach(el => {
                 el.classList.toggle('active', el.dataset.feed === label);
             });
+
+            // Update this subreddit's tab pills
+            const tabsContainer = document.getElementById(`sub-tabs-${subreddit}`);
+            if (tabsContainer) {
+                tabsContainer.querySelectorAll('.sub-feed-tab').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.feed === label);
+                });
+            }
         }
 
         // ── Subreddit nav ──────────────────────────────────────────────────
@@ -451,13 +485,25 @@
                     ? `<span class="feed-error-badge" title="Failed feeds: ${subErrors.join(', ')}">⚠️ ${subErrors.length} feed${subErrors.length > 1 ? 's' : ''} failed</span>`
                     : '';
 
+                const feedLabels = Object.keys(feedsData);
+
                 subredditDiv.innerHTML = `
                     <div class="subreddit-header">
-                        <h2>r/${escapeHtml(subreddit)}</h2>
-                        <div class="subreddit-header-right">
-                            ${errorBadge}
-                            <button class="collapse-btn" id="collapse-btn-${subreddit}"
-                                    onclick="toggleSubreddit('${subreddit}')">▼ Collapse</button>
+                        <div class="subreddit-header-top">
+                            <h2>r/${escapeHtml(subreddit)}</h2>
+                            <div class="subreddit-header-right">
+                                ${errorBadge}
+                                <button class="collapse-btn" id="collapse-btn-${subreddit}"
+                                        onclick="toggleSubreddit('${subreddit}')">▼ Collapse</button>
+                            </div>
+                        </div>
+                        <div class="sub-feed-tabs" id="sub-tabs-${subreddit}">
+                            ${feedLabels.map(label => `
+                                <button class="sub-feed-tab${label === activeFeed ? ' active' : ''}"
+                                        data-feed="${escapeHtml(label)}"
+                                        onclick="switchSubFeed('${subreddit}', '${escapeHtml(label)}')">
+                                    ${escapeHtml(label)}
+                                </button>`).join('')}
                         </div>
                     </div>
                     <div class="subreddit-posts" id="posts-${subreddit}"></div>`;
