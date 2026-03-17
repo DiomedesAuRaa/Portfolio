@@ -36,16 +36,64 @@
         "color": "#c8102e"
       },
       {
-        "name": "NCAA FB",
+        "name": "NCAAFB",
         "enabled": true,
         "espn_path": "football/college-football",
         "color": "#8b0000"
       },
       {
-        "name": "SOCCER",
+        "name": "NCAAB",
+        "enabled": true,
+        "espn_path": "basketball/mens-college-basketball",
+        "color": "#ff8c00"
+      },
+      {
+        "name": "F1",
+        "enabled": true,
+        "espn_path": "racing/f1",
+        "color": "#e10600"
+      },
+      {
+        "name": "MLS",
         "enabled": true,
         "espn_path": "soccer/usa.1",
         "color": "#00a651"
+      },
+      {
+        "name": "EPL",
+        "enabled": true,
+        "espn_path": "soccer/eng.1",
+        "color": "#3d195b"
+      },
+      {
+        "name": "La Liga",
+        "enabled": true,
+        "espn_path": "soccer/esp.1",
+        "color": "#ee8707"
+      },
+      {
+        "name": "Bundesliga",
+        "enabled": true,
+        "espn_path": "soccer/ger.1",
+        "color": "#d3010c"
+      },
+      {
+        "name": "Serie A",
+        "enabled": true,
+        "espn_path": "soccer/ita.1",
+        "color": "#024494"
+      },
+      {
+        "name": "Ligue 1",
+        "enabled": true,
+        "espn_path": "soccer/fra.1",
+        "color": "#091c3e"
+      },
+      {
+        "name": "UCL",
+        "enabled": true,
+        "espn_path": "soccer/uefa.champions",
+        "color": "#001489"
       }
     ]
   }

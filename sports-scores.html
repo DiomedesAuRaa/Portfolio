@@ -28,6 +28,21 @@
         .config-error { background: #300; color: #f88; padding: 6px; font-size: 10px; margin: 4px 0; border-left: 3px solid #f00; }
         .refresh-btn { display: block; width: 100%; padding: 5px; margin: 5px 0; background: #0ff; color: #000; border: none; font-weight: bold; font-size: 11px; cursor: pointer; }
         .last-update { text-align: center; font-size: 9px; color: #666; margin: 2px 0; }
+        .league-nav {
+            position: sticky; top: 38px; z-index: 99;
+            background: #111; border-bottom: 1px solid #333;
+            padding: 4px 4px; display: flex; gap: 4px;
+            overflow-x: auto; white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .league-nav::-webkit-scrollbar { display: none; }
+        .league-nav a {
+            color: #0ff; text-decoration: none; font-size: 9px;
+            font-weight: bold; padding: 3px 7px;
+            border: 1px solid #333; border-radius: 10px;
+            flex-shrink: 0; display: inline-block;
+        }
+        .league-nav a:active { background: #222; }
     </style>
 </head>
 <body>
@@ -36,6 +51,7 @@
         <h1>SPORTS SCORES</h1>
         <div class="last-update" id="currentDate"></div>
     </div>
+    <nav class="league-nav" id="league-nav"></nav>
     <button class="refresh-btn" onclick="loadScores()">REFRESH</button>
     <div class="last-update" id="lastUpdate"></div>
     <div id="content"><div class="loading">Loading config...</div></div>
@@ -161,23 +177,47 @@
                 results.forEach(function(r) { allPriority = allPriority.concat(r.priorityGames); });
                 var html = '';
                 if (allPriority.length > 0) {
-                    html += '<div class="sport-section"><div class="sport-title" style="border-left:3px solid #ffd700;padding-left:5px;">FAVORITES</div>' + allPriority.map(function(c) { return renderGame(c, true, true); }).join('') + '</div>';
+                    html += '<div class="sport-section" id="section-FAVORITES"><div class="sport-title" style="border-left:3px solid #ffd700;padding-left:5px;">FAVORITES</div>' + allPriority.map(function(c) { return renderGame(c, true, true); }).join('') + '</div>';
                 }
                 results.forEach(function(result) {
                     if (result.error) {
-                        html += '<div class="sport-section"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div class="error">Unable to load</div></div>';
+                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div class="error">Unable to load</div></div>';
                     } else if (result.regularGames.length > 0) {
-                        html += '<div class="sport-section"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div>' + result.regularGames.map(function(c) { return renderGame(c, false, false); }).join('') + '</div>';
+                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div>' + result.regularGames.map(function(c) { return renderGame(c, false, false); }).join('') + '</div>';
                     } else if (!result.hasGames && allPriority.length === 0) {
-                        html += '<div class="sport-section"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div style="padding:5px;color:#666;font-size:11px;">No games today</div></div>';
+                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div style="padding:5px;color:#666;font-size:11px;">No games today</div></div>';
                     }
                 });
                 content.innerHTML = html;
+                buildLeagueNav(results, allPriority.length > 0);
                 if (forceRefresh) setCachedData(html);
                 updateTimestamp();
             } catch(err) {
                 content.innerHTML = '<div class="error">Failed to load scores.</div>';
             }
+        }
+
+        function buildLeagueNav(results, hasFavorites) {
+            var nav = document.getElementById('league-nav');
+            nav.innerHTML = '';
+            if (hasFavorites) {
+                var a = document.createElement('a');
+                a.href = '#section-FAVORITES';
+                a.textContent = 'FAV';
+                a.style.borderColor = '#ffd700';
+                a.style.color = '#ffd700';
+                nav.appendChild(a);
+            }
+            results.forEach(function(result) {
+                var section = document.getElementById('section-' + result.sportName.replace(/[^a-z0-9]/gi,'_'));
+                if (!section) return;
+                var a = document.createElement('a');
+                a.href = '#section-' + result.sportName.replace(/[^a-z0-9]/gi,'_');
+                a.textContent = result.sportName;
+                a.style.borderColor = result.color;
+                a.style.color = result.color;
+                nav.appendChild(a);
+            });
         }
 
         function updateTimestamp() {
