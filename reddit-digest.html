@@ -544,9 +544,9 @@
                             No posts available for <strong>${escapeHtml(feedLabel)}</strong>.</p>`;
                     } else {
                         posts.forEach((post, index) => {
-                            // Unique instance key: feedLabel + index avoids ID collisions
-                            // when the same post appears in multiple feeds
-                            const instanceId = `${feedLabel}-${post.id}`;
+                            // Slugify feedLabel so no spaces in DOM id/onclick attrs
+                            const feedSlug = feedLabel.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+                            const instanceId = `${feedSlug}_${post.id}`;
                             feedDiv.appendChild(buildPostEl(post, index + 1, instanceId));
                         });
                     }
