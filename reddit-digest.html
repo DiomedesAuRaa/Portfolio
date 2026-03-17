@@ -544,7 +544,10 @@
                             No posts available for <strong>${escapeHtml(feedLabel)}</strong>.</p>`;
                     } else {
                         posts.forEach((post, index) => {
-                            feedDiv.appendChild(buildPostEl(post, index + 1));
+                            // Unique instance key: feedLabel + index avoids ID collisions
+                            // when the same post appears in multiple feeds
+                            const instanceId = `${feedLabel}-${post.id}`;
+                            feedDiv.appendChild(buildPostEl(post, index + 1, instanceId));
                         });
                     }
 
@@ -555,7 +558,8 @@
             }
         }
 
-        function buildPostEl(post, index) {
+        function buildPostEl(post, index, instanceId) {
+            instanceId = instanceId || post.id;
             const postDiv    = document.createElement('div');
             postDiv.className = 'post';
 
@@ -576,10 +580,9 @@
 
             let commentsHtml = '';
             if (post.comments && post.comments.length > 0) {
-                const pid = post.id;
-                commentsHtml = `<button class="comments-toggle" onclick="toggleComments('${pid}')">
+                commentsHtml = `<button class="comments-toggle" onclick="toggleComments('${instanceId}')">
                     💬 Show Top ${post.comments.length} Comments</button>
-                <div class="comments comments-content" id="comments-${pid}">
+                <div class="comments comments-content" id="comments-${instanceId}">
                     <div style="font-weight:600;margin-bottom:12px;color:#1a1a1b">💬 Top Comments:</div>
                     ${post.comments.map(c => `
                         <div class="comment">
@@ -604,8 +607,7 @@
                     </div>
                 </div>
                 ${contentHtml}
-                <a href="${escapeHtml(post.url)}" class="post-link" target="_blank">
-                    View Discussion on Reddit →</a>
+
                 ${commentsHtml}`;
 
             return postDiv;
