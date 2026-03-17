@@ -415,6 +415,16 @@
             const fetchErrors = data.fetch_errors || {};
             contentDiv.innerHTML = '';
 
+            // ── Backward-compat: schema v1 had { subreddit: [...posts] }
+            //    schema v2 has { subreddit: { "Feed Label": [...posts] } }
+            const defaultFeedLabel = (data.feeds && data.feeds[0]) || 'Best of 24h';
+            for (const [subreddit, val] of Object.entries(data.data)) {
+                if (Array.isArray(val)) {
+                    data.data[subreddit] = { [defaultFeedLabel]: val };
+                }
+            }
+            // ── End compat shim ──
+
             // Header meta
             document.getElementById('date').textContent =
                 new Date(data.generated_at).toLocaleDateString('en-US', {
