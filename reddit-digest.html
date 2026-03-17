@@ -302,8 +302,23 @@
                 const data = await response.json();
                 allDigestData = data;
 
+                // ── Normalize v1 → v2 schema BEFORE anything else touches the data
+                // v1: { data: { subreddit: [...posts] } }
+                // v2: { data: { subreddit: { "Feed Label": [...posts] } }, feeds: [...] }
+                const defaultFeedLabel = (data.feeds && data.feeds[0]) || 'Best of 24h';
+                for (const [subreddit, val] of Object.entries(data.data)) {
+                    if (Array.isArray(val)) {
+                        data.data[subreddit] = { [defaultFeedLabel]: val };
+                    }
+                }
+                if (!data.feeds || data.feeds.length === 0) {
+                    const firstSub = Object.values(data.data)[0];
+                    data.feeds = firstSub ? Object.keys(firstSub) : [defaultFeedLabel];
+                }
+                // ── End normalization ──
+
                 checkStaleness(data.generated_at);
-                buildFeedNav(data.feeds || []);
+                buildFeedNav(data.feeds);
                 populateSubredditFilter(data);
                 buildSubredditNav(data);
                 renderDigest(data);
@@ -414,16 +429,6 @@
             const contentDiv  = document.getElementById('content');
             const fetchErrors = data.fetch_errors || {};
             contentDiv.innerHTML = '';
-
-            // ── Backward-compat: schema v1 had { subreddit: [...posts] }
-            //    schema v2 has { subreddit: { "Feed Label": [...posts] } }
-            const defaultFeedLabel = (data.feeds && data.feeds[0]) || 'Best of 24h';
-            for (const [subreddit, val] of Object.entries(data.data)) {
-                if (Array.isArray(val)) {
-                    data.data[subreddit] = { [defaultFeedLabel]: val };
-                }
-            }
-            // ── End compat shim ──
 
             // Header meta
             document.getElementById('date').textContent =
