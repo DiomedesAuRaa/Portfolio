@@ -211,17 +211,40 @@
 
         /* ── Mobile ── */
         @media (max-width: 768px) {
-            body { padding: 10px; }
-            .content { padding: 20px; }
-            header { padding: 20px; }
-            header h1 { font-size: 1.8em; }
-            .header-meta { flex-direction: column; gap: 10px; font-size: 0.85em; }
-            .filter-section { padding: 15px; flex-direction: column; align-items: flex-start; }
-            .filter-section select { width: 100%; }
+            body { padding: 0; }
+            .container { border-radius: 0; }
+            .content { padding: 10px; }
+
+            /* Collapse header to a single tight bar */
+            header { padding: 8px 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; text-align: left; }
+            header h1 { font-size: 1.1em; margin: 0; flex: 1; }
+            .home-link { margin: 0; padding: 6px 10px; font-size: 0.8em; white-space: nowrap; }
+            .header-meta { display: none; }
+
+            .stale-banner { padding: 6px 12px; font-size: 0.8em; }
+
+            /* Feed nav: single scrollable row */
+            .feed-nav { padding: 6px 10px; gap: 6px; flex-wrap: nowrap; overflow-x: auto; }
+            .feed-tab { padding: 5px 12px; font-size: 0.82em; }
+
+            /* Jump nav hidden on mobile */
+            .subreddit-nav { display: none; }
+
+            /* Filter compact */
+            .filter-section { padding: 8px 10px; gap: 8px; }
+            .filter-section label { display: none; }
+            .filter-section select { width: 100%; font-size: 0.9em; padding: 6px 8px; }
+
+            /* Subreddit headers tighter */
+            .subreddit-header { padding: 10px 14px; gap: 6px; margin-bottom: 12px; }
+            .subreddit-header h2 { font-size: 1.1em; }
+            .sub-feed-tabs { gap: 5px; margin-top: 4px; }
+            .sub-feed-tab { padding: 3px 10px; font-size: 0.78em; }
+            .collapse-btn { padding: 4px 10px; font-size: 0.78em; }
+
+            .post { padding: 12px; margin-bottom: 10px; }
+            .post-title { font-size: 1.05em; }
             .post-meta { font-size: 0.75em; gap: 8px; }
-            .subreddit-header h2 { font-size: 1.3em; }
-            .feed-nav { padding: 8px 12px; gap: 6px; }
-            .subreddit-nav { padding: 8px 12px; gap: 6px; }
             #back-to-top { bottom: 16px; right: 16px; width: 42px; height: 42px; font-size: 1.1em; }
         }
     </style>
