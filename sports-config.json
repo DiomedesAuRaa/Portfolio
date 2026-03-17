@@ -1,0 +1,51 @@
+{
+    "priority_teams": [
+      "DET",
+      "Detroit",
+      "Lions",
+      "Pistons",
+      "Tigers",
+      "Red Wings",
+      "MICH",
+      "Michigan",
+      "Wolverines"
+    ],
+    "leagues": [
+      {
+        "name": "NFL",
+        "enabled": true,
+        "espn_path": "football/nfl",
+        "color": "#004d40"
+      },
+      {
+        "name": "NBA",
+        "enabled": true,
+        "espn_path": "basketball/nba",
+        "color": "#ff6b35"
+      },
+      {
+        "name": "MLB",
+        "enabled": true,
+        "espn_path": "baseball/mlb",
+        "color": "#003087"
+      },
+      {
+        "name": "NHL",
+        "enabled": true,
+        "espn_path": "hockey/nhl",
+        "color": "#c8102e"
+      },
+      {
+        "name": "NCAA FB",
+        "enabled": true,
+        "espn_path": "football/college-football",
+        "color": "#8b0000"
+      },
+      {
+        "name": "SOCCER",
+        "enabled": true,
+        "espn_path": "soccer/usa.1",
+        "color": "#00a651"
+      }
+    ]
+  }
