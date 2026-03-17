@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "One Award After Another: Oscars Recap. Plus, \u2018Paradise\u2019 Season 2, Episodes 4-6.",
+        "date": "Mar 16, 2026",
+        "dateSort": "2026-03-16",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1360434366.mp3"
+      },
+      {
         "title": "\u2018The Pitt\u2019 Season 2, Episodes 9 and 10, Checking In on \u2018Paradise\u2019 S2, and Kate Winslet Is the Next \u2018LOTR\u2019 Lead. Plus, Wrapping Up the \u2018Industry\u2019 Mailbag.",
         "date": "Mar 13, 2026",
         "dateSort": "2026-03-13",
@@ -60,12 +66,6 @@
         "date": "Mar 02, 2026",
         "dateSort": "2026-03-02",
         "audioUrl": "https://traffic.megaphone.fm/GLT3334601525.mp3?updated=1772413184"
-      },
-      {
-        "title": "\u2018Wonder Man\u2019 Co-Creator on the Show\u2019s Origins, Near Cancellation, and the Status of the \u2018Community\u2019 Movie. Plus, \u2018The Pitt\u2019 S2E8.",
-        "date": "Feb 27, 2026",
-        "dateSort": "2026-02-27",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7799903747.mp3"
       }
     ]
   },
@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "The Good Shepherd",
+        "date": "Mar 15, 2026",
+        "dateSort": "2026-03-15",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17300447/23685f93daaa4775b398f8311d96a24b_20260315_MK_Standalone.mp3"
+      },
+      {
         "title": "That You May Know",
         "date": "Mar 08, 2026",
         "dateSort": "2026-03-08",
@@ -204,12 +210,6 @@
         "date": "Feb 15, 2026",
         "dateSort": "2026-02-15",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17277441/fc6f1c1577d44321bfe96b16b509e313_20260215_MK_ThatYouMayKnow_Wk4.mp3"
-      },
-      {
-        "title": "Holding Fast to Christ",
-        "date": "Feb 08, 2026",
-        "dateSort": "2026-02-08",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17273097/4680ba9dbdda46cc9c8b78bfd0b5424b_20260208_MC_ThatYouMayKnow_Wk3.mp3"
       }
     ]
   },
