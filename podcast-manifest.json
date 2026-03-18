@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Annual Worst NBA Contracts Draft With Joe House and Wosny Lambre",
+        "date": "Mar 17, 2026",
+        "dateSort": "2026-03-17",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6223031580.mp3"
+      },
+      {
         "title": "A Rollicking NBA Mailbag and March Madness Storylines With Rob Mahoney, Tate Frazier, and J. Kyle Mann",
         "date": "Mar 16, 2026",
         "dateSort": "2026-03-16",
@@ -25,12 +31,6 @@
         "date": "Mar 09, 2026",
         "dateSort": "2026-03-09",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4378272710.mp3"
-      },
-      {
-        "title": "NFL Free Agency Predictions, an NBA Power Poll, and Tatum\u2019s Return With Danny Heifetz, Danny Kelly, Michael Pina, and Joe House",
-        "date": "Mar 06, 2026",
-        "dateSort": "2026-03-06",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2548594621.mp3"
       }
     ]
   },
@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Oscar Hangover Mailbag. Plus: \u2018Dune: Part Three\u2019 Is Coming!",
+        "date": "Mar 17, 2026",
+        "dateSort": "2026-03-17",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8528771567.mp3"
+      },
+      {
         "title": "The 2026 Academy Awards: \u2018One Battle After Another\u2019 Earns More Than a Few Small Oscars",
         "date": "Mar 16, 2026",
         "dateSort": "2026-03-16",
@@ -274,12 +280,6 @@
         "date": "Mar 06, 2026",
         "dateSort": "2026-03-06",
         "audioUrl": "https://traffic.megaphone.fm/GLT4826618140.mp3?updated=1772817892"
-      },
-      {
-        "title": "The 2026 Alternative Oscars, a.k.a. the 6th Annual Big Picks! Plus: The Craziest Awards Season in Years.",
-        "date": "Mar 03, 2026",
-        "dateSort": "2026-03-03",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2208161230.mp3?updated=1772517722"
       }
     ]
   },
