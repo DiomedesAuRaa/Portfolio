@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "March Madness Takeover Begins",
+        "date": "Mar 18, 2026",
+        "dateSort": "2026-03-18",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1231839876.mp3"
+      },
+      {
         "title": "Offseason Grab Bag: Bam\u2019s 83 Points, USA Baseball in Crisis, and Sherrone Moore Update",
         "date": "Mar 11, 2026",
         "dateSort": "2026-03-11",
@@ -239,12 +245,6 @@
         "date": "Feb 18, 2026",
         "dateSort": "2026-02-18",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5071402305.mp3"
-      },
-      {
-        "title": "College Pipelines on Display at Super Bowl LX",
-        "date": "Feb 11, 2026",
-        "dateSort": "2026-02-11",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8370329237.mp3"
       }
     ]
   },
