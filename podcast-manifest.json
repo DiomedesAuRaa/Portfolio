@@ -287,6 +287,12 @@
     "name": "Knowing Faith",
     "episodes": [
       {
+        "title": "Is It Ever Right To Lie?",
+        "date": "Mar 19, 2026",
+        "dateSort": "2026-03-19",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/ff686466-acee-44a4-8955-d39d77dc0d16/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=ff686466-acee-44a4-8955-d39d77dc0d16&feed=V2lHo6VQ"
+      },
+      {
         "title": "Should The 10 Commandments Be Posted Publicly? (Part 2)",
         "date": "Mar 12, 2026",
         "dateSort": "2026-03-12",
@@ -309,12 +315,6 @@
         "date": "Feb 19, 2026",
         "dateSort": "2026-02-19",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/6e1ea333-de1d-4892-b243-5eac1a474ef2/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=6e1ea333-de1d-4892-b243-5eac1a474ef2&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Is It Possible To Trust The Church Again After Church Hurt? with Courtney Reissig",
-        "date": "Feb 12, 2026",
-        "dateSort": "2026-02-12",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/bc25d484-385c-4b4d-839e-e938f4e48289/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=bc25d484-385c-4b4d-839e-e938f4e48289&feed=V2lHo6VQ"
       }
     ]
   },
