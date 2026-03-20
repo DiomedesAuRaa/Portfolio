@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018Project Hail Mary\u2019 Will Amaze! Amaze! Amaze! With Phil Lord and Chris Miller",
+        "date": "Mar 20, 2026",
+        "dateSort": "2026-03-20",
+        "audioUrl": "https://traffic.megaphone.fm/GLT4514717790.mp3"
+      },
+      {
         "title": "The Oscar Hangover Mailbag. Plus: \u2018Dune: Part Three\u2019 Is Coming!",
         "date": "Mar 17, 2026",
         "dateSort": "2026-03-17",
@@ -274,12 +280,6 @@
         "date": "Mar 09, 2026",
         "dateSort": "2026-03-09",
         "audioUrl": "https://traffic.megaphone.fm/GLT2221667627.mp3?updated=1773106383"
-      },
-      {
-        "title": "The 10 Wildest Reboots in Movie History and \u2018The Bride!\u2019 Plus: A \u2018Secret Agent\u2019 Second Look and the Best Doc Contenders.",
-        "date": "Mar 06, 2026",
-        "dateSort": "2026-03-06",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4826618140.mp3?updated=1772817892"
       }
     ]
   },
