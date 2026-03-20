@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "LakerMania, NBA Expansion, WBC Lessons, and MBJ\u2019s Moment With Billy Gil and Wesley Morris",
+        "date": "Mar 20, 2026",
+        "dateSort": "2026-03-20",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4987348445.mp3"
+      },
+      {
         "title": "The Annual Worst NBA Contracts Draft With Joe House and Wosny Lambre",
         "date": "Mar 17, 2026",
         "dateSort": "2026-03-17",
@@ -25,12 +31,6 @@
         "date": "Mar 11, 2026",
         "dateSort": "2026-03-11",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1019378840.mp3?updated=1773249441"
-      },
-      {
-        "title": "Tatum\u2019s Stunning Return, Wemby\u2019s Big Weekend, and a 2011 MVP Deep Dive With Zach Lowe",
-        "date": "Mar 09, 2026",
-        "dateSort": "2026-03-09",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4378272710.mp3"
       }
     ]
   },
