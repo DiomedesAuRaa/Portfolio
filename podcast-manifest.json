@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Dune: Part Three\u2019 and \u2018Spider-Man: Brand New Day\u2019 Trailers, \u2018The Pitt\u2019 S2E11, and \u2018The Madison\u2019 Series Premiere. Plus, \u2018Top Chef\u2019 Season 23, Episode 2.",
+        "date": "Mar 20, 2026",
+        "dateSort": "2026-03-20",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9791523573.mp3"
+      },
+      {
         "title": "One Award After Another: Oscars Recap. Plus, \u2018Paradise\u2019 Season 2, Episodes 4-6.",
         "date": "Mar 16, 2026",
         "dateSort": "2026-03-16",
@@ -60,12 +66,6 @@
         "date": "Mar 05, 2026",
         "dateSort": "2026-03-05",
         "audioUrl": "https://traffic.megaphone.fm/GLT6390950843.mp3?updated=1772710215"
-      },
-      {
-        "title": "\u2018Industry\u2019 Season 4 Finale With Creators Konrad Kay and Mickey Down",
-        "date": "Mar 02, 2026",
-        "dateSort": "2026-03-02",
-        "audioUrl": "https://traffic.megaphone.fm/GLT3334601525.mp3?updated=1772413184"
       }
     ]
   },
