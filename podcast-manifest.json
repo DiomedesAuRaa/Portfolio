@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "No Barriers",
+        "date": "Mar 22, 2026",
+        "dateSort": "2026-03-22",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17304780/6cce924d4b5948f18efe12acbf84d071_20260322_MC_Standalone.mp3"
+      },
+      {
         "title": "The Good Shepherd",
         "date": "Mar 15, 2026",
         "dateSort": "2026-03-15",
@@ -204,12 +210,6 @@
         "date": "Feb 22, 2026",
         "dateSort": "2026-02-22",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17283689/f12a021b8f0947d8811bf17d02dd2804_20260222_MC_ThatYouMayKnow_Wk5_v2.mp3"
-      },
-      {
-        "title": "Children of God",
-        "date": "Feb 15, 2026",
-        "dateSort": "2026-02-15",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17277441/fc6f1c1577d44321bfe96b16b509e313_20260215_MK_ThatYouMayKnow_Wk4.mp3"
       }
     ]
   },
