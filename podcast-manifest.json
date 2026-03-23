@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Steven Spielberg Conversation",
+        "date": "Mar 23, 2026",
+        "dateSort": "2026-03-23",
+        "audioUrl": "https://traffic.megaphone.fm/GLT2691335389.mp3"
+      },
+      {
         "title": "\u2018Project Hail Mary\u2019 Will Amaze! Amaze! Amaze! With Phil Lord and Chris Miller",
         "date": "Mar 20, 2026",
         "dateSort": "2026-03-20",
@@ -274,12 +280,6 @@
         "date": "Mar 12, 2026",
         "dateSort": "2026-03-12",
         "audioUrl": "https://traffic.megaphone.fm/GLT2520019750.mp3?updated=1773276881"
-      },
-      {
-        "title": "The \"Anything But Oscars\" Mailbag! Plus: \u2018Hoppers\u2019",
-        "date": "Mar 09, 2026",
-        "dateSort": "2026-03-09",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2221667627.mp3?updated=1773106383"
       }
     ]
   },
