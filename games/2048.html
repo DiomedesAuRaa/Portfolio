@@ -6,10 +6,10 @@
 <title>2048</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html,body{width:240px;max-width:240px;height:340px;max-height:340px;overflow:hidden;
+html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hidden;
   background:#0d1b2a;color:#fff;font-family:'Segoe UI',Arial,sans-serif;font-size:12px;
   user-select:none;-webkit-user-select:none;touch-action:manipulation}
-.shell{display:flex;flex-direction:column;width:240px;height:340px;overflow:hidden;position:relative}
+.shell{display:flex;flex-direction:column;width:240px;height:320px;overflow:hidden;position:relative}
 .hdr{background:#1a2f45;padding:4px 8px;display:flex;align-items:center;
   justify-content:space-between;border-bottom:1px solid #243b55;flex-shrink:0;height:30px}
 .htitle{font-size:13px;font-weight:bold;color:#00c8ff;letter-spacing:1px}
@@ -152,14 +152,14 @@ var LS_STATE  = 'games_2048_state';
 var LS_UNDO   = 'games_2048_undo';
 var TOP_N = 10;
 
-var grid, score, moves, prevGrid, prevScore, prevMoves, won, over;
+var grid, score, moves, prevGrid, prevScore, prevMoves, won;
 
 function emptyGrid() {
   return [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
 }
 
 function newGame() {
-  grid = emptyGrid(); score = 0; moves = 0; won = false; over = false;
+  grid = emptyGrid(); score = 0; moves = 0; won = false;
   prevGrid = null; prevScore = 0; prevMoves = 0;
   addRandom(); addRandom();
   hideOverlay(); render(); updateUI();
@@ -184,7 +184,6 @@ function slide(row) {
 }
 
 function doMove(dir) {
-  if (over) return;
   var before = JSON.stringify(grid);
   prevGrid = JSON.parse(JSON.stringify(grid));
   prevScore = score; prevMoves = moves;
@@ -210,11 +209,9 @@ function doMove(dir) {
   if (JSON.stringify(grid)===before) return;
   score+=gained; moves++; addRandom();
   if (!won) {
-    for (var r=0;r<4;r++) for (var c=0;c<4;c++) {
-      if (grid[r][c]===2048) { won=true; over=true; showOverlay('YOU WIN!','Score: '+score); }
-    }
+    for (var r=0;r<4;r++) for (var c=0;c<4;c++) if (grid[r][c]===2048) { won=true; showOverlay('YOU WIN!','Score: '+score); }
   }
-  if (!over && !canMove()) { over=true; saveScore(); showOverlay('GAME OVER','Final: '+score+' in '+moves+' moves'); }
+  if (!won && !canMove()) { saveScore(); showOverlay('GAME OVER','Final score: '+score); }
   render(); updateUI(); saveState();
 }
 
@@ -268,14 +265,14 @@ function saveScore() {
 }
 
 function saveState() {
-  localStorage.setItem(LS_STATE, JSON.stringify({grid:grid,score:score,moves:moves,won:won,over:over}));
+  localStorage.setItem(LS_STATE, JSON.stringify({grid:grid,score:score,moves:moves,won:won}));
   localStorage.setItem(LS_UNDO, JSON.stringify({prevGrid:prevGrid,prevScore:prevScore,prevMoves:prevMoves}));
 }
 
 function loadState() {
   try {
     var s = JSON.parse(localStorage.getItem(LS_STATE));
-    if (s && s.grid) { grid=s.grid; score=s.score; moves=s.moves; won=s.won; over=s.over||false; render(); updateUI(); return; }
+    if (s && s.grid) { grid=s.grid; score=s.score; moves=s.moves; won=s.won; render(); updateUI(); return; }
   } catch(e) {}
   newGame();
 }
@@ -288,15 +285,13 @@ function showOverlay(t, m) {
 function hideOverlay() { document.getElementById('ovr').classList.remove('show'); }
 
 function handleKey(key) {
-  if (key==='0') { newGame(); return; }
-  if (over) return;
   var map = {
     ArrowUp:'up', ArrowDown:'down', ArrowLeft:'left', ArrowRight:'right',
     '2':'up', '8':'down', '4':'left', '6':'right',
     w:'up', s:'down', a:'left', d:'right'
   };
   if (map[key]) doMove(map[key]);
-  else if (key==='z'||key==='u') undo();
+  else if (key==='z'||key==='u'||key==='0') undo();
 }
 
 /* swipe */
