@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our 2026 Japanese GP predictions",
+        "date": "Mar 25, 2026",
+        "dateSort": "2026-03-25",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69c2a9311fa78f4ec2ae7ed2/media.mp3"
+      },
+      {
         "title": "Chinese GP Driver Ratings",
         "date": "Mar 17, 2026",
         "dateSort": "2026-03-17",
@@ -344,12 +350,6 @@
         "date": "Mar 14, 2026",
         "dateSort": "2026-03-14",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b4e2be9f4b7ad940ab6b9a/media.mp3"
-      },
-      {
-        "title": "Reaction to Chinese GP sprint qualifying",
-        "date": "Mar 13, 2026",
-        "dateSort": "2026-03-13",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b3e578c208f0039f73527c/media.mp3"
       }
     ]
   }
