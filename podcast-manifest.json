@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "March Madness Takes, NBA Lottery Debates, and Best NFL Draft Story Lines With J. Kyle Mann and Todd McShay",
+        "date": "Mar 25, 2026",
+        "dateSort": "2026-03-25",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9606607021.mp3"
+      },
+      {
         "title": "Luka\u2019s Heater, Wemby\u2019s Bid, and Stealth Winners of the NBA Season With Zach Lowe",
         "date": "Mar 23, 2026",
         "dateSort": "2026-03-23",
@@ -25,12 +31,6 @@
         "date": "Mar 16, 2026",
         "dateSort": "2026-03-16",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1373459235.mp3?updated=1773635441"
-      },
-      {
-        "title": "The Bam Backlash, Kawhi\u2019s Heater, East vs. West, and SGA vs. Jokic, With Tim Legler",
-        "date": "Mar 13, 2026",
-        "dateSort": "2026-03-13",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5624412209.mp3"
       }
     ]
   },
