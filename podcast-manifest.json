@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 1988 Movie Draft",
+        "date": "Mar 26, 2026",
+        "dateSort": "2026-03-26",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5834420097.mp3"
+      },
+      {
         "title": "The Steven Spielberg Conversation",
         "date": "Mar 23, 2026",
         "dateSort": "2026-03-23",
@@ -274,18 +280,18 @@
         "date": "Mar 16, 2026",
         "dateSort": "2026-03-16",
         "audioUrl": "https://traffic.megaphone.fm/GLT8016865725.mp3"
-      },
-      {
-        "title": "Our Final 2026 Oscar Predictions: Who Will Win, and Who Should Win",
-        "date": "Mar 12, 2026",
-        "dateSort": "2026-03-12",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2520019750.mp3?updated=1773276881"
       }
     ]
   },
   {
     "name": "Knowing Faith",
     "episodes": [
+      {
+        "title": "Is Church Discipline Biblical?",
+        "date": "Mar 26, 2026",
+        "dateSort": "2026-03-26",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/0c6edc6a-cddd-4d52-8452-0ad3d0215fdd/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=0c6edc6a-cddd-4d52-8452-0ad3d0215fdd&feed=V2lHo6VQ"
+      },
       {
         "title": "Is It Ever Right To Lie?",
         "date": "Mar 19, 2026",
@@ -309,12 +315,6 @@
         "date": "Feb 26, 2026",
         "dateSort": "2026-02-26",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/d67036a1-f81f-4f6f-b781-1f816d2dab76/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=d67036a1-f81f-4f6f-b781-1f816d2dab76&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Is The Death Penalty Biblical?",
-        "date": "Feb 19, 2026",
-        "dateSort": "2026-02-19",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/6e1ea333-de1d-4892-b243-5eac1a474ef2/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=6e1ea333-de1d-4892-b243-5eac1a474ef2&feed=V2lHo6VQ"
       }
     ]
   },
