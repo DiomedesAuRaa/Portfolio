@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "NBA Hot Takes, OKC\u2019s Red Flag, and Giannis vs. Father Time With Kirk Goldsberry and Joe House",
+        "date": "Mar 26, 2026",
+        "dateSort": "2026-03-26",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6722791617.mp3"
+      },
+      {
         "title": "March Madness Takes, NBA Lottery Debates, and Best NFL Draft Story Lines With J. Kyle Mann and Todd McShay",
         "date": "Mar 25, 2026",
         "dateSort": "2026-03-25",
@@ -25,12 +31,6 @@
         "date": "Mar 17, 2026",
         "dateSort": "2026-03-17",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6223031580.mp3"
-      },
-      {
-        "title": "A Rollicking NBA Mailbag and March Madness Storylines With Rob Mahoney, Tate Frazier, and J. Kyle Mann",
-        "date": "Mar 16, 2026",
-        "dateSort": "2026-03-16",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1373459235.mp3?updated=1773635441"
       }
     ]
   },
