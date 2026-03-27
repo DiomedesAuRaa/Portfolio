@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "Patrick J. Adams on the Making of \u2018The Madison.\u2019 Plus, \u2018The Pitt\u2019 S2E12 and a TV News Roundup.",
+        "date": "Mar 27, 2026",
+        "dateSort": "2026-03-27",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1901689959.mp3"
+      },
+      {
         "title": "\u2018Project Hail Mary,\u2019 \u2018Marshals,\u2019 \u2018Jury Duty Presents: Company Retreat,\u2019 and \u2018SNL UK.\u2019 Plus, \u2018Paradise\u2019 S2E7.",
         "date": "Mar 24, 2026",
         "dateSort": "2026-03-24",
@@ -60,12 +66,6 @@
         "date": "Mar 13, 2026",
         "dateSort": "2026-03-13",
         "audioUrl": "https://traffic.megaphone.fm/GLT5603578653.mp3"
-      },
-      {
-        "title": "How the Warner Bros. Sale Changes Television. Plus, \u2018DTF St. Louis\u2019 and \u2018Rooster\u2019 Strike Out.",
-        "date": "Mar 09, 2026",
-        "dateSort": "2026-03-09",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2939181142.mp3?updated=1773099980"
       }
     ]
   },
