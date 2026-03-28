@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Reaction to Japanese GP qualifying",
+        "date": "Mar 28, 2026",
+        "dateSort": "2026-03-28",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69c7afe8a354c89460a6ff75/media.mp3"
+      },
+      {
         "title": "Reaction to Japanese GP practice",
         "date": "Mar 27, 2026",
         "dateSort": "2026-03-27",
@@ -344,12 +350,6 @@
         "date": "Mar 15, 2026",
         "dateSort": "2026-03-15",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b69c437eff1c1be5802df9/media.mp3"
-      },
-      {
-        "title": "Reaction to Chinese GP qualifying",
-        "date": "Mar 14, 2026",
-        "dateSort": "2026-03-14",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69b52f37a2d796b92c38591a/media.mp3"
       }
     ]
   }
