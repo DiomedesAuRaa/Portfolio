@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "UConn\u2019s Miracle, Weirdest NBA Season Ever, A Scary Playoff Team Draft, and an Iffy Expansion Plan With Zach Lowe",
+        "date": "Mar 30, 2026",
+        "dateSort": "2026-03-30",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9259586787.mp3"
+      },
+      {
         "title": "NBA Hot Takes, OKC\u2019s Red Flag, and Giannis vs. Father Time With Kirk Goldsberry and Joe House",
         "date": "Mar 26, 2026",
         "dateSort": "2026-03-26",
@@ -25,12 +31,6 @@
         "date": "Mar 20, 2026",
         "dateSort": "2026-03-20",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4987348445.mp3"
-      },
-      {
-        "title": "The Annual Worst NBA Contracts Draft With Joe House and Wosny Lambre",
-        "date": "Mar 17, 2026",
-        "dateSort": "2026-03-17",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6223031580.mp3"
       }
     ]
   },
