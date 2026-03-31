@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "A Radical NBA Idea, Wemby\u2019s Musical Comp, Despising Duke, and Baseball\u2019s ABS Revolution With Chuck Klosterman",
+        "date": "Mar 31, 2026",
+        "dateSort": "2026-03-31",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1425620382.mp3"
+      },
+      {
         "title": "UConn\u2019s Miracle, Weirdest NBA Season Ever, A Scary Playoff Team Draft, and an Iffy Expansion Plan With Zach Lowe",
         "date": "Mar 30, 2026",
         "dateSort": "2026-03-30",
@@ -25,12 +31,6 @@
         "date": "Mar 23, 2026",
         "dateSort": "2026-03-23",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9936571397.mp3"
-      },
-      {
-        "title": "LakerMania, NBA Expansion, WBC Lessons, and MBJ\u2019s Moment With Billy Gil and Wesley Morris",
-        "date": "Mar 20, 2026",
-        "dateSort": "2026-03-20",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4987348445.mp3"
       }
     ]
   },
