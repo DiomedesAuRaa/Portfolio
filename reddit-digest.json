@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-04-02T13:54:50.709412",
-  "generated_at": "2026-04-02 13:54:50 UTC",
+  "timestamp": "2026-04-02T13:55:27.983303",
+  "generated_at": "2026-04-02 13:55:27 UTC",
   "subreddits_count": 12,
-  "total_posts": 5,
+  "total_posts": 1,
   "feeds": [
     "Best of Hour",
     "Best of 24h",
@@ -13,9 +13,9 @@
   "comments_feed": "Best of 24h",
   "fetch_errors": {
     "cfb": [
-      "Best of Hour",
       "Best of 24h",
-      "Best of Week"
+      "Best of Week",
+      "Hot"
     ],
     "nfl": [
       "Best of Hour",
@@ -86,58 +86,7 @@
   },
   "data": {
     "cfb": {
-      "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": [
-        {
-          "title": "/r/CFB Donates $65,000.00 to Toys For Tots & Children's Hospitals in the 11th annual Holiday Drive!",
-          "author": "Honestly_",
-          "score": 395,
-          "url": "https://www.reddit.com/r/CFB/comments/1rdg4m7/rcfb_donates_6500000_to_toys_for_tots_childrens/",
-          "selftext": "**TL;DR**: \\/r/CFB does charitable fundraising. This post breaks down the $65,000 raised last winter by over 450 people! It broke our previous record for total funds. \\/r/CFB is now officially a ★ 1 Star National Corporate Sponsor for Marine Toys for Tots [on their website](https://www.toysfortots.org/corporate-sponsors/sponsorship-levels/national-corporate-sponsors/). We also got our name on a cool \"wagon\" again, see below!\n\n***\n\nThe best thing about the \\/r/CFB is the Community, and an important extension of that is its generosity. The tradition continued in our 29th charitable drive, the 2025 /r/CFB Holiday Drive: Toys & Children's Hospitals!\n\n**Since 2013, /r/CFB readers [have donated over $280,000 to charity.](https://www.reddit.com/r/CFB/wiki/donations)**\n\n***\n\n##**Intro**\n\nThe 11th annual \\/r/CFB Holiday Drive raised **$65,000.00!**\n\nTake a moment to appreciate [all 450+ /r/CFB readers who donated](https://www.reddit.com/r/CFB/comments/1pn7mdk/2025_rcfb_holiday_drive_toys_childrens_hospitals/).\n\n**A VERY SPECIAL THANKS**: A lot of folks helped the drive, I wanted to single-out /u/FlannelBeard and /u/buckeyeempire for their posts asking people to join this great Community cause. \n\n\n##**Process:**\n\nThis was the fourth year as a federally-recognized 501(c)(3) nonprofit organization, OurCFB ([backstory](https://www.reddit.com/r/cfbmeta/comments/zk1b73/explaining_ourcfb_rcfb_llc/)). The change opened-up more opportunities alongside more formalities. \n\nThat meant a slower process of getting funds, then distributing them:\n\n* PayPal waives all fees because we're a 501(C)(3). The trade-off is a delay in transfers: to save on their own fees they will send it to us in-bulk, *once per month*, which changed in 2026 to be the last day of the month. With the timing of the Holiday Drive, that means we get all the money in the nonprofit PayPal account by late January, then transfer it to the OurCFB bank account.\n* To avoid losing more donations due to fees, we issued checks to all recipients, which added a little delay compared to credit card donations.\n* We were able to greatly reduce the processing delays with the University of Michigan's C.S. Mott Children's Hospital that backed up the 2024 Holiday Drive disbursement and recognition. \n* After coming close last year, we managed to pass the threshold to become an officially recognized National Corporate Sponsor of Marine Toys for Tots.\n\nAll money received was split evenly between Marine Toys for Tots and Children's Hospitals.\n\n##**Donation Breakdown:**\n\nCategory|$|Notes\n:--|--:|:--\nUser Donations|$61,106.74|Via PayPal (no fees) and Venmo (after fees deducted), alongside Employer Matching programs.\nrCFB, LLC contribution|$3,393.26|[\"What is rCFB, LLC\" explanation](https://www.reddit.com/r/cfbmeta/comments/zk1b73/explaining_ourcfb_rcfb_llc/).\nGRAND TOTAL donated|**$65,000.00**|\nToys for Tots Donation|**$32,500.00**|50% of total ([RECEIPT](https://i.imgur.com/mLg1vUz.jpeg))\nChildren's Hospitals|**$32,500.00**|See breakdown below.\n\n***\n\n##**Donations to Children's Hospitals** \n\n\nThe $32,500.00 is divided among the top-3 most generous fanbases:\n\n* 50% to [](#f/usc) USC\n* 30% to [](#f/texastech) Texas Tech\n* 20% to [](#f/michigan) Michigan\n \nAll three programs have medical schools with associated children's hospitals, so it was easy to identify where these funds were to go compared to some previous years. \n\nThe Children's Hospital donations were:\n\nFirst place: [](#f/usc) **USC Trojans**\n\n* **$16,250.00** to **Children's Hospital Los Angeles**\n* [RECEIPT](https://i.imgur.com/PCQ2fJw.jpeg)\n\nSecond place: [](#f/texastech) **Texas Tech Red Raiders**\n\n* **$9,750.00** to **UMC Children's Hospital**, Lubbock\n* [RECEIPT](https://i.imgur.com/1IOkIpN.jpeg)\n\nThird place: [](#f/michigan) **Michigan Wolverines**\n\n* **$6,500.00** to **University of Michigan's C.S. Mott Children's Hospital**, Ann Arbor\n* [RECEIPT](https://i.imgur.com/Z7ZLdyo.jpeg)\n\n***\n\n#BONUSES!\n\n###BONUS 1: **Your Community is now a  ★ 1 Star National Corporate Sponsor for Marine Toys for Tots**\n\nThe staff at Marine Toys for Tots began to notice our cumulative donations to their work, and last year I received a call from one of their team explaining we were getting close to the annual threshold for becoming a National Corporate Sponsor based on the dollar amounts we were handing over. This year I realized we would pass that threshold before the drive was even over and got the conversation started with them.\n\n\\/r/CFB now [appears on the official website as a ★ 1 Star Sponsor](https://www.toysfortots.org/corporate-sponsors/sponsorship-levels/national-corporate-sponsors/). We can thank the fact our name begins with a piece of punctuation for placing it right at the top of that section. \n\n**\\/r/CFB is in the same group as some companies you may have heard of such as AT&T, Boeing, Dunkin' Donuts, Duracell, Fox Corporation, Goodyear, Microsoft, Vineyard Vines, and the Pittsburgh Penguins.** For us, that's a triumph. For them... lol you're *tied* with a subreddit about college football.\n\n\n###BONUS 2: **The Little Victors Wagon Returns!**\n\nLast year's donation let us work out an interesting approach with the University of Michigan's C.S. Mott Children's Hospital, as their Development department came up with a way to maximize its effect in a way that matched our overall theme. The money was once again distributed to two projects:\n\n* The **Little Victors Wagon** program created cute little wagons for helping the young patients enjoy their travels around the hospital. They have been tweaked over the years to have fold down sides so kids with limitations can easily be brought on and off, as well as an attached pole for hanging an IV. It's a really wonderful idea for making what can be a scary visit more fun for children. We got our name on one of those wagon, using the Michigan-inspired variant of the \\/r/CFB logo, and some inspirational words above it. Last year's cart has been in circulation at the hospital.\n\n[**Here is a photo of last year's wagon**](https://i.imgur.com/vY0yu4l.jpeg), this year's will be the same. Plus, here is the [**detail of the sign.**](https://i.imgur.com/cNKHkYR.jpeg)\n\n* The rest of the donation was given to the **Mott's Toy Store** to provide holiday and year-round toys to cheer up young patients and families. The Development person thought this fit our TFT program, and even worked to make sure more of the donation went to provide more toys (the breakdown on the linked receipt shows how they minimized the item for the wagon to a minimum so they could push more of the funds to the Toy Store).\n\n***\n\n#Bottom line: We're helping a *lot* of kids in a *lot* of places.\n\n1. Thanks to all of you who **DONATED**\n1. Thanks to all of you who **HELPED**\n1. Thanks for making /r/CFB a great **COMMUNITY**",
-          "created_utc": 1771939419.0,
-          "num_comments": 43,
-          "id": "1rdg4m7",
-          "subreddit": "CFB",
-          "link_url": "https://www.reddit.com/r/CFB/comments/1rdg4m7/rcfb_donates_6500000_to_toys_for_tots_childrens/",
-          "is_self": true,
-          "upvote_ratio": 0.97,
-          "flair": "/r/CFB Original",
-          "comments": []
-        },
-        {
-          "title": "[On3] NEW: LSU planned to spend $25-30M on its roster but ended up at $40M+ after Lane Kiffin sold his vision. \"Why not win in Year 1? You don't build stuff over three, four years anymore,\" one donor said.",
-          "author": "redwave2505",
-          "score": 1626,
-          "url": "https://www.reddit.com/r/CFB/comments/1s9r3au/on3_new_lsu_planned_to_spend_2530m_on_its_roster/",
-          "selftext": "",
-          "created_utc": 1775064236.0,
-          "num_comments": 622,
-          "id": "1s9r3au",
-          "subreddit": "CFB",
-          "link_url": "https://x.com/on3/status/2039369785666879504?s=46&t=BnbVRJKuTJ91_xw0Gc4vwg",
-          "is_self": false,
-          "upvote_ratio": 0.96,
-          "flair": "News",
-          "comments": []
-        },
-        {
-          "title": "Cal football recently received an $11 million anonymous cash gift, a $6.5 million commitment, two $1 million gifts, and several commitments of $500k+",
-          "author": "iansf",
-          "score": 164,
-          "url": "https://www.reddit.com/r/CFB/comments/1sa5oud/cal_football_recently_received_an_11_million/",
-          "selftext": "The Tosh Effect is very, very real. This is all after raising $2.25 million during a matching campaign.\n\n“After raising $5.2 million last year, Cal football is now tracking toward more than $25 million this year, representing a remarkable 381% increase. This historic growth is a direct reflection of the passion, pride, and commitment of the Cal community, and it signals a turning point for the program. But these efforts are just the beginning. Rivera has a goal - raise $100 million over the next three years to build the financial foundation Cal football needs to win championships.”\n\nhttps://calbears.com/news/2026/3/25/athletics-news-cal-community-drives-football-fundraising-momentum.aspx",
-          "created_utc": 1775098656.0,
-          "num_comments": 66,
-          "id": "1sa5oud",
-          "subreddit": "CFB",
-          "link_url": "https://www.reddit.com/r/CFB/comments/1sa5oud/cal_football_recently_received_an_11_million/",
-          "is_self": true,
-          "upvote_ratio": 0.91,
-          "flair": "Discussion",
-          "comments": []
-        },
+      "Best of Hour": [
         {
           "title": "Big 12 commish Brett Yormark: 'Cody Campbell does not run the Big 12'",
           "author": "redwave2505",
@@ -153,24 +102,11 @@
           "upvote_ratio": 0.95,
           "flair": "News",
           "comments": []
-        },
-        {
-          "title": "Lane Kiffin lit the LSU fuse. There's no asking for patience now",
-          "author": "Fragrant-Helicopter1",
-          "score": 209,
-          "url": "https://www.reddit.com/r/CFB/comments/1sa0t9z/lane_kiffin_lit_the_lsu_fuse_theres_no_asking_for/",
-          "selftext": "",
-          "created_utc": 1775085641.0,
-          "num_comments": 199,
-          "id": "1sa0t9z",
-          "subreddit": "CFB",
-          "link_url": "https://www.usatoday.com/story/sports/ncaaf/2026/04/01/lane-kiffin-asks-for-patience-but-does-he-deserve-it-lsu-football/89419047007/",
-          "is_self": false,
-          "upvote_ratio": 0.88,
-          "flair": "Analysis",
-          "comments": []
         }
-      ]
+      ],
+      "Best of 24h": [],
+      "Best of Week": [],
+      "Hot": []
     },
     "nfl": {
       "Best of Hour": [],
