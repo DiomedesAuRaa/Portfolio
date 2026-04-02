@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-04-02T14:01:11.421022",
-  "generated_at": "2026-04-02 14:01:11 UTC",
+  "timestamp": "2026-04-02T14:15:16.036846",
+  "generated_at": "2026-04-02 14:15:16 UTC",
   "subreddits_count": 12,
-  "total_posts": 1,
+  "total_posts": 86,
   "feeds": [
     "Best of Hour",
     "Best of 24h",
@@ -54,34 +54,10 @@
       "Hot"
     ],
     "MichiganWolverines": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
-    ],
-    "DetroitLions": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
+      "Best of Hour"
     ],
     "DetroitPistons": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
-    ],
-    "movies": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
-    ],
-    "BillSimmons": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
+      "Best of Hour"
     ]
   },
   "data": {
@@ -90,16 +66,16 @@
         {
           "title": "Big 12 commish Brett Yormark: 'Cody Campbell does not run the Big 12'",
           "author": "redwave2505",
-          "score": 26,
+          "score": 37,
           "url": "https://www.reddit.com/r/CFB/comments/1sahf4f/big_12_commish_brett_yormark_cody_campbell_does/",
           "selftext": "",
           "created_utc": 1775136517.0,
-          "num_comments": 32,
+          "num_comments": 53,
           "id": "1sahf4f",
           "subreddit": "CFB",
           "link_url": "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/04/02/brett-yormark-says-texas-tech-football-donor-does-not-run-the-big-12/89343929007/",
           "is_self": false,
-          "upvote_ratio": 0.96,
+          "upvote_ratio": 0.97,
           "flair": "News",
           "comments": []
         }
@@ -146,33 +122,3069 @@
     },
     "MichiganWolverines": {
       "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of 24h": [
+        {
+          "title": "Saw this, thought it was great",
+          "author": "jasonite",
+          "score": 805,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1sa0qwe/saw_this_thought_it_was_great/",
+          "selftext": "",
+          "created_utc": 1775085471.0,
+          "num_comments": 29,
+          "id": "1sa0qwe",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/og4vckqdwnsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "Entire-Let4301",
+              "body": "Frozen 4?",
+              "score": 102
+            },
+            {
+              "author": "UnnecessaryPancake",
+              "body": "https://i.redd.it/62w5hj6xwnsg1.gif\n\n",
+              "score": 55
+            },
+            {
+              "author": "MinnesDuluth",
+              "body": "They made the 4 team college playoffs 3 times \n\nCollege football*",
+              "score": 35
+            }
+          ]
+        },
+        {
+          "title": "Update on Cadeau: doctors evaluated him and he is fine, will travel to Indy later today",
+          "author": "wildwing8",
+          "score": 221,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s9v7p5/update_on_cadeau_doctors_evaluated_him_and_he_is/",
+          "selftext": "",
+          "created_utc": 1775072731.0,
+          "num_comments": 9,
+          "id": "1s9v7p5",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/6obw81vkumsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "Stock_Play9755",
+              "body": "That’s a very scary situation. Glad to see he is alright. ",
+              "score": 54
+            },
+            {
+              "author": "ohmydamn",
+              "body": "Sneaky way to get his own jet \n\n/jk glad he's ok",
+              "score": 39
+            },
+            {
+              "author": "Zealousideal_Bug7390",
+              "body": "Damn, won't lie thought the first post was a real shitty April Fools joke. \n\nGlad he's doing okay.",
+              "score": 30
+            },
+            {
+              "author": "lobsterboy34",
+              "body": "Food allergies are no joke. Glad EC is alright",
+              "score": 19
+            },
+            {
+              "author": "ProtectionPerfect282",
+              "body": "Cadaeu legacy game loading up….",
+              "score": 7
+            }
+          ]
+        },
+        {
+          "title": "Elliot Cadeau taken by ambulance after allergic reaction",
+          "author": "dantjenkins2",
+          "score": 194,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s9uw51/elliot_cadeau_taken_by_ambulance_after_allergic/",
+          "selftext": "This report says he should be fine ahead of Saturday",
+          "created_utc": 1775072060.0,
+          "num_comments": 35,
+          "id": "1s9uw51",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/wuk9xozksmsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "w0lverine11",
+              "body": "If this is some April Fools Day shit, I hope you get banned from this sub forever",
+              "score": 214
+            },
+            {
+              "author": "Br_Ba",
+              "body": "Surveillance captured a person of interest entering the team's dining facility\n\n![gif](giphy|KXedeR1GP2pEyhQJSc)",
+              "score": 94
+            },
+            {
+              "author": "Masde_xo",
+              "body": "Not april fools. Corroborated by multiple witnesses. Word is peanut/food allergy and he will be fine",
+              "score": 91
+            },
+            {
+              "author": "MaizeRage48",
+              "body": "Out of an abundance of caution they did perform a chest X-ray and confirmed that he has that dog in him.",
+              "score": 46
+            }
+          ]
+        },
+        {
+          "title": "Happy Birthday to Bob Ufer up in Football Valhalla!",
+          "author": "GG1817",
+          "score": 186,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s9nhod/happy_birthday_to_bob_ufer_up_in_football_valhalla/",
+          "selftext": "After some consideration about the responses to my prior post, I have deleted it in order to remove Bo who also shares a birthday with Bob.",
+          "created_utc": 1775056646.0,
+          "num_comments": 22,
+          "id": "1s9nhod",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/5353lj5gilsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "Michigan Football",
+          "comments": [
+            {
+              "author": "GG1817",
+              "body": "I wouldn't at all be against taking down the Bo statue and renaming the football building \"Ufer Hall\".\n\nRelated, we should probably also rename Canham natatorium since he was the key player in covering up Anderson and ultimately the one responsible for hiring him and keeping him employed after he was fired from Health Services for sexual assault of students.",
+              "score": 10
+            },
+            {
+              "author": "ecw324",
+              "body": "I wasn’t alive or around for the jeep horn, but it’d be cool to still hear on the broadcasts occasionally ",
+              "score": 11
+            },
+            {
+              "author": "NefariousShe",
+              "body": "“Football is a religion and Saturday is the Holy Day of Obligation”\n\n[10 years old but still a great thread.](https://www.reddit.com/r/CFB/s/SVJA378yDO)",
+              "score": 8
+            },
+            {
+              "author": "Cheap-Employ8125",
+              "body": "Meeechigan…Meechegan! ",
+              "score": 5
+            }
+          ]
+        },
+        {
+          "title": "Glen Rice should get the shine Fab Five gets imo. Its like there's Glen Rice erasure",
+          "author": "salmon10",
+          "score": 177,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1sa7qfj/glen_rice_should_get_the_shine_fab_five_gets_imo/",
+          "selftext": "hes not even in the Collegiate Hall of Fame. Even in my hometown of Flint, Mateen and Mo Pete get light years more love than Rice does. what is up with all this i feel like im takin crazy pills.",
+          "created_utc": 1775104713.0,
+          "num_comments": 33,
+          "id": "1sa7qfj",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://youtu.be/xfB2DDs_I0k?si=Ny0oaebHsfTWwDJn",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Image/Video",
+          "comments": [
+            {
+              "author": "likemy10thaccount",
+              "body": "184 points in 6 games (30.6/game).  \n\nScored 39 against Florida in 1988.  \n\nFlint Northwestern.  \n\n134 games played and 949 points.  \n\nAll conference 1988 and 1989.  \n\n〽️🐐",
+              "score": 51
+            },
+            {
+              "author": "deeare73",
+              "body": "Yes, still holds the record for most points scored in a single tournament",
+              "score": 40
+            },
+            {
+              "author": "Bugman715",
+              "body": "And he averaged over 18 ppg in a 15-year NBA career",
+              "score": 26
+            },
+            {
+              "author": "kookie00",
+              "body": "He is overlooked, but I think you are forgetting the cultural phenomenon that was the Fab 5. Their influence extended way beyond basketball (college athlete empowerment, hip hop, clothing, etc).",
+              "score": 22
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "Michigan Man Will Tschetter crying tears of joy as Michigan is headed to the Final Four",
+          "author": "wildwing8",
+          "score": 1267,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s7crmj/michigan_man_will_tschetter_crying_tears_of_joy/",
+          "selftext": "",
+          "created_utc": 1774833111.0,
+          "num_comments": 41,
+          "id": "1s7crmj",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://v.redd.it/w3mz2e6223sg1",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "stevejust",
+              "body": "Those who stay",
+              "score": 237
+            },
+            {
+              "author": "wildwing8",
+              "body": "Tschetter is the definition of a Michigan Man.\n\nShoutout to Goodman and Mara for being great teammates and showing how much they care about him.",
+              "score": 227
+            },
+            {
+              "author": "CountOff",
+              "body": "Similarly I’m so happy for Burnett \n\nI remember being invested in his original Michigan recruitment and being disappointed  it didn’t work out \n\nLove to see him in maize and blue now!",
+              "score": 96
+            },
+            {
+              "author": "chrisball96",
+              "body": "Gotta love this for 🧀. He has seen and been through so much on this team, he was on the 8 win squad with that disaster of a season and has now gotten to be a part of the great revival for Michigan basketball under May. \n\nHe may not be the best guy on the floor but he gives it his all when he’s called on and you have to respect his dedication. ",
+              "score": 98
+            }
+          ]
+        },
+        {
+          "title": "Elliot Cadeau confirms he will return to Michigan for his senior season",
+          "author": "wildwing8",
+          "score": 1069,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s6ik4h/elliot_cadeau_confirms_he_will_return_to_michigan/",
+          "selftext": "",
+          "created_utc": 1774749283.0,
+          "num_comments": 56,
+          "id": "1s6ik4h",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/htwbywys4wrg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "wildwing8",
+              "body": "Cadeau has gotten a lot of shit from this sub (myself included) and while he has had his ups and downs, I think getting him back next season is huge.\n\nHelps so much with our continuity for next year’s roster and hopefully Cadeau can develop even more in Year 2 with May than he did in Year 1.\n\nGlad to have you back Elliot!",
+              "score": 157
+            },
+            {
+              "author": "SrCoolbean",
+              "body": "Dope. Huge part of the team, glad to have him back",
+              "score": 129
+            },
+            {
+              "author": "RevNeutron",
+              "body": "Cadeau and McKenny (also confirmed) will give us the best backcourt in the country\n\nIf one of Mara or Morez come back…\n\nGuess we gonna back-to-back",
+              "score": 42
+            }
+          ]
+        },
+        {
+          "title": "Yaxel posted this on TikTok",
+          "author": "FalynT",
+          "score": 1020,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s4d5sa/yaxel_posted_this_on_tiktok/",
+          "selftext": "I honestly can not stop laughing about it. It was a carousel of pics of him dunking and stuff. And then at the end this comes up and I’m dead. ",
+          "created_utc": 1774544346.0,
+          "num_comments": 49,
+          "id": "1s4d5sa",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/x6mr684f7frg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "Charles_Woodson_2",
+              "body": "This is amazing. ",
+              "score": 102
+            },
+            {
+              "author": "jcrespo21",
+              "body": "Haters will say this is AI.",
+              "score": 82
+            },
+            {
+              "author": "[deleted]",
+              "body": "Love it ",
+              "score": 11
+            },
+            {
+              "author": "MichiganMainer",
+              "body": "![gif](giphy|mpYqfyPHoHnxu)\n\nWho say’s white men can’t jump. And way to go Izzo. Pretty darn good for an old guy.",
+              "score": 11
+            }
+          ]
+        },
+        {
+          "title": "[Highlight] Dusty May’s son, Charlie May, hits a three and sends the Michigan bench into pandemonium",
+          "author": "wildwing8",
+          "score": 932,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s76dyc/highlight_dusty_mays_son_charlie_may_hits_a_three/",
+          "selftext": "",
+          "created_utc": 1774816956.0,
+          "num_comments": 33,
+          "id": "1s76dyc",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://v.redd.it/vmzwzswyp1sg1",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "PNW-American-Dipper",
+              "body": "This is now one of my favorite clips of the year.  It’s all about the team.  ",
+              "score": 170
+            },
+            {
+              "author": "BobUfer",
+              "body": "Dusty Mays son hit a triple in mop up time in an Elite 8 game lmao, what a season for us.",
+              "score": 96
+            },
+            {
+              "author": "Vegetable-Leather-64",
+              "body": "Not just Dusty's kid every time the guys at the end of the bench get in they go fucking nuts for them. No egos on this team love it so fun",
+              "score": 91
+            },
+            {
+              "author": "PossessionKooky3848",
+              "body": "I love this",
+              "score": 61
+            }
+          ]
+        },
+        {
+          "title": "Charlie May scored more points in the Elite 8 than Jeremy Fears Jr. did 💀💀💀",
+          "author": "wildwing8",
+          "score": 859,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s7f19q/charlie_may_scored_more_points_in_the_elite_8/",
+          "selftext": "",
+          "created_utc": 1774839621.0,
+          "num_comments": 17,
+          "id": "1s7f19q",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/7hgxziafl3sg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "SolaceAcheron",
+              "body": "He also kicked fewer groins than Fears did during the regular season",
+              "score": 188
+            },
+            {
+              "author": "oh-kee-pah",
+              "body": "https://preview.redd.it/e07z9mq4y3sg1.jpeg?width=1170&format=pjpg&auto=webp&s=8a7161f4197c6bee08942d5cb4db3d4cb70c8371",
+              "score": 99
+            },
+            {
+              "author": "TwinkiesForAmerica",
+              "body": "TEARS FOR FEARS",
+              "score": 94
+            },
+            {
+              "author": "Lt_Snatchcats",
+              "body": "I swear I read a stat that Fears had as many turnovers as made field goals in the tourney this year, what a kick in the nuts for sparty. ",
+              "score": 36
+            },
+            {
+              "author": "schadkehnfreude",
+              "body": "But no one is better at the drive-and-kick game than Fears!",
+              "score": 30
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "Saw this, thought it was great",
+          "author": "jasonite",
+          "score": 807,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1sa0qwe/saw_this_thought_it_was_great/",
+          "selftext": "",
+          "created_utc": 1775085471.0,
+          "num_comments": 29,
+          "id": "1sa0qwe",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/og4vckqdwnsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "Entire-Let4301",
+              "body": "Frozen 4?",
+              "score": 102
+            },
+            {
+              "author": "UnnecessaryPancake",
+              "body": "https://i.redd.it/62w5hj6xwnsg1.gif\n\n",
+              "score": 55
+            },
+            {
+              "author": "MinnesDuluth",
+              "body": "They made the 4 team college playoffs 3 times \n\nCollege football*",
+              "score": 35
+            }
+          ]
+        },
+        {
+          "title": "Glen Rice should get the shine Fab Five gets imo. Its like there's Glen Rice erasure",
+          "author": "salmon10",
+          "score": 180,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1sa7qfj/glen_rice_should_get_the_shine_fab_five_gets_imo/",
+          "selftext": "hes not even in the Collegiate Hall of Fame. Even in my hometown of Flint, Mateen and Mo Pete get light years more love than Rice does. what is up with all this i feel like im takin crazy pills.",
+          "created_utc": 1775104713.0,
+          "num_comments": 33,
+          "id": "1sa7qfj",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://youtu.be/xfB2DDs_I0k?si=Ny0oaebHsfTWwDJn",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Image/Video",
+          "comments": [
+            {
+              "author": "likemy10thaccount",
+              "body": "184 points in 6 games (30.6/game).  \n\nScored 39 against Florida in 1988.  \n\nFlint Northwestern.  \n\n134 games played and 949 points.  \n\nAll conference 1988 and 1989.  \n\n〽️🐐",
+              "score": 51
+            },
+            {
+              "author": "deeare73",
+              "body": "Yes, still holds the record for most points scored in a single tournament",
+              "score": 40
+            },
+            {
+              "author": "Bugman715",
+              "body": "And he averaged over 18 ppg in a 15-year NBA career",
+              "score": 26
+            },
+            {
+              "author": "kookie00",
+              "body": "He is overlooked, but I think you are forgetting the cultural phenomenon that was the Fab 5. Their influence extended way beyond basketball (college athlete empowerment, hip hop, clothing, etc).",
+              "score": 22
+            }
+          ]
+        },
+        {
+          "title": "Update on Cadeau: doctors evaluated him and he is fine, will travel to Indy later today",
+          "author": "wildwing8",
+          "score": 218,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s9v7p5/update_on_cadeau_doctors_evaluated_him_and_he_is/",
+          "selftext": "",
+          "created_utc": 1775072731.0,
+          "num_comments": 9,
+          "id": "1s9v7p5",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/6obw81vkumsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "Stock_Play9755",
+              "body": "That’s a very scary situation. Glad to see he is alright. ",
+              "score": 54
+            },
+            {
+              "author": "ohmydamn",
+              "body": "Sneaky way to get his own jet \n\n/jk glad he's ok",
+              "score": 39
+            },
+            {
+              "author": "Zealousideal_Bug7390",
+              "body": "Damn, won't lie thought the first post was a real shitty April Fools joke. \n\nGlad he's doing okay.",
+              "score": 30
+            },
+            {
+              "author": "lobsterboy34",
+              "body": "Food allergies are no joke. Glad EC is alright",
+              "score": 19
+            },
+            {
+              "author": "ProtectionPerfect282",
+              "body": "Cadaeu legacy game loading up….",
+              "score": 7
+            }
+          ]
+        },
+        {
+          "title": "Elliot Cadeau taken by ambulance after allergic reaction",
+          "author": "dantjenkins2",
+          "score": 195,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1s9uw51/elliot_cadeau_taken_by_ambulance_after_allergic/",
+          "selftext": "This report says he should be fine ahead of Saturday",
+          "created_utc": 1775072060.0,
+          "num_comments": 35,
+          "id": "1s9uw51",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://i.redd.it/wuk9xozksmsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "w0lverine11",
+              "body": "If this is some April Fools Day shit, I hope you get banned from this sub forever",
+              "score": 214
+            },
+            {
+              "author": "Br_Ba",
+              "body": "Surveillance captured a person of interest entering the team's dining facility\n\n![gif](giphy|KXedeR1GP2pEyhQJSc)",
+              "score": 94
+            },
+            {
+              "author": "Masde_xo",
+              "body": "Not april fools. Corroborated by multiple witnesses. Word is peanut/food allergy and he will be fine",
+              "score": 91
+            },
+            {
+              "author": "MaizeRage48",
+              "body": "Out of an abundance of caution they did perform a chest X-ray and confirmed that he has that dog in him.",
+              "score": 46
+            }
+          ]
+        },
+        {
+          "title": "P.O.V. you get Yaxel Lendeborgs game winner against Wisconsin during the B1G 10 Tournament",
+          "author": "RipInteresting943",
+          "score": 69,
+          "url": "https://www.reddit.com/r/MichiganWolverines/comments/1sa23yf/pov_you_get_yaxel_lendeborgs_game_winner_against/",
+          "selftext": "",
+          "created_utc": 1775088993.0,
+          "num_comments": 1,
+          "id": "1sa23yf",
+          "subreddit": "MichiganWolverines",
+          "link_url": "https://v.redd.it/8t6yojes6osg1",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "Michigan Basketball",
+          "comments": [
+            {
+              "author": "oppknocks",
+              "body": "Great vantage point!",
+              "score": 2
+            }
+          ]
+        }
+      ]
     },
     "DetroitLions": {
-      "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of Hour": [
+        {
+          "title": "Frank Is Not Average",
+          "author": "yodanielchill",
+          "score": 0,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1sahp7b/frank_is_not_average/",
+          "selftext": "I see both sides of the arguments with the Lions retirement and bonus payback shit. \n\nMy honest opinion is it's a big deal because in the offseason, hack insiders love to make a story big so they can be credited with being the one to break it and it gets them more burn on the subject, more spotlight. \n\nI must say, however, I think it's stupid as fuck when people try to phrase it as, \"well if this happened to you, you would be pissed\", yeah no shit man. \n\nI don't think many people in this sub are multi-millionaires. I think most people in this sub would be just fine with sustaining many injuries to play NFL football and then get generational wealth. I also think if you told people in this sub that when they were hired they would get 70-80% of their yearly salary up front, they would gladly agree to pay pack their bonus if they retired early. \n\nLike get fucking real. Milionires are not average people. Frank is not a sympathetic figure no matter how lame this is for him - we don't even know if he's actually pissed about paying it back. \n\nFrank is a great guy but he is not a blue collar guy and to act like the people of Detroit should side with him fully from an ethical standpoint when at the age of 30-something, Frank got to retire and fish all day and most people here will \"get to\" hopefully retire at 65 and MAYBE have enough to cover their finances and medical issues is total bullshit and dirty pool. \n\n\"Money ain't got no owners, only spenders.\"",
+          "created_utc": 1775137201.0,
+          "num_comments": 24,
+          "id": "1sahp7b",
+          "subreddit": "detroitlions",
+          "link_url": "https://www.reddit.com/r/detroitlions/comments/1sahp7b/frank_is_not_average/",
+          "is_self": true,
+          "upvote_ratio": 0.37,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Ambitious_Bus_4054",
+              "body": "Man i cannot wait to see 10 posts a day about Frank for the next 3 months",
+              "score": 25
+            },
+            {
+              "author": "FoundationCareful662",
+              "body": "I don’t understand the rage.  Contract language is contract language ",
+              "score": 12
+            },
+            {
+              "author": "FalynT",
+              "body": "I was just thinking I hope there is another post about this situation today!\n\nGod I sure hope something happens today that we can all move on to. ",
+              "score": 4
+            },
+            {
+              "author": "ArmpitofD00m",
+              "body": "I would like an extra bonus I don’t have to pay back. I could really use it. ",
+              "score": 4
+            }
+          ]
+        }
+      ],
+      "Best of 24h": [
+        {
+          "title": "Jason Kelce with a nuanced take on the Frank Ragnow situation",
+          "author": "supermanforhire",
+          "score": 535,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s9mu3r/jason_kelce_with_a_nuanced_take_on_the_frank/",
+          "selftext": " Via X\n\n“This is interesting.  It feels like it’s obvious that Frank retired because he was physically fighting through injuries and pain, and it got to a point that he no longer could play the game in an enjoyable, effective, or healthy way.  \n\nThe whole purpose of a signing bonus is to be a guarantee up front that insures a salary irregardless of performance metrics, or most importantly injuries that could compromise your career in the future.\n\nWhat makes this interesting is that Frank likely retired “voluntarily”, meaning, he wasn’t declared medically unfit to play by a doctor, which allows the team to ask for a prorated amount of his signing bonus back.  Had he been medically deemed unfit to play football by a doctor before he retired, the team wouldn’t be able to recoup part of the signing bonus.  \n\nLet me say this first, if a player truly just retires without reason, or because they’ve lost the desire to play, I completely get and acknowledge teams should be able to recoup compensation when players don’t fulfill there contractual obligations and agreements.  \n\nHowever, Frank was known for being hurt and playing through injuries most players wouldn’t play through constantly.  Broken foot, a torn pec, multiple knee injuries, back issues.  There was always something, and I’m sure he was continuously dealing with multiple ailments to try and continue playing the game.  His body clearly had deteriorated to a degree that made football no longer a viable option, physically, and probably mentally.  In my opinion, the signing bonus is supposed to protect players from future physical ailments limiting their availability on the field, that’s one of the reasons you want more guaranteed money upfront.  \n\nSo while I get that the team has a right to ask for money back, in the spirit of the agreement, I think it’s bullshit Frank is being asked to return money.  This was clearly a player that the game had physically taken its toll on, and his body was clearly no longer holding up to the rigors of the NFL.  It wasn’t just some player deciding he didn’t want to play anymore, it wasn’t that simple, and these signing bonuses are there to protect players from the inevitable injuries they incur on the field.”",
+          "created_utc": 1775055256.0,
+          "num_comments": 243,
+          "id": "1s9mu3r",
+          "subreddit": "detroitlions",
+          "link_url": "https://www.reddit.com/r/detroitlions/comments/1s9mu3r/jason_kelce_with_a_nuanced_take_on_the_frank/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "",
+          "comments": [
+            {
+              "author": "motorcitydevil",
+              "body": "I think most fans agree with this take. It's petty and the optics are shit. ",
+              "score": 390
+            },
+            {
+              "author": "frankenpoopies",
+              "body": "*broken throat",
+              "score": 182
+            },
+            {
+              "author": "CrankyOldDude",
+              "body": "I agree with the take 100 percent.\n\nThe PROBLEM is: How do you differentiate with that in the future? I’d suggest most players that retire early will have at least some level of injury. Are you as a team going to decide who has played through enough injury vs just deciding to walk away? That’s WAY worse from a PR and morale perspective. \n\nAlso - do you let Frank keep his money after Calvin couldn’t keep his? Calvin hasn’t been shy about talking about that and he only recently came back into the fold.\n\nI think the Lions handled it about the only way they could. It sucks and I hate it, but I don’t see any other way. ",
+              "score": 74
+            }
+          ]
+        },
+        {
+          "title": "🙌🙌🙌",
+          "author": "DrewPetzing",
+          "score": 273,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s9tu6b/_/",
+          "selftext": "",
+          "created_utc": 1775069845.0,
+          "num_comments": 47,
+          "id": "1s9tu6b",
+          "subreddit": "detroitlions",
+          "link_url": "https://i.redd.it/lw1f1owzlmsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.84,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "Digit4lWizrd",
+              "body": "Haha, April Fools - not getting me this time.",
+              "score": 366
+            },
+            {
+              "author": "Sirlothar",
+              "body": "The best April Fools jokes are ones that make you think a minute, not like this one.",
+              "score": 96
+            },
+            {
+              "author": "fishing_pole",
+              "body": "What's that? Here comes Marcus Davenport off the high dive!!",
+              "score": 55
+            },
+            {
+              "author": "Conscious-Sympathy51",
+              "body": "He could actually say this 365 days out of the year and I’d think it’s April 1st every time. ",
+              "score": 20
+            },
+            {
+              "author": "TheHip41",
+              "body": "People that post April fools jokes should be executed\n\nYeah I said it ",
+              "score": 19
+            }
+          ]
+        },
+        {
+          "title": "[Lions] Jake Bates Traveled to Germany to Watch a Different Kind of Football With FC Köln",
+          "author": "JCameron181",
+          "score": 170,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s9vorf/lions_jake_bates_traveled_to_germany_to_watch_a/",
+          "selftext": "",
+          "created_utc": 1775073779.0,
+          "num_comments": 11,
+          "id": "1s9vorf",
+          "subreddit": "detroitlions",
+          "link_url": "https://v.redd.it/fykf86slxmsg1",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Few-Most-3387",
+              "body": "That's my kicker",
+              "score": 19
+            },
+            {
+              "author": "Buttholepart2",
+              "body": "Glad they didn't send him to Millwall. Such an embarrassing collab for the team.",
+              "score": 12
+            },
+            {
+              "author": "Calkky",
+              "body": "I think Köln/Cologne is where ARSB used to visit family. Super cool!",
+              "score": 6
+            },
+            {
+              "author": "twv6",
+              "body": "Dude is just loving life ",
+              "score": 5
+            },
+            {
+              "author": "zzzzzzzz999999",
+              "body": "![gif](giphy|l4FGvWYLqxDq15tM4)",
+              "score": 4
+            }
+          ]
+        },
+        {
+          "title": "Slideshow on how this week is going",
+          "author": "awkward_vegetable69",
+          "score": 109,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s9ww73/slideshow_on_how_this_week_is_going/",
+          "selftext": "Just a fyi for those who have their blinders on ",
+          "created_utc": 1775076389.0,
+          "num_comments": 220,
+          "id": "1s9ww73",
+          "subreddit": "detroitlions",
+          "link_url": "https://www.reddit.com/gallery/1s9ww73",
+          "is_self": false,
+          "upvote_ratio": 0.73,
+          "flair": "",
+          "comments": [
+            {
+              "author": "bodysome2006",
+              "body": "This story needs to die already. At this point, I’d rather see a mock draft. ",
+              "score": 158
+            },
+            {
+              "author": "terracottatank",
+              "body": "Optics are bad, but they're not doing anything wrong. You didn't work the contract you signed, you don't get the money you signed for. This is cut and fucking dry, anyone who's worked contract work before can tell you this.",
+              "score": 66
+            },
+            {
+              "author": "J_Dom_Squad",
+              "body": "Anzalone salty af",
+              "score": 59
+            },
+            {
+              "author": "Available-Setting372",
+              "body": "who fucking cares. dude made almost 60 million dollars oh no he had to pay back some of 6 million can't we think of the millionaires?\n\nand before someone bitches about \"what he put his body throughfor  us\" its football. that was his career choice.",
+              "score": 36
+            }
+          ]
+        },
+        {
+          "title": "Lions Great Herman Moore Weighs in on Ragnow Situation: Just Because You Can Doesn’t Mean You Should",
+          "author": "PerfectiveVerbTense",
+          "score": 52,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1sa3bsv/lions_great_herman_moore_weighs_in_on_ragnow/",
+          "selftext": "[Link to the article posted on X](https://x.com/HMAN84/status/2039432427412582771?s=20)\n\nMoore gives, imo, a fair look at the situation. Here's one piece I thought was worth discussing: \n\n>The business side is the business side. When money is asked back, that can be talked through and worked out. When that spills into the public space, it creates division, and don't think other players (or their representatives) don't see it. **They remember it when it’s time for their own negotiation and contract discussions.**\n\nI've seen a lot of people here and on X just hammering on the point that the contract *technically* allows for the clawback, and that other companies would do the same thing when legally allowed to.\n\nBut I don't think you can just minimize the PR aspect of this, especially when it comes to how players expect to be treated. If you have an opportunity to play for two teams, and one while acknowledge and respect the sacrifices that you make for the team, while the other will get back every penny they can from you no matter how much hell you put yourself through for the team — that makes a difference. \n\nWhen players tell us this stuff makes a difference in how players perceive organizations, we should listen.",
+          "created_utc": 1775092248.0,
+          "num_comments": 49,
+          "id": "1sa3bsv",
+          "subreddit": "detroitlions",
+          "link_url": "https://www.reddit.com/r/detroitlions/comments/1sa3bsv/lions_great_herman_moore_weighs_in_on_ragnow/",
+          "is_self": true,
+          "upvote_ratio": 0.79,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Cmcgregor0928",
+              "body": "If you sort from new it's literally the post before yours",
+              "score": 8
+            },
+            {
+              "author": "Phluffhead024",
+              "body": "Honest question. Did Frank not bail after the draft and FA signings? ",
+              "score": 7
+            },
+            {
+              "author": "bmattification",
+              "body": "Who cares? Jesus people get over it.",
+              "score": 8
+            },
+            {
+              "author": "hot-black-coffee",
+              "body": "No surprise all the former players are like “the player should get the money”.\n\n“They gave their heart and soul…” that’s what the million dollar salaries are for. ",
+              "score": 7
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "Monty with the Knuckles tattoo. 😿 💙",
+          "author": "Ok_Corgi_454",
+          "score": 1105,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s7an8w/monty_with_the_knuckles_tattoo/",
+          "selftext": "Photo on his insta story.",
+          "created_utc": 1774827408.0,
+          "num_comments": 47,
+          "id": "1s7an8w",
+          "subreddit": "detroitlions",
+          "link_url": "https://i.redd.it/8byhpkv3l2sg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "Same_Noise7492",
+              "body": "Sweet. Gonna miss that guy, but I’m sure he’s gonna do well in Houston ",
+              "score": 363
+            },
+            {
+              "author": "OkProfessional6077",
+              "body": "I thought that was a Hartford Whalers logo in the center at first!",
+              "score": 86
+            },
+            {
+              "author": "alohamora19",
+              "body": "I miss him already! ",
+              "score": 28
+            }
+          ]
+        },
+        {
+          "title": "Do you want Jack Campbell extended?",
+          "author": "Lower_Huckleberry296",
+          "score": 959,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s54zqx/do_you_want_jack_campbell_extended/",
+          "selftext": "",
+          "created_utc": 1774620189.0,
+          "num_comments": 322,
+          "id": "1s54zqx",
+          "subreddit": "detroitlions",
+          "link_url": "https://i.redd.it/gkhwbbnxglrg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.89,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "Foreverjian",
+              "body": "Do I want a top 3 LB on my team…? Asking those tough questions today.",
+              "score": 1397
+            },
+            {
+              "author": "Unlucky_Wolverine_85",
+              "body": "I can’t wait for the offseason to be over so I don’t have to keep seeing these Mensa takes everyday ",
+              "score": 309
+            },
+            {
+              "author": "esarge112",
+              "body": "Yes.",
+              "score": 201
+            },
+            {
+              "author": "horriblemonkey",
+              "body": "Tomorrow's post: \"Do you like the Lions?\"",
+              "score": 127
+            }
+          ]
+        },
+        {
+          "title": "Best LT in the league!",
+          "author": "AtomicCo",
+          "score": 795,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s7u2jy/best_lt_in_the_league/",
+          "selftext": "",
+          "created_utc": 1774885126.0,
+          "num_comments": 100,
+          "id": "1s7u2jy",
+          "subreddit": "detroitlions",
+          "link_url": "https://i.redd.it/u214daeqc7sg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "planetrambo",
+              "body": "They’ve always been “ready” to do this. Who knows if it’ll actually happen.\n\nHis versatility allows us to be versatile in the draft though. ",
+              "score": 272
+            },
+            {
+              "author": "SendMeApplePie",
+              "body": "Misread the headline at first and had a minor heart palpitation ",
+              "score": 101
+            },
+            {
+              "author": "Skraxx",
+              "body": "Yeah at this point it's practically confirmed he's moving to LT and I think the only thing that changes that is if an amazing pro-ready LT falls to our lap",
+              "score": 26
+            }
+          ]
+        },
+        {
+          "title": "[Lions] Happy 25th Birthday, Jamo (Waymo)!",
+          "author": "JCameron181",
+          "score": 753,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s48upu/lions_happy_25th_birthday_jamo_waymo/",
+          "selftext": "",
+          "created_utc": 1774534949.0,
+          "num_comments": 14,
+          "id": "1s48upu",
+          "subreddit": "detroitlions",
+          "link_url": "https://i.redd.it/mp4nkl6hferg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "CHRUNCHY89",
+              "body": "Guys going to be a stud for us again this year ",
+              "score": 36
+            },
+            {
+              "author": "DetroitSportsPhan",
+              "body": "Happy birth daymo",
+              "score": 23
+            },
+            {
+              "author": "Amonamission",
+              "body": "Jesus Christ it’s easy to forget how young the players are. Goff is younger than I am (I’m 33) and he’s been in the league for 10 years 😳",
+              "score": 15
+            },
+            {
+              "author": "Big_You_8936",
+              "body": "Happy Birthday to Jamo, hopefully he has a really great season for us this year, which I am sure he will. \n\n![gif](giphy|17laqOvbrH3Ng7veBQ)\n\n",
+              "score": 12
+            },
+            {
+              "author": "616GoBlue",
+              "body": "May he find a goal post to hump today ",
+              "score": 11
+            }
+          ]
+        },
+        {
+          "title": "[Birkett] Private equity firms have reached out to the Lions about buying a stake in the franchise, but the Ford family has no interest in letting go a part of the team right now",
+          "author": "JCameron181",
+          "score": 716,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s8yxvl/birkett_private_equity_firms_have_reached_out_to/",
+          "selftext": "(No point in sending the article link since it's blocked by a paywall. Also, fuck PE.)",
+          "created_utc": 1774988508.0,
+          "num_comments": 118,
+          "id": "1s8yxvl",
+          "subreddit": "detroitlions",
+          "link_url": "https://i.redd.it/e0jj1yi2wfsg1.png",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "SupaDupaTron",
+              "body": "Do not let those vultures anywhere near the Lions. ",
+              "score": 280
+            },
+            {
+              "author": "MotownGreek",
+              "body": "If the Ford family wasn't willing to sell in 2008, why would they sell off a stake now?",
+              "score": 174
+            },
+            {
+              "author": "johnnypalace",
+              "body": "Just from a tax perspective, it would be stupid to sell a portion now. The cost basis of Martha Ford's ownership is still whatever William Clay Ford bought it for in 1963, so it would be all profit. If they wait until she passes and there is a step up in basis, they can have almost none of the sales proceeds taxed as profit.\n\n\nSorry, I thought I was in r/tax for a minute there",
+              "score": 153
+            },
+            {
+              "author": "AX_99",
+              "body": "Your Detroit Blackstone-Lions are Built Ford Tough by Verizon. $70 beers sponsored by OpenAI",
+              "score": 79
+            },
+            {
+              "author": "Et_Crudites",
+              "body": "That’s good. ",
+              "score": 68
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "Daily Discussion Thread April 02",
+          "author": "AutoModerator",
+          "score": 3,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1sad5a3/daily_discussion_thread_april_02/",
+          "selftext": " Daily discussion for roster news, free agents, team news, what you did today and anything in-between.",
+          "created_utc": 1775124076.0,
+          "num_comments": 6,
+          "id": "1sad5a3",
+          "subreddit": "detroitlions",
+          "link_url": "https://www.reddit.com/r/detroitlions/comments/1sad5a3/daily_discussion_thread_april_02/",
+          "is_self": true,
+          "upvote_ratio": 1.0,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Bomban111",
+              "body": "I've heard Rod Wood's name more time this week than i have in the last 4 years.",
+              "score": 3
+            },
+            {
+              "author": "CommunicationNew9834",
+              "body": "Me:\n\n![gif](giphy|2UCt7zbmsLoCXybx6t)\n\nHearing the loud opinionated internet heads while I just like the Blue and Silver Wave 😅",
+              "score": 1
+            },
+            {
+              "author": "shakezilla86",
+              "body": "this sure would be a great place for the repetitive \"discussion\" posts ",
+              "score": 1
+            },
+            {
+              "author": "IronicBepis",
+              "body": "is brad actually gonna go with tackle and edge with the first 2 picks? or is he gonna wing it with bpa",
+              "score": -1
+            }
+          ]
+        },
+        {
+          "title": "🙌🙌🙌",
+          "author": "DrewPetzing",
+          "score": 274,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s9tu6b/_/",
+          "selftext": "",
+          "created_utc": 1775069845.0,
+          "num_comments": 47,
+          "id": "1s9tu6b",
+          "subreddit": "detroitlions",
+          "link_url": "https://i.redd.it/lw1f1owzlmsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.84,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "Digit4lWizrd",
+              "body": "Haha, April Fools - not getting me this time.",
+              "score": 366
+            },
+            {
+              "author": "Sirlothar",
+              "body": "The best April Fools jokes are ones that make you think a minute, not like this one.",
+              "score": 96
+            },
+            {
+              "author": "fishing_pole",
+              "body": "What's that? Here comes Marcus Davenport off the high dive!!",
+              "score": 55
+            },
+            {
+              "author": "Conscious-Sympathy51",
+              "body": "He could actually say this 365 days out of the year and I’d think it’s April 1st every time. ",
+              "score": 20
+            },
+            {
+              "author": "TheHip41",
+              "body": "People that post April fools jokes should be executed\n\nYeah I said it ",
+              "score": 19
+            }
+          ]
+        },
+        {
+          "title": "Jason Kelce with a nuanced take on the Frank Ragnow situation",
+          "author": "supermanforhire",
+          "score": 543,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s9mu3r/jason_kelce_with_a_nuanced_take_on_the_frank/",
+          "selftext": " Via X\n\n“This is interesting.  It feels like it’s obvious that Frank retired because he was physically fighting through injuries and pain, and it got to a point that he no longer could play the game in an enjoyable, effective, or healthy way.  \n\nThe whole purpose of a signing bonus is to be a guarantee up front that insures a salary irregardless of performance metrics, or most importantly injuries that could compromise your career in the future.\n\nWhat makes this interesting is that Frank likely retired “voluntarily”, meaning, he wasn’t declared medically unfit to play by a doctor, which allows the team to ask for a prorated amount of his signing bonus back.  Had he been medically deemed unfit to play football by a doctor before he retired, the team wouldn’t be able to recoup part of the signing bonus.  \n\nLet me say this first, if a player truly just retires without reason, or because they’ve lost the desire to play, I completely get and acknowledge teams should be able to recoup compensation when players don’t fulfill there contractual obligations and agreements.  \n\nHowever, Frank was known for being hurt and playing through injuries most players wouldn’t play through constantly.  Broken foot, a torn pec, multiple knee injuries, back issues.  There was always something, and I’m sure he was continuously dealing with multiple ailments to try and continue playing the game.  His body clearly had deteriorated to a degree that made football no longer a viable option, physically, and probably mentally.  In my opinion, the signing bonus is supposed to protect players from future physical ailments limiting their availability on the field, that’s one of the reasons you want more guaranteed money upfront.  \n\nSo while I get that the team has a right to ask for money back, in the spirit of the agreement, I think it’s bullshit Frank is being asked to return money.  This was clearly a player that the game had physically taken its toll on, and his body was clearly no longer holding up to the rigors of the NFL.  It wasn’t just some player deciding he didn’t want to play anymore, it wasn’t that simple, and these signing bonuses are there to protect players from the inevitable injuries they incur on the field.”",
+          "created_utc": 1775055256.0,
+          "num_comments": 243,
+          "id": "1s9mu3r",
+          "subreddit": "detroitlions",
+          "link_url": "https://www.reddit.com/r/detroitlions/comments/1s9mu3r/jason_kelce_with_a_nuanced_take_on_the_frank/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "",
+          "comments": [
+            {
+              "author": "motorcitydevil",
+              "body": "I think most fans agree with this take. It's petty and the optics are shit. ",
+              "score": 390
+            },
+            {
+              "author": "frankenpoopies",
+              "body": "*broken throat",
+              "score": 182
+            },
+            {
+              "author": "CrankyOldDude",
+              "body": "I agree with the take 100 percent.\n\nThe PROBLEM is: How do you differentiate with that in the future? I’d suggest most players that retire early will have at least some level of injury. Are you as a team going to decide who has played through enough injury vs just deciding to walk away? That’s WAY worse from a PR and morale perspective. \n\nAlso - do you let Frank keep his money after Calvin couldn’t keep his? Calvin hasn’t been shy about talking about that and he only recently came back into the fold.\n\nI think the Lions handled it about the only way they could. It sucks and I hate it, but I don’t see any other way. ",
+              "score": 74
+            }
+          ]
+        },
+        {
+          "title": "[Lions] Jake Bates Traveled to Germany to Watch a Different Kind of Football With FC Köln",
+          "author": "JCameron181",
+          "score": 169,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1s9vorf/lions_jake_bates_traveled_to_germany_to_watch_a/",
+          "selftext": "",
+          "created_utc": 1775073779.0,
+          "num_comments": 11,
+          "id": "1s9vorf",
+          "subreddit": "detroitlions",
+          "link_url": "https://v.redd.it/fykf86slxmsg1",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Few-Most-3387",
+              "body": "That's my kicker",
+              "score": 19
+            },
+            {
+              "author": "Buttholepart2",
+              "body": "Glad they didn't send him to Millwall. Such an embarrassing collab for the team.",
+              "score": 12
+            },
+            {
+              "author": "Calkky",
+              "body": "I think Köln/Cologne is where ARSB used to visit family. Super cool!",
+              "score": 6
+            },
+            {
+              "author": "twv6",
+              "body": "Dude is just loving life ",
+              "score": 5
+            },
+            {
+              "author": "zzzzzzzz999999",
+              "body": "![gif](giphy|l4FGvWYLqxDq15tM4)",
+              "score": 4
+            }
+          ]
+        },
+        {
+          "title": "Lions Great Herman Moore Weighs in on Ragnow Situation: Just Because You Can Doesn’t Mean You Should",
+          "author": "PerfectiveVerbTense",
+          "score": 51,
+          "url": "https://www.reddit.com/r/detroitlions/comments/1sa3bsv/lions_great_herman_moore_weighs_in_on_ragnow/",
+          "selftext": "[Link to the article posted on X](https://x.com/HMAN84/status/2039432427412582771?s=20)\n\nMoore gives, imo, a fair look at the situation. Here's one piece I thought was worth discussing: \n\n>The business side is the business side. When money is asked back, that can be talked through and worked out. When that spills into the public space, it creates division, and don't think other players (or their representatives) don't see it. **They remember it when it’s time for their own negotiation and contract discussions.**\n\nI've seen a lot of people here and on X just hammering on the point that the contract *technically* allows for the clawback, and that other companies would do the same thing when legally allowed to.\n\nBut I don't think you can just minimize the PR aspect of this, especially when it comes to how players expect to be treated. If you have an opportunity to play for two teams, and one while acknowledge and respect the sacrifices that you make for the team, while the other will get back every penny they can from you no matter how much hell you put yourself through for the team — that makes a difference. \n\nWhen players tell us this stuff makes a difference in how players perceive organizations, we should listen.",
+          "created_utc": 1775092248.0,
+          "num_comments": 49,
+          "id": "1sa3bsv",
+          "subreddit": "detroitlions",
+          "link_url": "https://www.reddit.com/r/detroitlions/comments/1sa3bsv/lions_great_herman_moore_weighs_in_on_ragnow/",
+          "is_self": true,
+          "upvote_ratio": 0.79,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Cmcgregor0928",
+              "body": "If you sort from new it's literally the post before yours",
+              "score": 8
+            },
+            {
+              "author": "Phluffhead024",
+              "body": "Honest question. Did Frank not bail after the draft and FA signings? ",
+              "score": 7
+            },
+            {
+              "author": "bmattification",
+              "body": "Who cares? Jesus people get over it.",
+              "score": 8
+            },
+            {
+              "author": "hot-black-coffee",
+              "body": "No surprise all the former players are like “the player should get the money”.\n\n“They gave their heart and soul…” that’s what the million dollar salaries are for. ",
+              "score": 7
+            }
+          ]
+        }
+      ]
     },
     "DetroitPistons": {
       "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of 24h": [
+        {
+          "title": "Regarding Jaden Ivey",
+          "author": "Mtommy",
+          "score": 388,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s9yq8o/regarding_jaden_ivey/",
+          "selftext": "Hi [r/DetroitPistons](r/DetroitPistons),\n\nWe just wanted to make a note regarding the Jaden Ivey situation and the way we’re going to handle it moving forward.\n\nWhile we generally try to take a hands off approach regarding the subreddit and its community dynamic, we feel like the number of Jaden Ivey posts is not proportionate to the quality of discussion being had, and many of the new posts being made don’t provide any new information or talking points. Additionally, many of these threads have devolved into back and forth completely separate from basketball discussion, and while it is localized to Ivey threads pertaining to his developments, we don’t feel it’s worthwhile discussion on [r/DetroitPistons](r/DetroitPistons).\n\n**We will continue to allow significant new news regarding Jaden Ivey to be posted and discussed, but we will be removing low effort and repetitive posts in order to keep the focus on basketball.**\n\nWe recognize that no solution to this issue will be popular with everyone, but our goal is to provide a forum to discuss what the community wants, as the community sees fit with minimal intervention.\n\nThanks,\n\n\\-[r/DetroitPistons](r/DetroitPistons) Mods",
+          "created_utc": 1775080516.0,
+          "num_comments": 69,
+          "id": "1s9yq8o",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1s9yq8o/regarding_jaden_ivey/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "Announcement",
+          "comments": [
+            {
+              "author": "wartmunger",
+              "body": "Wise move ",
+              "score": 200
+            },
+            {
+              "author": "BigDaddyD1994",
+              "body": "God bless the mods",
+              "score": 141
+            },
+            {
+              "author": "InsideTheEngine",
+              "body": "the mods not gon matter on judgement day",
+              "score": 80
+            },
+            {
+              "author": "gothmeatball",
+              "body": "PROCLAIMING IT IN RIGHTEOUSNESS ",
+              "score": 70
+            }
+          ]
+        },
+        {
+          "title": "The terminator has been absolutely unstoppable this season 🔥🔥",
+          "author": "rodogwos",
+          "score": 240,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s9zzge/the_terminator_has_been_absolutely_unstoppable/",
+          "selftext": "",
+          "created_utc": 1775083577.0,
+          "num_comments": 58,
+          "id": "1s9zzge",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://i.redd.it/zsh5qyutqnsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "venk",
+              "body": "Max contract incoming ",
+              "score": 40
+            },
+            {
+              "author": "TaxsDodgersFallstar",
+              "body": "The Durenator was *right there*",
+              "score": 26
+            },
+            {
+              "author": "KPR_2002",
+              "body": "I think the 88% FT is what impresses me most. I never thought he would be elite at that. \n\nEdit: that’s for the last 8 games, not season. But 75% is still really good for a guy his size",
+              "score": 19
+            },
+            {
+              "author": "haikupoetics2",
+              "body": "AI slop",
+              "score": 14
+            }
+          ]
+        },
+        {
+          "title": "[Lorenzi] Jaden Ivey reportedly told the Bulls’ head of player performance on March 25 that Jesus healed his knee and he was ready to play, He underwent an MRI the next day, and Chicago shut him down for the season.",
+          "author": "GeneralFederal5137",
+          "score": 237,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s9nofr/lorenzi_jaden_ivey_reportedly_told_the_bulls_head/",
+          "selftext": "",
+          "created_utc": 1775057053.0,
+          "num_comments": 198,
+          "id": "1s9nofr",
+          "subreddit": "DetroitPistons",
+          "link_url": "/r/nba/comments/1s9ncmg/lorenzi_jaden_ivey_reportedly_told_the_bulls_head/",
+          "is_self": false,
+          "upvote_ratio": 0.89,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "irazzleandazzle",
+              "body": "we need to ban Jaden Ivey posts. He's not relevant to our team anymore ",
+              "score": 292
+            },
+            {
+              "author": "dialogical_rhetor",
+              "body": "Can we please leave this man alone? Until we have gone through the trauma of sexual abuse or the trauma of having a freak accident take away our dream, we don't have any idea what it's like to exist in this head space. And even if we have, we are different persons. Some people fall into drugs, debt, or violence. Ivey is trying to work out faith. Yeah, he's making missteps. But just because his trauma is showing itself in this way, does that mean we are all justified in pointing the finger and laughing?\n\nEdit: For the record, this is the headline of the linked article:\n\n**On livestream, Jaden Ivey says he had suicidal thoughts after breaking his leg**",
+              "score": 78
+            },
+            {
+              "author": "Strange-Cap9942",
+              "body": "Hey Jesus, you wanna come take a look at Cade's lung?",
+              "score": 42
+            }
+          ]
+        },
+        {
+          "title": "The Pistons have reached 55 wins, which is their 5th highest total in a season, and the most since 2007-08",
+          "author": "Basketball_Reference",
+          "score": 203,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s9or34/the_pistons_have_reached_55_wins_which_is_their/",
+          "selftext": "",
+          "created_utc": 1775059335.0,
+          "num_comments": 23,
+          "id": "1s9or34",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://i.redd.it/2nhcltfjqlsg1.png",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "bransby26",
+              "body": "It stinks they couldn't wring out another championship from the \"Going to Work\" Pistons.",
+              "score": 84
+            },
+            {
+              "author": "jelqlord",
+              "body": "![gif](giphy|iv80ZwyJ0ep0GU9jap)",
+              "score": 13
+            },
+            {
+              "author": "DetroitSportsPhan",
+              "body": "I can see them being tied for 3rd by seasons end or perhaps a game better ",
+              "score": 11
+            },
+            {
+              "author": "PoBox9847-90001",
+              "body": "63-19 and champs in 88-89 .. twas my third year of fandom and these guys as my FAVORITE team.  Baaaad boys!",
+              "score": 11
+            }
+          ]
+        },
+        {
+          "title": "Throwback to the 24-25 team 🔥",
+          "author": "rodogwos",
+          "score": 178,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1sa5nbe/throwback_to_the_2425_team/",
+          "selftext": "",
+          "created_utc": 1775098526.0,
+          "num_comments": 35,
+          "id": "1sa5nbe",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://v.redd.it/l1dbxw3azosg1",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "gecko-4",
+              "body": "Bro it was last year😭😭😭 it’s like 90% the same team",
+              "score": 99
+            },
+            {
+              "author": "JeremieLoyalty",
+              "body": "Beasley shouldn’t have gambled smh",
+              "score": 41
+            },
+            {
+              "author": "irazzleandazzle",
+              "body": "man i miss beasley ",
+              "score": 21
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "The Chicago Bulls are waiving guard Jaden Ivey after his recent anti-LGBTQ comments amid several rants on religion and other topics, sources tell ESPN.",
+          "author": "Teh-Dehstroyer",
+          "score": 1058,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s83z35/the_chicago_bulls_are_waiving_guard_jaden_ivey/",
+          "selftext": "",
+          "created_utc": 1774906171.0,
+          "num_comments": 583,
+          "id": "1s83z35",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://www.espn.com/contributor/shams-charania/d70deef7363a7",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "Current_Ad_4873",
+              "body": "Not one of you better suggest bringing him back.",
+              "score": 709
+            },
+            {
+              "author": "IneptFortitude",
+              "body": "Knew this was coming but didn’t know it’d be this fast",
+              "score": 262
+            },
+            {
+              "author": "Omhash",
+              "body": "Wish I could say I wanted him back, but the only place I want him right now is somewhere with good mental health support. The homophobia is reprehensible but I hope he can get some help through what is pretty clearly some kind of mental episode.",
+              "score": 218
+            }
+          ]
+        },
+        {
+          "title": "Thank you for being you",
+          "author": "GreninjaStrike",
+          "score": 760,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s8qr2z/thank_you_for_being_you/",
+          "selftext": "",
+          "created_utc": 1774971112.0,
+          "num_comments": 84,
+          "id": "1s8qr2z",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://i.redd.it/f4s0h1yegesg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "irazzleandazzle",
+              "body": "my unproblematic king ",
+              "score": 263
+            },
+            {
+              "author": "DeMarcus-Siblings",
+              "body": "Starting to think that was a pretty dang good trade by Trajan ",
+              "score": 159
+            },
+            {
+              "author": "OrganicMechanicTTV",
+              "body": "![gif](giphy|rflhqDbuhqDD7I0k4X)",
+              "score": 122
+            }
+          ]
+        },
+        {
+          "title": "22 years old btw",
+          "author": "Lower_Huckleberry296",
+          "score": 646,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s4sib6/22_years_old_btw/",
+          "selftext": "",
+          "created_utc": 1774580633.0,
+          "num_comments": 69,
+          "id": "1s4sib6",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://i.redd.it/k0v70zib7irg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "Public-Finger",
+              "body": "Thank you, Troy Weaver.",
+              "score": 138
+            },
+            {
+              "author": "rhinestone_indian",
+              "body": "Highly unlikely he will regress. If he keeps trending upward…. I believe we can all agree that JD is a frame to our championship window. Lock him down!",
+              "score": 44
+            }
+          ]
+        },
+        {
+          "title": "Jaden Ivey having an episode?",
+          "author": "maniacisback",
+          "score": 602,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s6ko05/jaden_ivey_having_an_episode/",
+          "selftext": "I know I’m not the only who whose seen JI’s instagram recently and it seems like he might in the midst of some sort of mental health spell? Jaden went live earlier today and a couple days ago where he’s essentially saying that basketball doesn’t matter in the grand scheme of things and just preaching on and on about his faith. The worst part about is that there are a bunch of concerned fans in the comments asking if he’s okay and he’s just berating most of them. JI always struck me as kind of weird even when he was playing great in his first couple of seasons with us but now that his NBA career is essentially at a crossroads due to his physical health it’s causing him to retreat even further into his faith which may not be the best thing for his mental health. Hopefully he can bounce back from all of this and have a successful basketball career man because his trajectory was looking fantastic until Cole Anthony came along and ruined everything on that faithful night. ",
+          "created_utc": 1774755528.0,
+          "num_comments": 498,
+          "id": "1s6ko05",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://www.reddit.com/gallery/1s6ko05",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "Life_Cranberry9315",
+              "body": "I’ll just say that there were some rumblings about his mental state while he was here ",
+              "score": 365
+            },
+            {
+              "author": "jradz12",
+              "body": "Alright. Glad we traded him. Aint no way youre calling someone else's religion fake while believing in yours and have my respect.",
+              "score": 241
+            },
+            {
+              "author": "ForsakenBalls",
+              "body": "I feel like that’s just how he is, especially after telling reporters about the rapture coming soon, dude is heavily indoctrinated ",
+              "score": 146
+            }
+          ]
+        },
+        {
+          "title": "Regarding Jaden Ivey",
+          "author": "Mtommy",
+          "score": 391,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s9yq8o/regarding_jaden_ivey/",
+          "selftext": "Hi [r/DetroitPistons](r/DetroitPistons),\n\nWe just wanted to make a note regarding the Jaden Ivey situation and the way we’re going to handle it moving forward.\n\nWhile we generally try to take a hands off approach regarding the subreddit and its community dynamic, we feel like the number of Jaden Ivey posts is not proportionate to the quality of discussion being had, and many of the new posts being made don’t provide any new information or talking points. Additionally, many of these threads have devolved into back and forth completely separate from basketball discussion, and while it is localized to Ivey threads pertaining to his developments, we don’t feel it’s worthwhile discussion on [r/DetroitPistons](r/DetroitPistons).\n\n**We will continue to allow significant new news regarding Jaden Ivey to be posted and discussed, but we will be removing low effort and repetitive posts in order to keep the focus on basketball.**\n\nWe recognize that no solution to this issue will be popular with everyone, but our goal is to provide a forum to discuss what the community wants, as the community sees fit with minimal intervention.\n\nThanks,\n\n\\-[r/DetroitPistons](r/DetroitPistons) Mods",
+          "created_utc": 1775080516.0,
+          "num_comments": 69,
+          "id": "1s9yq8o",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1s9yq8o/regarding_jaden_ivey/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "Announcement",
+          "comments": [
+            {
+              "author": "wartmunger",
+              "body": "Wise move ",
+              "score": 200
+            },
+            {
+              "author": "BigDaddyD1994",
+              "body": "God bless the mods",
+              "score": 141
+            },
+            {
+              "author": "InsideTheEngine",
+              "body": "the mods not gon matter on judgement day",
+              "score": 80
+            },
+            {
+              "author": "gothmeatball",
+              "body": "PROCLAIMING IT IN RIGHTEOUSNESS ",
+              "score": 70
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "Join the Official r/DetroitPistons Discord Server 🏀",
+          "author": "KarimFF7",
+          "score": 4,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1rmqzka/join_the_official_rdetroitpistons_discord_server/",
+          "selftext": "Join the official r/DetroitPistons Discord for live game threads, giveaways, and Pistons discussion:",
+          "created_utc": 1772833059.0,
+          "num_comments": 0,
+          "id": "1rmqzka",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://discord.com/invite/csEZAv9KCd",
+          "is_self": false,
+          "upvote_ratio": 0.62,
+          "flair": "Announcement",
+          "comments": []
+        },
+        {
+          "title": "Throwback to the 24-25 team 🔥",
+          "author": "rodogwos",
+          "score": 180,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1sa5nbe/throwback_to_the_2425_team/",
+          "selftext": "",
+          "created_utc": 1775098526.0,
+          "num_comments": 35,
+          "id": "1sa5nbe",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://v.redd.it/l1dbxw3azosg1",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "gecko-4",
+              "body": "Bro it was last year😭😭😭 it’s like 90% the same team",
+              "score": 99
+            },
+            {
+              "author": "JeremieLoyalty",
+              "body": "Beasley shouldn’t have gambled smh",
+              "score": 41
+            },
+            {
+              "author": "irazzleandazzle",
+              "body": "man i miss beasley ",
+              "score": 21
+            }
+          ]
+        },
+        {
+          "title": "Regarding Jaden Ivey",
+          "author": "Mtommy",
+          "score": 387,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s9yq8o/regarding_jaden_ivey/",
+          "selftext": "Hi [r/DetroitPistons](r/DetroitPistons),\n\nWe just wanted to make a note regarding the Jaden Ivey situation and the way we’re going to handle it moving forward.\n\nWhile we generally try to take a hands off approach regarding the subreddit and its community dynamic, we feel like the number of Jaden Ivey posts is not proportionate to the quality of discussion being had, and many of the new posts being made don’t provide any new information or talking points. Additionally, many of these threads have devolved into back and forth completely separate from basketball discussion, and while it is localized to Ivey threads pertaining to his developments, we don’t feel it’s worthwhile discussion on [r/DetroitPistons](r/DetroitPistons).\n\n**We will continue to allow significant new news regarding Jaden Ivey to be posted and discussed, but we will be removing low effort and repetitive posts in order to keep the focus on basketball.**\n\nWe recognize that no solution to this issue will be popular with everyone, but our goal is to provide a forum to discuss what the community wants, as the community sees fit with minimal intervention.\n\nThanks,\n\n\\-[r/DetroitPistons](r/DetroitPistons) Mods",
+          "created_utc": 1775080516.0,
+          "num_comments": 69,
+          "id": "1s9yq8o",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1s9yq8o/regarding_jaden_ivey/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "Announcement",
+          "comments": [
+            {
+              "author": "wartmunger",
+              "body": "Wise move ",
+              "score": 200
+            },
+            {
+              "author": "BigDaddyD1994",
+              "body": "God bless the mods",
+              "score": 141
+            },
+            {
+              "author": "InsideTheEngine",
+              "body": "the mods not gon matter on judgement day",
+              "score": 80
+            },
+            {
+              "author": "gothmeatball",
+              "body": "PROCLAIMING IT IN RIGHTEOUSNESS ",
+              "score": 70
+            }
+          ]
+        },
+        {
+          "title": "Thoughts on Duren’s future",
+          "author": "Illustrious-Bug8860",
+          "score": 27,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1saf53x/thoughts_on_durens_future/",
+          "selftext": "This dude is 22 years old, already an All-Star, is SECOND in estimated wins added (behind only Jokic), and if he gets a bit more size I genuinely think (if we hold on to him, which I think we will) I could see him becoming a 2nd/3rd team all nba level player with the potential to reach 1st team if he starts playing a slightly bigger role (like he currently is with Cade being out), idk am I being too optimistic?",
+          "created_utc": 1775130451.0,
+          "num_comments": 28,
+          "id": "1saf53x",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://www.reddit.com/r/DetroitPistons/comments/1saf53x/thoughts_on_durens_future/",
+          "is_self": true,
+          "upvote_ratio": 0.91,
+          "flair": "Discussion",
+          "comments": [
+            {
+              "author": "waitingforjune",
+              "body": "He’s going to be at least 3rd team All-NBA this year. It’s going to be hard to be the best center in the league as long as Jokic and Wemby are both active and healthy, but I think he’s solidly top 3 right now and hasn’t even entered his prime yet.",
+              "score": 24
+            },
+            {
+              "author": "ImpressionCertain736",
+              "body": "Half the sub didn't want to extend him two weeks ago",
+              "score": 21
+            },
+            {
+              "author": "DiligentThought9",
+              "body": "It’s hard to justify spending big money on a center unless he’s a top 5 guy at the position. I think the evidence is there to say that Duren is a top 5 center in the league already. \n\nHe may not have the peak of a Jokic or Wemby, but he’s an automatic 19 and 10 anytime he’s on the floor while being an elite defender that gives a shit every night. He’s an excellent fit next to Cade. He’s only 22. I say pay the man.",
+              "score": 13
+            },
+            {
+              "author": "ElAbidingDuderino",
+              "body": "![gif](giphy|mrn71bpe35j6U|downsized)",
+              "score": 10
+            }
+          ]
+        },
+        {
+          "title": "The terminator has been absolutely unstoppable this season 🔥🔥",
+          "author": "rodogwos",
+          "score": 239,
+          "url": "https://www.reddit.com/r/DetroitPistons/comments/1s9zzge/the_terminator_has_been_absolutely_unstoppable/",
+          "selftext": "",
+          "created_utc": 1775083577.0,
+          "num_comments": 58,
+          "id": "1s9zzge",
+          "subreddit": "DetroitPistons",
+          "link_url": "https://i.redd.it/zsh5qyutqnsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "Image",
+          "comments": [
+            {
+              "author": "venk",
+              "body": "Max contract incoming ",
+              "score": 40
+            },
+            {
+              "author": "TaxsDodgersFallstar",
+              "body": "The Durenator was *right there*",
+              "score": 26
+            },
+            {
+              "author": "KPR_2002",
+              "body": "I think the 88% FT is what impresses me most. I never thought he would be elite at that. \n\nEdit: that’s for the last 8 games, not season. But 75% is still really good for a guy his size",
+              "score": 19
+            },
+            {
+              "author": "haikupoetics2",
+              "body": "AI slop",
+              "score": 14
+            }
+          ]
+        }
+      ]
     },
     "movies": {
-      "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of Hour": [
+        {
+          "title": "AMA/Q&A Announcement - Nick Kocher & Brian McElhaney (AKA 'BriTANicK Sketch Comedy Duo) - Friday 4/3 at 6:15 PM ET - Co-Writers of 'Over Your Dead Body', 'Pizza Movie' - Writers on 'Saturday Night Live' & 'It's Always Sunny In Philadelphia' - Youtube Sketch Comedy Duo",
+          "author": "BunyipPouch",
+          "score": 7,
+          "url": "https://www.reddit.com/r/movies/comments/1sahwz0/amaqa_announcement_nick_kocher_brian_mcelhaney/",
+          "selftext": "",
+          "created_utc": 1775137736.0,
+          "num_comments": 4,
+          "id": "1sahwz0",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/05q3or2m7ssg1.png",
+          "is_self": false,
+          "upvote_ratio": 0.77,
+          "flair": "Announcement",
+          "comments": [
+            {
+              "author": "BunyipPouch",
+              "body": "Brian McElhaney and Nick Kocher, comedians/filmmakers/screenwriters, will be joining us here in /r/movies for an AMA/Q&A tomorrow Friday 4/3. It'll go live at around 9 AM ET tomorrow morning and they'll be back at 6:15 PM ET to answer questions.\n\nTheir new movie, **Pizza Movie**, which they wrote and directed, is out on Hulu tomorrow.  It stars Gaten Matarazzo, Sean Giambrone, Lulu Wilson, Jack Martin, Peyton Elizabeth Lee, Marcus Scribner, Caleb Hearon, Sarah Sherman, Justin Cooley, and Daniel Radcliffe.\n\nThey're also known as the sketch & comedy group BriTANicK on Youtube, CollegeHumor, Cracked, and FunnyOrDie. They're also actors and were writers on SNL and **It's Always Sunny In Philadelphia**. They also wrote another movie out in 3 weeks, **Over Your Dead Body**, directed by Jorma Taccone of The Lonely Island and starring Samara Weaving and Jason Segewl.\n\nPlease stop by tomorrow if you have any questions for Nick and Brian :)\n\nHere's the trailer for **Pizza Movie**:\n\nhttps://www.youtube.com/watch?v=fOzF87PFGnw\n\n> High college students face an unexpectedly epic journey when they must navigate two flights of stairs to retrieve their pizza delivery, turning a simple task into a surreal adventure.\n\nPlease note that this is NOT the AMA, just an announcement. Please hold your questions for the actual AMA.",
+              "score": 1
+            },
+            {
+              "author": "Arkeband",
+              "body": "if Pizza Movie makes a billion dollars we need a Eagles Are Turning People Into Horses movie where there is a full thirty minutes of Next Time On Lonny previews.",
+              "score": 1
+            },
+            {
+              "author": "Fevaweva",
+              "body": "Man I have been following these guys for literally close to 20 years. Their youtube sketches were/are the height of comedy.",
+              "score": 1
+            },
+            {
+              "author": "RadicalBowler",
+              "body": "I had no idea that's what they've been up to! I loved their skits! so Pizza Movie and Over Your Dead Body just moved up from \"I'll watch them if it's convenient\" to \"I'll make time to search them out and watch\"",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Do you enjoy films with live orchestra performances?",
+          "author": "TheRegularBelt",
+          "score": 8,
+          "url": "https://www.reddit.com/r/movies/comments/1sah8fv/do_you_enjoy_films_with_live_orchestra/",
+          "selftext": "Went to 2 of these now and am attending another 2 at least this year. Saw Across the Spider-Verse last December and saw Into the Spider-Verse just a couple of days ago. Already booking Return of the Jedi and Black Panther for this September and October, respectively.\n\nAnyone else absolutely obsessed with these showings? Truly some of the best entertainment I've ever found as a film and music geek. Hoping that England gets another showing of The Lion King one day, missed the Royal Albert Hall performance in 2024.",
+          "created_utc": 1775136056.0,
+          "num_comments": 13,
+          "id": "1sah8fv",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1sah8fv/do_you_enjoy_films_with_live_orchestra/",
+          "is_self": true,
+          "upvote_ratio": 0.79,
+          "flair": "Discussion",
+          "comments": [
+            {
+              "author": "ipmcc",
+              "body": "I went to the *Star Wars* one that my local symphony (Pittsburgh Symphony Orchestra) did. It was cool enough, but I wouldn't say that I'm champing at the bit to see other movies like this. Thinking back, I might be willing to do this for a screening of *2001: A Space Odyssey* or maybe *Out of Africa*... The movie has to already have an unusually good score for this to tempt. I also just kinda prefer to watch movies at home.",
+              "score": 1
+            },
+            {
+              "author": "UltimateUltamate",
+              "body": "Saw The Princess Bride like this and it was pretty killer. It actually lent a more serious tone to the film, I felt.",
+              "score": 1
+            },
+            {
+              "author": "LeftTopics",
+              "body": "Saw elf at one of these orchestra shows around Christmas time last year. It was fun! \n\nI was very intrigued watching the cues on the movie playing on conductor’s iPad \n\nI was also sitting near the projectionist and saw him controlling all the av stuff ",
+              "score": 1
+            },
+            {
+              "author": "NATHAN4U007",
+              "body": "Shit like this make me jealous of Americans as a film buff.\n\n\nYou also got so many theatres showing indie films and old remastered classics, while we get the newest big hollywood film for a month and thats it.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "What is a performance from a blockbuster popcorn genre movie that you think was genuinely Oscar-worthy?",
+          "author": "Hotwater3",
+          "score": 3,
+          "url": "https://www.reddit.com/r/movies/comments/1sah91u/what_is_a_performance_from_a_blockbuster_popcorn/",
+          "selftext": "Blockbuster popcorn movies usually get ignored during awards season outside of technical categories, and I understand why. However, I do think there are some really great performances sprinkled among them that in any other context, would be considered worthy of a nomination. Do you have any that stand out? \n\nFor me I have a few: \n\nHugh Jackman - Best Actor - Logan  \n  \nImelda Staunton as Dolores Umbridge - Best Supporting Actress - Harry Potter and the Order of the Phoenix  \n  \nGary Oldman as Commissioner Gordon - Best Supporting Actor - The Dark Knight  \n  \nAlan Rickman as Severus Snape - Best Supporting Actor - Harry Potter and the Deathly Hallows Pt 2\n\nHugo Weaving - Best Actor - V for Vendetta\n\nDanai Gurira as Okoye - Best Supporting Actress - Black Panther\n\nBrian Cox as William Stryker - Best Supporting Actor - X2: X-Men United\n\nRobert Downey Jr - Best Actor - either Iron Man 3 or Avengers: Endgame",
+          "created_utc": 1775136097.0,
+          "num_comments": 26,
+          "id": "1sah91u",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1sah91u/what_is_a_performance_from_a_blockbuster_popcorn/",
+          "is_self": true,
+          "upvote_ratio": 0.64,
+          "flair": "Discussion",
+          "comments": [
+            {
+              "author": "packandgetdressed",
+              "body": "Sean Astin - Return of the King",
+              "score": 1
+            },
+            {
+              "author": "VernonP007",
+              "body": "Charlize Theron in Mad Mad Fury Road",
+              "score": 1
+            },
+            {
+              "author": "photogenicbigfoot84",
+              "body": "Harrison Ford - Raiders of the Lost Ark",
+              "score": 1
+            },
+            {
+              "author": "Chickenshit_outfit",
+              "body": "Robert Shaw as Quint, Jaws ",
+              "score": 1
+            },
+            {
+              "author": "robotcoup",
+              "body": "Daniel Kaluuya in Get Out ",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Mysterious Skin (2004) Thoughts about the dad",
+          "author": "lettuce18_",
+          "score": 2,
+          "url": "https://www.reddit.com/r/movies/comments/1sahx5c/mysterious_skin_2004_thoughts_about_the_dad/",
+          "selftext": "Okay so I know I am very late and just finished watching this, couldn't stop crying having similar experiences.\n\nCan't stop but think, was Brian's dad also into kids in some sort of way? Where was he that night when It happened. I can't find anything about him or if it was just coincidence or something else. Brian confronts him and he just says that he can't help him. \n\nSomeone has any thoughts on this or is it just meant for the father to not play such a big role (although I think he does)",
+          "created_utc": 1775137748.0,
+          "num_comments": 0,
+          "id": "1sahx5c",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1sahx5c/mysterious_skin_2004_thoughts_about_the_dad/",
+          "is_self": true,
+          "upvote_ratio": 0.67,
+          "flair": "Discussion",
+          "comments": []
+        },
+        {
+          "title": "Official poster for SWAPPED with Michael B. Jordan and Juno Temple.",
+          "author": "MoneyLibrarian9032",
+          "score": 0,
+          "url": "https://www.reddit.com/r/movies/comments/1sah48k/official_poster_for_swapped_with_michael_b_jordan/",
+          "selftext": "",
+          "created_utc": 1775135768.0,
+          "num_comments": 18,
+          "id": "1sah48k",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/s2e3sti02ssg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.45,
+          "flair": "Poster",
+          "comments": [
+            {
+              "author": "Dustmopper",
+              "body": "Is this an animated animal brain swapping movie? Haven’t see that in at least two weeks, very original! ",
+              "score": 1
+            },
+            {
+              "author": "Kangarou",
+              "body": "Was \"Swappers\" already taken?",
+              "score": 1
+            },
+            {
+              "author": "Hopefo",
+              "body": "Oh god its gonna be another situation where an actor has a pulp/paycheck project coming out right after a major success and everyone acts like he ran to the studio after the Oscars and immediately sold out.\n\n  \nBut ya looks like typical Netflix animated filler.",
+              "score": 1
+            },
+            {
+              "author": "ElasticPlatypus",
+              "body": "Something about this animation style makes me want to complete puzzles quickly so a portly king isn’t engulfed by lava. Or play a candy crush knockoff so a single mother can repair the house she inherited ",
+              "score": 1
+            },
+            {
+              "author": "NATHAN4U007",
+              "body": "Not the most ideal film to be in after winning an Oscar but good for him ig.",
+              "score": 1
+            }
+          ]
+        }
+      ],
+      "Best of 24h": [
+        {
+          "title": "Ryan Gosling Recalls Preparing For ‘Project Hail Mary’ By Consulting Astronaut Katy Perry: “My performance of a man adrift in space wouldn’t have been nearly as believable if Katy hadn’t been there to answer all my questions”",
+          "author": "ICumCoffee",
+          "score": 28261,
+          "url": "https://www.reddit.com/r/movies/comments/1s9qqph/ryan_gosling_recalls_preparing_for_project_hail/",
+          "selftext": "",
+          "created_utc": 1775063503.0,
+          "num_comments": 382,
+          "id": "1s9qqph",
+          "subreddit": "movies",
+          "link_url": "https://theonion.com/ryan-gosling-recalls-preparing-for-project-hail-mary-by-consulting-katy-perry/",
+          "is_self": false,
+          "upvote_ratio": 0.91,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "SkoivanSchiem",
+              "body": "The Onion should be posting ridiculous BUT TRUE articles on April Fools",
+              "score": 11655
+            },
+            {
+              "author": "probablyuntrue",
+              "body": "Thank you Katy Perry, pioneer of the stars. First you inspired the moon race and Star Trek, now this 🙏",
+              "score": 2533
+            },
+            {
+              "author": "laluneodyssee",
+              "body": "I thought this was real for  just a nanosecond, until I saw the source. My sincere apologies Ryan...",
+              "score": 2349
+            },
+            {
+              "author": "ICumCoffee",
+              "body": "![gif](giphy|qAbEi0cczrsrjJwidR|downsized)",
+              "score": 955
+            }
+          ]
+        },
+        {
+          "title": "\"The Prince of Egypt\" (1998 | Brenda Chapman, Steve Hickner & Simon Wells) - The plagues of Egypt are unleashed upon Ramses (Ralph Fiennes) by Moses (Val Kilmer)",
+          "author": "Morgan-Moonscar",
+          "score": 6852,
+          "url": "https://www.reddit.com/r/movies/comments/1s9usp4/the_prince_of_egypt_1998_brenda_chapman_steve/",
+          "selftext": "",
+          "created_utc": 1775071866.0,
+          "num_comments": 770,
+          "id": "1s9usp4",
+          "subreddit": "movies",
+          "link_url": "https://v.redd.it/loep925prmsg1",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "Media",
+          "comments": [
+            {
+              "author": "_caltony",
+              "body": "TIL how stacked that cast was. Val Kilmer, Ralph Fiennes, Michelle Pfeiffer, Sandra Bullock, Jeff Goldblum, Danny Glover, Patrick Stewart, Helen Mirren, Steve Martin, and Martin Short. What?!",
+              "score": 2597
+            },
+            {
+              "author": "Slaktare",
+              "body": "10/10 soundtrack all the way around.",
+              "score": 866
+            },
+            {
+              "author": "mikepictor",
+              "body": "Such a good film. It's on my short list of best animated films of all time.",
+              "score": 609
+            },
+            {
+              "author": "Y2KGB",
+              "body": "yep… *He’s playing with the Big Boys now…*",
+              "score": 598
+            }
+          ]
+        },
+        {
+          "title": "Official Poster for the 4K Remaster of David Fincher's 'Fight Club', Coming to Theaters April 22",
+          "author": "MarvelsGrantMan136",
+          "score": 3534,
+          "url": "https://www.reddit.com/r/movies/comments/1s9orhh/official_poster_for_the_4k_remaster_of_david/",
+          "selftext": "",
+          "created_utc": 1775059357.0,
+          "num_comments": 298,
+          "id": "1s9orhh",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/pw3trfusqlsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "Poster",
+          "comments": [
+            {
+              "author": "piscian19",
+              "body": "I was 17 working at Video Vault when this was coming out on VHS. I think I might have every line in the movie memorized, not even by choice really we just had it playing nonstop. I've probably seen it a couple hundred times. Movie aside that soundtrack is amazing, I will probably go see it for that alone. ",
+              "score": 570
+            },
+            {
+              "author": "TheAVNEnjoyer_",
+              "body": "Some people may think this is dumb but I as a 20 year old who never got to see this in theaters am very excited. ",
+              "score": 425
+            },
+            {
+              "author": "corner",
+              "body": "How does a 4K remaster work for a theatrical release when a 35 mm print is already higher resolution?",
+              "score": 218
+            }
+          ]
+        },
+        {
+          "title": "Charlie Wilson's War (2007, dir. Mike Nichols) \"Another Broken Window\" (Philip Seymour Hoffman, John Slattery)",
+          "author": "SinbadsBitch",
+          "score": 1647,
+          "url": "https://www.reddit.com/r/movies/comments/1sa2xna/charlie_wilsons_war_2007_dir_mike_nichols_another/",
+          "selftext": "",
+          "created_utc": 1775091208.0,
+          "num_comments": 195,
+          "id": "1sa2xna",
+          "subreddit": "movies",
+          "link_url": "https://v.redd.it/9p1kxz66dosg1",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "Media",
+          "comments": [
+            {
+              "author": "henningknows",
+              "body": "Such a great movie and an all time great performance ",
+              "score": 468
+            },
+            {
+              "author": "ExtensionParsley4205",
+              "body": "John Slattery is a time traveler from the 1960s. There is no other explanation. ",
+              "score": 252
+            },
+            {
+              "author": "Eccentric_Cardinal",
+              "body": "RIP. One of the best performances he ever did in my view. Very informative movie. \n\nIt's crazy to think that the US helped the Afghan people fight off the foolish invasion by the Soviets only to invade the country themselves years later, foolishly.\n\nHas anyone in power ever read a book?",
+              "score": 239
+            }
+          ]
+        },
+        {
+          "title": "Kiss Kiss Bang Bang (2005)- Who taught you math? Scene - Directed by Shane Black",
+          "author": "PeneItaliano",
+          "score": 1614,
+          "url": "https://www.reddit.com/r/movies/comments/1sa2vyq/kiss_kiss_bang_bang_2005_who_taught_you_math/",
+          "selftext": "",
+          "created_utc": 1775091085.0,
+          "num_comments": 140,
+          "id": "1sa2vyq",
+          "subreddit": "movies",
+          "link_url": "https://v.redd.it/2a1ypq14dosg1",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "Media",
+          "comments": [
+            {
+              "author": "lordofhousestewart",
+              "body": "Val Kilmer is so good in this....banger of a film",
+              "score": 490
+            },
+            {
+              "author": "hhaattrriicckk",
+              "body": "vk - \"If you look up the word 'idiot' in the dictionary do you know what you find?\"\n\nrdj - \"a picture of me?'\n\nvk - \"No, the definition of the word 'idiot', which you are\"",
+              "score": 351
+            },
+            {
+              "author": "24framespersecond",
+              "body": "The film that got Robert Downey Jr the Iron Man role.",
+              "score": 225
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "Ryan Gosling Recalls Preparing For ‘Project Hail Mary’ By Consulting Astronaut Katy Perry: “My performance of a man adrift in space wouldn’t have been nearly as believable if Katy hadn’t been there to answer all my questions”",
+          "author": "ICumCoffee",
+          "score": 28256,
+          "url": "https://www.reddit.com/r/movies/comments/1s9qqph/ryan_gosling_recalls_preparing_for_project_hail/",
+          "selftext": "",
+          "created_utc": 1775063503.0,
+          "num_comments": 382,
+          "id": "1s9qqph",
+          "subreddit": "movies",
+          "link_url": "https://theonion.com/ryan-gosling-recalls-preparing-for-project-hail-mary-by-consulting-katy-perry/",
+          "is_self": false,
+          "upvote_ratio": 0.91,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "SkoivanSchiem",
+              "body": "The Onion should be posting ridiculous BUT TRUE articles on April Fools",
+              "score": 11655
+            },
+            {
+              "author": "probablyuntrue",
+              "body": "Thank you Katy Perry, pioneer of the stars. First you inspired the moon race and Star Trek, now this 🙏",
+              "score": 2533
+            },
+            {
+              "author": "laluneodyssee",
+              "body": "I thought this was real for  just a nanosecond, until I saw the source. My sincere apologies Ryan...",
+              "score": 2349
+            },
+            {
+              "author": "ICumCoffee",
+              "body": "![gif](giphy|qAbEi0cczrsrjJwidR|downsized)",
+              "score": 955
+            }
+          ]
+        },
+        {
+          "title": "Hello reddit! I'm James McAvoy. Ask me anything!",
+          "author": "JamesMcAvoyAMA",
+          "score": 24462,
+          "url": "https://www.reddit.com/r/movies/comments/1s52jz6/hello_reddit_im_james_mcavoy_ask_me_anything/",
+          "selftext": "Hello reddit! I'm James McAvoy. AMA!\n\nmy directorial debut, CALIFORNIA SCHEMIN', is out in UK theaters on April 10.\n\n>Two Scottish lads from Dundee conned the music industry by pretending to be an established Californian rap duo, bagging a record deal and appearing on MTV until their scam unraveled.\n\n**Trailer:**\n\n[https://www.youtube.com/watch?v=oUTSyu4Ovcc](https://www.youtube.com/watch?v=oUTSyu4Ovcc)\n\n**Tickets/other things:**\n\n[http://www.californiaschemin.co.uk/](http://www.californiaschemin.co.uk/)\n\nI'll be back at around 1-2 PM ET/5-6 PM GMT today, Friday 3/27, to answer questions.\n\n",
+          "created_utc": 1774614166.0,
+          "num_comments": 4660,
+          "id": "1s52jz6",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/5ld950koykrg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "AMA",
+          "comments": [
+            {
+              "author": "BunyipPouch",
+              "body": "This AMA has been verified and approved by the mods. James will be back at around 1:30 PM ET today to answer questions. Please feel free to ask away in the meantime :)",
+              "score": 1
+            },
+            {
+              "author": "Large-Monk4910",
+              "body": "Will Patricia also be joining the ama and if not - how is she doing?",
+              "score": 1812
+            },
+            {
+              "author": "mikeyfreshh",
+              "body": "Hi James! Your character in Split had a bunch of different personalities. How collaborative was that process? Did you come up with a bunch of them or were they all already on the page? Did you try to pitch any that didn't make it into the film?",
+              "score": 1338
+            },
+            {
+              "author": "ThinWhiteDuke00",
+              "body": "Just popping in to say your Leto II performance is much loved by the Dune fandom despite the budget constraints of the miniseries.  ",
+              "score": 1332
+            },
+            {
+              "author": "Tarzyytfet",
+              "body": "Do you and Micheal Fassbender ever casually hang out ?",
+              "score": 880
+            }
+          ]
+        },
+        {
+          "title": "New Posters for Kane Parsons' 'Backrooms'",
+          "author": "MarvelsGrantMan136",
+          "score": 17751,
+          "url": "https://www.reddit.com/r/movies/comments/1s7px5o/new_posters_for_kane_parsons_backrooms/",
+          "selftext": "",
+          "created_utc": 1774875676.0,
+          "num_comments": 923,
+          "id": "1s7px5o",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/90e1b36mk6sg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "Poster",
+          "comments": [
+            {
+              "author": "bababuffdip",
+              "body": "Please be good 🤞 please be good",
+              "score": 4343
+            },
+            {
+              "author": "CBattles6",
+              "body": "They're getting the marketing right with this film so far",
+              "score": 4072
+            },
+            {
+              "author": "MarvelsGrantMan136",
+              "body": "New trailer is out tomorrow:\n\n>A therapist (Renate Reinsve) ventures into an otherworldly dimension in search of her missing patient (Chiwetel Ejiofor).\n\nFull Cast:\n\n* Chiwetel Ejiofor\n* Renate Reinsve\n* Mark Duplass\n* Finn Bennett\n* Lukita Maxwell\n* Avan Jogia",
+              "score": 1966
+            },
+            {
+              "author": "Excellent_Emperor",
+              "body": "I wonder if the 4chan poster who originally made the Backrooms is upset or happy over this",
+              "score": 1013
+            }
+          ]
+        },
+        {
+          "title": "‘Project Hail Mary’ Becomes Amazon MGM Studios’ Highest-Grossing Film Worldwide With $300 Million Overtaking ‘Creed III’",
+          "author": "ICumCoffee",
+          "score": 16101,
+          "url": "https://www.reddit.com/r/movies/comments/1s6za9z/project_hail_mary_becomes_amazon_mgm_studios/",
+          "selftext": "",
+          "created_utc": 1774800801.0,
+          "num_comments": 1293,
+          "id": "1s6za9z",
+          "subreddit": "movies",
+          "link_url": "https://deadline.com/2026/03/box-office-global-project-hail-mary-hoppers-they-will-kill-you-1236768592/",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "DazeandFade",
+              "body": "Just saw it last night, great movie. Was a really nice change of pace to see such a hopeful movie. ",
+              "score": 4075
+            },
+            {
+              "author": "Upbeat_Tension_8077",
+              "body": "I'd love it if the success of this boosts Lord and Miller into becoming go-to directors for more blockbuster sci-fi adventure films",
+              "score": 1663
+            },
+            {
+              "author": "Fuckwittycake",
+              "body": "Fist my bump 🤜",
+              "score": 706
+            }
+          ]
+        },
+        {
+          "title": "Barry Caldwell, ‘Animaniacs’ and ‘Osmosis Jones’ Animator, Dies at 68",
+          "author": "MarvelsGrantMan136",
+          "score": 14840,
+          "url": "https://www.reddit.com/r/movies/comments/1s65vq3/barry_caldwell_animaniacs_and_osmosis_jones/",
+          "selftext": "",
+          "created_utc": 1774717483.0,
+          "num_comments": 301,
+          "id": "1s65vq3",
+          "subreddit": "movies",
+          "link_url": "https://variety.com/2026/tv/news/barry-caldwell-dead-animaniacs-osmosis-jones-1236701983/",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "ifeelpin",
+              "body": "Animaniacs was a great show\n\nRIP",
+              "score": 1339
+            },
+            {
+              "author": "tyuiopguyt",
+              "body": "He was also a major figure in the production of the 2000s home video Scooby Doo movies for my fellow Zoomers",
+              "score": 922
+            },
+            {
+              "author": "Confidentvelvet",
+              "body": "this actually made me pause for a second 😭 i remember watching random movies growing up and never thinking about the people behind them, and now when i see stuff like this it hits different… like someone out there helped create pieces of your childhood without you even realizing it at the time. it’s kinda bittersweet thinking about how much work goes unnoticed like that",
+              "score": 434
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "AMA/Q&A Announcement - Katarina Zhu - Friday 4/3 at 1:30 PM ET - Director, lead actress, screenwriter, and producer of 'Bunnylovr' - A Chinese-American cam girl navigates a toxic client relationship while reconnecting with her estranged, dying father.",
+          "author": "BunyipPouch",
+          "score": 46,
+          "url": "https://www.reddit.com/r/movies/comments/1s8zhof/amaqa_announcement_katarina_zhu_friday_43_at_130/",
+          "selftext": "",
+          "created_utc": 1774989696.0,
+          "num_comments": 8,
+          "id": "1s8zhof",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/g3c7hk84zfsg1.png",
+          "is_self": false,
+          "upvote_ratio": 0.74,
+          "flair": "Announcement",
+          "comments": [
+            {
+              "author": "BunyipPouch",
+              "body": "Katarina Zhu, the lead actress/director/screenwriter/producer of the new film **Bunnylovr** will be joining us here in /r/movies this Friday 4/3 for an AMA/Q&A. It'll go live around noon on Thursday and she'll be back Friday at around 1:30 PM ET to answer questions.\n\nPlease stop by on Thursday or Friday if you have questions for Katarina :)\n\nThe film premiered at Sundance last year and is out in theaters via Utopia next week. It also stars Rachel Sennott, Austin Amelio, Perry Yung, and Jack Kilmer.\n\n> A drifting Chinese American cam girl struggles to navigate an increasingly toxic relationship with one of her clients while rekindling her relationship with her dying estranged father.[1]\n\nTrailer:\n\nhttps://www.youtube.com/watch?v=V5vy1VPkBzk\n\nPlease note that this is NOT the AMA, just an announcement post. Please hold questions for the actual AMA.",
+              "score": 1
+            },
+            {
+              "author": "Qyzyk",
+              "body": "What was the most difficult aspect of being a director and lead actor at the same time? ",
+              "score": 1
+            },
+            {
+              "author": "zerooneinfinity",
+              "body": "Heya Katarina. Can you talk about what it took to get the movie off the ground? How were you able to get people to look at the script, how long did it take, that kind of thing.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "AMA/Q&A Announcement - Jorma Taccone - Thursday 4/2 at 12:30 PM ET - Member of The Lonely Island, Director of 'Popstar: Never Stop Never Stopping', 'MacGruber', 'Over Your Dead Body', Producer of 'Hot Rod', 'Palm Springs', 'Brigsby Bear', Actor in 'Weird: The Al Yankovic Story', 'The Lego Movie'",
+          "author": "BunyipPouch",
+          "score": 699,
+          "url": "https://www.reddit.com/r/movies/comments/1s60vcx/amaqa_announcement_jorma_taccone_thursday_42_at/",
+          "selftext": "",
+          "created_utc": 1774705792.0,
+          "num_comments": 198,
+          "id": "1s60vcx",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/n8v783l2jsrg1.png",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "Announcement",
+          "comments": [
+            {
+              "author": "BunyipPouch",
+              "body": "Update: Jorma's AMA post is now live here:\n\nhttps://www.reddit.com/r/movies/comments/1s9z49l/hi_reddit_im_jorma_taccone_from_the_lonely_island/\n\n------------------------------------------------\n\nActor, comedian, writer, filmmaker Jorma Taccone will be joining us here in /r/movies for an AMA/Q&A next Thursday 4/2. It'll go live that morning and he'll be back at around 12:30 PM ET to answer stuff. You may know him as a member of The Lonely Island alongside Andy Samberg and Akiva Schaffer. He's directed **Macgruber** and **Popstar: Never Stop Never Stopping**.  He's co-written or produced other films like **Hot Rod**, **Palm Springs**, and **Brigsby Bear**. He's acted in films like **Land of the Lost**, **The Lego Movie**, **Spider-Man: Into the Spider-Verse**, **An American Pickle**, and **Weird: The Al Yankovic Story**.\n\nPlease stop by on Thursday if you have questions for Jorma :)\n\nHis new movie, **Over Your Dead Body**, stars Samara Weaving & Jason Segel and is out in theaters everywhere on 4/26 via IFC.\n\n> A man and his wife head to a secluded cabin to repair their damaged relationship, not knowing that each secretly plans to kill the other.\n\nTrailer:\n\nhttps://www.youtube.com/watch?v=pGxKTIegUZ4\n\nPlease note that this is NOT the AMA, just an announcement. Please hold your questions for the actual AMA.",
+              "score": 1
+            },
+            {
+              "author": "robertnewmanuk",
+              "body": "Cool beans ",
+              "score": 156
+            },
+            {
+              "author": "JaesopPop",
+              "body": "Righteous kill ",
+              "score": 124
+            },
+            {
+              "author": "theatretech37",
+              "body": "Quaid Army bout to take over ",
+              "score": 69
+            },
+            {
+              "author": "AFineDayForScience",
+              "body": "Did you fit the man's entire resume in the title? ",
+              "score": 64
+            }
+          ]
+        },
+        {
+          "title": "Official 40th Anniversary Poster for ‘Highlander’",
+          "author": "MarvelsGrantMan136",
+          "score": 1165,
+          "url": "https://www.reddit.com/r/movies/comments/1saebk5/official_40th_anniversary_poster_for_highlander/",
+          "selftext": "",
+          "created_utc": 1775127940.0,
+          "num_comments": 100,
+          "id": "1saebk5",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/yny7g5uqersg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "Poster",
+          "comments": [
+            {
+              "author": "Pvt_cluckins",
+              "body": "I would hang this in my room ",
+              "score": 1
+            },
+            {
+              "author": "MarvelsGrantMan136",
+              "body": "It’s returning to theaters on May 4 and a 4K collectors edition is out June 29",
+              "score": 1
+            },
+            {
+              "author": "Chickenshit_outfit",
+              "body": "40th Anniversary vinyl too i hope",
+              "score": 1
+            },
+            {
+              "author": "This_Guy-Fawkes",
+              "body": "Nuns.  No sense of humor.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Ryan Gosling Recalls Preparing For ‘Project Hail Mary’ By Consulting Astronaut Katy Perry: “My performance of a man adrift in space wouldn’t have been nearly as believable if Katy hadn’t been there to answer all my questions”",
+          "author": "ICumCoffee",
+          "score": 28259,
+          "url": "https://www.reddit.com/r/movies/comments/1s9qqph/ryan_gosling_recalls_preparing_for_project_hail/",
+          "selftext": "",
+          "created_utc": 1775063503.0,
+          "num_comments": 382,
+          "id": "1s9qqph",
+          "subreddit": "movies",
+          "link_url": "https://theonion.com/ryan-gosling-recalls-preparing-for-project-hail-mary-by-consulting-katy-perry/",
+          "is_self": false,
+          "upvote_ratio": 0.91,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "SkoivanSchiem",
+              "body": "The Onion should be posting ridiculous BUT TRUE articles on April Fools",
+              "score": 11655
+            },
+            {
+              "author": "probablyuntrue",
+              "body": "Thank you Katy Perry, pioneer of the stars. First you inspired the moon race and Star Trek, now this 🙏",
+              "score": 2533
+            },
+            {
+              "author": "laluneodyssee",
+              "body": "I thought this was real for  just a nanosecond, until I saw the source. My sincere apologies Ryan...",
+              "score": 2349
+            },
+            {
+              "author": "ICumCoffee",
+              "body": "![gif](giphy|qAbEi0cczrsrjJwidR|downsized)",
+              "score": 955
+            }
+          ]
+        },
+        {
+          "title": "Schindler's List (1993) The Krakow Ghetto is liquidated",
+          "author": "majorminus92",
+          "score": 595,
+          "url": "https://www.reddit.com/r/movies/comments/1sabynp/schindlers_list_1993_the_krakow_ghetto_is/",
+          "selftext": "I remember seeing this movie for the first time when PBS aired it uncensored. It traumatized me so much that it shook my belief in a God that would allow something like this to happen. The entire film is full of moments that made me question my faith but I feel this scene is relevant with current events of people being forced to leave their homes with no warning.",
+          "created_utc": 1775119768.0,
+          "num_comments": 360,
+          "id": "1sabynp",
+          "subreddit": "movies",
+          "link_url": "https://v.redd.it/osqyaip4qqsg1",
+          "is_self": false,
+          "upvote_ratio": 0.83,
+          "flair": "Media",
+          "comments": [
+            {
+              "author": "not_blmpkingiver",
+              "body": "This movie and The Pianist. I honestly dont know which one was better made. Its close. ",
+              "score": 1
+            },
+            {
+              "author": "standread",
+              "body": "God watched the Holocaust and did nothing. Just like he does nothing when kids get cancer and evil men get away with horrible crimes. That is because he only ever existed in your head.",
+              "score": 1
+            },
+            {
+              "author": "Aregisteredusername",
+              "body": "I don’t know if they still do this, but when I was in middle school we watched this movie over the course of a week, discussed the atrocities and the war, then had survivors of Nazi concentration camps come to our classroom to speak with us and answer our questions. That had such a big impact on my hate for nazis and interest in history in general (not that I’m a historian). I hope some schools are still doing that",
+              "score": 1
+            },
+            {
+              "author": "drproc90",
+              "body": "I watched that film and took the message to heart.\n\nApparently that now makes me an antisemite",
+              "score": 1
+            }
+          ]
+        }
+      ]
     },
     "BillSimmons": {
-      "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of Hour": [
+        {
+          "title": "Doesn't this counter the narrative that the players aren't motivated to play? Jaden Ivey told the Bulls that he was ready to play because Jesus healed his knee.",
+          "author": "TimSPC",
+          "score": 23,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1sah2ay/doesnt_this_counter_the_narrative_that_the/",
+          "selftext": "",
+          "created_utc": 1775135640.0,
+          "num_comments": 39,
+          "id": "1sah2ay",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/s3sqlkkbzrsg1.png",
+          "is_self": false,
+          "upvote_ratio": 0.78,
+          "flair": "",
+          "comments": [
+            {
+              "author": "TreeTrunkGrower",
+              "body": "He’s in a state of psychosis and is mentally unwell. You can’t take anything he says at face value. ",
+              "score": 52
+            },
+            {
+              "author": "Distinct-Cut-6368",
+              "body": "At the risk of stating the obvious he got cut because he was not good enough for the amount of hassle he was. If he behaved exactly the same way but was a second team all-pro, he would still be on the team. ",
+              "score": 32
+            },
+            {
+              "author": "TimSPC",
+              "body": "And the NBA media will have you believe it's the players who want load management.  It has always been the front offices. These guys are literally undergoing miracles to get back on the court!",
+              "score": 13
+            }
+          ]
+        },
+        {
+          "title": "Bill will be walking around Hollywood with his chest out today. Nailed a decent parlay.",
+          "author": "drannek",
+          "score": 16,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1sai0wj/bill_will_be_walking_around_hollywood_with_his/",
+          "selftext": "",
+          "created_utc": 1775138001.0,
+          "num_comments": 4,
+          "id": "1sai0wj",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/if76gqmn8ssg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Then-Bad1939",
+              "body": "steve kerr is now thinking about getting another guard or corpse of a player to counter wemby ",
+              "score": 5
+            },
+            {
+              "author": "redden34",
+              "body": "Thank you Bill ! Man of the people handing out winners, the haters are just mad they didn’t tail ",
+              "score": 2
+            },
+            {
+              "author": "Due-Sheepherder-218",
+              "body": "\"he walked a little taller that day\"",
+              "score": 2
+            },
+            {
+              "author": "FFElite93",
+              "body": "Still horrible value parlays are a losers game ",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "title": "In light of recent events, who are the top 5 homophobic NBA players of all time? Is Ivey even cracking the top 25?",
+          "author": "Wack0HookedOnT0bac0",
+          "score": 3,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1sahnxi/in_light_of_recent_events_who_are_the_top_5/",
+          "selftext": "",
+          "created_utc": 1775137112.0,
+          "num_comments": 22,
+          "id": "1sahnxi",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1sahnxi/in_light_of_recent_events_who_are_the_top_5/",
+          "is_self": true,
+          "upvote_ratio": 0.6,
+          "flair": "",
+          "comments": [
+            {
+              "author": "RyanRussillo",
+              "body": "You might as well just make a list of the top 5 players pre-Lebron",
+              "score": 32
+            },
+            {
+              "author": "SenorBetoDobalina",
+              "body": "Tim Hardaway had to be #1.",
+              "score": 14
+            },
+            {
+              "author": "daved1986",
+              "body": "Is this the 5 MOST homophonic players or the 5 BEST players who are/were homophonic?",
+              "score": 9
+            },
+            {
+              "author": "qobraa",
+              "body": "Most NBA players are just as homophobic as Ivery, they just have functioning social filters because their brains aren't Swiss cheese. ",
+              "score": 8
+            },
+            {
+              "author": "MCmax503",
+              "body": "It’s probably the same as the top 5 NBA players of all time list. ",
+              "score": 4
+            }
+          ]
+        },
+        {
+          "title": "I think Jokic deserves MVP",
+          "author": "lmportant_Pattern867",
+          "score": 0,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1sahenw/i_think_jokic_deserves_mvp/",
+          "selftext": "",
+          "created_utc": 1775136483.0,
+          "num_comments": 3,
+          "id": "1sahenw",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/xmy85uw44ssg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.18,
+          "flair": "",
+          "comments": [
+            {
+              "author": "boybraden",
+              "body": "He’s getting 4th place",
+              "score": 1
+            },
+            {
+              "author": "TechnicalSample4678",
+              "body": "His defense has dipped just way too much after his injury. Even by his standards. More likely thats hes dropped to 4th now ",
+              "score": 0
+            },
+            {
+              "author": "vampstephenx",
+              "body": "![gif](giphy|mOZrksVBfOyofUNncV|downsized)",
+              "score": -1
+            }
+          ]
+        }
+      ],
+      "Best of 24h": [
+        {
+          "title": "“The Celtics’ number is legitimate, the Lakers’ number is flawed.”",
+          "author": "IH8NYLAnBOS",
+          "score": 663,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s9nmo8/the_celtics_number_is_legitimate_the_lakers/",
+          "selftext": "I cannot believe how butt hurt Simmons is because the Lakers franchise is more valuable than the Celtics. Of course it is! It’s Los Angeles! The mental gymnastics he goes through, and meanwhile… no one cares!\n\nI’m a big Simmons fan, but man this year with the Tatum passing stuff, and the Brown MVP stuff, etc. has been just brutal, it just is!",
+          "created_utc": 1775056942.0,
+          "num_comments": 244,
+          "id": "1s9nmo8",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/ramgovrmjlsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Naismythology",
+              "body": "It’s so fucking funny coming from someone who literally abandoned Boston to live in Los Angeles",
+              "score": 525
+            },
+            {
+              "author": "MrLawyerGuy",
+              "body": "Works for valuation or NBA titles.  Our guy ihas multi use arguments  ",
+              "score": 163
+            },
+            {
+              "author": "Important-Donkey-259",
+              "body": "When I hear Boston fans arguing how Celtics are on lakers level it reminds of that one onion article about how Boston is adorable for thinking it’s a real city",
+              "score": 150
+            },
+            {
+              "author": "UnfilteredJack",
+              "body": "I cannot comprehend caring about my favorite NBA franchise’s valuation. ",
+              "score": 120
+            }
+          ]
+        },
+        {
+          "title": "Klosterman’s take on people who graduated from Harvard/Yale…",
+          "author": "Johnny_Dollarz",
+          "score": 599,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s9zkym/klostermans_take_on_people_who_graduated_from/",
+          "selftext": "Chuck’s point is that to be impressed with someone because they went to Harvard or Yale basically means you are impressed with that person’s at age 16 or 17. Because to get in there, you needed to be really good at school then and likely had parents that pushed you.\n\nBut that doesn’t always matter at age 40.\n\nAnd I see that at my company as well. I have a PhD in engineering from a top 10 engineering school so I know lots of smart people. And the smartest one I know graduated from a public state university and is the CTO of a publicly traded company in Si Valley. And I work with lots of people from both private and public universities.\n\nAnyway, it was refreshing to hear Chuck say it. And heck Chuck went to the Univ. of North Dakota but yet he’s on one of the biggest podcasts in the world (regularly) and has authored many books.",
+          "created_utc": 1775082547.0,
+          "num_comments": 220,
+          "id": "1s9zkym",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1s9zkym/klostermans_take_on_people_who_graduated_from/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "Podcast",
+          "comments": [
+            {
+              "author": "AnselmoHatesFascists",
+              "body": "I used to think the Harvards and Yales had a lot of legacy kids who were boneheads and many didn't earn their place.\n\nI did my LSAT prep mostly at BU (Boston University), but one week had to take the class over at Harvard. And I'll never forget it, those kids asked much smarter questions than I was used to at BU. Fuck. Scorched my assumptions.",
+              "score": 290
+            },
+            {
+              "author": "sunpar1",
+              "body": "I’ve seen smart people from both elite schools and good state schools. I would say elite schools definitely have a higher % of smart people, but when you get a smart person who went to a state school it’s a gold mine. Those people have the talent and the huge chip on the shoulder to really make something of it. ",
+              "score": 210
+            },
+            {
+              "author": "big_internet_guy",
+              "body": "Lots of smart people went to those schools. I think chucks point was when looking at a 40 year old, you shouldn’t be impressed by the school they went to and should be impressed by what they did after college ",
+              "score": 175
+            }
+          ]
+        },
+        {
+          "title": "Let's rank which Ringer people are actually closest to Bill as friends.",
+          "author": "rtrazto",
+          "score": 465,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s9nmfc/lets_rank_which_ringer_people_are_actually/",
+          "selftext": "With the Masters coming up, which Ringer personalities are ACTUALLY friends with Bill? Let's figure out the circles with how comfortable Bill is in each:\n\n**Vegas / Masters Closest Circle** \\- Bill is at his loosest and most free, can get wasted and off-colour shit talks without fear of being cancelled. Joe House, Dave Chang, Cousin Sal. \n\n**Inner Circle he wants to party with but Bill holds back because they're employees** \\- These people have his ear and can get drunk with Bill - Bill even actively asks them to hang out with him, but Bill is still the boss. Chris Ryan and Bill have definitely smoked a lot of cigarettes together, but I would not be surprised if Van is suddenly way closer to Bill recently as they always talk about Van at his house. Van is also deep into the LA Celeb Rich Guy scene that Bill relates to more recently.\n\n**Trusted Professional Circle -**  These people Bill trusts with the business and can talk to about Ringer things without thinking of HR, but he's not exactly inviting them to the afterparty at his place after the christmas party. Sean Fennessey and Mallory are here, but used to be in Inner Circle.\n\n**Podcast Friends Circle** \\- Bill can dinner and drinks talk with these people but isn't getting much more deeper and vulnerable than what you get on a podcast. Zach Lowe, Chuck Klosterman.\n\n**Second Degree Circle** \\- People that Bill likes but never personally invites or talks to alone, they're always tagging along with the other circles. Andy Greenwald, Amanda Dobbins.\n\n**Dead to Bill Circle** \\- Bill no longer acknowledges their existence. Ryen Russilo. \n\n\n\n",
+          "created_utc": 1775056929.0,
+          "num_comments": 172,
+          "id": "1s9nmfc",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1s9nmfc/lets_rank_which_ringer_people_are_actually/",
+          "is_self": true,
+          "upvote_ratio": 0.9,
+          "flair": "",
+          "comments": [
+            {
+              "author": "AnselmoHatesFascists",
+              "body": "You know, so much AI slop out there, I've almost forgotten what human slop reads like, congrats OP, I guess. This is slop of a different sort.",
+              "score": 1157
+            },
+            {
+              "author": "TrimboliHandjobs",
+              "body": "Bill would do body shots off Craig. Not sure which tier that puts him in though.",
+              "score": 319
+            },
+            {
+              "author": "fegwin2084",
+              "body": "You forgot 'Unclear Bill Knows He Employes Them'. Example: Ben Lindberg - has worked for Bill for 10 years, is a pre-eminent voice on baseball analytics, Bill blurbed his book ten years ago, but has never even been on the podcast or had had named mentioned.",
+              "score": 175
+            }
+          ]
+        },
+        {
+          "title": "What if a team got an extra home game if they scored 10 threes in a quarter?",
+          "author": "Pontus_Pilates",
+          "score": 467,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s9thae/what_if_a_team_got_an_extra_home_game_if_they/",
+          "selftext": "",
+          "created_utc": 1775069118.0,
+          "num_comments": 84,
+          "id": "1s9thae",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/q5lafgepjmsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Shitpost",
+          "comments": [
+            {
+              "author": "TJSutton04",
+              "body": "I really enjoy the 5 home games for the 1-seed idea.\n\n“Don’t teams deserve something for getting the 1 seed?!?”\n\nIs home court advantage in every round and getting matched up with the worst opponent every round (assuming chalk) not something?",
+              "score": 170
+            },
+            {
+              "author": "Moss_84",
+              "body": "I’m ready to hear Bill’s stupid “the player gets to choose” draft idea explained in detail another 7 times",
+              "score": 74
+            },
+            {
+              "author": "Curt_Uncles",
+              "body": "I know the old heads will downvote me, even though I’m an old head myself by this sub’s standards, but I just don’t get the Klosterman thing. “60 minutes of the dumbest shit you have ever heard that will never happen for practical reasons that we will never discuss,” followed by twenty minutes on how music was at its peak when Chuck was in his teens and 20s, just like it was for everyone else. ",
+              "score": 71
+            },
+            {
+              "author": "Calculon2347",
+              "body": "Make a free throw worth one-half a point, but only for Oklahoma City Thunder players.",
+              "score": 52
+            },
+            {
+              "author": "Dogdaypm89",
+              "body": "Sending salary cap to different teams at the end of the season would potentially make that last night of the year hilarious. ",
+              "score": 40
+            }
+          ]
+        },
+        {
+          "title": "The Celtics going for the Heat’s 5% cap",
+          "author": "SnottyPippen-33",
+          "score": 114,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1sa21o5/the_celtics_going_for_the_heats_5_cap/",
+          "selftext": "",
+          "created_utc": 1775088827.0,
+          "num_comments": 11,
+          "id": "1sa21o5",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/uzz1a5wf6osg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Laojer",
+              "body": "We need a Jaylen 84 point game to beat out Bam and watch this whole sub implode",
+              "score": 33
+            },
+            {
+              "author": "SnottyPippen-33",
+              "body": "I agree with Klosterman, they should go for 200 tonight ",
+              "score": 29
+            },
+            {
+              "author": "sheJaMyMorant",
+              "body": "![gif](giphy|61O9fdkscXCscp0hpl|downsized)",
+              "score": 22
+            },
+            {
+              "author": "304rising",
+              "body": "That idea made me eye roll and turn off the pod for a bit ",
+              "score": 9
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "Yeah",
+          "author": "Fun_Reflection1157",
+          "score": 1847,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s7abpr/yeah/",
+          "selftext": "",
+          "created_utc": 1774826565.0,
+          "num_comments": 188,
+          "id": "1s7abpr",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/npb5l73li2sg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "",
+          "comments": [
+            {
+              "author": "PuzzleheadedBug4424",
+              "body": "EVERYBODY GET IN HERE",
+              "score": 449
+            },
+            {
+              "author": "WillF_",
+              "body": "Cayden Boozer just sold the shit out of his brother for no reason lmfao ",
+              "score": 267
+            },
+            {
+              "author": "Responsible_Fan8665",
+              "body": "134-1 for number 1 seeds when leading 15 pts at halftime ",
+              "score": 223
+            },
+            {
+              "author": "FunSoup4",
+              "body": "Best use of this meme since its inception ",
+              "score": 103
+            }
+          ]
+        },
+        {
+          "title": "It is 2026. LeBron James is an NBA All-Star, and Tiger Woods has crashed his car.",
+          "author": "Gaylord26",
+          "score": 1213,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s5ecre/it_is_2026_lebron_james_is_an_nba_allstar_and/",
+          "selftext": "It is 2021. LeBron James is an NBA All-Star, and Tiger Woods has crashed his car.\n\nIt is 2009. LeBron James is an NBA All-Star, and Tiger Woods has crashed his car.",
+          "created_utc": 1774640379.0,
+          "num_comments": 46,
+          "id": "1s5ecre",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/le8i1p2z4nrg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Due-Sheepherder-218",
+              "body": "Too bad he doesn't have a friend like Bill to drive him around ",
+              "score": 215
+            },
+            {
+              "author": "pojmalkavian",
+              "body": "I'm tired of Earth. These podcasters. I'm tired of being caught in the tangle of their half-assed hot takes. They claim their labours are to watch and follow every game yet their takes are populated with homerism and superficial analysis. Perhaps takes are not to be made and carefully constructed and argued. Nothing is made. A take without watching. Take too hot. Always has been, always will be. Too hot.",
+              "score": 151
+            },
+            {
+              "author": "samwilson8897",
+              "body": "It is 2026 Alex Ovechkin just scored a hat trick.\n\nIt is 2021 Alex Ovechkin just scored a hat trick.\n\nIt is 2009 Alex Ovechkin just scored a hat trick",
+              "score": 108
+            },
+            {
+              "author": "Mos0311",
+              "body": "It is 2009. LeBron James is an NBA All-Star, Sean Penn won an Oscar and Tiger Woods has crashed his car.\n\nIt is 2026. LeBron James is an NBA All-Star, Sean Penn won an Oscar and Tiger Woods has crashed his car.",
+              "score": 65
+            },
+            {
+              "author": "yngwiegiles",
+              "body": "It is 2026. Former Stanford student with loving father Tiger Woods is a damn soap opera. LeBron who didn’t have youth w his dad or go to college is playing golf and doting on all his children.",
+              "score": 54
+            }
+          ]
+        },
+        {
+          "title": "I hope Van never stops this bit",
+          "author": "CondolenceHighFive",
+          "score": 1044,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s6anb1/i_hope_van_never_stops_this_bit/",
+          "selftext": "",
+          "created_utc": 1774728671.0,
+          "num_comments": 33,
+          "id": "1s6anb1",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/bhe8ynhifurg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "",
+          "comments": [
+            {
+              "author": "GiveMeSomeIhedigbo",
+              "body": "Do you think Kon said anything about the constant beeping from Bill not having his seatbelt on?",
+              "score": 243
+            },
+            {
+              "author": "drannek",
+              "body": "10/10 tweet by Van. Keep it alive forever. ",
+              "score": 92
+            },
+            {
+              "author": "dellscreenshot",
+              "body": "This one killed me https://x.com/SFFiddler/status/2037978992532131880",
+              "score": 79
+            }
+          ]
+        },
+        {
+          "title": "One thing Bill is 1000% spot on about, is that a movie is instantly more appealing/rewatchable when finding it flipping through channels vs choosing it on demand",
+          "author": "andrew2018022",
+          "score": 693,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s6v6di/one_thing_bill_is_1000_spot_on_about_is_that_a/",
+          "selftext": "I randomly came across Casino this morning while flipping through channels, and while I love this movie I wouldn’t necessarily open it up on streaming. But finding it on I was pulled in. Didn’t leave my sofa. This doesn’t happen when watching movies on Netflix. ",
+          "created_utc": 1774791095.0,
+          "num_comments": 139,
+          "id": "1s6v6di",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1s6v6di/one_thing_bill_is_1000_spot_on_about_is_that_a/",
+          "is_self": true,
+          "upvote_ratio": 0.99,
+          "flair": "",
+          "comments": [
+            {
+              "author": "ffat2puff",
+              "body": "You haven't really seen the Indiana Jones series unless you've pieced the stories together in various hotel rooms over the course of several years out of order and with commercials ",
+              "score": 474
+            },
+            {
+              "author": "Big_Barber1070",
+              "body": "Yes. Recently I watched 2 hours of Goodfellas on AMC with editing and commercials, while I could have easily just switched over to HBO and watched it normally.",
+              "score": 143
+            },
+            {
+              "author": "irundoonayee",
+              "body": "That's why Bill Simmons is widely recognized as a thought leader and society shaper. He just is. ",
+              "score": 105
+            }
+          ]
+        },
+        {
+          "title": "“The Celtics’ number is legitimate, the Lakers’ number is flawed.”",
+          "author": "IH8NYLAnBOS",
+          "score": 658,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s9nmo8/the_celtics_number_is_legitimate_the_lakers/",
+          "selftext": "I cannot believe how butt hurt Simmons is because the Lakers franchise is more valuable than the Celtics. Of course it is! It’s Los Angeles! The mental gymnastics he goes through, and meanwhile… no one cares!\n\nI’m a big Simmons fan, but man this year with the Tatum passing stuff, and the Brown MVP stuff, etc. has been just brutal, it just is!",
+          "created_utc": 1775056942.0,
+          "num_comments": 244,
+          "id": "1s9nmo8",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/ramgovrmjlsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Naismythology",
+              "body": "It’s so fucking funny coming from someone who literally abandoned Boston to live in Los Angeles",
+              "score": 525
+            },
+            {
+              "author": "MrLawyerGuy",
+              "body": "Works for valuation or NBA titles.  Our guy ihas multi use arguments  ",
+              "score": 163
+            },
+            {
+              "author": "Important-Donkey-259",
+              "body": "When I hear Boston fans arguing how Celtics are on lakers level it reminds of that one onion article about how Boston is adorable for thinking it’s a real city",
+              "score": 150
+            },
+            {
+              "author": "UnfilteredJack",
+              "body": "I cannot comprehend caring about my favorite NBA franchise’s valuation. ",
+              "score": 120
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "A Radical NBA Idea, Wemby’s Musical Comp, Despising Duke, and Baseball’s ABS Revolution With Chuck Klosterman",
+          "author": "lonny__breaux",
+          "score": 48,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s93lkr/a_radical_nba_idea_wembys_musical_comp_despising/",
+          "selftext": "",
+          "created_utc": 1774999336.0,
+          "num_comments": 260,
+          "id": "1s93lkr",
+          "subreddit": "billsimmons",
+          "link_url": "https://open.spotify.com/episode/3LujdLCadesO9HJiwr0QqF?si=gXLUT7QkRGGabw-pGwJ3Ug&t=0&pi=SFY8p364SWe9M",
+          "is_self": false,
+          "upvote_ratio": 0.88,
+          "flair": "Podcast",
+          "comments": [
+            {
+              "author": "FilipinooFlash",
+              "body": "Was it the last Klosterman appearance where he defended the Luka trade and the whole sub had a meltdown? That was a fun few days on here",
+              "score": 152
+            },
+            {
+              "author": "mert_matsui55",
+              "body": "Bill and chuck’s 138th conversation about how to fix the NBA, can’t wait ",
+              "score": 122
+            },
+            {
+              "author": "jakethesnakeinmyboot",
+              "body": "Bill hating the face of the league conversation is a Tim Robinson \"we're all trying to figure out the guy responsible for this\" meme",
+              "score": 96
+            },
+            {
+              "author": "Wbk1496",
+              "body": "It’s crazy how in 2026 I’m still hearing Bill litigate Russell and Chamberlain",
+              "score": 73
+            },
+            {
+              "author": "Cold_Ball_7670",
+              "body": "Need chuck to frame this convo within the context of lord of the rings ",
+              "score": 66
+            }
+          ]
+        },
+        {
+          "title": "‘L.A. Confidential’ With Bill Simmons, Chris Ryan, Sean Fennessey, and Andy Greenwald",
+          "author": "Toby_O_Notoby",
+          "score": 78,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s8926d/la_confidential_with_bill_simmons_chris_ryan_sean/",
+          "selftext": "",
+          "created_utc": 1774918897.0,
+          "num_comments": 159,
+          "id": "1s8926d",
+          "subreddit": "billsimmons",
+          "link_url": "https://open.spotify.com/episode/7AmG1FLjMGzeciw5coyGcD",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "",
+          "comments": [
+            {
+              "author": "HenrikCrown",
+              "body": "I loved CR month\n\n\nWatched all of them out of respect for him \n\n\nI think Sean is maybe the only other guy I'd do it for\n\n\nProps to Bill for giving us a great month of movies ",
+              "score": 113
+            },
+            {
+              "author": "Big-Load-8864",
+              "body": "That looks like a lineup of elderly Massachusetts lesbians",
+              "score": 84
+            },
+            {
+              "author": "Toby_O_Notoby",
+              "body": "The pod is longer than the actual film, but you got the Big 3 and Greenwald in there so probably a great way to close out CR month.",
+              "score": 35
+            }
+          ]
+        },
+        {
+          "title": "How the Onion used to mock the Bill-Chuck dynamic 20 years ago",
+          "author": "joejoe_jones",
+          "score": 69,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1sagm74/how_the_onion_used_to_mock_the_billchuck_dynamic/",
+          "selftext": "If you can’t read the LATEST across the top, it’s “Chuck Klosterman Writes 650-Word Critique Of Bill Simmons’ 1,000-Word Essay On Throwing Wadded-Up Paper Ball Into Trashcan” ",
+          "created_utc": 1775134526.0,
+          "num_comments": 3,
+          "id": "1sagm74",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/tx7oc0vbyrsg1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "",
+          "comments": [
+            {
+              "author": "fakeplasticsnow",
+              "body": "The Onion don't miss when taking shots at Klosterman \nhttps://theonion.com/chuck-klosterman-corners-guy-at-party-wearing-dio-shirt-1819575481/",
+              "score": 26
+            },
+            {
+              "author": "joejoe_jones",
+              "body": "This was back when their fingers worked and they mostly traded essays, not podcast appearances.",
+              "score": 21
+            },
+            {
+              "author": "CleanJebboy",
+              "body": "I'd read both of those. ",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Klosterman’s take on people who graduated from Harvard/Yale…",
+          "author": "Johnny_Dollarz",
+          "score": 595,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1s9zkym/klostermans_take_on_people_who_graduated_from/",
+          "selftext": "Chuck’s point is that to be impressed with someone because they went to Harvard or Yale basically means you are impressed with that person’s at age 16 or 17. Because to get in there, you needed to be really good at school then and likely had parents that pushed you.\n\nBut that doesn’t always matter at age 40.\n\nAnd I see that at my company as well. I have a PhD in engineering from a top 10 engineering school so I know lots of smart people. And the smartest one I know graduated from a public state university and is the CTO of a publicly traded company in Si Valley. And I work with lots of people from both private and public universities.\n\nAnyway, it was refreshing to hear Chuck say it. And heck Chuck went to the Univ. of North Dakota but yet he’s on one of the biggest podcasts in the world (regularly) and has authored many books.",
+          "created_utc": 1775082547.0,
+          "num_comments": 220,
+          "id": "1s9zkym",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1s9zkym/klostermans_take_on_people_who_graduated_from/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "Podcast",
+          "comments": [
+            {
+              "author": "AnselmoHatesFascists",
+              "body": "I used to think the Harvards and Yales had a lot of legacy kids who were boneheads and many didn't earn their place.\n\nI did my LSAT prep mostly at BU (Boston University), but one week had to take the class over at Harvard. And I'll never forget it, those kids asked much smarter questions than I was used to at BU. Fuck. Scorched my assumptions.",
+              "score": 290
+            },
+            {
+              "author": "sunpar1",
+              "body": "I’ve seen smart people from both elite schools and good state schools. I would say elite schools definitely have a higher % of smart people, but when you get a smart person who went to a state school it’s a gold mine. Those people have the talent and the huge chip on the shoulder to really make something of it. ",
+              "score": 210
+            },
+            {
+              "author": "big_internet_guy",
+              "body": "Lots of smart people went to those schools. I think chucks point was when looking at a 40 year old, you shouldn’t be impressed by the school they went to and should be impressed by what they did after college ",
+              "score": 175
+            }
+          ]
+        },
+        {
+          "title": "Doesn't this counter the narrative that the players aren't motivated to play? Jaden Ivey told the Bulls that he was ready to play because Jesus healed his knee.",
+          "author": "TimSPC",
+          "score": 23,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1sah2ay/doesnt_this_counter_the_narrative_that_the/",
+          "selftext": "",
+          "created_utc": 1775135640.0,
+          "num_comments": 39,
+          "id": "1sah2ay",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/s3sqlkkbzrsg1.png",
+          "is_self": false,
+          "upvote_ratio": 0.78,
+          "flair": "",
+          "comments": [
+            {
+              "author": "TreeTrunkGrower",
+              "body": "He’s in a state of psychosis and is mentally unwell. You can’t take anything he says at face value. ",
+              "score": 52
+            },
+            {
+              "author": "Distinct-Cut-6368",
+              "body": "At the risk of stating the obvious he got cut because he was not good enough for the amount of hassle he was. If he behaved exactly the same way but was a second team all-pro, he would still be on the team. ",
+              "score": 32
+            },
+            {
+              "author": "TimSPC",
+              "body": "And the NBA media will have you believe it's the players who want load management.  It has always been the front offices. These guys are literally undergoing miracles to get back on the court!",
+              "score": 13
+            }
+          ]
+        }
+      ]
     }
   }
 }
