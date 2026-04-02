@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-04-02T13:16:05.426030",
-  "generated_at": "2026-04-02 13:16:05 UTC",
+  "timestamp": "2026-04-02T13:51:15.390523",
+  "generated_at": "2026-04-02 13:51:15 UTC",
   "subreddits_count": 12,
-  "total_posts": 0,
+  "total_posts": 5,
   "feeds": [
     "Best of Hour",
     "Best of 24h",
@@ -43,7 +43,6 @@
       "Hot"
     ],
     "soccer": [
-      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
@@ -117,7 +116,88 @@
       "Hot": []
     },
     "soccer": {
-      "Best of Hour": [],
+      "Best of Hour": [
+        {
+          "title": "[Sky Italia] Italian Federation president Gabriele Gravina has just resigned. It’s over.",
+          "author": "Sparky-moon",
+          "score": 372,
+          "url": "https://www.reddit.com/r/soccer/comments/1sah7eh/sky_italia_italian_federation_president_gabriele/",
+          "selftext": "",
+          "created_utc": 1775135985.0,
+          "num_comments": 33,
+          "id": "1sah7eh",
+          "subreddit": "soccer",
+          "link_url": "https://sport.sky.it/calcio/mondiali/2026/04/02/italia-nazionale-news-gravina-figc-ct",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Official Source",
+          "comments": []
+        },
+        {
+          "title": "Woltemade: \"It bothers me. If someone claims I’m in a slump, I’d argue this person doesn’t watch many Newcastle games. Of course I score fewer goals now. Right now, I should be judged on how I handle duels or secure space.\"",
+          "author": "OkayFine101",
+          "score": 127,
+          "url": "https://www.reddit.com/r/soccer/comments/1saggqw/woltemade_it_bothers_me_if_someone_claims_im_in_a/",
+          "selftext": "",
+          "created_utc": 1775134117.0,
+          "num_comments": 62,
+          "id": "1saggqw",
+          "subreddit": "soccer",
+          "link_url": "https://www.shieldsgazette.com/sport/football/newcastle-united/newcastle-united-news-nick-woltemade-6551566",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "Quotes",
+          "comments": []
+        },
+        {
+          "title": "[Burt, Tele] Exc: Pep Guardiola will not make Man City decision until end of season. 55-year-old has one year remaining on his contract but wants to evaluate in May before committing to any future. Guardiola wants to analyse in May where City are under him, how he feels, and then decide.",
+          "author": "OkayFine101",
+          "score": 46,
+          "url": "https://www.reddit.com/r/soccer/comments/1sagtkc/burt_tele_exc_pep_guardiola_will_not_make_man/",
+          "selftext": "",
+          "created_utc": 1775135037.0,
+          "num_comments": 23,
+          "id": "1sagtkc",
+          "subreddit": "soccer",
+          "link_url": "https://www.telegraph.co.uk/football/2026/04/02/guardiola-man-city-decision-end-of-season-maresca-alonso/",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "News",
+          "comments": []
+        },
+        {
+          "title": "Luis Enrique: \"I would like to have 20 players who can play everywhere. Nuno Mendes as a full-back, Nuno Mendes as a winger, Nuno Mendes as a number 9... Except for the goalkeepers, who are at a very high level, it would be a dream to have 20 players who can play everywhere.”",
+          "author": "Sparky-moon",
+          "score": 32,
+          "url": "https://www.reddit.com/r/soccer/comments/1sagy55/luis_enrique_i_would_like_to_have_20_players_who/",
+          "selftext": "\"I would like to have 20 players who can play everywhere. Nuno Mendes as a full-back, Nuno Mendes as a winger, Nuno Mendes as a number 9... Except for the goalkeepers, who are at a very high level, it would be a dream to have 20 players who can play everywhere. Imagine the opponent when they see the lineup with players who can play anywhere...\"\n\n[Source](https://www.psg.fr/content/luis-enrique-montrer-que-nous-sommes-prets-conference-de-presse-paris-saint-germain-toulouse-fc-ligue-1-2025-2026)\n",
+          "created_utc": 1775135361.0,
+          "num_comments": 12,
+          "id": "1sagy55",
+          "subreddit": "soccer",
+          "link_url": "https://v.redd.it/c54lobbi0ssg1",
+          "is_self": false,
+          "upvote_ratio": 0.9,
+          "flair": "Quotes",
+          "comments": []
+        },
+        {
+          "title": "Former footballer Samir Nasri, who lives in Dubai, could be ordered to pay 5 million euros to the French tax authorities.",
+          "author": "Adventurous-Salt5986",
+          "score": 28,
+          "url": "https://www.reddit.com/r/soccer/comments/1sagkkt/former_footballer_samir_nasri_who_lives_in_dubai/",
+          "selftext": "The tax authorities have ordered the seizure of a property belonging to Samir Nasri, as well as the freezing of his bank accounts, in anticipation of a major tax dispute. According to our information, the former international footballer will contest the proposed tax adjustment.",
+          "created_utc": 1775134408.0,
+          "num_comments": 16,
+          "id": "1sagkkt",
+          "subreddit": "soccer",
+          "link_url": "https://www.lesechos.fr/patrimoine/impots/impots-expatrie-a-dubai-lex-footballeur-samir-nasri-pourrait-il-etre-condamne-a-verser-5-millions-deuros-au-fisc-francais-2223858",
+          "is_self": false,
+          "upvote_ratio": 0.91,
+          "flair": "News",
+          "comments": []
+        }
+      ],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": []
