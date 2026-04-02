@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-04-02T13:55:27.983303",
-  "generated_at": "2026-04-02 13:55:27 UTC",
+  "timestamp": "2026-04-02T14:01:11.421022",
+  "generated_at": "2026-04-02 14:01:11 UTC",
   "subreddits_count": 12,
   "total_posts": 1,
   "feeds": [
@@ -90,16 +90,16 @@
         {
           "title": "Big 12 commish Brett Yormark: 'Cody Campbell does not run the Big 12'",
           "author": "redwave2505",
-          "score": 19,
+          "score": 26,
           "url": "https://www.reddit.com/r/CFB/comments/1sahf4f/big_12_commish_brett_yormark_cody_campbell_does/",
           "selftext": "",
           "created_utc": 1775136517.0,
-          "num_comments": 25,
+          "num_comments": 32,
           "id": "1sahf4f",
           "subreddit": "CFB",
           "link_url": "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/04/02/brett-yormark-says-texas-tech-football-donor-does-not-run-the-big-12/89343929007/",
           "is_self": false,
-          "upvote_ratio": 0.95,
+          "upvote_ratio": 0.96,
           "flair": "News",
           "comments": []
         }
