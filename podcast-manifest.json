@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Tiger\u2019s Crisis, an NBA Mini-Mailbag, the Confusing Knicks, 'Survivor 50,' and the Yucky Red Sox | With Joe House, Jason Concepcion, and Bill\u2019s Dad",
+        "date": "Apr 03, 2026",
+        "dateSort": "2026-04-03",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8936254258.mp3"
+      },
+      {
         "title": "A Radical NBA Idea, Wemby\u2019s Musical Comp, Despising Duke, and Baseball\u2019s ABS Revolution With Chuck Klosterman",
         "date": "Mar 31, 2026",
         "dateSort": "2026-03-31",
@@ -25,18 +31,18 @@
         "date": "Mar 25, 2026",
         "dateSort": "2026-03-25",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9606607021.mp3"
-      },
-      {
-        "title": "Luka\u2019s Heater, Wemby\u2019s Bid, and Stealth Winners of the NBA Season With Zach Lowe",
-        "date": "Mar 23, 2026",
-        "dateSort": "2026-03-23",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9936571397.mp3"
       }
     ]
   },
   {
     "name": "The Watch",
     "episodes": [
+      {
+        "title": "\u2018Something Very Bad Is Going to Happen\u2019 Creator Explains Everything You Want to Know About Her Netflix Hit. Plus, \u2018The Pitt\u2019 S2E13 and Prime-Time TV Grids With Joanna Robinson.",
+        "date": "Apr 03, 2026",
+        "dateSort": "2026-04-03",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5203385589.mp3"
+      },
       {
         "title": "\u2018Paradise\u2019 Season 2 Finale With Mina Kimes. Plus, \u2018Euphoria\u2019 S3 Trailer, \u2018Something Very Bad Is Going to Happen,' and 'Project Hail Mary'",
         "date": "Mar 30, 2026",
@@ -60,12 +66,6 @@
         "date": "Mar 20, 2026",
         "dateSort": "2026-03-20",
         "audioUrl": "https://traffic.megaphone.fm/GLT9791523573.mp3"
-      },
-      {
-        "title": "One Award After Another: Oscars Recap. Plus, \u2018Paradise\u2019 Season 2, Episodes 4-6.",
-        "date": "Mar 16, 2026",
-        "dateSort": "2026-03-16",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1360434366.mp3"
       }
     ]
   },
