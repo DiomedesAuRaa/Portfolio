@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Half-Baked Ideas With Kevin Wildes. Plus: The Masters, \u2018The Pitt\u2019, Coachella, and \u2018Love Story\u2019 With Nathan Hubbard and Joanna Robinson.",
+        "date": "Apr 07, 2026",
+        "dateSort": "2026-04-07",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7687886721.mp3"
+      },
+      {
         "title": "The 2026 Made-Up NBA Awards With Zach Lowe",
         "date": "Apr 06, 2026",
         "dateSort": "2026-04-06",
@@ -25,12 +31,6 @@
         "date": "Mar 30, 2026",
         "dateSort": "2026-03-30",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9259586787.mp3"
-      },
-      {
-        "title": "NBA Hot Takes, OKC\u2019s Red Flag, and Giannis vs. Father Time With Kirk Goldsberry and Joe House",
-        "date": "Mar 26, 2026",
-        "dateSort": "2026-03-26",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6722791617.mp3"
       }
     ]
   },
@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Resurrection Life",
+        "date": "Apr 05, 2026",
+        "dateSort": "2026-04-05",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17315503/ebcba3fd5ae946c4ae7b51a8b9801825_20260405_MC_EASTER.mp3"
+      },
+      {
         "title": "Below the Line",
         "date": "Mar 29, 2026",
         "dateSort": "2026-03-29",
@@ -204,12 +210,6 @@
         "date": "Mar 08, 2026",
         "dateSort": "2026-03-08",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17296454/08fd63e7ac584f7ebb950698f74797ba_20260308_MC_ThatYouMayKnow_Wk7_1.mp3"
-      },
-      {
-        "title": "Faith that Overcomes",
-        "date": "Mar 01, 2026",
-        "dateSort": "2026-03-01",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17288158/9b7a8708508746d1a1d496fd2b2096b0_20260301_MK_ThatYouMayKnow_Wk6.mp3"
       }
     ]
   },
