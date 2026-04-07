@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 2026 Movie Star Rankings: 35 Under 35",
+        "date": "Apr 07, 2026",
+        "dateSort": "2026-04-07",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5994302067.mp3"
+      },
+      {
         "title": "The Top 10 Movie Plot Twists and \u2018The Drama.\u2019 Plus: \u2018The Super Mario Galaxy Movie\u2019 Certainly Exists.",
         "date": "Apr 03, 2026",
         "dateSort": "2026-04-03",
@@ -274,12 +280,6 @@
         "date": "Mar 23, 2026",
         "dateSort": "2026-03-23",
         "audioUrl": "https://traffic.megaphone.fm/GLT2691335389.mp3"
-      },
-      {
-        "title": "\u2018Project Hail Mary\u2019 Will Amaze! Amaze! Amaze! With Phil Lord and Chris Miller",
-        "date": "Mar 20, 2026",
-        "dateSort": "2026-03-20",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4514717790.mp3"
       }
     ]
   },
