@@ -322,12 +322,6 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
-        "title": "Verstappen\u2019s race engineer is LEAVING Red Bull for McLaren\u2026 what happens next?",
-        "date": "Apr 09, 2026",
-        "dateSort": "2026-04-09",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69d777cd4fddd83a67682876/media.mp3"
-      },
-      {
         "title": "These F1 circuits NEED to make a comeback",
         "date": "Apr 07, 2026",
         "dateSort": "2026-04-07",
@@ -350,6 +344,12 @@
         "date": "Mar 29, 2026",
         "dateSort": "2026-03-29",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69c90186da264d07c6baf480/media.mp3"
+      },
+      {
+        "title": "Reaction to Japanese GP qualifying",
+        "date": "Mar 28, 2026",
+        "dateSort": "2026-03-28",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69c7afe8a354c89460a6ff75/media.mp3"
       }
     ]
   }
