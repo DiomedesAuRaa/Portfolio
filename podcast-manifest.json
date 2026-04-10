@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Tatum in NYC, MVP Questions, Best First-Round Matchups, and Kon Vs. Coop, With Tim Legler",
+        "date": "Apr 10, 2026",
+        "dateSort": "2026-04-10",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4483959090.mp3"
+      },
+      {
         "title": "Half-Baked Ideas With Kevin Wildes. Plus: The Masters, \u2018The Pitt\u2019, Coachella, and \u2018Love Story\u2019 With Nathan Hubbard and Joanna Robinson.",
         "date": "Apr 07, 2026",
         "dateSort": "2026-04-07",
@@ -25,12 +31,6 @@
         "date": "Mar 31, 2026",
         "dateSort": "2026-03-31",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1425620382.mp3"
-      },
-      {
-        "title": "UConn\u2019s Miracle, Weirdest NBA Season Ever, A Scary Playoff Team Draft, and an Iffy Expansion Plan With Zach Lowe",
-        "date": "Mar 30, 2026",
-        "dateSort": "2026-03-30",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9259586787.mp3"
       }
     ]
   },
