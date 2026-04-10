@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018The Pitt\u2019 S2E14, \u2018The Boys\u2019 S5, and \u2018Your Friends and Neighbors\u2019 S2. Plus, \u2018The Punisher: One Last Kill\u2019 Trailer and \u2018Top Chef\u2019 S23E5.",
+        "date": "Apr 10, 2026",
+        "dateSort": "2026-04-10",
+        "audioUrl": "https://traffic.megaphone.fm/GLT4773382973.mp3"
+      },
+      {
         "title": "The WGA\u2019s Surprise Deal With the Studios, Bad Robot Downsizes, and the State of International Crime Thrillers on TV",
         "date": "Apr 06, 2026",
         "dateSort": "2026-04-06",
@@ -60,12 +66,6 @@
         "date": "Mar 27, 2026",
         "dateSort": "2026-03-27",
         "audioUrl": "https://traffic.megaphone.fm/GLT1901689959.mp3"
-      },
-      {
-        "title": "\u2018Project Hail Mary,\u2019 \u2018Marshals,\u2019 \u2018Jury Duty Presents: Company Retreat,\u2019 and \u2018SNL UK.\u2019 Plus, \u2018Paradise\u2019 S2E7.",
-        "date": "Mar 24, 2026",
-        "dateSort": "2026-03-24",
-        "audioUrl": "https://traffic.megaphone.fm/GLT6892667939.mp3"
       }
     ]
   },
