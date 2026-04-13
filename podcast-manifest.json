@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Single-Minded",
+        "date": "Apr 12, 2026",
+        "dateSort": "2026-04-12",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17318599/944c63f524bd440c81fce72ee90ee34e_20260412_Matt_PreConsecrate_Wk1.mp3"
+      },
+      {
         "title": "Resurrection Life",
         "date": "Apr 05, 2026",
         "dateSort": "2026-04-05",
@@ -204,12 +210,6 @@
         "date": "Mar 15, 2026",
         "dateSort": "2026-03-15",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17300447/23685f93daaa4775b398f8311d96a24b_20260315_MK_Standalone.mp3"
-      },
-      {
-        "title": "That You May Know",
-        "date": "Mar 08, 2026",
-        "dateSort": "2026-03-08",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17296454/08fd63e7ac584f7ebb950698f74797ba_20260308_MC_ThatYouMayKnow_Wk7_1.mp3"
       }
     ]
   },
