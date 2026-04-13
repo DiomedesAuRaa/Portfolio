@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The 30 Most Intriguing NBA Playoff Guys, With Zach Lowe",
+        "date": "Apr 13, 2026",
+        "dateSort": "2026-04-13",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9137278902.mp3"
+      },
+      {
         "title": "Tatum in NYC, MVP Questions, Best First-Round Matchups, and Kon Vs. Coop, With Tim Legler",
         "date": "Apr 10, 2026",
         "dateSort": "2026-04-10",
@@ -25,12 +31,6 @@
         "date": "Apr 03, 2026",
         "dateSort": "2026-04-03",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8936254258.mp3"
-      },
-      {
-        "title": "A Radical NBA Idea, Wemby\u2019s Musical Comp, Despising Duke, and Baseball\u2019s ABS Revolution With Chuck Klosterman",
-        "date": "Mar 31, 2026",
-        "dateSort": "2026-03-31",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1425620382.mp3"
       }
     ]
   },
