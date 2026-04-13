@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Euphoria\u2019 Season 3 Premiere",
+        "date": "Apr 13, 2026",
+        "dateSort": "2026-04-13",
+        "audioUrl": "https://traffic.megaphone.fm/GLT7428098251.mp3?updated=1776024951"
+      },
+      {
         "title": "\u2018The Pitt\u2019 S2E14, \u2018The Boys\u2019 S5, and \u2018Your Friends and Neighbors\u2019 S2. Plus, \u2018The Punisher: One Last Kill\u2019 Trailer and \u2018Top Chef\u2019 S23E5.",
         "date": "Apr 10, 2026",
         "dateSort": "2026-04-10",
@@ -60,12 +66,6 @@
         "date": "Mar 30, 2026",
         "dateSort": "2026-03-30",
         "audioUrl": "https://traffic.megaphone.fm/GLT8521588079.mp3?updated=1774913375"
-      },
-      {
-        "title": "Patrick J. Adams on the Making of \u2018The Madison.\u2019 Plus, \u2018The Pitt\u2019 S2E12 and a TV News Roundup.",
-        "date": "Mar 27, 2026",
-        "dateSort": "2026-03-27",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1901689959.mp3"
       }
     ]
   },
