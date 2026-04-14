@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 2026 Summer Movie Preview \"Boom or Bust\" Game",
+        "date": "Apr 14, 2026",
+        "dateSort": "2026-04-14",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5163487235.mp3"
+      },
+      {
         "title": "The Meryl Streep Hall of Fame",
         "date": "Apr 10, 2026",
         "dateSort": "2026-04-10",
@@ -274,12 +280,6 @@
         "date": "Mar 30, 2026",
         "dateSort": "2026-03-30",
         "audioUrl": "https://traffic.megaphone.fm/GLT5640806997.mp3?updated=1774657570"
-      },
-      {
-        "title": "The 1988 Movie Draft",
-        "date": "Mar 26, 2026",
-        "dateSort": "2026-03-26",
-        "audioUrl": "https://traffic.megaphone.fm/GLT5834420097.mp3"
       }
     ]
   },
