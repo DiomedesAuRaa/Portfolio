@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "An NBA Playoff Preview With Doc Rivers, Plus Nick Khan on WrestleMania 42 and the Next Big WWE Stars",
+        "date": "Apr 17, 2026",
+        "dateSort": "2026-04-17",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976744352.mp3"
+      },
+      {
         "title": "Two Crazy Play-In Games, and 2026 NBA Awards Picks With Kirk Goldsberry and Joe House",
         "date": "Apr 15, 2026",
         "dateSort": "2026-04-15",
@@ -25,12 +31,6 @@
         "date": "Apr 07, 2026",
         "dateSort": "2026-04-07",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7687886721.mp3"
-      },
-      {
-        "title": "The 2026 Made-Up NBA Awards With Zach Lowe",
-        "date": "Apr 06, 2026",
-        "dateSort": "2026-04-06",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3628315331.mp3"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "What F1 fans like about the new regulations",
+        "date": "Apr 17, 2026",
+        "dateSort": "2026-04-17",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69e114243e815a8f98effce5/media.mp3"
+      },
+      {
         "title": "Predicting the 2029 F1 Driver Line-Ups",
         "date": "Apr 14, 2026",
         "dateSort": "2026-04-14",
@@ -344,12 +350,6 @@
         "date": "Apr 02, 2026",
         "dateSort": "2026-04-02",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69ce289e636847a999b13d2c/media.mp3"
-      },
-      {
-        "title": "Japanese GP Driver Ratings",
-        "date": "Mar 31, 2026",
-        "dateSort": "2026-03-31",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69cc1ae04518a0e11caa6fa6/media.mp3"
       }
     ]
   }
