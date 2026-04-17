@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018The Pitt\u2019 Season 2 Finale, \u2018Top Chef\u2019 S23E6, and \u2018Bandi\u2019",
+        "date": "Apr 17, 2026",
+        "dateSort": "2026-04-17",
+        "audioUrl": "https://traffic.megaphone.fm/GLT2884249929.mp3"
+      },
+      {
         "title": "\u2018Euphoria\u2019 Season 3 Premiere",
         "date": "Apr 13, 2026",
         "dateSort": "2026-04-13",
@@ -60,12 +66,6 @@
         "date": "Apr 03, 2026",
         "dateSort": "2026-04-03",
         "audioUrl": "https://traffic.megaphone.fm/GLT5203385589.mp3"
-      },
-      {
-        "title": "\u2018Paradise\u2019 Season 2 Finale With Mina Kimes. Plus, \u2018Euphoria\u2019 S3 Trailer, \u2018Something Very Bad Is Going to Happen,' and 'Project Hail Mary'",
-        "date": "Mar 30, 2026",
-        "dateSort": "2026-03-30",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8521588079.mp3?updated=1774913375"
       }
     ]
   },
