@@ -1,7 +1,38 @@
 [
   {
     "name": "Bill Simmons Podcast",
-    "episodes": []
+    "episodes": [
+      {
+        "title": "An NBA Playoff Preview With Doc Rivers, Plus Nick Khan on WrestleMania 42 and the Next Big WWE Stars",
+        "date": "Apr 17, 2026",
+        "dateSort": "2026-04-17",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976744352.mp3"
+      },
+      {
+        "title": "Two Crazy Play-In Games, and 2026 NBA Awards Picks With Kirk Goldsberry and Joe House",
+        "date": "Apr 15, 2026",
+        "dateSort": "2026-04-15",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8243385919.mp3"
+      },
+      {
+        "title": "The 30 Most Intriguing NBA Playoff Guys, With Zach Lowe",
+        "date": "Apr 13, 2026",
+        "dateSort": "2026-04-13",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9137278902.mp3"
+      },
+      {
+        "title": "Tatum in NYC, MVP Questions, Best First-Round Matchups, and Kon Vs. Coop, With Tim Legler",
+        "date": "Apr 10, 2026",
+        "dateSort": "2026-04-10",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4483959090.mp3"
+      },
+      {
+        "title": "Half-Baked Ideas With Kevin Wildes. Plus: The Masters, \u2018The Pitt\u2019, Coachella, and \u2018Love Story\u2019 With Nathan Hubbard and Joanna Robinson.",
+        "date": "Apr 07, 2026",
+        "dateSort": "2026-04-07",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7687886721.mp3"
+      }
+    ]
   },
   {
     "name": "The Watch",
