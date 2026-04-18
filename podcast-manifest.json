@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 15 Most Anticipated Movies Out of CinemaCon and Our Trip to the Sphere!",
+        "date": "Apr 17, 2026",
+        "dateSort": "2026-04-17",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9443911644.mp3"
+      },
+      {
         "title": "The 2026 Summer Movie Preview \"Boom or Bust\" Game",
         "date": "Apr 14, 2026",
         "dateSort": "2026-04-14",
@@ -274,12 +280,6 @@
         "date": "Apr 03, 2026",
         "dateSort": "2026-04-03",
         "audioUrl": "https://traffic.megaphone.fm/GLT2094538734.mp3"
-      },
-      {
-        "title": "The Best Movies of the Year \u2026 So Far. Plus: 15 We Missed!",
-        "date": "Mar 30, 2026",
-        "dateSort": "2026-03-30",
-        "audioUrl": "https://traffic.megaphone.fm/GLT5640806997.mp3?updated=1774657570"
       }
     ]
   },
