@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Joel Klatt\u2019s Final 2026 Mock Draft",
+        "date": "Apr 20, 2026",
+        "dateSort": "2026-04-20",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM8878353519.mp3?updated=1776656328"
+      },
+      {
         "title": "Daniel Jeremiah on Ohio State\u2019s historic Draft Class + Player Comps & Draft Ranges for Top Prospects",
         "date": "Apr 13, 2026",
         "dateSort": "2026-04-13",
@@ -130,18 +136,18 @@
         "date": "Mar 23, 2026",
         "dateSort": "2026-03-23",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM8110978921.mp3?updated=1774216254"
-      },
-      {
-        "title": "Joel Klatt\u2019s 2026 Mock Draft 2.0",
-        "date": "Mar 16, 2026",
-        "dateSort": "2026-03-16",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM5238724193.mp3?updated=1773602118"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "For Your Glory: Why and How We Worship with Trip Lee",
+        "date": "Apr 20, 2026",
+        "dateSort": "2026-04-20",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW5563106455.mp3?updated=1776364572"
+      },
       {
         "title": "Sex, Sexual Trauma, and God\u2019s Design with Dr. Juli Slattery",
         "date": "Apr 13, 2026",
@@ -165,12 +171,6 @@
         "date": "Mar 23, 2026",
         "dateSort": "2026-03-23",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW1952847585.mp3?updated=1774278080"
-      },
-      {
-        "title": "Everybody Got a Lil Peter in Them",
-        "date": "Mar 16, 2026",
-        "dateSort": "2026-03-16",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW6986535982.mp3?updated=1773632713"
       }
     ]
   },
