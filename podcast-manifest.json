@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 900th-Episode Mega-Voicemailbag!",
+        "date": "Apr 21, 2026",
+        "dateSort": "2026-04-21",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9095832764.mp3"
+      },
+      {
         "title": "The 15 Most Anticipated Movies Out of CinemaCon and Our Trip to the Sphere!",
         "date": "Apr 17, 2026",
         "dateSort": "2026-04-17",
@@ -274,12 +280,6 @@
         "date": "Apr 07, 2026",
         "dateSort": "2026-04-07",
         "audioUrl": "https://traffic.megaphone.fm/GLT5994302067.mp3"
-      },
-      {
-        "title": "The Top 10 Movie Plot Twists and \u2018The Drama.\u2019 Plus: \u2018The Super Mario Galaxy Movie\u2019 Certainly Exists.",
-        "date": "Apr 03, 2026",
-        "dateSort": "2026-04-03",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2094538734.mp3"
       }
     ]
   },
