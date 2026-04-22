@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "Bill Simmons Joins the Show, Plus a 2026 NFL Draft Preview",
+        "date": "Apr 22, 2026",
+        "dateSort": "2026-04-22",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5081729575.mp3"
+      },
+      {
         "title": "Bill Bellamy and Rebooting the Booty Call, Plus the Russini-Vrabel Situation",
         "date": "Apr 15, 2026",
         "dateSort": "2026-04-15",
@@ -239,12 +245,6 @@
         "date": "Mar 25, 2026",
         "dateSort": "2026-03-25",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9946171000.mp3"
-      },
-      {
-        "title": "March Madness Takeover Begins",
-        "date": "Mar 18, 2026",
-        "dateSort": "2026-03-18",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1231839876.mp3"
       }
     ]
   },
