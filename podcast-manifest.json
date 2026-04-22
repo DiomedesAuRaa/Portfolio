@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "NBA Panic Rankings, NFL Draft Guesses, and a Michael Jackson Movie Review | With Todd McShay, Steve Muench, and Van Lathan",
+        "date": "Apr 22, 2026",
+        "dateSort": "2026-04-22",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8605751451.mp3"
+      },
+      {
         "title": "A Magic Upset, a Lakers Surprise, Playoff Wemby, El Cheapo, Bill\u2019s Award Flip, and Other Round 1 Notes With Zach Lowe",
         "date": "Apr 20, 2026",
         "dateSort": "2026-04-20",
@@ -25,12 +31,6 @@
         "date": "Apr 13, 2026",
         "dateSort": "2026-04-13",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9137278902.mp3"
-      },
-      {
-        "title": "Tatum in NYC, MVP Questions, Best First-Round Matchups, and Kon Vs. Coop, With Tim Legler",
-        "date": "Apr 10, 2026",
-        "dateSort": "2026-04-10",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4483959090.mp3"
       }
     ]
   },
