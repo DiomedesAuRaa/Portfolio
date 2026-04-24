@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "NFL Draft Notes, Knicks and Nuggets Red Flags, Atlanta\u2019s Moment, and Vrabel\u2019s Mess | With Rob Mahoney and Sean Fennessey",
+        "date": "Apr 24, 2026",
+        "dateSort": "2026-04-24",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9071069279.mp3"
+      },
+      {
         "title": "NBA Panic Rankings, NFL Draft Guesses, and a Michael Jackson Movie Review | With Todd McShay, Steve Muench, and Van Lathan",
         "date": "Apr 22, 2026",
         "dateSort": "2026-04-22",
@@ -25,12 +31,6 @@
         "date": "Apr 15, 2026",
         "dateSort": "2026-04-15",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8243385919.mp3"
-      },
-      {
-        "title": "The 30 Most Intriguing NBA Playoff Guys, With Zach Lowe",
-        "date": "Apr 13, 2026",
-        "dateSort": "2026-04-13",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9137278902.mp3"
       }
     ]
   },
