@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018Michael\u2019 Wants to Start Something It Can\u2019t Finish. Plus: \u2018Mother Mary\u2019 With David Lowery!",
+        "date": "Apr 24, 2026",
+        "dateSort": "2026-04-24",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5748892607.mp3"
+      },
+      {
         "title": "The 900th-Episode Mega-Voicemailbag!",
         "date": "Apr 21, 2026",
         "dateSort": "2026-04-21",
@@ -274,12 +280,6 @@
         "date": "Apr 10, 2026",
         "dateSort": "2026-04-10",
         "audioUrl": "https://traffic.megaphone.fm/GLT7063939287.mp3?updated=1775791281"
-      },
-      {
-        "title": "The 2026 Movie Star Rankings: 35 Under 35",
-        "date": "Apr 07, 2026",
-        "dateSort": "2026-04-07",
-        "audioUrl": "https://traffic.megaphone.fm/GLT5994302067.mp3"
       }
     ]
   },
