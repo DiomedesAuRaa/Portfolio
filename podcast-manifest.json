@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Embiid\u2019s Return, Houston\u2019s Weird Weekend, Joker\u2019s Swoon, and a Knicks Gut Check With Zach Lowe",
+        "date": "Apr 27, 2026",
+        "dateSort": "2026-04-27",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7695103814.mp3"
+      },
+      {
         "title": "NFL Draft Notes, Knicks and Nuggets Red Flags, Atlanta\u2019s Moment, and Vrabel\u2019s Mess | With Rob Mahoney and Sean Fennessey",
         "date": "Apr 24, 2026",
         "dateSort": "2026-04-24",
@@ -25,12 +31,6 @@
         "date": "Apr 17, 2026",
         "dateSort": "2026-04-17",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976744352.mp3"
-      },
-      {
-        "title": "Two Crazy Play-In Games, and 2026 NBA Awards Picks With Kirk Goldsberry and Joe House",
-        "date": "Apr 15, 2026",
-        "dateSort": "2026-04-15",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8243385919.mp3"
       }
     ]
   },
