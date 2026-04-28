@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Beef\u2019 Season 2 With Creator Lee Sung Jin. Plus, \u2018Euphoria\u2019 Season 3, Episode 3 and \u2018House of the Dragon\u2019 S3 Teaser.",
+        "date": "Apr 27, 2026",
+        "dateSort": "2026-04-27",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8236732152.mp3?updated=1777333338"
+      },
+      {
         "title": "\u2018Beef\u2019 Is Back: Season 2, Episodes 1-5 and \u2018Top Chef\u2019 S23E7",
         "date": "Apr 23, 2026",
         "dateSort": "2026-04-23",
@@ -60,12 +66,6 @@
         "date": "Apr 13, 2026",
         "dateSort": "2026-04-13",
         "audioUrl": "https://traffic.megaphone.fm/GLT7428098251.mp3?updated=1776024951"
-      },
-      {
-        "title": "\u2018The Pitt\u2019 S2E14, \u2018The Boys\u2019 S5, and \u2018Your Friends and Neighbors\u2019 S2. Plus, \u2018The Punisher: One Last Kill\u2019 Trailer and \u2018Top Chef\u2019 S23E5.",
-        "date": "Apr 10, 2026",
-        "dateSort": "2026-04-10",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4773382973.mp3"
       }
     ]
   },
