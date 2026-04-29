@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Boston Gets Clocked, Round 1 Predictions, and a Mega-Mailbag With Chris Ryan and Joe House",
+        "date": "Apr 29, 2026",
+        "dateSort": "2026-04-29",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3462576629.mp3"
+      },
+      {
         "title": "Embiid\u2019s Return, Houston\u2019s Weird Weekend, Joker\u2019s Swoon, and a Knicks Gut Check With Zach Lowe",
         "date": "Apr 27, 2026",
         "dateSort": "2026-04-27",
@@ -25,12 +31,6 @@
         "date": "Apr 20, 2026",
         "dateSort": "2026-04-20",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3645858920.mp3"
-      },
-      {
-        "title": "An NBA Playoff Preview With Doc Rivers, Plus Nick Khan on WrestleMania 42 and the Next Big WWE Stars",
-        "date": "Apr 17, 2026",
-        "dateSort": "2026-04-17",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976744352.mp3"
       }
     ]
   },
