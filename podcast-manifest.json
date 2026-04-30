@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Widow\u2019s Bay\u2019 Is One of Apple\u2019s Boldest Swings Yet. Plus, \u2018Top Chef\u2019 Restaurant Wars.",
+        "date": "Apr 30, 2026",
+        "dateSort": "2026-04-30",
+        "audioUrl": "https://traffic.megaphone.fm/GLT2344051473.mp3"
+      },
+      {
         "title": "\u2018Beef\u2019 Season 2 With Creator Lee Sung Jin. Plus, \u2018Euphoria\u2019 Season 3, Episode 3 and \u2018House of the Dragon\u2019 S3 Teaser.",
         "date": "Apr 27, 2026",
         "dateSort": "2026-04-27",
@@ -60,12 +66,6 @@
         "date": "Apr 17, 2026",
         "dateSort": "2026-04-17",
         "audioUrl": "https://traffic.megaphone.fm/GLT2884249929.mp3"
-      },
-      {
-        "title": "\u2018Euphoria\u2019 Season 3 Premiere",
-        "date": "Apr 13, 2026",
-        "dateSort": "2026-04-13",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7428098251.mp3?updated=1776024951"
       }
     ]
   },
