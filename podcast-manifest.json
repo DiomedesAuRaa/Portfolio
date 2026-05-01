@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Joker\u2019s Out, and Boston Might Be Next. Plus, an MLB Cocktail Party and 'Survivor 50' With Rob Mahoney, Billy Gil, and Jason Concepcion.",
+        "date": "May 01, 2026",
+        "dateSort": "2026-05-01",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3989086903.mp3"
+      },
+      {
         "title": "Boston Gets Clocked, Round 1 Predictions, and a Mega-Mailbag With Chris Ryan and Joe House",
         "date": "Apr 29, 2026",
         "dateSort": "2026-04-29",
@@ -25,12 +31,6 @@
         "date": "Apr 22, 2026",
         "dateSort": "2026-04-22",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8605751451.mp3"
-      },
-      {
-        "title": "A Magic Upset, a Lakers Surprise, Playoff Wemby, El Cheapo, Bill\u2019s Award Flip, and Other Round 1 Notes With Zach Lowe",
-        "date": "Apr 20, 2026",
-        "dateSort": "2026-04-20",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3645858920.mp3"
       }
     ]
   },
