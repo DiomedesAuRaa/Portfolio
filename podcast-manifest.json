@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Part 2: Cleveland Survives, Knicks-Sixers, and Whaddya Do for Denver, Houston,\u00a0 and Atlanta With Zach Lowe",
+        "date": "May 04, 2026",
+        "dateSort": "2026-05-04",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4919283606.mp3"
+      },
+      {
         "title": "Part 1: Detroit\u2019s Comeback, Philly\u2019s Resurrection, and Celtics Questions With Zach Lowe",
         "date": "May 04, 2026",
         "dateSort": "2026-05-04",
@@ -25,12 +31,6 @@
         "date": "Apr 27, 2026",
         "dateSort": "2026-04-27",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7695103814.mp3"
-      },
-      {
-        "title": "NFL Draft Notes, Knicks and Nuggets Red Flags, Atlanta\u2019s Moment, and Vrabel\u2019s Mess | With Rob Mahoney and Sean Fennessey",
-        "date": "Apr 24, 2026",
-        "dateSort": "2026-04-24",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9071069279.mp3"
       }
     ]
   },
