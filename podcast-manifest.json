@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Part 1: Detroit\u2019s Comeback, Philly\u2019s Resurrection, and Celtics Questions With Zach Lowe",
+        "date": "May 04, 2026",
+        "dateSort": "2026-05-04",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1436321435.mp3"
+      },
+      {
         "title": "Joker\u2019s Out, and Boston Might Be Next. Plus, an MLB Cocktail Party and 'Survivor 50' With Rob Mahoney, Billy Gil, and Jason Concepcion.",
         "date": "May 01, 2026",
         "dateSort": "2026-05-01",
@@ -25,12 +31,6 @@
         "date": "Apr 24, 2026",
         "dateSort": "2026-04-24",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9071069279.mp3"
-      },
-      {
-        "title": "NBA Panic Rankings, NFL Draft Guesses, and a Michael Jackson Movie Review | With Todd McShay, Steve Muench, and Van Lathan",
-        "date": "Apr 22, 2026",
-        "dateSort": "2026-04-22",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8605751451.mp3"
       }
     ]
   },
