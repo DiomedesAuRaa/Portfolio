@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Miami GP Driver Ratings",
+        "date": "May 05, 2026",
+        "dateSort": "2026-05-05",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69f95fb06cf169fbff715154/media.mp3"
+      },
+      {
         "title": "Miami GP Race Review",
         "date": "May 03, 2026",
         "dateSort": "2026-05-03",
@@ -344,12 +350,6 @@
         "date": "May 02, 2026",
         "dateSort": "2026-05-02",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69f53786742a9d054a63f3e8/media.mp3"
-      },
-      {
-        "title": "Our 2026 Miami GP predictions",
-        "date": "Apr 28, 2026",
-        "dateSort": "2026-04-28",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69ef536978b1680f4227d292/media.mp3"
       }
     ]
   }
