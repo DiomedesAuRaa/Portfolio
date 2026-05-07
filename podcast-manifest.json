@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Physical Media High Council Reconvenes!",
+        "date": "May 07, 2026",
+        "dateSort": "2026-05-07",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1731456696.mp3"
+      },
+      {
         "title": "The \u2018Star Wars\u2019 Rankings and the 'Andor' Miracle",
         "date": "May 04, 2026",
         "dateSort": "2026-05-04",
@@ -274,18 +280,18 @@
         "date": "Apr 24, 2026",
         "dateSort": "2026-04-24",
         "audioUrl": "https://traffic.megaphone.fm/GLT5748892607.mp3"
-      },
-      {
-        "title": "The 900th-Episode Mega-Voicemailbag!",
-        "date": "Apr 21, 2026",
-        "dateSort": "2026-04-21",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9095832764.mp3"
       }
     ]
   },
   {
     "name": "Knowing Faith",
     "episodes": [
+      {
+        "title": "If I Keep Committing the Same Sin, Am I Still a Christian?",
+        "date": "May 07, 2026",
+        "dateSort": "2026-05-07",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/3eceb520-229d-435e-af14-291d06d714a5/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=3eceb520-229d-435e-af14-291d06d714a5&feed=V2lHo6VQ"
+      },
       {
         "title": "Is It Wrong to Use AI?",
         "date": "Apr 30, 2026",
@@ -309,12 +315,6 @@
         "date": "Apr 09, 2026",
         "dateSort": "2026-04-09",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/9e30896f-bf87-4452-8fac-a52fc166d734/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=9e30896f-bf87-4452-8fac-a52fc166d734&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Does God Endorse Violence?",
-        "date": "Apr 02, 2026",
-        "dateSort": "2026-04-02",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/9ab1f3ef-8c3d-414d-8bf5-fed49396fa85/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=9ab1f3ef-8c3d-414d-8bf5-fed49396fa85&feed=V2lHo6VQ"
       }
     ]
   },
