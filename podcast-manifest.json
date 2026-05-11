@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Wizards Win (Something!) and More Lottery Reactions, Plus the Juggernaut Knicks With Joe House, Tate Frazier, and Chris Vernon",
+        "date": "May 11, 2026",
+        "dateSort": "2026-05-11",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8079319337.mp3"
+      },
+      {
         "title": "Five NBA Playoff Takes, Plus David Letterman\u2019s First-Ever BS Pod Appearance (We Did It!!!)",
         "date": "May 08, 2026",
         "dateSort": "2026-05-08",
@@ -25,12 +31,6 @@
         "date": "May 04, 2026",
         "dateSort": "2026-05-04",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1436321435.mp3"
-      },
-      {
-        "title": "Joker\u2019s Out, and Boston Might Be Next. Plus, an MLB Cocktail Party and 'Survivor 50' With Rob Mahoney, Billy Gil, and Jason Concepcion.",
-        "date": "May 01, 2026",
-        "dateSort": "2026-05-01",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3989086903.mp3"
       }
     ]
   },
