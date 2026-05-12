@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Euphoria\u2019 Season 3, Episode 5 and the \u2018Cape Fear\u2019 Trailer. Plus, Why \u2018Legends\u2019 Is Crime Drama Excellence.",
+        "date": "May 11, 2026",
+        "dateSort": "2026-05-11",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8968473822.mp3"
+      },
+      {
         "title": "\u2018The Bear\u2019 Drops a Secret Episode! Plus, \u2018Widow\u2019s Bay\u2019 E3 and \u2018Top Chef\u2019 S23E9.",
         "date": "May 07, 2026",
         "dateSort": "2026-05-07",
@@ -60,12 +66,6 @@
         "date": "Apr 27, 2026",
         "dateSort": "2026-04-27",
         "audioUrl": "https://traffic.megaphone.fm/GLT8236732152.mp3?updated=1777600993"
-      },
-      {
-        "title": "\u2018Beef\u2019 Is Back: Season 2, Episodes 1-5 and \u2018Top Chef\u2019 S23E7",
-        "date": "Apr 23, 2026",
-        "dateSort": "2026-04-23",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4266172881.mp3?updated=1776994065"
       }
     ]
   },
@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Robert Duvall Hall of Fame",
+        "date": "May 11, 2026",
+        "dateSort": "2026-05-11",
+        "audioUrl": "https://traffic.megaphone.fm/GLT6363214717.mp3?updated=1778541937"
+      },
+      {
         "title": "The Physical Media High Council Reconvenes!",
         "date": "May 07, 2026",
         "dateSort": "2026-05-07",
@@ -274,12 +280,6 @@
         "date": "Apr 27, 2026",
         "dateSort": "2026-04-27",
         "audioUrl": "https://traffic.megaphone.fm/GLT3358907671.mp3?updated=1777309875"
-      },
-      {
-        "title": "\u2018Michael\u2019 Wants to Start Something It Can\u2019t Finish. Plus: \u2018Mother Mary\u2019 With David Lowery!",
-        "date": "Apr 24, 2026",
-        "dateSort": "2026-04-24",
-        "audioUrl": "https://traffic.megaphone.fm/GLT5748892607.mp3"
       }
     ]
   },
