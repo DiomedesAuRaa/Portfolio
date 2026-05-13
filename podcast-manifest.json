@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "The Future of UCLA Football With Bob Chesney",
+        "date": "May 13, 2026",
+        "dateSort": "2026-05-13",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7717170620.mp3"
+      },
+      {
         "title": "Did the UCLA Spring Game Convince Joel to Move West? Plus, Trinidad Chambliss Considered LSU",
         "date": "May 06, 2026",
         "dateSort": "2026-05-06",
@@ -239,12 +245,6 @@
         "date": "Apr 15, 2026",
         "dateSort": "2026-04-15",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8021451218.mp3"
-      },
-      {
-        "title": "Michigan and the New Era of College Basketball, Plus Joel\u2019s NFL Draft Big Board",
-        "date": "Apr 08, 2026",
-        "dateSort": "2026-04-08",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7694357708.mp3"
       }
     ]
   },
