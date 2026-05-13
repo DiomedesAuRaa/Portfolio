@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Wemby Gets Revenge, Morey\u2019s Out, and a Trade-Fueled Mega-Mailbag With Kirk Goldsberry and David Jacoby",
+        "date": "May 13, 2026",
+        "dateSort": "2026-05-13",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2743059485.mp3"
+      },
+      {
         "title": "The Wizards Win (Something!) and More Lottery Reactions, Plus the Juggernaut Knicks With Joe House, Tate Frazier, and Chris Vernon",
         "date": "May 11, 2026",
         "dateSort": "2026-05-11",
@@ -25,12 +31,6 @@
         "date": "May 04, 2026",
         "dateSort": "2026-05-04",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4919283606.mp3"
-      },
-      {
-        "title": "Part 1: Detroit\u2019s Comeback, Philly\u2019s Resurrection, and Celtics Questions With Zach Lowe",
-        "date": "May 04, 2026",
-        "dateSort": "2026-05-04",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1436321435.mp3"
       }
     ]
   },
