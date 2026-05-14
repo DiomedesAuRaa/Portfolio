@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "Creator Eric Kripke on Ending \u2018The Boys.\u2019 Plus, \u2018Top Chef\u2019 Season 23, Episode 10 and \u2018East of Eden\u2019 Trailer.",
+        "date": "May 14, 2026",
+        "dateSort": "2026-05-14",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1067511969.mp3"
+      },
+      {
         "title": "\u2018Euphoria\u2019 Season 3, Episode 5 and the \u2018Cape Fear\u2019 Trailer. Plus, Why \u2018Legends\u2019 Is Crime Drama Excellence.",
         "date": "May 11, 2026",
         "dateSort": "2026-05-11",
@@ -60,12 +66,6 @@
         "date": "Apr 30, 2026",
         "dateSort": "2026-04-30",
         "audioUrl": "https://traffic.megaphone.fm/GLT2344051473.mp3?updated=1777600775"
-      },
-      {
-        "title": "\u2018Beef\u2019 Season 2 With Creator Lee Sung Jin. Plus, \u2018Euphoria\u2019 Season 3, Episode 3 and \u2018House of the Dragon\u2019 S3 Teaser.",
-        "date": "Apr 27, 2026",
-        "dateSort": "2026-04-27",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8236732152.mp3?updated=1777600993"
       }
     ]
   },
