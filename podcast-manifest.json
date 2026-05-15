@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Harden\u2019s Moment, an NFL Schedule Glut, Owning the Jazz, and a Boston Sports Check-In\u2014With Bryan Curtis, Bill\u2019s Dad, and Ryan Smith",
+        "date": "May 15, 2026",
+        "dateSort": "2026-05-15",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9870922481.mp3"
+      },
+      {
         "title": "Wemby Gets Revenge, Morey\u2019s Out, and a Trade-Fueled Mega-Mailbag With Kirk Goldsberry and David Jacoby",
         "date": "May 13, 2026",
         "dateSort": "2026-05-13",
@@ -25,12 +31,6 @@
         "date": "May 06, 2026",
         "dateSort": "2026-05-06",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9998957672.mp3"
-      },
-      {
-        "title": "Part 2: Cleveland Survives, Knicks-Sixers, and Whaddya Do for Denver, Houston,\u00a0 and Atlanta With Zach Lowe",
-        "date": "May 04, 2026",
-        "dateSort": "2026-05-04",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4919283606.mp3"
       }
     ]
   },
