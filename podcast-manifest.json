@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 10 Best Horror Movies of the Year \u2026 So Far. Plus: The New Scary Movie Royalty, and \u2018Obsession,\u2019 With Curry Barker!",
+        "date": "May 15, 2026",
+        "dateSort": "2026-05-15",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1395639031.mp3"
+      },
+      {
         "title": "The Robert Duvall Hall of Fame",
         "date": "May 11, 2026",
         "dateSort": "2026-05-11",
@@ -274,12 +280,6 @@
         "date": "May 01, 2026",
         "dateSort": "2026-05-01",
         "audioUrl": "https://traffic.megaphone.fm/GLT2578360451.mp3"
-      },
-      {
-        "title": "The 'Star Wars' Movie Draft",
-        "date": "Apr 27, 2026",
-        "dateSort": "2026-04-27",
-        "audioUrl": "https://traffic.megaphone.fm/GLT3358907671.mp3?updated=1777309875"
       }
     ]
   },
