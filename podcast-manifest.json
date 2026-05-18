@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Good Work",
+        "date": "May 17, 2026",
+        "dateSort": "2026-05-17",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17343620/good-work"
+      },
+      {
         "title": "Fellowship",
         "date": "May 10, 2026",
         "dateSort": "2026-05-10",
@@ -204,12 +210,6 @@
         "date": "Apr 19, 2026",
         "dateSort": "2026-04-19",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17322436/4b1060e488d54a0dbbbe280e87865fa1_20260419_Matt_PreConsecrate_Wk2.mp3"
-      },
-      {
-        "title": "Single-Minded",
-        "date": "Apr 12, 2026",
-        "dateSort": "2026-04-12",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17318599/944c63f524bd440c81fce72ee90ee34e_20260412_Matt_PreConsecrate_Wk1.mp3"
       }
     ]
   },
