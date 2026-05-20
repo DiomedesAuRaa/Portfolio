@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our 2026 Canadian GP predictions",
+        "date": "May 20, 2026",
+        "dateSort": "2026-05-20",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a0c757251fbf1aa9e806f30/media.mp3"
+      },
+      {
         "title": "Our Reaction to Max Verstappen\u2019s Nurburgring 24 Heartbreak",
         "date": "May 18, 2026",
         "dateSort": "2026-05-18",
@@ -344,12 +350,6 @@
         "date": "May 05, 2026",
         "dateSort": "2026-05-05",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69f95fb06cf169fbff715154/media.mp3"
-      },
-      {
-        "title": "Miami GP Race Review",
-        "date": "May 03, 2026",
-        "dateSort": "2026-05-03",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/69f7c743b580238e340b168a/media.mp3"
       }
     ]
   }
