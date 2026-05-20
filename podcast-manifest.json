@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "An MSG Miracle, the Wemby Arrival Game, Tottenham\u2019s Nadir, and 'Euphoria' Season 3 | With Joe House, Chris Ryan, Anthony Dabbundo, and Zoe Simmons",
+        "date": "May 20, 2026",
+        "dateSort": "2026-05-20",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6189800700.mp3"
+      },
+      {
         "title": "An Epic Spurs-Thunder Series, Cleveland Survives, and the Knicks' Moment Is HERE With Zach Lowe",
         "date": "May 18, 2026",
         "dateSort": "2026-05-18",
@@ -25,12 +31,6 @@
         "date": "May 11, 2026",
         "dateSort": "2026-05-11",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8079319337.mp3"
-      },
-      {
-        "title": "Five NBA Playoff Takes, Plus David Letterman\u2019s First-Ever BS Pod Appearance (We Did It!!!)",
-        "date": "May 08, 2026",
-        "dateSort": "2026-05-08",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8887436475.mp3?updated=1778533997"
       }
     ]
   },
