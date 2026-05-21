@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "We Went to Cannes! These Are the 10 Best (and Worst) Things We Saw.",
+        "date": "May 21, 2026",
+        "dateSort": "2026-05-21",
+        "audioUrl": "https://traffic.megaphone.fm/GLT3751623121.mp3"
+      },
+      {
         "title": "The 1976 Movie Draft",
         "date": "May 18, 2026",
         "dateSort": "2026-05-18",
@@ -274,18 +280,18 @@
         "date": "May 07, 2026",
         "dateSort": "2026-05-07",
         "audioUrl": "https://traffic.megaphone.fm/GLT1731456696.mp3"
-      },
-      {
-        "title": "The \u2018Star Wars\u2019 Rankings and the 'Andor' Miracle",
-        "date": "May 04, 2026",
-        "dateSort": "2026-05-04",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9768917853.mp3"
       }
     ]
   },
   {
     "name": "Knowing Faith",
     "episodes": [
+      {
+        "title": "Do Jews and Christians Worship the Same God?",
+        "date": "May 21, 2026",
+        "dateSort": "2026-05-21",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/99ffc47d-d0c3-4b11-bca7-f3a673dd5e1c/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=99ffc47d-d0c3-4b11-bca7-f3a673dd5e1c&feed=V2lHo6VQ"
+      },
       {
         "title": "Do Christians Have to Keep OT Dietary Laws? Should They?",
         "date": "May 14, 2026",
@@ -309,12 +315,6 @@
         "date": "Apr 23, 2026",
         "dateSort": "2026-04-23",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/f4222817-b145-4ad5-85ff-68d1e421ff89/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=f4222817-b145-4ad5-85ff-68d1e421ff89&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Should Women Wear Head Coverings in Church?",
-        "date": "Apr 16, 2026",
-        "dateSort": "2026-04-16",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/c9942ff6-684c-4a4e-bdce-1b52db5f235f/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=c9942ff6-684c-4a4e-bdce-1b52db5f235f&feed=V2lHo6VQ"
       }
     ]
   },
