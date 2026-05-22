@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Red-Hot Knicks, OKC\u2019s Beat-Up-Wemby Ploy, a Mini-Mailbag, and \u2018Survivor 50\u2019 | With Rob Mahoney, Jason Concepcion, and Mallory Rubin",
+        "date": "May 22, 2026",
+        "dateSort": "2026-05-22",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7566277401.mp3"
+      },
+      {
         "title": "An MSG Miracle, the Wemby Arrival Game, Tottenham\u2019s Nadir, and 'Euphoria' Season 3 | With Joe House, Chris Ryan, Anthony Dabbundo, and Zoe Simmons",
         "date": "May 20, 2026",
         "dateSort": "2026-05-20",
@@ -25,18 +31,18 @@
         "date": "May 13, 2026",
         "dateSort": "2026-05-13",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2743059485.mp3"
-      },
-      {
-        "title": "The Wizards Win (Something!) and More Lottery Reactions, Plus the Juggernaut Knicks With Joe House, Tate Frazier, and Chris Vernon",
-        "date": "May 11, 2026",
-        "dateSort": "2026-05-11",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8079319337.mp3"
       }
     ]
   },
   {
     "name": "The Watch",
     "episodes": [
+      {
+        "title": "\u2018Survivor\u2019 Season 50 Finale, \u2018Widow\u2019s Bay\u2019 Episode 5, and All-Time Episodic Runs With Joanna Robinson",
+        "date": "May 22, 2026",
+        "dateSort": "2026-05-22",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8154715884.mp3"
+      },
       {
         "title": "10 Things We Like (and Don\u2019t Like) About \u2018Euphoria\u2019 This Season. Plus, \u201cThe Feed Is Fake\u201d With Lane Brown.",
         "date": "May 18, 2026",
@@ -60,12 +66,6 @@
         "date": "May 07, 2026",
         "dateSort": "2026-05-07",
         "audioUrl": "https://traffic.megaphone.fm/GLT8567958286.mp3?updated=1778188108"
-      },
-      {
-        "title": "\u2018Euphoria\u2019 Season 3, Episode 4 and \u2018Star Wars\u2019 Streaming Numbers. Plus, Pitching Literary Classics as TV Shows.",
-        "date": "May 04, 2026",
-        "dateSort": "2026-05-04",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7549876615.mp3?updated=1777933017"
       }
     ]
   },
