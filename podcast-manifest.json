@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Reaction to Canadian GP qualifying",
+        "date": "May 23, 2026",
+        "dateSort": "2026-05-23",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a122aeb04763270c25dd41f/media.mp3"
+      },
+      {
         "title": "Reaction to Canadian GP sprint race",
         "date": "May 23, 2026",
         "dateSort": "2026-05-23",
@@ -344,12 +350,6 @@
         "date": "May 18, 2026",
         "dateSort": "2026-05-18",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a0ac28d880ee3e71ccfe45c/media.mp3"
-      },
-      {
-        "title": "Can Kimi Antonelli REALLY win the F1 World Championship?",
-        "date": "May 15, 2026",
-        "dateSort": "2026-05-15",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a052208b6bd87ac1c6d7210/media.mp3"
       }
     ]
   }
