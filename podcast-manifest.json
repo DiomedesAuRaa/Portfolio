@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "OKC Gets Wobbled, Cleveland\u2019s Done, and Knicks Nirvana Is Here (Maybe) With Zach Lowe and Sean Fennessey",
+        "date": "May 25, 2026",
+        "dateSort": "2026-05-25",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3574360215.mp3"
+      },
+      {
         "title": "The Red-Hot Knicks, OKC\u2019s Beat-Up-Wemby Ploy, a Mini-Mailbag, and \u2018Survivor 50\u2019 | With Rob Mahoney, Jason Concepcion, and Mallory Rubin",
         "date": "May 22, 2026",
         "dateSort": "2026-05-22",
@@ -25,12 +31,6 @@
         "date": "May 15, 2026",
         "dateSort": "2026-05-15",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9870922481.mp3"
-      },
-      {
-        "title": "Wemby Gets Revenge, Morey\u2019s Out, and a Trade-Fueled Mega-Mailbag With Kirk Goldsberry and David Jacoby",
-        "date": "May 13, 2026",
-        "dateSort": "2026-05-13",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2743059485.mp3"
       }
     ]
   },
@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Why the Big Ten wants to schedule the SEC & Klatt\u2019s 10 favorite matchups he wants to see",
+        "date": "May 25, 2026",
+        "dateSort": "2026-05-25",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM5326563876.mp3?updated=1779654181"
+      },
+      {
         "title": "Is a 24-Team College Football Playoff inevitable now?",
         "date": "May 18, 2026",
         "dateSort": "2026-05-18",
@@ -130,18 +136,18 @@
         "date": "Apr 27, 2026",
         "dateSort": "2026-04-27",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM2527661276.mp3?updated=1777270904"
-      },
-      {
-        "title": "Joel Klatt\u2019s Final 2026 Mock Draft",
-        "date": "Apr 20, 2026",
-        "dateSort": "2026-04-20",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM8878353519.mp3?updated=1776656328"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "Legalism, Sexual Immorality, and Heaven: Listener Q&A",
+        "date": "May 25, 2026",
+        "dateSort": "2026-05-25",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW2686450968.mp3"
+      },
       {
         "title": "Discipling Our Kids with the Krugers",
         "date": "May 18, 2026",
@@ -165,12 +171,6 @@
         "date": "Apr 27, 2026",
         "dateSort": "2026-04-27",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW6043552657.mp3?updated=1777264071"
-      },
-      {
-        "title": "For Your Glory: Why and How We Worship with Trip Lee",
-        "date": "Apr 20, 2026",
-        "dateSort": "2026-04-20",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW5563106455.mp3?updated=1776364572"
       }
     ]
   },
