@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Confidence",
+        "date": "May 24, 2026",
+        "dateSort": "2026-05-24",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17348968/78dca49b7a194cb2b4a7b9ee5b23b69e_20260524_NM_Standalone.mp3"
+      },
+      {
         "title": "Good Work",
         "date": "May 17, 2026",
         "dateSort": "2026-05-17",
@@ -204,12 +210,6 @@
         "date": "Apr 26, 2026",
         "dateSort": "2026-04-26",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17326489/b11ef8ce7a7346438bdc95b63b514dfe_20260426_MC_Philippians_Wk1.mp3"
-      },
-      {
-        "title": "Fear of God",
-        "date": "Apr 19, 2026",
-        "dateSort": "2026-04-19",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17322436/4b1060e488d54a0dbbbe280e87865fa1_20260419_Matt_PreConsecrate_Wk2.mp3"
       }
     ]
   },
