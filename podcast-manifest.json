@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Canadian GP Driver Ratings",
+        "date": "May 26, 2026",
+        "dateSort": "2026-05-26",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a159045d8942d74c4865d4d/media.mp3"
+      },
+      {
         "title": "Canadian GP Race Review",
         "date": "May 25, 2026",
         "dateSort": "2026-05-25",
@@ -344,12 +350,6 @@
         "date": "May 22, 2026",
         "dateSort": "2026-05-22",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a10dc184bd7e3b8af453736/media.mp3"
-      },
-      {
-        "title": "Our 2026 Canadian GP predictions",
-        "date": "May 20, 2026",
-        "dateSort": "2026-05-20",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a0c757251fbf1aa9e806f30/media.mp3"
       }
     ]
   }
