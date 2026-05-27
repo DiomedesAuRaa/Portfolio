@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "A Spurs Fumble, CarusoMania, Brunson\u2019s Mega-Rise and a Knicks Appreciation With Tim Legler and Brian Koppelman",
+        "date": "May 27, 2026",
+        "dateSort": "2026-05-27",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4757813495.mp3"
+      },
+      {
         "title": "OKC Gets Wobbled, Cleveland\u2019s Done, and Knicks Nirvana Is Here (Maybe) With Zach Lowe and Sean Fennessey",
         "date": "May 25, 2026",
         "dateSort": "2026-05-25",
@@ -25,12 +31,6 @@
         "date": "May 18, 2026",
         "dateSort": "2026-05-18",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3079284147.mp3"
-      },
-      {
-        "title": "Harden\u2019s Moment, an NFL Schedule Glut, Owning the Jazz, and a Boston Sports Check-In\u2014With Bryan Curtis, Bill\u2019s Dad, and Ryan Smith",
-        "date": "May 15, 2026",
-        "dateSort": "2026-05-15",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9870922481.mp3"
       }
     ]
   },
