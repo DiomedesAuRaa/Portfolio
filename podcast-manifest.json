@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018The Mandalorian and Grogu\u2019 Is the End of 'Star Wars' As We Know It. Plus: The Winners and Losers at Cannes.",
+        "date": "May 27, 2026",
+        "dateSort": "2026-05-27",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8003249242.mp3"
+      },
+      {
         "title": "We Went to Cannes! These Are the 10 Best (and Worst) Things We Saw.",
         "date": "May 21, 2026",
         "dateSort": "2026-05-21",
@@ -274,12 +280,6 @@
         "date": "May 11, 2026",
         "dateSort": "2026-05-11",
         "audioUrl": "https://traffic.megaphone.fm/GLT6363214717.mp3?updated=1778549991"
-      },
-      {
-        "title": "The Physical Media High Council Reconvenes!",
-        "date": "May 07, 2026",
-        "dateSort": "2026-05-07",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1731456696.mp3"
       }
     ]
   },
