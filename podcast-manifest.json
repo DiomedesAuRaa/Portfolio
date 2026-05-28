@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Spider-Noir\u2019 Is Unsure of Itself. Plus, \u2018Widow\u2019s Bay\u2019 E6-7, \u2018Euphoria\u2019 S3E7, and \u2018Top Chef\u2019 S23E12.",
+        "date": "May 28, 2026",
+        "dateSort": "2026-05-28",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8665331728.mp3"
+      },
+      {
         "title": "\u2018Survivor\u2019 Season 50 Finale, \u2018Widow\u2019s Bay\u2019 Episode 5, and All-Time Episodic Runs With Joanna Robinson",
         "date": "May 22, 2026",
         "dateSort": "2026-05-22",
@@ -60,12 +66,6 @@
         "date": "May 11, 2026",
         "dateSort": "2026-05-11",
         "audioUrl": "https://traffic.megaphone.fm/GLT8968473822.mp3"
-      },
-      {
-        "title": "\u2018The Bear\u2019 Drops a Secret Episode! Plus, \u2018Widow\u2019s Bay\u2019 E3 and \u2018Top Chef\u2019 S23E9.",
-        "date": "May 07, 2026",
-        "dateSort": "2026-05-07",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8567958286.mp3?updated=1778188108"
       }
     ]
   },
