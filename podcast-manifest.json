@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Game 7 Fever in OKC, NBA Lottery Reform, and a Mega-Mailbag With Rob Mahoney, David Jacoby, and Joe House",
+        "date": "May 29, 2026",
+        "dateSort": "2026-05-29",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6866964130.mp3"
+      },
+      {
         "title": "A Spurs Fumble, CarusoMania, Brunson\u2019s Mega-Rise and a Knicks Appreciation With Tim Legler and Brian Koppelman",
         "date": "May 27, 2026",
         "dateSort": "2026-05-27",
@@ -25,12 +31,6 @@
         "date": "May 20, 2026",
         "dateSort": "2026-05-20",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6189800700.mp3"
-      },
-      {
-        "title": "An Epic Spurs-Thunder Series, Cleveland Survives, and the Knicks' Moment Is HERE With Zach Lowe",
-        "date": "May 18, 2026",
-        "dateSort": "2026-05-18",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3079284147.mp3"
       }
     ]
   },
