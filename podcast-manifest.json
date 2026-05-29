@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018Backrooms\u2019 Is the Future of Movies, With Kane Parsons!",
+        "date": "May 29, 2026",
+        "dateSort": "2026-05-29",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8878685139.mp3"
+      },
+      {
         "title": "\u2018The Mandalorian and Grogu\u2019 Is the End of 'Star Wars' As We Know It. Plus: The Winners and Losers at Cannes.",
         "date": "May 27, 2026",
         "dateSort": "2026-05-27",
@@ -274,12 +280,6 @@
         "date": "May 15, 2026",
         "dateSort": "2026-05-15",
         "audioUrl": "https://traffic.megaphone.fm/GLT1395639031.mp3"
-      },
-      {
-        "title": "The Robert Duvall Hall of Fame",
-        "date": "May 11, 2026",
-        "dateSort": "2026-05-11",
-        "audioUrl": "https://traffic.megaphone.fm/GLT6363214717.mp3?updated=1778549991"
       }
     ]
   },
