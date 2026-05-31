@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Down Goes OKC! Spurs-Knicks is Here! What the Hell Just Happened? And What Does OKC Do Now? | With Zach Lowe",
+        "date": "May 31, 2026",
+        "dateSort": "2026-05-31",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976192256.mp3"
+      },
+      {
         "title": "Game 7 Fever in OKC, NBA Lottery Reform, and a Mega-Mailbag With Rob Mahoney, David Jacoby, and Joe House",
         "date": "May 29, 2026",
         "dateSort": "2026-05-29",
@@ -25,12 +31,6 @@
         "date": "May 22, 2026",
         "dateSort": "2026-05-22",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7566277401.mp3"
-      },
-      {
-        "title": "An MSG Miracle, the Wemby Arrival Game, Tottenham\u2019s Nadir, and 'Euphoria' Season 3 | With Joe House, Chris Ryan, Anthony Dabbundo, and Zoe Simmons",
-        "date": "May 20, 2026",
-        "dateSort": "2026-05-20",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6189800700.mp3"
       }
     ]
   },
