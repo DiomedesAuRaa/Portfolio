@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Balance",
+        "date": "May 31, 2026",
+        "dateSort": "2026-05-31",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17352076/d2f9471a9d054336bcff83431e494d83_20260531_AP_Philippians_Wk6.mp3"
+      },
+      {
         "title": "Confidence",
         "date": "May 24, 2026",
         "dateSort": "2026-05-24",
@@ -204,12 +210,6 @@
         "date": "May 03, 2026",
         "dateSort": "2026-05-03",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17332307/2f5aaf16d0724caf93ab88f506312141_20260503_MC_Philippians_Wk2.mp3"
-      },
-      {
-        "title": "Affection & Confidence",
-        "date": "Apr 26, 2026",
-        "dateSort": "2026-04-26",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17326489/b11ef8ce7a7346438bdc95b63b514dfe_20260426_MC_Philippians_Wk1.mp3"
       }
     ]
   },
