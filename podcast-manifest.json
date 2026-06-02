@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "A Finals Pick, Greatest Knicks Ever, \u2018Made\u2019 N.Y.C. Stars, and Big NFL Trades With Max Kellerman",
+        "date": "Jun 02, 2026",
+        "dateSort": "2026-06-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2301186578.mp3"
+      },
+      {
         "title": "Down Goes OKC! Spurs-Knicks is Here! What the Hell Just Happened? And What Does OKC Do Now? | With Zach Lowe",
         "date": "May 31, 2026",
         "dateSort": "2026-05-31",
@@ -25,12 +31,6 @@
         "date": "May 25, 2026",
         "dateSort": "2026-05-25",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3574360215.mp3"
-      },
-      {
-        "title": "The Red-Hot Knicks, OKC\u2019s Beat-Up-Wemby Ploy, a Mini-Mailbag, and \u2018Survivor 50\u2019 | With Rob Mahoney, Jason Concepcion, and Mallory Rubin",
-        "date": "May 22, 2026",
-        "dateSort": "2026-05-22",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7566277401.mp3"
       }
     ]
   },
