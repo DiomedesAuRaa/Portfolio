@@ -1,42 +1,17 @@
 [
   {
     "name": "Bill Simmons Podcast",
-    "episodes": [
-      {
-        "title": "Down Goes OKC! Spurs-Knicks is Here! What the Hell Just Happened? And What Does OKC Do Now? | With Zach Lowe",
-        "date": "May 31, 2026",
-        "dateSort": "2026-05-31",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976192256.mp3"
-      },
-      {
-        "title": "Game 7 Fever in OKC, NBA Lottery Reform, and a Mega-Mailbag With Rob Mahoney, David Jacoby, and Joe House",
-        "date": "May 29, 2026",
-        "dateSort": "2026-05-29",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6866964130.mp3"
-      },
-      {
-        "title": "A Spurs Fumble, CarusoMania, Brunson\u2019s Mega-Rise and a Knicks Appreciation With Tim Legler and Brian Koppelman",
-        "date": "May 27, 2026",
-        "dateSort": "2026-05-27",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4757813495.mp3"
-      },
-      {
-        "title": "OKC Gets Wobbled, Cleveland\u2019s Done, and Knicks Nirvana Is Here (Maybe) With Zach Lowe and Sean Fennessey",
-        "date": "May 25, 2026",
-        "dateSort": "2026-05-25",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3574360215.mp3"
-      },
-      {
-        "title": "The Red-Hot Knicks, OKC\u2019s Beat-Up-Wemby Ploy, a Mini-Mailbag, and \u2018Survivor 50\u2019 | With Rob Mahoney, Jason Concepcion, and Mallory Rubin",
-        "date": "May 22, 2026",
-        "dateSort": "2026-05-22",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7566277401.mp3"
-      }
-    ]
+    "episodes": []
   },
   {
     "name": "The Watch",
     "episodes": [
+      {
+        "title": "\u2018Euphoria\u2019 and \u2018Hacks\u2019 say goodbye. Plus, \u2018Star City\u2019 takes off",
+        "date": "Jun 02, 2026",
+        "dateSort": "2026-06-02",
+        "audioUrl": "https://traffic.megaphone.fm/GLT3419264911.mp3"
+      },
       {
         "title": "\u2018Spider-Noir\u2019 Is Unsure of Itself. Plus, \u2018Widow\u2019s Bay\u2019 E6-7, \u2018Euphoria\u2019 S3E7, and \u2018Top Chef\u2019 S23E12.",
         "date": "May 28, 2026",
@@ -60,18 +35,18 @@
         "date": "May 14, 2026",
         "dateSort": "2026-05-14",
         "audioUrl": "https://traffic.megaphone.fm/GLT1067511969.mp3"
-      },
-      {
-        "title": "\u2018Euphoria\u2019 Season 3, Episode 5 and the \u2018Cape Fear\u2019 Trailer. Plus, Why \u2018Legends\u2019 Is Crime Drama Excellence.",
-        "date": "May 11, 2026",
-        "dateSort": "2026-05-11",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8968473822.mp3"
       }
     ]
   },
   {
     "name": "Zach Lowe",
     "episodes": [
+      {
+        "title": "A Knicks vs. Spurs NBA Finals Preview! Plus, What's Next for the Thunder?",
+        "date": "Jun 02, 2026",
+        "dateSort": "2026-06-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4833921306.mp3"
+      },
       {
         "title": "Spurs Force Game 7! Game 6 Thoughts, Keys for Each Team, and More!",
         "date": "May 29, 2026",
@@ -95,12 +70,6 @@
         "date": "May 24, 2026",
         "dateSort": "2026-05-24",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8715432614.mp3"
-      },
-      {
-        "title": "Thunder Even the Series at 1! Adjustments for Both Sides and East Preview. Plus, Kevin Harlan on His Iconic Career!",
-        "date": "May 21, 2026",
-        "dateSort": "2026-05-21",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3707247492.mp3"
       }
     ]
   },
