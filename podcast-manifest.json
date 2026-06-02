@@ -1,13 +1,44 @@
 [
   {
     "name": "Bill Simmons Podcast",
-    "episodes": []
+    "episodes": [
+      {
+        "title": "Down Goes OKC! Spurs-Knicks is Here! What the Hell Just Happened? And What Does OKC Do Now? | With Zach Lowe",
+        "date": "May 31, 2026",
+        "dateSort": "2026-05-31",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976192256.mp3"
+      },
+      {
+        "title": "Game 7 Fever in OKC, NBA Lottery Reform, and a Mega-Mailbag With Rob Mahoney, David Jacoby, and Joe House",
+        "date": "May 29, 2026",
+        "dateSort": "2026-05-29",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6866964130.mp3"
+      },
+      {
+        "title": "A Spurs Fumble, CarusoMania, Brunson\u2019s Mega-Rise and a Knicks Appreciation With Tim Legler and Brian Koppelman",
+        "date": "May 27, 2026",
+        "dateSort": "2026-05-27",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4757813495.mp3"
+      },
+      {
+        "title": "OKC Gets Wobbled, Cleveland\u2019s Done, and Knicks Nirvana Is Here (Maybe) With Zach Lowe and Sean Fennessey",
+        "date": "May 25, 2026",
+        "dateSort": "2026-05-25",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3574360215.mp3"
+      },
+      {
+        "title": "The Red-Hot Knicks, OKC\u2019s Beat-Up-Wemby Ploy, a Mini-Mailbag, and \u2018Survivor 50\u2019 | With Rob Mahoney, Jason Concepcion, and Mallory Rubin",
+        "date": "May 22, 2026",
+        "dateSort": "2026-05-22",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7566277401.mp3"
+      }
+    ]
   },
   {
     "name": "The Watch",
     "episodes": [
       {
-        "title": "\u2018Euphoria\u2019 and \u2018Hacks\u2019 say goodbye. Plus, \u2018Star City\u2019 takes off",
+        "title": "\u2018Euphoria\u2019 and \u2018Hacks\u2019 Say Goodbye. Plus, \u2018Star City\u2019 Takes Off.",
         "date": "Jun 02, 2026",
         "dateSort": "2026-06-02",
         "audioUrl": "https://traffic.megaphone.fm/GLT3419264911.mp3"
@@ -221,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "We\u2019re So Back for Good: \u2018Backrooms\u2019 and \u2018Obsession\u2019 Mania and 10 Movies We Missed!",
+        "date": "Jun 02, 2026",
+        "dateSort": "2026-06-02",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9657376807.mp3"
+      },
+      {
         "title": "\u2018Backrooms\u2019 Is the Future of Movies, With Kane Parsons!",
         "date": "May 29, 2026",
         "dateSort": "2026-05-29",
@@ -243,12 +280,6 @@
         "date": "May 18, 2026",
         "dateSort": "2026-05-18",
         "audioUrl": "https://traffic.megaphone.fm/GLT8975147055.mp3"
-      },
-      {
-        "title": "The 10 Best Horror Movies of the Year \u2026 So Far. Plus: The New Scary Movie Royalty, and \u2018Obsession,\u2019 With Curry Barker!",
-        "date": "May 15, 2026",
-        "dateSort": "2026-05-15",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1395639031.mp3"
       }
     ]
   },
