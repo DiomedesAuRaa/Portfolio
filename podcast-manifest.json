@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "NBA Finals Are Here! All the Info You Need from Podcast Row",
+        "date": "Jun 03, 2026",
+        "dateSort": "2026-06-03",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9549048299.mp3"
+      },
+      {
         "title": "A Knicks vs. Spurs NBA Finals Preview! Plus, What's Next for the Thunder?",
         "date": "Jun 02, 2026",
         "dateSort": "2026-06-02",
@@ -95,12 +101,6 @@
         "date": "May 26, 2026",
         "dateSort": "2026-05-26",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3895766145.mp3"
-      },
-      {
-        "title": "Knicks Take Commanding 3-0 Lead and What to Watch For in Thunder-Spurs!",
-        "date": "May 24, 2026",
-        "dateSort": "2026-05-24",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8715432614.mp3"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our honest thoughts on Charles Leclerc\u2019s Ferrari contract extension",
+        "date": "Jun 03, 2026",
+        "dateSort": "2026-06-03",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a1fff57a45d0c01d9c10c6e/media.mp3"
+      },
+      {
         "title": "Our 2026 Monaco GP predictions",
         "date": "Jun 02, 2026",
         "dateSort": "2026-06-02",
@@ -344,12 +350,6 @@
         "date": "May 23, 2026",
         "dateSort": "2026-05-23",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a122aeb04763270c25dd41f/media.mp3"
-      },
-      {
-        "title": "Reaction to Canadian GP sprint race",
-        "date": "May 23, 2026",
-        "dateSort": "2026-05-23",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a11e892f1cd3538c4a65735/media.mp3"
       }
     ]
   }
