@@ -180,42 +180,17 @@
   },
   {
     "name": "Village Church",
-    "episodes": [
-      {
-        "title": "Balance",
-        "date": "May 31, 2026",
-        "dateSort": "2026-05-31",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17352076/d2f9471a9d054336bcff83431e494d83_20260531_AP_Philippians_Wk6.mp3"
-      },
-      {
-        "title": "Confidence",
-        "date": "May 24, 2026",
-        "dateSort": "2026-05-24",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17348968/78dca49b7a194cb2b4a7b9ee5b23b69e_20260524_NM_Standalone.mp3"
-      },
-      {
-        "title": "Good Work",
-        "date": "May 17, 2026",
-        "dateSort": "2026-05-17",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17343620/good-work"
-      },
-      {
-        "title": "Fellowship",
-        "date": "May 10, 2026",
-        "dateSort": "2026-05-10",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17338582/b7620692b3ec4a36b0507e53c9b613a5_202605010_TJ_Philippians_Wk3.mp3"
-      },
-      {
-        "title": "In Every Season",
-        "date": "May 03, 2026",
-        "dateSort": "2026-05-03",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17332307/2f5aaf16d0724caf93ab88f506312141_20260503_MC_Philippians_Wk2.mp3"
-      }
-    ]
+    "episodes": []
   },
   {
     "name": "Ringer Tailgate",
     "episodes": [
+      {
+        "title": "EA Sports 'CFB 27' Cover and HOF Ballots. Plus, Is the Sport in Danger?",
+        "date": "Jun 04, 2026",
+        "dateSort": "2026-06-04",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1729498857.mp3"
+      },
       {
         "title": "Very Early CFP Predictions, Brendan Sorsby's Eligibility, and Coach O\u2019s LSU Return",
         "date": "May 27, 2026",
@@ -239,12 +214,6 @@
         "date": "May 06, 2026",
         "dateSort": "2026-05-06",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6618125767.mp3"
-      },
-      {
-        "title": "Diego Pavia Goes Undrafted, and More NFL Draft Takeaways, Plus Gambling Addiction in CFB",
-        "date": "Apr 29, 2026",
-        "dateSort": "2026-04-29",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4134449698.mp3?updated=1777429307"
       }
     ]
   },
