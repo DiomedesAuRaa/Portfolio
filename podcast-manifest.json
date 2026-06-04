@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Knicks Land a Haymaker, With Doc Rivers. Plus, a Mini-Mailbag, the End of 'Euphoria,' and a Movies Resurgence With Joanna Robinson and Chris Ryan.",
+        "date": "Jun 04, 2026",
+        "dateSort": "2026-06-04",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7228069865.mp3"
+      },
+      {
         "title": "A Finals Pick, Greatest Knicks Ever, \u2018Made\u2019 N.Y.C. Stars, and Big NFL Trades With Max Kellerman",
         "date": "Jun 02, 2026",
         "dateSort": "2026-06-02",
@@ -25,12 +31,6 @@
         "date": "May 27, 2026",
         "dateSort": "2026-05-27",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4757813495.mp3"
-      },
-      {
-        "title": "OKC Gets Wobbled, Cleveland\u2019s Done, and Knicks Nirvana Is Here (Maybe) With Zach Lowe and Sean Fennessey",
-        "date": "May 25, 2026",
-        "dateSort": "2026-05-25",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3574360215.mp3"
       }
     ]
   },
@@ -180,7 +180,38 @@
   },
   {
     "name": "Village Church",
-    "episodes": []
+    "episodes": [
+      {
+        "title": "Balance",
+        "date": "May 31, 2026",
+        "dateSort": "2026-05-31",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17352076/d2f9471a9d054336bcff83431e494d83_20260531_AP_Philippians_Wk6.mp3"
+      },
+      {
+        "title": "Confidence",
+        "date": "May 24, 2026",
+        "dateSort": "2026-05-24",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17348968/78dca49b7a194cb2b4a7b9ee5b23b69e_20260524_NM_Standalone.mp3"
+      },
+      {
+        "title": "Good Work",
+        "date": "May 17, 2026",
+        "dateSort": "2026-05-17",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17343620/good-work"
+      },
+      {
+        "title": "Fellowship",
+        "date": "May 10, 2026",
+        "dateSort": "2026-05-10",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17338582/b7620692b3ec4a36b0507e53c9b613a5_202605010_TJ_Philippians_Wk3.mp3"
+      },
+      {
+        "title": "In Every Season",
+        "date": "May 03, 2026",
+        "dateSort": "2026-05-03",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17332307/2f5aaf16d0724caf93ab88f506312141_20260503_MC_Philippians_Wk2.mp3"
+      }
+    ]
   },
   {
     "name": "Ringer Tailgate",
