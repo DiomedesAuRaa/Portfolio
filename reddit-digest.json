@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-06-05T16:14:38.954940",
-  "generated_at": "2026-06-05 16:14:38 UTC",
+  "timestamp": "2026-06-05T17:16:31.917462",
+  "generated_at": "2026-06-05 17:16:31 UTC",
   "subreddits_count": 14,
-  "total_posts": 0,
+  "total_posts": 64,
   "feeds": [
     "Best of Hour",
     "Best of 24h",
@@ -74,27 +74,7 @@
     ],
     "movies": [
       "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
-    ],
-    "BillSimmons": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
-    ],
-    "WaltDisneyWorld": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
-    ],
-    "Disneyland": [
-      "Best of Hour",
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
+      "Best of 24h"
     ]
   },
   "data": {
@@ -161,26 +141,2238 @@
     "movies": {
       "Best of Hour": [],
       "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of Week": [
+        {
+          "title": "‘Backrooms’ Becomes A24’s Highest Grossing Domestic Release ($97.8M), Passing ‘Marty Supreme’",
+          "author": "MarvelsGrantMan136",
+          "score": 17567,
+          "url": "https://www.reddit.com/r/movies/comments/1tvt30p/backrooms_becomes_a24s_highest_grossing_domestic/",
+          "selftext": "",
+          "created_utc": 1780501106.0,
+          "num_comments": 1305,
+          "id": "1tvt30p",
+          "subreddit": "movies",
+          "link_url": "https://deadline.com/2026/06/backrooms-box-office-record-a24-1236939795/",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "BunyipPouch",
+              "body": "The director of **Backrooms**, Kane Parsons, recently joined us here in /r/movies for an AMA/Q&A, for anyone interested:\n\nhttps://www.reddit.com/r/movies/comments/1tgkqrb/hi_reddit_im_kane_parsons_director_of_a24s/",
+              "score": 1
+            },
+            {
+              "author": "MuptonBossman",
+              "body": "Crazy that it achieved this in only 6 days as well.",
+              "score": 4204
+            },
+            {
+              "author": "JRockstar50",
+              "body": "The fact that this and Obsession are pacing a literal Star Wars movie in terms of domestic gross is **insane**",
+              "score": 1913
+            },
+            {
+              "author": "EThorns",
+              "body": "And it cost around 50-60 million less to make, so from a return on investment standpoint, even more impressive.\n\nPlus, I imagine it lasting at least a month in theatres.",
+              "score": 1681
+            }
+          ]
+        },
+        {
+          "title": "Marcia Lucas, Oscar-Winning 'Star Wars' Editor and Ex-Wife of George Lucas, Dies at 80",
+          "author": "MarvelsGrantMan136",
+          "score": 15879,
+          "url": "https://www.reddit.com/r/movies/comments/1trizz2/marcia_lucas_oscarwinning_star_wars_editor_and/",
+          "selftext": "",
+          "created_utc": 1780096690.0,
+          "num_comments": 475,
+          "id": "1trizz2",
+          "subreddit": "movies",
+          "link_url": "https://www.sfchronicle.com/entertainment/movies-tv/article/marcia-lucas-star-wars-dies-22283085.php",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "MarvelsGrantMan136",
+              "body": "Statement from the Lucas family:\n\n>“Marcia will be remembered as a brilliant storyteller, a trailblazer for women in film, a loving mother and grandmother, a generous host, and a loyal friend whose humor and sparkle filled every room she entered. Her influence on film is indelible, but those who knew her best will remember the way she made life feel more vivid, more beautiful, more fun, and more full of love.”\n\nRIP",
+              "score": 2970
+            },
+            {
+              "author": "Recommends_Con_Air",
+              "body": "No Star Wars as we know it without Marcia. Her work on the OT was foundational. RIP. ",
+              "score": 2212
+            },
+            {
+              "author": "shillyshally",
+              "body": "Every damn time I see news of someone dying at 80 I think wow, so old and then it inevitably dawns on me that I will be 80 next year. Time gets very strange the older one gets.\n\nEdit spelling.",
+              "score": 826
+            }
+          ]
+        },
+        {
+          "title": "The Shocking Success of ‘Backrooms’ and ‘Obsession’ Should Be a Memo to Hollywood: You Need What’s Outside the Box",
+          "author": "yourfavchoom",
+          "score": 12415,
+          "url": "https://www.reddit.com/r/movies/comments/1ts6xxs/the_shocking_success_of_backrooms_and_obsession/",
+          "selftext": "",
+          "created_utc": 1780164310.0,
+          "num_comments": 1029,
+          "id": "1ts6xxs",
+          "subreddit": "movies",
+          "link_url": "https://variety.com/2026/film/columns/backrooms-obsession-hollywood-needs-whats-outside-the-box-1236762844/",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "Article",
+          "comments": [
+            {
+              "author": "BunyipPouch",
+              "body": "The director of **Backrooms**, Kane Parsons, recently joined us here in /r/movies for an AMA/Q&A:\n\nhttps://www.reddit.com/r/movies/comments/1tgkqrb/hi_reddit_im_kane_parsons_director_of_a24s/\n\nThe director of **Obsession**, Curry Barker, joined us for one last year just prior to the World Premiere of the film at TIFF:\n\nhttps://www.reddit.com/r/movies/comments/1n6hto7/hey_rmovies_im_filmmaker_curry_barker_milk_serial/",
+              "score": 1
+            },
+            {
+              "author": "ThatDamnRocketRacoon",
+              "body": "Well, what Hollywood will learn is to try and copy the formula of these film by hiring anyone off of Youtube and/or turning out really bad horror film with similar vibes and stories until we get to where Variety is running the headline \"Are Horror Movies Dead?\"",
+              "score": 3680
+            },
+            {
+              "author": "southernfirefly13",
+              "body": "The same was said about Sinners and Everything Everywhere All At Once",
+              "score": 1233
+            },
+            {
+              "author": "GentlemanOctopus",
+              "body": "All they'll learn about Backrooms is that audiences want more yellow hallways. ",
+              "score": 1098
+            }
+          ]
+        },
+        {
+          "title": "Clint Eastwood's son confirms that the legendary director has retired from filmmaking",
+          "author": "ChiefLeef22",
+          "score": 11125,
+          "url": "https://www.reddit.com/r/movies/comments/1tt632e/clint_eastwoods_son_confirms_that_the_legendary/",
+          "selftext": "Eastwood turns 96 today.\n\n>Kyle Eastwood has composed some of his father’s film music, including three of *the* *million dollar baby* and *Gran Torino* music, this time in partnership with Michael Stevens. It was this last film, released in 2008, that was screened to open the evening. The opportunity for Kyle Eastwood to work with this living legend that is his father.\n\n>*“I have a lot of good memories of working with him. Now he's retired, he's 95. But I was very lucky to be able to work with him on a lot of movies*, observes Kyle Eastwood. *It was a great experience for me*.”",
+          "created_utc": 1780258403.0,
+          "num_comments": 714,
+          "id": "1tt632e",
+          "subreddit": "movies",
+          "link_url": "https://france3-regions.franceinfo.fr/hauts-de-france/somme/amiens/videos-le-fils-de-clint-eastwood-joue-les-musiques-de-ses-plus-grands-films-pour-un-cine-concert-3253621.html",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "HadesWTF",
+              "body": "I mean he is 96 years old, so that makes sense. He made some damn good films though and for a lot longer than most people work. ",
+              "score": 2289
+            },
+            {
+              "author": "OverallImportance402",
+              "body": "Retired from filmmaking so he can start acting again?",
+              "score": 1864
+            },
+            {
+              "author": "ThisKarmaLimitSucks",
+              "body": "Farewell to a legend. His brand of efficient, understated direction will be missed.",
+              "score": 1531
+            },
+            {
+              "author": "BunyipPouch",
+              "body": "**Juror #2** is a pretty good one to go out on, at least.",
+              "score": 691
+            },
+            {
+              "author": "DegTrader",
+              "body": "At 96, he’s officially the only person who gets to say 'I'm getting too old for this' without it being a line from an action movie.",
+              "score": 639
+            }
+          ]
+        },
+        {
+          "title": "First Image of Nicholas Hoult as Lex Luthor from 'Man of Tomorrow'",
+          "author": "MarvelsGrantMan136",
+          "score": 9945,
+          "url": "https://www.reddit.com/r/movies/comments/1ttwsp4/first_image_of_nicholas_hoult_as_lex_luthor_from/",
+          "selftext": "",
+          "created_utc": 1780329892.0,
+          "num_comments": 1026,
+          "id": "1ttwsp4",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/3sfl4qqq2p4h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.92,
+          "flair": "Media",
+          "comments": [
+            {
+              "author": "sabzi94",
+              "body": "This somehow makes him look even balder",
+              "score": 3939
+            },
+            {
+              "author": "CancelThis2077",
+              "body": "Kinda looks like Master Chief there.",
+              "score": 2902
+            },
+            {
+              "author": "viceneon",
+              "body": "Thank you James Gunn from not shying away from fun comic elements and what makes comics fun. It’s about damn time DC got its respect. ",
+              "score": 2002
+            },
+            {
+              "author": "Whompa",
+              "body": "Hell it's about damn time.",
+              "score": 1550
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "AMA/Q&A Announcement - Jerry O'Connell - Wednesday 6/10 at 3:00 PM ET - Actor in 'Stand By Me', 'Jerry Maguire', 'Scream 2', 'Kangaroo Jack', 'Sliders', 'Joe's Apartment', 'Piranha 3D', and lots more.",
+          "author": "BunyipPouch",
+          "score": 184,
+          "url": "https://www.reddit.com/r/movies/comments/1twnqk8/amaqa_announcement_jerry_oconnell_wednesday_610/",
+          "selftext": "",
+          "created_utc": 1780579789.0,
+          "num_comments": 53,
+          "id": "1twnqk8",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/m65snv5op95h1.png",
+          "is_self": false,
+          "upvote_ratio": 0.87,
+          "flair": "Announcement",
+          "comments": [
+            {
+              "author": "BunyipPouch",
+              "body": "Actor Jerry O'Connell will be joining us here in /r/movies for an AMA/Q&A next Wednesday 6/10. It'll go live at around 9 AM ET that morning, and he'll be back at around 3 PM ET to answer questions. \n\nPlease stop by next Wednesday if you have questions for Jerry :)\n\nJerry is currently doing live screenings & conversations of the all-time coming-of-age classic **Stand By Me**, to celebrate its 40th anniversary. He's joined at the shows by co-stars Wil Wheaton & Corey Feldman. You can find more info about shows/tickets [here](https://www.standbymelive.com/).\n\n> After learning that a stranger has been accidentally killed near their rural homes, four Oregon boys decide to go see the body. On the way, Gordie Lachance (Wil Wheaton), Vern Tessio (Jerry O'Connell), Chris Chambers (River Phoenix) and Teddy Duchamp (Corey Feldman) encounter a mean junk man and a marsh full of leeches, as they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives.\n\nTrailer:\n\nhttps://www.youtube.com/watch?v=9UUcTNZKrks\n\nPlease note that this is not the AMA, just an announcement. Please hold your questions for the actual AMA.",
+              "score": 1
+            },
+            {
+              "author": "petehere7",
+              "body": "Bing Bong!",
+              "score": 65
+            },
+            {
+              "author": "tobykief",
+              "body": "He's a great actor, but his best role may be PMT/Barstool celebrity guest. ",
+              "score": 41
+            },
+            {
+              "author": "Pillsburydinosaur",
+              "body": "I'm a big Sliders fan. That and My Secret Identity were awesome. ",
+              "score": 34
+            }
+          ]
+        },
+        {
+          "title": "Official Discussion Megathread (Masters of the Universe / Scary Movie / Power Ballad / Tuner) plus throwbacks",
+          "author": "LiteraryBoner",
+          "score": 3,
+          "url": "https://www.reddit.com/r/movies/comments/1txqn2a/official_discussion_megathread_masters_of_the/",
+          "selftext": "**New In Theaters**:\n\n* [Masters of the Universe](https://old.reddit.com/r/movies/comments/1tx7mcy/official_discussion_masters_of_the_universe/)\n* [Scary Movie](https://old.reddit.com/r/movies/comments/1tx7mek/official_discussion_scary_movie_6_spoilers/)\n* [Power Ballad](https://old.reddit.com/r/movies/comments/1tx7mgi/official_discussion_power_ballad_spoilers/)\n* [Tuner](https://old.reddit.com/r/movies/comments/1tx7mhy/official_discussion_tuner_spoilers/)\n\n**25th Anniversary Throwback Discussion Threads**:\n\n* [The Animal](https://old.reddit.com/r/movies/comments/1tx7mjn/official_throwback_discussion_the_animal_spoilers/)\n* [What's the Worst That Can Happen](https://old.reddit.com/r/movies/comments/1tx7mkw/official_throwback_discussion_whats_the_worst/)\n\n**Still In Theaters**:\n\n* [The Backrooms](https://old.reddit.com/r/movies/comments/1tqnnu9/official_discussion_the_backrooms_spoilers/)\n* [The Breadwinner](https://old.reddit.com/r/movies/comments/1tqnnxb/official_discussion_the_breadwinner_spoilers/?)\n* [Pressure](https://old.reddit.com/r/movies/comments/1tqnnzg/official_discussion_pressure_spoilers/?)\n* [The Mandalorian and Grogu](https://old.reddit.com/r/movies/comments/1tk51x0/official_discussion_the_mandalorian_and_grogu/?)\n* [I Love Boosters](https://old.reddit.com/r/movies/comments/1tk520u/official_discussion_i_love_boosters_spoilers/?)\n* [Obsession](https://old.reddit.com/r/movies/comments/1tdjue6/official_discussion_obsession_spoilers/?)\n* [The Sheep Detectives](https://old.reddit.com/r/movies/comments/1t6uf3r/official_discussion_the_sheep_detectives_spoilers/?)\n\n\n**New on Streaming**\n\n* [Apex](https://old.reddit.com/r/movies/comments/1swg29u/official_discussion_apex_spoilers/)\n* [Outcome](https://old.reddit.com/r/movies/comments/1sivj25/official_discussion_outcome_spoilers/?)\n* [Thrash](https://old.reddit.com/r/movies/comments/1sivj3i/official_discussion_thrash_spoilers/?)\n* [Pizza Movie](https://old.reddit.com/r/movies/comments/1sbx3zs/official_discussion_pizza_movie_spoilers/?)\n* [Mike & Nick & Nick & Alice](https://old.reddit.com/r/movies/comments/1sbx3wc/official_discussion_mike_nick_nick_alice_spoilers/?)\n* [War Machine](https://old.reddit.com/r/movies/comments/1rt2x82/official_discussion_war_machine_2026_spoilers/?)\n* [Peaky Blinders: The Immortal Man](https://old.reddit.com/r/movies/comments/1s0xuz4/official_discussion_peaky_blinders_the_immortal/?)",
+          "created_utc": 1780678537.0,
+          "num_comments": 0,
+          "id": "1txqn2a",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1txqn2a/official_discussion_megathread_masters_of_the/",
+          "is_self": true,
+          "upvote_ratio": 1.0,
+          "flair": "Official Discussion",
+          "comments": []
+        },
+        {
+          "title": "Anthony Head: Buffy and Ted Lasso actor dies at 72",
+          "author": "Alarming-Safety3200",
+          "score": 800,
+          "url": "https://www.reddit.com/r/movies/comments/1txoigx/anthony_head_buffy_and_ted_lasso_actor_dies_at_72/",
+          "selftext": "",
+          "created_utc": 1780673989.0,
+          "num_comments": 83,
+          "id": "1txoigx",
+          "subreddit": "movies",
+          "link_url": "https://www.bbc.co.uk/news/articles/cd0p0rz4n0mo",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "Growling_squid",
+              "body": "Rest easy Rupert Giles",
+              "score": 1
+            },
+            {
+              "author": "picklesuitpauly",
+              "body": "Fuck. This guy ruled pretty hard as an actor. Loved him in Buffy and Merlin. Rip.",
+              "score": 1
+            },
+            {
+              "author": "Comprehensive_Will75",
+              "body": "I loved him as Rupert Giles, but he was fantastic as Rupert Mannion on Ted Lasso. Two really different characters. RIP. ",
+              "score": 1
+            },
+            {
+              "author": "Strange_Specialist4",
+              "body": "He was responsible for Once More with Feeling, one of the most iconic musical episodes of any show",
+              "score": 1
+            },
+            {
+              "author": "axw3555",
+              "body": "God, three from Buffy in 18 months. That's my childhood just chipping away on bit at a time.",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Brad Pitt on Set of Plan B-Produced ‘Isle of Man’ Movie as Filming Kicks Off During Motorcycle Race",
+          "author": "Sisiwakanamaru",
+          "score": 758,
+          "url": "https://www.reddit.com/r/movies/comments/1txhq6x/brad_pitt_on_set_of_plan_bproduced_isle_of_man/",
+          "selftext": "",
+          "created_utc": 1780657436.0,
+          "num_comments": 101,
+          "id": "1txhq6x",
+          "subreddit": "movies",
+          "link_url": "https://variety.com/2026/film/global/brad-pitt-isle-of-man-motorcycle-race-movie-production-1236767651/",
+          "is_self": false,
+          "upvote_ratio": 0.89,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "Arthur2_shedsJackson",
+              "body": "He can just play his character from  the F1 movie where he's bored with 4 wheels and now wants to race on 2",
+              "score": 1
+            },
+            {
+              "author": "SunChamberNoRules",
+              "body": "Am I the only one finding headlines harder and harder to parse?",
+              "score": 1
+            },
+            {
+              "author": "JCDU",
+              "body": "Is... is Brad Pitt the new Burt Reynolds?",
+              "score": 1
+            },
+            {
+              "author": "florifierous",
+              "body": "Brad Pitt who abused his children? \n\nBrad Pitt who violently attacked Angelina Jolie?\n\nBrad Pitt whose children disowned him? \n\nThat Brad Pitt?",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "First Poster for Crime-Thriller 'Crooks' - Two small-time crooks rob a mob-run poker game in Chicago. Things immediately go wrong, resulting in a high-stakes adventure through the Midwest.",
+          "author": "BunyipPouch",
+          "score": 379,
+          "url": "https://www.reddit.com/r/movies/comments/1txloko/first_poster_for_crimethriller_crooks_two/",
+          "selftext": "",
+          "created_utc": 1780667747.0,
+          "num_comments": 52,
+          "id": "1txloko",
+          "subreddit": "movies",
+          "link_url": "https://i.redd.it/r9acz9sczg5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "Poster",
+          "comments": [
+            {
+              "author": "TheJomah",
+              "body": "[https://www.instagram.com/brutalposters\\_/?hl=en](https://www.instagram.com/brutalposters_/?hl=en) \n\n**THIS IS THE ARTIST, THE POSTER IS NOT AI**\n\nIf you thought it was AI, you don't understand how to look for things that are AI, so please stop accusing actual artist of creating slop. ",
+              "score": 1
+            },
+            {
+              "author": "Surroundedonallsides",
+              "body": "I freaking love this poster, holy shit. \n\n",
+              "score": 1
+            },
+            {
+              "author": "CLGplz",
+              "body": "I’m really loving this trend back towards stylized posters. Especially the pulpy ones",
+              "score": 1
+            },
+            {
+              "author": "jim9162",
+              "body": "Let's do it before the crank wears off",
+              "score": 1
+            },
+            {
+              "author": "rotato",
+              "body": "Upon close inspection I didn't find any signs of AI. If that's really 100% hand drawn, good Lord, what an incredible poster!",
+              "score": 1
+            }
+          ]
+        }
+      ]
     },
     "BillSimmons": {
-      "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of Hour": [
+        {
+          "title": "Not telling guests a topic in advance doesn’t make for better podcasting, it gives Bill time to workshop a take and sound like the smartest person in the room, while everyone else is being put on the spot hearing it for the first time.",
+          "author": "GentlemanHere",
+          "score": 59,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txpxdu/not_telling_guests_a_topic_in_advance_doesnt_make/",
+          "selftext": "",
+          "created_utc": 1780677002.0,
+          "num_comments": 25,
+          "id": "1txpxdu",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/kuzwe9kwqh5h1.png",
+          "is_self": false,
+          "upvote_ratio": 0.88,
+          "flair": "",
+          "comments": [
+            {
+              "author": "FFElite93",
+              "body": "Nah this is why Bill is one of the greatest to ever do it.\n\nPodcasting isn’t a conversation it’s a competition only person who can match him is kellerman",
+              "score": 21
+            },
+            {
+              "author": "roydonkofficial",
+              "body": "I respect how Russillo openly resented Bill for this. ",
+              "score": 11
+            },
+            {
+              "author": "godylla",
+              "body": "I like it. It feels more like a friend group having conversations where you can hopefully get a genuine reaction to a take/idea.",
+              "score": 11
+            },
+            {
+              "author": "pizzapasta8765",
+              "body": "I liked this post better when it was a Rockwell painting post. ",
+              "score": 9
+            }
+          ]
+        },
+        {
+          "title": "You could cut 20 minutes from every Rewatchables",
+          "author": "toyota_gorilla",
+          "score": 25,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txpu42/you_could_cut_20_minutes_from_every_rewatchables/",
+          "selftext": "",
+          "created_utc": 1780676801.0,
+          "num_comments": 16,
+          "id": "1txpu42",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/n6phzbv8qh5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.8,
+          "flair": "Shitpost",
+          "comments": [
+            {
+              "author": "Hefty-Afternoon-5605",
+              "body": "It's always been funny to me how much Bill whines about movies being long, considering as a columnist he was famous for (and was sometimes mocked for) really long. sometimes meandering columns. We don't even have to get into the fact he made a fucking 10 hour documentary about the Celtics that honestly could have been like 90 minutes. But then again self-awareness is not his greatest strength.",
+              "score": 17
+            },
+            {
+              "author": "dellscreenshot",
+              "body": "\\- Craig Horlbeck ",
+              "score": 12
+            },
+            {
+              "author": "Butwhy113511",
+              "body": "I want 20 more minutes of is he too famous to be a that guy.",
+              "score": 6
+            },
+            {
+              "author": "toyota_gorilla",
+              "body": "Producer Craig says it about movies, but it's true about his podcast. \n\nAt some point Bill is just running through categories no-one cares out. \n\n...\n\nBS: Next up we have the 'Neil Wyatt's pear in a toolbox' for the most out of place food item. And I dont know if there were many. I did notice that Leonard Foster's character was storing his ketchup bottle at the counter, like it was a diner. \n\nSean: What? Where do you keep your ketchup then? \n\nBS: In the fridge of course. CR, help me out here. \n\nCR: Also on the counter. \n\nBS: What?? You both keep your ketchup on the counter... like it was salt or something? \n\nSean: Let me ask you this Bill: have you ever seen ketchup go bad? \n\nBS: Nnn-yeah... I guess so. I don't know. Just found it odd. Anyway, next up we have the 'Keith Malone's jacket is way too short' award... \n\n...\n\nJust cut it out. Cut out 20 minutes.",
+              "score": 4
+            }
+          ]
+        },
+        {
+          "title": "Banning the Rockwell meme has been Amazing for the Sub",
+          "author": "SenseAlive8723",
+          "score": 1,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txr3sw/banning_the_rockwell_meme_has_been_amazing_for/",
+          "selftext": "I have never seen this much creativity in the sub. This shows that leadership and the establishment are always right and that we go against the ruling class at our own peril. ",
+          "created_utc": 1780679516.0,
+          "num_comments": 0,
+          "id": "1txr3sw",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/swfububfyh5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "Karl Anthony Towns is the only player in the league to reach the conference finals or further in each of the past 3 postseasons.",
+          "author": "HiImWallaceShawn",
+          "score": 1,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txr301/karl_anthony_towns_is_the_only_player_in_the/",
+          "selftext": "Has KAT sneaky become a playoff riser? Is he one of the least likely players to accomplish this feat based on the first 8 years of his career",
+          "created_utc": 1780679469.0,
+          "num_comments": 0,
+          "id": "1txr301",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1txr301/karl_anthony_towns_is_the_only_player_in_the/",
+          "is_self": true,
+          "upvote_ratio": 1.0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "Can anyone tell exactly how much tax the Bears are trying to get out of paying in Arlington?",
+          "author": "Herbert5Hundred",
+          "score": 1,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txqykz/can_anyone_tell_exactly_how_much_tax_the_bears/",
+          "selftext": "My understanding is that they're willing to self fund a 2 billion dollar stadium in Arlington, but they don't want to pay property tax on it while it's being built? Is that correct?  Or are they trying to never pay property tax on it?",
+          "created_utc": 1780679209.0,
+          "num_comments": 0,
+          "id": "1txqykz",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1txqykz/can_anyone_tell_exactly_how_much_tax_the_bears/",
+          "is_self": true,
+          "upvote_ratio": 1.0,
+          "flair": "",
+          "comments": []
+        }
+      ],
+      "Best of 24h": [
+        {
+          "title": "MOD ANNOUCEMENT: Posting 82-0.com links will result in a 3-day ban",
+          "author": "Gaius_Octavius_",
+          "score": 430,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tx7yo9/mod_annoucement_posting_820com_links_will_result/",
+          "selftext": "Stop posting this shit.  No one cares about your results.\n\nEDIT: Based on some of the comments, we are going to try to start creating a Daily Discussion Post for all the small stories and random reactions that don't need their own posts but people still want to chat about (like the 82-0 teams). It should start tomorrow (if I set it up correctly).\n\nFor the DD posts, the rules about \"on-topic\" will be greatly reduced and people will be allowed to talk about (almost) anything in them. That will be the place to include the links to your 82-0 results if you want to share them or other topics that will get removed from the main feed.  You will not be banned for sharing them there.\n\nAs always, I am open to feedback. Let me know how it is going and we can adjust if needed.",
+          "created_utc": 1780626032.0,
+          "num_comments": 108,
+          "id": "1tx7yo9",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1tx7yo9/mod_annoucement_posting_820com_links_will_result/",
+          "is_self": true,
+          "upvote_ratio": 0.9,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Gaius_Octavius_",
+              "body": "FYI for all.  Based on some of the comments, we are going to try to start creating a Daily Discussion Post for all the small stories and random reactions that don't need their own posts but people still want to chat about.  It should start tomorrow (if I set it up correctly).\n\nFor the DD posts, the rules about \"on-topic\" will be greatly reduced and people will be allowed to talk about (almost) anything in them.  That will be the place to include the links to your 82-0 results if you want to share them or other topics that will get removed from the main feed.\n\nAs always, I am open to feedback.  Let me know how it is going and we can adjust if needed.",
+              "score": 1
+            },
+            {
+              "author": "HenrikCrown",
+              "body": "Someone's mad they never rolled Bucks Kareem, Warriors Wilt or Heat LeBron 😤",
+              "score": 293
+            },
+            {
+              "author": "Hour-Ad-9508",
+              "body": "Do you want to hear about my parlay though?",
+              "score": 87
+            },
+            {
+              "author": "Kryptos33",
+              "body": "Of all the stupid/toxic shit that gets posted here this and the stupid Rockwell meme are what breaks the camels back.",
+              "score": 76
+            },
+            {
+              "author": "RapsareChamps_Suckit",
+              "body": "https://preview.redd.it/pxrpg7k7nd5h1.jpeg?width=1170&format=pjpg&auto=webp&s=4a40d71ce7f5eb9ae768dd622f0dce1462abf2a1\n\nI tell ya, the mods are not playing around anymore on this subreddit, it’s tough out here",
+              "score": 57
+            }
+          ]
+        },
+        {
+          "title": "I love when BS creates a narrative, repeats it across a few pods, then later sites the buzz around the narrative that HE CREATED as evidence there’s legitimacy to the idea.",
+          "author": "CodoandPodo",
+          "score": 378,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1twxtt8/i_love_when_bs_creates_a_narrative_repeats_it/",
+          "selftext": "He did it in the most recent pod talking about his “Expendables” idea where LeBron goes to Golden State.  “There’s real smoke here”.  Yes Bill, the smoke came from you.  You’re the smoke.",
+          "created_utc": 1780601141.0,
+          "num_comments": 83,
+          "id": "1twxtt8",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1twxtt8/i_love_when_bs_creates_a_narrative_repeats_it/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "",
+          "comments": [
+            {
+              "author": "quinoa",
+              "body": "He loves this move and also treating his opinion as an objective fact a couple months later. The guy references the rankings he made up in his own book as if it’s an encyclopedia",
+              "score": 260
+            },
+            {
+              "author": "Lord_Kittensworth",
+              "body": "“Is Tatum a top five player?”\n-Bill Simmons, 5/1/24\n\n\n\n“Tatum is a top five player.”\n-Bill Simmons, 5/15/24",
+              "score": 103
+            }
+          ]
+        },
+        {
+          "title": "Zach Lowe CRASHES OUT During Street Interview",
+          "author": "joshtothe",
+          "score": 245,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tx1a6a/zach_lowe_crashes_out_during_street_interview/",
+          "selftext": "",
+          "created_utc": 1780608791.0,
+          "num_comments": 49,
+          "id": "1tx1a6a",
+          "subreddit": "billsimmons",
+          "link_url": "https://v.redd.it/828lox044c5h1",
+          "is_self": false,
+          "upvote_ratio": 0.92,
+          "flair": "",
+          "comments": [
+            {
+              "author": "-AlimonyTony-",
+              "body": "https://preview.redd.it/ukbyyoem4c5h1.png?width=1100&format=png&auto=webp&s=63c8cb5d47b5f8fe86b0930a3773c48207bb37e3",
+              "score": 99
+            },
+            {
+              "author": "SeeYaLaterDylan",
+              "body": "This is the same energy that Zach has when discussing the Kings ",
+              "score": 44
+            },
+            {
+              "author": "nowadaysyouth",
+              "body": "This is my favorite video on the internet. Been with me through thick and thin ",
+              "score": 36
+            },
+            {
+              "author": "MVPhurricane",
+              "body": "hoooly shit that is about as beautiful an unhinged rant as you’ll ever see. i did not understand a single word and i love it. ",
+              "score": 29
+            },
+            {
+              "author": "ShortRip120",
+              "body": "The man has a point ",
+              "score": 25
+            }
+          ]
+        },
+        {
+          "title": "No one is watching but Game 2 of the Stanley Cup finals is an all-timer",
+          "author": "Obvious-Adeptness-46",
+          "score": 183,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tx94wn/no_one_is_watching_but_game_2_of_the_stanley_cup/",
+          "selftext": "Carolina was down and out with no momentum and no nothing down 2-0 with 10 minutes to go. Got one goal then the crowd came alive and scored 3 goals in 5 minutes. But Vegas got a lucky break and tied it outta nowhere. Overtime now. Tbh it was boring game until the last 10 minutes and it turned batshit crazy!",
+          "created_utc": 1780629359.0,
+          "num_comments": 58,
+          "id": "1tx94wn",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1tx94wn/no_one_is_watching_but_game_2_of_the_stanley_cup/",
+          "is_self": true,
+          "upvote_ratio": 0.93,
+          "flair": "General ",
+          "comments": [
+            {
+              "author": "not1dominoshallfall",
+              "body": "Hockey finals and NBA finals on alternating days is incredible\n\nGo fucking Canes",
+              "score": 89
+            },
+            {
+              "author": "8teamparlay",
+              "body": "This series has been nuts so far ",
+              "score": 59
+            },
+            {
+              "author": "Cares_of_an_Odradek",
+              "body": "Grew up in Carolina and live in new york… i thought this would be fun but it’s actually awful i won’t go to bed with a calm heart rate for two straight weeks ",
+              "score": 38
+            },
+            {
+              "author": "RapsareChamps_Suckit",
+              "body": "The Mitch Marner effect ",
+              "score": 24
+            },
+            {
+              "author": "Individual-Bar2613",
+              "body": "Oh we WERE WATCHING",
+              "score": 24
+            }
+          ]
+        },
+        {
+          "title": "Conspiracy Bill: \"The reason the footage of the kid running onto the court didn't get scrubbed from broadcast is because gambling markets now control the league.\"",
+          "author": "Callousthetics",
+          "score": 166,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1twyvlo/conspiracy_bill_the_reason_the_footage_of_the_kid/",
+          "selftext": "",
+          "created_utc": 1780603425.0,
+          "num_comments": 24,
+          "id": "1twyvlo",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/ubuvwxrxnb5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.96,
+          "flair": "",
+          "comments": [
+            {
+              "author": "jdorien13",
+              "body": "Not only did they not cut away from it, THEY SHOWED A REPLAY!  Never seen that before",
+              "score": 193
+            },
+            {
+              "author": "1derfulHam",
+              "body": "Rushing the floor with a Fanduel shirt on and officials not sure if theyre supposed to eject you.",
+              "score": 58
+            },
+            {
+              "author": "FFElite93",
+              "body": "Was there a way to bet that on Kalshii lol",
+              "score": 40
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "Chet Holmgren, set to make $50m a year, is benched for the last minute of Game 7. Unbelievable.",
+          "author": "GardenDesign23",
+          "score": 1881,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tsj164/chet_holmgren_set_to_make_50m_a_year_is_benched/",
+          "selftext": "",
+          "created_utc": 1780195556.0,
+          "num_comments": 458,
+          "id": "1tsj164",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/gj03ezbdzd4h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "",
+          "comments": [
+            {
+              "author": "NazRiedFan",
+              "body": "Could you imagine if this happened to Rudy Gobert",
+              "score": 824
+            },
+            {
+              "author": "bum4ever44",
+              "body": "He was literally too afraid to shoot, couldn’t keep him out there. ",
+              "score": 533
+            },
+            {
+              "author": "Major-Bad-1203",
+              "body": "Terrified of Wemby. He needs to request a trade East if he wants to save his career. Wouldn’t even attempt to dribble the ball if he got it with Wemby on him. Kind of embarrassing to watch ",
+              "score": 420
+            },
+            {
+              "author": "Dinobot2_",
+              "body": "If you watched the game it's actually very believable.",
+              "score": 362
+            }
+          ]
+        },
+        {
+          "title": "How Fennessey felt after Spielberg said that he was “having such a good time” talking about 2001 with him, and that the “explosive bolts” tidbit he shared made his day",
+          "author": "VB1014",
+          "score": 908,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tttkxi/how_fennessey_felt_after_spielberg_said_that_he/",
+          "selftext": "",
+          "created_utc": 1780323380.0,
+          "num_comments": 59,
+          "id": "1tttkxi",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/2vf7hw8gjo4h1.gif",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Equivalent_Dot2566",
+              "body": "Apex mountain for Sean?",
+              "score": 273
+            },
+            {
+              "author": "LJ8Truther",
+              "body": "Love this for Sean. Nobody could tell me shit ever again if Spielberg said those things to me.\n\n  \nI would be insufferable. Sean is a better man than me.",
+              "score": 153
+            },
+            {
+              "author": "Otherwise-Mango2732",
+              "body": "i'm not big into the ringer verse. I really only listen to rewatchables (and bill/cousin sal during nfl season) but even i had this weird second hand joy when sean and spielberg talked movie geek stuff.  Must have been an incredible conversation for Sean. ",
+              "score": 124
+            },
+            {
+              "author": "Steelers7589",
+              "body": "Between this and the Knicks, this is Sean’s Apex. ",
+              "score": 73
+            }
+          ]
+        },
+        {
+          "title": "6 years ago, yesterday",
+          "author": "EccentricAsparagus",
+          "score": 864,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tv5o93/6_years_ago_yesterday/",
+          "selftext": "",
+          "created_utc": 1780437691.0,
+          "num_comments": 193,
+          "id": "1tv5o93",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/7jmnbyxczx4h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "",
+          "comments": [
+            {
+              "author": "DrCockandBallsMD",
+              "body": "3/5 of a decade ago",
+              "score": 488
+            },
+            {
+              "author": "burkegobulls",
+              "body": "Two out of touch middle age white dudes talking race relations because a global pandemic had everyone scrapping the bottom of the barrel for content\n\nTruly a bizarre time to be alive lol \n",
+              "score": 294
+            },
+            {
+              "author": "jsanchez030",
+              "body": "As iconic as this pod was, the title of this pod outdid it",
+              "score": 281
+            }
+          ]
+        },
+        {
+          "title": "Wemby had 5 fouls during this moment..",
+          "author": "SouthIsland48",
+          "score": 835,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tskehv/wemby_had_5_fouls_during_this_moment/",
+          "selftext": "",
+          "created_utc": 1780199498.0,
+          "num_comments": 179,
+          "id": "1tskehv",
+          "subreddit": "billsimmons",
+          "link_url": "https://v.redd.it/bvj7chgfae4h1",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "",
+          "comments": [
+            {
+              "author": "mallllls",
+              "body": "Wemby is so deep in Chet’s head it’s not even funny ",
+              "score": 424
+            },
+            {
+              "author": "Ramu_1798",
+              "body": "Luka Doncic is Devon Booker father officially has been replaced in the history books. ",
+              "score": 230
+            },
+            {
+              "author": "irundoonayee",
+              "body": "They'll have to rescind his all nba",
+              "score": 222
+            },
+            {
+              "author": "Excellent-Refuse4883",
+              "body": "![gif](giphy|T2S4zW0sSRHNn93CqQ|downsized)",
+              "score": 209
+            },
+            {
+              "author": "FogoCanard",
+              "body": "I hated watching OKC but I don't really like seeing guys mentally implode like this. He has to wait a full year to prove himself again. It has to suck ",
+              "score": 155
+            }
+          ]
+        },
+        {
+          "title": "A NEW ERA IS HERE!!!!! DOWN GOES OKC!!!! HAHAHAHAHAHA",
+          "author": "GardenDesign23",
+          "score": 795,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tsj3mq/a_new_era_is_here_down_goes_okc_hahahahahaha/",
+          "selftext": "",
+          "created_utc": 1780195754.0,
+          "num_comments": 194,
+          "id": "1tsj3mq",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1tsj3mq/a_new_era_is_here_down_goes_okc_hahahahahaha/",
+          "is_self": true,
+          "upvote_ratio": 0.88,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Mysterious_Help_9577",
+              "body": "Chet Holgrem, start looking for houses in Milwaukee brother",
+              "score": 581
+            },
+            {
+              "author": "peanut-britle-latte",
+              "body": "The parity era is awesome. ",
+              "score": 264
+            },
+            {
+              "author": "Agreeable_Mousse2850",
+              "body": "The williams injury hurt.  And Chet cant play vs Wemby.",
+              "score": 149
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "A Rewatchables Summer Mailbag!",
+          "author": "jeewantha",
+          "score": 45,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1tx6acp/a_rewatchables_summer_mailbag/",
+          "selftext": "Adding more categories to be forgotten in a week!",
+          "created_utc": 1780621447.0,
+          "num_comments": 52,
+          "id": "1tx6acp",
+          "subreddit": "billsimmons",
+          "link_url": "https://open.spotify.com/episode/3qtjr2GrSsJVNXbQFhNDcH?si=NhmVWbULTBKmwu3PFa9qLA",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "",
+          "comments": [
+            {
+              "author": "spqpbo",
+              "body": "The mailbag merchant. Netflix got our boy on tight schedule. ",
+              "score": 96
+            },
+            {
+              "author": "Gaius_Octavius_",
+              "body": "Bill loves adding new categories ",
+              "score": 39
+            },
+            {
+              "author": "thebiz326",
+              "body": "Honestly love the mailbags but someone should keep a rolling list of categories that Bill says he likes but never adds.",
+              "score": 34
+            },
+            {
+              "author": "Hot_Cricket_5193",
+              "body": "Craig really getting carried like chet last year",
+              "score": 33
+            }
+          ]
+        },
+        {
+          "title": "A Freewheeling Conversation That Occasionally Touches On Mature Subjects June 05, 2026",
+          "author": "AutoModerator",
+          "score": 28,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txeg8p/a_freewheeling_conversation_that_occasionally/",
+          "selftext": "Post for r/BillSimmons users to discuss whatever is on their minds.",
+          "created_utc": 1780646499.0,
+          "num_comments": 127,
+          "id": "1txeg8p",
+          "subreddit": "billsimmons",
+          "link_url": "https://www.reddit.com/r/billsimmons/comments/1txeg8p/a_freewheeling_conversation_that_occasionally/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "",
+          "comments": [
+            {
+              "author": "Gaius_Octavius_",
+              "body": "This is a new idea we are going to try.  We will see how it goes.  The idea is that daily post can be where every can share the random thoughts and ideas that don't really belong as a stand alone post but they still want others to see/discuss.",
+              "score": 1
+            },
+            {
+              "author": "it_has_to_be_damp",
+              "body": "is this a good place to bitch about the finals schedule? no games this weekend, and if it goes the distance game 7 is on a friday?? come on now. ",
+              "score": 28
+            },
+            {
+              "author": "Abject-Crazy-1449",
+              "body": "The NBA should measure Wemby live on TV. Just so we ACTUALLY know how tall he is. i'd watch that, and bet on it, I just would.",
+              "score": 25
+            },
+            {
+              "author": "Commercial_Grand2704",
+              "body": "Helen Miren is a mature subject I’d like to occasionally touch on",
+              "score": 20
+            },
+            {
+              "author": "IllAlwaysBeAKnickFan",
+              "body": "Bill proposing that Celtics fantasy trade was absolutely insane. Celtics get Trey Murphy, Missi, Herb Jones AND Cam Johnson, AND a 2030 pick swap with the Pelicans (which would give the Celtics a top 15 pick almost certainly), AND the 26th pick this year, all Denver gets is Hauser and pick 40, and NOLA gets Jaylen Brown. \n\nWhat the fuck? Why are the Pelicans trading 3 of their best players and a prime pick for their rebuild for Jaylen Brown? What do they do with Zion, Brown and Queen and nothing else on their roster? Why are the Nuggets immediately getting off of Cam Johnson for cap relief/Hauser? Are they trying to win or not? Dumping Johnson for nothing means they’re done competing with Jokic. They have to just keep Johnson and hope he can be who they hoped he could be. \n\nCeltics just address absolutely every single need they have and add the best 2 picks involved in the deal.",
+              "score": 21
+            }
+          ]
+        },
+        {
+          "title": "Instant replay and its consequences have done irreparable damage to the sports viewing experience and do little more than provide additional advertising opportunities for the bourgeoisie under the guise of “fairness”.",
+          "author": "filmore_89",
+          "score": 102,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txogc5/instant_replay_and_its_consequences_have_done/",
+          "selftext": "",
+          "created_utc": 1780673862.0,
+          "num_comments": 38,
+          "id": "1txogc5",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/gv690j8lhh5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.86,
+          "flair": "",
+          "comments": [
+            {
+              "author": "writersontop",
+              "body": "Slow-mo, instant replay of dunks = good, great, iconic\n\nSlow-mo, instant replay of foul calls = bad, evil, tragic\n",
+              "score": 38
+            },
+            {
+              "author": "milkhotelbitches",
+              "body": "Bold of a man with robes that luxurious, a goblet that large, and a bowl of fruit that magnificent to be complaining about the bourgeoisie. ",
+              "score": 37
+            },
+            {
+              "author": "paddlesandpups",
+              "body": "I completely agree. I'm less concerned with review back at the commissioners office that takes like 30 seconds, but even then would appreciate it relating to less actions within the game. I started feeling that way after one of the touchdowns in the Eagles-Patriots super bowl from 2017, when an awesome play made it look like the eagles actually going to pull it off. And then the whole world had to stop for 8 years of instant replay review, completely killing the vibe. This is an entertainment product and that's not entertaining at all",
+              "score": 16
+            },
+            {
+              "author": "Reasonable_Depth8587",
+              "body": "Caravaggio in my Rockwell sub? ",
+              "score": 15
+            }
+          ]
+        },
+        {
+          "title": "Not telling guests a topic in advance doesn’t make for better podcasting, it gives Bill time to workshop a take and sound like the smartest person in the room, while everyone else is being put on the spot hearing it for the first time.",
+          "author": "GentlemanHere",
+          "score": 60,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txpxdu/not_telling_guests_a_topic_in_advance_doesnt_make/",
+          "selftext": "",
+          "created_utc": 1780677002.0,
+          "num_comments": 25,
+          "id": "1txpxdu",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/kuzwe9kwqh5h1.png",
+          "is_self": false,
+          "upvote_ratio": 0.88,
+          "flair": "",
+          "comments": [
+            {
+              "author": "FFElite93",
+              "body": "Nah this is why Bill is one of the greatest to ever do it.\n\nPodcasting isn’t a conversation it’s a competition only person who can match him is kellerman",
+              "score": 21
+            },
+            {
+              "author": "roydonkofficial",
+              "body": "I respect how Russillo openly resented Bill for this. ",
+              "score": 11
+            },
+            {
+              "author": "godylla",
+              "body": "I like it. It feels more like a friend group having conversations where you can hopefully get a genuine reaction to a take/idea.",
+              "score": 11
+            },
+            {
+              "author": "pizzapasta8765",
+              "body": "I liked this post better when it was a Rockwell painting post. ",
+              "score": 9
+            }
+          ]
+        },
+        {
+          "title": "Favorite player who is on their last big contract and starting to transition to off court life?",
+          "author": "HenrikCrown",
+          "score": 57,
+          "url": "https://www.reddit.com/r/billsimmons/comments/1txnx7v/favorite_player_who_is_on_their_last_big_contract/",
+          "selftext": "",
+          "created_utc": 1780672688.0,
+          "num_comments": 31,
+          "id": "1txnx7v",
+          "subreddit": "billsimmons",
+          "link_url": "https://i.redd.it/e9swaza1eh5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "",
+          "comments": [
+            {
+              "author": "himynameisdan123",
+              "body": "It’s not a great feeling when the players the same age as you are starting to become washed. ",
+              "score": 41
+            },
+            {
+              "author": "fakeplasticsnow",
+              "body": "AD is turning into Roy Hibbert right before our eyes.\n\nhttps://preview.redd.it/rf0ejmwfhh5h1.png?width=1776&format=png&auto=webp&s=844c5da221df4165b605433ba8859bccafce6d80",
+              "score": 19
+            },
+            {
+              "author": "wetyard",
+              "body": "![gif](giphy|wODxPdYYSq31C)  \nMine ",
+              "score": 15
+            },
+            {
+              "author": "ConHead_4_Life",
+              "body": "Jaylen Brown, excited to see his streaming career take off",
+              "score": 14
+            }
+          ]
+        }
+      ]
     },
     "WaltDisneyWorld": {
-      "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of Hour": [
+        {
+          "title": "Disney World Wallpaper Inspiration",
+          "author": "MaskedMagician72",
+          "score": 33,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txq8qa/disney_world_wallpaper_inspiration/",
+          "selftext": "If anyone is in need of some ideas for new wallpaper or backgrounds on their phone, here are some I took that might help spark some inspiration for you!",
+          "created_utc": 1780677681.0,
+          "num_comments": 1,
+          "id": "1txq8qa",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/gallery/1txq8qa",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "Photo",
+          "comments": [
+            {
+              "author": "Googler10",
+              "body": "This is awesome! Thanks 😎",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "AITA? Thoughts of saving tables",
+          "author": "heyodi",
+          "score": 7,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txqm7v/aita_thoughts_of_saving_tables/",
+          "selftext": "Currently at a very slammed Pinnochios Village Haus and there are people with trays of food standing around with nowhere to sit. Meanwhile about half of the tables are being saved by people with no food. My son and I finally find a table, only for a man to say IM SAVING THAT. This guy has 3 large tables saved for his family. My reaction was to say, well where is your food? This apparently triggered him and he started yelling about his party of 12. I told him to look around at all the people waiting for tables, then left.   \nWho is the AH here?",
+          "created_utc": 1780678486.0,
+          "num_comments": 25,
+          "id": "1txqm7v",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txqm7v/aita_thoughts_of_saving_tables/",
+          "is_self": true,
+          "upvote_ratio": 0.67,
+          "flair": "Food, Drinks, & Dining",
+          "comments": [
+            {
+              "author": "OrtizDupri",
+              "body": "2 people at a table saving it for their food? Fine\n\n1 person saving 3 tables? Nah dog you gotta sort that out yourself",
+              "score": 1
+            },
+            {
+              "author": "CantaloupeCamper",
+              "body": "They can’t do it everywhere, but I wish Disney would enforce that “you have to have your food / order ready rules.”\n\nI was there over spring break one time and the places that enforced it we’re great, everyone got seats.\n\nThe places that couldn’t enforce it was chaos.",
+              "score": 1
+            },
+            {
+              "author": "BroCanWeGetLROTNOG",
+              "body": "Honestly I think Disney should do something about this, I don't really blame guests for wanting to make sure they have a place to eat.",
+              "score": 1
+            },
+            {
+              "author": "I_Aint_No_Lawyer",
+              "body": "I travel to the parks by myself with a toddler, stroller, and heavy backpack. It’s impossible for us to eat quick service if we don’t find a table first before grabbing the food on the tray, filling the drinks and getting condiments and napkins. I simply do not have enough hands. People who save one table are NTA. Someone saving 3 probably is. Then again I think going to Disney with 10+ people is always a recipe for disaster but that’s another discussion entirely. \n\nTLDR saving tables is fine but don’t take it too far",
+              "score": 1
+            },
+            {
+              "author": "Most_Temporary2110",
+              "body": "The policy I believe is you should have food at tables. The practice is like the pool. You go, grab your table, leave someone guarding it, and everyone else goes to get food. \n\nIf he yelled at you? He was an AH.  If you were confrontational? You could have been too, but I doubt it. \n\nMy mantra is: everyone is like a toddler on the brink of a meltdown when at Disney. ",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Short window of time - what are your top spots/suggestions?",
+          "author": "beerpansy",
+          "score": 1,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txr09n/short_window_of_time_what_are_your_top/",
+          "selftext": "Hi!  We just figured out we'll be at a conference right outside the parks (Orlando World Center Marriott) soon.  We have a mostly free day when we arrive, as well as some afternoons/evenings.  Considering a park ticket for arrival day. Single park?  Park hopper?  Just check out the resorts and Disney Springs?  \n\nFor context, we land at MCO at 7:40ish.  So I realize this will not be a \\*full\\* day in any park but also, we are out of state Magic Key holders at Disneyland and we frequently travel cross-country for marathons/half marathons/etc. so we're really not worried about jet lag, time to check in/get ready, etc.  Just want to know if YOU had a partial day and the opportunity to visit, what would you do?  We will be back in October for Wine & Dine and the half/10k with a 4-day park hopper pass so we don't \\*need\\* to see everything on this visit.  Just discovered the opportunity and looking for some thoughts or ideas from experienced WDW folks!\n\nThanks for reading and any contributions. 😄",
+          "created_utc": 1780679311.0,
+          "num_comments": 0,
+          "id": "1txr09n",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txr09n/short_window_of_time_what_are_your_top/",
+          "is_self": true,
+          "upvote_ratio": 1.0,
+          "flair": "Planning",
+          "comments": []
+        }
+      ],
+      "Best of 24h": [
+        {
+          "title": "Two months ago I was in the hospital being told my health was declining, today I am celebrating!",
+          "author": "FloridaGirl2222",
+          "score": 880,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1twuiji/two_months_ago_i_was_in_the_hospital_being_told/",
+          "selftext": "",
+          "created_utc": 1780594249.0,
+          "num_comments": 26,
+          "id": "1twuiji",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/4msfruuvwa5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Brag",
+          "comments": [
+            {
+              "author": "GenrePencil",
+              "body": "That’s awesome and there’s no better place to be celebrating your good news! ",
+              "score": 22
+            },
+            {
+              "author": "Kraziehase",
+              "body": "Heck yay! Congratz !",
+              "score": 9
+            },
+            {
+              "author": "5centraise",
+              "body": "Yay!  Have fun and treat yourself to something awesome!",
+              "score": 7
+            },
+            {
+              "author": "jumjimbo",
+              "body": "Here with my family today also, we're glad you're here too!",
+              "score": 6
+            },
+            {
+              "author": "Ok_Currency1246",
+              "body": "Love to hear it. Have a blast!",
+              "score": 5
+            }
+          ]
+        },
+        {
+          "title": "Anyone else potentially see this area as the site of Magic Kingdoms next big expansion post Villains?",
+          "author": "Successful_Leopard45",
+          "score": 246,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tx5pwk/anyone_else_potentially_see_this_area_as_the_site/",
+          "selftext": "",
+          "created_utc": 1780619940.0,
+          "num_comments": 228,
+          "id": "1tx5pwk",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/ame2u64a1d5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.82,
+          "flair": "AskWDW",
+          "comments": [
+            {
+              "author": "External-Pace-1822",
+              "body": "I gotta think they redo the Speedway after the cars/villains areas ",
+              "score": 375
+            },
+            {
+              "author": "Nizz553",
+              "body": "After Villains nothing substantial new will go into MK until like 2050. ",
+              "score": 335
+            },
+            {
+              "author": "peco2004",
+              "body": "If you look at the satellite view there isn’t as much room as you think. ",
+              "score": 102
+            }
+          ]
+        },
+        {
+          "title": "Tough choice!!",
+          "author": "farcry2186",
+          "score": 156,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txg6vp/tough_choice/",
+          "selftext": "My picks right now would be: Guardians, Tower of Terror, and Haunted Mansion.  People Mover was SOOOOO close to being in my top 3 though!  \n\nBut, I’m 40, and, as much as I LOOOOVE Space Mountain and Guardians, SM can be a little rough as I get older, and Guardians could give me motion sickness as well.  Tower of Terror could be a little too intense by the time I’m 50.  Tron is actually a very smooth coaster that doesn’t feel too fast, doesn’t jerk you around, no big drops or going upside down or whatnot.  I could ride something like that even into my 60s and still really enjoy it.\n\nSo, then, for the long run as I get older, then my top 3 would be: Haunted Mansion, Pirates, People Mover. ALMOST went with Tron!",
+          "created_utc": 1780652571.0,
+          "num_comments": 362,
+          "id": "1txg6vp",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/85uyc0o9qf5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.87,
+          "flair": "Attractions & Entertainment",
+          "comments": [
+            {
+              "author": "Crasino_Hunk",
+              "body": "Livin’ with the Land, back to back to back",
+              "score": 187
+            },
+            {
+              "author": "mikeisntdoneyet",
+              "body": "Mansion, pirates, carousel.",
+              "score": 30
+            },
+            {
+              "author": "More-Soil7455",
+              "body": "Big Thunder Mountain, Pirates, Haunted Mansion ",
+              "score": 30
+            },
+            {
+              "author": "Ok-Discipline785",
+              "body": "For me it has to be Pirates, People Mover and Star Tours, reminds me of my childhood! ",
+              "score": 33
+            }
+          ]
+        },
+        {
+          "title": "Sick before trip",
+          "author": "kmellor95",
+          "score": 151,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tx7k9y/sick_before_trip/",
+          "selftext": "My kids both contracted hand foot and mouth disease this week, along with a possible case of strep, and I have a raging sinus infection. We were supposed to leave tomorrow. Once I realized we weren’t going to be better in time, I called Disney and asked to push it out a week. They were able to accommodate us thankfully! Although the All Stars are sold out and so we had to switch to Port Orleans Riverside. Slightly bummed out because we also lost half of our preferred dining reservations. I’ve never stayed anywhere other than the All Stars- anything special I should know about POR? My house is under strict quarantine for the next week lol. Figures we’d all get sick just before leaving! ",
+          "created_utc": 1780624945.0,
+          "num_comments": 44,
+          "id": "1tx7k9y",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tx7k9y/sick_before_trip/",
+          "is_self": true,
+          "upvote_ratio": 0.94,
+          "flair": "Resorts & Accommodations",
+          "comments": [
+            {
+              "author": "JustCallMeKV",
+              "body": "I just want to say thank you for staying home while you’re all sick! Hope you have a great trip!",
+              "score": 499
+            },
+            {
+              "author": "Icy_Needleworker6350",
+              "body": "POR is a much nicer resort then any All star in my opinion. Once you make this jump you’ll never stay at Allstars again.\n\nGet well and have a great trip\n",
+              "score": 208
+            },
+            {
+              "author": "Suziannie",
+              "body": "Riverside is such a dreamy and peaceful resort, you’re going to love it! ",
+              "score": 45
+            }
+          ]
+        },
+        {
+          "title": "What are your thoughts on the abundance of newly updated attractions?",
+          "author": "sbursp15",
+          "score": 134,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tx78ex/what_are_your_thoughts_on_the_abundance_of_newly/",
+          "selftext": "In the past year we have had updates to Test Track, Frozen Ever After, Buzz Lightyear's Space Ranger Spin, Big Thunder Mountain Railroad, Soarin', Rock 'n' Roller Coaster, and Millennium Falcon: Smugglers Run.\n\n  \nHonestly- I think these have all been great updates. It is nice to see some older/classic rides being upgraded and taken care of. Even \"newer\" rides like Frozen and Smugglers Run being improved is a good sign.\n\n  \nWhat other rides are due for similar updates?",
+          "created_utc": 1780624037.0,
+          "num_comments": 58,
+          "id": "1tx78ex",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/gallery/1tx78ex",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "Attractions & Entertainment",
+          "comments": [
+            {
+              "author": "thejawa",
+              "body": "Tomorrowland Speedway needs to be taken back stage and humanely put down.",
+              "score": 195
+            },
+            {
+              "author": "Plenty-Temperature",
+              "body": "Shows they are finally starting to care about their guests again after Chapek.\n\nThe new Carousel of Progress better be excellent though. Also the new Animal Kingdom area needs to be up to par with the theming of the rest of the park and not rely on some marketing spin like the Epcot center area.",
+              "score": 83
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "There were no crowds during the rain",
+          "author": "AJK02",
+          "score": 1700,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1ts8h7i/there_were_no_crowds_during_the_rain/",
+          "selftext": "",
+          "created_utc": 1780167964.0,
+          "num_comments": 62,
+          "id": "1ts8h7i",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/ug1xllfapb4h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Photo",
+          "comments": [
+            {
+              "author": "letscallshenanigans",
+              "body": "I can feel the hot humidity",
+              "score": 217
+            },
+            {
+              "author": "Sarcastic_Rocket",
+              "body": "Went a few days after thunder mountain re opened, lighting lanes booked out even though we did it right on time.  So we weren't sure if we would get it in in this trip.  Started raining while we were on pirates.  Looked at the wait and saw 30 minutes, actually waited like 15.  Rode it 4 times in the rain since it was a walk on the next three times.  \n\nIt's Florida, it's not cold when it rains, rains the best ",
+              "score": 38
+            },
+            {
+              "author": "Decent-Historian-207",
+              "body": "One of our best days at MK was a rainy day - almost no one there. ",
+              "score": 33
+            }
+          ]
+        },
+        {
+          "title": "End of a Successful Day at the Parks",
+          "author": "i_should_b3_working",
+          "score": 1500,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tty1ng/end_of_a_successful_day_at_the_parks/",
+          "selftext": "",
+          "created_utc": 1780332409.0,
+          "num_comments": 33,
+          "id": "1tty1ng",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/m3znkil9ap4h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Photo",
+          "comments": [
+            {
+              "author": "HippoOk663",
+              "body": "Please stand clear of the doors.\nPor favor, monténgase alejado de las puertas.\n",
+              "score": 144
+            },
+            {
+              "author": "theanswar",
+              "body": "nice to have a chariot all to yourself!",
+              "score": 39
+            },
+            {
+              "author": "isthiswhatcrazyis",
+              "body": "End of the day and empty?",
+              "score": 34
+            }
+          ]
+        },
+        {
+          "title": "\"Trash or Treasure?\" Disney Fans Say Pixie Dusting Has Gone Too Far and It's Impacting Other Guests",
+          "author": "readingaboutmagic",
+          "score": 1233,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tvmjie/trash_or_treasure_disney_fans_say_pixie_dusting/",
+          "selftext": "",
+          "created_utc": 1780486230.0,
+          "num_comments": 315,
+          "id": "1tvmjie",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://mickeyvisit.com/disney-pixie-dusting-guest-impacts-june-3-2026/",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "nevets4433",
+              "body": "Pixie Dusting is the act of a cast member doing something special for you.\n\nIf you’re a park goer, even if you are well-meaning, I don’t want the trinket you’ve brought to pass out to others…",
+              "score": 2108
+            },
+            {
+              "author": "Dino_Spaceman",
+              "body": "Pixie dusting from Disney itself? Fantastic.  \n\nPixie dusting of genuinely valuable gifts (like meals paid for, free merch) is wonderful.  \n\nPixie dusting of dollar store items left random places around hotels/cruise ships/parks is just trash.  ",
+              "score": 860
+            },
+            {
+              "author": "Pawprint86",
+              "body": "Most of the posts in the facebook groups for the resort we stayed in  (pop century) were about pixie dusting.  “Hey, pixie dusting stuff we made outside room xxx”  Followed by frustrated posts about how some resort guests were just treating it as a free stuff scavenger hunt and not appreciating the proper spirit of it.  I mean, what do people expect? \n\n\nI think the giving away free stuff is obnoxious and I’d rather people spread the Disney joy by just being kind and friendly to others.  Especially in the parks. \n\nSave pixie dusting for cast members who reach out to guests. ",
+              "score": 423
+            }
+          ]
+        },
+        {
+          "title": "Got the shot I wanted!",
+          "author": "Vegetable_Page3355",
+          "score": 1018,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tteyq3/got_the_shot_i_wanted/",
+          "selftext": "",
+          "created_utc": 1780281031.0,
+          "num_comments": 27,
+          "id": "1tteyq3",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/lt7oq50j1l4h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 1.0,
+          "flair": "Photo",
+          "comments": [
+            {
+              "author": "Sunnyjim333",
+              "body": "Wonderful image!\n\nNext challenge: One like this, but at night/dusk, when SSE is lit up.",
+              "score": 19
+            },
+            {
+              "author": "haylsxo",
+              "body": "Beautiful!! ",
+              "score": 4
+            },
+            {
+              "author": "chili16",
+              "body": "Frame it!",
+              "score": 3
+            },
+            {
+              "author": "97GeoPrizm",
+              "body": "Did you have to wait long?",
+              "score": 3
+            }
+          ]
+        },
+        {
+          "title": "Two months ago I was in the hospital being told my health was declining, today I am celebrating!",
+          "author": "FloridaGirl2222",
+          "score": 875,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1twuiji/two_months_ago_i_was_in_the_hospital_being_told/",
+          "selftext": "",
+          "created_utc": 1780594249.0,
+          "num_comments": 26,
+          "id": "1twuiji",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/4msfruuvwa5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Brag",
+          "comments": [
+            {
+              "author": "GenrePencil",
+              "body": "That’s awesome and there’s no better place to be celebrating your good news! ",
+              "score": 22
+            },
+            {
+              "author": "Kraziehase",
+              "body": "Heck yay! Congratz !",
+              "score": 9
+            },
+            {
+              "author": "5centraise",
+              "body": "Yay!  Have fun and treat yourself to something awesome!",
+              "score": 7
+            },
+            {
+              "author": "jumjimbo",
+              "body": "Here with my family today also, we're glad you're here too!",
+              "score": 6
+            },
+            {
+              "author": "Ok_Currency1246",
+              "body": "Love to hear it. Have a blast!",
+              "score": 5
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "Monthly Self-Promotion Thread (June 2026) 🏳️‍🌈😎🏳️‍⚧️",
+          "author": "marleythebeagle",
+          "score": 0,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tuvws8/monthly_selfpromotion_thread_june_2026/",
+          "selftext": "Got a blog, YouTube channel, Etsy page, podcast, travel agency, or something else you're making/selling? Tell us all about it in this month's Self-Promotion thread!\n\nAs you know, since you thoroughly read the rules, r/WaltDisneyWorld is pretty strict when it comes to self-promotion, so this is a place where you can get the word out about your project! This thread will be stickied on the sub's front page and updated monthly.\n\nThis also serves as a great place for people to come find new things! Feel free to plug your social media and other projects -- we can't wait to check them out!\n\n*Please note: due to public safety and liability reasons, we cannot allow users to arrange for meetups, personal shoppers, vacation rentals, person-to-person sales, or any other form of direct interaction or transaction on this subreddit. Any and all items/services for sale should already be available on a reputable third-party site.*\n\n*Also, please keep in mind that in order to foster participation and a sense of community, your self-promotion posts (including in this thread) should be directly (and exclusively) related to WDW and should make up no more than around 10% of your total monthly activity on this sub. Thanks!*",
+          "created_utc": 1780417256.0,
+          "num_comments": 28,
+          "id": "1tuvws8",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tuvws8/monthly_selfpromotion_thread_june_2026/",
+          "is_self": true,
+          "upvote_ratio": 0.4,
+          "flair": "Megathread",
+          "comments": [
+            {
+              "author": "-AKFasso-",
+              "body": "Hi! First — Happy Pride! I’m Ashley, and over the last decade I’ve slowly filmed the sunrise from every Walt Disney World resort. \n\nWhat started as a simple idea turned into a long-term passion project that took me to all 21 Disney resorts before dawn, capturing the quiet moments before the parks and hotels wake up for the day.\n\n[Watch the full Disney Sunrise Series here](https://youtu.be/25Qosv2jafo?si=oaOQaQUX7cXvKkww)!\n\nIf you enjoy Disney ambience, relaxing background videos, peaceful resort walks, or simply miss being at Walt Disney World, I recently compiled the entire Disney Sunrise Series into one video. I hope it brings you a little Disney magic and relaxation.\n\nIt took nearly 10 years to finish, and I’m honestly a little emotional to finally share the complete collection. :)",
+              "score": 15
+            },
+            {
+              "author": "MesaVerde1987",
+              "body": "Hey everyone! My name is Ryan, and I run my own YouTube channel called ThemeParks&Me. I post everything from high-quality Disney park soundtracks, vintage Walt Disney World promotional footage, to my own personal home videos of ride POVs dating back to the 90s. I also post a fair amount about theme parks that are local to me here in New England. If any of you are interested, please check out [ThemeParks&Me](https://youtube.com/@themeparksandme?si=-npxJpMoPOHsTOcN) and subscribe for more awesome WDW content! Thanks!",
+              "score": 3
+            },
+            {
+              "author": "zeebs758",
+              "body": "Hi everyone! My friend and I built a mobile app for Disney fans called Park Snacker. You can rate, review and discover over almost every menu item at Walt Disney World. Whether you’re in the parks or planning your next trip, Park Snacker is the perfect way to capture the latest food trends and keep your stomach happy.\n\n⭐ You can Rate & Review everything you eat or drink at Disney World.\n\n📈 Discover the latest trends and see what everyone else is eating or drinking\n\n🌐 The EPCOT Festivals Hub allows you to browse every menu from each festival easly.\n\n👩 Connect with friends to see what they are having on their trip.\n\n🍔 Browse menus at almost every restaurant, snack stand and cart at Walt Disney World.\n\nPlus a whole lot more!\n\nHead over to [parksnacker.com](http://parksnacker.com) to download the app, available for iOS and Android!",
+              "score": 3
+            },
+            {
+              "author": "Cadaverous_pallor",
+              "body": "Follow my Disney adventures on my IG: @disneyiskewl ",
+              "score": 2
+            }
+          ]
+        },
+        {
+          "title": "Grand Opening of Rock ’n’ Roller Coaster Starring The Muppets — Megathread",
+          "author": "marleythebeagle",
+          "score": 206,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tjjgg5/grand_opening_of_rock_n_roller_coaster_starring/",
+          "selftext": "Cast Member and Annual Passholder previews are now underway, and the Grand Opening is just a few days away!\n\nExcitement levels are high — so we’re centralizing all discussion here, as the frequency of posts is (understandably) starting to overwhelm the sub’s front page.\n\nGood luck with those Virtual Queues! Please see the [official Disney Parks Blog](https://disneyworld.disney.go.com/en_CA/attractions/hollywood-studios/rock-and-roller-coaster-starring-muppets/) for more details.",
+          "created_utc": 1779367618.0,
+          "num_comments": 144,
+          "id": "1tjjgg5",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1tjjgg5/grand_opening_of_rock_n_roller_coaster_starring/",
+          "is_self": true,
+          "upvote_ratio": 0.95,
+          "flair": "Megathread",
+          "comments": [
+            {
+              "author": "lalp928",
+              "body": "Rode it twice on Saturday. Not a muppets fan at all (sorry to all who love it- no shade), and I was pleasantly surprised that I still loved it (I know it’s still the same ride as before) Got 2 different songs, and the ride itself didn’t feel overly Muppets, which I appreciated. The preshow is impressive though. ",
+              "score": 85
+            },
+            {
+              "author": "owlthebeer97",
+              "body": "My husband and son got into the virtual que this am! Jealous I have to work :(",
+              "score": 77
+            },
+            {
+              "author": "brahbocop",
+              "body": "I wanted to hate it when it was announced as the Aerosmith coaster is possibly my favorite ride ever. Seeing what they’ve done turned me, this looks fantastic. My only hope is they fixed some of the mechanical issues the original had since it seemed to break down quite a bit. Other than that, I’m genuinely excited to give this a go next time I’m in WDW. ",
+              "score": 45
+            },
+            {
+              "author": "alexdionisos",
+              "body": "Inital thoughts:\n- Definitely a different vibe to Aerosmith's version. Not really better, not really worse, just different.\n\n- Rock Rock Til You Drop seems to be the best cover so far. Little surprised Love Rollercoaster was the original and not the more rock version by RHCP.\n\n- Vogel doesn't sound terrible for the preshow. If anything, Fozzie sounds more off than Kermit (May have been the video itself, though).\n\n- Glad Rowlf showed up. Also very glad to see Sweetums in the preshow.\n\n- Statler and Waldorf seem to have a timing issue where they start talking before the train leaves the tunnel and are done by the time the back of the limo reaches them.\n\n- Fork in the Road was a nice nod. Wish they'd had a one of the characters go \"Oh Kermmiiiiit\" when the limo passed it.\n\nOverall, not bad for a 3 month refurb. I give a 7/10",
+              "score": 44
+            },
+            {
+              "author": "Bkbee",
+              "body": "Saw it Monday for cast previews, loved it. I’m a big ol Muppet fan so it was awesome!",
+              "score": 34
+            }
+          ]
+        },
+        {
+          "title": "Tough choice!!",
+          "author": "farcry2186",
+          "score": 157,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txg6vp/tough_choice/",
+          "selftext": "My picks right now would be: Guardians, Tower of Terror, and Haunted Mansion.  People Mover was SOOOOO close to being in my top 3 though!  \n\nBut, I’m 40, and, as much as I LOOOOVE Space Mountain and Guardians, SM can be a little rough as I get older, and Guardians could give me motion sickness as well.  Tower of Terror could be a little too intense by the time I’m 50.  Tron is actually a very smooth coaster that doesn’t feel too fast, doesn’t jerk you around, no big drops or going upside down or whatnot.  I could ride something like that even into my 60s and still really enjoy it.\n\nSo, then, for the long run as I get older, then my top 3 would be: Haunted Mansion, Pirates, People Mover. ALMOST went with Tron!",
+          "created_utc": 1780652571.0,
+          "num_comments": 362,
+          "id": "1txg6vp",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://i.redd.it/85uyc0o9qf5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.87,
+          "flair": "Attractions & Entertainment",
+          "comments": [
+            {
+              "author": "Crasino_Hunk",
+              "body": "Livin’ with the Land, back to back to back",
+              "score": 187
+            },
+            {
+              "author": "mikeisntdoneyet",
+              "body": "Mansion, pirates, carousel.",
+              "score": 30
+            },
+            {
+              "author": "More-Soil7455",
+              "body": "Big Thunder Mountain, Pirates, Haunted Mansion ",
+              "score": 30
+            },
+            {
+              "author": "Ok-Discipline785",
+              "body": "For me it has to be Pirates, People Mover and Star Tours, reminds me of my childhood! ",
+              "score": 33
+            }
+          ]
+        },
+        {
+          "title": "What popular ride do you just not get",
+          "author": "deano_ue",
+          "score": 131,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txh3e8/what_popular_ride_do_you_just_not_get/",
+          "selftext": "So this stems from a conversation I had with friends who had all been. Of course we all had our favourite or die hard rides but what rides do you just not understand the popularity of. What ones did you dislike that everyone loves.\n\nFor me it came down to two.  \n\nFirst for me was navi river journey. I'll admit an amazing animatronic but that's it two many screens and just boring.\n\nSecond and this may cause pitchfork but its tron its a fun roller coaster but in no way worth the wait times it generates and aside from the gimmick its very forgettable \n\nSo im curious what would you select ",
+          "created_utc": 1780655518.0,
+          "num_comments": 483,
+          "id": "1txh3e8",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txh3e8/what_popular_ride_do_you_just_not_get/",
+          "is_self": true,
+          "upvote_ratio": 0.82,
+          "flair": "Attractions & Entertainment",
+          "comments": [
+            {
+              "author": "Jack-Pumpkinhead",
+              "body": "I get that every ride is someone’s favorite, but I guess I just don’t get why Peter Pan always has a long wait time. It’s fun, yes, & cute. But does it really have to be 40+ minutes all the time?",
+              "score": 406
+            },
+            {
+              "author": "Acceptable_Song_2177",
+              "body": "There’s only one right answer to this, and it’s Peter Pans Flight. If I wanted a better experience, I’d wait a fraction of the time for E.T. @ Universal. Tough sell to wait over an hour usually for a 2 minute ride. ",
+              "score": 152
+            },
+            {
+              "author": "FUnisbaCK",
+              "body": "I gotta be blunt: the seven dwarfs roller coaster. Great ride, great for the kids. \n\nBut here's where they lose me:  it's a 2 minute ride and if you don't have lightning lane or DAS, you could be waiting up to 90 minutes.  90 minutes wait... for a 2 minute ride. ",
+              "score": 150
+            },
+            {
+              "author": "MonotoneTanner",
+              "body": "Sorry but the majority of Magic Kingdom. So many things there are riding on nostalgia and do not justify their 50+ min wait. The lines are just parents taking their kids on rides from the 90’s. (myself included) \n\n70% of the park needs a fresh coat of paint. ",
+              "score": 129
+            }
+          ]
+        },
+        {
+          "title": "Throwback to 2021 when I brought my Polaroid on the trip. Might have to do this again",
+          "author": "SnowmanAndBandit",
+          "score": 81,
+          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1txj99z/throwback_to_2021_when_i_brought_my_polaroid_on/",
+          "selftext": "",
+          "created_utc": 1780661763.0,
+          "num_comments": 6,
+          "id": "1txj99z",
+          "subreddit": "WaltDisneyWorld",
+          "link_url": "https://www.reddit.com/gallery/1txj99z",
+          "is_self": false,
+          "upvote_ratio": 0.94,
+          "flair": "Photo",
+          "comments": [
+            {
+              "author": "SnowmanAndBandit",
+              "body": "I had so much fun shooting with this camera. One of those Toy Story army soldiers kind of broke character and screamed “is that a Polaroid!” To me during the parade haha a ton of older dads were really excited walking by me in the parks too. \n\nThe only part that sucked is it got me pulled for bag inspection every single time I went through any security. With a wife and kid this got kind of old so I haven’t brought it since but I do want to again \n\nAlso flying with film makes me nervous but it worked fine this trip",
+              "score": 5
+            },
+            {
+              "author": "lostXmoon",
+              "body": "Beautiful shots. They look like they could be from “the good ole days”. 🥲",
+              "score": 3
+            },
+            {
+              "author": "Googler10",
+              "body": "Great photos! 😃 ",
+              "score": 2
+            },
+            {
+              "author": "ConnectKale",
+              "body": "I have wanted to start shooting in 35 mm again.  The weird aspect ration, coloring wash out.",
+              "score": 1
+            }
+          ]
+        }
+      ]
     },
     "Disneyland": {
-      "Best of Hour": [],
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
+      "Best of Hour": [
+        {
+          "title": "Buzz Lightyear Astro Blasters Reopening June 12!",
+          "author": "bdthebrave",
+          "score": 26,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1txpm4n/buzz_lightyear_astro_blasters_reopening_june_12/",
+          "selftext": "Disneyland removed Buzz Lightyear from the refurbishment calendar starting on June 12. Super exciting news for us with a vacation in a couple of weeks!",
+          "created_utc": 1780676327.0,
+          "num_comments": 3,
+          "id": "1txpm4n",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/r/Disneyland/comments/1txpm4n/buzz_lightyear_astro_blasters_reopening_june_12/",
+          "is_self": true,
+          "upvote_ratio": 0.91,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "rebeccaiallen",
+              "body": "😆\n\n![gif](giphy|ZPcXa637mSpWqmKWN7)",
+              "score": 5
+            },
+            {
+              "author": "ZeroDarkPurdy14",
+              "body": "Wow. Going next week and barely missing it. That stinks ",
+              "score": 1
+            },
+            {
+              "author": "WeirdMeasurement8743",
+              "body": "Omggggg I’m stoked!!! We’re going late june",
+              "score": 1
+            }
+          ]
+        }
+      ],
+      "Best of 24h": [
+        {
+          "title": "We finally got to enjoy Disneyland with our kids instead of feeling like event coordinators all day",
+          "author": "barleyblackgirl",
+          "score": 547,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tx4tl0/we_finally_got_to_enjoy_disneyland_with_our_kids/",
+          "selftext": "Maybe this is obvious to everyone else, but we recently hired an extra set of hands for our Disneyland day and it was one of the best decisions we’ve made as parents.\n\nUsually when we go to Disney, my husband and I spend the entire day juggling snacks, strollers, bags, bathroom breaks, meltdowns, nap schedules, and trying to keep everyone together. By the end of the day we’re exhausted and realize we barely have any photos of ourselves with the kids.\n\nThis time we had someone with us whose job was simply to help our family throughout the day, and the difference was incredible.\n\nShe helped with the stroller, carried things when our hands were full, grabbed water when we needed it, and was just generally available whenever we needed an extra set of hands. It sounds simple, but it took so much pressure off of us.\n\nOne of my favorite parts was that she took candid photos throughout the day. Not posed photos, but actual moments of us laughing, riding rides, watching our kids experience things for the first time, and just being together. At the end of the day she sent us all the pictures and I honestly cried looking through them. For once, I was actually *in* the memories instead of always being the one behind the camera.\n\nThe best way I can describe it is that it felt like we got to spend the day being parents instead of managers.\n\nI know it’s definitely a luxury and not something we’ll do every trip, but for a special occasion or family vacation, I can absolutely see us doing it again.\n\nHas anyone else ever hired extra help for a theme park day? I’m curious if we’re late to the party on this one. 😂 \n\nI’m am a human, a mother and this isn’t an ad. Not once in the comments have I even tried to advertise or try to pitch the name to anyone. Just trying to have a discussion with other mothers or people who have heard of a theme park nanny service. Sheesh! ",
+          "created_utc": 1780617585.0,
+          "num_comments": 211,
+          "id": "1tx4tl0",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/r/Disneyland/comments/1tx4tl0/we_finally_got_to_enjoy_disneyland_with_our_kids/",
+          "is_self": true,
+          "upvote_ratio": 0.79,
+          "flair": "Trip Report",
+          "comments": [
+            {
+              "author": "butitsapalindrome",
+              "body": "This may be the most rich person thing I've ever heard",
+              "score": 423
+            },
+            {
+              "author": "trer24",
+              "body": "How much does work like this pay?",
+              "score": 219
+            },
+            {
+              "author": "AnotherLolAnon",
+              "body": "I'm sus that this is essentially your only reddit activity ",
+              "score": 136
+            }
+          ]
+        },
+        {
+          "title": "View from the front of the Monorail",
+          "author": "HalfpintPrincess71",
+          "score": 193,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tx5ztn/view_from_the_front_of_the_monorail/",
+          "selftext": "My boyfriend’s favorite ride.. He was so excited we got to ride up front! ",
+          "created_utc": 1780620666.0,
+          "num_comments": 14,
+          "id": "1tx5ztn",
+          "subreddit": "Disneyland",
+          "link_url": "https://v.redd.it/6eb50ulc3d5h1",
+          "is_self": false,
+          "upvote_ratio": 0.98,
+          "flair": "Park Pics/Videos",
+          "comments": [
+            {
+              "author": "Simsider113446",
+              "body": "Kinda cool seeing the remains of the original golden gate bridge the monorail used to cross by the front gate ",
+              "score": 15
+            },
+            {
+              "author": "Veearrsix",
+              "body": "Huh, I was told they stopped doing that. ",
+              "score": 4
+            },
+            {
+              "author": "Dry_Tip4033",
+              "body": "Your boyfriend is one cool dude with that pro drum shop shirt and jacket combo 😎",
+              "score": 3
+            }
+          ]
+        },
+        {
+          "title": "A new Lightning McQueen popcorn bucket coming June 9th",
+          "author": "bottle415",
+          "score": 142,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tx2td8/a_new_lightning_mcqueen_popcorn_bucket_coming/",
+          "selftext": "",
+          "created_utc": 1780612422.0,
+          "num_comments": 25,
+          "id": "1tx2td8",
+          "subreddit": "Disneyland",
+          "link_url": "https://v.redd.it/6cefhi7xec5h1",
+          "is_self": false,
+          "upvote_ratio": 0.93,
+          "flair": "Merchandise",
+          "comments": [
+            {
+              "author": "angrybox1842",
+              "body": "can't wait to store 12 popcorn kernels in one of these bad boys",
+              "score": 52
+            },
+            {
+              "author": "anywhereanyone",
+              "body": "I legitimately do not understand the popcorn bucket obsession. I get that they are collectibles (I guess), but they just all look like cheap plastic garbage to me. ",
+              "score": 19
+            },
+            {
+              "author": "Paul_Smith_Hi",
+              "body": "You just know someone is going to be mad after purchase, because they saw this video and believed it could \"drive\". 🤣",
+              "score": 11
+            },
+            {
+              "author": "xeropteryx",
+              "body": "If only Radiator Springs was ever that empty in real life.",
+              "score": 11
+            }
+          ]
+        },
+        {
+          "title": "Haunted mansion",
+          "author": "HalfpintPrincess71",
+          "score": 135,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1txcveq/haunted_mansion/",
+          "selftext": "Not a new picture but I really liked how this turned out and thought I’d share ",
+          "created_utc": 1780641007.0,
+          "num_comments": 7,
+          "id": "1txcveq",
+          "subreddit": "Disneyland",
+          "link_url": "https://i.redd.it/itsisz3xre5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "Park Pics/Videos",
+          "comments": [
+            {
+              "author": "RainandDarkness",
+              "body": "The only house in the world where I absolutely  love the acoustics of hinges creaking in doorless chambers, and strange & frightening sounds echo through the halls",
+              "score": 3
+            },
+            {
+              "author": "Dramatic-Ad-2449",
+              "body": "Great photo! ",
+              "score": 3
+            },
+            {
+              "author": "Luminaire_Ultima",
+              "body": "Great ‘ aura of foreboding ‘ . ",
+              "score": 2
+            },
+            {
+              "author": "ArtisticTrifle4547",
+              "body": "Cool. When was this taken?",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Jennifer Garner Spotted",
+          "author": "NoCommunication980",
+          "score": 94,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tx13qu/jennifer_garner_spotted/",
+          "selftext": "Just spotted Jennifer by the Once Upon A Farm stand in front of Cars Land! She was handing out snack pouches before she was ushered into the back! Unfortunately I have no proof as I didn't want to bother her - a group had already surrounded her. ",
+          "created_utc": 1780608382.0,
+          "num_comments": 61,
+          "id": "1tx13qu",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/r/Disneyland/comments/1tx13qu/jennifer_garner_spotted/",
+          "is_self": true,
+          "upvote_ratio": 0.67,
+          "flair": "Trip Report",
+          "comments": [
+            {
+              "author": "HeftyIce7679",
+              "body": "Last time I was at Disney…. I saw Goofy and even Mickey.  ;)",
+              "score": 95
+            },
+            {
+              "author": "laran436",
+              "body": " Most LA peeps let the celebs be. Maybe a nod. ",
+              "score": 78
+            },
+            {
+              "author": "1CEninja",
+              "body": "If she's already getting mobbed maybe just let her be. If she's at Disney she's probably just trying to have a nice time.",
+              "score": 41
+            }
+          ]
+        }
+      ],
+      "Best of Week": [
+        {
+          "title": "Disneyland should get a Portal to Disney world",
+          "author": "CrunchyAssDiaper",
+          "score": 5024,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tr8y2s/disneyland_should_get_a_portal_to_disney_world/",
+          "selftext": "It would be so cool if Disneyland had a Portal connecting to Disney World. ",
+          "created_utc": 1780075360.0,
+          "num_comments": 229,
+          "id": "1tr8y2s",
+          "subreddit": "Disneyland",
+          "link_url": "https://i.redd.it/an7euhpy144h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "Discussion",
+          "comments": [
+            {
+              "author": "kanaarei",
+              "body": "They could put it in avengers campus near Dr Strange at DCA",
+              "score": 1700
+            },
+            {
+              "author": "CannedNoodlez",
+              "body": "I don't think a portal has ever gone well",
+              "score": 319
+            },
+            {
+              "author": "AlarmingCount3468",
+              "body": "They used to have a magic chalkboard that connected the Disney Springs Starbucks with the Downtown Disney one. ",
+              "score": 260
+            }
+          ]
+        },
+        {
+          "title": "I don’t care if you are 7 or 70. If you are blessed with the wheel, you gotta steer!",
+          "author": "dend7369",
+          "score": 3189,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1twa1s2/i_dont_care_if_you_are_7_or_70_if_you_are_blessed/",
+          "selftext": "Life Goal - ✅ ",
+          "created_utc": 1780538799.0,
+          "num_comments": 109,
+          "id": "1twa1s2",
+          "subreddit": "Disneyland",
+          "link_url": "https://i.redd.it/f25u9t60c65h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "Park Pics/Videos",
+          "comments": [
+            {
+              "author": "Starfox41",
+              "body": "I'll never forget traumatizing my kids when I was the driver for their first time on this ride and they thought I was actually driving. I think I did a pretty good job, considering they're the ones who looked at the damn statue! ",
+              "score": 202
+            },
+            {
+              "author": "GrungeCowboy73",
+              "body": "I always take the wheel after 7 Fuzzy Tauntauns at Ogas",
+              "score": 199
+            },
+            {
+              "author": "Sea_Setting1442",
+              "body": "If you’re next to the driver you have to yell at them for stalling it in the tunnel. ",
+              "score": 74
+            },
+            {
+              "author": "thegratefulhead50",
+              "body": "The brakes may need a little adjusting",
+              "score": 42
+            }
+          ]
+        },
+        {
+          "title": "\"We can no longer assist you at this time.\"",
+          "author": "-sharc-",
+          "score": 2002,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tt9lkj/we_can_no_longer_assist_you_at_this_time/",
+          "selftext": "I was on Haunted Mansion on Wednesday 5/27/26 around closing time (11:00 p.m.) and this happened.  At first, the cast members advised people to remain seated and to wait to be escorted off the ride. After about 10 minutes, the message changed, stating that the cast members could no longer assist us and to go ahead and squeeze out of our buggies and find the nearest exit.  It wasn't until several minutes after this message that the cast members gave us instructions on how to manually release the clamshells (this is the message you hear on the recording).  This was an absolutely wild experience and I would love to know if anyone knows what happened here.",
+          "created_utc": 1780266696.0,
+          "num_comments": 349,
+          "id": "1tt9lkj",
+          "subreddit": "Disneyland",
+          "link_url": "https://v.redd.it/sgrtrgueuj4h1",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "Park Pics/Videos",
+          "comments": [
+            {
+              "author": "_mbals",
+              "body": "That’s such a cool and interesting experience. It also seems weird that they just turned you loose to find your way out!\n\nOf course…there’s always my way.",
+              "score": 1164
+            },
+            {
+              "author": "DPDoctor",
+              "body": "\"...can no longer assist you...\" I have been going to Disneyland since the early-mid 1960s. I have never heard a cast member say anything like this, nor have I ever seen them leave park guests to make their own way out of a ride. There's a story behind this. Inquiring minds want to know!! ",
+              "score": 961
+            },
+            {
+              "author": "NeoKingSerenity",
+              "body": "I used to work mansion. This is a VERY rare evac. Usually The stop button is pushed or ride e-stop and power the attraction down and then there's these locks that are backstage right behind where you get off that employees use so that no one gets hurt on the attraction by the tracks not being cleared before starting it. \n\nTheen they will let people out one by one. Walking the track and yell at you for taking pictures yada yada. In this case, there must have been a severe malfunction or emergency. This is very unusual.\n\nBtw on every attraction at Disneyland if it was a severe emergency like a major fire, you're all on your own. CMs are not to be heroes and it's \"good luck everybody else\" \n\nEdit1: forgot to mention the track for the graveyard is off the ground. There's many feet if I recall of stuff you can fall into and some of the ground is false away from the track. Hope no one got injured!",
+              "score": 468
+            },
+            {
+              "author": "Doyoulikemypace",
+              "body": "These are emergency evac procedures so it must’ve been something extremely wrong with the ride system. Cast are trained to prioritize their own safety over the guests’ safety, so likely a fire alarm and an unrecoverable ride stop is my guess. Tell the guests to find an exit sign and get out. Disney does not like to leave guest unattended in ride areas so this is an absolute last resort procedure.",
+              "score": 273
+            }
+          ]
+        },
+        {
+          "title": "Made From an upcycled comforter. What are your thoughts?",
+          "author": "AMasterOfNone-",
+          "score": 1863,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tvy4gd/made_from_an_upcycled_comforter_what_are_your/",
+          "selftext": "",
+          "created_utc": 1780511132.0,
+          "num_comments": 108,
+          "id": "1tvy4gd",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/gallery/1tvy4gd",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Art",
+          "comments": [
+            {
+              "author": "bweeanna",
+              "body": "THIS IS SO CUTE!!",
+              "score": 135
+            },
+            {
+              "author": "tivofanatico",
+              "body": "It looks professionally made. I would think it was a vintage piece.",
+              "score": 120
+            },
+            {
+              "author": "OK_Compooper",
+              "body": "You've saved this sub. Now this is something finally interesting. Looks so cozy. Now I wish I would have saved my Star Wars comforters from the 80s. \n\nNice job!",
+              "score": 65
+            },
+            {
+              "author": "Jaminp",
+              "body": "![gif](giphy|yAYZnhvY3fflS)",
+              "score": 35
+            },
+            {
+              "author": "callsignjaguar",
+              "body": "I love this!! I used to have the most nostalgic Disney Princess comforters growing up. I’d love to make it into a jacket like this! How creative! ",
+              "score": 20
+            }
+          ]
+        },
+        {
+          "title": "To the man on Thunder Mountain at 6:26 yesterday",
+          "author": "Asleep-Working4598",
+          "score": 910,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tre24j/to_the_man_on_thunder_mountain_at_626_yesterday/",
+          "selftext": "Here's your shot! (I was just trying to take pics of the sky)",
+          "created_utc": 1780085265.0,
+          "num_comments": 39,
+          "id": "1tre24j",
+          "subreddit": "Disneyland",
+          "link_url": "https://i.redd.it/trditrtev44h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.99,
+          "flair": "Park Pics/Videos",
+          "comments": [
+            {
+              "author": "Sum_Angel",
+              "body": "Maybe that’s just his signature pose 🤣",
+              "score": 236
+            },
+            {
+              "author": "thoiboi",
+              "body": "![gif](giphy|eeYCKm1UriwMAKe11Q|downsized)",
+              "score": 208
+            },
+            {
+              "author": "Impossible_Disk8374",
+              "body": "And his hats still on?! Yes King.",
+              "score": 102
+            }
+          ]
+        }
+      ],
+      "Hot": [
+        {
+          "title": "Weekly Park Questions/Advice Thread",
+          "author": "AutoModerator",
+          "score": 10,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tsnz5f/weekly_park_questionsadvice_thread/",
+          "selftext": "Welcome to [/r/Disneyland](https://www.reddit.com/r/Disneyland)!\n\nThis thread is here to help you plan your trip and get as much advice as possible straight from our Reddit community.\n\nWe know you've probably got a million questions for us, so we'd like to take a moment to remind you to check out the [FAQ](https://www.reddit.com/r/Disneyland/wiki/index), where you can find many pages about various topics here to help you with your vacation from start to finish!\n\nIndividual posts dedicated to trip planning are not allowed except on rare occasions, DM the mod team for permission or make a post over at [r/DisneyPlanning](https://www.reddit.com/r/DisneyPlanning/).\n\nHappy planning, and we'll see you real soon!",
+          "created_utc": 1780210833.0,
+          "num_comments": 68,
+          "id": "1tsnz5f",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/r/Disneyland/comments/1tsnz5f/weekly_park_questionsadvice_thread/",
+          "is_self": true,
+          "upvote_ratio": 0.92,
+          "flair": "Help!",
+          "comments": [
+            {
+              "author": "michemel",
+              "body": "Is there a place in DCA that sells the frozen apple juice sold in Disneyland? I am heading back on the 14th with limited mobility but to DCA this time. Craving a nice cold frozen apple juice!",
+              "score": 3
+            },
+            {
+              "author": "Fantastic-Role-8222",
+              "body": "Taking daughter and 5 of her friends to Disneyland for her 21st birthday in July. She wants to have her first “official” drink at Olga’s Cantina.  They don’t take reservations.  Is it a busy place?  ",
+              "score": 2
+            },
+            {
+              "author": "every1_luvs_Gabriela",
+              "body": "It’s my first time going to Disneyland in a couple weeks, and I’m aware costumes or heavy face coverings are not allowed. However, whenever I go out I usually wear traditional goth makeup. I couldn’t really find much online that pertains to my case, so I thought to come share my situation on here.\n\nMy makeup isn’t too extreme, but I’ll put a photo (from Pinterest) down below as an example or similar makeup look to the ones I regularly do.\n\nWill they not let me in the parks or tell me to wash it off? Any other goths/alternative people that can give me some guidelines? Tysm in advance and I appreciate you taking the time to read this. 🖤\n\nhttps://preview.redd.it/u3qryf1jul4h1.jpeg?width=1080&format=pjpg&auto=webp&s=04434982dad43d1b38affa8e39cb137a89543ec3",
+              "score": 2
+            }
+          ]
+        },
+        {
+          "title": "Great Maple ( Hot Honey Chicken Sandwich )",
+          "author": "OverCry518",
+          "score": 55,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1txoraw/great_maple_hot_honey_chicken_sandwich/",
+          "selftext": "One of the best meals throughout the resort. A bit pricey but the quality is there. It’s also a double chicken sandwich that’s why it’s stacked so high. I also upgraded to Parmesan fries. ",
+          "created_utc": 1780674519.0,
+          "num_comments": 15,
+          "id": "1txoraw",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/gallery/1txoraw",
+          "is_self": false,
+          "upvote_ratio": 0.95,
+          "flair": "Food/Drink",
+          "comments": [
+            {
+              "author": "steam_punk_genocide",
+              "body": "Big sandwiches should be wider not taller. ",
+              "score": 11
+            },
+            {
+              "author": "Themandoloriano",
+              "body": "Where is this restaurant located at ?",
+              "score": 5
+            },
+            {
+              "author": "lakersnationnnnn",
+              "body": "To much slaw for me ",
+              "score": 2
+            }
+          ]
+        },
+        {
+          "title": "We finally got to enjoy Disneyland with our kids instead of feeling like event coordinators all day",
+          "author": "barleyblackgirl",
+          "score": 545,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1tx4tl0/we_finally_got_to_enjoy_disneyland_with_our_kids/",
+          "selftext": "Maybe this is obvious to everyone else, but we recently hired an extra set of hands for our Disneyland day and it was one of the best decisions we’ve made as parents.\n\nUsually when we go to Disney, my husband and I spend the entire day juggling snacks, strollers, bags, bathroom breaks, meltdowns, nap schedules, and trying to keep everyone together. By the end of the day we’re exhausted and realize we barely have any photos of ourselves with the kids.\n\nThis time we had someone with us whose job was simply to help our family throughout the day, and the difference was incredible.\n\nShe helped with the stroller, carried things when our hands were full, grabbed water when we needed it, and was just generally available whenever we needed an extra set of hands. It sounds simple, but it took so much pressure off of us.\n\nOne of my favorite parts was that she took candid photos throughout the day. Not posed photos, but actual moments of us laughing, riding rides, watching our kids experience things for the first time, and just being together. At the end of the day she sent us all the pictures and I honestly cried looking through them. For once, I was actually *in* the memories instead of always being the one behind the camera.\n\nThe best way I can describe it is that it felt like we got to spend the day being parents instead of managers.\n\nI know it’s definitely a luxury and not something we’ll do every trip, but for a special occasion or family vacation, I can absolutely see us doing it again.\n\nHas anyone else ever hired extra help for a theme park day? I’m curious if we’re late to the party on this one. 😂 \n\nI’m am a human, a mother and this isn’t an ad. Not once in the comments have I even tried to advertise or try to pitch the name to anyone. Just trying to have a discussion with other mothers or people who have heard of a theme park nanny service. Sheesh! ",
+          "created_utc": 1780617585.0,
+          "num_comments": 211,
+          "id": "1tx4tl0",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/r/Disneyland/comments/1tx4tl0/we_finally_got_to_enjoy_disneyland_with_our_kids/",
+          "is_self": true,
+          "upvote_ratio": 0.79,
+          "flair": "Trip Report",
+          "comments": [
+            {
+              "author": "butitsapalindrome",
+              "body": "This may be the most rich person thing I've ever heard",
+              "score": 423
+            },
+            {
+              "author": "trer24",
+              "body": "How much does work like this pay?",
+              "score": 219
+            },
+            {
+              "author": "AnotherLolAnon",
+              "body": "I'm sus that this is essentially your only reddit activity ",
+              "score": 136
+            }
+          ]
+        },
+        {
+          "title": "Buzz Lightyear Astro Blasters Reopening June 12!",
+          "author": "bdthebrave",
+          "score": 26,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1txpm4n/buzz_lightyear_astro_blasters_reopening_june_12/",
+          "selftext": "Disneyland removed Buzz Lightyear from the refurbishment calendar starting on June 12. Super exciting news for us with a vacation in a couple of weeks!",
+          "created_utc": 1780676327.0,
+          "num_comments": 3,
+          "id": "1txpm4n",
+          "subreddit": "Disneyland",
+          "link_url": "https://www.reddit.com/r/Disneyland/comments/1txpm4n/buzz_lightyear_astro_blasters_reopening_june_12/",
+          "is_self": true,
+          "upvote_ratio": 0.91,
+          "flair": "News",
+          "comments": [
+            {
+              "author": "rebeccaiallen",
+              "body": "😆\n\n![gif](giphy|ZPcXa637mSpWqmKWN7)",
+              "score": 5
+            },
+            {
+              "author": "ZeroDarkPurdy14",
+              "body": "Wow. Going next week and barely missing it. That stinks ",
+              "score": 1
+            },
+            {
+              "author": "WeirdMeasurement8743",
+              "body": "Omggggg I’m stoked!!! We’re going late june",
+              "score": 1
+            }
+          ]
+        },
+        {
+          "title": "Haunted mansion",
+          "author": "HalfpintPrincess71",
+          "score": 134,
+          "url": "https://www.reddit.com/r/Disneyland/comments/1txcveq/haunted_mansion/",
+          "selftext": "Not a new picture but I really liked how this turned out and thought I’d share ",
+          "created_utc": 1780641007.0,
+          "num_comments": 7,
+          "id": "1txcveq",
+          "subreddit": "Disneyland",
+          "link_url": "https://i.redd.it/itsisz3xre5h1.jpeg",
+          "is_self": false,
+          "upvote_ratio": 0.97,
+          "flair": "Park Pics/Videos",
+          "comments": [
+            {
+              "author": "RainandDarkness",
+              "body": "The only house in the world where I absolutely  love the acoustics of hinges creaking in doorless chambers, and strange & frightening sounds echo through the halls",
+              "score": 3
+            },
+            {
+              "author": "Dramatic-Ad-2449",
+              "body": "Great photo! ",
+              "score": 3
+            },
+            {
+              "author": "Luminaire_Ultima",
+              "body": "Great ‘ aura of foreboding ‘ . ",
+              "score": 2
+            },
+            {
+              "author": "ArtisticTrifle4547",
+              "body": "Cool. When was this taken?",
+              "score": 1
+            }
+          ]
+        }
+      ]
     }
   }
 }
