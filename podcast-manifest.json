@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Rejoice",
+        "date": "Jun 07, 2026",
+        "dateSort": "2026-06-07",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17356518/rejoice"
+      },
+      {
         "title": "Balance",
         "date": "May 31, 2026",
         "dateSort": "2026-05-31",
@@ -204,12 +210,6 @@
         "date": "May 10, 2026",
         "dateSort": "2026-05-10",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17338582/b7620692b3ec4a36b0507e53c9b613a5_202605010_TJ_Philippians_Wk3.mp3"
-      },
-      {
-        "title": "In Every Season",
-        "date": "May 03, 2026",
-        "dateSort": "2026-05-03",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17332307/2f5aaf16d0724caf93ab88f506312141_20260503_MC_Philippians_Wk2.mp3"
       }
     ]
   },
