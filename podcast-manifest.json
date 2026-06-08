@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Can Wemby\u2019s Spurs Shake Off a True Gut Punch? Plus: Adam Friedland on NYC Coming Alive, Trump at MSG, and the World Cup.",
+        "date": "Jun 08, 2026",
+        "dateSort": "2026-06-08",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4110805333.mp3"
+      },
+      {
         "title": "The Knicks Land a Haymaker, With Doc Rivers. Plus, a Mini-Mailbag, the End of 'Euphoria,' and a Movies Resurgence With Joanna Robinson and Chris Ryan.",
         "date": "Jun 04, 2026",
         "dateSort": "2026-06-04",
@@ -25,12 +31,6 @@
         "date": "May 29, 2026",
         "dateSort": "2026-05-29",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6866964130.mp3"
-      },
-      {
-        "title": "A Spurs Fumble, CarusoMania, Brunson\u2019s Mega-Rise and a Knicks Appreciation With Tim Legler and Brian Koppelman",
-        "date": "May 27, 2026",
-        "dateSort": "2026-05-27",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4757813495.mp3"
       }
     ]
   },
