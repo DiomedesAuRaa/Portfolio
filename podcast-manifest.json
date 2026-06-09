@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "A Gutty Spurs Win, Angry Knicks Fans, Game 4 Thoughts, and NBA Draft Movements With Rob Mahoney and J. Kyle Mann",
+        "date": "Jun 09, 2026",
+        "dateSort": "2026-06-09",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1062734813.mp3"
+      },
+      {
         "title": "Can Wemby\u2019s Spurs Shake Off a True Gut Punch? Plus: Adam Friedland on NYC Coming Alive, Trump at MSG, and the World Cup.",
         "date": "Jun 08, 2026",
         "dateSort": "2026-06-08",
@@ -25,12 +31,6 @@
         "date": "May 31, 2026",
         "dateSort": "2026-05-31",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8976192256.mp3"
-      },
-      {
-        "title": "Game 7 Fever in OKC, NBA Lottery Reform, and a Mega-Mailbag With Rob Mahoney, David Jacoby, and Joe House",
-        "date": "May 29, 2026",
-        "dateSort": "2026-05-29",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6866964130.mp3"
       }
     ]
   },
