@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "Mel at 100: The Mel Brooks Movie Rankings. Plus: \u2018Scary Movie\u2019 Is Terrifyingly Awful",
+        "date": "Jun 09, 2026",
+        "dateSort": "2026-06-09",
+        "audioUrl": "https://traffic.megaphone.fm/GLT3729370960.mp3"
+      },
+      {
         "title": "The Top 10 Fantasy Films, The Toy Movie Hall of Fame, and \u2018Masters of the Universe,\u2019 with Griffin Newman!",
         "date": "Jun 05, 2026",
         "dateSort": "2026-06-05",
@@ -274,12 +280,6 @@
         "date": "May 27, 2026",
         "dateSort": "2026-05-27",
         "audioUrl": "https://traffic.megaphone.fm/GLT8003249242.mp3"
-      },
-      {
-        "title": "We Went to Cannes! These Are the 10 Best (and Worst) Things We Saw.",
-        "date": "May 21, 2026",
-        "dateSort": "2026-05-21",
-        "audioUrl": "https://traffic.megaphone.fm/GLT3751623121.mp3"
       }
     ]
   },
