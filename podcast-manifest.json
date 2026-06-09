@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "Spurs Take Game 3! Wemby\u2019s Big Game, Brunson Hero Ball, and More!",
+        "date": "Jun 09, 2026",
+        "dateSort": "2026-06-09",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4408140063.mp3"
+      },
+      {
         "title": "The Knicks Win a Game 2 Thriller with Jon Krawczynski!",
         "date": "Jun 06, 2026",
         "dateSort": "2026-06-06",
@@ -95,12 +101,6 @@
         "date": "Jun 02, 2026",
         "dateSort": "2026-06-02",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4833921306.mp3"
-      },
-      {
-        "title": "Spurs Force Game 7! Game 6 Thoughts, Keys for Each Team, and More!",
-        "date": "May 29, 2026",
-        "dateSort": "2026-05-29",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6090433149.mp3"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Monaco GP Driver Ratings",
+        "date": "Jun 09, 2026",
+        "dateSort": "2026-06-09",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a2817dfc66a585d6225ae57/media.mp3"
+      },
+      {
         "title": "Monaco GP Race Review",
         "date": "Jun 07, 2026",
         "dateSort": "2026-06-07",
@@ -344,12 +350,6 @@
         "date": "Jun 03, 2026",
         "dateSort": "2026-06-03",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a1fff57a45d0c01d9c10c6e/media.mp3"
-      },
-      {
-        "title": "Our 2026 Monaco GP predictions",
-        "date": "Jun 02, 2026",
-        "dateSort": "2026-06-02",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a1ede5cb0f05cc321611945/media.mp3"
       }
     ]
   }
