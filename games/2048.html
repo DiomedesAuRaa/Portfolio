@@ -37,6 +37,8 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
 .tile[data-v="512"]{background:#0fa06e;font-size:13px}
 .tile[data-v="1024"]{background:#e0a020;font-size:10px}
 .tile[data-v="2048"]{background:#ff6b35;font-size:10px;box-shadow:0 0 10px #ff6b35}
+.tile[data-v="4096"]{background:#ff4b4b;font-size:10px;box-shadow:0 0 10px #ff4b4b}
+.tile[data-v="8192"]{background:#ff1e1e;font-size:10px;box-shadow:0 0 10px #ff1e1e}
 .overlay{position:absolute;inset:0;background:rgba(13,27,42,0.93);display:none;
   flex-direction:column;align-items:center;justify-content:center;gap:8px;z-index:8}
 .overlay.show{display:flex}
@@ -92,6 +94,7 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
     <div class="overlay" id="ovr">
       <h2 id="ovrtitle">2048</h2>
       <p id="ovrmsg">Swipe or use arrow keys<br>to merge tiles</p>
+      <button class="obtn" id="keepPlayingBtn" style="display:none; background:#0fa06e;" onclick="event.stopPropagation();hideOverlay();activate()">KEEP PLAYING</button>
       <button class="obtn" onclick="event.stopPropagation();newGame();activate()">NEW GAME</button>
     </div>
     <div class="tapbanner" id="tap" onclick="activate()">
@@ -161,6 +164,7 @@ function emptyGrid() {
 function newGame() {
   grid = emptyGrid(); score = 0; moves = 0; won = false;
   prevGrid = null; prevScore = 0; prevMoves = 0;
+  document.getElementById('keepPlayingBtn').style.display = 'none';
   addRandom(); addRandom();
   hideOverlay(); render(); updateUI();
   saveState(); activate();
@@ -208,10 +212,21 @@ function doMove(dir) {
   }
   if (JSON.stringify(grid)===before) return;
   score+=gained; moves++; addRandom();
+  
+  var reached2048 = false;
   if (!won) {
-    for (var r=0;r<4;r++) for (var c=0;c<4;c++) if (grid[r][c]===2048) { won=true; showOverlay('YOU WIN!','Score: '+score); }
+    for (var r=0;r<4;r++) for (var c=0;c<4;c++) if (grid[r][c]===2048) { won=true; reached2048=true; }
   }
-  if (!won && !canMove()) { saveScore(); showOverlay('GAME OVER','Final score: '+score); }
+  
+  if (reached2048) {
+    document.getElementById('keepPlayingBtn').style.display = 'block';
+    showOverlay('YOU WIN!','Score: '+score);
+  } else if (!canMove()) {
+    saveScore();
+    document.getElementById('keepPlayingBtn').style.display = 'none';
+    showOverlay('GAME OVER','Final score: '+score);
+  }
+  
   render(); updateUI(); saveState();
 }
 
