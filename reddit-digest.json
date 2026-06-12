@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-06-11T23:04:40.013961",
-  "generated_at": "2026-06-11 23:04:40 UTC",
+  "timestamp": "2026-06-12T00:04:40.325842",
+  "generated_at": "2026-06-12 00:04:40 UTC",
   "subreddits_count": 14,
   "total_posts": 25,
   "feeds": [
@@ -113,22 +113,6 @@
           "comments": []
         },
         {
-          "title": "[Kleiman] Colorado HC Deion Sanders has announced that he is officially cancer-free after being diagnosed with bladder cancer in April of 2025.",
-          "author": "yxqp",
-          "score": 0,
-          "url": "https://www.reddit.com/r/CFB/comments/1u2qxet/kleiman_colorado_hc_deion_sanders_has_announced/",
-          "selftext": "",
-          "created_utc": 1781176588.0,
-          "num_comments": 0,
-          "id": "1u2qxet",
-          "subreddit": "cfb",
-          "link_url": "https://www.reddit.com/r/CFB/comments/1u2qxet/kleiman_colorado_hc_deion_sanders_has_announced/",
-          "is_self": true,
-          "upvote_ratio": 0,
-          "flair": "",
-          "comments": []
-        },
-        {
           "title": "[Vannini] Texas Tech Chairman on Big 12 sanctions: \"I love when the Big Ten or the K-State AD says we've all gotten together and we've talked about how we're not going to play Tech, because guess what? That's collusion. That's an antitrust violation. So have fun with that. You can't do that.\"",
           "author": "WinnWonn",
           "score": 0,
@@ -139,6 +123,22 @@
           "id": "1u37jho",
           "subreddit": "cfb",
           "link_url": "https://www.reddit.com/r/CFB/comments/1u37jho/vannini_texas_tech_chairman_on_big_12_sanctions_i/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[Kleiman] Colorado HC Deion Sanders has announced that he is officially cancer-free after being diagnosed with bladder cancer in April of 2025.",
+          "author": "yxqp",
+          "score": 0,
+          "url": "https://www.reddit.com/r/CFB/comments/1u2qxet/kleiman_colorado_hc_deion_sanders_has_announced/",
+          "selftext": "",
+          "created_utc": 1781176588.0,
+          "num_comments": 0,
+          "id": "1u2qxet",
+          "subreddit": "cfb",
+          "link_url": "https://www.reddit.com/r/CFB/comments/1u2qxet/kleiman_colorado_hc_deion_sanders_has_announced/",
           "is_self": true,
           "upvote_ratio": 0,
           "flair": "",
