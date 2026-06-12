@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "Gail Simmons on the \u2018Top Chef\u2019 Season 23 Finale! Plus, \u2018Widow\u2019s Bay\u2019 Episode 9.",
+        "date": "Jun 11, 2026",
+        "dateSort": "2026-06-11",
+        "audioUrl": "https://traffic.megaphone.fm/GLT6050651398.mp3"
+      },
+      {
         "title": "Apple Owns TV Right Now. Is That a Good Thing? Plus, \u2018Cape Fear\u2019 Series Premiere and \u2018Star City\u2019 Episode 3.",
         "date": "Jun 08, 2026",
         "dateSort": "2026-06-08",
@@ -60,12 +66,6 @@
         "date": "May 28, 2026",
         "dateSort": "2026-05-28",
         "audioUrl": "https://traffic.megaphone.fm/GLT8665331728.mp3"
-      },
-      {
-        "title": "\u2018Survivor\u2019 Season 50 Finale, \u2018Widow\u2019s Bay\u2019 Episode 5, and All-Time Episodic Runs With Joanna Robinson",
-        "date": "May 22, 2026",
-        "dateSort": "2026-05-22",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8154715884.mp3"
       }
     ]
   },
