@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "New York Wins the Title, Brunson Wins Immortality, and Knicks Fans Have a Zihuatanejo Moment With Zach Lowe",
+        "date": "Jun 14, 2026",
+        "dateSort": "2026-06-14",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5556470862.mp3"
+      },
+      {
         "title": "A Knicks Miracle (and an All-Time Spurs Collapse), a Mini-Mailbag, and a World Cup Preview | With Joe House, Kirk Goldsberry, Anthony Dabbundo, and Cousin Sal",
         "date": "Jun 11, 2026",
         "dateSort": "2026-06-11",
@@ -25,12 +31,6 @@
         "date": "Jun 04, 2026",
         "dateSort": "2026-06-04",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7228069865.mp3"
-      },
-      {
-        "title": "A Finals Pick, Greatest Knicks Ever, \u2018Made\u2019 N.Y.C. Stars, and Big NFL Trades With Max Kellerman",
-        "date": "Jun 02, 2026",
-        "dateSort": "2026-06-02",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2301186578.mp3"
       }
     ]
   },
