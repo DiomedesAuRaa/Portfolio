@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Why Brunson Is Top 50 All Time, a Finals Mega-Mailbag, and NBA Fake Trade Season With Joe House",
+        "date": "Jun 15, 2026",
+        "dateSort": "2026-06-15",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5377184167.mp3"
+      },
+      {
         "title": "New York Wins the Title, Brunson Wins Immortality, and Knicks Fans Have a Zihuatanejo Moment With Zach Lowe",
         "date": "Jun 14, 2026",
         "dateSort": "2026-06-14",
@@ -25,12 +31,6 @@
         "date": "Jun 08, 2026",
         "dateSort": "2026-06-08",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4110805333.mp3"
-      },
-      {
-        "title": "The Knicks Land a Haymaker, With Doc Rivers. Plus, a Mini-Mailbag, the End of 'Euphoria,' and a Movies Resurgence With Joanna Robinson and Chris Ryan.",
-        "date": "Jun 04, 2026",
-        "dateSort": "2026-06-04",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7228069865.mp3"
       }
     ]
   },
