@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 21st-Century Steven Spielberg Rankings. Plus: \u2018Office Romance\u2019 and \u2018The Furious.\u2019",
+        "date": "Jun 16, 2026",
+        "dateSort": "2026-06-16",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1878446562.mp3"
+      },
+      {
         "title": "\u2018Disclosure Day\u2019 Is Steven Spielberg\u2019s True Believer Manifesto. Kneel!",
         "date": "Jun 12, 2026",
         "dateSort": "2026-06-12",
@@ -274,12 +280,6 @@
         "date": "Jun 02, 2026",
         "dateSort": "2026-06-02",
         "audioUrl": "https://traffic.megaphone.fm/GLT9657376807.mp3"
-      },
-      {
-        "title": "\u2018Backrooms\u2019 Is the Future of Movies, With Kane Parsons!",
-        "date": "May 29, 2026",
-        "dateSort": "2026-05-29",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8878685139.mp3"
       }
     ]
   },
