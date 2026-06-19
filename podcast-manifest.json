@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "NBA Draft Questions, Harper vs. Fox, and the USMNT\u2019s World Cup Ceiling",
+        "date": "Jun 19, 2026",
+        "dateSort": "2026-06-19",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7171862460.mp3"
+      },
+      {
         "title": "2026 Finals Lessons, Giannis\u2019s Next Stop, Brunson\u2019s Apex, and Mike Brown\u2019s Magic Touch With Doc Rivers",
         "date": "Jun 17, 2026",
         "dateSort": "2026-06-17",
@@ -25,12 +31,6 @@
         "date": "Jun 11, 2026",
         "dateSort": "2026-06-11",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2769265128.mp3"
-      },
-      {
-        "title": "A Gutty Spurs Win, Angry Knicks Fans, Game 4 Thoughts, and NBA Draft Movements With Rob Mahoney and J. Kyle Mann",
-        "date": "Jun 09, 2026",
-        "dateSort": "2026-06-09",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1062734813.mp3"
       }
     ]
   },
