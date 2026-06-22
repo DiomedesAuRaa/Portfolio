@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Giannis Never-Trade and a Mega-Mailbag With Zach Lowe, Plus Wyndham Clark\u2019s Second U.S. Open Title With Joe House",
+        "date": "Jun 22, 2026",
+        "dateSort": "2026-06-22",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6220798320.mp3"
+      },
+      {
         "title": "NBA Draft Questions, Harper vs. Fox, and the USMNT\u2019s World Cup Ceiling",
         "date": "Jun 19, 2026",
         "dateSort": "2026-06-19",
@@ -25,12 +31,6 @@
         "date": "Jun 14, 2026",
         "dateSort": "2026-06-14",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5556470862.mp3"
-      },
-      {
-        "title": "A Knicks Miracle (and an All-Time Spurs Collapse), a Mini-Mailbag, and a World Cup Preview | With Joe House, Kirk Goldsberry, Anthony Dabbundo, and Cousin Sal",
-        "date": "Jun 11, 2026",
-        "dateSort": "2026-06-11",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2769265128.mp3"
       }
     ]
   },
