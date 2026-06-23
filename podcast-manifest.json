@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Giannis to Miami! An Urgent Gathering Pod With Chris Ryan and Justin Verrier",
+        "date": "Jun 23, 2026",
+        "dateSort": "2026-06-23",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3129901725.mp3"
+      },
+      {
         "title": "The Giannis Never-Trade and a Mega-Mailbag With Zach Lowe, Plus Wyndham Clark\u2019s Second U.S. Open Title With Joe House",
         "date": "Jun 22, 2026",
         "dateSort": "2026-06-22",
@@ -25,12 +31,6 @@
         "date": "Jun 15, 2026",
         "dateSort": "2026-06-15",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5377184167.mp3"
-      },
-      {
-        "title": "New York Wins the Title, Brunson Wins Immortality, and Knicks Fans Have a Zihuatanejo Moment With Zach Lowe",
-        "date": "Jun 14, 2026",
-        "dateSort": "2026-06-14",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5556470862.mp3"
       }
     ]
   },
