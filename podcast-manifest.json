@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 2010 Mega-Movie Re-Draft",
+        "date": "Jun 23, 2026",
+        "dateSort": "2026-06-23",
+        "audioUrl": "https://traffic.megaphone.fm/GLT4742407305.mp3"
+      },
+      {
         "title": "\u2018Toy Story 5\u2019 and the \u2018Toy Story\u2019 Movie Rankings. Plus: \u2018The Death of Robin Hood\u2019 and the Top Five Robin Hoods.",
         "date": "Jun 19, 2026",
         "dateSort": "2026-06-19",
@@ -274,12 +280,6 @@
         "date": "Jun 09, 2026",
         "dateSort": "2026-06-09",
         "audioUrl": "https://traffic.megaphone.fm/GLT3729370960.mp3"
-      },
-      {
-        "title": "The Top 10 Fantasy Films, The Toy Movie Hall of Fame, and \u2018Masters of the Universe,\u2019 with Griffin Newman!",
-        "date": "Jun 05, 2026",
-        "dateSort": "2026-06-05",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9123481128.mp3"
       }
     ]
   },
