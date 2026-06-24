@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "2026 NBA Draft Winners and Losers With Joe House and J. Kyle Mann",
+        "date": "Jun 24, 2026",
+        "dateSort": "2026-06-24",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9942260452.mp3"
+      },
+      {
         "title": "Giannis to Miami! An Urgent Gathering Pod With Chris Ryan and Justin Verrier",
         "date": "Jun 23, 2026",
         "dateSort": "2026-06-23",
@@ -25,12 +31,6 @@
         "date": "Jun 17, 2026",
         "dateSort": "2026-06-17",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8168895999.mp3"
-      },
-      {
-        "title": "Why Brunson Is Top 50 All Time, a Finals Mega-Mailbag, and NBA Fake Trade Season With Joe House",
-        "date": "Jun 15, 2026",
-        "dateSort": "2026-06-15",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5377184167.mp3"
       }
     ]
   },
