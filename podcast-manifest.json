@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Austrian GP Race Review",
+        "date": "Jun 28, 2026",
+        "dateSort": "2026-06-28",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a415dc83af8baa017f0edfd/media.mp3"
+      },
+      {
         "title": "Reaction to Austrian GP qualifying",
         "date": "Jun 27, 2026",
         "dateSort": "2026-06-27",
@@ -344,12 +350,6 @@
         "date": "Jun 19, 2026",
         "dateSort": "2026-06-19",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a3027c4c9e0eae714411aaa/media.mp3"
-      },
-      {
-        "title": "Barcelona-Catalunya GP Driver Ratings",
-        "date": "Jun 16, 2026",
-        "dateSort": "2026-06-16",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a3149d77cd2ef217f3231fd/media.mp3"
       }
     ]
   }
