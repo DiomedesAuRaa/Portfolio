@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018The Bear\u2019 Clocks Out. Plus, \u2018House of the Dragon\u2019 Season 3, Episode 2 and \u2018Star City\u2019 Episode 6.",
+        "date": "Jun 29, 2026",
+        "dateSort": "2026-06-29",
+        "audioUrl": "https://traffic.megaphone.fm/GLT2175733700.mp3"
+      },
+      {
         "title": "\u2018The Bear\u2019 Season 5, Episodes 1-3 and \u2018The Agency\u2019 Season 2 Premiere. Plus, the State of Comic Book Movies.",
         "date": "Jun 25, 2026",
         "dateSort": "2026-06-25",
@@ -60,12 +66,6 @@
         "date": "Jun 15, 2026",
         "dateSort": "2026-06-15",
         "audioUrl": "https://traffic.megaphone.fm/GLT9849409810.mp3"
-      },
-      {
-        "title": "Gail Simmons on the \u2018Top Chef\u2019 Season 23 Finale! Plus, \u2018Widow\u2019s Bay\u2019 Episode 9.",
-        "date": "Jun 11, 2026",
-        "dateSort": "2026-06-11",
-        "audioUrl": "https://traffic.megaphone.fm/GLT6050651398.mp3"
       }
     ]
   },
@@ -182,6 +182,18 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "\"Love People\" Context & Setup",
+        "date": "Jun 28, 2026",
+        "dateSort": "2026-06-28",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369981/love-people-context-setup"
+      },
+      {
+        "title": "\"Love People\" Conversation",
+        "date": "Jun 28, 2026",
+        "dateSort": "2026-06-28",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369982/love-people-conversation-1"
+      },
+      {
         "title": "\"Love God\" Weekend Service",
         "date": "Jun 28, 2026",
         "dateSort": "2026-06-28",
@@ -198,18 +210,6 @@
         "date": "Jun 25, 2026",
         "dateSort": "2026-06-25",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369861/context-setup"
-      },
-      {
-        "title": "Grace",
-        "date": "Jun 21, 2026",
-        "dateSort": "2026-06-21",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369863/485f42bbece54138987ef4673c350b6b_20260621_MK_Phillipians_Wk9.mp3"
-      },
-      {
-        "title": "Contentment",
-        "date": "Jun 14, 2026",
-        "dateSort": "2026-06-14",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369865/230bea3279d7442196e6bf873b3076d2_20260614_MK_Philippians_Wk8.mp3"
       }
     ]
   },
