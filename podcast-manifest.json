@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "NBA Free Agency Primer: The Main Characters of the Offseason!",
+        "date": "Jun 29, 2026",
+        "dateSort": "2026-06-29",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4323325834.mp3"
+      },
+      {
         "title": "LaMelo Ball to the Timberwolves! Reactions and Grades. Plus, Mets Corner!",
         "date": "Jun 25, 2026",
         "dateSort": "2026-06-25",
@@ -95,12 +101,6 @@
         "date": "Jun 16, 2026",
         "dateSort": "2026-06-16",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4235750750.mp3"
-      },
-      {
-        "title": "The Knicks Are NBA Champions! The Moments We\u2019ll Remember Forever.",
-        "date": "Jun 15, 2026",
-        "dateSort": "2026-06-15",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2573963277.mp3"
       }
     ]
   },
