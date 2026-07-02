@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Jaylen Brown Colonoscopy Trade (and More NBA Summer Reactions) With Chris Ryan and Kirk Goldsberry",
+        "date": "Jul 02, 2026",
+        "dateSort": "2026-07-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9382463157.mp3"
+      },
+      {
         "title": "A Crazy NBA Month With Zach Lowe, Plus Taylor Sheridan on Building a TV Empire and the Problems With Hollywood",
         "date": "Jun 29, 2026",
         "dateSort": "2026-06-29",
@@ -25,12 +31,6 @@
         "date": "Jun 22, 2026",
         "dateSort": "2026-06-22",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6220798320.mp3"
-      },
-      {
-        "title": "NBA Draft Questions, Harper vs. Fox, and the USMNT\u2019s World Cup Ceiling",
-        "date": "Jun 19, 2026",
-        "dateSort": "2026-06-19",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7171862460.mp3"
       }
     ]
   },
