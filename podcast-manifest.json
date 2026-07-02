@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The 2026 Movie Auction Returns!",
+        "date": "Jul 02, 2026",
+        "dateSort": "2026-07-02",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9654648778.mp3"
+      },
+      {
         "title": "The 10 Best Movies of 2026 \u2026 So Far",
         "date": "Jun 29, 2026",
         "dateSort": "2026-06-29",
@@ -274,18 +280,18 @@
         "date": "Jun 19, 2026",
         "dateSort": "2026-06-19",
         "audioUrl": "https://traffic.megaphone.fm/GLT5838592644.mp3"
-      },
-      {
-        "title": "The 21st-Century Steven Spielberg Rankings. Plus: \u2018Office Romance\u2019 and \u2018The Furious.\u2019",
-        "date": "Jun 16, 2026",
-        "dateSort": "2026-06-16",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1878446562.mp3"
       }
     ]
   },
   {
     "name": "Knowing Faith",
     "episodes": [
+      {
+        "title": "Are Mormons Christians?",
+        "date": "Jul 02, 2026",
+        "dateSort": "2026-07-02",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/831ddfc5-dfb2-44e3-8776-119979441ec5/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=831ddfc5-dfb2-44e3-8776-119979441ec5&feed=V2lHo6VQ"
+      },
       {
         "title": "What is Real Masculinity? with Seth Troutt",
         "date": "Jun 25, 2026",
@@ -309,12 +315,6 @@
         "date": "Jun 04, 2026",
         "dateSort": "2026-06-04",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/6b499686-8489-4af2-9b5d-df20df5d4a77/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=6b499686-8489-4af2-9b5d-df20df5d4a77&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Answer a Koala According to Their Folly? Season 16 Q&A Episode",
-        "date": "May 28, 2026",
-        "dateSort": "2026-05-28",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/bfbb9d29-1b7c-4c20-96fa-258613a4cd7f/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=bfbb9d29-1b7c-4c20-96fa-258613a4cd7f&feed=V2lHo6VQ"
       }
     ]
   },
