@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Reaction to British GP sprint race",
+        "date": "Jul 04, 2026",
+        "dateSort": "2026-07-04",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a490ef39a4356f426d96dab/media.mp3"
+      },
+      {
         "title": "Reaction to British GP sprint qualifying",
         "date": "Jul 03, 2026",
         "dateSort": "2026-07-03",
@@ -344,12 +350,6 @@
         "date": "Jun 28, 2026",
         "dateSort": "2026-06-28",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a415dc83af8baa017f0edfd/media.mp3"
-      },
-      {
-        "title": "Reaction to Austrian GP qualifying",
-        "date": "Jun 27, 2026",
-        "dateSort": "2026-06-27",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a40007d130c576758297533/media.mp3"
       }
     ]
   }
