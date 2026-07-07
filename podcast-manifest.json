@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "Free Agency Roundup With Bobby Marks, and Dan Woike on the Lakers!",
+        "date": "Jul 07, 2026",
+        "dateSort": "2026-07-07",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4412487823.mp3"
+      },
+      {
         "title": "Emergency Pod! The Celtics Trade Jaylen Brown to the 76ers!",
         "date": "Jul 02, 2026",
         "dateSort": "2026-07-02",
@@ -95,12 +101,6 @@
         "date": "Jun 25, 2026",
         "dateSort": "2026-06-25",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2596128088.mp3"
-      },
-      {
-        "title": "Giannis Traded! Boston\u2019s Future, Early Signings, Draft Thoughts, and More!",
-        "date": "Jun 24, 2026",
-        "dateSort": "2026-06-24",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1239847878.mp3"
       }
     ]
   },
@@ -182,6 +182,18 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "\"Make Disciples\" Conversation",
+        "date": "Jul 06, 2026",
+        "dateSort": "2026-07-06",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17374499/make-disciples-conversation"
+      },
+      {
+        "title": "\"Make Disciples\" Context & Setup",
+        "date": "Jul 06, 2026",
+        "dateSort": "2026-07-06",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17374500/make-disciples-context-setup"
+      },
+      {
         "title": "\"Love People\" Weekend Service",
         "date": "Jul 05, 2026",
         "dateSort": "2026-07-05",
@@ -198,18 +210,6 @@
         "date": "Jun 28, 2026",
         "dateSort": "2026-06-28",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369982/love-people-conversation-1"
-      },
-      {
-        "title": "\"Love God\" Weekend Service",
-        "date": "Jun 28, 2026",
-        "dateSort": "2026-06-28",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17370559/love-god-weekend-service"
-      },
-      {
-        "title": "\"Love God\" Conversation",
-        "date": "Jun 25, 2026",
-        "dateSort": "2026-06-25",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369860/love-god-conversation"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "British GP Driver Ratings",
+        "date": "Jul 07, 2026",
+        "dateSort": "2026-07-07",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a4cfca57cdb914f025a67b7/media.mp3"
+      },
+      {
         "title": "British GP Race Review",
         "date": "Jul 05, 2026",
         "dateSort": "2026-07-05",
@@ -344,12 +350,6 @@
         "date": "Jul 03, 2026",
         "dateSort": "2026-07-03",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a4811bab2ccbc923c6c1292/media.mp3"
-      },
-      {
-        "title": "Our 2026 British GP predictions",
-        "date": "Jul 01, 2026",
-        "dateSort": "2026-07-01",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a42d1bdcba1bd2397dbe2fb/media.mp3"
       }
     ]
   }
