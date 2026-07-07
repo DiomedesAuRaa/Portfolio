@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "America Gets Bounced, World Cup Picks, Knicks Fan Bliss, \u2018Heat 2\u2019 and \u2018The Odyssey\u2019 With Chris Ryan, Anthony Dabbundo, and Jason Concepcion",
+        "date": "Jul 07, 2026",
+        "dateSort": "2026-07-07",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7990159601.mp3"
+      },
+      {
         "title": "England Survives, the Jaylen Trade Fallout, and an All-NBA Mailbag With Zach Lowe",
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
@@ -25,12 +31,6 @@
         "date": "Jun 24, 2026",
         "dateSort": "2026-06-24",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9942260452.mp3"
-      },
-      {
-        "title": "Giannis to Miami! An Urgent Gathering Pod With Chris Ryan and Justin Verrier",
-        "date": "Jun 23, 2026",
-        "dateSort": "2026-06-23",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3129901725.mp3"
       }
     ]
   },
