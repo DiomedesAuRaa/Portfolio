@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Kawhi in Flux, Embiid\u2019s Next Team, Jaylen vs. Advanced Numbers, and a Mini-Mailbag With Joe House",
+        "date": "Jul 09, 2026",
+        "dateSort": "2026-07-09",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3048186222.mp3"
+      },
+      {
         "title": "America Gets Bounced, World Cup Picks, Knicks Fan Bliss, \u2018Heat 2\u2019 and \u2018The Odyssey\u2019 With Chris Ryan, Anthony Dabbundo, and Jason Concepcion",
         "date": "Jul 07, 2026",
         "dateSort": "2026-07-07",
@@ -25,12 +31,6 @@
         "date": "Jun 29, 2026",
         "dateSort": "2026-06-29",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9210874298.mp3"
-      },
-      {
-        "title": "2026 NBA Draft Winners and Losers With Joe House and J. Kyle Mann",
-        "date": "Jun 24, 2026",
-        "dateSort": "2026-06-24",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9942260452.mp3"
       }
     ]
   },
