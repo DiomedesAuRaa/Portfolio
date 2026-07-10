@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Star City\u2019 Season Finale With Creators Ben Nedivi and Matt Wolpert. Plus, Emmy Nominations!",
+        "date": "Jul 10, 2026",
+        "dateSort": "2026-07-10",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9538181244.mp3"
+      },
+      {
         "title": "The Best \u2018House of the Dragon\u2019 Episode Yet? Plus, \u2018Star City\u2019 Episode 7.",
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
@@ -60,12 +66,6 @@
         "date": "Jun 22, 2026",
         "dateSort": "2026-06-22",
         "audioUrl": "https://traffic.megaphone.fm/GLT9646582818.mp3"
-      },
-      {
-        "title": "\u2018Widow\u2019s Bay\u2019 Season 1 Finale With Creator Katie Dippold and Director Hiro Murai. Plus, \u2018Spider-Man: Brand New Day\u2019 Trailer.",
-        "date": "Jun 18, 2026",
-        "dateSort": "2026-06-18",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2470968723.mp3"
       }
     ]
   },
@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018The Invite\u2019 Is a Hilarious Social Nightmare, With Olivia Wilde!",
+        "date": "Jul 10, 2026",
+        "dateSort": "2026-07-10",
+        "audioUrl": "https://traffic.megaphone.fm/GLT7017428895.mp3"
+      },
+      {
         "title": "The Diane Keaton Hall of Fame",
         "date": "Jul 07, 2026",
         "dateSort": "2026-07-07",
@@ -274,12 +280,6 @@
         "date": "Jun 26, 2026",
         "dateSort": "2026-06-26",
         "audioUrl": "https://traffic.megaphone.fm/GLT9673046546.mp3"
-      },
-      {
-        "title": "The 2010 Mega-Movie Re-Draft",
-        "date": "Jun 23, 2026",
-        "dateSort": "2026-06-23",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4742407305.mp3"
       }
     ]
   },
