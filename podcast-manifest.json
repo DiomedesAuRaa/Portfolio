@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "\"Make Disciples\" Weekend Service",
+        "date": "Jul 10, 2026",
+        "dateSort": "2026-07-10",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17376082/make-disciples-weekend-service"
+      },
+      {
         "title": "\"Make Disciples\" Conversation",
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
@@ -204,12 +210,6 @@
         "date": "Jun 28, 2026",
         "dateSort": "2026-06-28",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369981/love-people-context-setup"
-      },
-      {
-        "title": "\"Love People\" Conversation",
-        "date": "Jun 28, 2026",
-        "dateSort": "2026-06-28",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369982/love-people-conversation-1"
       }
     ]
   },
