@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our F1 World Cup Challenge, with Alex Albon [Live]",
+        "date": "Jul 10, 2026",
+        "dateSort": "2026-07-10",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a4ffa74163727ffe34b1d2c/media.mp3"
+      },
+      {
         "title": "British GP Driver Ratings",
         "date": "Jul 07, 2026",
         "dateSort": "2026-07-07",
@@ -344,12 +350,6 @@
         "date": "Jul 04, 2026",
         "dateSort": "2026-07-04",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a490ef39a4356f426d96dab/media.mp3"
-      },
-      {
-        "title": "Reaction to British GP sprint qualifying",
-        "date": "Jul 03, 2026",
-        "dateSort": "2026-07-03",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a4811bab2ccbc923c6c1292/media.mp3"
       }
     ]
   }
