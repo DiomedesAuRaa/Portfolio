@@ -1,7 +1,38 @@
 [
   {
     "name": "Bill Simmons Podcast",
-    "episodes": []
+    "episodes": [
+      {
+        "title": "Kawhi in Flux, Embiid\u2019s Next Team, Jaylen vs. Advanced Numbers, and a Mini-Mailbag With Joe House",
+        "date": "Jul 09, 2026",
+        "dateSort": "2026-07-09",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3048186222.mp3"
+      },
+      {
+        "title": "America Gets Bounced, World Cup Picks, Knicks Fan Bliss, \u2018Heat 2\u2019 and \u2018The Odyssey\u2019 With Chris Ryan, Anthony Dabbundo, and Jason Concepcion",
+        "date": "Jul 07, 2026",
+        "dateSort": "2026-07-07",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7990159601.mp3"
+      },
+      {
+        "title": "England Survives, the Jaylen Trade Fallout, and an All-NBA Mailbag With Zach Lowe",
+        "date": "Jul 06, 2026",
+        "dateSort": "2026-07-06",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8947360415.mp3"
+      },
+      {
+        "title": "The Jaylen Brown Colonoscopy Trade (and More NBA Summer Reactions) With Chris Ryan and Kirk Goldsberry",
+        "date": "Jul 02, 2026",
+        "dateSort": "2026-07-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9382463157.mp3"
+      },
+      {
+        "title": "A Crazy NBA Month With Zach Lowe, Plus Taylor Sheridan on Building a TV Empire and the Problems With Hollywood",
+        "date": "Jun 29, 2026",
+        "dateSort": "2026-06-29",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9210874298.mp3"
+      }
+    ]
   },
   {
     "name": "The Watch",
