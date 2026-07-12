@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Chuck Klosterman on the Cinema Revival, Sports Tsars, Owners and Commissioners, Analytics, U.S. Soccer Groundhog Day, and State of Reading",
+        "date": "Jul 12, 2026",
+        "dateSort": "2026-07-12",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3242397546.mp3"
+      },
+      {
         "title": "Kawhi in Flux, Embiid\u2019s Next Team, Jaylen vs. Advanced Numbers, and a Mini-Mailbag With Joe House",
         "date": "Jul 09, 2026",
         "dateSort": "2026-07-09",
@@ -25,12 +31,6 @@
         "date": "Jul 02, 2026",
         "dateSort": "2026-07-02",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9382463157.mp3"
-      },
-      {
-        "title": "A Crazy NBA Month With Zach Lowe, Plus Taylor Sheridan on Building a TV Empire and the Problems With Hollywood",
-        "date": "Jun 29, 2026",
-        "dateSort": "2026-06-29",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9210874298.mp3"
       }
     ]
   },
