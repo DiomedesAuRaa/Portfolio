@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "The Best Shows of the Year (So Far)",
+        "date": "Jul 16, 2026",
+        "dateSort": "2026-07-16",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5021268401.mp3"
+      },
+      {
         "title": "Will Apple Own the Emmys This Year? Plus, \u2018House of the Dragon\u2019 S3E4 With Joanna Robinson.",
         "date": "Jul 14, 2026",
         "dateSort": "2026-07-14",
@@ -60,12 +66,6 @@
         "date": "Jun 29, 2026",
         "dateSort": "2026-06-29",
         "audioUrl": "https://traffic.megaphone.fm/GLT2175733700.mp3"
-      },
-      {
-        "title": "\u2018The Bear\u2019 Season 5, Episodes 1-3 and \u2018The Agency\u2019 Season 2 Premiere. Plus, the State of Comic Book Movies.",
-        "date": "Jun 25, 2026",
-        "dateSort": "2026-06-25",
-        "audioUrl": "https://traffic.megaphone.fm/GLT5087919219.mp3"
       }
     ]
   },
