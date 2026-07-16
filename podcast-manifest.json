@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018The Odyssey\u2019 Is Massive and Magnificent",
+        "date": "Jul 16, 2026",
+        "dateSort": "2026-07-16",
+        "audioUrl": "https://traffic.megaphone.fm/GLT2488594837.mp3"
+      },
+      {
         "title": "The Epic Movie Draft",
         "date": "Jul 14, 2026",
         "dateSort": "2026-07-14",
@@ -274,12 +280,6 @@
         "date": "Jul 02, 2026",
         "dateSort": "2026-07-02",
         "audioUrl": "https://traffic.megaphone.fm/GLT9654648778.mp3"
-      },
-      {
-        "title": "The 10 Best Movies of 2026 \u2026 So Far",
-        "date": "Jun 29, 2026",
-        "dateSort": "2026-06-29",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9355569267.mp3"
       }
     ]
   },
