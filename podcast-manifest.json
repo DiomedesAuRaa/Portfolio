@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Messi Takes England Out of the World Cup, Plus Preparing for Christopher Nolan\u2019s 'The Odyssey' With Ian Wright, Anthony Dabbundo, and Sean Fennessey",
+        "date": "Jul 16, 2026",
+        "dateSort": "2026-07-16",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9408920584.mp3"
+      },
+      {
         "title": "Chuck Klosterman on the Cinema Revival, Sports Tsars, Owners and Commissioners, Analytics, U.S. Soccer Groundhog Day, and State of Reading",
         "date": "Jul 12, 2026",
         "dateSort": "2026-07-12",
@@ -25,12 +31,6 @@
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8947360415.mp3"
-      },
-      {
-        "title": "The Jaylen Brown Colonoscopy Trade (and More NBA Summer Reactions) With Chris Ryan and Kirk Goldsberry",
-        "date": "Jul 02, 2026",
-        "dateSort": "2026-07-02",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9382463157.mp3"
       }
     ]
   },
