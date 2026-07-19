@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Belgian GP Race Review",
+        "date": "Jul 19, 2026",
+        "dateSort": "2026-07-19",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5d097b332b82fd06486cfa/media.mp3"
+      },
+      {
         "title": "Reaction to Belgian GP qualifying",
         "date": "Jul 18, 2026",
         "dateSort": "2026-07-18",
@@ -344,12 +350,6 @@
         "date": "Jul 10, 2026",
         "dateSort": "2026-07-10",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a4ffa74163727ffe34b1d2c/media.mp3"
-      },
-      {
-        "title": "British GP Driver Ratings",
-        "date": "Jul 07, 2026",
-        "dateSort": "2026-07-07",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a4cfca57cdb914f025a67b7/media.mp3"
       }
     ]
   }
