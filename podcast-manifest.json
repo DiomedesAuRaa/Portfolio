@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "Is \u2018Avengers: Doomsday\u2019 Dead on Arrival? Plus, \u2018House of the Dragon\u2019 Season 3, Episode 5.",
+        "date": "Jul 20, 2026",
+        "dateSort": "2026-07-20",
+        "audioUrl": "https://traffic.megaphone.fm/GLT4664132452.mp3"
+      },
+      {
         "title": "The Best Shows of the Year (So Far)",
         "date": "Jul 16, 2026",
         "dateSort": "2026-07-16",
@@ -60,12 +66,6 @@
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
         "audioUrl": "https://traffic.megaphone.fm/GLT3095179956.mp3"
-      },
-      {
-        "title": "\u2018The Bear\u2019 Clocks Out. Plus, \u2018House of the Dragon\u2019 Season 3, Episode 2 and \u2018Star City\u2019 Episode 6.",
-        "date": "Jun 29, 2026",
-        "dateSort": "2026-06-29",
-        "audioUrl": "https://traffic.megaphone.fm/GLT2175733700.mp3"
       }
     ]
   },
