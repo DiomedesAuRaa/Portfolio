@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Discipleship",
+        "date": "Jul 19, 2026",
+        "dateSort": "2026-07-19",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17383477/ff87cee1a53a4119a77fbbd04cb967d7_20260719_AP_Standalone.mp3"
+      },
+      {
         "title": "\"Make Disciples\" Weekend Service",
         "date": "Jul 12, 2026",
         "dateSort": "2026-07-12",
@@ -204,12 +210,6 @@
         "date": "Jul 05, 2026",
         "dateSort": "2026-07-05",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17372261/love-people-weekend-service"
-      },
-      {
-        "title": "\"Love People\" Context & Setup",
-        "date": "Jun 28, 2026",
-        "dateSort": "2026-06-28",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17369981/love-people-context-setup"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Belgian GP Driver Ratings",
+        "date": "Jul 20, 2026",
+        "dateSort": "2026-07-20",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5e61af03fc6de6aecc08e1/media.mp3"
+      },
+      {
         "title": "Belgian GP Race Review",
         "date": "Jul 19, 2026",
         "dateSort": "2026-07-19",
@@ -344,12 +350,6 @@
         "date": "Jul 15, 2026",
         "dateSort": "2026-07-15",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a567a3c9ff5e888d223d55f/media.mp3"
-      },
-      {
-        "title": "Our F1 World Cup Challenge, with Alex Albon [Live]",
-        "date": "Jul 10, 2026",
-        "dateSort": "2026-07-10",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a4ffa74163727ffe34b1d2c/media.mp3"
       }
     ]
   }
