@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Triumph of \u2018The Odyssey,\u2019 and the Christopher Nolan Movie Rankings",
+        "date": "Jul 21, 2026",
+        "dateSort": "2026-07-21",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8531772695.mp3"
+      },
+      {
         "title": "\u2018The Odyssey\u2019 Is Massive and Magnificent",
         "date": "Jul 16, 2026",
         "dateSort": "2026-07-16",
@@ -274,12 +280,6 @@
         "date": "Jul 07, 2026",
         "dateSort": "2026-07-07",
         "audioUrl": "https://traffic.megaphone.fm/GLT4018675144.mp3"
-      },
-      {
-        "title": "The 2026 Movie Auction Returns!",
-        "date": "Jul 02, 2026",
-        "dateSort": "2026-07-02",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9654648778.mp3"
       }
     ]
   },
