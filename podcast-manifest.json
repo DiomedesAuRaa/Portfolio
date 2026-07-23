@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Caleb Wilson Fever, 2020 NBA Redraftables, and the \u2018Odyssey\u2019 MVP Rankings With Joe House, J. Kyle Mann, and Jason Concepcion",
+        "date": "Jul 23, 2026",
+        "dateSort": "2026-07-23",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8232650682.mp3"
+      },
+      {
         "title": "Spain Prevails, World Cup Winners and Losers, and Damon Vs. Leo With Chris Ryan and Anthony Dabbundo",
         "date": "Jul 20, 2026",
         "dateSort": "2026-07-20",
@@ -25,12 +31,6 @@
         "date": "Jul 09, 2026",
         "dateSort": "2026-07-09",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3048186222.mp3"
-      },
-      {
-        "title": "America Gets Bounced, World Cup Picks, Knicks Fan Bliss, \u2018Heat 2\u2019 and \u2018The Odyssey\u2019 With Chris Ryan, Anthony Dabbundo, and Jason Concepcion",
-        "date": "Jul 07, 2026",
-        "dateSort": "2026-07-07",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7990159601.mp3"
       }
     ]
   },
