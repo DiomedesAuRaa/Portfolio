@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018The Odyssey\u2019 Is the Film Event of the Year. Plus, \u2018Resident Evil\u2019 and \u2018Clayface\u2019 Trailers.",
+        "date": "Jul 23, 2026",
+        "dateSort": "2026-07-23",
+        "audioUrl": "https://traffic.megaphone.fm/GLT6886367983.mp3"
+      },
+      {
         "title": "Is \u2018Avengers: Doomsday\u2019 Dead on Arrival? Plus, \u2018House of the Dragon\u2019 Season 3, Episode 5.",
         "date": "Jul 20, 2026",
         "dateSort": "2026-07-20",
@@ -60,12 +66,6 @@
         "date": "Jul 10, 2026",
         "dateSort": "2026-07-10",
         "audioUrl": "https://traffic.megaphone.fm/GLT9538181244.mp3"
-      },
-      {
-        "title": "The Best \u2018House of the Dragon\u2019 Episode Yet? Plus, \u2018Star City\u2019 Episode 7.",
-        "date": "Jul 06, 2026",
-        "dateSort": "2026-07-06",
-        "audioUrl": "https://traffic.megaphone.fm/GLT3095179956.mp3"
       }
     ]
   },
@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Summer Movie Mailbag",
+        "date": "Jul 23, 2026",
+        "dateSort": "2026-07-23",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9421616983.mp3"
+      },
+      {
         "title": "The Triumph of \u2018The Odyssey,\u2019 and the Christopher Nolan Movie Rankings",
         "date": "Jul 21, 2026",
         "dateSort": "2026-07-21",
@@ -274,12 +280,6 @@
         "date": "Jul 10, 2026",
         "dateSort": "2026-07-10",
         "audioUrl": "https://traffic.megaphone.fm/GLT7017428895.mp3"
-      },
-      {
-        "title": "The Diane Keaton Hall of Fame",
-        "date": "Jul 07, 2026",
-        "dateSort": "2026-07-07",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4018675144.mp3"
       }
     ]
   },
