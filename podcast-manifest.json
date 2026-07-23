@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "The 10 Most Interesting Extension Candidates With Grant Liffmann",
+        "date": "Jul 23, 2026",
+        "dateSort": "2026-07-23",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1937438028.mp3"
+      },
+      {
         "title": "The Relegation Zone Draft With Rob Mahoney!",
         "date": "Jul 21, 2026",
         "dateSort": "2026-07-21",
@@ -95,12 +101,6 @@
         "date": "Jul 07, 2026",
         "dateSort": "2026-07-07",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4412487823.mp3"
-      },
-      {
-        "title": "Emergency Pod! The Celtics Trade Jaylen Brown to the 76ers!",
-        "date": "Jul 02, 2026",
-        "dateSort": "2026-07-02",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6587106033.mp3"
       }
     ]
   },
