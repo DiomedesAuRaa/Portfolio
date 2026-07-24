@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Reaction to Hungarian GP practice",
+        "date": "Jul 24, 2026",
+        "dateSort": "2026-07-24",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a639d7b476428e3f7b902b4/media.mp3"
+      },
+      {
         "title": "Our 2026 Hungarian GP predictions",
         "date": "Jul 22, 2026",
         "dateSort": "2026-07-22",
@@ -344,12 +350,6 @@
         "date": "Jul 18, 2026",
         "dateSort": "2026-07-18",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5bb4d7a14b9f354890ed2f/media.mp3"
-      },
-      {
-        "title": "Reaction to Belgian GP practice",
-        "date": "Jul 17, 2026",
-        "dateSort": "2026-07-17",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5a6245564b28923b2ef0d1/media.mp3"
       }
     ]
   }
