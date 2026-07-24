@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "LeBron\u2019s Philly Shocker! Plus, the 2011 NBA Redraftables With Zach Lowe.",
+        "date": "Jul 24, 2026",
+        "dateSort": "2026-07-24",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9970952039.mp3"
+      },
+      {
         "title": "Caleb Wilson Fever, 2020 NBA Redraftables, and the \u2018Odyssey\u2019 MVP Rankings With Joe House, J. Kyle Mann, and Jason Concepcion",
         "date": "Jul 23, 2026",
         "dateSort": "2026-07-23",
@@ -25,12 +31,6 @@
         "date": "Jul 12, 2026",
         "dateSort": "2026-07-12",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3242397546.mp3"
-      },
-      {
-        "title": "Kawhi in Flux, Embiid\u2019s Next Team, Jaylen vs. Advanced Numbers, and a Mini-Mailbag With Joe House",
-        "date": "Jul 09, 2026",
-        "dateSort": "2026-07-09",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3048186222.mp3"
       }
     ]
   },
