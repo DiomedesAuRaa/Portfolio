@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "LeBron James is a Philadelphia 76er! Plus, Could Embiid Be Traded?",
+        "date": "Jul 25, 2026",
+        "dateSort": "2026-07-25",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2162244507.mp3"
+      },
+      {
         "title": "The 10 Most Interesting Extension Candidates With Grant Liffmann",
         "date": "Jul 23, 2026",
         "dateSort": "2026-07-23",
@@ -95,12 +101,6 @@
         "date": "Jul 10, 2026",
         "dateSort": "2026-07-10",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6798785741.mp3"
-      },
-      {
-        "title": "Free Agency Roundup With Bobby Marks, and Dan Woike on the Lakers!",
-        "date": "Jul 07, 2026",
-        "dateSort": "2026-07-07",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4412487823.mp3"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Reaction to Hungarian GP qualifying",
+        "date": "Jul 25, 2026",
+        "dateSort": "2026-07-25",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a6515ab455178ef6ef3d141/media.mp3"
+      },
+      {
         "title": "Reaction to Hungarian GP practice",
         "date": "Jul 24, 2026",
         "dateSort": "2026-07-24",
@@ -344,12 +350,6 @@
         "date": "Jul 19, 2026",
         "dateSort": "2026-07-19",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5d097b332b82fd06486cfa/media.mp3"
-      },
-      {
-        "title": "Reaction to Belgian GP qualifying",
-        "date": "Jul 18, 2026",
-        "dateSort": "2026-07-18",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5bb4d7a14b9f354890ed2f/media.mp3"
       }
     ]
   }
