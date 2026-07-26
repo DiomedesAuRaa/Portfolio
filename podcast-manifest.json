@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our reaction to Malaysia RETURNING to the F1 grid",
+        "date": "Jul 26, 2026",
+        "dateSort": "2026-07-26",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a66075e1a8281707e988833/media.mp3"
+      },
+      {
         "title": "Reaction to Hungarian GP qualifying",
         "date": "Jul 25, 2026",
         "dateSort": "2026-07-25",
@@ -344,12 +350,6 @@
         "date": "Jul 20, 2026",
         "dateSort": "2026-07-20",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5e61af03fc6de6aecc08e1/media.mp3"
-      },
-      {
-        "title": "Belgian GP Race Review",
-        "date": "Jul 19, 2026",
-        "dateSort": "2026-07-19",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a5d097b332b82fd06486cfa/media.mp3"
       }
     ]
   }
