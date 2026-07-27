@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Steph in Purgatory, a LeBron Mini-Mailbag, Jaylen Trade What-Ifs, and the Revived Red Sox With Joe House and Bill\u2019s Dad",
+        "date": "Jul 27, 2026",
+        "dateSort": "2026-07-27",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2976416101.mp3"
+      },
+      {
         "title": "LeBron\u2019s Philly Shocker! Plus, the 2011 NBA Redraftables With Zach Lowe.",
         "date": "Jul 24, 2026",
         "dateSort": "2026-07-24",
@@ -25,12 +31,6 @@
         "date": "Jul 16, 2026",
         "dateSort": "2026-07-16",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9408920584.mp3"
-      },
-      {
-        "title": "Chuck Klosterman on the Cinema Revival, Sports Tsars, Owners and Commissioners, Analytics, U.S. Soccer Groundhog Day, and State of Reading",
-        "date": "Jul 12, 2026",
-        "dateSort": "2026-07-12",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3242397546.mp3"
       }
     ]
   },
