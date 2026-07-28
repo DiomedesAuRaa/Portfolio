@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Grow & Gather",
+        "date": "Jul 26, 2026",
+        "dateSort": "2026-07-26",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17390929/5d496d233ce745abb58cde1b9a1ac86a_20260726_MK_Standalone.mp3"
+      },
+      {
         "title": "Discipleship",
         "date": "Jul 19, 2026",
         "dateSort": "2026-07-19",
@@ -204,12 +210,6 @@
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17374500/make-disciples-context-setup"
-      },
-      {
-        "title": "\"Love People\" Weekend Service",
-        "date": "Jul 05, 2026",
-        "dateSort": "2026-07-05",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17383663/66fd4ebe44e946669c5e19469f1b18b2_Love_People_Closure_Services_Teaching.mp3"
       }
     ]
   },
