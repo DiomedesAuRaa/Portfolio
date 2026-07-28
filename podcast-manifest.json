@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "All The News Out of Comic Con, \u2018The Agency\u2019 Season 2, and \u2018House of the Dragon\u2019 S3E6",
+        "date": "Jul 28, 2026",
+        "dateSort": "2026-07-28",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1051243329.mp3"
+      },
+      {
         "title": "\u2018The Odyssey\u2019 Is the Film Event of the Year. Plus, \u2018Resident Evil\u2019 and \u2018Clayface\u2019 Trailers.",
         "date": "Jul 23, 2026",
         "dateSort": "2026-07-23",
@@ -60,12 +66,6 @@
         "date": "Jul 14, 2026",
         "dateSort": "2026-07-14",
         "audioUrl": "https://traffic.megaphone.fm/GLT9320158386.mp3"
-      },
-      {
-        "title": "\u2018Star City\u2019 Season Finale With Creators Ben Nedivi and Matt Wolpert. Plus, Emmy Nominations!",
-        "date": "Jul 10, 2026",
-        "dateSort": "2026-07-10",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9538181244.mp3"
       }
     ]
   },
