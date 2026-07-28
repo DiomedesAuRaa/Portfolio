@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "Sex, Hell, and 10 Movies We Missed This Summer. Plus: Gregg Araki!",
+        "date": "Jul 28, 2026",
+        "dateSort": "2026-07-28",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1624262930.mp3"
+      },
+      {
         "title": "The Summer Movie Mailbag",
         "date": "Jul 23, 2026",
         "dateSort": "2026-07-23",
@@ -274,12 +280,6 @@
         "date": "Jul 14, 2026",
         "dateSort": "2026-07-14",
         "audioUrl": "https://traffic.megaphone.fm/GLT1621213206.mp3"
-      },
-      {
-        "title": "\u2018The Invite\u2019 Is a Hilarious Social Nightmare, With Olivia Wilde!",
-        "date": "Jul 10, 2026",
-        "dateSort": "2026-07-10",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7017428895.mp3"
       }
     ]
   },
