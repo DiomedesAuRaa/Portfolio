@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "You Need to be Watching \u2018Furious.\u2019 Plus, \u2018Spider-Man: Brand New Day\u2019 Preview",
+        "date": "Jul 31, 2026",
+        "dateSort": "2026-07-31",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1654612840.mp3"
+      },
+      {
         "title": "All The News Out of Comic Con, \u2018The Agency\u2019 Season 2, and \u2018House of the Dragon\u2019 S3E6",
         "date": "Jul 28, 2026",
         "dateSort": "2026-07-28",
@@ -60,12 +66,6 @@
         "date": "Jul 16, 2026",
         "dateSort": "2026-07-16",
         "audioUrl": "https://traffic.megaphone.fm/GLT5021268401.mp3"
-      },
-      {
-        "title": "Will Apple Own the Emmys This Year? Plus, \u2018House of the Dragon\u2019 S3E4 With Joanna Robinson.",
-        "date": "Jul 14, 2026",
-        "dateSort": "2026-07-14",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9320158386.mp3"
       }
     ]
   },
@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018Spider-Man: Brand New Day\u2019 and the Spider-Man Movie Rankings",
+        "date": "Jul 31, 2026",
+        "dateSort": "2026-07-31",
+        "audioUrl": "https://traffic.megaphone.fm/GLT3784713527.mp3"
+      },
+      {
         "title": "Sex, Hell, and 10 Movies We Missed This Summer. Plus: Gregg Araki!",
         "date": "Jul 28, 2026",
         "dateSort": "2026-07-28",
@@ -274,12 +280,6 @@
         "date": "Jul 16, 2026",
         "dateSort": "2026-07-16",
         "audioUrl": "https://traffic.megaphone.fm/GLT2488594837.mp3"
-      },
-      {
-        "title": "The Epic Movie Draft",
-        "date": "Jul 14, 2026",
-        "dateSort": "2026-07-14",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1621213206.mp3"
       }
     ]
   },
