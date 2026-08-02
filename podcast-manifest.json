@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The NBA Mega-Redraftables (2012 & 2013 Combined!) With J. Kyle Mann and Joe House, Plus Portland vs. \u201cEl Cheapo\u201d for the Blazers With Justin Verrier",
+        "date": "Aug 02, 2026",
+        "dateSort": "2026-08-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9823676690.mp3"
+      },
+      {
         "title": "Steph in Purgatory, a LeBron Mini-Mailbag, Jaylen Trade What-Ifs, and the Revived Red Sox With Joe House and Bill\u2019s Dad",
         "date": "Jul 27, 2026",
         "dateSort": "2026-07-27",
@@ -25,12 +31,6 @@
         "date": "Jul 20, 2026",
         "dateSort": "2026-07-20",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8982815282.mp3"
-      },
-      {
-        "title": "Messi Takes England Out of the World Cup, Plus Preparing for Christopher Nolan\u2019s 'The Odyssey' With Ian Wright, Anthony Dabbundo, and Sean Fennessey",
-        "date": "Jul 16, 2026",
-        "dateSort": "2026-07-16",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9408920584.mp3"
       }
     ]
   },
