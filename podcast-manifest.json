@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "Summer Mailbag: Bad TV Theme Songs, Historical Events As Miniseries, and Book Recs",
+        "date": "Aug 03, 2026",
+        "dateSort": "2026-08-03",
+        "audioUrl": "https://traffic.megaphone.fm/GLT4496105648.mp3"
+      },
+      {
         "title": "You Need to be Watching \u2018Furious.\u2019 Plus, \u2018Spider-Man: Brand New Day\u2019 Preview",
         "date": "Jul 31, 2026",
         "dateSort": "2026-07-31",
@@ -60,12 +66,6 @@
         "date": "Jul 20, 2026",
         "dateSort": "2026-07-20",
         "audioUrl": "https://traffic.megaphone.fm/GLT4664132452.mp3"
-      },
-      {
-        "title": "The Best Shows of the Year (So Far)",
-        "date": "Jul 16, 2026",
-        "dateSort": "2026-07-16",
-        "audioUrl": "https://traffic.megaphone.fm/GLT5021268401.mp3"
       }
     ]
   },
@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Made Alive",
+        "date": "Aug 02, 2026",
+        "dateSort": "2026-08-02",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17402655/f649ae81763d4b40952d5b6c80ebd125_20260802_SP_MadeAlive.mp3"
+      },
+      {
         "title": "Grow & Gather",
         "date": "Jul 26, 2026",
         "dateSort": "2026-07-26",
@@ -204,12 +210,6 @@
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17374499/make-disciples-conversation"
-      },
-      {
-        "title": "\"Make Disciples\" Context & Setup",
-        "date": "Jul 06, 2026",
-        "dateSort": "2026-07-06",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17374500/make-disciples-context-setup"
       }
     ]
   },
