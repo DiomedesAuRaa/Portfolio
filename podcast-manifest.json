@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Joel Klatt\u2019s Top 10 Players for the 2026 Season",
+        "date": "Aug 03, 2026",
+        "dateSort": "2026-08-03",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM6497895554.mp3"
+      },
+      {
         "title": "10 Head Coaches under Pressure for the 2026 Season",
         "date": "Jul 27, 2026",
         "dateSort": "2026-07-27",
@@ -130,18 +136,18 @@
         "date": "Jul 06, 2026",
         "dateSort": "2026-07-06",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM7439143620.mp3?updated=1780607480"
-      },
-      {
-        "title": "10 Games that will shape the 2026 College Football Season",
-        "date": "Jun 29, 2026",
-        "dateSort": "2026-06-29",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM8902771007.mp3"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "Best of WTP \u2013 That Time We Broke Up... Twice",
+        "date": "Aug 03, 2026",
+        "dateSort": "2026-08-03",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW8292032662.mp3"
+      },
       {
         "title": "Best of WTP \u2013 How to Fight For Your Marriage",
         "date": "Jul 27, 2026",
@@ -165,12 +171,6 @@
         "date": "Jun 29, 2026",
         "dateSort": "2026-06-29",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW4799328720.mp3"
-      },
-      {
-        "title": "How to be a Christian When Persecuted",
-        "date": "Jun 22, 2026",
-        "dateSort": "2026-06-22",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW5317806772.mp3"
       }
     ]
   },
