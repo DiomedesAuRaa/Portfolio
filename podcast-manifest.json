@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our 2026 mid-season F1 Driver Ratings: P10 to P1",
+        "date": "Aug 04, 2026",
+        "dateSort": "2026-08-04",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a6db7f554a82184abe18df1/media.mp3"
+      },
+      {
         "title": "Our 2026 mid-season F1 Driver Ratings: P22 to P11",
         "date": "Aug 03, 2026",
         "dateSort": "2026-08-03",
@@ -344,12 +350,6 @@
         "date": "Jul 26, 2026",
         "dateSort": "2026-07-26",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a6651c1b944a6a8cfb692a2/media.mp3"
-      },
-      {
-        "title": "Our reaction to Malaysia RETURNING to the F1 grid",
-        "date": "Jul 26, 2026",
-        "dateSort": "2026-07-26",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a66075e1a8281707e988833/media.mp3"
       }
     ]
   }
