@@ -1,7 +1,38 @@
 [
   {
     "name": "Bill Simmons Podcast",
-    "episodes": []
+    "episodes": [
+      {
+        "title": "The NBA Mega-Redraftables (2012 and 2013 Combined) With J. Kyle Mann and Joe House. Plus: Portland vs. \u201cEl Cheapo\u201d for the Blazers With Justin Verrier.",
+        "date": "Aug 02, 2026",
+        "dateSort": "2026-08-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9823676690.mp3"
+      },
+      {
+        "title": "Steph in Purgatory, a LeBron Mini-Mailbag, Jaylen Trade What-Ifs, and the Revived Red Sox With Joe House and Bill\u2019s Dad",
+        "date": "Jul 27, 2026",
+        "dateSort": "2026-07-27",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2976416101.mp3"
+      },
+      {
+        "title": "LeBron\u2019s Philly Shocker! Plus, the 2011 NBA Redraftables With Zach Lowe.",
+        "date": "Jul 24, 2026",
+        "dateSort": "2026-07-24",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9970952039.mp3"
+      },
+      {
+        "title": "Caleb Wilson Fever, 2020 NBA Redraftables, and the \u2018Odyssey\u2019 MVP Rankings With Joe House, J. Kyle Mann, and Jason Concepcion",
+        "date": "Jul 23, 2026",
+        "dateSort": "2026-07-23",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8232650682.mp3"
+      },
+      {
+        "title": "Spain Prevails, World Cup Winners and Losers, and Damon Vs. Leo With Chris Ryan and Anthony Dabbundo",
+        "date": "Jul 20, 2026",
+        "dateSort": "2026-07-20",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8982815282.mp3"
+      }
+    ]
   },
   {
     "name": "The Watch",
