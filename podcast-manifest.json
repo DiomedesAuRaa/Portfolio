@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "The Anthony Bourdain Special Episode",
+        "date": "Aug 06, 2026",
+        "dateSort": "2026-08-06",
+        "audioUrl": "https://traffic.megaphone.fm/GLT7441100059.mp3"
+      },
+      {
         "title": "Summer Mailbag: Bad TV Theme Songs, Historical Events As Miniseries, and Book Recs",
         "date": "Aug 03, 2026",
         "dateSort": "2026-08-03",
@@ -60,12 +66,6 @@
         "date": "Jul 23, 2026",
         "dateSort": "2026-07-23",
         "audioUrl": "https://traffic.megaphone.fm/GLT6886367983.mp3"
-      },
-      {
-        "title": "Is \u2018Avengers: Doomsday\u2019 Dead on Arrival? Plus, \u2018House of the Dragon\u2019 Season 3, Episode 5.",
-        "date": "Jul 20, 2026",
-        "dateSort": "2026-07-20",
-        "audioUrl": "https://traffic.megaphone.fm/GLT4664132452.mp3"
       }
     ]
   },
@@ -287,6 +287,12 @@
     "name": "Knowing Faith",
     "episodes": [
       {
+        "title": "Season 17 - Learn to Think Theologically",
+        "date": "Aug 06, 2026",
+        "dateSort": "2026-08-06",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/633cca9e-9daf-47e4-a6b2-8218dd28378e/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=633cca9e-9daf-47e4-a6b2-8218dd28378e&feed=V2lHo6VQ"
+      },
+      {
         "title": "Who is Gen Alpha and How Do We Reach Them? with Shane Pruitt and Shelly Melia",
         "date": "Jul 30, 2026",
         "dateSort": "2026-07-30",
@@ -309,12 +315,6 @@
         "date": "Jul 09, 2026",
         "dateSort": "2026-07-09",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/81c12c69-de9d-4c97-8b2e-88fb140f0c7e/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=81c12c69-de9d-4c97-8b2e-88fb140f0c7e&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Are Mormons Christians?",
-        "date": "Jul 02, 2026",
-        "dateSort": "2026-07-02",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/831ddfc5-dfb2-44e3-8776-119979441ec5/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=831ddfc5-dfb2-44e3-8776-119979441ec5&feed=V2lHo6VQ"
       }
     ]
   },
