@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Joel Klatt\u2019s Preseason Top 25 for the 2026 Season",
+        "date": "Aug 10, 2026",
+        "dateSort": "2026-08-10",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM3001304277.mp3"
+      },
+      {
         "title": "Joel Klatt\u2019s Top 10 Players for the 2026 Season",
         "date": "Aug 03, 2026",
         "dateSort": "2026-08-03",
@@ -130,18 +136,18 @@
         "date": "Jul 13, 2026",
         "dateSort": "2026-07-13",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM1133962429.mp3?updated=1780603211"
-      },
-      {
-        "title": "The 5 Best games since 2000 + Tebow to Alabama, Saban to Texas & more \u201cwhat if\u201d moments in CFB",
-        "date": "Jul 06, 2026",
-        "dateSort": "2026-07-06",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM7439143620.mp3?updated=1780607480"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "Deep Dive: The Gospel, Evangelism & Making Disciples",
+        "date": "Aug 10, 2026",
+        "dateSort": "2026-08-10",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW3491735552.mp3"
+      },
       {
         "title": "Best of WTP \u2013 That Time We Broke Up... Twice",
         "date": "Aug 03, 2026",
@@ -165,12 +171,6 @@
         "date": "Jul 13, 2026",
         "dateSort": "2026-07-13",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW4666446495.mp3"
-      },
-      {
-        "title": "When the Leaders We Love Fail Us",
-        "date": "Jun 29, 2026",
-        "dateSort": "2026-06-29",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW4799328720.mp3"
       }
     ]
   },
