@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "Part Two: The 10 Players Facing the Most Pressure Next Season",
+        "date": "Aug 11, 2026",
+        "dateSort": "2026-08-11",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1808509077.mp3"
+      },
+      {
         "title": "Part 1: The 10 Players Facing the Most Pressure Next Season",
         "date": "Aug 04, 2026",
         "dateSort": "2026-08-04",
@@ -95,12 +101,6 @@
         "date": "Jul 23, 2026",
         "dateSort": "2026-07-23",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1937438028.mp3"
-      },
-      {
-        "title": "The Relegation Zone Draft With Rob Mahoney!",
-        "date": "Jul 21, 2026",
-        "dateSort": "2026-07-21",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2733839510.mp3"
       }
     ]
   },
@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The \"Ask Sean Anything\" Mailbag. Plus: The Amazing Life of a Character Actor, with Patrick Fischler.",
+        "date": "Aug 11, 2026",
+        "dateSort": "2026-08-11",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1953341874.mp3"
+      },
+      {
         "title": "'One Night Only' and the 21st Century Rom-Com Canon",
         "date": "Aug 07, 2026",
         "dateSort": "2026-08-07",
@@ -274,12 +280,6 @@
         "date": "Jul 28, 2026",
         "dateSort": "2026-07-28",
         "audioUrl": "https://traffic.megaphone.fm/GLT1624262930.mp3"
-      },
-      {
-        "title": "The Summer Movie Mailbag",
-        "date": "Jul 23, 2026",
-        "dateSort": "2026-07-23",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9421616983.mp3"
       }
     ]
   },
