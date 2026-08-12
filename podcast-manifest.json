@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "A Shocking Lakers Sale. Plus, the 20 Best and Worst Youth Sports for Parents With Cousin Sal.",
+        "date": "Aug 12, 2026",
+        "dateSort": "2026-08-12",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2709124473.mp3"
+      },
+      {
         "title": "Half-Baked Ideas and a Mega-Mailbag With Kevin Wildes and Joe House",
         "date": "Aug 10, 2026",
         "dateSort": "2026-08-10",
@@ -25,12 +31,6 @@
         "date": "Jul 27, 2026",
         "dateSort": "2026-07-27",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2976416101.mp3"
-      },
-      {
-        "title": "LeBron\u2019s Philly Shocker! Plus, the 2011 NBA Redraftables With Zach Lowe.",
-        "date": "Jul 24, 2026",
-        "dateSort": "2026-07-24",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9970952039.mp3"
       }
     ]
   },
