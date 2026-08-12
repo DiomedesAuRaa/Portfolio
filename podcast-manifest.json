@@ -320,37 +320,6 @@
   },
   {
     "name": "P1 with Matt and Tommy",
-    "episodes": [
-      {
-        "title": "Our BOLD F1 predictions for the rest of 2026",
-        "date": "Aug 12, 2026",
-        "dateSort": "2026-08-12",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a7b9c32e6b0d3f292b7872b/media.mp3"
-      },
-      {
-        "title": "Reacting to your bold F1 2026 predictions",
-        "date": "Aug 07, 2026",
-        "dateSort": "2026-08-07",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a75b4df7b7de52827f98ab6/media.mp3"
-      },
-      {
-        "title": "Our 2026 mid-season F1 Driver Ratings: P10 to P1",
-        "date": "Aug 04, 2026",
-        "dateSort": "2026-08-04",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a6db7f554a82184abe18df1/media.mp3"
-      },
-      {
-        "title": "Our 2026 mid-season F1 Driver Ratings: P22 to P11",
-        "date": "Aug 03, 2026",
-        "dateSort": "2026-08-03",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a6db2b954a82184abe18df0/media.mp3"
-      },
-      {
-        "title": "Predicting the 2027 F1 driver line-ups",
-        "date": "Jul 31, 2026",
-        "dateSort": "2026-07-31",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a6cbd885be7d448b6413256/media.mp3"
-      }
-    ]
+    "episodes": []
   }
 ]
