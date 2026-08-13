@@ -1,11 +1,48 @@
 [
   {
     "name": "Bill Simmons Podcast",
-    "episodes": []
+    "episodes": [
+      {
+        "title": "A Shocking Lakers Sale. Plus, the 20 Best and Worst Youth Sports for Parents With Cousin Sal.",
+        "date": "Aug 12, 2026",
+        "dateSort": "2026-08-12",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2709124473.mp3"
+      },
+      {
+        "title": "Half-Baked Ideas and a Mega-Mailbag With Kevin Wildes and Joe House",
+        "date": "Aug 10, 2026",
+        "dateSort": "2026-08-10",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9729506209.mp3"
+      },
+      {
+        "title": "2026 NFL QB Rankings, the Villain Dodgers, MLB Trade Deadline Lessons, and SummerSlam 2026 With Mina Kimes, Billy Gil, Anthony Dabbundo, and David Shoemaker",
+        "date": "Aug 04, 2026",
+        "dateSort": "2026-08-04",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2038156060.mp3"
+      },
+      {
+        "title": "The NBA Mega-Redraftables (2012 and 2013 Combined) With J. Kyle Mann and Joe House. Plus: Portland vs. \u201cEl Cheapo\u201d for the Blazers With Justin Verrier.",
+        "date": "Aug 02, 2026",
+        "dateSort": "2026-08-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9823676690.mp3"
+      },
+      {
+        "title": "Steph in Purgatory, a LeBron Mini-Mailbag, Jaylen Trade What-Ifs, and the Revived Red Sox With Joe House and Bill\u2019s Dad",
+        "date": "Jul 27, 2026",
+        "dateSort": "2026-07-27",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2976416101.mp3"
+      }
+    ]
   },
   {
     "name": "The Watch",
     "episodes": [
+      {
+        "title": "Is \u2018Lanterns\u2019 the End of Superhero TV? Plus, \u2018Furious\u2019 E5 and the \u2018Lioness\u2019 S3 Premiere.",
+        "date": "Aug 13, 2026",
+        "dateSort": "2026-08-13",
+        "audioUrl": "https://traffic.megaphone.fm/GLT7003195519.mp3"
+      },
       {
         "title": "X-Men Casting Rumors and \u2018Spider-Man: Brand New Day.\u2019 Plus, \u2018House of the Dragon\u2019 Season 3 Finale.",
         "date": "Aug 10, 2026",
@@ -29,12 +66,6 @@
         "date": "Jul 31, 2026",
         "dateSort": "2026-07-31",
         "audioUrl": "https://traffic.megaphone.fm/GLT1654612840.mp3"
-      },
-      {
-        "title": "All The News Out of Comic Con, \u2018The Agency\u2019 Season 2, and \u2018House of the Dragon\u2019 S3E6",
-        "date": "Jul 28, 2026",
-        "dateSort": "2026-07-28",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1051243329.mp3"
       }
     ]
   },
