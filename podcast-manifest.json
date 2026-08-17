@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "The \u2018X-Men\u2019 Cast, \u2018Avengers: Doomsday\u2019 Footage, and More D23 News. Plus, \u2018Lanterns\u2019 Series Premiere and \u2018Furious\u2019 Episode 6.",
+        "date": "Aug 17, 2026",
+        "dateSort": "2026-08-17",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8612828632.mp3"
+      },
+      {
         "title": "Is \u2018Lanterns\u2019 the End of Superhero TV? Plus, \u2018Furious\u2019 E5 and the \u2018Lioness\u2019 S3 Premiere.",
         "date": "Aug 13, 2026",
         "dateSort": "2026-08-13",
@@ -60,12 +66,6 @@
         "date": "Aug 03, 2026",
         "dateSort": "2026-08-03",
         "audioUrl": "https://traffic.megaphone.fm/GLT4496105648.mp3"
-      },
-      {
-        "title": "You Need to be Watching \u2018Furious.\u2019 Plus, \u2018Spider-Man: Brand New Day\u2019 Preview",
-        "date": "Jul 31, 2026",
-        "dateSort": "2026-07-31",
-        "audioUrl": "https://traffic.megaphone.fm/GLT1654612840.mp3"
       }
     ]
   },
