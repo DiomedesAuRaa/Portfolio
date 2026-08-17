@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Russell Westbrook\u2019s One-of-One Career With Kirk Goldsberry, Plus College Football and Coaches With Van Lathan and Chris Ryan",
+        "date": "Aug 17, 2026",
+        "dateSort": "2026-08-17",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6441883274.mp3"
+      },
+      {
         "title": "A Shocking Lakers Sale. Plus, the 20 Best and Worst Youth Sports for Parents With Cousin Sal.",
         "date": "Aug 12, 2026",
         "dateSort": "2026-08-12",
@@ -25,12 +31,6 @@
         "date": "Aug 02, 2026",
         "dateSort": "2026-08-02",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9823676690.mp3"
-      },
-      {
-        "title": "Steph in Purgatory, a LeBron Mini-Mailbag, Jaylen Trade What-Ifs, and the Revived Red Sox With Joe House and Bill\u2019s Dad",
-        "date": "Jul 27, 2026",
-        "dateSort": "2026-07-27",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2976416101.mp3"
       }
     ]
   },
