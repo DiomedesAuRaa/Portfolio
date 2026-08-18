@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The \"Invincible\" Rams, NFL Pressure Guys, and L.A.\u2019s Crazy NBA Month With Tom Pelissero and Sam Koppelman",
+        "date": "Aug 18, 2026",
+        "dateSort": "2026-08-18",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6919132030.mp3"
+      },
+      {
         "title": "Russell Westbrook\u2019s One-of-One Career With Kirk Goldsberry, Plus College Football and Coaches With Van Lathan and Chris Ryan",
         "date": "Aug 17, 2026",
         "dateSort": "2026-08-17",
@@ -25,12 +31,6 @@
         "date": "Aug 04, 2026",
         "dateSort": "2026-08-04",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2038156060.mp3"
-      },
-      {
-        "title": "The NBA Mega-Redraftables (2012 and 2013 Combined) With J. Kyle Mann and Joe House. Plus: Portland vs. \u201cEl Cheapo\u201d for the Blazers With Justin Verrier.",
-        "date": "Aug 02, 2026",
-        "dateSort": "2026-08-02",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9823676690.mp3"
       }
     ]
   },
