@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "Reacting to the AP Top 25 and Predicting Conference Winners",
+        "date": "Aug 19, 2026",
+        "dateSort": "2026-08-19",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1400520802.mp3"
+      },
+      {
         "title": "The Freaks List Is Released, Best Week of the CFB Season, and Purdue's Comments",
         "date": "Aug 12, 2026",
         "dateSort": "2026-08-12",
@@ -239,12 +245,6 @@
         "date": "Jul 22, 2026",
         "dateSort": "2026-07-22",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3271897494.mp3"
-      },
-      {
-        "title": "Best CFB Players by Jersey Number. Plus, College Fantasy Football?!",
-        "date": "Jul 15, 2026",
-        "dateSort": "2026-07-15",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9021753706.mp3"
       }
     ]
   },
