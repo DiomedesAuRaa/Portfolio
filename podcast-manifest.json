@@ -287,6 +287,12 @@
     "name": "Knowing Faith",
     "episodes": [
       {
+        "title": "Are Women Pastors Biblical?",
+        "date": "Aug 20, 2026",
+        "dateSort": "2026-08-20",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/464e71da-6a2e-4d81-ae20-ab3ef37d30b1/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=464e71da-6a2e-4d81-ae20-ab3ef37d30b1&feed=V2lHo6VQ"
+      },
+      {
         "title": "Should Public Schools Require Bible Reading?",
         "date": "Aug 13, 2026",
         "dateSort": "2026-08-13",
@@ -309,18 +315,18 @@
         "date": "Jul 23, 2026",
         "dateSort": "2026-07-23",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/1bc7d91c-8275-41cb-a599-c3ed8b4fc6bf/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=1bc7d91c-8275-41cb-a599-c3ed8b4fc6bf&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Fire Alarm: Get out of the Shallows",
-        "date": "Jul 16, 2026",
-        "dateSort": "2026-07-16",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/5116fd21-9f1f-475a-a005-3b1493b00701/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=5116fd21-9f1f-475a-a005-3b1493b00701&feed=V2lHo6VQ"
       }
     ]
   },
   {
     "name": "P1 with Matt and Tommy",
     "episodes": [
+      {
+        "title": "Max Verstappen is STAYING at Red Bull",
+        "date": "Aug 20, 2026",
+        "dateSort": "2026-08-20",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a86d4d506b7917c0d4a3aa3/media.mp3"
+      },
       {
         "title": "Liam Lawson in at Red Bull and YUKI TSUNODA in at VCARB for Zandvoort | Our reaction",
         "date": "Aug 19, 2026",
@@ -344,12 +350,6 @@
         "date": "Aug 07, 2026",
         "dateSort": "2026-08-07",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a75b4df7b7de52827f98ab6/media.mp3"
-      },
-      {
-        "title": "Our 2026 mid-season F1 Driver Ratings: P10 to P1",
-        "date": "Aug 04, 2026",
-        "dateSort": "2026-08-04",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a6db7f554a82184abe18df1/media.mp3"
       }
     ]
   }
