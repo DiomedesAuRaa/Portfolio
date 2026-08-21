@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018Tony\u2019 and the Top 5 Coming-of-Age Movies, With Matt Johnson!",
+        "date": "Aug 21, 2026",
+        "dateSort": "2026-08-21",
+        "audioUrl": "https://traffic.megaphone.fm/GLT6710614400.mp3"
+      },
+      {
         "title": "\u2018The End of Oak Street\u2019 and the Top Five 'Twilight Zone' Movies. Plus: Will Poulter!",
         "date": "Aug 18, 2026",
         "dateSort": "2026-08-18",
@@ -274,12 +280,6 @@
         "date": "Aug 07, 2026",
         "dateSort": "2026-08-07",
         "audioUrl": "https://traffic.megaphone.fm/GLT3626729271.mp3"
-      },
-      {
-        "title": "The Canadian Movie Draft Live from Toronto!",
-        "date": "Aug 04, 2026",
-        "dateSort": "2026-08-04",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9775715792.mp3"
       }
     ]
   },
