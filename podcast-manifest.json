@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Derek Thompson on the American Sports Plutocracy, the NBA\u2019s 2016 Black Swan Event, and the WNBA\u2019s Growing Pains",
+        "date": "Aug 21, 2026",
+        "dateSort": "2026-08-21",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6522227388.mp3"
+      },
+      {
         "title": "The \"Invincible\" Rams, NFL Pressure Guys, and L.A.\u2019s Crazy NBA Month With Tom Pelissero and Sam Koppelman",
         "date": "Aug 18, 2026",
         "dateSort": "2026-08-18",
@@ -25,12 +31,6 @@
         "date": "Aug 10, 2026",
         "dateSort": "2026-08-10",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9729506209.mp3"
-      },
-      {
-        "title": "2026 NFL QB Rankings, the Villain Dodgers, MLB Trade Deadline Lessons, and SummerSlam 2026 With Mina Kimes, Billy Gil, Anthony Dabbundo, and David Shoemaker",
-        "date": "Aug 04, 2026",
-        "dateSort": "2026-08-04",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2038156060.mp3"
       }
     ]
   },
