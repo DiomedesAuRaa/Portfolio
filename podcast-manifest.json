@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Deshaun Vs. Cleveland, and a Mega-Mailbag With Joe House. Plus, UCLA\u2019s Bob Chesney.",
+        "date": "Aug 24, 2026",
+        "dateSort": "2026-08-24",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3061494209.mp3"
+      },
+      {
         "title": "Derek Thompson on the American Sports Plutocracy, the NBA\u2019s 2016 Black Swan Event, and the WNBA\u2019s Growing Pains",
         "date": "Aug 21, 2026",
         "dateSort": "2026-08-21",
@@ -25,12 +31,6 @@
         "date": "Aug 12, 2026",
         "dateSort": "2026-08-12",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2709124473.mp3"
-      },
-      {
-        "title": "Half-Baked Ideas and a Mega-Mailbag With Kevin Wildes and Joe House",
-        "date": "Aug 10, 2026",
-        "dateSort": "2026-08-10",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9729506209.mp3"
       }
     ]
   },
