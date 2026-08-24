@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Furious\u2019 Penultimate Episode and \u2018Lanterns\u2019 E2. Plus, \u2018Lioness\u2019 S3E4 With Van Lathan.",
+        "date": "Aug 24, 2026",
+        "dateSort": "2026-08-24",
+        "audioUrl": "https://traffic.megaphone.fm/GLT8882717105.mp3"
+      },
+      {
         "title": "Is \u2018Sterling Point\u2019 the Show of the Summer? Plus, \u2018Tires\u2019 Season 3.",
         "date": "Aug 20, 2026",
         "dateSort": "2026-08-20",
@@ -60,12 +66,6 @@
         "date": "Aug 10, 2026",
         "dateSort": "2026-08-10",
         "audioUrl": "https://traffic.megaphone.fm/GLT2547651106.mp3"
-      },
-      {
-        "title": "The Anthony Bourdain Special Episode",
-        "date": "Aug 06, 2026",
-        "dateSort": "2026-08-06",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7441100059.mp3"
       }
     ]
   },
@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "This is the Gospel",
+        "date": "Aug 23, 2026",
+        "dateSort": "2026-08-23",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17427759/513a44cee07a43f090d9e7419fe43d86_20260823_MC_Standalone.mp3"
+      },
+      {
         "title": "Discipline",
         "date": "Aug 16, 2026",
         "dateSort": "2026-08-16",
@@ -204,12 +210,6 @@
         "date": "Jul 26, 2026",
         "dateSort": "2026-07-26",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17390929/5d496d233ce745abb58cde1b9a1ac86a_20260726_MK_Standalone.mp3"
-      },
-      {
-        "title": "Discipleship",
-        "date": "Jul 19, 2026",
-        "dateSort": "2026-07-19",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17383477/ff87cee1a53a4119a77fbbd04cb967d7_20260719_AP_Standalone.mp3"
       }
     ]
   },
