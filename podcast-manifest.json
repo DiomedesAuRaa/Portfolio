@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Flops Movie Draft",
+        "date": "Aug 25, 2026",
+        "dateSort": "2026-08-25",
+        "audioUrl": "https://traffic.megaphone.fm/GLT6706224515.mp3"
+      },
+      {
         "title": "\u2018Tony\u2019 and the Top 5 Coming-of-Age Movies, With Matt Johnson!",
         "date": "Aug 21, 2026",
         "dateSort": "2026-08-21",
@@ -274,12 +280,6 @@
         "date": "Aug 11, 2026",
         "dateSort": "2026-08-11",
         "audioUrl": "https://traffic.megaphone.fm/GLT1953341874.mp3"
-      },
-      {
-        "title": "'One Night Only' and the 21st Century Rom-Com Canon",
-        "date": "Aug 07, 2026",
-        "dateSort": "2026-08-07",
-        "audioUrl": "https://traffic.megaphone.fm/GLT3626729271.mp3"
       }
     ]
   },
