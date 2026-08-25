@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Dutch GP Driver Ratings",
+        "date": "Aug 25, 2026",
+        "dateSort": "2026-08-25",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a8da89c2543d72c1fc5a047/media.mp3"
+      },
+      {
         "title": "Dutch GP Race Review",
         "date": "Aug 23, 2026",
         "dateSort": "2026-08-23",
@@ -344,12 +350,6 @@
         "date": "Aug 21, 2026",
         "dateSort": "2026-08-21",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a8879346e81240558452876/media.mp3"
-      },
-      {
-        "title": "Max Verstappen is STAYING at Red Bull",
-        "date": "Aug 20, 2026",
-        "dateSort": "2026-08-20",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6a86d4d506b7917c0d4a3aa3/media.mp3"
       }
     ]
   }
