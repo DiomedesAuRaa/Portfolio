@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "NBA News Roundup With Rob Mahoney, and James Surowiecki on the Lakers Sale!",
+        "date": "Aug 26, 2026",
+        "dateSort": "2026-08-26",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6478410751.mp3"
+      },
+      {
         "title": "Part 2: The 10 Players Facing the Most Pressure Next Season",
         "date": "Aug 11, 2026",
         "dateSort": "2026-08-11",
@@ -95,12 +101,6 @@
         "date": "Jul 25, 2026",
         "dateSort": "2026-07-25",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2162244507.mp3"
-      },
-      {
-        "title": "The 10 Most Interesting Extension Candidates With Grant Liffmann",
-        "date": "Jul 23, 2026",
-        "dateSort": "2026-07-23",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1937438028.mp3"
       }
     ]
   },
