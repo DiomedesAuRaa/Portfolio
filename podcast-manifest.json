@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "Todd McShay Joins, and Week Zero Has Arrived",
+        "date": "Aug 26, 2026",
+        "dateSort": "2026-08-26",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2346564337.mp3"
+      },
+      {
         "title": "Reacting to the AP Top 25 and Predicting Conference Winners",
         "date": "Aug 19, 2026",
         "dateSort": "2026-08-19",
@@ -239,12 +245,6 @@
         "date": "Jul 29, 2026",
         "dateSort": "2026-07-29",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9642941337.mp3"
-      },
-      {
-        "title": "Coaches on the Hot Seat, QB Rankings, and Is the SEC Leaving the NCAA?",
-        "date": "Jul 22, 2026",
-        "dateSort": "2026-07-22",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3271897494.mp3"
       }
     ]
   },
