@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Annual NFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
+        "date": "Aug 28, 2026",
+        "dateSort": "2026-08-28",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5150696542.mp3"
+      },
+      {
         "title": "The Fifth Annual \u201cMy Guy\u201d Fantasy Football Draft With Danny Heifetz, Danny Kelly, and Craig Horlbeck",
         "date": "Aug 25, 2026",
         "dateSort": "2026-08-25",
@@ -25,12 +31,6 @@
         "date": "Aug 18, 2026",
         "dateSort": "2026-08-18",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6919132030.mp3"
-      },
-      {
-        "title": "Russell Westbrook\u2019s One-of-One Career With Kirk Goldsberry, Plus College Football and Coaches With Van Lathan and Chris Ryan",
-        "date": "Aug 17, 2026",
-        "dateSort": "2026-08-17",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6441883274.mp3"
       }
     ]
   },
