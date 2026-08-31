@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Annual AFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
+        "date": "Aug 30, 2026",
+        "dateSort": "2026-08-30",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6593826011.mp3"
+      },
+      {
         "title": "The Annual NFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
         "date": "Aug 28, 2026",
         "dateSort": "2026-08-28",
@@ -25,12 +31,6 @@
         "date": "Aug 21, 2026",
         "dateSort": "2026-08-21",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6522227388.mp3"
-      },
-      {
-        "title": "The \"Invincible\" Rams, NFL Pressure Guys, and L.A.\u2019s Crazy NBA Month With Tom Pelissero and Sam Koppelman",
-        "date": "Aug 18, 2026",
-        "dateSort": "2026-08-18",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6919132030.mp3"
       }
     ]
   },
