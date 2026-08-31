@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "The New-Look Timberwolves With Jon Krawczynski and Five Big Questions!",
+        "date": "Aug 31, 2026",
+        "dateSort": "2026-08-31",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2075520205.mp3"
+      },
+      {
         "title": "NBA News Roundup With Rob Mahoney, and James Surowiecki on the Lakers Sale!",
         "date": "Aug 26, 2026",
         "dateSort": "2026-08-26",
@@ -95,12 +101,6 @@
         "date": "Jul 28, 2026",
         "dateSort": "2026-07-28",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7562972342.mp3"
-      },
-      {
-        "title": "LeBron James is a Philadelphia 76er! Plus, Could Embiid Be Traded?",
-        "date": "Jul 25, 2026",
-        "dateSort": "2026-07-25",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2162244507.mp3"
       }
     ]
   },
@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Compassion",
+        "date": "Aug 30, 2026",
+        "dateSort": "2026-08-30",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17435788/70bc80e019964c3ba58f21a86c0e5384_20260830_MC_Standalone.mp3"
+      },
+      {
         "title": "This is the Gospel",
         "date": "Aug 23, 2026",
         "dateSort": "2026-08-23",
@@ -204,12 +210,6 @@
         "date": "Aug 02, 2026",
         "dateSort": "2026-08-02",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17402655/f649ae81763d4b40952d5b6c80ebd125_20260802_SP_MadeAlive.mp3"
-      },
-      {
-        "title": "Grow & Gather",
-        "date": "Jul 26, 2026",
-        "dateSort": "2026-07-26",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17390929/5d496d233ce745abb58cde1b9a1ac86a_20260726_MK_Standalone.mp3"
       }
     ]
   },
