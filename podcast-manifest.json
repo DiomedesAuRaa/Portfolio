@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Furious\u2019 Season Finale With Star Emmy Rossum and Creator Liz Meriwether",
+        "date": "Aug 31, 2026",
+        "dateSort": "2026-08-31",
+        "audioUrl": "https://traffic.megaphone.fm/GLT3654810798.mp3"
+      },
+      {
         "title": "Is \u2018The Uprising\u2019 a Secret Robin Hood Movie? Plus, \u2018The Pitt\u2019 Season 3 Trailer, an \u2018Adults\u2019 S2 Preview, and Late Summer Recommendations.",
         "date": "Aug 27, 2026",
         "dateSort": "2026-08-27",
@@ -60,12 +66,6 @@
         "date": "Aug 17, 2026",
         "dateSort": "2026-08-17",
         "audioUrl": "https://traffic.megaphone.fm/GLT8612828632.mp3"
-      },
-      {
-        "title": "Is \u2018Lanterns\u2019 the End of Superhero TV? Plus, \u2018Furious\u2019 E5 and the \u2018Lioness\u2019 S3 Premiere.",
-        "date": "Aug 13, 2026",
-        "dateSort": "2026-08-13",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7003195519.mp3"
       }
     ]
   },
@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "USC, Belichick, Florida State start seasons with wins & are NFL players coming back to college?",
+        "date": "Aug 31, 2026",
+        "dateSort": "2026-08-31",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM1695890973.mp3"
+      },
+      {
         "title": "Colin Cowherd on Expectations for Ohio State, Texas & USC plus the Big Ten vs SEC Power Shift",
         "date": "Aug 26, 2026",
         "dateSort": "2026-08-26",
@@ -130,18 +136,18 @@
         "date": "Aug 17, 2026",
         "dateSort": "2026-08-17",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM7335719644.mp3"
-      },
-      {
-        "title": "Defining what a Successful 2026 Season looks like for USC, Ohio State, Michigan, Texas & more",
-        "date": "Aug 12, 2026",
-        "dateSort": "2026-08-12",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM4457605488.mp3"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "The Work of Mind Renewal",
+        "date": "Aug 31, 2026",
+        "dateSort": "2026-08-31",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW5221560659.mp3"
+      },
       {
         "title": "Deep Dive: Encouragement for the Weary",
         "date": "Aug 24, 2026",
@@ -165,12 +171,6 @@
         "date": "Aug 03, 2026",
         "dateSort": "2026-08-03",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW8292032662.mp3"
-      },
-      {
-        "title": "Best of WTP \u2013 How to Fight For Your Marriage",
-        "date": "Jul 27, 2026",
-        "dateSort": "2026-07-27",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW2272564374.mp3"
       }
     ]
   },
