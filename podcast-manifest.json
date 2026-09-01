@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "10 Movies We Can\u2019t Wait to See This Fall",
+        "date": "Sep 01, 2026",
+        "dateSort": "2026-09-01",
+        "audioUrl": "https://traffic.megaphone.fm/GLT9115863820.mp3"
+      },
+      {
         "title": "The Ridley Scott Movie Rankings and \u2018The Dog Stars\u2019",
         "date": "Aug 28, 2026",
         "dateSort": "2026-08-28",
@@ -274,12 +280,6 @@
         "date": "Aug 18, 2026",
         "dateSort": "2026-08-18",
         "audioUrl": "https://traffic.megaphone.fm/GLT8207953247.mp3"
-      },
-      {
-        "title": "The Final Girl Film Canon and \u2018Teenage Sex and Death at Camp Miasma\u2019 With Gillian Anderson, Hannah Einbinder, and Jane Schoenbrun!",
-        "date": "Aug 14, 2026",
-        "dateSort": "2026-08-14",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7152109219.mp3"
       }
     ]
   },
