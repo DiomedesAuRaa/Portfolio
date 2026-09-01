@@ -1,38 +1,7 @@
 [
   {
     "name": "Bill Simmons Podcast",
-    "episodes": [
-      {
-        "title": "The Annual AFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
-        "date": "Aug 30, 2026",
-        "dateSort": "2026-08-30",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6593826011.mp3"
-      },
-      {
-        "title": "The Annual NFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
-        "date": "Aug 28, 2026",
-        "dateSort": "2026-08-28",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5150696542.mp3"
-      },
-      {
-        "title": "The Fifth Annual \u201cMy Guy\u201d Fantasy Football Draft With Danny Heifetz, Danny Kelly, and Craig Horlbeck",
-        "date": "Aug 25, 2026",
-        "dateSort": "2026-08-25",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4079589389.mp3"
-      },
-      {
-        "title": "Deshaun Vs. Cleveland, and a Mega-Mailbag With Joe House. Plus, UCLA\u2019s Bob Chesney.",
-        "date": "Aug 24, 2026",
-        "dateSort": "2026-08-24",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3061494209.mp3"
-      },
-      {
-        "title": "Derek Thompson on the American Sports Plutocracy, the NBA\u2019s 2016 Black Swan Event, and the WNBA\u2019s Growing Pains",
-        "date": "Aug 21, 2026",
-        "dateSort": "2026-08-21",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6522227388.mp3"
-      }
-    ]
+    "episodes": []
   },
   {
     "name": "The Watch",
