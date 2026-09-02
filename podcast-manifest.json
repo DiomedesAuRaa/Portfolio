@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Make-or-Break NFL QBs, a CFB Preview, and the WNBA Renaissance With Todd McShay and Diana Taurasi",
+        "date": "Sep 01, 2026",
+        "dateSort": "2026-09-01",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5352787426.mp3"
+      },
+      {
         "title": "The Annual AFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
         "date": "Aug 30, 2026",
         "dateSort": "2026-08-30",
@@ -25,12 +31,6 @@
         "date": "Aug 24, 2026",
         "dateSort": "2026-08-24",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3061494209.mp3"
-      },
-      {
-        "title": "Derek Thompson on the American Sports Plutocracy, the NBA\u2019s 2016 Black Swan Event, and the WNBA\u2019s Growing Pains",
-        "date": "Aug 21, 2026",
-        "dateSort": "2026-08-21",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6522227388.mp3"
       }
     ]
   },
