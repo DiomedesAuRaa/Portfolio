@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "Cam Newton Becomes a Tailgater, and the Guys Are Ready for Week 1",
+        "date": "Sep 02, 2026",
+        "dateSort": "2026-09-02",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1581372834.mp3"
+      },
+      {
         "title": "Todd McShay Joins, and Week Zero Has Arrived",
         "date": "Aug 26, 2026",
         "dateSort": "2026-08-26",
@@ -239,12 +245,6 @@
         "date": "Aug 05, 2026",
         "dateSort": "2026-08-05",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3921694306.mp3"
-      },
-      {
-        "title": "A Very Special Listener \u201cTailbag\u201d Episode",
-        "date": "Jul 29, 2026",
-        "dateSort": "2026-07-29",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9642941337.mp3"
       }
     ]
   },
