@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "Emergency Pod: Breaking Down the Clippers' Punishment!",
+        "date": "Sep 03, 2026",
+        "dateSort": "2026-09-03",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6189861109.mp3"
+      },
+      {
         "title": "The New-Look Timberwolves With Jon Krawczynski and Five Big Questions!",
         "date": "Aug 31, 2026",
         "dateSort": "2026-08-31",
@@ -95,12 +101,6 @@
         "date": "Aug 04, 2026",
         "dateSort": "2026-08-04",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2910620724.mp3"
-      },
-      {
-        "title": "Fallout From the LeBron Signing! Plus, Fake Curry Trades and Mets Corner!",
-        "date": "Jul 28, 2026",
-        "dateSort": "2026-07-28",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT7562972342.mp3"
       }
     ]
   },
