@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "The Black-and-Chrome Action Movie Pack and \u2018Onslaught\u2019 With Michael Biehn and Adam Wingard!",
+        "date": "Sep 04, 2026",
+        "dateSort": "2026-09-04",
+        "audioUrl": "https://traffic.megaphone.fm/GLT3524771784.mp3"
+      },
+      {
         "title": "10 Movies We Can\u2019t Wait to See This Fall",
         "date": "Sep 01, 2026",
         "dateSort": "2026-09-01",
@@ -274,12 +280,6 @@
         "date": "Aug 21, 2026",
         "dateSort": "2026-08-21",
         "audioUrl": "https://traffic.megaphone.fm/GLT6710614400.mp3"
-      },
-      {
-        "title": "\u2018The End of Oak Street\u2019 and the Top Five 'Twilight Zone' Movies. Plus: Will Poulter!",
-        "date": "Aug 18, 2026",
-        "dateSort": "2026-08-18",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8207953247.mp3"
       }
     ]
   },
