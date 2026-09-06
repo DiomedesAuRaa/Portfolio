@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "Tailgate Live Is Back! We're Reacting to Week 1",
+        "date": "Sep 06, 2026",
+        "dateSort": "2026-09-06",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3763063174.mp3"
+      },
+      {
         "title": "Cam Newton Becomes a Tailgater, and the Guys Are Ready for Week 1",
         "date": "Sep 02, 2026",
         "dateSort": "2026-09-02",
@@ -239,12 +245,6 @@
         "date": "Aug 12, 2026",
         "dateSort": "2026-08-12",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8849334443.mp3"
-      },
-      {
-        "title": "Coaches Poll Top 25 Reactions, Splashiest New Coaches, and the Protect College Sports Act",
-        "date": "Aug 05, 2026",
-        "dateSort": "2026-08-05",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3921694306.mp3"
       }
     ]
   },
