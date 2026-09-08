@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Mahomes or Allen (Again???) and a Clippers-Heavy Mailbag With Nick Wright",
+        "date": "Sep 08, 2026",
+        "dateSort": "2026-09-08",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5059688698.mp3"
+      },
+      {
         "title": "Guess the Lines Week 1, Plus Favorite NFL Futures With Cousin Sal",
         "date": "Sep 07, 2026",
         "dateSort": "2026-09-07",
@@ -25,12 +31,6 @@
         "date": "Aug 30, 2026",
         "dateSort": "2026-08-30",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6593826011.mp3"
-      },
-      {
-        "title": "The Annual NFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
-        "date": "Aug 28, 2026",
-        "dateSort": "2026-08-28",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5150696542.mp3"
       }
     ]
   },
