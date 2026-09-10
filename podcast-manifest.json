@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "The Seven Teams Without a Playoff Series Win in the 2020s!",
+        "date": "Sep 10, 2026",
+        "dateSort": "2026-09-10",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4490376474.mp3"
+      },
+      {
         "title": "Clippers Punishment, Rookie Extensions, and Mike Schur on Sports Fandom!",
         "date": "Sep 08, 2026",
         "dateSort": "2026-09-08",
@@ -95,12 +101,6 @@
         "date": "Aug 26, 2026",
         "dateSort": "2026-08-26",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6478410751.mp3"
-      },
-      {
-        "title": "Part 2: The 10 Players Facing the Most Pressure Next Season",
-        "date": "Aug 11, 2026",
-        "dateSort": "2026-08-11",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1808509077.mp3"
       }
     ]
   },
