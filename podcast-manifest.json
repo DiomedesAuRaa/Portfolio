@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "An Absolutely Horrific Patriots Loss, the Rams-49ers Travel Bowl, and Hottest Takes With Craig Horlbeck, Danny Heifetz, and Danny Kelly",
+        "date": "Sep 10, 2026",
+        "dateSort": "2026-09-10",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6118072849.mp3"
+      },
+      {
         "title": "Mahomes or Allen (Again???) and a Clippers-Heavy Mailbag With Nick Wright",
         "date": "Sep 08, 2026",
         "dateSort": "2026-09-08",
@@ -25,12 +31,6 @@
         "date": "Sep 01, 2026",
         "dateSort": "2026-09-01",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5352787426.mp3"
-      },
-      {
-        "title": "The Annual AFC Over/Unders With Bill Simmons, Cousin Sal, and Joe House",
-        "date": "Aug 30, 2026",
-        "dateSort": "2026-08-30",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6593826011.mp3"
       }
     ]
   },
@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Week 2 College Football Picks: Ohio St-Texas, Oklahoma-Michigan & more!",
+        "date": "Sep 10, 2026",
+        "dateSort": "2026-09-10",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM1962236704.mp3"
+      },
+      {
         "title": "Urban Meyer on Ohio State-Texas & Michigan\u2019s Miracle Finish + Klatt\u2019s Reaction to AP Top 25",
         "date": "Sep 09, 2026",
         "dateSort": "2026-09-09",
@@ -130,12 +136,6 @@
         "date": "Sep 02, 2026",
         "dateSort": "2026-09-02",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM7734847303.mp3"
-      },
-      {
-        "title": "USC, Belichick, Florida State start seasons with wins & are NFL players coming back to college?",
-        "date": "Aug 31, 2026",
-        "dateSort": "2026-08-31",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM1695890973.mp3"
       }
     ]
   },
@@ -287,6 +287,12 @@
     "name": "Knowing Faith",
     "episodes": [
       {
+        "title": "Was The Reformation Good?",
+        "date": "Sep 10, 2026",
+        "dateSort": "2026-09-10",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/4249ca99-d7ea-44f7-83d8-5fd953c10e9f/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=4249ca99-d7ea-44f7-83d8-5fd953c10e9f&feed=V2lHo6VQ"
+      },
+      {
         "title": "Is Hell Part Of The Good News?",
         "date": "Sep 03, 2026",
         "dateSort": "2026-09-03",
@@ -309,12 +315,6 @@
         "date": "Aug 13, 2026",
         "dateSort": "2026-08-13",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/d97f66ff-e139-4cb3-8b96-02c650a100fd/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=d97f66ff-e139-4cb3-8b96-02c650a100fd&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Season 17 - Learn to Think Theologically",
-        "date": "Aug 06, 2026",
-        "dateSort": "2026-08-06",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/633cca9e-9daf-47e4-a6b2-8218dd28378e/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=633cca9e-9daf-47e4-a6b2-8218dd28378e&feed=V2lHo6VQ"
       }
     ]
   },
