@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "The Poor in Spirit",
+        "date": "Sep 13, 2026",
+        "dateSort": "2026-09-13",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17461803/77e3fc7927c445b2856180bda3b17426_20260913_MC_BLJ_Wk1.mp3"
+      },
+      {
         "title": "Bless the Lord",
         "date": "Sep 06, 2026",
         "dateSort": "2026-09-06",
@@ -204,12 +210,6 @@
         "date": "Aug 16, 2026",
         "dateSort": "2026-08-16",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17421798/155a1fe3c5314dfdbe5daa24ccf063a9_20260816_MC_Standalone.mp3"
-      },
-      {
-        "title": "Deeper Still",
-        "date": "Aug 09, 2026",
-        "dateSort": "2026-08-09",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17411720/58318a023b7b4d81b4cd0e0f02847037_20260809_MC_Standalone.mp3"
       }
     ]
   },
