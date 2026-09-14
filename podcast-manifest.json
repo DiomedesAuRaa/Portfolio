@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Smashmouth Giants, Bumbling Chargers, Stumbling Packers, Week 1 Overreactions, and Guess the Lines With Cousin Sal",
+        "date": "Sep 14, 2026",
+        "dateSort": "2026-09-14",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8508103867.mp3"
+      },
+      {
         "title": "The 49ers Crush the Jet-Lag Bowl, Rams Overreactions, Bills-Texans, and Week 1 NFL Picks With Joe House",
         "date": "Sep 11, 2026",
         "dateSort": "2026-09-11",
@@ -25,12 +31,6 @@
         "date": "Sep 07, 2026",
         "dateSort": "2026-09-07",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6056085298.mp3"
-      },
-      {
-        "title": "Clippers Rock Bottom 9.0, Plus Charles Barkley on the Clips, 76ers, Lakers, ESPN, and Why He Loves Josh Allen",
-        "date": "Sep 03, 2026",
-        "dateSort": "2026-09-03",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6936140442.mp3"
       }
     ]
   },
@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Texas stuns #1 Ohio State, Michigan bounces back & Oregon falls apart + Klatt\u2019s new Top 10",
+        "date": "Sep 14, 2026",
+        "dateSort": "2026-09-14",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM7684118326.mp3"
+      },
+      {
         "title": "Week 2 College Football Picks: Ohio St-Texas, Oklahoma-Michigan & more!",
         "date": "Sep 10, 2026",
         "dateSort": "2026-09-10",
@@ -130,18 +136,18 @@
         "date": "Sep 03, 2026",
         "dateSort": "2026-09-03",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM4091714573.mp3"
-      },
-      {
-        "title": "10 Burning Questions going into the 2026 Season",
-        "date": "Sep 02, 2026",
-        "dateSort": "2026-09-02",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM7734847303.mp3"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "A Church Divided Cannot Stand with Pricelis Perreaux-Dominguez",
+        "date": "Sep 14, 2026",
+        "dateSort": "2026-09-14",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW9270835541.mp3"
+      },
       {
         "title": "Learning How to Think",
         "date": "Sep 07, 2026",
@@ -165,12 +171,6 @@
         "date": "Aug 17, 2026",
         "dateSort": "2026-08-17",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW6393838414.mp3"
-      },
-      {
-        "title": "Deep Dive: The Gospel, Evangelism & Making Disciples",
-        "date": "Aug 10, 2026",
-        "dateSort": "2026-08-10",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW3491735552.mp3"
       }
     ]
   },
