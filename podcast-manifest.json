@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Widow\u2019s Bay\u2019 Sweeps the Emmys! Plus, \u2018Lanterns\u2019 Episode 5.",
+        "date": "Sep 15, 2026",
+        "dateSort": "2026-09-15",
+        "audioUrl": "https://traffic.megaphone.fm/GLT5273628852.mp3"
+      },
+      {
         "title": "Emmy Predictions, Netflix Is Adapting \u2018Lonesome Dove,\u2019 and \u2018The Paper\u2019 Season 2",
         "date": "Sep 10, 2026",
         "dateSort": "2026-09-10",
@@ -60,12 +66,6 @@
         "date": "Aug 31, 2026",
         "dateSort": "2026-08-31",
         "audioUrl": "https://traffic.megaphone.fm/GLT3654810798.mp3"
-      },
-      {
-        "title": "Is \u2018The Uprising\u2019 a Secret Robin Hood Movie? Plus, \u2018The Pitt\u2019 Season 3 Trailer, an \u2018Adults\u2019 S2 Preview, and Late Summer Recommendations.",
-        "date": "Aug 27, 2026",
-        "dateSort": "2026-08-27",
-        "audioUrl": "https://traffic.megaphone.fm/GLT8776843804.mp3"
       }
     ]
   },
