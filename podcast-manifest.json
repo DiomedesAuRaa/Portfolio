@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "A Clippers Rebrand, an NFL Mini-Mailbag, and Best MLB Story Lines With Rob Mahoney, Anthony Dabbundo, and Billy Gil",
+        "date": "Sep 16, 2026",
+        "dateSort": "2026-09-16",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9377692586.mp3"
+      },
+      {
         "title": "The Smashmouth Giants, Bumbling Chargers, Stumbling Packers, Week 1 Overreactions, and Guess the Lines With Cousin Sal",
         "date": "Sep 14, 2026",
         "dateSort": "2026-09-14",
@@ -25,12 +31,6 @@
         "date": "Sep 08, 2026",
         "dateSort": "2026-09-08",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5059688698.mp3"
-      },
-      {
-        "title": "Guess the Lines Week 1, Plus Favorite NFL Futures With Cousin Sal",
-        "date": "Sep 07, 2026",
-        "dateSort": "2026-09-07",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6056085298.mp3"
       }
     ]
   },
@@ -73,7 +73,7 @@
     "name": "Zach Lowe",
     "episodes": [
       {
-        "title": "One Big Question for Every Eastern Conference Team!",
+        "title": "One Big Question for Every Eastern Conference Team! Plus, Ballmer Apology and Kawhi to the Raptors!",
         "date": "Sep 15, 2026",
         "dateSort": "2026-09-15",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5503182108.mp3"
