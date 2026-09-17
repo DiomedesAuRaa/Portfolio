@@ -217,6 +217,12 @@
     "name": "Ringer Tailgate",
     "episodes": [
       {
+        "title": "Texas: There's a New No. 1 in Town and Kiffin Returns to Ole Miss",
+        "date": "Sep 16, 2026",
+        "dateSort": "2026-09-16",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2077413357.mp3"
+      },
+      {
         "title": "CFB Week 2 Live Reactions: Ohio State\u2013Texas, a Top-Five Matchup",
         "date": "Sep 13, 2026",
         "dateSort": "2026-09-13",
@@ -239,12 +245,6 @@
         "date": "Sep 02, 2026",
         "dateSort": "2026-09-02",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT1581372834.mp3"
-      },
-      {
-        "title": "Todd McShay Joins, and Week Zero Has Arrived",
-        "date": "Aug 26, 2026",
-        "dateSort": "2026-08-26",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2346564337.mp3"
       }
     ]
   },
