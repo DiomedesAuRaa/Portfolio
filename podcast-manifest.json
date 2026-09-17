@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Slow Horses\u2019 Season 6 Is an Energetic Return to Form. Plus, Chuck Klosterman!",
+        "date": "Sep 17, 2026",
+        "dateSort": "2026-09-17",
+        "audioUrl": "https://traffic.megaphone.fm/GLT7350757158.mp3"
+      },
+      {
         "title": "\u2018Widow\u2019s Bay\u2019 Sweeps the Emmys! Plus, \u2018Lanterns\u2019 Episode 5.",
         "date": "Sep 15, 2026",
         "dateSort": "2026-09-15",
@@ -60,12 +66,6 @@
         "date": "Sep 04, 2026",
         "dateSort": "2026-09-04",
         "audioUrl": "https://traffic.megaphone.fm/GLT1586065589.mp3"
-      },
-      {
-        "title": "\u2018Furious\u2019 Season Finale With Star Emmy Rossum and Creator Liz Meriwether",
-        "date": "Aug 31, 2026",
-        "dateSort": "2026-08-31",
-        "audioUrl": "https://traffic.megaphone.fm/GLT3654810798.mp3"
       }
     ]
   },
@@ -287,6 +287,12 @@
     "name": "Knowing Faith",
     "episodes": [
       {
+        "title": "Are Our Clothes Theological? with Caroline Saunders",
+        "date": "Sep 17, 2026",
+        "dateSort": "2026-09-17",
+        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/4fb382b4-23fb-4554-be87-7cd15460ee2d/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=4fb382b4-23fb-4554-be87-7cd15460ee2d&feed=V2lHo6VQ"
+      },
+      {
         "title": "After the Fact: Is there a right way to worship?with Laura Story",
         "date": "Sep 14, 2026",
         "dateSort": "2026-09-14",
@@ -309,12 +315,6 @@
         "date": "Aug 27, 2026",
         "dateSort": "2026-08-27",
         "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/3b1546be-999a-4778-b71e-403b43c5c0be/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=3b1546be-999a-4778-b71e-403b43c5c0be&feed=V2lHo6VQ"
-      },
-      {
-        "title": "Are Women Pastors Biblical?",
-        "date": "Aug 20, 2026",
-        "dateSort": "2026-08-20",
-        "audioUrl": "https://afp-900888-injected.calisto.simplecastaudio.com/c365a265-6858-4ba6-a7e0-c440ec54ec73/episodes/464e71da-6a2e-4d81-ae20-ab3ef37d30b1/audio/128/default.mp3?aid=rss_feed&awCollectionId=c365a265-6858-4ba6-a7e0-c440ec54ec73&awEpisodeId=464e71da-6a2e-4d81-ae20-ab3ef37d30b1&feed=V2lHo6VQ"
       }
     ]
   },
