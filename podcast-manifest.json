@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "\u2018Resident Evil\u2019 Absolutely Rips!",
+        "date": "Sep 17, 2026",
+        "dateSort": "2026-09-17",
+        "audioUrl": "https://traffic.megaphone.fm/GLT6790970361.mp3"
+      },
+      {
         "title": "The Sandra Bullock Movie Star Playbook and \u2018Practical Magic 2.\u2019 Plus: \u2018Oasis: Don\u2019t Look Back in Anger.\u2019",
         "date": "Sep 15, 2026",
         "dateSort": "2026-09-15",
@@ -274,12 +280,6 @@
         "date": "Sep 04, 2026",
         "dateSort": "2026-09-04",
         "audioUrl": "https://traffic.megaphone.fm/GLT3524771784.mp3"
-      },
-      {
-        "title": "10 Movies We Can\u2019t Wait to See This Fall",
-        "date": "Sep 01, 2026",
-        "dateSort": "2026-09-01",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9115863820.mp3"
       }
     ]
   },
