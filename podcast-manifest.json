@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Apex Josh Allen, the Goofy NFC North, Week 2 Picks, and Bill\u2019s Breakup Letter to the Clippers | With Tom Pelissero and Joe House",
+        "date": "Sep 18, 2026",
+        "dateSort": "2026-09-18",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9818339078.mp3"
+      },
+      {
         "title": "A Clippers Rebrand, an NFL Mini-Mailbag, and Best MLB Story Lines With Rob Mahoney, Anthony Dabbundo, and Billy Gil",
         "date": "Sep 16, 2026",
         "dateSort": "2026-09-16",
@@ -25,12 +31,6 @@
         "date": "Sep 10, 2026",
         "dateSort": "2026-09-10",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6118072849.mp3"
-      },
-      {
-        "title": "Mahomes or Allen (Again???) and a Clippers-Heavy Mailbag With Nick Wright",
-        "date": "Sep 08, 2026",
-        "dateSort": "2026-09-08",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5059688698.mp3"
       }
     ]
   },
@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "College Football Week 3 Picks: Will Lane Kiffin & LSU win in his return to Ole Miss?",
+        "date": "Sep 17, 2026",
+        "dateSort": "2026-09-17",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM2518886544.mp3"
+      },
+      {
         "title": "Is it time to panic about Oregon, Ohio State or Oklahoma? Plus teams to get excited about",
         "date": "Sep 16, 2026",
         "dateSort": "2026-09-16",
@@ -130,12 +136,6 @@
         "date": "Sep 09, 2026",
         "dateSort": "2026-09-09",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM1168262768.mp3"
-      },
-      {
-        "title": "Michigan\u2019s Miracle Finish: should it have happened? Kiffin & LSU roll + a new #1 in Klatt\u2019s Top 10",
-        "date": "Sep 07, 2026",
-        "dateSort": "2026-09-07",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM7055306549.mp3"
       }
     ]
   },
