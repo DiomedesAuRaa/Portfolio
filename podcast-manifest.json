@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Broken Chargers, Mahomes 3.0, Zombie Deshaun, the Masked Backup, First Coach Fired, and Guess the Lines With Cousin Sal",
+        "date": "Sep 21, 2026",
+        "dateSort": "2026-09-21",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8315252184.mp3"
+      },
+      {
         "title": "Apex Josh Allen, the Goofy NFC North, Week 2 Picks, and Bill\u2019s Breakup Letter to the Clippers | With Tom Pelissero and Joe House",
         "date": "Sep 18, 2026",
         "dateSort": "2026-09-18",
@@ -25,12 +31,6 @@
         "date": "Sep 11, 2026",
         "dateSort": "2026-09-11",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6655812335.mp3"
-      },
-      {
-        "title": "An Absolutely Horrific Patriots Loss, the Rams-49ers Travel Bowl, and Hottest Takes With Craig Horlbeck, Danny Heifetz, and Danny Kelly",
-        "date": "Sep 10, 2026",
-        "dateSort": "2026-09-10",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6118072849.mp3"
       }
     ]
   },
@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Trinidad Chambliss ruins Kiffin\u2019s return: should Ole Miss be #1? Ohio St\u2019s issues + Klatt\u2019s Top 10",
+        "date": "Sep 21, 2026",
+        "dateSort": "2026-09-21",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM3318781833.mp3"
+      },
+      {
         "title": "College Football Week 3 Picks: Will Lane Kiffin & LSU win in his return to Ole Miss?",
         "date": "Sep 17, 2026",
         "dateSort": "2026-09-17",
@@ -130,18 +136,18 @@
         "date": "Sep 10, 2026",
         "dateSort": "2026-09-10",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM1962236704.mp3"
-      },
-      {
-        "title": "Urban Meyer on Ohio State-Texas & Michigan\u2019s Miracle Finish + Klatt\u2019s Reaction to AP Top 25",
-        "date": "Sep 09, 2026",
-        "dateSort": "2026-09-09",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM1168262768.mp3"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "Healing Mother Wounds with Dr. Sarita Lyons",
+        "date": "Sep 21, 2026",
+        "dateSort": "2026-09-21",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW2554458061.mp3"
+      },
       {
         "title": "A Church Divided Cannot Stand with Pricelis Perreaux-Dominguez",
         "date": "Sep 14, 2026",
@@ -165,12 +171,6 @@
         "date": "Aug 24, 2026",
         "dateSort": "2026-08-24",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW1370665220.mp3"
-      },
-      {
-        "title": "Deep Dive: Raising Kids to Know and Follow Jesus",
-        "date": "Aug 17, 2026",
-        "dateSort": "2026-08-17",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW6393838414.mp3"
       }
     ]
   },
