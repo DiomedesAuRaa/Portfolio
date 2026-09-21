@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "Those Who Mourn",
+        "date": "Sep 20, 2026",
+        "dateSort": "2026-09-20",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17468758/cd8ce4e289e841379e2e92c759026100_20260920_MC_BLJ_Wk2.mp3"
+      },
+      {
         "title": "The Poor in Spirit",
         "date": "Sep 13, 2026",
         "dateSort": "2026-09-13",
@@ -204,12 +210,6 @@
         "date": "Aug 23, 2026",
         "dateSort": "2026-08-23",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17427759/513a44cee07a43f090d9e7419fe43d86_20260823_MC_Standalone.mp3"
-      },
-      {
-        "title": "Discipline",
-        "date": "Aug 16, 2026",
-        "dateSort": "2026-08-16",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17421798/155a1fe3c5314dfdbe5daa24ccf063a9_20260816_MC_Standalone.mp3"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our 2026 Azerbaijan GP predictions",
+        "date": "Sep 21, 2026",
+        "dateSort": "2026-09-21",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6ab178920a7a2fe797e76e7e/media.mp3"
+      },
+      {
         "title": "Reacting to the 2027 F1 calendar - including TEN sprints",
         "date": "Sep 16, 2026",
         "dateSort": "2026-09-16",
@@ -344,12 +350,6 @@
         "date": "Sep 12, 2026",
         "dateSort": "2026-09-12",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6aa59b794d46c7b35d216722/media.mp3"
-      },
-      {
-        "title": "Reaction to Spanish GP Practice",
-        "date": "Sep 11, 2026",
-        "dateSort": "2026-09-11",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6aa44d8a9c3069985d5452e6/media.mp3"
       }
     ]
   }
