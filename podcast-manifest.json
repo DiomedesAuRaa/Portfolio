@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Knicks (and a Crowded East) With Zach Lowe, Plus Anthony Jeselnik on Book Clubs, Roasts, and Stand-Up Comedy in 2026",
+        "date": "Sep 22, 2026",
+        "dateSort": "2026-09-22",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3150636662.mp3"
+      },
+      {
         "title": "The Broken Chargers, Mahomes 3.0, Zombie Deshaun, the Masked Backup, First Coach Fired, and Guess the Lines With Cousin Sal",
         "date": "Sep 21, 2026",
         "dateSort": "2026-09-21",
@@ -25,12 +31,6 @@
         "date": "Sep 14, 2026",
         "dateSort": "2026-09-14",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8508103867.mp3"
-      },
-      {
-        "title": "The 49ers Crush the Jet-Lag Bowl, Rams Overreactions, Bills-Texans, and Week 1 NFL Picks With Joe House",
-        "date": "Sep 11, 2026",
-        "dateSort": "2026-09-11",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6655812335.mp3"
       }
     ]
   },
