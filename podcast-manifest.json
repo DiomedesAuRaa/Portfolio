@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "One Big Question for Every Western Conference Team!",
+        "date": "Sep 22, 2026",
+        "dateSort": "2026-09-22",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8263953261.mp3"
+      },
+      {
         "title": "Drafting Our Favorite Championship Teams Since 2000!",
         "date": "Sep 17, 2026",
         "dateSort": "2026-09-17",
@@ -95,12 +101,6 @@
         "date": "Sep 08, 2026",
         "dateSort": "2026-09-08",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2959874908.mp3"
-      },
-      {
-        "title": "Emergency Pod: Breaking Down the Clippers' Punishment!",
-        "date": "Sep 03, 2026",
-        "dateSort": "2026-09-03",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6189861109.mp3"
       }
     ]
   },
