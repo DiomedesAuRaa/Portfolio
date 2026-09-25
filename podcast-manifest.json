@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "The Buffalo Curse, a Mega-Mailbag, QB Roulette, and Week 3 Picks With Joe House and Tom Pelissero",
+        "date": "Sep 25, 2026",
+        "dateSort": "2026-09-25",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6011834883.mp3"
+      },
+      {
         "title": "The Knicks (and a Crowded East) With Zach Lowe, Plus Anthony Jeselnik on Book Clubs, Roasts, and Stand-Up Comedy in 2026",
         "date": "Sep 22, 2026",
         "dateSort": "2026-09-22",
@@ -25,12 +31,6 @@
         "date": "Sep 16, 2026",
         "dateSort": "2026-09-16",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9377692586.mp3"
-      },
-      {
-        "title": "The Smashmouth Giants, Bumbling Chargers, Stumbling Packers, Week 1 Overreactions, and Guess the Lines With Cousin Sal",
-        "date": "Sep 14, 2026",
-        "dateSort": "2026-09-14",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8508103867.mp3"
       }
     ]
   },
