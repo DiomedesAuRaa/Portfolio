@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Drake Mayday, a Raiders Revival, Bleakest 0-3 Teams, MLB Playoffs, and Guess the Lines With Cousin Sal",
+        "date": "Sep 28, 2026",
+        "dateSort": "2026-09-28",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9558844437.mp3"
+      },
+      {
         "title": "The Buffalo Curse, a Mega-Mailbag, QB Roulette, and Week 3 Picks With Joe House and Tom Pelissero",
         "date": "Sep 25, 2026",
         "dateSort": "2026-09-25",
@@ -25,12 +31,6 @@
         "date": "Sep 18, 2026",
         "dateSort": "2026-09-18",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9818339078.mp3"
-      },
-      {
-        "title": "A Clippers Rebrand, an NFL Mini-Mailbag, and Best MLB Story Lines With Rob Mahoney, Anthony Dabbundo, and Billy Gil",
-        "date": "Sep 16, 2026",
-        "dateSort": "2026-09-16",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9377692586.mp3"
       }
     ]
   },
