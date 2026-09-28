@@ -73,6 +73,12 @@
     "name": "Zach Lowe",
     "episodes": [
       {
+        "title": "Media Day Headlines, X Factor Players, All-Stars, and More!",
+        "date": "Sep 28, 2026",
+        "dateSort": "2026-09-28",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8658213700.mp3"
+      },
+      {
         "title": "Contract Extensions Latest and Early Awards Predictions!",
         "date": "Sep 24, 2026",
         "dateSort": "2026-09-24",
@@ -95,12 +101,6 @@
         "date": "Sep 15, 2026",
         "dateSort": "2026-09-15",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT5503182108.mp3"
-      },
-      {
-        "title": "The Seven Teams Without a Playoff Series Win in the 2020s!",
-        "date": "Sep 10, 2026",
-        "dateSort": "2026-09-10",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT4490376474.mp3"
       }
     ]
   },
@@ -182,6 +182,12 @@
     "name": "Village Church",
     "episodes": [
       {
+        "title": "The Humble",
+        "date": "Sep 27, 2026",
+        "dateSort": "2026-09-27",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17476753/cbb1240fa7f94d68a9179e397e1dd9dc_20260927_MK_BLJ_Wk3.mp3"
+      },
+      {
         "title": "Those Who Mourn",
         "date": "Sep 20, 2026",
         "dateSort": "2026-09-20",
@@ -204,12 +210,6 @@
         "date": "Aug 30, 2026",
         "dateSort": "2026-08-30",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17435788/70bc80e019964c3ba58f21a86c0e5384_20260830_MC_Standalone.mp3"
-      },
-      {
-        "title": "This is the Gospel",
-        "date": "Aug 23, 2026",
-        "dateSort": "2026-08-23",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17427759/513a44cee07a43f090d9e7419fe43d86_20260823_MC_Standalone.mp3"
       }
     ]
   },
