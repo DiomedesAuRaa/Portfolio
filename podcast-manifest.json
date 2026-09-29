@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Star Wars\u2019 Announces Another Chapter of the Skywalker Saga. Plus, \u2018Lioness\u2019 Season 3 Finale With Van Lathan.",
+        "date": "Sep 28, 2026",
+        "dateSort": "2026-09-28",
+        "audioUrl": "https://traffic.megaphone.fm/GLT7991050294.mp3"
+      },
+      {
         "title": "Joanna Robinson On Netflix\u2019s Increasing UK Presence, Sharon Horgan\u2019s \u2018Youth,\u2019 and \u2018Slow Horses\u2019 Season 6, Episode 2.",
         "date": "Sep 25, 2026",
         "dateSort": "2026-09-25",
@@ -60,12 +66,6 @@
         "date": "Sep 15, 2026",
         "dateSort": "2026-09-15",
         "audioUrl": "https://traffic.megaphone.fm/GLT5273628852.mp3"
-      },
-      {
-        "title": "Emmy Predictions, Netflix Is Adapting \u2018Lonesome Dove,\u2019 and \u2018The Paper\u2019 Season 2",
-        "date": "Sep 10, 2026",
-        "dateSort": "2026-09-10",
-        "audioUrl": "https://traffic.megaphone.fm/GLT6171131271.mp3"
       }
     ]
   },
@@ -252,6 +252,12 @@
     "name": "Big Picture",
     "episodes": [
       {
+        "title": "Old Movies vs. New Movies: How \u2018Avengers: Endgame Encore\u2019 Beat Brad Pitt, Robert Pattinson, and an Awesome Weekend Movie Lineup",
+        "date": "Sep 28, 2026",
+        "dateSort": "2026-09-28",
+        "audioUrl": "https://traffic.megaphone.fm/GLT7142023545.mp3"
+      },
+      {
         "title": "\u2018Primetime\u2019 Is a Robert Pattinson Transformation and the Nightmare Media Movie of Our Time, With Lance Oppenheim!",
         "date": "Sep 25, 2026",
         "dateSort": "2026-09-25",
@@ -274,12 +280,6 @@
         "date": "Sep 17, 2026",
         "dateSort": "2026-09-17",
         "audioUrl": "https://traffic.megaphone.fm/GLT6790970361.mp3"
-      },
-      {
-        "title": "The Sandra Bullock Movie Star Playbook and \u2018Practical Magic 2.\u2019 Plus: \u2018Oasis: Don\u2019t Look Back in Anger.\u2019",
-        "date": "Sep 15, 2026",
-        "dateSort": "2026-09-15",
-        "audioUrl": "https://traffic.megaphone.fm/GLT9964599899.mp3"
       }
     ]
   },
