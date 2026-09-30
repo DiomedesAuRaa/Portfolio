@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "NBA Lie Detectors, Duren\u2019s Future, Tomlin\u2019s TV Splash, and a 2026 Sports Media Check With Kirk Goldsberry and Bryan Curtis",
+        "date": "Sep 30, 2026",
+        "dateSort": "2026-09-30",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6909961374.mp3"
+      },
+      {
         "title": "Drake Mayday, a Raiders Revival, Bleakest 0-3 Teams, MLB Playoffs, and Guess the Lines With Cousin Sal",
         "date": "Sep 28, 2026",
         "dateSort": "2026-09-28",
@@ -25,12 +31,6 @@
         "date": "Sep 21, 2026",
         "dateSort": "2026-09-21",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8315252184.mp3"
-      },
-      {
-        "title": "Apex Josh Allen, the Goofy NFC North, Week 2 Picks, and Bill\u2019s Breakup Letter to the Clippers | With Tom Pelissero and Joe House",
-        "date": "Sep 18, 2026",
-        "dateSort": "2026-09-18",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9818339078.mp3"
       }
     ]
   },
@@ -322,6 +322,12 @@
     "name": "P1 with Matt and Tommy",
     "episodes": [
       {
+        "title": "Our 2026 Bahrain GP (in Malaysia) predictions",
+        "date": "Sep 30, 2026",
+        "dateSort": "2026-09-30",
+        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6abc08054e65eeecd4cf7de0/media.mp3"
+      },
+      {
         "title": "Max Verstappen on the P1 podcast!",
         "date": "Sep 29, 2026",
         "dateSort": "2026-09-29",
@@ -344,12 +350,6 @@
         "date": "Sep 25, 2026",
         "dateSort": "2026-09-25",
         "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6ab687907cb95c7ca52d2694/media.mp3"
-      },
-      {
-        "title": "Reaction to Azerbaijan GP practice",
-        "date": "Sep 24, 2026",
-        "dateSort": "2026-09-24",
-        "audioUrl": "https://sphinx.acast.com/p/open/s/63e24225436c36001119fc66/e/6ab5768cf9970bc1071c0f62/media.mp3"
       }
     ]
   }
