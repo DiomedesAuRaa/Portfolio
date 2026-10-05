@@ -3,6 +3,12 @@
     "name": "Bill Simmons Podcast",
     "episodes": [
       {
+        "title": "Texas Toast, Fantasy Murderers, Drake Maybe Back, Guess the Lines and MLB Playoffs With Cousin Sal",
+        "date": "Oct 05, 2026",
+        "dateSort": "2026-10-05",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2625032502.mp3"
+      },
+      {
         "title": "Hello Cleveland, Week 4 NFL Picks, NBA Award Leans, Raiders Realities, and Boston Despair With Joe House, Tom Pelissero, and Bill\u2019s dad",
         "date": "Oct 02, 2026",
         "dateSort": "2026-10-02",
@@ -25,12 +31,6 @@
         "date": "Sep 25, 2026",
         "dateSort": "2026-09-25",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT6011834883.mp3"
-      },
-      {
-        "title": "The Knicks (and a Crowded East) With Zach Lowe, Plus Anthony Jeselnik on Book Clubs, Roasts, and Stand-Up Comedy in 2026",
-        "date": "Sep 22, 2026",
-        "dateSort": "2026-09-22",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT3150636662.mp3"
       }
     ]
   },
@@ -108,6 +108,12 @@
     "name": "Joel Klatt",
     "episodes": [
       {
+        "title": "Jeremiah Smith: Best Buckeye ever? Are Michigan\u2019s problems fixable? DeBoer\u2019s Bama is here & Top 10",
+        "date": "Oct 05, 2026",
+        "dateSort": "2026-10-05",
+        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM9415689859.mp3"
+      },
+      {
         "title": "Week 5 College Football Picks",
         "date": "Oct 01, 2026",
         "dateSort": "2026-10-01",
@@ -130,18 +136,18 @@
         "date": "Sep 24, 2026",
         "dateSort": "2026-09-24",
         "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM8568138215.mp3"
-      },
-      {
-        "title": "10 Teams outside the Top 10 that could reach the College Football Playoff",
-        "date": "Sep 23, 2026",
-        "dateSort": "2026-09-23",
-        "audioUrl": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/traffic.megaphone.fm/FOXM4260058629.mp3"
       }
     ]
   },
   {
     "name": "With the Perrys",
     "episodes": [
+      {
+        "title": "Moving from Bitterness to Resilience with Toni Collier",
+        "date": "Oct 05, 2026",
+        "dateSort": "2026-10-05",
+        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW3741176902.mp3"
+      },
       {
         "title": "Gangs, Sinless Perfection, and Throwing Hands: Storytime with The Perrys",
         "date": "Sep 28, 2026",
@@ -165,12 +171,6 @@
         "date": "Sep 07, 2026",
         "dateSort": "2026-09-07",
         "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW7653780451.mp3"
-      },
-      {
-        "title": "The Work of Mind Renewal",
-        "date": "Aug 31, 2026",
-        "dateSort": "2026-08-31",
-        "audioUrl": "https://mgln.ai/e/617/pscrb.fm/rss/p/traffic.megaphone.fm/LEW5221560659.mp3"
       }
     ]
   },
@@ -181,6 +181,12 @@
   {
     "name": "Village Church",
     "episodes": [
+      {
+        "title": "Those Who Hunger",
+        "date": "Oct 04, 2026",
+        "dateSort": "2026-10-04",
+        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17489487/88cb160e424b45ecbd86382388c13db1_20261004_MC_BLJ_Wk4.mp3"
+      },
       {
         "title": "The Humble",
         "date": "Sep 27, 2026",
@@ -204,12 +210,6 @@
         "date": "Sep 06, 2026",
         "dateSort": "2026-09-06",
         "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17443022/f1010020852741829c3b964722899a4f_20260906_JP_Standalone_NEW.mp3"
-      },
-      {
-        "title": "Compassion",
-        "date": "Aug 30, 2026",
-        "dateSort": "2026-08-30",
-        "audioUrl": "http://feeds.thevillagechurch.net/link/13086/17435788/70bc80e019964c3ba58f21a86c0e5384_20260830_MC_Standalone.mp3"
       }
     ]
   },
