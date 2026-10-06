@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018Lanterns\u2019 Is One of Our Strongest Superhero Shows Ever. Plus, \u2018Sicario 3\u2019 and a New \u2018Miami Vice\u2019 Ending.",
+        "date": "Oct 05, 2026",
+        "dateSort": "2026-10-05",
+        "audioUrl": "https://traffic.megaphone.fm/GLT1414892017.mp3"
+      },
+      {
         "title": "\u2018East of Eden\u2019 Series Premiere, \u2018Slow Horses\u2019 S6E3, and Cindy Holland Leaves Paramount. Plus, Best TV of the Century Honorable Mentions.",
         "date": "Oct 02, 2026",
         "dateSort": "2026-10-02",
@@ -60,12 +66,6 @@
         "date": "Sep 21, 2026",
         "dateSort": "2026-09-21",
         "audioUrl": "https://traffic.megaphone.fm/GLT3646680669.mp3"
-      },
-      {
-        "title": "\u2018Slow Horses\u2019 Season 6 Is an Energetic Return to Form. Plus, Chuck Klosterman!",
-        "date": "Sep 17, 2026",
-        "dateSort": "2026-09-17",
-        "audioUrl": "https://traffic.megaphone.fm/GLT7350757158.mp3"
       }
     ]
   },
