@@ -2,7 +2,7 @@
 
 ## Product and device scope
 
-- This repository serves a public career portfolio plus a personal utilities/games hub through GitHub Pages. Treat those as distinct entry points with consistent navigation, not interchangeable audiences.
+- This repository serves a public career portfolio plus a personal utilities/games hub through GitHub Pages. Keep the career page and its contact page completely separate from personal utilities/games and the diary. Do not add tool/diary navigation or promotional links to career pages.
 - The flip-phone target is a Nokia 2780 opened in its ordinary browser. Laptop and iPhone support also matter. A 240×320 desktop render is a layout check, not proof of handset/browser compatibility.
 - Keep useful content ahead of decoration. Offer a bookmarkable compact presentation, short labels, small batches, ordinary Home/Back/Previous/Next navigation and native controls. Do not force a fixed 240px width on laptops/iPhones or disable user zoom.
 - Use semantic links/buttons/forms, visible focus, labelled fields and announced selected/loading/error states. Preserve browser Back and bookmarks. Scope game key capture to active gameplay; restore normal navigation in menus/dialogs and never hijack typing/select inputs. Installed KaiOS APIs/softkeys must not be assumed available in a browser.
