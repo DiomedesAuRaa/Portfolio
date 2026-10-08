@@ -140,7 +140,8 @@
     <div id="location-results"></div>
     <button id="device-location" type="button">Use device location</button>
     <button id="reset-location" type="button">Atlanta</button>
-    <p id="location-status" role="status"></p>
+    <p id="location-status" role="status" aria-live="polite"></p>
+    <button id="retry-forecast" type="button" hidden>Retry forecast</button>
     <p class="last-update">Saved on this browser only. City searches and forecasts use Open-Meteo; device location is optional.</p>
     <div class="current">
         <div class="weather-row">
@@ -169,7 +170,9 @@
     <div id="hourly" class="hourly"></div>
 
     <script>
+    let forecastVersion = 0;
     function loadWeather(location){
+        const requestVersion = ++forecastVersion;
         const lat = location.lat;
         const lon = location.lon;
         document.getElementById('weather-location').textContent = location.name;
@@ -192,42 +195,37 @@
 
         function cToF(c){ return Math.round((c*9/5)+32); }
 
-        fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&hourly=temperature_2m,weathercode,precipitation_probability&timezone=auto`)
+        document.getElementById('retry-forecast').hidden = true;
+        fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&hourly=temperature_2m,precipitation,precipitation_probability&timezone=auto`)
         .then(r=>r.ok? r.json(): Promise.reject('no data'))
         .then(data=>{
+            if (requestVersion !== forecastVersion) return;
             document.getElementById('location-status').textContent = 'Forecast fetched ' + new Date().toLocaleTimeString();
             const cw = data.current_weather;
             if(!cw){ throw 'no current_weather'; }
             const tempC = Math.round(cw.temperature);
             elTemp.textContent = cToF(tempC) + '°F';
             elDesc.textContent = weatherCodes[cw.weathercode] || ('Code ' + cw.weathercode);
-            elWinds.textContent = cw.windspeed + ' m/s';
+            elWinds.textContent = cw.windspeed + ' ' + ((data.current_weather_units && data.current_weather_units.windspeed) || 'km/h');
             // show time if available
-            if(data.timezone) elTime.textContent = new Date().toLocaleString();
+            if(data.timezone) elTime.textContent = new Intl.DateTimeFormat(undefined, {dateStyle:'short', timeStyle:'short', timeZone:data.timezone}).format(new Date());
 
             // precipitation: find matching hourly index for current weather time
             if(data.hourly && Array.isArray(data.hourly.time) && Array.isArray(data.hourly.precipitation)){
                 const times = data.hourly.time;
-                const precs = data.hourly.precipitation;
+                const amounts = data.hourly.precipitation;
                 const probs = data.hourly.precipitation_probability || [];
                 const target = cw.time;
                 let idx = times.indexOf(target);
                 if(idx === -1){
-                    const tms = times.map(t=>new Date(t).getTime());
-                    const tgt = new Date(target).getTime();
-                    let best = 0, bestDiff = Infinity;
-                    for(let i=0;i<tms.length;i++){
-                        const d = Math.abs(tms[i]-tgt);
-                        if(d < bestDiff){ bestDiff = d; best = i; }
-                    }
-                    idx = best;
+                    idx = times.findIndex(t => t >= target);
+                    if (idx < 0) idx = Math.max(0, times.length - 1);
                 }
-                const mm = precs[idx];
-                const inch = (mm/25.4);
+                const mm = Number(amounts[idx]);
                 const prob = probs[idx] !== undefined ? probs[idx] : null;
-                let text = mm.toFixed(1) + ' mm / ' + inch.toFixed(2) + ' in';
-                if(prob !== null) text += ' (' + prob + '% chance)';
-                elPrecip.textContent = text;
+                let precipitationText = Number.isFinite(mm) ? mm.toFixed(1) + ' mm / ' + (mm / 25.4).toFixed(2) + ' in' : '—';
+                if (prob !== null) precipitationText += ' (' + prob + '% chance)';
+                elPrecip.textContent = precipitationText;
             } else {
                 elPrecip.textContent = '—';
             }
@@ -238,38 +236,26 @@
                 const temps = data.hourly.temperature_2m || [];
                 const probs = data.hourly.precipitation_probability || [];
                 const container = document.getElementById('hourly');
-                const now = new Date();
-                const currentHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), 0, 0, 0);
-                const endTime = new Date(currentHour.getTime() + 24*3600*1000);
-                
-                let startIdx = -1;
-                for(let i=0;i<times.length;i++){
-                    const t = new Date(times[i]);
-                    if(t >= currentHour){
-                        startIdx = i;
-                        break;
-                    }
-                }
-                
+                let startIdx = times.findIndex(t => t >= cw.time);
                 if(startIdx === -1) startIdx = 0;
                 
                 for(let i=startIdx;i<Math.min(startIdx+24,times.length);i++){
-                    const t = new Date(times[i]);
-                    if(t > endTime) break;
-                    const h = t.getHours();
+                    const h = times[i].slice(11, 16);
                     const tempC = Math.round(temps[i]);
                     const tempF = cToF(tempC);
                     const prob = probs[i] !== undefined ? probs[i] : 0;
                     const row = ToolUI.text('div', '', 'hour');
                     const details = ToolUI.text('div', '', 'hour-details');
                     details.append(ToolUI.text('span', tempF + '°F', 'hour-temp'), ToolUI.text('span', prob + '%', 'hour-prob'));
-                    row.append(ToolUI.text('div', h + ':00', 'hour-time'), details);
+                    row.append(ToolUI.text('div', h, 'hour-time'), details);
                     container.appendChild(row);
                 }
             }
         })
         .catch(err=>{
+            if (requestVersion !== forecastVersion) return;
             document.getElementById('location-status').textContent = 'Forecast unavailable. Try again later.';
+            document.getElementById('retry-forecast').hidden = false;
             elTemp.textContent = 'Unavailable';
             elDesc.textContent = 'Unable to fetch';
             elWinds.textContent = '—';
@@ -278,18 +264,22 @@
         });
     }
     const defaultLocation = {lat:33.749, lon:-84.388, name:'Atlanta, Georgia'};
+    let selectedLocation = defaultLocation;
     function validLocation(value) {
         return value && Number.isFinite(value.lat) && Number.isFinite(value.lon) && Math.abs(value.lat) <= 90 && Math.abs(value.lon) <= 180 && typeof value.name === 'string';
     }
     function chooseLocation(value) {
         if (!validLocation(value)) return;
+        selectedLocation = value;
         ToolUI.storageSet('portfolio_weather_location', JSON.stringify(value));
         document.getElementById('location-results').replaceChildren();
         loadWeather(value);
     }
     let remembered;
     try { remembered = JSON.parse(ToolUI.storageGet('portfolio_weather_location')); } catch (_) {}
-    loadWeather(validLocation(remembered) ? remembered : defaultLocation);
+    selectedLocation = validLocation(remembered) ? remembered : defaultLocation;
+    loadWeather(selectedLocation);
+    document.getElementById('retry-forecast').addEventListener('click', () => loadWeather(selectedLocation));
     document.getElementById('location-form').addEventListener('submit', async function(event) {
         event.preventDefault();
         const status = document.getElementById('location-status');

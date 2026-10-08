@@ -158,12 +158,12 @@
         <div class="last-update" id="currentDate"></div>
     </div>
 
-    <div class="show-tabs" id="showTabs"></div>
+    <div class="show-tabs" id="showTabs" role="tablist" aria-label="Podcast shows"></div>
 
-    <button class="refresh-btn" onclick="loadEpisodes()">↻ REFRESH</button>
+    <button class="refresh-btn" id="refreshEpisodes">↻ REFRESH</button>
     <div class="last-update" id="lastUpdate"></div>
 
-    <div id="content">
+    <div id="content" role="tabpanel">
         <div class="loading">Loading...</div>
     </div>
 
@@ -172,10 +172,10 @@
         <div class="now-playing-title" id="nowPlayingTitle"></div>
         <audio id="audio" controls preload="none"></audio>
         <div class="skip-btns">
-            <button class="skip-btn" onclick="skip(-30)">« 30s</button>
-            <button class="skip-btn" onclick="skip(-10)">« 10s</button>
-            <button class="skip-btn" onclick="skip(10)">10s »</button>
-            <button class="skip-btn" onclick="skip(30)">30s »</button>
+            <button class="skip-btn" data-skip="-30">« 30s</button>
+            <button class="skip-btn" data-skip="-10">« 10s</button>
+            <button class="skip-btn" data-skip="10">10s »</button>
+            <button class="skip-btn" data-skip="30">30s »</button>
         </div>
     </div>
 
@@ -271,12 +271,16 @@
             shows.forEach((show, i) => {
                 const btn = document.createElement('button');
                 btn.className = 'tab' + (i === currentShow ? ' active' : '');
-                btn.setAttribute('aria-pressed', String(i === currentShow));
+                btn.setAttribute('role', 'tab');
+                btn.setAttribute('aria-selected', String(i === currentShow));
+                btn.setAttribute('aria-controls', 'content');
+                btn.tabIndex = i === currentShow ? 0 : -1;
                 btn.textContent = show.name;
                 btn.addEventListener('click', function() {
                     currentShow = i; episodePage = 0;
                     document.querySelectorAll('.tab').forEach((t, j) => {
-                        t.setAttribute('aria-pressed', String(j === i));
+                        t.setAttribute('aria-selected', String(j === i));
+                        t.tabIndex = j === i ? 0 : -1;
                         if (j === i) t.classList.add('active');
                         else t.classList.remove('active');
                     });
@@ -374,10 +378,22 @@
                 renderTabs();
                 renderEpisodes();
             } catch(e) {
-                ToolUI.setHTML(content, '<div class="error">Could not load manifest.</div>');
+                ToolUI.setHTML(content, '<div class="error">Could not load manifest. <button type="button" id="retryManifest">Retry</button></div>');
+                document.getElementById('retryManifest').addEventListener('click', loadEpisodes);
             }
         }
 
+        document.getElementById('refreshEpisodes').addEventListener('click', loadEpisodes);
+        document.querySelectorAll('.skip-btn').forEach(button => button.addEventListener('click', () => skip(Number(button.dataset.skip))));
+        document.getElementById('showTabs').addEventListener('keydown', event => {
+            if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+            const tabs = Array.from(document.querySelectorAll('#showTabs [role="tab"]'));
+            if (!tabs.length) return;
+            event.preventDefault();
+            const index = tabs.indexOf(event.target);
+            const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+            tabs[next].focus(); tabs[next].click();
+        });
         loadEpisodes();
     </script>
 </body>

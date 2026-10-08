@@ -267,7 +267,7 @@
         </div>
 
         <!-- Global feed switcher: one click switches ALL subreddits -->
-        <nav class="feed-nav" id="feed-nav">
+        <nav class="feed-nav" id="feed-nav" role="tablist" aria-label="Reddit feeds">
             <!-- populated by JS once JSON is loaded -->
         </nav>
 
@@ -283,7 +283,7 @@
             </select>
         </div>
 
-        <div id="content" class="content">
+        <div id="content" class="content" role="tabpanel">
             <div class="loading">⏳ Loading Reddit digest data...</div>
         </div>
 
@@ -364,7 +364,8 @@
                 scheduleRefresh();
             } catch (err) {
                 console.error('Error loading digest data:', err);
-                ToolUI.setHTML(document.getElementById('content'), `<div class="error">⚠️ Error loading Reddit digest data: ${escapeHtml(err.message)}</div>`);
+                ToolUI.setHTML(document.getElementById('content'), `<div class="error">⚠️ Error loading Reddit digest data: ${escapeHtml(err.message)} <button type="button" id="retry-digest">Retry</button></div>`);
+                document.getElementById('retry-digest').addEventListener('click', loadDigestData);
                 scheduleRefresh();
             }
         }
@@ -392,6 +393,10 @@
         function buildFeedNav(feeds) {
             const nav = document.getElementById('feed-nav');
             ToolUI.setHTML(nav, '');
+            if (!nav.dataset.keyboardReady) {
+                nav.dataset.keyboardReady = 'true';
+                nav.addEventListener('keydown', event => moveTabFocus(event, nav, '.feed-tab'));
+            }
 
             // Default to first feed if nothing saved or saved value is gone
             if (!activeFeed || !feeds.includes(activeFeed)) {
@@ -401,11 +406,25 @@
             feeds.forEach(label => {
                 const btn = document.createElement('button');
                 btn.className  = 'feed-tab' + (label === activeFeed ? ' active' : '');
+                btn.setAttribute('role', 'tab');
+                btn.setAttribute('aria-selected', String(label === activeFeed));
+                btn.setAttribute('aria-controls', 'content');
+                btn.tabIndex = label === activeFeed ? 0 : -1;
                 btn.dataset.feed = label;
                 btn.textContent  = label;
                 btn.addEventListener('click', () => switchGlobalFeed(label));
                 nav.appendChild(btn);
             });
+        }
+
+        function moveTabFocus(event, container, selector) {
+            if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+            const tabs = Array.from(container.querySelectorAll(selector));
+            const index = tabs.indexOf(event.target);
+            if (index < 0 || !tabs.length) return;
+            event.preventDefault();
+            const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+            tabs[next].focus(); tabs[next].click();
         }
 
         function switchGlobalFeed(label) {
@@ -414,7 +433,7 @@
 
             // Update global tab buttons
             document.querySelectorAll('.feed-tab')
-                .forEach(btn => { btn.classList.toggle('active', btn.dataset.feed === label); btn.setAttribute('aria-pressed', String(btn.dataset.feed === label)); });
+                .forEach(btn => { const selected = btn.dataset.feed === label; btn.classList.toggle('active', selected); btn.setAttribute('aria-selected', String(selected)); btn.tabIndex = selected ? 0 : -1; });
 
             // Swap every subreddit to the same feed, and sync per-sub tabs
             document.querySelectorAll('.subreddit').forEach(subDiv => {
@@ -436,7 +455,8 @@
             if (tabsContainer) {
                 tabsContainer.querySelectorAll('.sub-feed-tab').forEach(btn => {
                     btn.classList.toggle('active', btn.dataset.feed === label);
-                    btn.setAttribute('aria-pressed', String(btn.dataset.feed === label));
+                    btn.setAttribute('aria-selected', String(btn.dataset.feed === label));
+                    btn.tabIndex = btn.dataset.feed === label ? 0 : -1;
                 });
             }
         }
@@ -534,21 +554,22 @@
                                 <button class="collapse-btn" id="collapse-btn-${escapeHtml(subreddit)}" aria-expanded="true">▼ Collapse</button>
                             </div>
                         </div>
-                        <div class="sub-feed-tabs" id="sub-tabs-${escapeHtml(subreddit)}">
+                        <div class="sub-feed-tabs" id="sub-tabs-${escapeHtml(subreddit)}" role="tablist" aria-label="Feeds for r/${escapeHtml(subreddit)}">
                             ${feedLabels.map(label => `
                                 <button class="sub-feed-tab${label === activeFeed ? ' active' : ''}"
-                                        data-feed="${escapeHtml(label)}" aria-pressed="${label === activeFeed}">
+                                        data-feed="${escapeHtml(label)}" role="tab" aria-selected="${label === activeFeed}" aria-controls="posts-${escapeHtml(subreddit)}" tabindex="${label === activeFeed ? '0' : '-1'}">
                                     ${escapeHtml(label)}
                                 </button>`).join('')}
                         </div>
                     </div>
-                    <div class="subreddit-posts" id="posts-${escapeHtml(subreddit)}"></div>`);
+                    <div class="subreddit-posts" id="posts-${escapeHtml(subreddit)}" role="tabpanel"></div>`);
 
                 const collapseButton = subredditDiv.querySelector('.collapse-btn');
                 collapseButton.addEventListener('click', () => toggleSubreddit(subreddit));
                 subredditDiv.querySelectorAll('.sub-feed-tab').forEach(button => {
                     button.addEventListener('click', () => switchSubFeed(subreddit, button.dataset.feed));
                 });
+                subredditDiv.querySelector('.sub-feed-tabs').addEventListener('keydown', event => moveTabFocus(event, subredditDiv, '.sub-feed-tab'));
                 const postsWrapper = subredditDiv.querySelector('.subreddit-posts');
 
                 // One div per feed; only the active one has class="active"

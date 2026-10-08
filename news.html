@@ -182,27 +182,27 @@
   <h1>📰 NEWS</h1>
   <div class="meta-row">
     <span id="current-date"></span>
-    <span id="last-update"></span>
+    <span id="last-update" role="status" aria-live="polite"></span>
   </div>
 </div>
 
-<div class="tabs" id="tabs">
-  <button class="tab active" data-cat="top">Top</button>
-  <button class="tab" data-cat="general">World</button>
-  <button class="tab" data-cat="tech">Tech</button>
-  <button class="tab" data-cat="sports">Sports</button>
-  <button class="tab" data-cat="business">Business</button>
-  <button class="tab" data-cat="science">Science</button>
-  <button class="tab" data-cat="devops">DevOps</button>
+<div class="tabs" id="tabs" role="tablist" aria-label="News categories">
+  <button class="tab active" id="tab-top" role="tab" aria-controls="content" aria-selected="true" tabindex="0" data-cat="top">Top</button>
+  <button class="tab" id="tab-general" role="tab" aria-controls="content" aria-selected="false" tabindex="-1" data-cat="general">World</button>
+  <button class="tab" id="tab-tech" role="tab" aria-controls="content" aria-selected="false" tabindex="-1" data-cat="tech">Tech</button>
+  <button class="tab" id="tab-sports" role="tab" aria-controls="content" aria-selected="false" tabindex="-1" data-cat="sports">Sports</button>
+  <button class="tab" id="tab-business" role="tab" aria-controls="content" aria-selected="false" tabindex="-1" data-cat="business">Business</button>
+  <button class="tab" id="tab-science" role="tab" aria-controls="content" aria-selected="false" tabindex="-1" data-cat="science">Science</button>
+  <button class="tab" id="tab-devops" role="tab" aria-controls="content" aria-selected="false" tabindex="-1" data-cat="devops">DevOps</button>
 </div>
 
 <div class="toolbar">
-  <button class="refresh-btn" id="refresh-btn" onclick="loadCategory(currentCat, true)">↻ REFRESH</button>
+  <button class="refresh-btn" id="refresh-btn">↻ REFRESH</button>
 </div>
 <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
-<div class="cache-info" id="cache-info"></div>
+<div class="cache-info" id="cache-info" role="status" aria-live="polite"></div>
 
-<div id="content"></div>
+<div id="content" role="tabpanel" aria-labelledby="tab-top"></div>
 
 <script>
 /* ═══════════════════════════════════════════════════════════
@@ -401,8 +401,13 @@ async function loadCategory(cat, forceRefresh=false) {
   currentCat = cat;
 
   // Tabs UI
-  document.querySelectorAll('.tab').forEach(t =>
-    { t.classList.toggle('active', t.dataset.cat===cat); t.setAttribute('aria-pressed', String(t.dataset.cat===cat)); });
+  document.querySelectorAll('.tab').forEach(t => {
+    const selected = t.dataset.cat === cat;
+    t.classList.toggle('active', selected);
+    t.setAttribute('aria-selected', String(selected));
+    t.tabIndex = selected ? 0 : -1;
+  });
+  document.getElementById('content').setAttribute('aria-labelledby', `tab-${cat}`);
 
   const content   = document.getElementById('content');
   const progress  = document.getElementById('progress');
@@ -422,6 +427,7 @@ async function loadCategory(cat, forceRefresh=false) {
   cacheInfo.textContent = '';
   btn.disabled = true;
   btn.textContent = '⟳ Loading…';
+  content.setAttribute('aria-busy', 'true');
 
   const feeds = FEEDS[cat] || FEEDS.top;
   let completed = 0;
@@ -481,6 +487,7 @@ async function loadCategory(cat, forceRefresh=false) {
 
   btn.disabled = false;
   btn.textContent = '↻ REFRESH';
+  content.setAttribute('aria-busy', 'false');
 
   // Cache the rendered HTML
   cacheSet(cat, content.innerHTML);
@@ -498,7 +505,17 @@ function slug(name) { return name.toLowerCase().replace(/[^a-z0-9]/g,'_'); }
 /* ── Tab listeners ───────────────────────────────────────── */
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => loadCategory(tab.dataset.cat));
+  tab.addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    const tabs = Array.from(document.querySelectorAll('.tab'));
+    const index = tabs.indexOf(tab);
+    const next = event.key === 'Home' ? 0 : event.key === 'End' ? tabs.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+    tabs[next].focus();
+    loadCategory(tabs[next].dataset.cat);
+  });
 });
+document.getElementById('refresh-btn').addEventListener('click', () => loadCategory(currentCat, true));
 
 /* ── Boot ────────────────────────────────────────────────── */
 const now = new Date();

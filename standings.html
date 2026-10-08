@@ -62,18 +62,22 @@
     <link rel="stylesheet" href="assets/tool-ui.css">
     <script src="assets/tool-ui.js"></script>
 </head>
-<body>
+<body class="sports-page">
     <div class="header">
         <a href="home.html" class="back-btn">&lt;- Back</a>
         <h1>STANDINGS</h1>
         <div class="last-update" id="currentDate"></div>
     </div>
 
-    <nav class="league-nav" id="league-nav">
+    <div class="league-picker" id="league-picker-wrap" hidden>
+        <label for="league-picker">League</label>
+        <select id="league-picker"><option value="">Choose a league</option></select>
+    </div>
+    <nav class="league-nav" id="league-nav" aria-label="Choose league">
         <span style="color:#666;font-size:9px;padding:3px 4px;">Loading...</span>
     </nav>
 
-    <button class="refresh-btn" onclick="loadStandings()">REFRESH</button>
+    <button class="refresh-btn" id="refresh-standings" type="button">REFRESH</button>
     <div class="last-update" id="lastUpdate"></div>
     <div id="content"><div class="loading">Loading config...</div></div>
 
@@ -101,7 +105,9 @@
         // ── Nav ─────────────────────────────────────────────────────────────
         function buildNav() {
             var nav = document.getElementById('league-nav');
+            var picker = document.getElementById('league-picker');
             ToolUI.setHTML(nav, '');
+            ToolUI.setHTML(picker, '<option value="">Choose a league</option>');
             LEAGUES.forEach(function(league, i) {
                 var a = document.createElement('button');
                 a.type = 'button';
@@ -110,16 +116,24 @@
                 a.style.borderColor = league.color || '#0ff';
                 a.style.color       = league.color || '#0ff';
                 a.dataset.idx       = i;
+                var option = document.createElement('option');
+                option.value = String(i);
+                option.textContent = league.name;
+                picker.appendChild(option);
                 if (i === 0) a.classList.add('active');
                 a.addEventListener('click', function() {
                     document.querySelectorAll('.league-nav button').forEach(function(el) { el.classList.remove('active'); el.setAttribute('aria-pressed', 'false'); });
                     a.classList.add('active');
                     a.setAttribute('aria-pressed', 'true');
                     currentLeague = LEAGUES[parseInt(a.dataset.idx)];
+                    picker.value = a.dataset.idx;
                     loadStandings();
                 });
                 nav.appendChild(a);
             });
+            document.getElementById('league-picker-wrap').hidden = LEAGUES.length === 0;
+            document.body.classList.toggle('league-picker-ready', LEAGUES.length > 0);
+            picker.value = LEAGUES.length ? '0' : '';
         }
 
         // ── Helpers ────────────────────────────────────────────────────────
@@ -295,6 +309,7 @@
             if (!currentLeague) return;
 
             ToolUI.setHTML(content, '<div class="loading">Loading ' + ToolUI.escape(currentLeague.name) + ' standings...</div>');
+            content.setAttribute('aria-busy', 'true');
 
             try {
                 var html = '';
@@ -312,10 +327,13 @@
 
                 if (requestVersion !== standingsVersion) return;
                 ToolUI.setHTML(content, html || '<div class="no-standings">No standings available</div>');
+                content.setAttribute('aria-busy', 'false');
                 updateTimestamp();
             } catch(err) {
                 if (requestVersion !== standingsVersion) return;
-                ToolUI.setHTML(content, '<div class="error">Unable to load ' + ToolUI.escape(currentLeague.name) + ' standings</div>');
+                ToolUI.setHTML(content, '<div class="error">Unable to load ' + ToolUI.escape(currentLeague.name) + ' standings. <button type="button" id="retry-standings">Retry</button></div>');
+                content.setAttribute('aria-busy', 'false');
+                document.getElementById('retry-standings').addEventListener('click', loadStandings);
                 console.error(err);
             }
         }
@@ -330,12 +348,28 @@
 
 
 
+        document.getElementById('refresh-standings').addEventListener('click', loadStandings);
+        document.getElementById('league-picker').addEventListener('change', function() {
+            var tab = document.querySelector('.league-nav button[data-idx="' + this.value + '"]');
+            if (tab) tab.click();
+        });
+        async function retryStandingsConfig() {
+            try {
+                await loadConfig();
+                if (!LEAGUES.length) { ToolUI.setHTML(document.getElementById('content'), '<div class="no-standings">No leagues with standings enabled in config.</div>'); return; }
+                buildNav(); currentLeague = LEAGUES[0]; loadStandings();
+            } catch(retryErr) {
+                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports config. <button type="button" id="retry-config">Retry</button></div>');
+                document.getElementById('retry-config').addEventListener('click', retryStandingsConfig);
+            }
+        }
         // Boot
         (async function() {
             try {
                 await loadConfig();
             } catch(err) {
-                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports-config.json: ' + ToolUI.escape(err.message) + '</div>');
+                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports-config.json: ' + ToolUI.escape(err.message) + ' <button type="button" id="retry-config">Retry</button></div>');
+                document.getElementById('retry-config').addEventListener('click', retryStandingsConfig);
                 return;
             }
             if (LEAGUES.length === 0) {

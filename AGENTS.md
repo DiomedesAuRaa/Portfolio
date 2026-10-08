@@ -36,3 +36,10 @@
 
 - Weather defaults to Atlanta. Optional city/ZIP overrides remain device-local; never restore the previous personal default. Existing public Git history may retain old location data.
 - Reddit RSS refresh is maintained in this repository; do not reactivate the disabled Pi producer with its hard reset and floating installs.
+
+## Collective utilities interface
+
+- All seven services, the tools hub and five games share assets/tool-ui.css and assets/tool-ui.js; games also use assets/game-ui.css. Keep navy surfaces, teal navigation/actions and amber focus indicators consistent. Preserve meaningful team, tile and game-state colors.
+- Normal controls and compact controls on touch-sized screens keep 44px targets; the Nokia compact layout at widths up to 280px can use 29px controls. Verify vertical scrolling as well as horizontal overflow; legacy game styles must not trap browser navigation.
+- Bible content currently comes from the World English Bible (WEB); do not label it ESV unless an actual ESV source is implemented and verified.
+- Proposed future structure is career-only Portfolio at its existing URL, one pocket-tools repository for the complete utilities/games family, separate media-diary, and private/local media-stack operations. This is a recommendation, not authorization to rename/migrate repositories. Preserve old service bookmarks with explicit compatibility routes if migration is later requested.

@@ -50,15 +50,15 @@
     var nav = document.createElement('nav'); nav.className = 'tool-nav'; nav.setAttribute('aria-label','Site');
     var prefix = document.body.classList.contains('game-page') ? '../' : '';
     var home = text('a','Home'); home.href = prefix + 'home.html';
-    var portfolio = text('a','Portfolio'); portfolio.href = prefix + './';
-    var mode = text('button','Compact'); mode.type = 'button'; mode.setAttribute('aria-pressed', String(compact));
+    var services = text('a','Services'); services.href = prefix + 'home.html#services';
+    var mode = text('button','Compact'); mode.type = 'button'; mode.setAttribute('aria-label','Toggle compact view'); mode.setAttribute('aria-pressed', String(compact));
     mode.addEventListener('click', function () {
       compact = !compact; document.documentElement.classList.toggle('compact',compact);
       mode.setAttribute('aria-pressed',String(compact)); storageSet('tools_compact',String(compact));
       var address = new URL(location.href); address.searchParams.set('compact',compact ? '1' : '0'); history.replaceState(null,'',address);
       document.dispatchEvent(new Event('tool-layout-change'));
     });
-    nav.append(home,portfolio,mode); document.body.insertBefore(nav,document.body.firstChild);
+    nav.append(home,services,mode); document.body.insertBefore(nav,document.body.firstChild);
     document.querySelectorAll('.back-btn,.home-link').forEach(function (el) { el.hidden = true; });
     document.querySelectorAll('.last-update,#last-updated,.error,.config-error').forEach(function(el){el.setAttribute('role','status');});
   });

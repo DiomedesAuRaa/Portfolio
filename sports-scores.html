@@ -47,14 +47,18 @@
     <link rel="stylesheet" href="assets/tool-ui.css">
     <script src="assets/tool-ui.js"></script>
 </head>
-<body>
+<body class="sports-page">
     <div class="header">
         <a href="home.html" class="back-btn">&lt;- Back</a>
         <h1>SPORTS SCORES</h1>
         <div class="last-update" id="currentDate"></div>
     </div>
-    <nav class="league-nav" id="league-nav"></nav>
-    <button class="refresh-btn" onclick="loadScores(true)">REFRESH</button>
+    <div class="league-picker" id="league-picker-wrap" hidden>
+        <label for="league-picker">Jump to league</label>
+        <select id="league-picker"><option value="">Choose a league</option></select>
+    </div>
+    <nav class="league-nav" id="league-nav" aria-label="Jump to league"></nav>
+    <button class="refresh-btn" id="refresh-scores" type="button">REFRESH</button>
     <div class="last-update" id="lastUpdate"></div>
     <div id="content"><div class="loading">Loading config...</div></div>
 
@@ -218,6 +222,7 @@
 
         async function loadScores(forceRefresh) {
             var content = document.getElementById('content');
+            content.setAttribute('aria-busy', 'true');
             if (!forceRefresh) {
                 var cached = getCachedData();
                 if (cached) { ToolUI.setHTML(content, cached); updateTimestamp(); loadScores(true); return; }
@@ -241,21 +246,26 @@
                     }
                 });
                 ToolUI.setHTML(content, html);
+                content.setAttribute('aria-busy', 'false');
                 buildLeagueNav(results, allPriority.length > 0);
                 setCachedData(html);
                 updateTimestamp();
             } catch(err) {
-                ToolUI.setHTML(content, '<div class="error">Failed to load scores.</div>');
+                ToolUI.setHTML(content, '<div class="error">Failed to load scores. <button type="button" id="retry-scores">Retry</button></div>');
+                content.setAttribute('aria-busy', 'false');
+                document.getElementById('retry-scores').addEventListener('click', function() { loadScores(true); });
             }
         }
 
         function buildLeagueNav(results, hasFavorites) {
             var nav = document.getElementById('league-nav');
+            var picker = document.getElementById('league-picker');
             ToolUI.setHTML(nav, '');
+            ToolUI.setHTML(picker, '<option value="">Choose a league</option>');
             if (hasFavorites) {
                 var a = document.createElement('a');
                 a.href = '#section-FAVORITES';
-                a.textContent = 'FAV';
+                a.textContent = 'Favorites';
                 a.style.borderColor = '#ffd700';
                 a.style.color = '#ffd700';
                 nav.appendChild(a);
@@ -270,7 +280,30 @@
                 a.style.color = result.color;
                 nav.appendChild(a);
             });
+            Array.from(nav.querySelectorAll('a')).forEach(function(link) {
+                var option = document.createElement('option');
+                option.value = link.hash.slice(1);
+                option.textContent = link.textContent;
+                picker.appendChild(option);
+            });
+            var hasPickerOptions = picker.options.length > 1;
+            document.getElementById('league-picker-wrap').hidden = !hasPickerOptions;
+            document.body.classList.toggle('league-picker-ready', hasPickerOptions);
+            syncLeaguePicker();
         }
+
+        function syncLeaguePicker() {
+            var picker = document.getElementById('league-picker');
+            var target = decodeURIComponent(location.hash.slice(1));
+            picker.value = Array.from(picker.options).some(function(option) { return option.value === target; }) ? target : '';
+        }
+        document.getElementById('league-picker').addEventListener('change', function() {
+            if (!this.value) return;
+            var hash = '#' + this.value;
+            if (location.hash === hash) document.getElementById(this.value).scrollIntoView();
+            else location.hash = hash;
+        });
+        window.addEventListener('hashchange', syncLeaguePicker);
 
         function updateTimestamp() {
             var now = new Date();
@@ -280,11 +313,20 @@
 
 
 
+        document.getElementById('refresh-scores').addEventListener('click', function() { loadScores(true); });
+        async function retryConfigLoad() {
+            try { await loadConfig(); loadScores(true); }
+            catch(retryErr) {
+                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports config. <button type="button" id="retry-config">Retry</button></div>');
+                document.getElementById('retry-config').addEventListener('click', retryConfigLoad);
+            }
+        }
         (async function() {
             try {
                 await loadConfig();
             } catch(err) {
-                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports-config.json: ' + ToolUI.escape(err.message) + '. Make sure the file is in the same directory.</div>');
+                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports-config.json: ' + ToolUI.escape(err.message) + '. <button type="button" id="retry-config">Retry</button></div>');
+                document.getElementById('retry-config').addEventListener('click', retryConfigLoad);
                 return;
             }
             loadScores();
