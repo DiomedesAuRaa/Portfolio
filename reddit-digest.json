@@ -1,10 +1,11 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-06-24T12:04:34.142692",
-  "generated_at": "2026-06-24 12:04:34 UTC",
-  "subreddits_count": 14,
-  "total_posts": 25,
+  "timestamp": "2026-10-08T22:37:29+00:00",
+  "generated_at": "2026-10-08 22:37:29 UTC",
+  "subreddits_count": 12,
+  "total_posts": 35,
   "feeds": [
+    "Best of Hour",
     "Best of 24h",
     "Best of Week",
     "Hot"
@@ -12,66 +13,70 @@
   "comments_feed": "Disabled for RSS",
   "fetch_errors": {
     "cfb": [
+      "Best of 24h",
       "Best of Week",
       "Hot"
     ],
     "nfl": [
+      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
     ],
     "nba": [
-      "Best of 24h",
-      "Hot"
-    ],
-    "baseball": [
+      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
     ],
+    "baseball": [
+      "Best of Hour",
+      "Best of 24h",
+      "Hot"
+    ],
     "CoDCompetitive": [
+      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
     ],
     "soccer": [
+      "Best of Hour",
       "Best of 24h",
+      "Best of Week",
       "Hot"
     ],
     "formula1": [
+      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
     ],
     "MichiganWolverines": [
+      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
     ],
     "DetroitLions": [
+      "Best of Hour",
       "Best of 24h",
-      "Best of Week"
+      "Best of Week",
+      "Hot"
     ],
     "DetroitPistons": [
+      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
     ],
     "movies": [
-      "Best of 24h",
+      "Best of Hour",
       "Best of Week",
       "Hot"
     ],
     "BillSimmons": [
-      "Best of 24h",
-      "Best of Week",
-      "Hot"
-    ],
-    "WaltDisneyWorld": [
-      "Best of Week",
-      "Hot"
-    ],
-    "Disneyland": [
+      "Best of Hour",
       "Best of 24h",
       "Best of Week",
       "Hot"
@@ -79,6 +84,88 @@
   },
   "data": {
     "cfb": {
+      "Best of Hour": [
+        {
+          "title": "[Everett] Cody Campbell group Saving College Sports warning that UNC, FSU, Miami and Clemson could tank college sports bill in the House by pushing \"to raise the conference cap from 20 to 22 while also sunsetting the entire provision so that they have the right to immediately bolt from the ACC\"",
+          "author": "lowes18",
+          "score": 0,
+          "url": "https://www.reddit.com/r/CFB/comments/1x13pbi/everett_cody_campbell_group_saving_college_sports/",
+          "selftext": "",
+          "created_utc": 1791495752,
+          "num_comments": 0,
+          "id": "1x13pbi",
+          "subreddit": "cfb",
+          "link_url": "https://www.reddit.com/r/CFB/comments/1x13pbi/everett_cody_campbell_group_saving_college_sports/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "Sherrone’s Stuff: Inside the 46 Boxes Michigan Shipped Its Fired Coach",
+          "author": "defensecowboy",
+          "score": 0,
+          "url": "https://www.reddit.com/r/CFB/comments/1x146hu/sherrones_stuff_inside_the_46_boxes_michigan/",
+          "selftext": "",
+          "created_utc": 1791496937,
+          "num_comments": 0,
+          "id": "1x146hu",
+          "subreddit": "cfb",
+          "link_url": "https://www.reddit.com/r/CFB/comments/1x146hu/sherrones_stuff_inside_the_46_boxes_michigan/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[Game Thread] USF @ UTSA (7:30 PM ET)",
+          "author": "CFB_Referee",
+          "score": 0,
+          "url": "https://www.reddit.com/r/CFB/comments/1x14t07/game_thread_usf_utsa_730_pm_et/",
+          "selftext": "",
+          "created_utc": 1791498606,
+          "num_comments": 0,
+          "id": "1x14t07",
+          "subreddit": "cfb",
+          "link_url": "https://www.reddit.com/r/CFB/comments/1x14t07/game_thread_usf_utsa_730_pm_et/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[Game Thread] Missouri State @ WKU (7:00 PM ET)",
+          "author": "CFB_Referee",
+          "score": 0,
+          "url": "https://www.reddit.com/r/CFB/comments/1x144mu/game_thread_missouri_state_wku_700_pm_et/",
+          "selftext": "",
+          "created_utc": 1791496812,
+          "num_comments": 0,
+          "id": "1x144mu",
+          "subreddit": "cfb",
+          "link_url": "https://www.reddit.com/r/CFB/comments/1x144mu/game_thread_missouri_state_wku_700_pm_et/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[Game Thread] South Alabama @ Arkansas State (7:30 PM ET)",
+          "author": "CFB_Referee",
+          "score": 0,
+          "url": "https://www.reddit.com/r/CFB/comments/1x14t11/game_thread_south_alabama_arkansas_state_730_pm_et/",
+          "selftext": "",
+          "created_utc": 1791498607,
+          "num_comments": 0,
+          "id": "1x14t11",
+          "subreddit": "cfb",
+          "link_url": "https://www.reddit.com/r/CFB/comments/1x14t11/game_thread_south_alabama_arkansas_state_730_pm_et/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        }
+      ],
       "Best of 24h": [
         {
           "title": "[Ian Rapoport] The NFL has informed teams that it will NOT be holding a Supplemental Draft, meaning Texas Tech QB Brendan Sorsby will not be eligible to enter the NFL in 2026. The CBA allows the league to decide whether to hold a Supplemental Draft, and this year, it won’t.",
@@ -165,11 +252,13 @@
       "Hot": []
     },
     "nfl": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": []
     },
     "nba": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [
         {
@@ -256,16 +345,100 @@
       "Hot": []
     },
     "baseball": {
+      "Best of Hour": [],
       "Best of 24h": [],
-      "Best of Week": [],
+      "Best of Week": [
+        {
+          "title": "THE NEW YORK YANKEES HAVE BEEN ELIMINATED FROM 2026 WORLD SERIES CONTENTION",
+          "author": "CosmicPegasus",
+          "score": 0,
+          "url": "https://www.reddit.com/r/baseball/comments/1x0g9kv/the_new_york_yankees_have_been_eliminated_from/",
+          "selftext": "",
+          "created_utc": 1791429199,
+          "num_comments": 0,
+          "id": "1x0g9kv",
+          "subreddit": "baseball",
+          "link_url": "https://www.reddit.com/r/baseball/comments/1x0g9kv/the_new_york_yankees_have_been_eliminated_from/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[HIGHLIGHT] JACKSON CHOURIO! WALKS IT OFF! BREWERS GO UP 2-0!",
+          "author": "MLBOfficial",
+          "score": 0,
+          "url": "https://www.reddit.com/r/baseball/comments/1wxtlwx/highlight_jackson_chourio_walks_it_off_brewers_go/",
+          "selftext": "",
+          "created_utc": 1791156229,
+          "num_comments": 0,
+          "id": "1wxtlwx",
+          "subreddit": "baseball",
+          "link_url": "https://www.reddit.com/r/baseball/comments/1wxtlwx/highlight_jackson_chourio_walks_it_off_brewers_go/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[highlight] Junior Caminero- “Let the Yankees fans talk now. Let them watch the whole thing. Talk Now. What ya gonna say? Daaaaa Yankees lose”",
+          "author": "WayAcrossTheWorld",
+          "score": 0,
+          "url": "https://www.reddit.com/r/baseball/comments/1x0rfl0/highlight_junior_caminero_let_the_yankees_fans/",
+          "selftext": "",
+          "created_utc": 1791467377,
+          "num_comments": 0,
+          "id": "1x0rfl0",
+          "subreddit": "baseball",
+          "link_url": "https://www.reddit.com/r/baseball/comments/1x0rfl0/highlight_junior_caminero_let_the_yankees_fans/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[Talkin'Baseball] Chris Sale and Yoshinobu Yamamoto show each other respect before facing off in NLDS Game 3",
+          "author": "VirtuousFool",
+          "score": 0,
+          "url": "https://www.reddit.com/r/baseball/comments/1wzfx6f/talkinbaseball_chris_sale_and_yoshinobu_yamamoto/",
+          "selftext": "",
+          "created_utc": 1791324843,
+          "num_comments": 0,
+          "id": "1wzfx6f",
+          "subreddit": "baseball",
+          "link_url": "https://www.reddit.com/r/baseball/comments/1wzfx6f/talkinbaseball_chris_sale_and_yoshinobu_yamamoto/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        },
+        {
+          "title": "[Highlight] Ty France's high fly ball hits the roof and is caught by Chourio",
+          "author": "Large_banana_hammock",
+          "score": 0,
+          "url": "https://www.reddit.com/r/baseball/comments/1wx6a0u/highlight_ty_frances_high_fly_ball_hits_the_roof/",
+          "selftext": "",
+          "created_utc": 1791086900,
+          "num_comments": 0,
+          "id": "1wx6a0u",
+          "subreddit": "baseball",
+          "link_url": "https://www.reddit.com/r/baseball/comments/1wx6a0u/highlight_ty_frances_high_fly_ball_hits_the_roof/",
+          "is_self": true,
+          "upvote_ratio": 0,
+          "flair": "",
+          "comments": []
+        }
+      ],
       "Hot": []
     },
     "CoDCompetitive": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": []
     },
     "soccer": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [
         {
@@ -352,16 +525,19 @@
       "Hot": []
     },
     "formula1": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": []
     },
     "MichiganWolverines": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": []
     },
     "DetroitLions": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": [
@@ -448,97 +624,89 @@
       ]
     },
     "DetroitPistons": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": []
     },
     "movies": {
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
-    },
-    "BillSimmons": {
-      "Best of 24h": [],
-      "Best of Week": [],
-      "Hot": []
-    },
-    "WaltDisneyWorld": {
+      "Best of Hour": [],
       "Best of 24h": [
         {
-          "title": "Livestreamer turned away at the Poly",
-          "author": "Chris-Jean-Alice",
+          "title": "Guillermo del Toro Says Over 1,300 Human Artists Turned 'Pan's Labyrinth' into a Brand New 3D Theatrical Experience",
+          "author": "MarvelsGrantMan136",
           "score": 0,
-          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udfe73/livestreamer_turned_away_at_the_poly/",
+          "url": "https://www.reddit.com/r/movies/comments/1x0s1xb/guillermo_del_toro_says_over_1300_human_artists/",
           "selftext": "",
-          "created_utc": 1782234636.0,
+          "created_utc": 1791468897,
           "num_comments": 0,
-          "id": "1udfe73",
-          "subreddit": "WaltDisneyWorld",
-          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udfe73/livestreamer_turned_away_at_the_poly/",
+          "id": "1x0s1xb",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1x0s1xb/guillermo_del_toro_says_over_1300_human_artists/",
           "is_self": true,
           "upvote_ratio": 0,
           "flair": "",
           "comments": []
         },
         {
-          "title": "When did this happen...LOL",
-          "author": "Deadhead602",
+          "title": "Nana Patekar, Indian Star of ‘Parinda’ and ‘Krantiveer,’ Dies at 75",
+          "author": "Fearless-Song9148",
           "score": 0,
-          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udhe44/when_did_this_happenlol/",
+          "url": "https://www.reddit.com/r/movies/comments/1x0hoq8/nana_patekar_indian_star_of_parinda_and/",
           "selftext": "",
-          "created_utc": 1782239860.0,
+          "created_utc": 1791433816,
           "num_comments": 0,
-          "id": "1udhe44",
-          "subreddit": "WaltDisneyWorld",
-          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udhe44/when_did_this_happenlol/",
+          "id": "1x0hoq8",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1x0hoq8/nana_patekar_indian_star_of_parinda_and/",
           "is_self": true,
           "upvote_ratio": 0,
           "flair": "",
           "comments": []
         },
         {
-          "title": "I love the courtyard at night 🌙🌌🍃",
-          "author": "999happyhauntz",
+          "title": "'Cyberpunk 2077' Movie In The Works At Paramount",
+          "author": "ChiefLeef22",
           "score": 0,
-          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udh8tw/i_love_the_courtyard_at_night/",
+          "url": "https://www.reddit.com/r/movies/comments/1x0xy17/cyberpunk_2077_movie_in_the_works_at_paramount/",
           "selftext": "",
-          "created_utc": 1782239502.0,
+          "created_utc": 1791482464,
           "num_comments": 0,
-          "id": "1udh8tw",
-          "subreddit": "WaltDisneyWorld",
-          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udh8tw/i_love_the_courtyard_at_night/",
+          "id": "1x0xy17",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1x0xy17/cyberpunk_2077_movie_in_the_works_at_paramount/",
           "is_self": true,
           "upvote_ratio": 0,
           "flair": "",
           "comments": []
         },
         {
-          "title": "Before and after satellite images show lots of dirt moved and trees gone in MK expansion.",
-          "author": "Every-Cook5084",
+          "title": "David Zaslav Gets $606 Million Payout From Paramount-Warner Bros. Merger",
+          "author": "MarvelsGrantMan136",
           "score": 0,
-          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udwefq/before_and_after_satellite_images_show_lots_of/",
+          "url": "https://www.reddit.com/r/movies/comments/1x12s13/david_zaslav_gets_606_million_payout_from/",
           "selftext": "",
-          "created_utc": 1782273637.0,
+          "created_utc": 1791493507,
           "num_comments": 0,
-          "id": "1udwefq",
-          "subreddit": "WaltDisneyWorld",
-          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udwefq/before_and_after_satellite_images_show_lots_of/",
+          "id": "1x12s13",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1x12s13/david_zaslav_gets_606_million_payout_from/",
           "is_self": true,
           "upvote_ratio": 0,
           "flair": "",
           "comments": []
         },
         {
-          "title": "Did they change how they edit the Guardians photos? Look at my hair!",
-          "author": "Cloud_________",
+          "title": "Ben Affleck and Matt Damon’s Artists Equity Launches New Indie Banner: Artists Equity Independent Pictures",
+          "author": "Galt1776-Part2",
           "score": 0,
-          "url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udkfnz/did_they_change_how_they_edit_the_guardians/",
+          "url": "https://www.reddit.com/r/movies/comments/1x0i5fv/ben_affleck_and_matt_damons_artists_equity/",
           "selftext": "",
-          "created_utc": 1782246770.0,
+          "created_utc": 1791435403,
           "num_comments": 0,
-          "id": "1udkfnz",
-          "subreddit": "WaltDisneyWorld",
-          "link_url": "https://www.reddit.com/r/WaltDisneyWorld/comments/1udkfnz/did_they_change_how_they_edit_the_guardians/",
+          "id": "1x0i5fv",
+          "subreddit": "movies",
+          "link_url": "https://www.reddit.com/r/movies/comments/1x0i5fv/ben_affleck_and_matt_damons_artists_equity/",
           "is_self": true,
           "upvote_ratio": 0,
           "flair": "",
@@ -548,10 +716,279 @@
       "Best of Week": [],
       "Hot": []
     },
-    "Disneyland": {
+    "BillSimmons": {
+      "Best of Hour": [],
       "Best of 24h": [],
       "Best of Week": [],
       "Hot": []
+    }
+  },
+  "refresh_status": "partial",
+  "last_attempt_at": "2026-10-08T22:37:29+00:00",
+  "feed_status": {
+    "cfb": {
+      "Best of Hour": {
+        "status": "ok",
+        "generated_at": "2026-10-08T22:37:29+00:00",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "stale",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "nfl": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "nba": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "stale",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "baseball": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "ok",
+        "generated_at": "2026-10-08T22:37:29+00:00",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "CoDCompetitive": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "soccer": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "stale",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "formula1": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "MichiganWolverines": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "DetroitLions": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "stale",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "DetroitPistons": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "movies": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "ok",
+        "generated_at": "2026-10-08T22:37:29+00:00",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
+    },
+    "BillSimmons": {
+      "Best of Hour": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of 24h": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Best of Week": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      },
+      "Hot": {
+        "status": "unavailable",
+        "generated_at": "2026-06-24T12:04:34.142692",
+        "last_attempt_at": "2026-10-08T22:37:29+00:00"
+      }
     }
   }
 }
