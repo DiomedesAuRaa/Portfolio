@@ -39,6 +39,11 @@ class RedditRefreshTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             fetch_reddit.parse_posts(BODY.replace(b'https://www.reddit.com/r/nfl/comments/abc/post/',b'javascript:alert(1)'), 'nfl')
 
+    def test_rss_posts_identify_missing_reddit_metrics(self):
+        post=fetch_reddit.parse_posts(BODY,'nfl')[0]
+        self.assertEqual(post['metadata_source'],'rss')
+        self.assertEqual((post['score'],post['num_comments'],post['comments']),(0,0,[]))
+
     def test_publication_validator_accepts_refresh_rejects_extra_or_script(self):
         spec=importlib.util.spec_from_file_location('validate_reddit',Path(__file__).resolve().parents[1]/'scripts/validate_reddit.py')
         validator=importlib.util.module_from_spec(spec);spec.loader.exec_module(validator)
@@ -48,6 +53,10 @@ class RedditRefreshTests(unittest.TestCase):
             config_path=Path(directory)/'reddit-config.json'
             config_path.write_text(json.dumps(CONFIG))
             path.write_text(json.dumps(data));validator.validate(path,config_path)
+            data['data']['nfl']['Hot'][0]['metadata_source']='unknown'
+            path.write_text(json.dumps(data))
+            with self.assertRaises(ValueError): validator.validate(path,config_path)
+            data['data']['nfl']['Hot'][0]['metadata_source']='rss'
             data['data']['nfl']['Hot'][0]['url']='javascript:alert(1)'
             path.write_text(json.dumps(data))
             with self.assertRaises(ValueError): validator.validate(path,config_path)

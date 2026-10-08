@@ -49,7 +49,7 @@ def parse_posts(body, subreddit):
             author = author[2:]
         parsed = entry.get('published_parsed') or entry.get('updated_parsed')
         identifier = str(entry.get('id', '')).split('_')[-1][:200]
-        posts.append({'title': title[:1000], 'author': author[:200], 'score': 0, 'url': url, 'selftext': '', 'created_utc': calendar.timegm(parsed) if parsed else 0, 'num_comments': 0, 'id': identifier, 'subreddit': subreddit, 'link_url': url, 'is_self': 'reddit.com/r/' in url, 'upvote_ratio': 0, 'flair': '', 'comments': []})
+        posts.append({'title': title[:1000], 'author': author[:200], 'score': 0, 'url': url, 'selftext': '', 'created_utc': calendar.timegm(parsed) if parsed else 0, 'num_comments': 0, 'id': identifier, 'subreddit': subreddit, 'link_url': url, 'is_self': 'reddit.com/r/' in url, 'upvote_ratio': 0, 'flair': '', 'comments': [], 'metadata_source': 'rss'})
         if len(posts) == 5:
             break
     if not posts:

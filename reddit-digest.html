@@ -369,9 +369,21 @@
             }
         }
 
+        // Some generated feeds use a human-readable UTC timestamp that older
+        // mobile browsers parse inconsistently. Normalize it to ISO UTC first.
+        function parseDigestDate(value) {
+            if (typeof value === 'string') {
+                const utc = value.match(/^(\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}:\d{2}) UTC$/);
+                if (utc) value = utc[1] + 'T' + utc[2] + 'Z';
+            }
+            const date = new Date(value);
+            return Number.isNaN(date.getTime()) ? null : date;
+        }
+
         // ── Stale banner ───────────────────────────────────────────────────
         function checkStaleness(generatedAt) {
-            const age = Date.now() - new Date(generatedAt).getTime();
+            const date = parseDigestDate(generatedAt);
+            const age = date ? Date.now() - date.getTime() : Infinity;
             document.getElementById('stale-banner')
                     .classList.toggle('visible', age > STALE_THRESHOLD);
         }
@@ -489,14 +501,16 @@
             ToolUI.setHTML(contentDiv, '');
 
             // Header meta
-            document.getElementById('date').textContent =
-                new Date(data.generated_at).toLocaleDateString('en-US', {
+            const generatedAt = parseDigestDate(data.generated_at);
+            document.getElementById('date').textContent = generatedAt ?
+                generatedAt.toLocaleDateString('en-US', {
                     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
-                });
+                }) : 'Date unavailable';
             document.getElementById('stats').textContent =
                 `${data.subreddits_count || Object.keys(data.data).length} subreddits • ${data.total_posts || 0} posts`;
+            const lastAttempt = parseDigestDate(data.last_attempt_at);
             document.getElementById('last-updated').textContent =
-                new Date(data.generated_at).toLocaleString() + (data.refresh_status ? ' · ' + data.refresh_status : '') + (data.last_attempt_at ? ' · Attempt: ' + new Date(data.last_attempt_at).toLocaleString() : '');
+                (generatedAt ? generatedAt.toLocaleString() : 'Time unavailable') + (data.refresh_status ? ' · ' + data.refresh_status : '') + (lastAttempt ? ' · Attempt: ' + lastAttempt.toLocaleString() : '');
 
             for (const [subreddit, feedsData] of Object.entries(data.data)) {
                 const subredditDiv = document.createElement('div');
@@ -553,7 +567,10 @@
                             const count = document.documentElement.classList.contains('compact') ? 5 : 15;
                             const first = page * count;
                             const status = data.feed_status && data.feed_status[subreddit] && data.feed_status[subreddit][feedLabel];
-                            if (status) feedDiv.appendChild(ToolUI.text('p', (status.status === 'ok' ? 'Feed updated: ' : status.status + ' · Last good: ') + (status.generated_at ? new Date(status.generated_at).toLocaleString() : 'Unknown'), 'last-update'));
+                            if (status) {
+                                const feedDate = parseDigestDate(status.generated_at);
+                                feedDiv.appendChild(ToolUI.text('p', (status.status === 'ok' ? 'Feed updated: ' : status.status + ' · Last good: ') + (feedDate ? feedDate.toLocaleString() : 'Unknown'), 'last-update'));
+                            }
                             posts.slice(first, first + count).forEach((post, index) => {
                                 const feedSlug = feedLabel.replace(/[^a-z0-9]/gi, '_').toLowerCase();
                                 feedDiv.appendChild(buildPostEl(post, first + index + 1, `${subreddit}_${feedSlug}_${post.id}`));
@@ -584,6 +601,7 @@
             const postDiv    = document.createElement('div');
             postDiv.className = 'post';
 
+            const hasRedditMetadata = post.metadata_source !== 'rss';
             const upvotePct  = Math.round(post.upvote_ratio * 100);
             const flairHtml  = post.flair
                 ? `<span class="post-flair">${escapeHtml(post.flair)}</span>` : '';
@@ -623,9 +641,9 @@
                     <div class="post-title">${index}. ${escapeHtml(post.title)} ${flairHtml}</div>
                     <div class="post-meta">
                         <span>👤 u/${escapeHtml(post.author)}</span>
-                        <span>⬆️ ${fmtScore(post.score)}</span>
+                        ${hasRedditMetadata ? `<span>⬆️ ${fmtScore(post.score)}</span>
                         <span class="upvote-ratio">${upvotePct}%</span>
-                        <span>💬 ${fmtScore(post.num_comments)}</span>
+                        <span>💬 ${fmtScore(post.num_comments)}</span>` : '<span>RSS · votes/comments unavailable</span>'}
                         ${timeStr ? `<span>🕐 ${timeStr}</span>` : ''}
                     </div>
                 </div>

@@ -52,8 +52,10 @@ def validate(path, config_path=CONFIG_PATH):
                 raise ValueError('Invalid posts')
             total+=len(posts)
             for post in posts:
-                if not isinstance(post,dict) or set(post)!=FIELDS:
+                if not isinstance(post,dict) or not FIELDS.issubset(post) or set(post) - FIELDS - {'metadata_source'}:
                     raise ValueError('Invalid post fields')
+                if 'metadata_source' in post and post['metadata_source'] != 'rss':
+                    raise ValueError('Invalid metadata source')
                 for field in ('title','author','id','subreddit','flair'):
                     if not isinstance(post[field],str) or len(post[field])>20000:
                         raise ValueError('Invalid post text')
