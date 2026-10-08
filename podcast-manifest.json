@@ -38,6 +38,12 @@
     "name": "The Watch",
     "episodes": [
       {
+        "title": "\u2018East of Eden\u2019 E1-4, \u2018Slow Horses\u2019 S6E4, and \u2018The Altruists\u2019 Trailer",
+        "date": "Oct 08, 2026",
+        "dateSort": "2026-10-08",
+        "audioUrl": "https://traffic.megaphone.fm/GLT3359867305.mp3"
+      },
+      {
         "title": "\u2018Lanterns\u2019 Is One of Our Strongest Superhero Shows Ever. Plus, \u2018Sicario 3\u2019 and a New \u2018Miami Vice\u2019 Ending.",
         "date": "Oct 05, 2026",
         "dateSort": "2026-10-05",
@@ -60,18 +66,18 @@
         "date": "Sep 25, 2026",
         "dateSort": "2026-09-25",
         "audioUrl": "https://traffic.megaphone.fm/GLT9322877000.mp3"
-      },
-      {
-        "title": "Paramount Settles States\u2019 Antitrust Lawsuit. Plus, \u2018Lanterns\u2019 Episode 6.",
-        "date": "Sep 21, 2026",
-        "dateSort": "2026-09-21",
-        "audioUrl": "https://traffic.megaphone.fm/GLT3646680669.mp3"
       }
     ]
   },
   {
     "name": "Zach Lowe",
     "episodes": [
+      {
+        "title": "Haliburton on His Return, Preseason Thoughts, and Most Intriguing Players!",
+        "date": "Oct 08, 2026",
+        "dateSort": "2026-10-08",
+        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT2773922874.mp3"
+      },
       {
         "title": "LeBron Injury Update and Giannis Fit! Big Questions With Steve Nash!",
         "date": "Oct 06, 2026",
@@ -95,12 +101,6 @@
         "date": "Sep 24, 2026",
         "dateSort": "2026-09-24",
         "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT9250434841.mp3"
-      },
-      {
-        "title": "One Big Question for Every Western Conference Team!",
-        "date": "Sep 22, 2026",
-        "dateSort": "2026-09-22",
-        "audioUrl": "https://pdst.fm/e/traffic.megaphone.fm/GLT8263953261.mp3"
       }
     ]
   },
