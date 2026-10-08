@@ -51,3 +51,7 @@ htmlcov/
 # Temporary files
 *.tmp
 .cache/
+
+# Curated Pages output and local tooling
+_site/
+.venv-podcast/

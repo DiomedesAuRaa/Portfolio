@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
                                 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%236f42c1%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2752%25%27%20font-size%3D%2744%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%20font-family%3D%27Apple%20Color%20Emoji%2CSegoe%20UI%20Emoji%2CSegoe%20UI%20Symbol%2CEmojiSymbols%2Csans-serif%27%20fill%3D%27%23ffffff%27%3E%F0%9F%8E%A7%3C%2Ftext%3E%3C%2Fsvg%3E">
     <title>Podcasts</title>
     <style>
@@ -148,6 +148,8 @@
         .loading { text-align: center; padding: 20px; color: #888; }
         .error { text-align: center; padding: 10px; color: #f00; font-size: 11px; }
     </style>
+    <link rel="stylesheet" href="assets/tool-ui.css">
+    <script src="assets/tool-ui.js"></script>
 </head>
 <body>
     <div class="header">
@@ -180,6 +182,7 @@
     <script>
         const STORAGE_KEY = 'podcast_progress';
         let currentShow = 0;
+        let episodePage = 0;
         let shows = [];
         let currentUrl = null;
 
@@ -256,20 +259,24 @@
                 if (a.dateSort < b.dateSort) return 1;
                 return 0;
             });
-            return { name: 'All', episodes: all };
+            const dates = rawShows.map(show => show.generatedAt).filter(Boolean).sort();
+            const stale = rawShows.some(show => show.fetchStatus === 'stale' || show.fetchStatus === 'unavailable');
+            return {name:'All', episodes:all, generatedAt:dates.length === rawShows.length ? dates[0] : null, fetchStatus:stale ? 'stale' : 'ok'};
         }
 
         // --- Render ---
         function renderTabs() {
             const container = document.getElementById('showTabs');
-            container.innerHTML = '';
+            ToolUI.setHTML(container, '');
             shows.forEach((show, i) => {
                 const btn = document.createElement('button');
                 btn.className = 'tab' + (i === currentShow ? ' active' : '');
+                btn.setAttribute('aria-pressed', String(i === currentShow));
                 btn.textContent = show.name;
                 btn.addEventListener('click', function() {
-                    currentShow = i;
+                    currentShow = i; episodePage = 0;
                     document.querySelectorAll('.tab').forEach((t, j) => {
+                        t.setAttribute('aria-pressed', String(j === i));
                         if (j === i) t.classList.add('active');
                         else t.classList.remove('active');
                     });
@@ -284,37 +291,46 @@
             const show = shows[currentShow];
 
             if (!show || !show.episodes || !show.episodes.length) {
-                content.innerHTML = '<div class="error">No episodes available.</div>';
+                ToolUI.setHTML(content, '<div class="error">No episodes available.</div>');
                 return;
             }
 
-            let html = '';
-            for (let i = 0; i < show.episodes.length; i++) {
-                const ep = show.episodes[i];
-                if (!ep.audioUrl) continue;
-
-                const meta = (ep.showName ? ep.showName + ' · ' : '') + (ep.date || '');
-                const saved = getProgress(ep.audioUrl);
-                const progressText = saved > 10 ? '▶ Resume at ' + formatTime(saved) : '';
-                const isActive = ep.audioUrl === currentUrl;
-
-                html += `<div class="episode${isActive ? ' active-ep' : ''}" onclick="playEpisode('${ep.audioUrl.replace(/'/g, "\\'")}', '${ep.title.replace(/'/g, "\\'")}')">
-                    <div class="episode-title">${ep.title}</div>
-                    <div class="episode-meta">${meta}</div>
-                    ${progressText ? '<div class="episode-progress">' + progressText + '</div>' : ''}
-                </div>`;
+            const batch = document.documentElement.classList.contains('compact') ? 5 : 15;
+            const episodes = show.episodes.filter(ep => ToolUI.httpURL(ep.audioUrl));
+            episodePage = Math.min(episodePage, Math.max(0, Math.ceil(episodes.length / batch) - 1));
+            const fragment = document.createDocumentFragment();
+            episodes.slice(episodePage * batch, (episodePage + 1) * batch).forEach(ep => {
+                const url = ToolUI.httpURL(ep.audioUrl);
+                const button = ToolUI.text('button', '', 'episode' + (url === currentUrl ? ' active-ep' : ''));
+                button.type = 'button';
+                button.append(ToolUI.text('div', ep.title, 'episode-title'),
+                    ToolUI.text('div', (ep.showName ? ep.showName + ' · ' : '') + (ep.date || ''), 'episode-meta'));
+                const saved = getProgress(url);
+                if (saved > 10) button.appendChild(ToolUI.text('div', 'Resume at ' + formatTime(saved), 'episode-progress'));
+                button.addEventListener('click', () => playEpisode(url, String(ep.title || 'Episode')));
+                fragment.appendChild(button);
+            });
+            content.replaceChildren(fragment);
+            if (!episodes.length) content.appendChild(ToolUI.text('p', 'No playable episodes.', 'error'));
+            if (episodes.length > batch) {
+                const pager = ToolUI.text('nav', '', 'tool-pagination'); pager.setAttribute('aria-label', 'Episodes');
+                const prev = ToolUI.text('button', 'Previous'), next = ToolUI.text('button', 'Next');
+                prev.disabled = episodePage === 0; next.disabled = (episodePage + 1) * batch >= episodes.length;
+                prev.addEventListener('click', () => { episodePage--; renderEpisodes(); });
+                next.addEventListener('click', () => { episodePage++; renderEpisodes(); });
+                pager.append(prev, ToolUI.text('span', (episodePage + 1) + ' / ' + Math.ceil(episodes.length / batch)), next);
+                content.appendChild(pager);
             }
-
-            content.innerHTML = html || '<div class="error">No playable episodes.</div>';
-
-            const now = new Date();
-            document.getElementById('currentDate').textContent =
-                now.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-            document.getElementById('lastUpdate').textContent =
-                'Updated: ' + now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0');
+            const generated = show.generatedAt ? new Date(show.generatedAt) : null;
+            const stamp = generated && !isNaN(generated.getTime()) ? generated.toLocaleString() : 'Unknown refresh time';
+            const stale = show.fetchStatus === 'stale' || (generated && Date.now() - generated.getTime() > 2 * 60 * 60 * 1000);
+            document.getElementById('lastUpdate').textContent = (stale ? 'Stale · ' : '') + 'Feed: ' + stamp;
         }
+        document.addEventListener('tool-layout-change', () => { episodePage = 0; renderEpisodes(); });
 
         function playEpisode(url, title) {
+            url = ToolUI.httpURL(url);
+            if (!url) return;
             currentUrl = url;
             const bar = document.getElementById('playerBar');
             document.getElementById('nowPlayingTitle').textContent = title;
@@ -338,25 +354,27 @@
             }
 
             bar.style.display = 'block';
-            try { audio.play(); } catch(e) {}
+            const playback = audio.play();
+            if (playback && playback.catch) playback.catch(() => { document.getElementById('lastUpdate').textContent = 'Playback unavailable. Try the audio Play control.'; });
 
             renderEpisodes();
         }
 
         async function loadEpisodes() {
             const content = document.getElementById('content');
-            content.innerHTML = '<div class="loading">Loading...</div>';
+            ToolUI.setHTML(content, '<div class="loading">Loading...</div>');
             try {
-                const response = await fetch('podcast-manifest.json');
+                const response = await fetch('podcast-manifest.json', {cache: 'no-cache'});
                 if (!response.ok) throw new Error('HTTP ' + response.status);
                 const raw = await response.json();
-                if (!raw.length) { content.innerHTML = '<div class="error">No shows found.</div>'; return; }
+                if (!raw.length) { ToolUI.setHTML(content, '<div class="error">No shows found.</div>'); return; }
                 shows = [buildAllTab(raw)].concat(raw);
-                currentShow = 0;
+                currentShow = Math.min(currentShow, shows.length - 1);
+                episodePage = 0;
                 renderTabs();
                 renderEpisodes();
             } catch(e) {
-                content.innerHTML = '<div class="error">Could not load manifest.</div>';
+                ToolUI.setHTML(content, '<div class="error">Could not load manifest.</div>');
             }
         }
 

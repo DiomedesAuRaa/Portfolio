@@ -1,0 +1,30 @@
+html body.game-page { width:100%; max-width:34rem; padding:0.75rem; }
+html body.game-page .shell { width:100%; height:auto; min-height:24rem; max-height:none; overflow:visible; }
+html body.game-page .area { min-height:17rem; flex:none; padding:5px; }
+html body.game-page .skeys { height:auto; min-height:44px; flex-wrap:wrap; }
+html body.game-page .sk { min-height:44px; font-size:14px; }
+html body.game-page .navdrawer { width:100%; max-height:80vh; overflow-y:auto; z-index:30; }
+html body.game-page .navdrawer a { padding:0.6rem; font-size:16px; }
+html body.game-page #board { width:min(100%, 320px); grid-template-columns:repeat(4,minmax(0,1fr)); grid-template-rows:repeat(4,1fr); aspect-ratio:1; box-sizing:border-box; }
+html body.game-page .tile { width:auto; height:auto; font-size:20px; }
+html body.game-page #grid { width:min(100%,320px); }
+html body.game-page .keyboard { padding:5px; }
+html body.game-page .key { max-width:none; min-width:0; min-height:44px; font-size:15px; }
+html body.game-page canvas { max-width:100%; height:auto; }
+html body.game-page .tapbanner { position:static; padding:8px; background:#172c40; width:100%; }
+html body.game-page .tapbanner .tt { font-size:14px; }
+html body.game-page .tapbanner .ts { font-size:12px; }
+html body.game-page .area:focus-visible, html body.game-page #grid:focus-visible { outline:3px solid #ffcf66; outline-offset:1px; }
+html body.game-page .word-input { margin:6px; }
+html body.game-page .word-input input { width:100%; }
+html.compact body.game-page { padding:3px; }
+html.compact body.game-page .shell { min-height:0; }
+html.compact body.game-page .area { min-height:220px; padding:2px; }
+html.compact body.game-page .skeys, html.compact body.game-page .sk { min-height:28px; font-size:12px; }
+html.compact body.game-page .key { min-height:28px; font-size:12px; }
+html.compact body.game-page .navdrawer a { padding:5px; font-size:14px; }
+
+html body.game-page .navdrawer[hidden] { display:none; }
+html body.game-page .hdr { height:auto; min-height:36px; flex-wrap:wrap; gap:5px; }
+html body.game-page .hs span, html body.game-page .tbox .tl, html body.game-page .hmeta { font-size:12px; }
+html.compact body.game-page .hs span, html.compact body.game-page .tbox .tl, html.compact body.game-page .hmeta { font-size:11px; }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tetris</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -53,12 +53,15 @@ canvas{display:block;image-rendering:pixelated}
 .navclose button{background:none;border:none;color:#00c8ff;font-size:14px;cursor:pointer}
 #kc{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;border:none;outline:none}
 </style>
+<link rel="stylesheet" href="../assets/tool-ui.css">
+<link rel="stylesheet" href="../assets/game-ui.css">
+<script src="../assets/tool-ui.js"></script>
 </head>
-<body>
-<button id="kc" style="position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;border:none;outline:none;padding:0;background:none" tabindex="0" aria-hidden="true"></button>
+<body class="game-page">
+
 <div class="shell">
-  <div class="navdrawer" id="nav">
-    <div class="navclose"><span>NAVIGATE</span><button onclick="closeNav()">&#x2715;</button></div>
+  <div class="navdrawer" id="nav" aria-label="Games" aria-hidden="true" hidden>
+    <div class="navclose"><span>NAVIGATE</span><button aria-label="Close games menu" onclick="closeNav()">&#x2715;</button></div>
     <a href="../home.html">&#x2190; Home</a>
     <a href="2048.html">2048</a><a href="snake.html">Snake</a>
     <a href="minesweeper.html">Minesweeper</a>
@@ -71,13 +74,13 @@ canvas{display:block;image-rendering:pixelated}
       <div class="hs"><span>BEST</span><b class="hi" id="best">0</b></div>
     </div>
   </div>
-  <div class="area" id="area" onclick="activate()">
+  <div class="area" id="area" tabindex="0" role="region" aria-label="Game board. Focus here to play. Escape opens menu." onclick="activate()">
     <div class="overlay show" id="ovr">
       <h2 id="ovrtitle">TETRIS</h2>
       <p id="ovrmsg">Left/Right=move  Up=rotate<br>Down=soft  Space=hard drop</p>
       <button class="obtn" onclick="event.stopPropagation();startGame();activate()">PLAY</button>
     </div>
-    <div class="tapbanner" id="tap" onclick="activate()">
+    <div class="tapbanner" id="tap" tabindex="0" role="button" onclick="activate()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();activate();}">
       <div class="ti">&#x25BA;</div><div class="tt">TAP TO ACTIVATE KEYS</div>
       <div class="ts">then use arrow keys</div>
     </div>
@@ -98,22 +101,29 @@ canvas{display:block;image-rendering:pixelated}
   </div>
 </div>
 <script>
-var kc=document.getElementById('kc'),active=false;
+var kc=document.getElementById('area'),active=false;
 function activate(){kc.focus();active=true;document.getElementById('tap').style.display='none';}
 function deactivate(){active=false;document.getElementById('tap').style.display='flex';}
-function toggleNav(){document.getElementById('nav').classList.toggle('open');}
-function closeNav(){document.getElementById('nav').classList.remove('open');}
-kc.addEventListener('keydown',function(e){
-  var d=['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
-  if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
-  /* handleKey called by window capture listener - no double-fire */
-});
+function toggleNav() {
+  var nav = document.getElementById('nav');
+  if (nav.classList.contains('open')) { closeNav(); return; }
+  nav.hidden = false; nav.classList.add('open'); active = false;
+  nav.setAttribute('aria-hidden','false');
+  nav.querySelector('button,a').focus();
+}
+function closeNav() {
+  var nav = document.getElementById('nav'); nav.classList.remove('open');
+  nav.setAttribute('aria-hidden','true'); nav.hidden = true; activate();
+}
+
 window.addEventListener('keydown', function(e) {
-  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (e.target !== kc || document.getElementById('nav').classList.contains('open')) return;
+  if (e.key === 'Escape') { e.preventDefault(); toggleNav(); return; }
+  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
-document.addEventListener('click', function(){activate();});
+
 
 var LS='games_tetris_scores',TOPN=10,COLS=10,ROWS=16,CELL=16;
 var COLORS={I:'#00c8ff',O:'#ffb300',T:'#cc3600',S:'#00a86b',Z:'#cc2222',J:'#1a7acc',L:'#ff6b35'};
@@ -150,7 +160,7 @@ function spawn(){
 function scheduleDrop(){
   clearInterval(dropTimer);
   var ms=Math.max(80,700-(level-1)*55);
-  dropTimer=setInterval(function(){if(!paused&&!over)dropPiece();},ms);
+  dropTimer=setInterval(function(){if(!paused&&!over&&document.activeElement===kc&&!document.getElementById('nav').classList.contains('open')&&!document.hidden)dropPiece();},ms);
 }
 function collides(p,dx,dy,sh){
   var s=sh||p.shape;
@@ -225,7 +235,7 @@ function saveScore(){
   if(!score)return;
   try{var s=JSON.parse(localStorage.getItem(LS)||'[]');s.push({score:score,lines:lines,date:new Date().toISOString().split('T')[0]});s.sort(function(a,b){return b.score-a.score;});localStorage.setItem(LS,JSON.stringify(s.slice(0,TOPN)));}catch(e){}
 }
-function showOverlay(t,m){document.getElementById('ovrtitle').textContent=t;document.getElementById('ovrmsg').innerHTML=m;document.getElementById('ovr').classList.add('show');}
+function showOverlay(t,m){document.getElementById('ovrtitle').textContent=t;ToolUI.setHTML(document.getElementById('ovrmsg'),m);document.getElementById('ovr').classList.add('show');}
 function hideOverlay(){document.getElementById('ovr').classList.remove('show');}
 function handleKey(key) {
   if (!running||over) return;

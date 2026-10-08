@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wordle</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -60,13 +60,16 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
   padding:4px 12px;border-radius:14px;opacity:0;transition:opacity .2s;z-index:30;pointer-events:none;white-space:nowrap}
 .toast.show{opacity:1}
 </style>
+<link rel="stylesheet" href="../assets/tool-ui.css">
+<link rel="stylesheet" href="../assets/game-ui.css">
+<script src="../assets/tool-ui.js"></script>
 </head>
-<body>
+<body class="game-page">
 <div class="toast" id="toast"></div>
-<button id="kc" style="position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;border:none;outline:none;padding:0;background:none" tabindex="0" aria-hidden="true"></button>
+
 <div class="shell">
-  <div class="navdrawer" id="nav">
-    <div class="navclose"><span>NAVIGATE</span><button onclick="closeNav()">&#x2715;</button></div>
+  <div class="navdrawer" id="nav" aria-label="Games" aria-hidden="true" hidden>
+    <div class="navclose"><span>NAVIGATE</span><button aria-label="Close games menu" onclick="closeNav()">&#x2715;</button></div>
     <a href="../home.html">&#x2190; Home</a>
     <a href="2048.html">2048</a><a href="snake.html">Snake</a>
     <a href="minesweeper.html">Minesweeper</a><a href="tetris.html">Tetris</a>
@@ -79,7 +82,7 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
       Streak:<strong id="streak">0</strong>&#x1F525;
     </div>
   </div>
-  <div class="grid-wrap"><div id="grid"></div></div>
+  <div class="grid-wrap"><div id="grid" tabindex="0" role="region" aria-label="Game board. Focus here to play. Escape opens menu."></div></div>
   <div class="rbar" id="rbar">
     <strong id="rtitle">--</strong>
     <div class="rsub" id="rsub"></div>
@@ -95,24 +98,44 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
     <button class="sk r" onclick="toggleNav()">Menu</button>
   </div>
 </div>
+<form class="word-input" id="guess-form">
+  <label for="guess-input">Type a five-letter guess</label>
+  <input id="guess-input" type="text" maxlength="5" autocomplete="off" autocapitalize="none" spellcheck="false" pattern="[A-Za-z]{5}">
+  <button type="submit">Guess</button>
+  <p id="guess-status" role="status"></p>
+</form>
 <script>
-var kc=document.getElementById('kc'),active=false;
+var kc=document.getElementById('grid'),active=false;
 function activate(){kc.focus();active=true;}
-function toggleNav(){document.getElementById('nav').classList.toggle('open');}
-function closeNav(){document.getElementById('nav').classList.remove('open');}
-kc.addEventListener('keydown',function(e){
-  var d=['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Enter','Backspace'];
-  if(d.indexOf(e.key)!==-1){e.preventDefault();e.stopImmediatePropagation();}
-  /* handleKey via window capture */
-});
+function toggleNav() {
+  var nav = document.getElementById('nav');
+  if (nav.classList.contains('open')) { closeNav(); return; }
+  nav.hidden = false; nav.classList.add('open'); active = false;
+  nav.setAttribute('aria-hidden','false');
+  nav.querySelector('button,a').focus();
+}
+function closeNav() {
+  var nav = document.getElementById('nav'); nav.classList.remove('open');
+  nav.setAttribute('aria-hidden','true'); nav.hidden = true; activate();
+}
+
 window.addEventListener('keydown', function(e) {
-  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (e.target !== kc || document.getElementById('nav').classList.contains('open')) return;
+  if (e.key === 'Escape') { e.preventDefault(); toggleNav(); return; }
+  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
 /* For Wordle, always keep focus active since keyboard is the primary input */
-document.addEventListener('click',function(){activate();});
 
+
+document.getElementById('guess-form').addEventListener('submit', function(e) {
+  e.preventDefault(); if (gameOver) return;
+  curGuess = document.getElementById('guess-input').value.toLowerCase().replace(/[^a-z]/g,'').slice(0,5);
+  var before = guesses.length; submitGuess();
+  if (guesses.length > before) document.getElementById('guess-input').value = '';
+  document.getElementById('guess-status').textContent = guesses.length > before ? (gameOver ? 'Game finished.' : 'Guess added.') : 'Enter a five-letter word from the word list.';
+});
 var LS='games_wordle_scores',TOPN=30;
 var KB_ROWS=['qwertyuiop','asdfghjkl','\x08zxcvbnm\r'];
 var EPOCH=new Date('2025-01-01').getTime();

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=240, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2048</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -70,12 +70,15 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
 #kc{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;
   border:none;outline:none}
 </style>
+<link rel="stylesheet" href="../assets/tool-ui.css">
+<link rel="stylesheet" href="../assets/game-ui.css">
+<script src="../assets/tool-ui.js"></script>
 </head>
-<body>
-<button id="kc" style="position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;border:none;outline:none;padding:0;background:none" tabindex="0" aria-hidden="true"></button>
+<body class="game-page">
+
 <div class="shell">
-  <div class="navdrawer" id="nav">
-    <div class="navclose"><span>NAVIGATE</span><button onclick="closeNav()">&#x2715;</button></div>
+  <div class="navdrawer" id="nav" aria-label="Games" aria-hidden="true" hidden>
+    <div class="navclose"><span>NAVIGATE</span><button aria-label="Close games menu" onclick="closeNav()">&#x2715;</button></div>
     <a href="../home.html">&#x2190; Home</a>
     <a href="2048.html" class="cur">2048</a>
     <a href="snake.html">Snake</a>
@@ -90,14 +93,14 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
       <div class="hs"><span>BEST</span><b class="hi" id="best">0</b></div>
     </div>
   </div>
-  <div class="area" id="area" onclick="activate()">
+  <div class="area" id="area" tabindex="0" role="region" aria-label="Game board. Focus here to play. Escape opens menu." onclick="activate()">
     <div class="overlay" id="ovr">
       <h2 id="ovrtitle">2048</h2>
       <p id="ovrmsg">Swipe or use arrow keys<br>to merge tiles</p>
       <button class="obtn" id="keepPlayingBtn" style="display:none; background:#0fa06e;" onclick="event.stopPropagation();hideOverlay();activate()">KEEP PLAYING</button>
       <button class="obtn" onclick="event.stopPropagation();newGame();activate()">NEW GAME</button>
     </div>
-    <div class="tapbanner" id="tap" onclick="activate()">
+    <div class="tapbanner" id="tap" tabindex="0" role="button" onclick="activate()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();activate();}">
       <div class="ti">&#x25BA;</div>
       <div class="tt">TAP TO ACTIVATE KEYS</div>
       <div class="ts">then use arrow keys</div>
@@ -111,7 +114,7 @@ html,body{width:240px;max-width:240px;height:320px;max-height:320px;overflow:hid
   </div>
 </div>
 <script>
-var kc = document.getElementById('kc');
+var kc = document.getElementById('area');
 var active = false;
 
 function activate() {
@@ -126,25 +129,28 @@ function deactivate() {
 }
 
 function toggleNav() {
-  document.getElementById('nav').classList.toggle('open');
+  var nav = document.getElementById('nav');
+  if (nav.classList.contains('open')) { closeNav(); return; }
+  nav.hidden = false; nav.classList.add('open'); active = false;
+  nav.setAttribute('aria-hidden','false');
+  nav.querySelector('button,a').focus();
 }
 
 function closeNav() {
-  document.getElementById('nav').classList.remove('open');
+  var nav = document.getElementById('nav'); nav.classList.remove('open');
+  nav.setAttribute('aria-hidden','true'); nav.hidden = true; activate();
 }
 
-kc.addEventListener('keydown', function(e) {
-  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
-  if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
-  /* handleKey via window capture */
-});
+
 
 window.addEventListener('keydown', function(e) {
-  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter'];
+  if (e.target !== kc || document.getElementById('nav').classList.contains('open')) return;
+  if (e.key === 'Escape') { e.preventDefault(); toggleNav(); return; }
+  var dirs = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight',' ','Enter','Backspace'];
   if (dirs.indexOf(e.key) !== -1) { e.preventDefault(); e.stopImmediatePropagation(); }
   if (typeof handleKey === 'function') handleKey(e.key);
 }, {capture:true, passive:false});
-document.addEventListener('click', function(){activate();});
+
 
 
 /* ── Game ── */
@@ -212,12 +218,12 @@ function doMove(dir) {
   }
   if (JSON.stringify(grid)===before) return;
   score+=gained; moves++; addRandom();
-  
+
   var reached2048 = false;
   if (!won) {
     for (var r=0;r<4;r++) for (var c=0;c<4;c++) if (grid[r][c]===2048) { won=true; reached2048=true; }
   }
-  
+
   if (reached2048) {
     document.getElementById('keepPlayingBtn').style.display = 'block';
     showOverlay('YOU WIN!','Score: '+score);
@@ -226,7 +232,7 @@ function doMove(dir) {
     document.getElementById('keepPlayingBtn').style.display = 'none';
     showOverlay('GAME OVER','Final score: '+score);
   }
-  
+
   render(); updateUI(); saveState();
 }
 

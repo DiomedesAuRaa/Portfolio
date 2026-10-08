@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=240px, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
                           <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%23dc3545%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2752%25%27%20font-size%3D%2744%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%20font-family%3D%27Apple%20Color%20Emoji%2CSegoe%20UI%20Emoji%2CSegoe%20UI%20Symbol%2CEmojiSymbols%2Csans-serif%27%20fill%3D%27%23ffffff%27%3E%F0%9F%93%B0%3C%2Ftext%3E%3C%2Fsvg%3E">
   <title>News Headlines</title>
   <style>
@@ -172,6 +172,8 @@
       padding: 4px 0;
     }
   </style>
+    <link rel="stylesheet" href="assets/tool-ui.css">
+    <script src="assets/tool-ui.js"></script>
 </head>
 <body>
 
@@ -270,9 +272,10 @@ const PROXIES = [
 
 const TIMEOUT_MS = 8000;
 const CACHE_TTL  = 5 * 60 * 1000; // 5 minutes
-const CACHE_KEY  = (cat) => `news_cache_${cat}`;
+const CACHE_KEY  = (cat) => `news_cache_safe_v2_${cat}`;
 
 let currentCat = 'top';
+let loadVersion = 0;
 let abortControllers = [];
 
 /* ── Fetch with timeout ──────────────────────────────────── */
@@ -380,16 +383,18 @@ function cacheSet(cat, html) {
 /* ── Render one article ──────────────────────────────────── */
 function renderArticle(a) {
   const title = a.title.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/<[^>]+>/g,'').trim();
-  const link  = a.link || '#';
+  const link = ToolUI.httpURL(a.link);
+  if (!link) return '';
   const time  = fmtTime(a.pubDate);
-  return `<a href="${link}" target="_blank" class="article">
-    <div class="article-title">${title}</div>
-    ${time?`<div class="article-meta">${time}</div>`:''}
+  return `<a href="${ToolUI.escape(link)}" target="_blank" rel="noopener noreferrer" class="article">
+    <div class="article-title">${ToolUI.escape(title)}</div>
+    ${time?`<div class="article-meta">${ToolUI.escape(time)}</div>`:''}
   </a>`;
 }
 
 /* ── Main loader ─────────────────────────────────────────── */
 async function loadCategory(cat, forceRefresh=false) {
+  const requestVersion = ++loadVersion;
   // Cancel any in-flight requests
   abortControllers.forEach(c => { try{c.abort()}catch{} });
   abortControllers = [];
@@ -397,7 +402,7 @@ async function loadCategory(cat, forceRefresh=false) {
 
   // Tabs UI
   document.querySelectorAll('.tab').forEach(t =>
-    t.classList.toggle('active', t.dataset.cat===cat));
+    { t.classList.toggle('active', t.dataset.cat===cat); t.setAttribute('aria-pressed', String(t.dataset.cat===cat)); });
 
   const content   = document.getElementById('content');
   const progress  = document.getElementById('progress');
@@ -408,7 +413,7 @@ async function loadCategory(cat, forceRefresh=false) {
   if(!forceRefresh) {
     const cached = cacheGet(cat);
     if(cached) {
-      content.innerHTML = cached.html;
+      ToolUI.setHTML(content, cached.html);
       cacheInfo.textContent = `Cached ${cached.age}s ago — tap Refresh to update`;
       return;
     }
@@ -422,12 +427,12 @@ async function loadCategory(cat, forceRefresh=false) {
   let completed = 0;
 
   // Render loading placeholders immediately
-  content.innerHTML = feeds.map(f =>
+  ToolUI.setHTML(content, feeds.map(f =>
     `<div class="news-section" id="feed-${slug(f.name)}">
        <div class="source-header"><span class="source-title">${f.name}</span></div>
        <div class="loading-feed">Fetching…</div>
      </div>`
-  ).join('');
+  ).join(''));
 
   progress.style.width = '0%';
 
@@ -436,6 +441,7 @@ async function loadCategory(cat, forceRefresh=false) {
     const sectionId = `feed-${slug(feed.name)}`;
     try {
       const items = await fetchFeed(feed.url);
+      if (requestVersion !== loadVersion) return;
       completed++;
       progress.style.width = `${Math.round(completed/feeds.length*100)}%`;
 
@@ -443,32 +449,32 @@ async function loadCategory(cat, forceRefresh=false) {
       if(!section) return;
 
       if(!items?.length) {
-        section.querySelector('.loading-feed, .error-feed').outerHTML =
-          `<div class="error-feed">No articles returned — feed may be down</div>`;
+        ToolUI.replaceHTML(section.querySelector('.loading-feed, .error-feed'), '<div class="error-feed">No articles returned — feed may be down</div>');
         return;
       }
 
       const shown = items.slice(0, feed.limit || 6);
-      section.innerHTML = `
+      ToolUI.setHTML(section, `
         <div class="source-header">
           <span class="source-title">${feed.name}</span>
           <span class="source-count">${shown.length} stories</span>
         </div>
         ${shown.map(renderArticle).join('')}
-      `;
+      `);
     } catch(e) {
-      if(e.name==='AbortError') return;
+      if(e.name==='AbortError' || requestVersion !== loadVersion) return;
       completed++;
       progress.style.width = `${Math.round(completed/feeds.length*100)}%`;
       const section = document.getElementById(sectionId);
-      if(section) section.innerHTML = `
+      if(section) ToolUI.setHTML(section, `
         <div class="source-header"><span class="source-title">${feed.name}</span></div>
-        <div class="error-feed">⚠ Failed to load (${e.message||'network error'})</div>
-      `;
+        <div class="error-feed">⚠ Failed to load (${ToolUI.escape(e.message||'network error')})</div>
+      `);
     }
   });
 
   await Promise.allSettled(promises);
+  if (requestVersion !== loadVersion) return;
 
   progress.style.width = '100%';
   setTimeout(() => { progress.style.width = '0%'; }, 800);

@@ -1,0 +1,53 @@
+/* Responsive tools share one compact mode; normal browser links stay reachable. */
+html { color-scheme: dark; width:auto; max-width:none; height:auto; max-height:none; }
+html body { width:auto; max-width:52rem; height:auto; max-height:none; min-height:100vh; margin:0 auto; padding:0.75rem; font-family:system-ui,Arial,sans-serif; font-size:16px; line-height:1.45; overflow:auto; }
+.tool-nav { display:flex; align-items:center; gap:0.7rem; flex-wrap:wrap; padding:0 0 0.5rem; margin-bottom:0.5rem; border-bottom:1px solid #6e8296; }
+.tool-nav a { color:#7de4ff; text-decoration:underline; }
+.tool-nav button { margin-left:auto; }
+html button, html select, html input { font:inherit; min-height:44px; max-width:100%; }
+html a:focus-visible, html button:focus-visible, html input:focus-visible, html select:focus-visible, [tabindex]:focus-visible { outline:3px solid #ffcf66; outline-offset:2px; }
+html body h1 { font-size:1.35rem; margin:0.4rem 0; padding:0; }
+html .header, html .league-nav, html .subreddit-nav { position:static; }
+html .league-nav, html .show-tabs, html .tabs, html .feed-nav, html .sub-feed-tabs, html .subreddit-nav { flex-wrap:wrap; overflow:visible; white-space:normal; gap:0.4rem; }
+html .back-btn[hidden], html .home-link[hidden] { display:none; }
+html .refresh-btn { width:auto; min-width:7rem; padding:0.35rem 0.7rem; font-size:1rem; }
+html .tab, html :is(.league-nav a, .league-nav button), html .feed-tab, html .sub-feed-tab { font-size:0.9rem; padding:0.4rem 0.6rem; }
+html .last-update, html .article-meta, html .episode-meta, html .game-status { font-size:0.85rem; color:#a9bacb; }
+html .article-title, html .episode-title, html .team-row, html .verse-text { font-size:1rem; }
+html .article, html .episode, html .game { padding:0.65rem; margin:0.5rem 0; }
+html .episode { width:100%; color:inherit; text-align:left; cursor:pointer; }
+html .standings-table { font-size:0.95rem; }
+html .player-bar { max-width:52rem; width:100%; box-sizing:border-box; }
+html .post-content, html .comment-body, html .article-title, html .episode-title { overflow-wrap:anywhere; }
+html .post-meta { flex-wrap:wrap; }
+html .container { border-radius:0; }
+html header { padding:0.6rem; }
+html header h1 { font-size:1.35rem; }
+html .header-meta { gap:0.5rem; }
+html .home-link { margin-bottom:0.5rem; }
+html .subreddit-header, html .filter-bar, html .subreddit-nav, html .feed-nav { padding:0.6rem; }
+html .post { padding:0.75rem; }
+html .post-title { font-size:1rem; }
+html .comments-toggle { font-size:0.9rem; }
+.tool-pagination { display:flex; align-items:center; justify-content:space-between; gap:0.4rem; margin:0.75rem 0; }
+.tool-pagination span { font-size:0.9rem; }
+.location-form { display:flex; gap:0.5rem; flex-wrap:wrap; margin:0.6rem 0; }
+.location-form label { width:100%; }
+.location-form input { flex:1; min-width:7rem; }
+html.compact body { font-size:14px; padding:4px; line-height:1.35; }
+html.compact .tool-nav { gap:0.5rem; padding-bottom:4px; margin-bottom:4px; }
+html.compact button, html.compact select, html.compact input { min-height:28px; font-size:14px; }
+html.compact body h1 { font-size:17px; }
+html.compact .header-meta { font-size:12px; }
+html.compact .tab, html.compact :is(.league-nav a, .league-nav button), html.compact .feed-tab, html.compact .sub-feed-tab { padding:3px 5px; font-size:12px; }
+html.compact .article, html.compact .episode, html.compact .game, html.compact .post { padding:5px; margin:4px 0; }
+html.compact .article-title, html.compact .episode-title, html.compact .team-row, html.compact .verse-text, html.compact .post-title { font-size:14px; }
+html.compact .last-update, html.compact .episode-meta, html.compact .article-meta, html.compact .game-status, html.compact .post-meta { font-size:12px; }
+html.compact .standings-table { font-size:12px; }
+html.compact .col-team { white-space:normal; }
+html.compact .post-content { max-height:8rem; overflow:auto; }
+html.compact .header-meta, html.compact .subreddit-header-top { flex-wrap:wrap; }
+@media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
+
+html .league-nav button { background:#182d3e; color:#7de4ff; border:1px solid #6e8296; border-radius:4px; }
+html .league-nav button[aria-pressed="true"] { background:#7de4ff; color:#102331; }

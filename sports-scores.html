@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Scores</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -44,6 +44,8 @@
         }
         .league-nav a:active { background: #222; }
     </style>
+    <link rel="stylesheet" href="assets/tool-ui.css">
+    <script src="assets/tool-ui.js"></script>
 </head>
 <body>
     <div class="header">
@@ -52,14 +54,14 @@
         <div class="last-update" id="currentDate"></div>
     </div>
     <nav class="league-nav" id="league-nav"></nav>
-    <button class="refresh-btn" onclick="loadScores()">REFRESH</button>
+    <button class="refresh-btn" onclick="loadScores(true)">REFRESH</button>
     <div class="last-update" id="lastUpdate"></div>
     <div id="content"><div class="loading">Loading config...</div></div>
 
     <script>
         var API_BASE       = 'https://site.api.espn.com/apis/site/v2/sports';
         var CONFIG_URL     = 'sports-config.json';
-        var CACHE_KEY      = 'sports_scores_cache';
+        var CACHE_KEY      = 'sports_scores_cache_safe_v2';
         var CACHE_DURATION = 2 * 60 * 1000;
 
         var PRIORITY_TEAMS = [];
@@ -75,7 +77,7 @@
                 if (league.enabled === false) return;
                 SPORTS_CONFIG[league.name] = {
                     url:        API_BASE + '/' + league.espn_path + '/scoreboard',
-                    color:      league.color || '#0ff',
+                    color:      /^#[0-9a-f]{3,8}$/i.test(league.color || '') ? league.color : '#0ff',
                     scoresType: league.scores_type || 'default'
                 };
             });
@@ -97,16 +99,16 @@
         function getGameStatus(comp) {
             var s = comp.status, typeName = s.type.name, gameDate = formatDate(comp.date);
             if (typeName === 'STATUS_IN_PROGRESS')
-                return '<span class="live">LIVE - ' + (s.type.shortDetail || '') + '</span>';
+                return '<span class="live">LIVE - ' + ToolUI.escape((s.type.shortDetail || '')) + '</span>';
             if (typeName === 'STATUS_FINAL') {
                 var f = s.type.shortDetail || 'FINAL';
-                return gameDate ? f + ' - ' + gameDate : f;
+                return gameDate ? ToolUI.escape(f) + ' - ' + gameDate : ToolUI.escape(f);
             }
             if (typeName === 'STATUS_SCHEDULED') {
                 var t = formatTime(comp.date);
                 return gameDate ? gameDate + ' ' + t : t;
             }
-            return s.type.shortDetail || 'Scheduled';
+            return ToolUI.escape(s.type.shortDetail || 'Scheduled');
         }
 
         function isPriorityTeam(team) {
@@ -118,7 +120,7 @@
             var isLive  = comp.status.type.name === 'STATUS_IN_PROGRESS';
             var status  = getGameStatus(comp);
             var pLabel  = isPriority ? '<span style="color:#ffd700;font-weight:bold;">* </span>' : '';
-            var sLabel  = (showSport && comp._sportName) ? '<span style="color:#0ff;font-size:10px;">[' + comp._sportName + ']</span> ' : '';
+            var sLabel  = (showSport && comp._sportName) ? '<span style="color:#0ff;font-size:10px;">[' + ToolUI.escape(comp._sportName) + ']</span> ' : '';
             var pStyle  = isPriority ? 'border-left:3px solid #ffd700;background:#1a1a00;' : '';
 
             // For races, competitors are individual drivers — show top 3 finishers or full grid
@@ -129,15 +131,15 @@
                             d.team && (d.team.abbreviation || d.team.shortDisplayName) || '?';
                 var time  = d.displayClock || d.score || '';
                 return '<div class="team-row">' +
-                    '<span class="team-name">' + pos + '. ' + name + '</span>' +
-                    '<span class="score" style="font-size:10px;color:#888">' + time + '</span>' +
+                    '<span class="team-name">' + ToolUI.escape(pos) + '. ' + ToolUI.escape(name) + '</span>' +
+                    '<span class="score" style="font-size:10px;color:#888">' + ToolUI.escape(time) + '</span>' +
                     '</div>';
             }).join('');
 
             if (!driverRows) {
                 // Upcoming race — just show name and time
                 var raceName = comp.name || comp.shortName || 'Race';
-                driverRows = '<div class="team-row"><span class="team-name" style="color:#888">' + raceName + '</span></div>';
+                driverRows = '<div class="team-row"><span class="team-name" style="color:#888">' + ToolUI.escape(raceName) + '</span></div>';
             }
 
             var link = '#';
@@ -145,7 +147,8 @@
                 var gc = comp.links.find(function(l) { return l.text === 'Gamecast' || l.text === 'Race Center'; });
                 link = gc ? gc.href : (comp.links[0] ? comp.links[0].href : '#');
             }
-            var open  = link !== '#' ? '<a href="' + link + '" target="_blank" rel="noopener noreferrer" class="game" style="' + pStyle + '">' : '<div class="game" style="' + pStyle + '">';
+            link = ToolUI.httpURL(link) || '#';
+            var open  = link !== '#' ? '<a href="' + ToolUI.escape(link) + '" target="_blank" rel="noopener noreferrer" class="game" style="' + pStyle + '">' : '<div class="game" style="' + pStyle + '">';
             var close = link !== '#' ? '</a>' : '</div>';
 
             return open +
@@ -160,18 +163,19 @@
             var isLive = comp.status.type.name === 'STATUS_IN_PROGRESS';
             var pStyle = isPriority ? 'border-left:3px solid #ffd700;background:#1a1a00;' : '';
             var pLabel = isPriority ? '<span style="color:#ffd700;font-weight:bold;">* </span>' : '';
-            var sLabel = (showSport && comp._sportName) ? '<span style="color:#0ff;font-size:10px;">[' + comp._sportName + ']</span> ' : '';
+            var sLabel = (showSport && comp._sportName) ? '<span style="color:#0ff;font-size:10px;">[' + ToolUI.escape(comp._sportName) + ']</span> ' : '';
             var link = '#';
             if (comp.links) {
                 var gc = comp.links.find(function(l) { return l.text === 'Gamecast' || l.text === 'Game Info'; });
                 link = gc ? gc.href : (comp.links[0] ? comp.links[0].href : '#');
             }
-            var open  = link !== '#' ? '<a href="' + link + '" target="_blank" rel="noopener noreferrer" class="game" style="' + pStyle + '">' : '<div class="game" style="' + pStyle + '">';
+            link = ToolUI.httpURL(link) || '#';
+            var open  = link !== '#' ? '<a href="' + ToolUI.escape(link) + '" target="_blank" rel="noopener noreferrer" class="game" style="' + pStyle + '">' : '<div class="game" style="' + pStyle + '">';
             var close = link !== '#' ? '</a>' : '</div>';
             return open +
                 '<div class="game-status ' + (isLive ? 'live' : '') + '">' + pLabel + sLabel + getGameStatus(comp) + '</div>' +
-                '<div class="team-row"><span class="team-name ' + (away.winner ? 'winner' : '') + '">' + (away.team.abbreviation || away.team.shortDisplayName) + '</span><span class="score ' + (away.winner ? 'winner' : '') + '">' + (away.score || '-') + '</span></div>' +
-                '<div class="team-row"><span class="team-name ' + (home.winner ? 'winner' : '') + '">' + (home.team.abbreviation || home.team.shortDisplayName) + '</span><span class="score ' + (home.winner ? 'winner' : '') + '">' + (home.score || '-') + '</span></div>' +
+                '<div class="team-row"><span class="team-name ' + (away.winner ? 'winner' : '') + '">' + ToolUI.escape((away.team.abbreviation || away.team.shortDisplayName)) + '</span><span class="score ' + (away.winner ? 'winner' : '') + '">' + ToolUI.escape((away.score || '-')) + '</span></div>' +
+                '<div class="team-row"><span class="team-name ' + (home.winner ? 'winner' : '') + '">' + ToolUI.escape((home.team.abbreviation || home.team.shortDisplayName)) + '</span><span class="score ' + (home.winner ? 'winner' : '') + '">' + ToolUI.escape((home.score || '-')) + '</span></div>' +
                 close;
         }
 
@@ -216,9 +220,9 @@
             var content = document.getElementById('content');
             if (!forceRefresh) {
                 var cached = getCachedData();
-                if (cached) { content.innerHTML = cached; updateTimestamp(); loadScores(true); return; }
+                if (cached) { ToolUI.setHTML(content, cached); updateTimestamp(); loadScores(true); return; }
             }
-            content.innerHTML = '<div class="loading">Loading scores...</div>';
+            ToolUI.setHTML(content, '<div class="loading">Loading scores...</div>');
             try {
                 var results = await Promise.all(Object.entries(SPORTS_CONFIG).map(function(e) { return fetchSportScores(e[0], e[1]); }));
                 var allPriority = [];
@@ -229,25 +233,25 @@
                 }
                 results.forEach(function(result) {
                     if (result.error) {
-                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div class="error">Unable to load</div></div>';
+                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + ToolUI.escape(result.sportName) + '</div><div class="error">Unable to load</div></div>';
                     } else if (result.regularGames.length > 0) {
-                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div>' + result.regularGames.map(function(c) { return c._scoresType === 'racing' ? renderRace(c, false, false) : renderGame(c, false, false); }).join('') + '</div>';
+                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + ToolUI.escape(result.sportName) + '</div>' + result.regularGames.map(function(c) { return c._scoresType === 'racing' ? renderRace(c, false, false) : renderGame(c, false, false); }).join('') + '</div>';
                     } else if (!result.hasGames && allPriority.length === 0) {
-                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + result.sportName + '</div><div style="padding:5px;color:#666;font-size:11px;">No games today</div></div>';
+                        html += '<div class="sport-section" id="section-' + result.sportName.replace(/[^a-z0-9]/gi,'_') + '"><div class="sport-title" style="border-left:3px solid ' + result.color + ';padding-left:5px;">' + ToolUI.escape(result.sportName) + '</div><div style="padding:5px;color:#666;font-size:11px;">No games today</div></div>';
                     }
                 });
-                content.innerHTML = html;
+                ToolUI.setHTML(content, html);
                 buildLeagueNav(results, allPriority.length > 0);
-                if (forceRefresh) setCachedData(html);
+                setCachedData(html);
                 updateTimestamp();
             } catch(err) {
-                content.innerHTML = '<div class="error">Failed to load scores.</div>';
+                ToolUI.setHTML(content, '<div class="error">Failed to load scores.</div>');
             }
         }
 
         function buildLeagueNav(results, hasFavorites) {
             var nav = document.getElementById('league-nav');
-            nav.innerHTML = '';
+            ToolUI.setHTML(nav, '');
             if (hasFavorites) {
                 var a = document.createElement('a');
                 a.href = '#section-FAVORITES';
@@ -274,16 +278,13 @@
             document.getElementById('lastUpdate').textContent = 'Updated: ' + now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0');
         }
 
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === 'SoftRight') { var b = document.querySelector('.refresh-btn'); if (b) b.click(); }
-            if (e.key === 'SoftLeft' || e.key === 'Backspace') window.location.href = 'home.html';
-        });
+
 
         (async function() {
             try {
                 await loadConfig();
             } catch(err) {
-                document.getElementById('content').innerHTML = '<div class="config-error">Could not load sports-config.json: ' + err.message + '. Make sure the file is in the same directory.</div>';
+                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports-config.json: ' + ToolUI.escape(err.message) + '. Make sure the file is in the same directory.</div>');
                 return;
             }
             loadScores();

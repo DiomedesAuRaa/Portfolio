@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%2317a2b8%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2752%25%27%20font-size%3D%2744%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%20font-family%3D%27Apple%20Color%20Emoji%2CSegoe%20UI%20Emoji%2CSegoe%20UI%20Symbol%2CEmojiSymbols%2Csans-serif%27%20fill%3D%27%23ffffff%27%3E%F0%9F%93%8A%3C%2Ftext%3E%3C%2Fsvg%3E">
     <title>Sports Standings</title>
     <style>
@@ -24,15 +24,15 @@
             -webkit-overflow-scrolling: touch;
         }
         .league-nav::-webkit-scrollbar { display: none; }
-        .league-nav a {
+        .league-nav button {
             color: #0ff; text-decoration: none; font-size: 9px;
             font-weight: bold; padding: 3px 7px;
             border: 1px solid #333; border-radius: 10px;
             flex-shrink: 0; display: inline-block;
             cursor: pointer;
         }
-        .league-nav a.active { background: #0ff; color: #000; }
-        .league-nav a:active { opacity: 0.7; }
+        .league-nav button.active { background: #0ff; color: #000; }
+        .league-nav button:active { opacity: 0.7; }
 
         /* ── Controls ── */
         .refresh-btn { display: block; width: 100%; padding: 5px; margin: 5px 0; background: #0ff; color: #000; border: none; font-weight: bold; font-size: 11px; cursor: pointer; }
@@ -59,6 +59,8 @@
         .config-error { background: #300; color: #f88; padding: 6px; font-size: 10px; margin: 4px 0; border-left: 3px solid #f00; }
         .no-standings { padding: 10px; color: #666; font-size: 11px; text-align: center; }
     </style>
+    <link rel="stylesheet" href="assets/tool-ui.css">
+    <script src="assets/tool-ui.js"></script>
 </head>
 <body>
     <div class="header">
@@ -99,17 +101,20 @@
         // ── Nav ─────────────────────────────────────────────────────────────
         function buildNav() {
             var nav = document.getElementById('league-nav');
-            nav.innerHTML = '';
+            ToolUI.setHTML(nav, '');
             LEAGUES.forEach(function(league, i) {
-                var a = document.createElement('a');
+                var a = document.createElement('button');
+                a.type = 'button';
+                a.setAttribute('aria-pressed', String(i === 0));
                 a.textContent   = league.name;
                 a.style.borderColor = league.color || '#0ff';
                 a.style.color       = league.color || '#0ff';
                 a.dataset.idx       = i;
                 if (i === 0) a.classList.add('active');
                 a.addEventListener('click', function() {
-                    document.querySelectorAll('.league-nav a').forEach(function(el) { el.classList.remove('active'); });
+                    document.querySelectorAll('.league-nav button').forEach(function(el) { el.classList.remove('active'); el.setAttribute('aria-pressed', 'false'); });
                     a.classList.add('active');
+                    a.setAttribute('aria-pressed', 'true');
                     currentLeague = LEAGUES[parseInt(a.dataset.idx)];
                     loadStandings();
                 });
@@ -148,12 +153,12 @@
             var gb  = getStat(stats, ['gamesBehind','GB','pointsBehind']);
 
             return '<div class="standings-row' + (prior ? ' priority' : '') + '">' +
-                '<div class="col-rank">' + rank + '</div>' +
-                '<div class="col-team' + (prior ? ' team-priority' : '') + '">' + name + '</div>' +
-                '<div class="col-w">' + w + '</div>' +
-                '<div class="col-l">' + l + '</div>' +
-                '<div class="col-pct">' + pct + '</div>' +
-                '<div class="col-gb">' + gb + '</div>' +
+                '<div class="col-rank">' + ToolUI.escape(rank) + '</div>' +
+                '<div class="col-team' + (prior ? ' team-priority' : '') + '">' + ToolUI.escape(name) + '</div>' +
+                '<div class="col-w">' + ToolUI.escape(w) + '</div>' +
+                '<div class="col-l">' + ToolUI.escape(l) + '</div>' +
+                '<div class="col-pct">' + ToolUI.escape(pct) + '</div>' +
+                '<div class="col-gb">' + ToolUI.escape(gb) + '</div>' +
                 '</div>';
         }
 
@@ -176,7 +181,7 @@
                 return ra - rb;
             });
             return '<div class="division-section">' +
-                '<div class="division-title" style="border-left-color:' + (color||'#0ff') + ';color:' + (color||'#0ff') + '">' + divName + '</div>' +
+                '<div class="division-title" style="border-left-color:' + (/^#[0-9a-f]{3,8}$/i.test(color || '') ? color : '#0ff') + ';color:' + (/^#[0-9a-f]{3,8}$/i.test(color || '') ? color : '#0ff') + '">' + ToolUI.escape(divName) + '</div>' +
                 '<div class="standings-table">' +
                 renderHeader() +
                 sorted.map(function(e, i) { return renderRow(e, i); }).join('') +
@@ -283,11 +288,13 @@
         }
 
         // ── Main ───────────────────────────────────────────────────────────
+        var standingsVersion = 0;
         async function loadStandings() {
+            var requestVersion = ++standingsVersion;
             var content = document.getElementById('content');
             if (!currentLeague) return;
 
-            content.innerHTML = '<div class="loading">Loading ' + currentLeague.name + ' standings...</div>';
+            ToolUI.setHTML(content, '<div class="loading">Loading ' + ToolUI.escape(currentLeague.name) + ' standings...</div>');
 
             try {
                 var html = '';
@@ -303,10 +310,12 @@
                     html = await fetchDivisionStandings(currentLeague);
                 }
 
-                content.innerHTML = html || '<div class="no-standings">No standings available</div>';
+                if (requestVersion !== standingsVersion) return;
+                ToolUI.setHTML(content, html || '<div class="no-standings">No standings available</div>');
                 updateTimestamp();
             } catch(err) {
-                content.innerHTML = '<div class="error">Unable to load ' + currentLeague.name + ' standings</div>';
+                if (requestVersion !== standingsVersion) return;
+                ToolUI.setHTML(content, '<div class="error">Unable to load ' + ToolUI.escape(currentLeague.name) + ' standings</div>');
                 console.error(err);
             }
         }
@@ -319,23 +328,18 @@
                 'Updated: ' + now.getHours() + ':' + now.getMinutes().toString().padStart(2, '0');
         }
 
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === 'SoftRight') { var b = document.querySelector('.refresh-btn'); if (b) b.click(); }
-            if (e.key === 'SoftLeft' || e.key === 'Backspace') window.location.href = 'home.html';
-        });
+
 
         // Boot
         (async function() {
             try {
                 await loadConfig();
             } catch(err) {
-                document.getElementById('content').innerHTML =
-                    '<div class="config-error">Could not load sports-config.json: ' + err.message + '</div>';
+                ToolUI.setHTML(document.getElementById('content'), '<div class="config-error">Could not load sports-config.json: ' + ToolUI.escape(err.message) + '</div>');
                 return;
             }
             if (LEAGUES.length === 0) {
-                document.getElementById('content').innerHTML =
-                    '<div class="no-standings">No leagues with standings enabled in config.</div>';
+                ToolUI.setHTML(document.getElementById('content'), '<div class="no-standings">No leagues with standings enabled in config.</div>');
                 return;
             }
             buildNav();

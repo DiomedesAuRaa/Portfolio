@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=240px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
                                 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2064%2064%27%3E%3Crect%20width%3D%2764%27%20height%3D%2764%27%20rx%3D%2714%27%20fill%3D%27%238b4513%27%2F%3E%3Ctext%20x%3D%2750%25%27%20y%3D%2752%25%27%20font-size%3D%2744%27%20text-anchor%3D%27middle%27%20dominant-baseline%3D%27middle%27%20font-family%3D%27Apple%20Color%20Emoji%2CSegoe%20UI%20Emoji%2CSegoe%20UI%20Symbol%2CEmojiSymbols%2Csans-serif%27%20fill%3D%27%23ffffff%27%3E%F0%9F%93%96%3C%2Ftext%3E%3C%2Fsvg%3E">
     <title>Bible - ESV</title>
     <style>
@@ -157,6 +157,8 @@
             text-align: center;
         }
     </style>
+    <link rel="stylesheet" href="assets/tool-ui.css">
+    <script src="assets/tool-ui.js"></script>
 </head>
 <body>
     <div class="header">
@@ -299,7 +301,7 @@
                 currentBooks = [];
             }
             
-            bookSelect.innerHTML = '<option value="">-- Select Book --</option>';
+            ToolUI.setHTML(bookSelect, '<option value="">-- Select Book --</option>');
             currentBooks.forEach(book => {
                 const option = document.createElement('option');
                 option.value = book.abbr;
@@ -349,7 +351,7 @@
         
         function populateChapters() {
             const chapterSelect = document.getElementById('chapter');
-            chapterSelect.innerHTML = '<option value="">-- Select Chapter --</option>';
+            ToolUI.setHTML(chapterSelect, '<option value="">-- Select Chapter --</option>');
             
             for (let i = 1; i <= maxChapters; i++) {
                 const option = document.createElement('option');
@@ -369,7 +371,7 @@
             
             // For ESV API, we'll populate verses 1-50 (most chapters don't exceed this)
             const verseSelect = document.getElementById('verse');
-            verseSelect.innerHTML = '<option value="">-- Select Verse --</option>';
+            ToolUI.setHTML(verseSelect, '<option value="">-- Select Verse --</option>');
             
             // Estimate verses in chapter (most are 20-40)
             let verseCount = 40;
@@ -438,19 +440,15 @@
             const reference = `${currentChapter[0].book_name} ${currentChapter[0].chapter}`;
             document.getElementById('verse-ref').textContent = reference;
             
-            // Build HTML for all verses with current verse highlighted
-            let contentHTML = '';
+            const verses = document.createDocumentFragment();
             currentChapter.forEach((verseObj, index) => {
-                const isCurrentVerse = index === currentVerseIndex;
-                contentHTML += `
-                    <div class="verse-item" id="verse-${index}">
-                        <span class="verse-number">${verseObj.verse}</span>
-                        <span class="verse-text">${verseObj.text.trim()}</span>
-                    </div>
-                `;
+                const row = ToolUI.text('div', '', 'verse-item');
+                row.id = `verse-${index}`;
+                row.append(ToolUI.text('span', verseObj.verse, 'verse-number'),
+                    ToolUI.text('span', String(verseObj.text || '').trim(), 'verse-text'));
+                verses.appendChild(row);
             });
-            
-            document.getElementById('verse-content').innerHTML = contentHTML;
+            document.getElementById('verse-content').replaceChildren(verses);
             document.getElementById('verse-display').classList.add('active');
             
             // Scroll to current verse

@@ -1,12 +1,12 @@
-name: Refresh Podcast Manifest
+name: Refresh Reddit RSS digest
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '0 8,20 * * *'
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: podcast-publisher
+  group: reddit-publisher
   cancel-in-progress: false
 jobs:
   fetch:
@@ -23,11 +23,11 @@ jobs:
       - name: Validate isolated tests
         run: python -m unittest discover -s tests
       - name: Fetch public feeds without write credentials
-        run: python fetch_feeds.py
+        run: python fetch_reddit.py
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: podcast-manifest
-          path: podcast-manifest.json
+          name: reddit-digest
+          path: reddit-digest.json
           retention-days: 1
   publish:
     needs: fetch
@@ -43,22 +43,22 @@ jobs:
           fetch-depth: 1
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         with:
-          name: podcast-manifest
-          path: ${{ runner.temp }}/podcast-result
+          name: reddit-digest
+          path: ${{ runner.temp }}/reddit-result
       - name: Commit only validated manifest on current main
         id: commit
         env:
-          RESULT_DIR: ${{ runner.temp }}/podcast-result
+          RESULT_DIR: ${{ runner.temp }}/reddit-result
         run: |
-          python scripts/validate_podcast.py "$RESULT_DIR/podcast-manifest.json"
-          cp "$RESULT_DIR/podcast-manifest.json" podcast-manifest.json
+          python scripts/validate_reddit.py "$RESULT_DIR/reddit-digest.json"
+          cp "$RESULT_DIR/reddit-digest.json" reddit-digest.json
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -- podcast-manifest.json
+          git add -- reddit-digest.json
           if git diff --cached --quiet; then
             echo 'changed=false' >> "$GITHUB_OUTPUT"
           else
-            git commit -m 'chore: refresh podcast manifest'
+            git commit -m 'chore: refresh Reddit RSS digest'
             git pull --rebase origin main
             git push origin HEAD:main
             echo 'changed=true' >> "$GITHUB_OUTPUT"

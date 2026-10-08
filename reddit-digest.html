@@ -248,6 +248,8 @@
             #back-to-top { bottom: 16px; right: 16px; width: 42px; height: 42px; font-size: 1.1em; }
         }
     </style>
+    <link rel="stylesheet" href="assets/tool-ui.css">
+    <script src="assets/tool-ui.js"></script>
 </head>
 <body>
     <div class="container">
@@ -299,16 +301,13 @@
         const STALE_THRESHOLD  = 2 * 60 * 60 * 1000; // 2 hours in ms
 
         let allDigestData = null;
-        let activeFeed    = localStorage.getItem('activeFeed') || null;
+        let activeFeed = ToolUI.storageGet('activeFeed') || null;
 
         // ── Utilities ──────────────────────────────────────────────────────
-        function escapeHtml(text) {
-            const div = document.createElement('div');
-            div.textContent = text;
-            return div.innerHTML;
-        }
+        function escapeHtml(text) { return ToolUI.escape(text); }
 
         function fmtScore(n) {
+            n = Number(n) || 0;
             return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : n;
         }
 
@@ -357,6 +356,7 @@
                 // ── End normalization ──
 
                 checkStaleness(data.generated_at);
+                if (data.refresh_status && data.refresh_status !== 'ok') document.getElementById('stale-banner').classList.add('visible');
                 buildFeedNav(data.feeds);
                 populateSubredditFilter(data);
                 buildSubredditNav(data);
@@ -364,8 +364,7 @@
                 scheduleRefresh();
             } catch (err) {
                 console.error('Error loading digest data:', err);
-                document.getElementById('content').innerHTML =
-                    `<div class="error">⚠️ Error loading Reddit digest data: ${err.message}</div>`;
+                ToolUI.setHTML(document.getElementById('content'), `<div class="error">⚠️ Error loading Reddit digest data: ${escapeHtml(err.message)}</div>`);
                 scheduleRefresh();
             }
         }
@@ -380,7 +379,7 @@
         // ── Global feed switcher ───────────────────────────────────────────
         function buildFeedNav(feeds) {
             const nav = document.getElementById('feed-nav');
-            nav.innerHTML = '';
+            ToolUI.setHTML(nav, '');
 
             // Default to first feed if nothing saved or saved value is gone
             if (!activeFeed || !feeds.includes(activeFeed)) {
@@ -399,11 +398,11 @@
 
         function switchGlobalFeed(label) {
             activeFeed = label;
-            localStorage.setItem('activeFeed', label);
+            ToolUI.storageSet('activeFeed', label);
 
             // Update global tab buttons
             document.querySelectorAll('.feed-tab')
-                .forEach(btn => btn.classList.toggle('active', btn.dataset.feed === label));
+                .forEach(btn => { btn.classList.toggle('active', btn.dataset.feed === label); btn.setAttribute('aria-pressed', String(btn.dataset.feed === label)); });
 
             // Swap every subreddit to the same feed, and sync per-sub tabs
             document.querySelectorAll('.subreddit').forEach(subDiv => {
@@ -425,6 +424,7 @@
             if (tabsContainer) {
                 tabsContainer.querySelectorAll('.sub-feed-tab').forEach(btn => {
                     btn.classList.toggle('active', btn.dataset.feed === label);
+                    btn.setAttribute('aria-pressed', String(btn.dataset.feed === label));
                 });
             }
         }
@@ -461,7 +461,7 @@
                 sel.appendChild(opt);
             });
 
-            sel.addEventListener('change', e => filterBySubreddit(e.target.value));
+            sel.onchange = e => filterBySubreddit(e.target.value);
         }
 
         function filterBySubreddit(selected) {
@@ -479,13 +479,14 @@
             const btn       = document.getElementById(`collapse-btn-${subreddit}`);
             const collapsed = postsDiv.classList.toggle('collapsed');
             btn.textContent = collapsed ? '▶ Expand' : '▼ Collapse';
+            btn.setAttribute('aria-expanded', String(!collapsed));
         }
 
         // ── Render ─────────────────────────────────────────────────────────
         function renderDigest(data) {
             const contentDiv  = document.getElementById('content');
             const fetchErrors = data.fetch_errors || {};
-            contentDiv.innerHTML = '';
+            ToolUI.setHTML(contentDiv, '');
 
             // Header meta
             document.getElementById('date').textContent =
@@ -493,9 +494,9 @@
                     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
                 });
             document.getElementById('stats').textContent =
-                `${data.subreddits_count} subreddits • ${data.total_posts} posts`;
+                `${data.subreddits_count || Object.keys(data.data).length} subreddits • ${data.total_posts || 0} posts`;
             document.getElementById('last-updated').textContent =
-                new Date(data.generated_at).toLocaleTimeString();
+                new Date(data.generated_at).toLocaleString() + (data.refresh_status ? ' · ' + data.refresh_status : '') + (data.last_attempt_at ? ' · Attempt: ' + new Date(data.last_attempt_at).toLocaleString() : '');
 
             for (const [subreddit, feedsData] of Object.entries(data.data)) {
                 const subredditDiv = document.createElement('div');
@@ -505,33 +506,36 @@
                 // Error badge (feeds that failed for this sub)
                 const subErrors    = fetchErrors[subreddit] || [];
                 const errorBadge   = subErrors.length
-                    ? `<span class="feed-error-badge" title="Failed feeds: ${subErrors.join(', ')}">⚠️ ${subErrors.length} feed${subErrors.length > 1 ? 's' : ''} failed</span>`
+                    ? `<span class="feed-error-badge" title="Failed feeds: ${escapeHtml(subErrors.join(', '))}">⚠️ ${subErrors.length} feed${subErrors.length > 1 ? 's' : ''} failed</span>`
                     : '';
 
                 const feedLabels = Object.keys(feedsData);
 
-                subredditDiv.innerHTML = `
+                ToolUI.setHTML(subredditDiv, `
                     <div class="subreddit-header">
                         <div class="subreddit-header-top">
                             <h2>r/${escapeHtml(subreddit)}</h2>
                             <div class="subreddit-header-right">
                                 ${errorBadge}
-                                <button class="collapse-btn" id="collapse-btn-${subreddit}"
-                                        onclick="toggleSubreddit('${subreddit}')">▼ Collapse</button>
+                                <button class="collapse-btn" id="collapse-btn-${escapeHtml(subreddit)}" aria-expanded="true">▼ Collapse</button>
                             </div>
                         </div>
-                        <div class="sub-feed-tabs" id="sub-tabs-${subreddit}">
+                        <div class="sub-feed-tabs" id="sub-tabs-${escapeHtml(subreddit)}">
                             ${feedLabels.map(label => `
                                 <button class="sub-feed-tab${label === activeFeed ? ' active' : ''}"
-                                        data-feed="${escapeHtml(label)}"
-                                        onclick="switchSubFeed('${subreddit}', '${escapeHtml(label)}')">
+                                        data-feed="${escapeHtml(label)}" aria-pressed="${label === activeFeed}">
                                     ${escapeHtml(label)}
                                 </button>`).join('')}
                         </div>
                     </div>
-                    <div class="subreddit-posts" id="posts-${subreddit}"></div>`;
+                    <div class="subreddit-posts" id="posts-${escapeHtml(subreddit)}"></div>`);
 
-                const postsWrapper = subredditDiv.querySelector(`#posts-${subreddit}`);
+                const collapseButton = subredditDiv.querySelector('.collapse-btn');
+                collapseButton.addEventListener('click', () => toggleSubreddit(subreddit));
+                subredditDiv.querySelectorAll('.sub-feed-tab').forEach(button => {
+                    button.addEventListener('click', () => switchSubFeed(subreddit, button.dataset.feed));
+                });
+                const postsWrapper = subredditDiv.querySelector('.subreddit-posts');
 
                 // One div per feed; only the active one has class="active"
                 for (const [feedLabel, posts] of Object.entries(feedsData)) {
@@ -540,15 +544,32 @@
                     feedDiv.dataset.feed = feedLabel;
 
                     if (!posts || posts.length === 0) {
-                        feedDiv.innerHTML = `<p style="color:#7c7c7c;padding:20px 0">
-                            No posts available for <strong>${escapeHtml(feedLabel)}</strong>.</p>`;
+                        ToolUI.setHTML(feedDiv, `<p style="color:#7c7c7c;padding:20px 0">
+                            No posts available for <strong>${escapeHtml(feedLabel)}</strong>.</p>`);
                     } else {
-                        posts.forEach((post, index) => {
-                            // Slugify feedLabel so no spaces in DOM id/onclick attrs
-                            const feedSlug = feedLabel.replace(/[^a-z0-9]/gi, '_').toLowerCase();
-                            const instanceId = `${feedSlug}_${post.id}`;
-                            feedDiv.appendChild(buildPostEl(post, index + 1, instanceId));
-                        });
+                        let page = 0;
+                        const renderPage = () => {
+                            feedDiv.replaceChildren();
+                            const count = document.documentElement.classList.contains('compact') ? 5 : 15;
+                            const first = page * count;
+                            const status = data.feed_status && data.feed_status[subreddit] && data.feed_status[subreddit][feedLabel];
+                            if (status) feedDiv.appendChild(ToolUI.text('p', (status.status === 'ok' ? 'Feed updated: ' : status.status + ' · Last good: ') + (status.generated_at ? new Date(status.generated_at).toLocaleString() : 'Unknown'), 'last-update'));
+                            posts.slice(first, first + count).forEach((post, index) => {
+                                const feedSlug = feedLabel.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+                                feedDiv.appendChild(buildPostEl(post, first + index + 1, `${subreddit}_${feedSlug}_${post.id}`));
+                            });
+                            if (posts.length > count) {
+                                const pager = ToolUI.text('nav', '', 'tool-pagination'); pager.setAttribute('aria-label','Posts');
+                                const previous = ToolUI.text('button', 'Previous'), next = ToolUI.text('button','Next');
+                                previous.disabled = page === 0; next.disabled = first + count >= posts.length;
+                                previous.addEventListener('click', () => { page--; renderPage(); previous.focus(); });
+                                next.addEventListener('click', () => { page++; renderPage(); });
+                                pager.append(previous, ToolUI.text('span', (page + 1) + ' / ' + Math.ceil(posts.length / count)), next);
+                                feedDiv.appendChild(pager);
+                            }
+                        };
+                        renderPage();
+
                     }
 
                     postsWrapper.appendChild(feedDiv);
@@ -574,7 +595,7 @@
                 contentHtml = `<div class="post-content">${escapeHtml(post.selftext)}</div>`;
             } else if (domain) {
                 contentHtml = `<div style="margin:8px 0;font-size:0.85em;color:#7c7c7c">
-                    🔗 <a href="${escapeHtml(post.link_url)}" target="_blank"
+                    🔗 <a href="${escapeHtml(ToolUI.httpURL(post.link_url))}" target="_blank" rel="noopener noreferrer"
                           style="color:#0079D3">${escapeHtml(domain)}</a></div>`;
             }
 
@@ -582,9 +603,9 @@
             const comments = (post.comments || []).filter(c => c.author !== 'AutoModerator');
             if (comments.length > 0) {
                 post = { ...post, comments }; // shadow with filtered copy
-                commentsHtml = `<button class="comments-toggle" onclick="toggleComments('${instanceId}')">
+                commentsHtml = `<button class="comments-toggle" aria-expanded="false">
                     💬 Show Top ${comments.length} Comments</button>
-                <div class="comments comments-content" id="comments-${instanceId}">
+                <div class="comments comments-content" id="comments-${escapeHtml(instanceId)}">
                     <div style="font-weight:600;margin-bottom:12px;color:#1a1a1b">💬 Top Comments:</div>
                     ${comments.map(c => `
                         <div class="comment">
@@ -597,7 +618,7 @@
                 </div>`;
             }
 
-            postDiv.innerHTML = `
+            ToolUI.setHTML(postDiv, `
                 <div class="post-header">
                     <div class="post-title">${index}. ${escapeHtml(post.title)} ${flairHtml}</div>
                     <div class="post-meta">
@@ -610,16 +631,19 @@
                 </div>
                 ${contentHtml}
 
-                ${commentsHtml}`;
+                ${commentsHtml}`);
 
+            const commentButton = postDiv.querySelector('.comments-toggle');
+            if (commentButton) commentButton.addEventListener('click', () => toggleComments(instanceId, commentButton));
             return postDiv;
         }
 
         // ── Comment toggle ─────────────────────────────────────────────────
-        function toggleComments(postId) {
+        function toggleComments(postId, btn) {
             const div = document.getElementById(`comments-${postId}`);
-            const btn = event.target;
+
             div.classList.toggle('expanded');
+            btn.setAttribute('aria-expanded', String(div.classList.contains('expanded')));
             btn.textContent = div.classList.contains('expanded')
                 ? btn.textContent.replace('Show', 'Hide')
                 : btn.textContent.replace('Hide', 'Show');
